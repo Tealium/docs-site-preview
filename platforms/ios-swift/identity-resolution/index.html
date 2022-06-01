@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -4032,8 +4032,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-overview">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="visitor-id">Visitor ID</h2>
-
+  <h2 id="visitor-id">Visitor ID</h2>
 <p>The Tealium Swift library generates a unique persistent visitor ID the first time it is launched and stores it in <a href="/platforms/ios-swift/api/tealium/#visitorid"><code>tealium.visitorId</code></a>. This value is the primary visitor ID included in each tracked event as the attribute <code>tealium_visitor_id</code>.</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 
@@ -7519,17 +7515,11 @@ var utag_data = {
 	}
 }
 </code></pre>
-
 <p>Provide additional visitor ID attributes to the data layer by sending them as variables in your tracking calls.</p>
-
 <p>If you are using Tealium AudienceStream, <code>visitorId</code> is the primary visitor ID associated with the visitor. Learn more about <a href="https://community.tealiumiq.com/t5/Getting-Started-with/Visitor-Stitching-Visitor-ID/ta-p/25790">configuring visitor IDs in AudienceStream</a>.</p>
-
 <h2 id="secondary-visitor-id">Secondary Visitor ID</h2>
-
 <p>Include secondary visitor ID attributes as needed by adding them to the persistent data storage.</p>
-
 <p>To add a known visitor ID, such as a customer ID:</p>
-
 <pre><code class="language-swift">func setKnownVisitorId(_ id: String) {
 	tealium?.dataLayer.add(key: &quot;customer_id&quot;, value: id, expiration: .forever)
 }
@@ -7541,7 +7531,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift/app-extensions/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/app-extensions/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"App Extensions "</title>
@@ -7560,7 +7550,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift/modules/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/modules/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7575,7 +7565,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7591,7 +7581,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  November 11, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

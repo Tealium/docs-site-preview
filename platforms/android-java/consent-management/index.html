@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -938,8 +938,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".android-java-overview">Overview</a>
       </li>
       
     
@@ -7505,26 +7505,15 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="usage">Usage</h2>
-
+  <h2 id="usage">Usage</h2>
 <p>Usage of the Consent Management module is recommended, as it is automatically included in the library and enabled in the native code upon initialization.</p>
-
 <p>Supported Platforms include: Android mobile, Android TV, and Android Wear.</p>
-
 <p><a href="/platforms/getting-started/consent-management/">Learn more</a> about Consent Management.</p>
-
 <h2 id="sample-app">Sample App</h2>
-
 <p>To help to familiarize yourself with our library, tracking methods, and best practice implementation, explore the Android Consent Management <a href="https://github.com/Tealium/tealium-android/tree/master/Samples/ConsentManagerDemoApp">sample app</a>.</p>
-
 <p>See the <a href="/platforms/android-java/api/consent-manager/">API Reference</a> for a list of Consent Management methods for Android.</p>
-
 <h2 id="enable">Enable</h2>
-
 <p>The following example enables Consent Management:</p>
-
 <pre><code class="language-java">//TealiumHelper.java
 import com.tealium.library.ConsentManager;
 
@@ -7538,11 +7527,8 @@ public static void initialize(Application application) {
 	final Tealium tealiumInstance = Tealium.createInstance(TEALIUM_MAIN, config);
 }
 </code></pre>
-
 <h2 id="data-layer">Data Layer</h2>
-
 <p>The following variables are transmitted with each tracking call while Consent Management is enabled:</p>
-
 <table>
 <thead>
 <tr>
@@ -7551,20 +7537,17 @@ public static void initialize(Application application) {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>policy</code></td>
 <td>The policy under which consent was collected</td>
 <td><code>gdpr</code></td>
 </tr>
-
 <tr>
 <td><code>consent_status</code></td>
 <td>The user&rsquo;s current consent status</td>
 <td><code>consented</code></td>
 </tr>
-
 <tr>
 <td><code>consent_categories</code></td>
 <td>The user&rsquo;s current categories they are consented to</td>
@@ -7572,41 +7555,28 @@ public static void initialize(Application application) {
 </tr>
 </tbody>
 </table>
-
 <h2 id="examples">Examples</h2>
-
 <h3 id="simple-opt-in">Simple Opt-in</h3>
-
 <p>The following example shows how to opt-in to Consent Management:</p>
-
 <pre><code class="language-java">tealiumInstance.getConsentManager()
       .setUserConsentStatus(ConsentManager.ConsentStatus.CONSENTED);
 </code></pre>
-
 <h3 id="group-opt-in">Group Opt-in</h3>
-
 <p>The following example shows a category-based consent model, where tracking categories are grouped into a smaller number of higher-level categories, defined by you:</p>
-
 <pre><code class="language-java">tealiumInstance.getConsentManager()
      .setUserConsentStatusWithCategories(ConsentManager.ConsentStatus.CONSENTED,
           new String[] {ConsentManager.ConsentCategory.ANALYTICS});
 </code></pre>
-
 <p>For examples, you may choose to group the Tealium consent categories <code>&quot;big_data&quot;</code>, <code>&quot;analytics&quot;</code>, and <code>&quot;monitoring&quot;</code> under a single category called &ldquo;performance&rdquo;. This may be easier for the user than selecting from the full list of categories. You may choose to represent this in a slider interface, ranging from least-permissive to most permissive (all categories).</p>
-
-<p><img src="/images/platforms/android/consent-slider.gif" alt="consent-slider.gif" title="consent-slider.gif" /></p>
-
+<p><img src="/images/platforms/android/consent-slider.gif" alt="consent-slider.gif" title="consent-slider.gif"></p>
 <h3 id="category-based-opt-in">Category-based Opt-in</h3>
-
 <p>The following example shows a category-based consent model where the user must explicitly select each category from the full list of categories. The default is <code>UNKNOWN</code>, which queues hits until the user provides their consent. If the user consents to any categories, events are de-queued, and the consent category data is appended to each tracking call.</p>
-
 <pre><code class="language-java">tealiumInstance.getConsentManager()
    .setUserConsentStatusWithCategories(ConsentManager.ConsentStatus.CONSENTED,
        new String[] {ConsentManager.ConsentCategory.ANALYTICS,
                      ConsentManager.ConsentCategory.PERSONALIZATION});
 </code></pre>
-
-<p><img src="/images/platforms/android/consent-categories.gif" alt="consent-categories.gif" title="consent-categories.gif" /></p>
+<p><img src="/images/platforms/android/consent-categories.gif" alt="consent-categories.gif" title="consent-categories.gif"></p>
 
 </div>
 
@@ -7614,7 +7584,7 @@ public static void initialize(Application application) {
 	<div class="di">
 		
 		
-		<a href="/platforms/android-java/data-management/"
+		<a href="https://docs-preview.tealium.com/platforms/android-java/data-management/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Data Management "</title>
@@ -7633,7 +7603,7 @@ public static void initialize(Application application) {
 	<div class="fr">
 
 		
-		<a href="/platforms/android-java/tv/"
+		<a href="https://docs-preview.tealium.com/platforms/android-java/tv/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7648,7 +7618,7 @@ public static void initialize(Application application) {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7664,7 +7634,7 @@ public static void initialize(Application application) {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 30, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

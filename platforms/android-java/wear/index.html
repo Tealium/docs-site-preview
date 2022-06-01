@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -938,8 +938,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".android-java-overview">Overview</a>
       </li>
       
     
@@ -7505,82 +7505,66 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li>AndroidWear app with <a href="/platforms/android-java/">Tealium for Android</a></li>
 <li>Android (KitKat/4.4+ / API Level 20+ for Android Wear)</li>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
-
 <h2 id="api-reference">API Reference</h2>
-
 <p>For the complete reference of classes and methods for Android Wear, see the <a href="http://tealium.github.io/tealium-android/com/tealium/wear/package-frame.html"><code>com.tealium.wear</code></a> package in the Tealium SDK for Android API.</p>
-
 <h2 id="sample-app">Sample App</h2>
-
 <p>To help familiarize yourself with the Tealium library, tracking methods, and best practice implementation, it is recommended to download the Tealium for AndroidWear <a href="https://github.com/Tealium/tealium-android/tree/master/Modules/AndroidWear/WearSample">sample app</a>.</p>
-
 <p>To abstract the Tealium implementation from the rest of your app, we recommend the use of the <a href="https://github.com/Tealium/tealium-android/blob/master/Samples/BlankApp%2BTealium/app/src/main/java/com/tealium/blankapp/helper/TealiumHelper.java">sample helper class</a>. This gives you a single entry point from which to initialize and make tracking calls. It also allows you to update the code in your helper file and not in every single Java file.</p>
-
 <h2 id="install">Install</h2>
-
 <p>Install the Tealium library for your Android Wear app:</p>
-
 <ol>
-<li><p>Download and install <a href="https://github.com/Tealium/tealium-android/tree/master/Modules/AndroidWear">Tealium for Android Wear</a>.</p></li>
-
-<li><p>Add <code>tealium.mobile-5.x.x.aar</code> to your application&rsquo;s dependencies.
-<p class="note"><i class="fas fa-info-circle"></i>For non-wearable Android applications, no additional code is necessary.</p></p></li>
-
-<li><p>Create a subclass of the <code>Application</code> class, and add the <code>TealiumWear</code>&rsquo;s initialization code in the app&rsquo;s <code>onCreate()</code> method, as shown in the following example:</p>
-
+<li>
+<p>Download and install <a href="https://github.com/Tealium/tealium-android/tree/master/Modules/AndroidWear">Tealium for Android Wear</a>.</p>
+</li>
+<li>
+<p>Add <code>tealium.mobile-5.x.x.aar</code> to your application&rsquo;s dependencies.</p>
+</li>
+</ol>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>Create a subclass of the <code>Application</code> class, and add the <code>TealiumWear</code>&rsquo;s initialization code in the app&rsquo;s <code>onCreate()</code> method, as shown in the following example:</li>
+</ol>
 <pre><code class="language-java">public class WearApp extends Application {
 
-   // Instance name from main app
-   public static final String TEALIUM_MAIN = &quot;INSTANCE_NAME&quot;;
+       // Instance name from main app
+       public static final String TEALIUM_MAIN = &quot;INSTANCE_NAME&quot;;
 
-   @Override
-   public void onCreate() {
-     super.onCreate();
-     TealiumWear.createInstance(TEALIUM_MAIN,
-         TealiumWear.Config.create(this)
-         .setLogLevel(Log.VERBOSE));
-   }
+       @Override
+       public void onCreate() {
+         super.onCreate();
+         TealiumWear.createInstance(TEALIUM_MAIN,
+             TealiumWear.Config.create(this)
+             .setLogLevel(Log.VERBOSE));
+       }
 //...
 }
-</code></pre></li>
-
-<li><p>The value of <code>TEALIUM_MAIN</code> must match the instance name used in the initialization of the main application, as shown in the following example:</p>
-
+</code></pre>
+<ol start="4">
+<li>The value of <code>TEALIUM_MAIN</code> must match the instance name used in the initialization of the main application, as shown in the following example:</li>
+</ol>
 <pre><code class="language-java">// Main application initialization
 Tealium.createInstance(&quot;INSTANCE_NAME&quot;, config);
 
 // WearApp initialization
 public static final String TEALIUM_MAIN = &quot;INSTANCE_NAME&quot;;
-</code></pre></li>
-</ol>
-
+</code></pre>
 <h2 id="tracking">Tracking</h2>
-
 <h3 id="track-views">Track Views</h3>
-
 <p>Tracking on the wearable is similar to the handheld side. The only difference is in how to pass custom data to the tracking calls. The wearable side uses a <a href="https://developers.google.com/android/reference/com/google/android/gms/wearable/DataMap"><code>DataMap</code></a> object, rather than a <code>Map</code>:</p>
-
 <p>The <a href="/platforms/android-java/api/tealium/#trackview"><code>trackView()</code></a> method tracks screen views, as shown in the following example:</p>
-
 <pre><code class="language-java">final DataMap data = new DataMap();
 // ...
 TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
     .trackView(&quot;SCREEN_NAME&quot;, data);
 </code></pre>
-
 <h3 id="track-events">Track Events</h3>
-
 <p>The <a href="/platforms/android-java/api/tealium/#trackevent"><code>trackEvent()</code></a> method tracks non-view events, as shown in the following example:</p>
-
 <pre><code class="language-java">final DataMap data = new DataMap();
 // ...
 TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
@@ -7593,7 +7577,7 @@ TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
 	<div class="di">
 		
 		
-		<a href="/platforms/android-java/tv/"
+		<a href="https://docs-preview.tealium.com/platforms/android-java/tv/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Android TV "</title>
@@ -7612,7 +7596,7 @@ TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
 	<div class="fr">
 
 		
-		<a href="/platforms/android-java/release-notes/"
+		<a href="https://docs-preview.tealium.com/platforms/android-java/release-notes/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7627,7 +7611,7 @@ TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7643,7 +7627,7 @@ TealiumWear.getInstance(WearApp.TEALIUM_MAIN)
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 16, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

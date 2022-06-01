@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -3166,8 +3166,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-v1-overview">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="class-tealiumvolatiledata">Class: <code>TealiumVolatileData</code></h2>
-
+  <h2 id="class-tealiumvolatiledata">Class: <code>TealiumVolatileData</code></h2>
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumVolatileData</code> class.</p>
-
 <table>
 <thead>
 <tr>
@@ -7518,47 +7514,37 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>add()</code></td>
 <td>Add data to all dispatches for the remainder of an active session</td>
 </tr>
-
 <tr>
 <td><code>deleteAllData()</code></td>
 <td>Deletes all data in the volatile data store</td>
 </tr>
-
 <tr>
 <td><code>deleteData()</code></td>
 <td>Deletes data for a specific set of known keys from the volatile data store</td>
 </tr>
-
 <tr>
 <td><code>getData()</code></td>
 <td>Returns all volatile data previously set with the <code>add()</code> method</td>
 </tr>
-
 <tr>
 <td><code>resetSessionId()</code></td>
 <td>Reset the session ID for current session</td>
 </tr>
-
 <tr>
 <td><code>setSessionId()</code></td>
 <td>Override the existing session ID for current session</td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="add"><code>add()</code></h3>
-
 <p>Add data to all dispatches for the remainder of an active session.</p>
-
 <pre><code class="language-swift">tealium?.volatileData()?.add(data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7568,7 +7554,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7578,21 +7563,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="deletealldata"><code>deleteAllData()</code></h3>
-
 <p>Deletes all data in the volatile data store.</p>
-
 <pre><code class="language-swift">tealium?.volatileData()?.deleteAllData()
 </code></pre>
-
 <h3 id="deletedata"><code>deleteData()</code></h3>
-
 <p>Deletes data for a specific set of known keys from the volatile data store.</p>
-
 <pre><code class="language-swift">tealium?.volatileData()?.deleteData(forKeys)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7602,7 +7580,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>forKeys</code></td>
@@ -7612,14 +7589,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="getdata"><code>getData()</code></h3>
-
 <p>Returns all volatile data previously set with the <code>add()</code> method.</p>
-
 <pre><code class="language-swift">let data = tealium?.volatileData()?.getData()
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7627,7 +7600,6 @@ var utag_data = {
 <th>Return Type</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Volatile data as key-value pairs</td>
@@ -7635,21 +7607,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="resetsessionid"><code>resetSessionId()</code></h3>
-
 <p>Reset the session ID for current session.</p>
-
 <pre><code class="language-swift">tealium?.volatileData()?.resetSessionId()
 </code></pre>
-
 <h3 id="setsessionid"><code>setSessionId()</code></h3>
-
 <p>Override the existing session ID for current session.</p>
-
 <pre><code class="language-swift">tealium?.volatileData()?.setSessionId(sessionId)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7659,7 +7624,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>sessionId</code></td>
@@ -7676,7 +7640,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift-v1/api/tealium-persistent-data/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/api/tealium-persistent-data/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"TealiumPersistentData "</title>
@@ -7695,7 +7659,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift-v1/api/tealium/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/api/tealium/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7710,7 +7674,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7726,7 +7690,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 23, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

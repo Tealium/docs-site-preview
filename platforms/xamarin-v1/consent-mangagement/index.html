@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -5390,8 +5390,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/xamarin-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".xamarin-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/xamarin-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".xamarin-v1-overview">Overview</a>
       </li>
       
     
@@ -7505,29 +7505,18 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="usage">Usage</h2>
-
+  <h2 id="usage">Usage</h2>
 <p>Usage of this module is recommended, as it is automatically included in the library and enabled in the native code upon initialization. Android and iOS are both supported platforms.</p>
-
 <p><a href="/platforms/getting-started/consent-management/">Learn more</a> about Consent Management.</p>
-
 <h2 id="sample-app">Sample App</h2>
-
 <p>To help to familiarize yourself with our library, the tracking methods, and best practice implementation, download the Xamarin Consent Management <a href="https://github.com/Tealium/tealium-xamarin/tree/master/Samples/ExampleAppConsentMgr">sample app</a>.</p>
-
 <h2 id="enable">Enable</h2>
-
 <p>The Consent Management feature comes from the two native SDKs embedded into the DLLs named <code>Tealium.Platform.*.dlls</code>. The <code>Tealium.Common.dll</code> provides the following category and status enums to use:</p>
-
 <ul>
 <li><code>Tealium.ConsentManager.ConsentStatus</code></li>
 <li><code>Tealium.ConsentManager.ConsentCategory</code></li>
 </ul>
-
 <p>To enable Consent Management, simply pass the optional parameter in the constructor of <code>TealiumConfig</code>, or set it as a property as shown in the following example:</p>
-
 <pre><code class="language-csharp">TealiumConfig tealConfig = new TealiumConfig(
         TealiumConsts.INSTANCE_ID,
         TealiumConsts.ACCOUNT,
@@ -7544,13 +7533,9 @@ tealConfig.IsConsentManagerEnabled = true;
 // initialise your Tealium Instance:
 var tealium = instanceManager.CreateInstance(tealConfig);
 </code></pre>
-
 <h2 id="consent-status">Consent Status</h2>
-
 <p>As with the native SDKs for both Android and iOS, when Consent Management is enabled, new users are assumed to be in an unknown state. Tracking requests are queued up until the consent status has been opted-in or out, at which point events are sent or purged, respectively.</p>
-
 <p>Override the initial status through properties on the <code>TealiumConfig</code> object, as shown in the following example:</p>
-
 <pre><code class="language-csharp">// enable Consent Manager:
 tealConfig.IsConsentManagerEnabled = true;
 
@@ -7569,13 +7554,9 @@ tealConfig.InitialUserConsentCategories = new ConsentCategory[]{
         ConsentManager.ConsentCategory.Mobile
 };
 </code></pre>
-
 <h2 id="consent-selection">Consent Selection</h2>
-
 <p>Interact directly with Consent Management from the Tealium instance, through the <code>ConsentManager</code> property.</p>
-
 <p>If you need to update a user&rsquo;s consent selection, pass one of enum values available in the <code>ConsentManager.ConsentCategory</code> and <code>ConsentManager.ConsentStatus</code>, as shown in the following example:</p>
-
 <pre><code class="language-csharp">// if the user is in an Unknown state, then the following code triggers any queued events are sent after this:
 ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
 tealium.ConsentManager.UserConsentStatus = ConsentManager.ConsentStatus.Consented;
@@ -7586,13 +7567,9 @@ tealium.ConsentManager.UserConsentStatusWithCategories(ConsentManager.ConsentSta
     ConsentManager.ConsentCategory.Analytics
 });
 </code></pre>
-
 <h2 id="resetting">Resetting</h2>
-
 <p>Additional options are available to reset the currently selected consent preferences. This reverts the user back to an <code>Unknown</code> status so that subsequent events begin being queued again.</p>
-
 <p>To completely disable, disable it on the <code>TealiumConfig</code> object, as shown in the following example:</p>
-
 <pre><code class="language-csharp">ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
 tealium.ConsentManager.ResetUserConsentPreferences();
 </code></pre>
@@ -7603,7 +7580,7 @@ tealium.ConsentManager.ResetUserConsentPreferences();
 	<div class="di">
 		
 		
-		<a href="/platforms/xamarin-v1/data-management/"
+		<a href="https://docs-preview.tealium.com/platforms/xamarin-v1/data-management/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Data Management "</title>
@@ -7622,7 +7599,7 @@ tealium.ConsentManager.ResetUserConsentPreferences();
 	<div class="fr">
 
 		
-		<a href="/platforms/xamarin-v1/release-notes/"
+		<a href="https://docs-preview.tealium.com/platforms/xamarin-v1/release-notes/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7637,7 +7614,7 @@ tealium.ConsentManager.ResetUserConsentPreferences();
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7653,7 +7630,7 @@ tealium.ConsentManager.ResetUserConsentPreferences();
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  December 15, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

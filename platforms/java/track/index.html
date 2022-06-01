@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -6964,8 +6964,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/java/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="track-views">Track Views</h2>
-
+  <h2 id="track-views">Track Views</h2>
 <p>Track views with the <a href="/platforms/java/api/#track"><code>track()</code></a> method, as shown in the following examples:</p>
-
 <pre><code class="language-java">// Set event attributes
 Udo data = new Udo();
 data.put(&quot;KEY&quot;, &quot;VALUE&quot;);
@@ -7524,18 +7520,12 @@ DispatchCallBack callback = new DispatchCallBack() {
 }
 tealium.track(&quot;EVENT_NAME&quot;, data, callback);
 </code></pre>
-
 <p>The following example tracks a page view:</p>
-
 <pre><code class="language-java">tealium.track(&quot;SCREEN_VIEW&quot;, data, callback);
 </code></pre>
-
 <p>The data and callback arguments are optional.</p>
-
 <h2 id="track-events">Track Events</h2>
-
 <p>Track events with the same <a href="/platforms/java/api/#track"><code>track()</code></a> method used to track views, as shown in the following example:</p>
-
 <pre><code class="language-java">// Set event attributes
 Udo data = new Udo();
 data.put(&quot;KEY&quot;, &quot;VALUE&quot;);
@@ -7549,9 +7539,7 @@ DispatchCallBack callback = new DispatchCallBack() {
 }
 tealium.track(&quot;EVENT_NAME&quot;, data, callback);
 </code></pre>
-
 <p>The following example tracks a user login:</p>
-
 <pre><code class="language-java">// Event attributes
 Udo data = new Udo();
 data.put(&quot;user_id&quot;, &quot;0123456789&quot;);
@@ -7565,7 +7553,6 @@ DispatchCallBack callBack = new DispatchCallBack(){
 }
 tealium.track(&quot;user_login&quot;, data, callback);
 </code></pre>
-
 <p>The data and callback arguments are optional.</p>
 
 </div>
@@ -7574,7 +7561,7 @@ tealium.track(&quot;user_login&quot;, data, callback);
 	<div class="di">
 		
 		
-		<a href="/platforms/java/install/"
+		<a href="https://docs-preview.tealium.com/platforms/java/install/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Install "</title>
@@ -7593,7 +7580,7 @@ tealium.track(&quot;user_login&quot;, data, callback);
 	<div class="fr">
 
 		
-		<a href="/platforms/java/api/"
+		<a href="https://docs-preview.tealium.com/platforms/java/api/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7608,7 +7595,7 @@ tealium.track(&quot;user_login&quot;, data, callback);
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7624,7 +7611,7 @@ tealium.track(&quot;user_login&quot;, data, callback);
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  October 29, 2019 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

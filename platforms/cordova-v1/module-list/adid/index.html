@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -2150,8 +2150,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/cordova-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".cordova-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/cordova-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".cordova-v1-overview">Overview</a>
       </li>
       
     
@@ -7481,7 +7481,7 @@ var utag_data = {
   
     
       <a href="/platforms/cordova-v1/module-list/" class="f6 fw8 mb0 link mid-gray dim mr3">
-        CORDOVA V1/MODULE LIST
+        CORDOVA V1 MODULE LIST
       </a>
     
   
@@ -7505,76 +7505,60 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="install">Install</h2>
-
+  <h2 id="install">Install</h2>
 <p>To install the Ad Identifier module:</p>
-
 <ol>
-<li><p>Navigate to your Cordova app&rsquo;s directory in a terminal window</p></li>
-
-<li><p>Run the following command:</p>
-
+<li>
+<p>Navigate to your Cordova app&rsquo;s directory in a terminal window</p>
+</li>
+<li>
+<p>Run the following command:</p>
+</li>
+</ol>
 <pre><code class="language-bash">cordova plugin add tealium-cordova-adidentifier
-</code></pre></li>
-</ol>
-
-<p class="note"><i class="fas fa-info-circle"></i>The Ad Identifier module has a dependency on the Google Play Services Ads module. Add your <a href="https://developers.google.com/admob/android/quick-start">AdMob App ID</a> to your app&rsquo;s <code>AndroidManifest.xml</code> file to prevent the app from crashing during startup.</p>
-
+</code></pre>
+<!-- raw HTML omitted -->
 <h2 id="initialize">Initialize</h2>
-
 <p>To initialize the Ad Identifier module:</p>
-
 <ol>
-<li><p>Edit the JavaScript file, where you instantiate the main Tealium plugin, after calling <code>tealium.init</code>.</p></li>
-
-<li><p>Add the following code:</p>
-
-<pre><code class="language-javascript">function tealiumInit(account, profile, environment, instance){
-var ai;
-tealium.init({...});
- // check if installreferrer is installed and available
-
-ai = window.tealiumAdIdentifier;
-if (ai) {
-    ai.setPersistent(instance);
-}
-}
-</code></pre></li>
+<li>
+<p>Edit the JavaScript file, where you instantiate the main Tealium plugin, after calling <code>tealium.init</code>.</p>
+</li>
+<li>
+<p>Add the following code:</p>
+</li>
 </ol>
+<pre><code class="language-javascript">function tealiumInit(account, profile, environment, instance){
+    var ai;
+    tealium.init({...});
+     // check if installreferrer is installed and available
 
+    ai = window.tealiumAdIdentifier;
+    if (ai) {
+        ai.setPersistent(instance);
+    }
+}
+</code></pre>
 <h2 id="data-layer">Data Layer</h2>
-
 <p>The Ad Identifier module adds the following variables to the data layer:</p>
-
 <ul>
-<li><strong>Android</strong>
-
-<ul>
+<li><strong>Android</strong></li>
 <li><code>google_adid</code></li>
-</ul></li>
-<li><strong>iOS</strong>
-
-<ul>
+<li><strong>iOS</strong></li>
 <li><code>device_advertising_id</code></li>
 <li><code>device_advertising_vendor_id</code></li>
 <li><code>device_advertising_enabled</code></li>
-</ul></li>
 </ul>
-
 <h2 id="uninstall">Uninstall</h2>
-
 <p>To uninstall the Ad Identifier module:</p>
-
 <ol>
-<li><p>Run the following command:</p>
-
+<li>Run the following command:</li>
+</ol>
 <pre><code class="language-bash">cordova plugin rm tealium-cordova-adidentifier
-</code></pre></li>
-
-<li><p>Delete the Ad Identifier data from persistent storage:</p>
-
+</code></pre>
+<ol start="2">
+<li>Delete the Ad Identifier data from persistent storage:</li>
+</ol>
 <pre><code class="language-javascript">// android only
 tealium.removePersistent(&quot;google_adid&quot;, &lt;your tealium instance name&gt;);
 
@@ -7582,8 +7566,7 @@ tealium.removePersistent(&quot;google_adid&quot;, &lt;your tealium instance name
 tealium.removePersistent(&quot;device_advertising_id&quot;, &lt;your tealium instance name&gt;);
 tealium.removePersistent(&quot;device_advertising_vendor_id&quot;, &lt;your tealium instance name&gt;);
 tealium.removePersistent(&quot;device_advertising_enabled&quot;, &lt;your tealium instance name&gt;);
-</code></pre></li>
-</ol>
+</code></pre>
 
 </div>
 
@@ -7592,7 +7575,7 @@ tealium.removePersistent(&quot;device_advertising_enabled&quot;, &lt;your tealiu
 	<div class="fr">
 
 		
-		<a href="/platforms/cordova-v1/module-list/crash-reporter/"
+		<a href="https://docs-preview.tealium.com/platforms/cordova-v1/module-list/crash-reporter/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7607,7 +7590,7 @@ tealium.removePersistent(&quot;device_advertising_enabled&quot;, &lt;your tealiu
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7623,7 +7606,7 @@ tealium.removePersistent(&quot;device_advertising_enabled&quot;, &lt;your tealiu
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 7, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

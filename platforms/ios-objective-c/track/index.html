@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -2882,8 +2882,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-objective-c/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-objective-c-overview">Overview</a>
       </li>
       
     
@@ -7505,56 +7505,32 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="track-views">Track Views</h2>
-
+  <h2 id="track-views">Track Views</h2>
 <p>Track screen views with the <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackViewWithTitle:dataSources:"><code>trackViewWithTitle()</code></a> method. This is done in the <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621423-viewdidappear"><code>viewDidAppear()</code></a> method of any View Controller. This method accepts two parameters: the name of the screen and (optionally) contextual view data. </p>
-
-<p class="note"><i class="fas fa-info-circle"></i>The screen name value is set in the event attribute <code>screen_title</code>.</p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <pre><code class="language-swift">// Retrieve instance
-let tealium = Tealium.instance(forKey: &quot;INSTANCE&quot;)
-
-// Basic
-tealium?.trackViewWithTitle(&quot;SCREEN_NAME&quot;, dataSources: nil)
-
-// With optional data
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// Basic
+tealium?.trackViewWithTitle(&quot;SCREEN_NAME&quot;, dataSources: nil)</p>
+<p>// With optional data
 let optionalData = [&quot;KEY1&quot;: &quot;VALUE1&quot;]
-tealium?.trackView(withTitle: &quot;SCREEN_NAME&quot;, dataSources: optionalData)
-
-// With optional array data
+tealium?.trackView(withTitle: &quot;SCREEN_NAME&quot;, dataSources: optionalData)</p>
+<p>// With optional array data
 let optionalData = [&quot;KEY1&quot;: [&quot;STRING1&quot;, &quot;STRING2&quot;]]
 tealium?.trackView(withTitle: &quot;SCREEN_NAME&quot;, dataSources: optionalData)
-</code></pre>
-
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <pre><code class="language-obj-c">// Retrieve instance
-Tealium *tealium = [Tealium instanceForKey:@&quot;INSTANCE&quot;];
-
-// Basic
-[tealium trackViewWithTitle:@&quot;SCREEN_NAME&quot; dataSources:nil];
-
-// With optional data
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// Basic
+[tealium trackViewWithTitle:@&quot;SCREEN_NAME&quot; dataSources:nil];</p>
+<p>// With optional data
 NSDictionary *optionalData = @{@&quot;KEY1&quot; : @&quot;VALUE1&quot;};
-[tealium trackViewWithTitle:@&quot;SCREEN_NAME&quot; dataSources: optionalData];
-
-// With optional array data
+[tealium trackViewWithTitle:@&quot;SCREEN_NAME&quot; dataSources: optionalData];</p>
+<p>// With optional array data
 NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, &quot;STRING2&quot;]};
 [tealium trackViewWithTitle:@&quot;SCREEN_NAME&quot; dataSources: optionalData];
-</code></pre>
-
-</div>
-
-<p></div>
-</div></p>
-
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <table>
 <thead>
 <tr>
@@ -7565,7 +7541,6 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, &quot
 <th>iOS Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>title</code></td>
@@ -7574,7 +7549,6 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, &quot
 <td><code>&quot;screenName&quot;</code></td>
 <td><code>&quot;screenName&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>customDataSources</code></td>
 <td><code>[String]</code></td>
@@ -7584,55 +7558,32 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, &quot
 </tr>
 </tbody>
 </table>
-
 <h2 id="track-events">Track Events</h2>
-
 <p>Track non-view activity with the <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackEventWithTitle:dataSources:"><code>trackEventWithTitle()</code></a> method. This method accepts two parameters: an event name and (optionally) contextual event data.</p>
-
-<p class="note"><i class="fas fa-info-circle"></i>The event name value is populated in the event attribute named <code>tealium_event</code>.</p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <pre><code class="language-swift">// Retrieve instance
-let tealium = Tealium.instance(forKey: &quot;INSTANCE&quot;)
-
-// Basic
-tealium?.trackEvent(withTitle: &quot;EVENT_NAME&quot;, dataSources: nil)
-
-// With optional data
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// Basic
+tealium?.trackEvent(withTitle: &quot;EVENT_NAME&quot;, dataSources: nil)</p>
+<p>// With optional data
 let optionalData = [&quot;KEY1&quot;: &quot;VALUE1&quot;]
-tealium?.trackEvent(withTitle: &quot;EVENT_NAME&quot;, dataSources: optionalData)
-
-// With optional array data
+tealium?.trackEvent(withTitle: &quot;EVENT_NAME&quot;, dataSources: optionalData)</p>
+<p>// With optional array data
 let optionalData = [&quot;KEY1&quot;: [&quot;STRING1&quot;, &quot;STRING2&quot;]]
 tealium?.trackEvent(withTitle: &quot;EVENT_NAME&quot;, dataSources: optionalData)
-</code></pre>
-
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <pre><code class="language-obj-c">// Retrieve instance
-Tealium *tealium = [Tealium instanceForKey:@&quot;INSTANCE&quot;];
-
-// Basic
-[tealium trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:nil];
-
-// With optional data
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// Basic
+[tealium trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:nil];</p>
+<p>// With optional data
 NSDictionary *optionalData = @{@&quot;KEY1&quot; : @&quot;VALUE1&quot;};
-[tealium trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:optionalData];
-
-// With optional array data
+[tealium trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:optionalData];</p>
+<p>// With optional array data
 NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quot;STRING2&quot;]};
 [tealium trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:optionalData];
-</code></pre>
-
-</div>
-
-<p></div>
-</div></p>
-
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <table>
 <thead>
 <tr>
@@ -7643,7 +7594,6 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
 <th>iOS Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>title</code></td>
@@ -7652,7 +7602,6 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
 <td><code>&quot;someEvent&quot;</code></td>
 <td><code>&quot;someEvent&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>customDataSources</code></td>
 <td><code>[String]</code></td>
@@ -7669,7 +7618,7 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-objective-c/install/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-objective-c/install/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Install "</title>
@@ -7688,7 +7637,7 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-objective-c/data-layer/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-objective-c/data-layer/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7703,7 +7652,7 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7719,7 +7668,7 @@ NSDictionary *optionalData = @{@&quot;KEY1&quot; : @[@&quot;STRING1&quot;, @&quo
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  October 24, 2019 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

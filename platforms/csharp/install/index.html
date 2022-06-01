@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -6740,8 +6740,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/csharp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".csharp-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/csharp/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".csharp-overview">Overview</a>
       </li>
       
     
@@ -7505,41 +7505,32 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 <li>Visual Studio or other C# compliant IDE</li>
 </ul>
-
 <h2 id="sample-app">Sample App</h2>
-
 <p>To help to familiarize yourself with the Tealium library, the tracking methods, and best practice implementation, explore the Tealium for C# <a href="https://github.com/Tealium/tealium-c-sharp/tree/master/tealiumcsharp/Sample">sample app</a>.</p>
-
 <h2 id="install">Install</h2>
-
 <p>To install the Tealium library for C#:</p>
-
 <ol>
-<li><p>Download the code for the <a href="https://github.com/Tealium/tealium-c-sharp">Tealium C# Library</a>.</p></li>
-
-<li><p>Import the <code>TealiumCSharp</code> folder into your solution:</p>
-
-<pre><code class="language-csharp">using TealiumCSharp;
-</code></pre></li>
+<li>
+<p>Download the code for the <a href="https://github.com/Tealium/tealium-c-sharp">Tealium C# Library</a>.</p>
+</li>
+<li>
+<p>Import the <code>TealiumCSharp</code> folder into your solution:</p>
+</li>
 </ol>
-
+<pre><code class="language-csharp">using TealiumCSharp;
+</code></pre>
 <h2 id="initialize">Initialize</h2>
-
 <p>To initialize Tealium:</p>
-
 <ol>
-<li><p>Create instance of the <code>Config</code> class with the <a href="/platforms/csharp/api/#config"><code>Config()</code></a> constructor method, as shown in the following example:</p>
-
+<li>Create instance of the <code>Config</code> class with the <a href="/platforms/csharp/api/#config"><code>Config()</code></a> constructor method, as shown in the following example:</li>
+</ol>
 <pre><code class="language-csharp">Config config = new Config(
-        &quot;ACCOUNT&quot;,
+            &quot;ACCOUNT&quot;,
 			&quot;PROFILE&quot;,
 			&quot;ENVIRONMENT&quot;,
 			&quot;VISITOR_ID&quot;,
@@ -7550,16 +7541,13 @@ var utag_data = {
 			},
 			null,
 			null);
-</code></pre></li>
-
-<li><p>Create an instance of the <code>Tealium</code> class with the <a href="/platforms/csharp/api/#tealium"><code>Tealium()</code></a> constructor method, passing the <code>Config</code> instance as an argument, as shown in the following example:</p>
-
-<pre><code class="language-csharp">Tealium tealium = new Tealium(config);
-</code></pre></li>
+</code></pre>
+<ol start="2">
+<li>Create an instance of the <code>Tealium</code> class with the <a href="/platforms/csharp/api/#tealium"><code>Tealium()</code></a> constructor method, passing the <code>Config</code> instance as an argument, as shown in the following example:</li>
 </ol>
-
+<pre><code class="language-csharp">Tealium tealium = new Tealium(config);
+</code></pre>
 <h2 id="xamarin-mobile-applications">Xamarin Mobile Applications</h2>
-
 <p>If you are building a mobile application in Xamarin then make use of the <a href="/platforms/xamarin/">Xamarin integration</a> which has prebuilt bindings to our <a href="/platforms/ios-swift/">iOS</a> and <a href="/platforms/android-java/">Android</a> SDKs.</p>
 
 </div>
@@ -7569,7 +7557,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/csharp/track/"
+		<a href="https://docs-preview.tealium.com/platforms/csharp/track/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7584,7 +7572,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7600,7 +7588,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  February 20, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

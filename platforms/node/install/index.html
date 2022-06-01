@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -7086,8 +7086,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/node/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".node-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/node/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".node-overview">Overview</a>
       </li>
       
     
@@ -7505,49 +7505,38 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<p>The <code>tealium-collect</code> module for Node.js sends event data to the Tealium Customer Data Hub via the <a href="/platforms/http-api/">Tealium HTTP API</a>. Use the module in <a href="/getting-started/server-side/">server-side</a> applications or in a browser.</p>
-
+  <p>The <code>tealium-collect</code> module for Node.js sends event data to the Tealium Customer Data Hub via the <a href="/platforms/http-api/">Tealium HTTP API</a>. Use the module in <a href="/getting-started/server-side/">server-side</a> applications or in a browser.</p>
 <h2 id="requirements">Requirements</h2>
-
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
-
 <h2 id="install">Install</h2>
-
 <p>To install the Tealium Collect module for Node.js with NPM, run the following command:</p>
-
 <pre><code class="language-bash">npm install tealium-collect
 </code></pre>
-
 <p>The install automatically includes the dependency module <code>tealium</code>.</p>
-
 <h2 id="initialize">Initialize</h2>
-
 <ol>
-<li><p>Import the modules:</p>
-
+<li>Import the modules:</li>
+</ol>
 <pre><code class="language-javascript">var Tealium = require('tealium');
 var tealiumCollect = require('tealium-collect');
-</code></pre></li>
-
-<li><p>Initialize the <code>Tealium</code> instance with the <a href="/platforms/node/api/#tealium"><code>Tealium()</code></a> constructor method:</p>
-
+</code></pre>
+<ol start="2">
+<li>Initialize the <code>Tealium</code> instance with the <a href="/platforms/node/api/#tealium"><code>Tealium()</code></a> constructor method:</li>
+</ol>
 <pre><code class="language-javascript">var config = {
-  &quot;account&quot;    : &quot;ACCOUNT&quot;,
-  &quot;profile&quot;    : &quot;PROFILE&quot;,
-  &quot;datasource&quot; : &quot;DATASOURCE&quot;
+      &quot;account&quot;    : &quot;ACCOUNT&quot;,
+      &quot;profile&quot;    : &quot;PROFILE&quot;,
+      &quot;datasource&quot; : &quot;DATASOURCE&quot;
 };
 var tealium = Tealium(config);
-</code></pre></li>
-
-<li><p>Call the <a href="/platforms/node/api/#addmodule"><code>addModule()</code></a> method to add the Tealium Collect module :</p>
-
-<pre><code class="language-javascript">tealium.addModule(tealiumCollect);
-</code></pre></li>
+</code></pre>
+<ol start="3">
+<li>Call the <a href="/platforms/node/api/#addmodule"><code>addModule()</code></a> method to add the Tealium Collect module :</li>
 </ol>
+<pre><code class="language-javascript">tealium.addModule(tealiumCollect);
+</code></pre>
 
 </div>
 
@@ -7556,7 +7545,7 @@ var tealium = Tealium(config);
 	<div class="fr">
 
 		
-		<a href="/platforms/node/track/"
+		<a href="https://docs-preview.tealium.com/platforms/node/track/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7571,7 +7560,7 @@ var tealium = Tealium(config);
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7587,7 +7576,7 @@ var tealium = Tealium(config);
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  February 20, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

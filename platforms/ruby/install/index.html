@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -7392,8 +7392,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ruby/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ruby-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ruby/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ruby-overview">Overview</a>
       </li>
       
     
@@ -7505,36 +7505,26 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
-
 <h2 id="install">Install</h2>
-
 <p>To install Tealium library for Ruby, run the following command:</p>
-
 <pre><code class="language-bash">gem install tealium
 </code></pre>
-
 <h2 id="initialize">Initialize</h2>
-
 <p>To initialize Tealium:</p>
-
 <ol>
-<li><p>Import the Tealium package with the following command:</p>
-
-<pre><code class="language-ruby">require 'tealium'
-</code></pre></li>
-
-<li><p>Initialize the Tealium object with the <a href="/platforms/ruby/api/#initialize"><code>new()</code></a> method, as shown in the following example:</p>
-
-<pre><code class="language-ruby">teal = Tealium.new(&quot;ACCOUNT&quot;, &quot;PROFILE&quot;, &quot;DATASOURCE&quot;)
-</code></pre></li>
+<li>Import the Tealium package with the following command:</li>
 </ol>
+<pre><code class="language-ruby">require 'tealium'
+</code></pre>
+<ol start="2">
+<li>Initialize the Tealium object with the <a href="/platforms/ruby/api/#initialize"><code>new()</code></a> method, as shown in the following example:</li>
+</ol>
+<pre><code class="language-ruby">teal = Tealium.new(&quot;ACCOUNT&quot;, &quot;PROFILE&quot;, &quot;DATASOURCE&quot;)
+</code></pre>
 
 </div>
 
@@ -7543,7 +7533,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/ruby/track/"
+		<a href="https://docs-preview.tealium.com/platforms/ruby/track/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7558,7 +7548,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7574,7 +7564,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  August 23, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -6096,8 +6096,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/amp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/amp/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".amp-overview">Overview</a>
       </li>
       
     
@@ -7505,41 +7505,32 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
-
 <h2 id="install">Install</h2>
-
 <p>The <code>&lt;amp-analytics&gt;</code> element is an extended AMP component that captures analytic data from an AMP document. AMP analytics provides built-in configuration support for Tealium Collect with the type attribute <a href="https://amp.dev/documentation/guides-and-tutorials/optimize-and-measure/configure-analytics/analytics-vendors/#tealium-collect"><code>tealiumcollect</code></a>.</p>
-
 <p>To install Tealium Collect for AMP sites:</p>
-
 <ol>
-<li><p>Add the script to your page within the <code>&lt;head&gt;</code> tags of your HTML document:</p>
-
+<li>Add the script to your page within the <code>&lt;head&gt;</code> tags of your HTML document:</li>
+</ol>
 <pre><code class="language-html">&lt;script async custom-element=&quot;amp-analytics&quot; src=&quot;https://cdn.ampproject.org/v0/amp-analytics-0.1.js&quot;&gt;&lt;/script&gt;
-</code></pre></li>
-
-<li><p>To add a base installation of Tealium Collect to an AMP page, add the <code>&lt;amp-analytics&gt;</code> element within the <code>&lt;body&gt;</code> tags of your page as follows:</p>
-
+</code></pre>
+<ol start="2">
+<li>To add a base installation of Tealium Collect to an AMP page, add the <code>&lt;amp-analytics&gt;</code> element within the <code>&lt;body&gt;</code> tags of your page as follows:</li>
+</ol>
 <pre><code class="language-html">&lt;amp-analytics type=&quot;tealiumcollect&quot;&gt;
 &lt;script type=&quot;application/json&quot;&gt; {
-  &quot;vars&quot;: {
-    &quot;account&quot;: &quot;ACCOUNT&quot;,
-    &quot;profile&quot;: &quot;PROFILE&quot;,
-    &quot;datasource&quot;: &quot;DATASOURCE&quot;
-  }
+      &quot;vars&quot;: {
+        &quot;account&quot;: &quot;ACCOUNT&quot;,
+        &quot;profile&quot;: &quot;PROFILE&quot;,
+        &quot;datasource&quot;: &quot;DATASOURCE&quot;
+      }
 }     
 &lt;/script&gt;
 &lt;/amp-analytics&gt;
-</code></pre></li>
-</ol>
-
+</code></pre>
 <table>
 <thead>
 <tr>
@@ -7549,7 +7540,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7557,14 +7547,12 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code> </td>
 </tr>
-
 <tr>
 <td><code>datasource</code></td>
 <td><code>String</code></td>
@@ -7573,30 +7561,23 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h2 id="validation">Validation</h2>
-
 <p>To verify that that a web page satisfies the AMP HTML specifications, use the <a href="https://github.com/ampproject/amphtml#the-amp-validator">AMP Validator</a>.</p>
-
 <ol>
-<li><p>To turn the validator <em>on</em>, add <code>#development=1</code> to the end of an AMP page URL.</p></li>
-
-<li><p>See the browser console to view AMP validation errors, if any.</p></li>
+<li>
+<p>To turn the validator <em>on</em>, add <code>#development=1</code> to the end of an AMP page URL.</p>
+</li>
+<li>
+<p>See the browser console to view AMP validation errors, if any.</p>
+</li>
 </ol>
-
 <h2 id="hosted-json">Hosted JSON</h2>
-
 <p>If you prefer to install Tealium Collect for AMP with hosted JSON (rather than embedded directly in the page) use the <code>config</code> attribute to load your AMP configuration from a hosted location:</p>
-
 <pre><code class="language-html">&lt;amp-analytics type=&quot;tealiumcollect&quot; config=&quot;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/FILE.json&quot; /&gt;
 </code></pre>
-
 <p><a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/About-Hosted-Data-Layer/ta-p/17572#toc-hId--1015582959">Learn more</a> about serving remote JSON configuration files for use on an AMP site.</p>
-
 <h2 id="full-page-example">Full Page Example</h2>
-
 <p>This example demonstrates a complete AMP page. This configuration sends standard page view data to Tealium and track button clicks.</p>
-
 <pre><code class="language-html">&lt;!doctype html&gt;
 &lt;html amp lang=&quot;en&quot;&gt;
   &lt;head&gt;
@@ -7652,7 +7633,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/amp/track/"
+		<a href="https://docs-preview.tealium.com/platforms/amp/track/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7667,7 +7648,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7683,7 +7664,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 11, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

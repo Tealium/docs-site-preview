@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -4032,8 +4032,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-overview">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="class-tealiumconsentmanager">Class: <code>TealiumConsentManager</code></h2>
-
+  <h2 id="class-tealiumconsentmanager">Class: <code>TealiumConsentManager</code></h2>
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumConsentManager</code> class.</p>
-
 <table>
 <thead>
 <tr>
@@ -7518,47 +7514,36 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><a href="#onconsentexpiration"><code>onConsentExpiration</code></a></td>
 <td>Callback to execute once consent selections expire</td>
 </tr>
-
 <tr>
 <td><a href="#resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></a></td>
 <td>Clears all currently stored consent preferences in memory and in persistent storage</td>
 </tr>
-
 <tr>
 <td><a href="#userconsentstatus"><code>userConsentStatus</code></a></td>
 <td>Gets or sets the user&rsquo;s consent status</td>
 </tr>
-
 <tr>
 <td><a href="#userconsentcategories"><code>userConsentCategories</code></a></td>
 <td>Gets or sets the user&rsquo;s consent categories</td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="onconsentexpiration"><code>onConsentExpiration</code></h3>
-
 <p>Callback to execute once consent selections expire.</p>
-
 <pre><code class="language-swift">config.onConsentExpiration = {
    // display consent modal
 }
 </code></pre>
-
 <h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
-
 <p>Gets or sets the current consent status.</p>
-
 <pre><code class="language-swift">let categories = tealium.consentManager?.userConsentStatus
 tealium.consentManager?.userConsentStatus = .consented
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7566,7 +7551,6 @@ tealium.consentManager?.userConsentStatus = .consented
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>TealiumConsentStatus</code></td>
@@ -7574,22 +7558,15 @@ tealium.consentManager?.userConsentStatus = .consented
 </tr>
 </tbody>
 </table>
-
 <h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
-
 <p>Clears all currently stored consent preferences in memory and in persistent storage. Reverts to <code>&quot;unknown&quot;</code> consent state, with no categories.</p>
-
 <pre><code class="language-swift">resetUserConsentPreferences()
 </code></pre>
-
 <h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
-
 <p>Gets or sets all current consent categories.</p>
-
 <pre><code class="language-swift">let categories = tealium.consentManager?.userConsentCategories
 tealium.consentManager?.userConsentCategories = [.cdp]
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7597,7 +7574,6 @@ tealium.consentManager?.userConsentCategories = [.cdp]
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>TealiumConsentCategories</code></td>
@@ -7612,7 +7588,7 @@ tealium.consentManager?.userConsentCategories = [.cdp]
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift/api/tealium-consent-categories/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/api/tealium-consent-categories/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"TealiumConsentCategories "</title>
@@ -7631,7 +7607,7 @@ tealium.consentManager?.userConsentCategories = [.cdp]
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift/api/tealium-data-layer/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/api/tealium-data-layer/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7646,7 +7622,7 @@ tealium.consentManager?.userConsentCategories = [.cdp]
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7662,7 +7638,7 @@ tealium.consentManager?.userConsentCategories = [.cdp]
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  April 11, 2022 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

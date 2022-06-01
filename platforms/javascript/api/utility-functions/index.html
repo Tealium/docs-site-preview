@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -6382,8 +6382,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/javascript/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".javascript-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/javascript/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".javascript-overview">Overview</a>
       </li>
       
     
@@ -7505,10 +7505,7 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<p>The following <code>utag.ut</code> functions are available:</p>
-
+  <p>The following <code>utag.ut</code> functions are available:</p>
 <table>
 <thead>
 <tr>
@@ -7516,67 +7513,53 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>decode()</code></td>
 <td>Returns the decoded value of an encoded URI component or <code>String</code></td>
 </tr>
-
 <tr>
 <td><code>encode()</code></td>
 <td>Returns the encoded value of a decoded URI component or <code>String</code></td>
 </tr>
-
 <tr>
 <td><code>flatten()</code></td>
 <td>Returns the flattened value of an object argument</td>
 </tr>
-
 <tr>
 <td><code>hasOwn()</code></td>
 <td>Returns a boolean indicating whether the object has the specified property as its own property</td>
 </tr>
-
 <tr>
 <td><code>isEmpty()</code></td>
 <td>Returns a boolean <code>true</code> indicating the argument is empty, or boolean <code>false</code> if not empty</td>
 </tr>
-
 <tr>
 <td><code>isEmptyObject()</code></td>
 <td>Returns a boolean <code>true</code> indicating the object argument is empty, or boolean <code>false</code> if not empty</td>
 </tr>
-
 <tr>
 <td><code>loader()</code></td>
 <td>Tealium’s tag templates uses this function to load tags (loads iframes, images, scripts and allows for callbacks when a script is loaded)</td>
 </tr>
-
 <tr>
 <td><code>merge()</code></td>
 <td>Merges the properties from one object into another object</td>
 </tr>
-
 <tr>
 <td><code>pad()</code></td>
 <td>Pads a string by adding zeros</td>
 </tr>
-
 <tr>
 <td><code>typeOf()</code></td>
 <td>Returns a variables type as a string</td>
 </tr>
 </tbody>
 </table>
-
-<h2 id="utag-ut-decode"><code>utag.ut.decode()</code></h2>
-
+<h2 id="utagutdecode"><code>utag.ut.decode()</code></h2>
 <p>Returns the decoded value of an encoded URI component or <code>String</code>. This function wraps around the standard JavaScript functions <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent"><code>decodeURIComponent()</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/unescape"><code>unescape()</code></a>.</p>
-
 <pre><code class="language-js">utag.ut.decode(encodedStr)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7585,7 +7568,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>encodedStr</code></td>
@@ -7594,20 +7576,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">utag.ut.decode(&quot;Tealium%20Developer%20Docs!&quot;);     // &quot;Tealium Developer Docs!&quot;
 utag.ut.decode(&quot;https%3A%2F%2Fdocs.tealium.com&quot;);  // &quot;https://docs.tealium.com&quot;
 </code></pre>
-
-<h2 id="utag-ut-encode"><code>utag.ut.encode()</code></h2>
-
+<h2 id="utagutencode"><code>utag.ut.encode()</code></h2>
 <p>Returns the encoded value of a decoded URI component or string. This function wraps around the standard JavaScript functions <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent"><code>encodeURIComponent()</code></a> and <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/escape"><code>escape()</code></a>.</p>
-
 <pre><code class="language-js">utag.ut.encode(decodedStr)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7616,7 +7592,6 @@ utag.ut.decode(&quot;https%3A%2F%2Fdocs.tealium.com&quot;);  // &quot;https://do
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>decodedStr</code></td>
@@ -7625,20 +7600,14 @@ utag.ut.decode(&quot;https%3A%2F%2Fdocs.tealium.com&quot;);  // &quot;https://do
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">utag.ut.encode(&quot;Tealium Developer Docs!&quot;);   // &quot;Tealium%20Developer%20Docs!&quot;
 utag.ut.encode(&quot;https://docs.tealium.com&quot;);  // &quot;https%3A%2F%2Fdocs.tealium.com&quot;
 </code></pre>
-
-<h2 id="utag-ut-flatten"><code>utag.ut.flatten()</code></h2>
-
+<h2 id="utagutflatten"><code>utag.ut.flatten()</code></h2>
 <p>Returns the flattened value of an object argument, delimited by a <code>.</code> character. This function assumes that the object passed is only 1 level deep. The function stops when arriving at a string, array, boolean, or number (float or integer). Do not use this function for multilevel objects or arrays of objects.</p>
-
 <pre><code class="language-js">utag.ut.flatten(obj)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7647,7 +7616,6 @@ utag.ut.encode(&quot;https://docs.tealium.com&quot;);  // &quot;https%3A%2F%2Fdo
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>obj</code></td>
@@ -7656,20 +7624,14 @@ utag.ut.encode(&quot;https://docs.tealium.com&quot;);  // &quot;https%3A%2F%2Fdo
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-js">utag.ut.flatten({&quot;order_id&quot;: &quot;0123567&quot;, &quot;cart&quot;: {&quot;total_items&quot;: 3, &quot;total_amount&quot;: 123.45},&quot;order_tax&quot;: 9.97});
 // {order_id: &quot;0123567&quot;, cart.total_items: 3, cart.total_amount: 123.45, order_tax: 9.97}
 </code></pre>
-
-<h2 id="utag-ut-hasown"><code>utag.ut.hasOwn()</code></h2>
-
+<h2 id="utaguthasown"><code>utag.ut.hasOwn()</code></h2>
 <p>Returns a boolean indicating whether the object has the specified property as its own property (as opposed to inheriting it). The function performs a <code>null</code> check and wraps the JavaScript function <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty"><code>hasOwnProperty()</code></a>.</p>
-
 <pre><code class="language-js">utag.ut.hasOwn(obj)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7678,7 +7640,6 @@ utag.ut.encode(&quot;https://docs.tealium.com&quot;);  // &quot;https%3A%2F%2Fdo
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>obj</code></td>
@@ -7687,9 +7648,7 @@ utag.ut.encode(&quot;https://docs.tealium.com&quot;);  // &quot;https%3A%2F%2Fdo
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">var obj = new Object();     // Create an object
 obj.x = 3.14;               // Define a non-inherited local property
 
@@ -7697,11 +7656,8 @@ utag.ut.hasOwn(x);          // true - x is a local property of obj
 utag.ut.hasOwn(y);          // false - obj doesn't have a property y
 utag.ut.hasOwn(&quot;toString&quot;); // false - toString property is inherited from Object
 </code></pre>
-
-<h2 id="utag-ut-isempty"><code>utag.ut.isEmpty()</code></h2>
-
+<h2 id="utagutisempty"><code>utag.ut.isEmpty()</code></h2>
 <p>Returns a boolean <code>true</code> indicating the argument is empty, or boolean <code>false</code> if not empty.  It first determines the data type by using the <code>utag.ut.typeOf()</code> function, and returns the following based on the type:</p>
-
 <table>
 <thead>
 <tr>
@@ -7709,33 +7665,27 @@ utag.ut.hasOwn(&quot;toString&quot;); // false - toString property is inherited 
 <th>Return value description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>number</code></td>
 <td>Returns the value of the JavaScript function <code>isNaN()</code></td>
 </tr>
-
 <tr>
 <td><code>boolean</code></td>
 <td>Returns <code>false</code></td>
 </tr>
-
 <tr>
 <td><code>String</code></td>
 <td>Returns <code>true</code> if the string object&rsquo;s <code>.length</code> field is 0</td>
 </tr>
-
 <tr>
 <td><code>Object</code></td>
 <td>returns the value of the <code>utag.ut.isEmptyObject()</code> function</td>
 </tr>
 </tbody>
 </table>
-
 <pre><code class="language-js">utag.ut.isEmpty(arg)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7744,7 +7694,6 @@ utag.ut.hasOwn(&quot;toString&quot;); // false - toString property is inherited 
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>arg</code></td>
@@ -7753,9 +7702,7 @@ utag.ut.hasOwn(&quot;toString&quot;); // false - toString property is inherited 
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">utag.ut.isEmpty(5);         // false
 utag.ut.isEmpty(NaN);       // true
 utag.ut.isEmpty(undefined); // true
@@ -7765,14 +7712,10 @@ utag.ut.isEmpty(&quot;Tealium&quot;); // false
 utag.ut.isEmpty(&quot;&quot;);        // true
 
 </code></pre>
-
-<h2 id="utag-ut-isemptyobject"><code>utag.ut.isEmptyObject()</code></h2>
-
+<h2 id="utagutisemptyobject"><code>utag.ut.isEmptyObject()</code></h2>
 <p>Returns a boolean <code>true</code> indicating the object argument is empty, or boolean <code>false</code> if not empty.</p>
-
 <pre><code class="language-js">utag.ut.isEmptyObject(obj)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7781,7 +7724,6 @@ utag.ut.isEmpty(&quot;&quot;);        // true
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>obj</code></td>
@@ -7790,24 +7732,16 @@ utag.ut.isEmpty(&quot;&quot;);        // true
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">utag.ut.isEmptyObject({});              // true
 utag.ut.isEmptyObject({ foo: &quot;bar&quot; });  // false
 </code></pre>
-
-<h2 id="utag-ut-loader"><code>utag.ut.loader()</code></h2>
-
+<h2 id="utagutloader"><code>utag.ut.loader()</code></h2>
 <p>Tealium’s tag templates uses this function to load tags. It loads iframes, images, scripts and allows for callbacks when a script is loaded. The function only accepts one object argument.</p>
-
 <p>If a file is loaded as an iframe with the same ID as an existing iframe, the function removes the existing element before adding it to avoid impacting browser history and to maintain a cleaner DOM.</p>
-
 <pre><code class="language-js">utag.ut.loader(object)
 </code></pre>
-
 <p>The <code>object</code> has the following parameters:</p>
-
 <table>
 <thead>
 <tr>
@@ -7815,37 +7749,30 @@ utag.ut.isEmptyObject({ foo: &quot;bar&quot; });  // false
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>src</code></td>
 <td>URL of the file to load</td>
 </tr>
-
 <tr>
 <td><code>type</code></td>
 <td>The type of tag to load: &ldquo;iframe&rdquo;, &ldquo;img&rdquo;, or &ldquo;script&rdquo; (default)</td>
 </tr>
-
 <tr>
 <td><code>id</code></td>
 <td>(Optional) The element ID</td>
 </tr>
-
 <tr>
 <td><code>cb</code></td>
 <td>(Optional) A callback function</td>
 </tr>
-
 <tr>
 <td><code>attrs</code></td>
 <td>(Optional) An object of additional HTML element attributes</td>
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-js">utag.ut.loader({
   type: &quot;iframe&quot;,
   src: &quot;https://example.com/path/file.js&quot;,
@@ -7856,14 +7783,10 @@ utag.ut.isEmptyObject({ foo: &quot;bar&quot; });  // false
 // &lt;iframe id=&quot;teal-tag1&quot;  async=&quot;true&quot; height=&quot;1&quot; width=&quot;1&quot; style=&quot;display:none&quot;
 //   src=&quot;https://example.com/path/file.js&quot;&gt; &lt;/iframe&gt;
 </code></pre>
-
-<h2 id="utag-ut-merge"><code>utag.ut.merge()</code></h2>
-
+<h2 id="utagutmerge"><code>utag.ut.merge()</code></h2>
 <p>Merges the properties from one object into another object. This function does not handle multilevel objects. First flatten the objects before attempting to merge them. This function creates references if used on an array.</p>
-
 <pre><code class="language-js">utag.ut.merge(obj1, obj2, flag)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7872,20 +7795,17 @@ utag.ut.isEmptyObject({ foo: &quot;bar&quot; });  // false
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>obj1</code></td>
 <td>Object</td>
 <td>The first key-value pair object to merge</td>
 </tr>
-
 <tr>
 <td><code>obj2</code></td>
 <td>Object</td>
 <td>The second key-value pair object to merge</td>
 </tr>
-
 <tr>
 <td><code>overwrite</code></td>
 <td>number</td>
@@ -7893,9 +7813,7 @@ utag.ut.isEmptyObject({ foo: &quot;bar&quot; });  // false
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">foo = { &quot;key1&quot;:&quot;value1&quot;, &quot;key2&quot;:&quot;value2&quot; }
 bar = { &quot;key1&quot;:&quot;value4&quot;, &quot;key3&quot;:&quot;value3&quot; }
 utag.ut.merge(foo, bar, 0)
@@ -7908,14 +7826,10 @@ utag.ut.merge(foo, bar, 1)
 // foo: {key1: &quot;value4&quot;, key2: &quot;value2&quot;, key3: &quot;value3&quot;}
 // bar: {key1: &quot;value4&quot;, key3: &quot;value3&quot;}
 </code></pre>
-
-<h2 id="utag-ut-pad"><code>utag.ut.pad()</code></h2>
-
+<h2 id="utagutpad"><code>utag.ut.pad()</code></h2>
 <p>Returns a number padded with zeros (<code>0</code>).</p>
-
 <pre><code class="language-js">utag.ut.pad(a, b)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7924,14 +7838,12 @@ utag.ut.merge(foo, bar, 1)
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>a</code></td>
 <td><code>string</code></td>
 <td>The string that you want to pad</td>
 </tr>
-
 <tr>
 <td><code>b</code></td>
 <td><code>number</code></td>
@@ -7939,19 +7851,13 @@ utag.ut.merge(foo, bar, 1)
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-js">utag.ut.pad(&quot;Tealium&quot;, 10);   // 000Tealium
 </code></pre>
-
-<h2 id="utag-ut-typeof"><code>utag.ut.typeOf()</code></h2>
-
+<h2 id="utaguttypeof"><code>utag.ut.typeOf()</code></h2>
 <p>Returns an argument variables type as a <code>String</code>.</p>
-
 <pre><code class="language-js">utag.ut.typeOf(arg)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7960,7 +7866,6 @@ utag.ut.merge(foo, bar, 1)
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>arg</code></td>
@@ -7969,9 +7874,7 @@ utag.ut.merge(foo, bar, 1)
 </tr>
 </tbody>
 </table>
-
 <p>Examples:</p>
-
 <pre><code class="language-js">utag.ut.typeOf(5);         // &quot;number&quot;
 utag.ut.typeOf(&quot;Tealium&quot;); // &quot;string&quot;
 utag.ut.typeOf(imgObj);    // &quot;htmlimagelement&quot;
@@ -7987,7 +7890,7 @@ utag.ut.typeOf(obj.cb);    // &quot;function&quot;
 	<div class="di">
 		
 		
-		<a href="/platforms/javascript/api/tracking-functions/"
+		<a href="https://docs-preview.tealium.com/platforms/javascript/api/tracking-functions/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Tracking Functions "</title>
@@ -8003,7 +7906,7 @@ utag.ut.typeOf(obj.cb);    // &quot;function&quot;
 	</div>
 
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -8019,7 +7922,7 @@ utag.ut.typeOf(obj.cb);    // &quot;function&quot;
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 16, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -8044,16 +7947,16 @@ utag.ut.typeOf(obj.cb);    // &quot;function&quot;
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">Table of Contents</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#utag-ut-decode">utag.ut.decode()</a></li>
-              <li><a href="#utag-ut-encode">utag.ut.encode()</a></li>
-              <li><a href="#utag-ut-flatten">utag.ut.flatten()</a></li>
-              <li><a href="#utag-ut-hasown">utag.ut.hasOwn()</a></li>
-              <li><a href="#utag-ut-isempty">utag.ut.isEmpty()</a></li>
-              <li><a href="#utag-ut-isemptyobject">utag.ut.isEmptyObject()</a></li>
-              <li><a href="#utag-ut-loader">utag.ut.loader()</a></li>
-              <li><a href="#utag-ut-merge">utag.ut.merge()</a></li>
-              <li><a href="#utag-ut-pad">utag.ut.pad()</a></li>
-              <li><a href="#utag-ut-typeof">utag.ut.typeOf()</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#utagutdecode">utag.ut.decode()</a></li>
+              <li><a href="#utagutencode">utag.ut.encode()</a></li>
+              <li><a href="#utagutflatten">utag.ut.flatten()</a></li>
+              <li><a href="#utaguthasown">utag.ut.hasOwn()</a></li>
+              <li><a href="#utagutisempty">utag.ut.isEmpty()</a></li>
+              <li><a href="#utagutisemptyobject">utag.ut.isEmptyObject()</a></li>
+              <li><a href="#utagutloader">utag.ut.loader()</a></li>
+              <li><a href="#utagutmerge">utag.ut.merge()</a></li>
+              <li><a href="#utagutpad">utag.ut.pad()</a></li>
+              <li><a href="#utaguttypeof">utag.ut.typeOf()</a></li>
               </nav>
   </aside></div>
 

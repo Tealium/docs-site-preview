@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -3166,8 +3166,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-v1-overview">Overview</a>
       </li>
       
     
@@ -7485,7 +7485,7 @@ var utag_data = {
       </a>
     
       <a href="/platforms/ios-swift-v1/module-list/" class="f6 fw8 mb0 link mid-gray dim mr3">
-        IOS SWIFT V1/MODULE LIST
+        IOS SWIFT V1 MODULE LIST
       </a>
     
   
@@ -7509,70 +7509,48 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="usage">Usage</h2>
-
-<p class="note"><i class="fas fa-info-circle"></i>If you are using Swift 1.8.0+, this module is already included in the Core and you do not need to install it. For prior version, follow this guide to install the module.</p>
-
+  <h2 id="usage">Usage</h2>
+<!-- raw HTML omitted -->
 <p>The FileStorage module provides persistent data storage, backed by the <code>FileManager</code>/<code>NSKeyedArchiver</code> APIs. This module must be used in conjunction with the Swift Module: <a href="/platforms/ios-swift/module-list/persistent-data/">PersistentData</a>.</p>
-
 <p>If you are using the Persistent Data module (recommended), you must also use either the File Storage or Defaults Storage module to make the data persist across app launches. Whether you choose Defaults Storage over File Storage is personal choice. If both FileStorage and DefaultsStorage are included and enabled, FileStorage takes precedence and DefaultsStorage effectively becomes inactive.</p>
-
 <p>The following platforms are supported:</p>
-
 <ul>
 <li>iOS</li>
 <li>tvOS</li>
 <li>watchOS</li>
 <li>macOS</li>
 </ul>
-
 <h2 id="install">Install</h2>
-
 <p>Install the FileStorage module with CocoaPods or Carthage.</p>
-
 <h3 id="cocoapods">CocoaPods</h3>
-
 <p>To install the FileStorage module with CocoaPods, add the following pod to your Podfile:</p>
-
 <pre><code class="language-ruby">pod 'tealium-swift/TealiumFileStorage'
 </code></pre>
-
 <p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. It also bundles the PersistentData module. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
-
 <h3 id="carthage">Carthage</h3>
-
 <p>To install the FileStorage module with Carthage, following these steps:</p>
-
 <ol>
-<li><p>Go to the app target&rsquo;s General configuration page in Xcode.</p></li>
-
-<li><p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
-
-<pre><code class="language-ruby">TealiumFileStorage.framework
-</code></pre></li>
-
-<li><p>To access the PersistentData API on the <code>Tealium</code> instance, add the following required import statement to your project:</p>
-
-<pre><code class="language-swift">import TealiumFileStorage
-</code></pre></li>
+<li>
+<p>Go to the app target&rsquo;s General configuration page in Xcode.</p>
+</li>
+<li>
+<p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
+</li>
 </ol>
-
+<pre><code class="language-ruby">TealiumFileStorage.framework
+</code></pre>
+<ol start="3">
+<li>To access the PersistentData API on the <code>Tealium</code> instance, add the following required import statement to your project:</li>
+</ol>
+<pre><code class="language-swift">import TealiumFileStorage
+</code></pre>
 <p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. It also bundles the PersistentData module. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
-
 <h2 id="data-layer">Data Layer</h2>
-
 <p>No additional variables are introduced by this module.</p>
-
 <h2 id="api-reference">API Reference</h2>
-
 <p>There are no public API methods for this module. Successes and failures may be monitored through the Delegate module.</p>
-
 <h2 id="release-notes">Release Notes</h2>
-
 <p>Build 1.4.0</p>
-
 <ul>
 <li>Fixed bug that caused data not to be persisted to disk due to permissions error</li>
 </ul>
@@ -7583,7 +7561,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift-v1/module-list/dispatch-queue/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/dispatch-queue/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"DispatchQueue Module "</title>
@@ -7602,7 +7580,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift-v1/module-list/lifecycle/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/lifecycle/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7617,7 +7595,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7633,7 +7611,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  May 13, 2022 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

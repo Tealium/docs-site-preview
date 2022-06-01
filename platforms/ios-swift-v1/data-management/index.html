@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -3166,8 +3166,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-v1-overview">Overview</a>
       </li>
       
     
@@ -7505,27 +7505,16 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="usage">Usage</h2>
-
+  <h2 id="usage">Usage</h2>
 <p>Some variables are required on every event. To prevent having to manually add required variable data to every event, you have the option to store data as either volatile or persistent. Once data is stored, it will be appended to every event, including lifecycle events.</p>
-
 <p><a href="/platforms/getting-started/mobile-concepts/#data-management">Learn more</a> about Data Management.</p>
-
 <h2 id="persistent-data">Persistent Data</h2>
-
 <p>Persistent data values are stored on the device and preserved between launches of the app. The values are merged with any dictionary passed to a tracking call.</p>
-
 <p>The <a href="/platforms/ios-swift/api/tealium-persistent-data/#add"><code>persistentData().add()</code></a> method stores persistent data, as shown in the following example:</p>
-
 <pre><code class="language-swift">tealium?.persistentData()?.add(data: [&quot;KEY&quot;:&quot;VALUE&quot;])
 </code></pre>
-
 <p>To clear data for specific keys use the <a href="/platforms/ios-swift/api/tealium-persistent-data/#deletedata"><code>persistentData.deleteData()</code></a> method, or to delete all data use the <a href="/platforms/ios-swift/api/tealium-persistent-data/#deletealldata"><code>persistentData.deleteAllData()</code></a> method.</p>
-
 <p>The following example demonstrates these methods:</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 	// ...
@@ -7546,17 +7535,11 @@ var utag_data = {
 	}
 }
 </code></pre>
-
 <h2 id="volatile-data">Volatile Data</h2>
-
 <p>Volatile data values are merged into to each event, but discarded upon closing the app and restarting. The values are merged with any dictionary passed to a tracking call.</p>
-
 <p>The <a href="/platforms/ios-swift/api/tealium-volatile-data/#add"><code>volatileData().add()</code></a> method stores volatile data.</p>
-
 <p>To clear data for specific keys use the <a href="/platforms/ios-swift/api/tealium-volatile-data/#deletedata"><code>voltileData.deleteData()</code></a> method, or to delete all data use the <a href="/platforms/ios-swift/api/tealium-volatile-data/#deletealldata"><code>volatileData.deleteAllData()</code></a> method.</p>
-
 <p>The following example demonstrates these methods:</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 	// ...
@@ -7584,7 +7567,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift-v1/data-layer/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/data-layer/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Data Layer "</title>
@@ -7603,7 +7586,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift-v1/app-extensions/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift-v1/app-extensions/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7618,7 +7601,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7634,7 +7617,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  July 23, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

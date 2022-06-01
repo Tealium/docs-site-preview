@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -4032,8 +4032,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-swift-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-swift/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-swift-overview">Overview</a>
       </li>
       
     
@@ -7505,40 +7505,26 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="usage">Usage</h2>
-
+  <h2 id="usage">Usage</h2>
 <p>The Consent Manager module provides a simple API to help manage tracking consent at a granular level. It is supported on all Apple platforms (iOS, iPadOS, tvOS, watchOS, macOS, macOS Catalyst).</p>
-
 <p>Version 2.x of the Tealium Swift library introduces important changes to the Consent Manager module:</p>
-
 <ul>
 <li>Consent Manager disabled by default (see <a href="#full-consent">Full Consent</a> to enable)</li>
 <li>Consent Manager incorporated into the <code>TealiumCore</code> module</li>
 <li>CCPA support introduced</li>
 <li>Consent expiration options</li>
 </ul>
-
 <p>Learn more about <a href="/platforms/getting-started/consent-management/">Consent Management</a> and consent policies.</p>
-
 <h2 id="consent">Consent</h2>
-
 <h3 id="set-policy">Set Policy</h3>
-
 <p>Set the consent policy during initialization to one of the following:</p>
-
 <ul>
 <li><code>.gdpr</code></li>
 <li><code>.ccpa</code></li>
 </ul>
-
 <p>The Consent Management module is included with the core library and is not active until a consent policy is set.</p>
-
-<p class="note"><i class="fas fa-info-circle"></i>Only one policy may be enforced on a device at any given time.</p>
-
+<!-- raw HTML omitted -->
 <p>To set the GDPR policy:</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 
@@ -7549,18 +7535,12 @@ var utag_data = {
 	}
 }
 </code></pre>
-
 <p>To set consent logging events, which are generated whenever the consent status changes:</p>
-
 <pre><code class="language-swift">config.consentLoggingEnabled = true
 </code></pre>
-
 <h3 id="consent-expiration">Consent Expiration</h3>
-
 <p>Set the expiration time for the consent selections using the <a href="/platforms/ios-swift/api/tealium-config#consentexpiry"><code>consentExpiry</code></a> property.</p>
-
 <p>The following example sets the consent manager policy to GDPR and the expiration time to 90 days:</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 
@@ -7572,9 +7552,7 @@ var utag_data = {
 	}
 }
 </code></pre>
-
 <p>To trigger a callback once the consent has expired, define your callback on the <a href="/platforms/ios-swift/api/tealium-config/"><code>TealiumConfig</code></a> object:</p>
-
 <pre><code class="language-swift">class TealiumHelper {
 	var tealium: Tealium?
 
@@ -7589,65 +7567,47 @@ var utag_data = {
 	}
 }
 </code></pre>
-
 <p>Alternatively, define your callback on the <a href="/platforms/ios-swift/api/tealium-consent-manager/"><code>TealiumConsentManager</code></a> object:</p>
-
 <pre><code class="language-swift">tealium = Tealium(config: config) { [weak self] _ in
 	self?.tealium?.consentManager?.onConsentExpiration = {
 		print(&quot;Consent expired&quot;)
 	}
 }
 </code></pre>
-
 <h3 id="set-full-consent">Set Full Consent</h3>
-
 <p>To set full consent:</p>
-
 <pre><code class="language-swift">func grantFullConsent() {
 	self.tealium?.consentManager?.userConsentStatus = .consented
 }
 </code></pre>
-
 <h3 id="set-partial-consent-by-category">Set Partial Consent by Category</h3>
-
 <p>To set partial consent, specify a subset of consent categories. This implicitly sets <a href="/platforms/ios-swift/api/tealium-consent-manager/#userconsentstatus"><code>userConsentStatus</code></a> to <code>.consented</code>.</p>
-
 <pre><code class="language-swift">func grantPartialConsent(categories: [TealiumConsentCategories]) {
 	self.tealium?.consentManager?.userConsentCategories = categories
 }
 </code></pre>
-
 <p>Example usage: <code>grantPartialConsent([.analytics, .cdp])</code> (see parameter categories)</p>
-
 <h3 id="set-declined-consent">Set Declined Consent</h3>
-
 <p>To decline consent set the consent status:</p>
-
 <pre><code class="language-swift">func declineConsent() {
 	self.tealium?.consentManager?.userConsentStatus = .notConsented
 }
 </code></pre>
-
 <h2 id="custom-consent">Custom Consent</h2>
-
 <p>If your organization&rsquo;s consent requirements are not covered by our standard GDPR and CCPA policies, create a custom consent policy.</p>
-
 <ol>
-<li><p>Implement the <code>ConsentPolicy</code> protocol.</p>
-
-<pre><code class="language-swift">class SomeCustomConsentPolicy: ConsentPolicy {
-  // implement methods...
-}
-</code></pre></li>
-
-<li><p>Set the <a href="/platforms/ios-swift/api/tealium-config/#consentpolicy"><code>consentPolicy</code></a> property on the <code>TealiumConfig</code> object to your new custom policy by using the <code>TealiumConsentPolicy.custom</code> enum with an associated type.</p>
-
-<pre><code class="language-swift">config.consentPolicy = .custom(SomeCustomConsentPolicy.self)
-</code></pre></li>
+<li>Implement the <code>ConsentPolicy</code> protocol.</li>
 </ol>
-
+<pre><code class="language-swift">class SomeCustomConsentPolicy: ConsentPolicy {
+      // implement methods...
+}
+</code></pre>
+<ol start="2">
+<li>Set the <a href="/platforms/ios-swift/api/tealium-config/#consentpolicy"><code>consentPolicy</code></a> property on the <code>TealiumConfig</code> object to your new custom policy by using the <code>TealiumConsentPolicy.custom</code> enum with an associated type.</li>
+</ol>
+<pre><code class="language-swift">config.consentPolicy = .custom(SomeCustomConsentPolicy.self)
+</code></pre>
 <p>After the custom consent policy is implemented, override the following properties available on the <code>ConsentPolicy</code> as needed:</p>
-
 <table>
 <thead>
 <tr>
@@ -7656,56 +7616,47 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>name</code></td>
 <td><code>String</code></td>
 <td>Name of the <code>ConsentPolicy</code></td>
 </tr>
-
 <tr>
 <td><code>consentPolicyStatusInfo</code></td>
 <td><code>[String: Any]?</code></td>
 <td>Returns:<code>[String: Any]</code> of key value data to be added to the payload of each <code>TealiumDispatch</code></td>
 </tr>
-
 <tr>
 <td><code>consentTrackingEventName</code></td>
 <td><code>String</code></td>
 <td>Sets the event name (key: <code>tealium_event</code>) to use when logging a change in consent</td>
 </tr>
-
 <tr>
 <td><code>defaultConsentExpiry</code></td>
 <td><code>(time: Int, unit: TimeUnit)</code></td>
 <td>Sets the default expiry time for this <code>ConsentPolicy</code></td>
 </tr>
-
 <tr>
 <td><code>preferences</code></td>
 <td><code>UserConsentPreferences</code></td>
 <td>The current <code>UserConsentPreferences</code> that are automatically updated by the <code>ConsentManager</code> when the preferences change</td>
 </tr>
-
 <tr>
 <td><code>shouldLogConsentStatus</code></td>
 <td><code>Bool</code></td>
 <td>Sets whether or not logging of consent changes are required</td>
 </tr>
-
 <tr>
 <td><code>shouldUpdateConsentCookie</code></td>
 <td><code>Bool</code></td>
 <td>Sets whether or not to update a cookie in the TagManagement module&rsquo;s webview</td>
 </tr>
-
 <tr>
 <td><code>trackAction</code></td>
 <td><code>TealiumConsentTrackAction</code></td>
 <td>The tracking action based on the consent status (allowed, forbidden, queued)</td>
 </tr>
-
 <tr>
 <td><code>updateConsentCookieEventName</code></td>
 <td><code>String</code></td>
@@ -7713,9 +7664,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>The following is a full example of a custom consent policy:</p>
-
 <pre><code class="language-swift">class MyCustomConsentPolicy: ConsentPolicy {
 
     var preferences: UserConsentPreferences
@@ -7751,13 +7700,9 @@ config.consentPolicy = .custom(MyCustomConsentPolicy.self)
 /// ... other configuration options
 tealium = Tealium(config: config)
 </code></pre>
-
 <p>Create your custom policy that conforms to either the <code>GDPRConsentPolicyCreatable</code> or <code>CCPAConsentPolicyCreatable</code> protocol. After you create your custom policy and override what is desired, set <code>config.consentPolicy</code> to <code>.custom(YourCustomPolicy.self)</code>.</p>
-
 <h3 id="examples">Examples</h3>
-
 <p>Using the existing GDPR implementation, but overriding the name of the policy (overrides the <code>policy</code> value in the tracking payload):</p>
-
 <pre><code class="language-swift">class CustomGDPRConsentPolicy: GDPRConsentPolicyCreatable {
 
     var preferences: UserConsentPreferences
@@ -7774,9 +7719,7 @@ tealium = Tealium(config: config)
 
 config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 </code></pre>
-
 <p>Remapping the policy data keys to avoid Tealium EventStream fixed consent values:</p>
-
 <pre><code class="language-swift">class CustomGDPRConsentPolicy: GDPRConsentPolicyCreatable {
 
     var preferences: UserConsentPreferences
@@ -7793,9 +7736,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 
 }
 </code></pre>
-
 <p>Customize the consent logging event name that is sent:</p>
-
 <pre><code class="language-swift">class CustomGDPRConsentPolicy: GDPRConsentPolicyCreatable {
 
     var preferences: UserConsentPreferences
@@ -7817,9 +7758,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 
 }
 </code></pre>
-
 <p>Return third-party consent values instead, if <code>thirdPartyConsentProvider</code> is a reference to another consent provider:</p>
-
 <pre><code class="language-swift">class CustomGDPRConsentPolicy: GDPRConsentPolicyCreatable {
 
     let thirdPartyConsentProvider = ThirdPartyProvider()
@@ -7836,29 +7775,19 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 
 }
 </code></pre>
-
 <h2 id="use-cases">Use Cases</h2>
-
 <h3 id="full-consent">Full Consent</h3>
-
 <p>The following example shows how to give your users the option to consent or decline the consent policy.  Once the user has consented or declined, the rules for your selected consent policy takes effect. Learn more about <a href="/platforms/getting-started/consent-management/#consent-policies">consent policies</a>.</p>
-
 <pre><code class="language-swift">func setConsentStatusSimple(_ consented: Bool) {
     let status: TealiumConsentStatus = consented ? .consented: .notConsented
     self.tealium?.consentManager?.userConsentStatus = status
 }
 </code></pre>
-
 <p>Define and call the method in your Tealium Helper class when your app user consents to or declines tracking. If the user consents to tracking, the Consent Manager automatically includes them in all tracking categories.</p>
-
-<p><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6590i5637771715807D9A/image-size/original?v=1.0&amp;px=-1" alt="Simple Consent" title="Simple Consent" /></p>
-
+<p><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6590i5637771715807D9A/image-size/original?v=1.0&amp;px=-1" alt="Simple Consent" title="Simple Consent"></p>
 <h3 id="partial-consent-by-category-gdpr">Partial Consent by Category (GDPR)</h3>
-
 <p>In category-based consent, the user must explicitly select each category from the full list of categories.</p>
-
 <p>The following helper method calls methods from the <a href="/platforms/ios-swift/api/tealium-consent-manager/"><code>TealiumConsentManager</code></a> API:</p>
-
 <pre><code class="language-swift">func updateConsentPreferences(_ dict: [String: Any]) {
       var tealiumConsentCategories = [TealiumConsentCategories]()
         if let categories = dict[&quot;consentCategories&quot;] as? [String] {
@@ -7871,21 +7800,15 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
     }
 }
 </code></pre>
-
 <p>To update a list of categories:</p>
-
 <pre><code class="language-swift">func setUserConsentPreferences(_ categories: [String]){
 	let settingsDict: [String: Any] = [&quot;consentStatus&quot;: &quot;consented&quot;, &quot;consentCategories&quot;: categories]
 	updateConsentPreferences(settingsDict)
 }
 </code></pre>
-
 <h4 id="category-groups-gdpr">Category Groups (GDPR)</h4>
-
 <p>In a category-based consent model, tracking categories are grouped into a smaller number of higher-level categories, defined by the customer.</p>
-
 <p>For example, you may choose to group the Tealium consent categories <code>&quot;big_data&quot;</code>, <code>&quot;analytics&quot;</code>, and <code>&quot;monitoring&quot;</code> under a single category called <code>&quot;performance&quot;</code>. This may be easier for the user than selecting from the full list of categories. You may choose to represent this in a slider interface, ranging from least-permissive to most-permissive (all categories).</p>
-
 <pre><code class="language-swift">func updateConsentPreferences(_ dict: [String: Any]) {
       var tealiumConsentCategories = [TealiumConsentCategories]()
         if let categories = dict[&quot;consentCategories&quot;] as? [String] {
@@ -7898,9 +7821,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
     }
 }
 </code></pre>
-
 <p>The following helper function defines groups of categories and sets the users consent preferences:</p>
-
 <pre><code class="language-swift">func setUserConsentPreferences(){
 	let consentGroups = [&quot;Off&quot; : [],
 	        &quot;Performance&quot;: [&quot;analytics&quot;, &quot;monitoring&quot;, &quot;big_data&quot;, &quot;mobile&quot;, &quot;crm&quot;],
@@ -7916,14 +7837,10 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 	}
 }
 </code></pre>
-
-<p><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6589iADA6E801B2A3EC85/image-size/original?v=1.0&amp;px=-1" alt="grouped-gif.gif" title="grouped-gif.gif" /></p>
-
+<p><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6589iADA6E801B2A3EC85/image-size/original?v=1.0&amp;px=-1" alt="grouped-gif.gif" title="grouped-gif.gif"></p>
 <h2 id="sample-app">Sample App</h2>
-
 <p>To help to familiarize yourself with our library, tracking methods, and best practice implementation, explore the Tealium for Swift <a href="https://github.com/Tealium/tealium-swift/tree/master/samples/ConsentManagerDemo">Consent Manager sample app</a>.</p>
-
-<p><a href="images/individual-gif.gif"><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6588iDEE8A2B2B83CB4B7/image-size/original?v=1.0&amp;px=-1" alt="Category-based" title="Category-based" /></a></p>
+<p><a href="images/individual-gif.gif"><img src="https://zjzhh79394.i.lithium.com/t5/image/serverpage/image-id/6588iDEE8A2B2B83CB4B7/image-size/original?v=1.0&amp;px=-1" alt="Category-based" title="Category-based"></a></p>
 
 </div>
 
@@ -7931,7 +7848,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-swift/data-layer/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/data-layer/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Data Layer "</title>
@@ -7950,7 +7867,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-swift/app-extensions/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-swift/app-extensions/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7965,7 +7882,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7981,7 +7898,7 @@ config.consentPolicy = .custom(CustomGDPRConsentPolicy.self)
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  May 11, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

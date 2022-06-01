@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -5728,8 +5728,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/getting-started-web/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".getting-started-web-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/getting-started-web/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".getting-started-web-overview">Overview</a>
       </li>
       
     
@@ -7505,10 +7505,7 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="data-layer-attributes">Data Layer Attributes</h2>
-
+  <h2 id="data-layer-attributes">Data Layer Attributes</h2>
 <table>
 <thead>
 <tr>
@@ -7518,7 +7515,6 @@ var utag_data = {
 <th>Type</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>avg_room_rate</code></td>
@@ -7526,665 +7522,570 @@ var utag_data = {
 <td><code>[&quot;100.25&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>cancellation_id</code></td>
 <td>ID given when reservation is cancelled</td>
 <td><code>12254875</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>check_in</code></td>
 <td>User&rsquo;s date of arrival</td>
 <td><code>02/18/2017</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>check_out</code></td>
 <td>User&rsquo;s date of departure</td>
 <td><code>02/24/2017</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>check_reservation</code></td>
 <td>Captures how guests access reservation (confirmation or information)</td>
 <td><code>information</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>currency</code></td>
 <td>Currency of rate amount</td>
 <td><code>USD</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_city</code></td>
 <td>Contains booker&rsquo;s city of residence</td>
 <td><code>San Diego</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_country</code></td>
 <td>Contains booker&rsquo;s country of residence</td>
 <td><code>USA</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_email</code></td>
 <td>Contains booker&rsquo;s email address</td>
 <td><code>example@example.com</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_first_name</code></td>
 <td>The first name of the booker</td>
 <td><code>Tealium</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_id_type</code></td>
 <td>Type of ID used to login to loyalty site email or loyalty id</td>
 <td><code>loyalty id</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_last_name</code></td>
 <td>The last name of the booker</td>
 <td><code>Tealium</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_postal_code</code></td>
 <td>Contains booker&rsquo;s postal code</td>
 <td><code>92121</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>customer_state</code></td>
 <td>Contains booker&rsquo;s state</td>
 <td><code>CA</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>days_till_checkin</code></td>
 <td>Number of days between today and check in date</td>
 <td><code>45</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>displayed_properties</code></td>
 <td>An array of property IDs of each and all properties listed on the Select Hotel page</td>
 <td><code>[&quot;345&quot;,&quot;4567&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>displayed_rate_amount</code></td>
 <td>The displayed rate amount on the Select Room page</td>
 <td><code>150.00</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>displayed_rate_amounts</code></td>
 <td>An array of rate amounts for each and all properties listed on the Select Hotel page</td>
 <td><code>[&quot;100.25&quot;,&quot;150.00&quot;,&quot;340.00&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>displayed_rate_codes</code></td>
 <td>An array of rate codes for each and all properties listed on the Select Hotel page</td>
 <td><code>[&quot;economy&quot;,&quot;economy&quot;,&quot;luxury&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>displayed_room_rates</code></td>
 <td>An array of the displayed rates grouped by room type on the Select Room page</td>
 <td><code>[&quot;340.00&quot;,&quot;500.00&quot;,&quot;650.00&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>displayed_room_types</code></td>
 <td>An array of the displayed room types on the Select Room page</td>
 <td><code>[&quot;2 Queen Beds&quot;,&quot;Ocean View&quot;,&quot;Ocean Front&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>error_message</code></td>
 <td>Any error text displayed to user</td>
 <td><code>Room no longer available</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>favorite_property_id</code></td>
 <td>Captures property ID that is &ldquo;favorited&rdquo;</td>
 <td><code>123</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>filter_amenities</code></td>
 <td>An array of the selections applied</td>
 <td><code>[&quot;pool&quot;,&quot;microwave&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>filter_distance</code></td>
 <td>filter distance from event</td>
 <td><code>20</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>filter_hotel_type</code></td>
 <td>An array of hotel types filtered by user</td>
 <td><code>[&quot;economy&quot;,&quot;luxury&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>filter_max_rate</code></td>
 <td>captures rate that is applied</td>
 <td><code>150</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>filter_rate_change</code></td>
 <td>filter changes</td>
 <td><code>AAA to 20% Off</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>filter_ta_rating</code></td>
 <td>An array of Travel Advisor ratings filtered by user</td>
 <td><code>[&quot;3&quot;,&quot;4&quot;,&quot;5&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>language_code</code></td>
 <td>Language Code</td>
 <td><code>us</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>link_category</code></td>
 <td>During click tracking events, the category of the element clicked</td>
 <td><code>Navigation</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>link_name</code></td>
 <td>During click tracking events, the name of the element clicked</td>
 <td><code>properties</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>login_status</code></td>
 <td>Is user logged in or logged out</td>
 <td><code>logged in</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>loyalty_id</code></td>
 <td>Loyalty membership number</td>
 <td><code>99568784521</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>loyalty_point_balance</code></td>
 <td>Current point balance for user&rsquo;s loyalty account</td>
 <td><code>1000</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>loyalty_tier</code></td>
 <td>Membership Status Level</td>
 <td><code>Silver</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>modify_stay</code></td>
 <td>Event tracking; set every time a stay is modified</td>
 <td><code>true</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>num_of_adults</code></td>
 <td>Total number of adults</td>
 <td><code>2</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>num_of_children</code></td>
 <td>Total number of children</td>
 <td><code>3</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>num_of_nights</code></td>
 <td>Total number of nights</td>
 <td><code>5</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>num_of_rooms</code></td>
 <td>Total number of rooms</td>
 <td><code>1</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>occupancy_detail</code></td>
 <td>An array of the total occupancy in each room as searched</td>
 <td><code>[&quot;4&quot;,&quot;2&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_cancellation_policy</code></td>
 <td>An array of the cancellation policy for each room in an order</td>
 <td><code>[&quot;24hours&quot;,&quot;5days&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_corp_id</code></td>
 <td>Corporate ID attached to an order, if any</td>
 <td><code>987646</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_discount_amount</code></td>
 <td>Contains the order-level discount amount</td>
 <td><code>100.00</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_iata</code></td>
 <td>International Air Transport Association number attached to an order (ie Travel Agent Number)</td>
 <td><code>646879</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_id</code></td>
 <td>Unique ID for an order, should only be populated on Order Confirmation page</td>
 <td><code>1234</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_payment_method</code></td>
 <td>Payment method</td>
 <td><code>visa</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_payment_type</code></td>
 <td>Standard revenue or points</td>
 <td><code>revenue</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_points_used</code></td>
 <td>An array of the total point amounts of each room in an order</td>
 <td><code>[&quot;1000&quot;,&quot;5000&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_postal_code</code></td>
 <td>Postal code of property booked</td>
 <td><code>00267</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_promo_code</code></td>
 <td>Promotional code attached to an order, if any</td>
 <td><code>SALE</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_rate_code</code></td>
 <td>An array of the rate code booked for each room in an order</td>
 <td><code>[&quot;AAA&quot;,&quot;&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_room_occupancy</code></td>
 <td>An array of the total occupancy in each room for an order</td>
 <td><code>[&quot;5&quot;,&quot;2&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_room_type</code></td>
 <td>An array of rooms booked for each room in order</td>
 <td><code>[&quot;double&quot;,&quot;ocean view&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>order_special_requests</code></td>
 <td>The free text entered in &ldquo;Special Requests&rdquo; field on Review &amp; Res page (by room)</td>
 <td><code>No Feathers</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_subtotal</code></td>
 <td>The total subtotal including any product or order level discounts, but excluding taxes and fees with only digits and decimal</td>
 <td><code>1000.00</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_tax_amount</code></td>
 <td>The total taxes and fees</td>
 <td><code>75.00</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_total</code></td>
 <td>The total amount of the order</td>
 <td><code>1175.00</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>order_total_occupancy</code></td>
 <td>Overall total occupancy for order at time of booking</td>
 <td><code>5</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>page_joined</code></td>
 <td>Page that guest joins loyalty - Page Name</td>
 <td><code>homepage</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>page_name</code></td>
 <td>Tealium variable to identify the page name</td>
 <td><code>homepage</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>page_type</code></td>
 <td>High Level page type such as grouping home, property, confirmation</td>
 <td><code>home</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>promo_registration_page</code></td>
 <td>Page where registration for promotion occurred</td>
 <td><code>offers</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>property_brand</code></td>
 <td>Name of the brand for the property</td>
 <td><code>[&quot;economy brand&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_city</code></td>
 <td>City the property is located in</td>
 <td><code>[&quot;Chula Vista&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_country</code></td>
 <td>Country the property is located in</td>
 <td><code>[&quot;USA&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_id</code></td>
 <td>An array of the property number</td>
 <td><code>[&quot;354498765467&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_name</code></td>
 <td>An array of the property name</td>
 <td><code>[&quot;hotel Chula Vista&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_position</code></td>
 <td>An array of the index of the property selected</td>
 <td><code>[&quot;1&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_postal_code</code></td>
 <td>An array of the Zip code for the property</td>
 <td><code>[&quot;92121&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>property_state</code></td>
 <td>An array of the State the property is located in</td>
 <td><code>[&quot;CA&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>proximity</code></td>
 <td>An array of the Distance between city center and property location in miles</td>
 <td><code>[&quot;24&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>registration_id</code></td>
 <td>ID entered by user to register for special offer or promo; email or loyalty ID</td>
 <td><code>example@example.com</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_city</code></td>
 <td>City of destination searched</td>
 <td><code>Chula Vista</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_country</code></td>
 <td>Country of destination searched</td>
 <td><code>USA</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_full</code></td>
 <td>Full description of destination searched as powered by Google</td>
 <td><code>Chula Vista, California, United States</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_rate</code></td>
 <td>Rate selected from the Select Rate drop down menu on booking widget</td>
 <td><code>Corporate</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_rate_value</code></td>
 <td>Value entered for promotion and corporate selection from the Select Rate drop down menu on booking widget</td>
 <td><code>Tealium</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_results</code></td>
 <td>Number of results returned by search</td>
 <td><code>22</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_state</code></td>
 <td>State of destination searched</td>
 <td><code>WA</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>search_type</code></td>
 <td>Type of destination such as airport, locality, national park as defined by Google</td>
 <td><code>airport</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>select_room_position</code></td>
 <td>Highest position on Select Room page where rate from Select Hotel page was displayed</td>
 <td><code>1</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>selected_rate_price</code></td>
 <td>An array rate price for room selected by user on Select Room page</td>
 <td><code>[&quot;100.00&quot;,&quot;150.00&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>selected_rate_type</code></td>
 <td>An array rate type for room selected by user on Select Room page</td>
 <td><code>[&quot;Best Rate&quot;,&quot;loyalty&quot;,&quot;AAA&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>selected_room_type</code></td>
 <td>An array room type for room selected by user on Select Room page</td>
 <td><code>[&quot;2 double beds&quot;,&quot;Ocean View&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>show_available</code></td>
 <td>Setting for Show Only Available Hotels</td>
 <td><code>true</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>site</code></td>
 <td>This should be the site user is on</td>
 <td><code>economy site</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>site_section</code></td>
 <td>The high-level sections of your site</td>
 <td><code>offers</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>social_channel</code></td>
 <td>Used with event to capture when information is shared on social media</td>
 <td><code>facebook</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>sort_by</code></td>
 <td>Sort By selection (distance, low to high, high to low)</td>
 <td><code>distance</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>sort_order</code></td>
 <td>An array of the room type, rate code, rate amount and currency presented on the Select Room page</td>
 <td><code>[&quot;room type&quot;,&quot;distance&quot;]</code></td>
 <td>Array</td>
 </tr>
-
 <tr>
 <td><code>video_action</code></td>
 <td>The action that is currently taking place with the video, play, playing, pause, stop, complete</td>
 <td><code>play</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>video_content_type</code></td>
 <td>Type of video viewed</td>
 <td><code>Property Video</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>video_name</code></td>
 <td>Name of video viewed</td>
 <td><code>Video Name</code></td>
 <td>String</td>
 </tr>
-
 <tr>
 <td><code>video_segments</code></td>
 <td>Percent of video viewed</td>
@@ -8193,11 +8094,8 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h2 id="page-tracking">Page Tracking</h2>
-
 <h3 id="home-page">Home Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8205,7 +8103,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8213,9 +8110,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
    &quot;currency&quot;         : &quot;USD&quot;,     
    &quot;customer_email&quot;   : &quot;example@example.com&quot;,     
@@ -8229,9 +8124,7 @@ var utag_data = {
    &quot;tealium_event&quot;    : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="select-hotel-page">Select Hotel Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8239,7 +8132,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8247,9 +8139,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
    &quot;check_in&quot;               : &quot;02/18/2017&quot;,     
    &quot;check_out&quot;              : &quot;02/24/2017&quot;,     
@@ -8292,9 +8182,7 @@ var utag_data = {
    &quot;tealium_event&quot;          : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="select-room-page">Select Room Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8302,7 +8190,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8310,9 +8197,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
    &quot;check_in&quot;              : &quot;02/18/2017&quot;,     
    &quot;check_out&quot;             : &quot;02/24/2017&quot;,     
@@ -8348,9 +8233,7 @@ var utag_data = {
    &quot;tealium_event&quot;         : &quot;page_view&quot;
  }
 </code></pre>
-
 <h3 id="review-reserve-page">Review Reserve Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8358,7 +8241,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8366,9 +8248,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{    
    &quot;check_in&quot;               : &quot;02/18/2017&quot;,     
    &quot;check_out&quot;              : &quot;02/24/2017&quot;,    
@@ -8402,9 +8282,7 @@ var utag_data = {
     &quot;tealium_event&quot;         : &quot;page_view&quot;
  }
 </code></pre>
-
 <h3 id="confirmation-page">Confirmation Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8412,7 +8290,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>purchase</code></td>
@@ -8420,9 +8297,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{  
    &quot;avg_room_rate&quot;             : [&quot;100.25&quot;],     
    &quot;check_in&quot;                  : &quot;02/18/2017&quot;,     
@@ -8481,9 +8356,7 @@ var utag_data = {
    &quot;tealium_event&quot;             : &quot;purchase&quot;
 }
 </code></pre>
-
 <h3 id="loyalty-page">Loyalty Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8491,7 +8364,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8499,9 +8371,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;currency&quot;              : &quot;USD&quot;,
     &quot;customer_email&quot;        : &quot;example@example.com&quot;,
@@ -8517,9 +8387,7 @@ var utag_data = {
     &quot;tealium_event&quot;         : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="offers-page">Offers Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8527,7 +8395,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8535,9 +8402,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;currency&quot;         : &quot;USD&quot;,
     &quot;customer_email&quot;   : &quot;example@example.com&quot;,
@@ -8551,9 +8416,7 @@ var utag_data = {
     &quot;tealium_event&quot;    : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="hotels-destinations-page">Hotels Destinations Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8561,7 +8424,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8569,9 +8431,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;check_in&quot;               : &quot;02/18/2017&quot;,
     &quot;check_out&quot;              : &quot;02/24/2017&quot;,
@@ -8614,9 +8474,7 @@ var utag_data = {
     &quot;tealium_event&quot;          : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="reservations-page">Reservations Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8624,7 +8482,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8632,9 +8489,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;cancellation_id&quot;   : &quot;12254875&quot;,
     &quot;check_reservation&quot; : &quot;information&quot;,
@@ -8650,9 +8505,7 @@ var utag_data = {
     &quot;tealium_event&quot;     : &quot;page_view&quot;
 }
 </code></pre>
-
 <h3 id="generic-page">Generic Page</h3>
-
 <table>
 <thead>
 <tr>
@@ -8660,7 +8513,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>page_view</code></td>
@@ -8668,9 +8520,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;currency&quot;         : &quot;USD&quot;,
     &quot;customer_email&quot;   : &quot;example@example.com&quot;,
@@ -8684,11 +8534,8 @@ var utag_data = {
     &quot;tealium_event&quot;    : &quot;page_view&quot;
 }
 </code></pre>
-
 <h2 id="event-tracking">Event Tracking</h2>
-
 <h3 id="add-favorite">Add Favorite</h3>
-
 <table>
 <thead>
 <tr>
@@ -8696,7 +8543,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>add_favorite</code></td>
@@ -8704,17 +8550,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;favorite_property_id&quot; : &quot;123&quot;,
     &quot;tealium_event&quot;        : &quot;add_favorite&quot;
 }
 </code></pre>
-
 <h3 id="button-selection">Button Selection</h3>
-
 <table>
 <thead>
 <tr>
@@ -8722,7 +8564,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>button_selection</code></td>
@@ -8730,9 +8571,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;selected_rate_price&quot; : [&quot;100.00&quot;,&quot;150.00&quot;],
     &quot;selected_rate_type&quot;  : [&quot;Best Rate&quot;,&quot;loyalty&quot;,&quot;AAA&quot;],
@@ -8740,9 +8579,7 @@ var utag_data = {
     &quot;tealium_event        : &quot;button_selection&quot;
 }
 </code></pre>
-
 <h3 id="cancellation">Cancellation</h3>
-
 <table>
 <thead>
 <tr>
@@ -8750,7 +8587,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td> <code>cancellation</code></td>
@@ -8758,18 +8594,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;cancellation_id&quot;           : &quot;12254875&quot;,
     &quot;order_cancellation_policy&quot; : [&quot;24hours&quot;,&quot;5days&quot;],
     &quot;tealium_event&quot;             : &quot;cancellation&quot;
 }
 </code></pre>
-
 <h3 id="check-reservation">Check Reservation</h3>
-
 <table>
 <thead>
 <tr>
@@ -8777,7 +8609,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td> <code>check_reservation</code></td>
@@ -8785,17 +8616,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;check_reservation&quot; : &quot;information&quot;,
     &quot;tealium_event&quot;     : &quot;check_reservation&quot;
 }
 </code></pre>
-
 <h3 id="email-signup">Email Signup</h3>
-
 <table>
 <thead>
 <tr>
@@ -8803,7 +8630,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>email_signup</code></td>
@@ -8811,17 +8637,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;customer_email&quot; : &quot;example@example.com&quot;,
     &quot;tealium_event&quot;  : &quot;email_signup&quot;
 }
 </code></pre>
-
 <h3 id="error-message">Error Message</h3>
-
 <table>
 <thead>
 <tr>
@@ -8829,7 +8651,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>error_message</code></td>
@@ -8837,17 +8658,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;error_message&quot; : &quot;Room no longer available&quot;,
     &quot;tealium_event  : &quot;error_message&quot;
 }
 </code></pre>
-
 <h3 id="form-submit">Form Submit</h3>
-
 <table>
 <thead>
 <tr>
@@ -8855,7 +8672,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>form_submit</code></td>
@@ -8863,9 +8679,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;filter_amenities&quot;   : [&quot;pool&quot;,&quot;microwave&quot;],
     &quot;filter_distance&quot;    : &quot;20&quot;,
@@ -8876,9 +8690,7 @@ var utag_data = {
     &quot;tealium_event&quot;      : &quot;form_submit&quot;
 }
 </code></pre>
-
 <h3 id="custom-click">Custom Click</h3>
-
 <table>
 <thead>
 <tr>
@@ -8886,7 +8698,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>custom_click</code></td>
@@ -8894,18 +8705,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;link_category&quot; : &quot;Navigation&quot;,
     &quot;link_name&quot;     : &quot;properties&quot;,
     &quot;tealium_event&quot; : &quot;custom_click&quot;
 }
 </code></pre>
-
 <h3 id="map-engagement">Map Engagement</h3>
-
 <table>
 <thead>
 <tr>
@@ -8913,7 +8720,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>map_engagement</code></td>
@@ -8921,18 +8727,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;link_category&quot; : &quot;Navigation&quot;,
     &quot;link_name&quot;     : &quot;properties&quot;,
     &quot;tealium_event&quot; : &quot;map_engagement&quot;
 }
 </code></pre>
-
 <h3 id="modify-stay">Modify Stay</h3>
-
 <table>
 <thead>
 <tr>
@@ -8940,7 +8742,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>modify_stay</code></td>
@@ -8948,9 +8749,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;modify_stay&quot;     : &quot;true&quot;,
     &quot;num_of_adults&quot;   : &quot;2&quot;,
@@ -8960,9 +8759,7 @@ var utag_data = {
     &quot;tealium_event&quot;   : &quot;modify_stay&quot;
 }
 </code></pre>
-
 <h3 id="register-offer">Register Offer</h3>
-
 <table>
 <thead>
 <tr>
@@ -8970,7 +8767,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>register_offer</code></td>
@@ -8978,9 +8774,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;page_joined&quot;             : &quot;homepage&quot;,
     &quot;promo_registration_page&quot; : &quot;offers&quot;,
@@ -8988,9 +8782,7 @@ var utag_data = {
     &quot;tealium_event&quot;           : &quot;register_offer&quot;
 }
 </code></pre>
-
 <h3 id="select-dropdown">Select Dropdown</h3>
-
 <table>
 <thead>
 <tr>
@@ -8998,7 +8790,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>select_dropdown</code></td>
@@ -9006,9 +8797,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;filter_amenities&quot;    : [&quot;pool&quot;,&quot;microwave&quot;],
     &quot;filter_distance&quot;     : &quot;20&quot;,
@@ -9035,9 +8824,7 @@ var utag_data = {
     &quot;tealium_event&quot;       : &quot;select_dropdown&quot;
 }
 </code></pre>
-
 <h3 id="select-room-position">Select Room Position</h3>
-
 <table>
 <thead>
 <tr>
@@ -9045,7 +8832,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>select_room_position</code></td>
@@ -9053,17 +8839,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{  
   &quot;select_room_position&quot; : &quot;1&quot;,     
   &quot;tealium_event&quot;        : &quot;select_room_position&quot;
 }
 </code></pre>
-
 <h3 id="social-click">Social Click</h3>
-
 <table>
 <thead>
 <tr>
@@ -9071,7 +8853,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>social_click</code></td>
@@ -9079,17 +8860,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;social_channel&quot; : &quot;facebook&quot;,
     &quot;tealium_event&quot;  : &quot;social_click&quot;
 }
 </code></pre>
-
 <h3 id="sort-order">Sort Order</h3>
-
 <table>
 <thead>
 <tr>
@@ -9097,7 +8874,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>sort_order</code></td>
@@ -9105,18 +8881,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;sort_by&quot;      : &quot;distance&quot;,
     &quot;sort_order&quot;   : [&quot;roomtype&quot;,&quot;distance&quot;],
     &quot;tealium_event : &quot;sort_order&quot;
 }
 </code></pre>
-
 <h3 id="user-login">User Login</h3>
-
 <table>
 <thead>
 <tr>
@@ -9124,7 +8896,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>user_login</code></td>
@@ -9132,18 +8903,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;customer_email&quot; : &quot;example@example.com&quot;,
     &quot;login_status&quot;   : &quot;logged in&quot;,
     &quot;tealium_event:  : &quot;user_login&quot;
 }
 </code></pre>
-
 <h3 id="user-logout">User Logout</h3>
-
 <table>
 <thead>
 <tr>
@@ -9151,7 +8918,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>user_logout</code></td>
@@ -9159,9 +8925,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;customer_email&quot;       : &quot;example@example.com&quot;,
     &quot;customer_first_name&quot;  : &quot;Tealium&quot;,
@@ -9173,9 +8937,7 @@ var utag_data = {
     &quot;tealium_event&quot;        : &quot;user_logout&quot;
 }
 </code></pre>
-
 <h3 id="user-register">User Register</h3>
-
 <table>
 <thead>
 <tr>
@@ -9183,7 +8945,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>user_register</code></td>
@@ -9191,18 +8952,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;customer_email&quot; : &quot;example@example.com&quot;
     &quot;page_joined&quot;    : &quot;homepage&quot;,
     &quot;tealium_event   : &quot;user_register&quot;
 }
 </code></pre>
-
 <h3 id="user-update">User Update</h3>
-
 <table>
 <thead>
 <tr>
@@ -9210,7 +8967,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>user_update</code></td>
@@ -9218,17 +8974,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;customer_email&quot; : &quot;example@example.com&quot;,
     &quot;tealium_event&quot;  : &quot;user_update&quot;
 }
 </code></pre>
-
 <h3 id="video">Video</h3>
-
 <table>
 <thead>
 <tr>
@@ -9236,7 +8988,6 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>video</code></td>
@@ -9244,9 +8995,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <p>Sample:</p>
-
 <pre><code class="language-javascript">{
     &quot;tealium_event&quot;      : &quot;video&quot;,
     &quot;video_action&quot;       : &quot;play&quot;,
@@ -9262,7 +9011,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/getting-started-web/data-layer/definitions/publisher/"
+		<a href="https://docs-preview.tealium.com/platforms/getting-started-web/data-layer/definitions/publisher/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Publisher "</title>
@@ -9281,7 +9030,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/getting-started-web/data-layer/definitions/travel/"
+		<a href="https://docs-preview.tealium.com/platforms/getting-started-web/data-layer/definitions/travel/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -9296,7 +9045,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -9312,7 +9061,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  May 10, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

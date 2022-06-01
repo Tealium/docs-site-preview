@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -2496,8 +2496,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/flutter-v1/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".flutter-v1-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/flutter-v1/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".flutter-v1-overview">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="class-tealium">Class: <code>Tealium</code></h2>
-
+  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
 <p>The following summarizes the commonly used methods of the Flutter <code>Tealium</code> class.</p>
-
 <table>
 <thead>
 <tr>
@@ -7518,132 +7514,105 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>addRemoteCommand()</code></td>
 <td>Adds a remote command to the remote command manager</td>
 </tr>
-
 <tr>
 <td><code>addRemoteCommandForInstance()</code></td>
 <td>Adds a remote command to the remote command manager, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>getPersistentData()</code></td>
 <td>Gets persistent data</td>
 </tr>
-
 <tr>
 <td><code>getPersistentDataForInstance()</code></td>
 <td>Gets persistent data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>getVolatileData()</code></td>
 <td>Gets volatile data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>getVolatileDataForInstance()</code></td>
 <td>Gets volatile data</td>
 </tr>
-
 <tr>
 <td><code>initialize()</code></td>
 <td>Initializes the Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>initializeCustom()</code></td>
 <td>Initializes the Tealium instance with custom options</td>
 </tr>
-
 <tr>
 <td><code>initializeWithConsentManager()</code></td>
 <td>Initializes the Tealium instance and enables Consent Management</td>
 </tr>
-
 <tr>
 <td><code>removePersistentData()</code></td>
 <td>Removes persistent data</td>
 </tr>
-
 <tr>
 <td><code>removePersistentDataForInstance()</code></td>
 <td>Removes persistent data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>removeRemoteCommand()</code></td>
 <td>Removes a remote command from the remote command manager</td>
 </tr>
-
 <tr>
 <td><code>removeRemoteCommandForInstanceName()</code></td>
 <td>Removes a remote command from the remote command manager, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>removeVolatileData()</code></td>
 <td>Removes volatile data</td>
 </tr>
-
 <tr>
 <td><code>removeVolatileDataForInstance()</code></td>
 <td>Removes volatile data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>setPersistentData()</code></td>
 <td>Sets persistent data</td>
 </tr>
-
 <tr>
 <td><code>setPersistentDataForInstance()</code></td>
 <td>Sets persistent data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>setVolatileData()</code></td>
 <td>Sets volatile data</td>
 </tr>
-
 <tr>
 <td><code>setVolatileDataForInstance()</code></td>
 <td>Sets volatile data, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>trackEvent()</code></td>
 <td>Track non-view events</td>
 </tr>
-
 <tr>
 <td><code>trackEventForInstance()</code></td>
 <td>Track non-view events, for a specific Tealium instance</td>
 </tr>
-
 <tr>
 <td><code>trackView()</code></td>
 <td>Track screen views</td>
 </tr>
-
 <tr>
 <td><code>trackViewForInstance()</code></td>
 <td>Track screen views, for a specific Tealium instance</td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="addremotecommand"><code>addRemoteCommand()</code></h3>
-
 <p>Adds a remote command to the remote command manager.</p>
-
 <pre><code class="language-java">Tealium.addRemoteCommand(commandID, description, callback);
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7653,7 +7622,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>commandID</code></td>
@@ -7661,25 +7629,21 @@ var utag_data = {
 <td>Name of the command ID from the tag configuration</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>description</code></td>
-<td><code>String</code></td>
+<td><code>String </code></td>
 <td>Description of the remote command</td>
 <td><code>&quot;Firebase remote command&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>callback</code></td>
-<td><code>Function</code></td>
+<td><code>Function </code></td>
 <td>A callback function to execute once the response is received from the remote command. The callback returns a payload of key-value pairs from the tag mappings.</td>
 <td>(see example)</td>
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-java">Tealium.addRemoteCommand(&quot;firebase&quot;, &quot;Firebase Remote Command&quot;, (payload) {
 
   var eventName = payload[&quot;firebase_event_name&quot;];
@@ -7688,14 +7652,10 @@ var utag_data = {
   analytics.logEvent(name: eventName, parameters: eventProperties);
 });
 </code></pre>
-
 <h3 id="addremotecommandforinstance"><code>addRemoteCommandForInstance()</code></h3>
-
 <p>Adds a remote command to the remote command manager, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.addRemoteCommandForInstance(instanceName, commandID, description, callback);
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7705,7 +7665,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instanceName</code></td>
@@ -7713,32 +7672,27 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>commandID</code></td>
 <td><code>String</code></td>
 <td>Name of the command ID from the tag configuration</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>description</code></td>
-<td><code>String</code></td>
+<td><code>String </code></td>
 <td>Description of the remote command</td>
 <td><code>&quot;Firebase remote command&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>callback</code></td>
-<td><code>Function</code></td>
+<td><code>Function </code></td>
 <td>A callback function to execute once the response is received from the remote command. The callback returns a payload of key-value pairs from the tag mappings.</td>
 <td>(see example)</td>
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-javascript">Tealium.addRemoteCommand(&quot;instance-2&quot;, &quot;verify_email&quot;, &quot;Verify User Email&quot;, (user) {
 
 	print('Howdy, ${user.name}!');
@@ -7748,14 +7702,10 @@ var utag_data = {
 	// ...
 });
 </code></pre>
-
 <h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
-
 <p>Gets persistent data.</p>
-
 <pre><code class="language-java">Tealium.getPersistentData(data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7765,7 +7715,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>key</code></td>
@@ -7775,14 +7724,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="getpersistentdataforinstance"><code>getPersistentDataForInstance()</code></h3>
-
 <p>Gets persistent data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.getPersistentDataForInstance(instance, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7792,7 +7737,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -7800,7 +7744,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
@@ -7809,14 +7752,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="getvolatiledata"><code>getVolatileData()</code></h3>
-
 <p>Gets volatile data.</p>
-
 <pre><code class="language-java">Tealium.getVolatileData(data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7826,7 +7765,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>key</code></td>
@@ -7836,14 +7774,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="getvolatiledataforinstance"><code>getVolatileDataForInstance()</code></h3>
-
 <p>Gets volatile data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.getVolatileDataForInstance(instance, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7853,7 +7787,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -7861,7 +7794,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
@@ -7870,16 +7802,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="initialize"><code>initialize()</code></h3>
-
 <p>Initializes the Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.initialize(account, profile, environment,
                iosDataSource, androidDataSource,
                instance, isLifecycleEnabled)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7889,7 +7817,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7897,42 +7824,36 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
-
 <tr>
 <td><code>iosDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) data source key  (Set to <code>null</code> if none)</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>androidDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) The Android data source key (Set to <code>null</code> if none)</td>
 <td><code>null</code></td>
 </tr>
-
 <tr>
 <td><code>instance</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium instance name (default: <code>&quot;main&quot;</code>)</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
@@ -7941,11 +7862,8 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="initializecustom"><code>initializeCustom()</code></h3>
-
 <p>Initializes the Tealium instance with all options available.</p>
-
 <pre><code class="language-java">Tealium.initializeCustom(account, profile, environment,
                iosDataSource, androidDataSource,
                instance, isLifecycleEnabled,
@@ -7954,9 +7872,7 @@ var utag_data = {
                enableVdataCollectEndpointUrl,
                enableConsentManager)
 </code></pre>
-
 <p>The following additional parameters are included with this method call:</p>
-
 <table>
 <thead>
 <tr>
@@ -7966,7 +7882,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7974,70 +7889,60 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
-
 <tr>
 <td><code>iosDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) data source key  (Set to <code>null</code> if none)</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>androidDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) The Android data source key (Set to <code>null</code> if none)</td>
 <td><code>null</code></td>
 </tr>
-
 <tr>
 <td><code>instance</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium instance name (default: <code>&quot;main&quot;</code>)</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
 <td>(Optional) Enable lifecycle tracking events (default: <code>true</code>)</td>
 <td>[<code>&quot;true&quot;</code>, <code>&quot;false&quot;</code>]</td>
 </tr>
-
 <tr>
 <td><code>overridePublishSettingsUrl</code></td>
 <td><code>String</code></td>
 <td>(Optional) String representing the custom publish settings URL if overriding (Set to <code>null</code> if none)</td>
 <td></td>
 </tr>
-
 <tr>
 <td><code>overrideTagManagementUrl</code></td>
 <td><code>String</code></td>
 <td>(Optional) String representing the custom tag management URL if overriding (Set to <code>null</code> if none)</td>
 <td></td>
 </tr>
-
 <tr>
 <td><code>enableVdataCollectEndpointUrl</code></td>
 <td><code>String</code></td>
 <td>Toggle between data endpoints (<code>true</code> is the default in native Android and iOS libraries that send data to the Collect endpoint URL. <code>false</code> sends data to the older <code>vdata</code> endpoint (Set to <code>null</code> if none)</td>
 <td></td>
 </tr>
-
 <tr>
 <td><code>enableConsentManager</code></td>
 <td><code>Boolean</code></td>
@@ -8046,16 +7951,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="initializewithconsentmanager"><code>initializeWithConsentManager()</code></h3>
-
 <p>Initializes the Tealium instance and enables Consent Management.</p>
-
 <pre><code class="language-java">Tealium.initializeWithConsentManager(account, profile, environment,
                iosDataSource, androidDataSource,
                instance, isLifecycleEnabled)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8065,7 +7966,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -8073,42 +7973,36 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
-
 <tr>
 <td><code>iosDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) data source key  (Set to <code>null</code> if none)</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>androidDataSource</code></td>
 <td><code>String</code></td>
 <td>(Optional) The Android data source key (Set to <code>null</code> if none)</td>
 <td><code>null</code></td>
 </tr>
-
 <tr>
 <td><code>instance</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium instance name (default: <code>&quot;main&quot;</code>)</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
@@ -8117,14 +8011,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="removepersistentdata"><code>removePersistentData()</code></h3>
-
 <p>Removes persistent data.</p>
-
 <pre><code class="language-java">Tealium.removePersistentData(keys)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8134,7 +8024,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>keys</code></td>
@@ -8144,14 +8033,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="removepersistentdataforinstance"><code>removePersistentDataForInstance()</code></h3>
-
 <p>Removes persistent data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.removePersistentDataForInstance(instance, keys)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8161,7 +8046,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8169,7 +8053,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>keys</code></td>
 <td><code>List&lt;String&gt;</code></td>
@@ -8178,14 +8061,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="removeremotecommand"><code>removeRemoteCommand()</code></h3>
-
 <p>Removes a remote command from the remote command manager.</p>
-
 <pre><code class="language-java">Tealium.removeRemoteCommand(commandID);
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8195,29 +8074,22 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
-<td><code>commandID</code></td>
+<td><code>commandID </code></td>
 <td><code>String</code></td>
 <td>Name of command ID to remove</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
 </tbody>
 </table>
-
 <p>Example:</p>
-
 <pre><code class="language-java">Tealium.removeRemoteCommand(&quot;firebase&quot;);
 </code></pre>
-
 <h3 id="removeremotecommandforinstance"><code>removeRemoteCommandForInstance()</code></h3>
-
 <p>Removes a remote command from the remote command manager, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.removeRemoteCommandForInstance(instanceName, commandID);
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8227,7 +8099,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instanceName</code></td>
@@ -8235,26 +8106,20 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
-
 <tr>
-<td><code>commandID</code></td>
+<td><code>commandID </code></td>
 <td><code>String</code></td>
 <td>Name of the command ID to remove</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
 </tbody>
 </table>
-
 <pre><code class="language-java">Tealium.removeRemoteCommandForInstance(&quot;instance-2&quot;, &quot;firebase&quot;);
 </code></pre>
-
 <h3 id="removevolatiledata"><code>removeVolatileData()</code></h3>
-
 <p>Removes volatile data.</p>
-
 <pre><code class="language-java">Tealium.removeVolatileData(keys)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8264,7 +8129,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>keys</code></td>
@@ -8274,14 +8138,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="removevolatiledataforinstance"><code>removeVolatileDataForInstance()</code></h3>
-
 <p>Removes volatile data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.removeVolatileDataForInstance(instance, keys)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8291,7 +8151,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8299,7 +8158,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>keys</code></td>
 <td><code>List&lt;String&gt;</code></td>
@@ -8308,14 +8166,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="setpersistentdata"><code>setPersistentData()</code></h3>
-
 <p>Sets persistent data.</p>
-
 <pre><code class="language-java">Tealium.setPersistentData(data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8325,7 +8179,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -8335,14 +8188,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="setpersistentdataforinstance"><code>setPersistentDataForInstance()</code></h3>
-
 <p>Sets persistent data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.setPersistentDataForInstance(instance, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8352,7 +8201,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8360,7 +8208,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8369,14 +8216,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="setvolatiledata"><code>setVolatileData()</code></h3>
-
 <p>Sets volatile data.</p>
-
 <pre><code class="language-java">Tealium.setVolatileData(data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8386,7 +8229,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -8396,14 +8238,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="setvolatiledataforinstance"><code>setVolatileDataForInstance()</code></h3>
-
 <p>Sets volatile data, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.setVolatileDataForInstance(instance, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8413,7 +8251,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8421,7 +8258,6 @@ var utag_data = {
 <td>Specific Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8430,14 +8266,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="trackevent"><code>trackEvent()</code></h3>
-
 <p>Track non-view events.</p>
-
 <pre><code class="language-java">Tealium.trackEvent(eventName, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8447,7 +8279,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>eventName</code></td>
@@ -8455,7 +8286,6 @@ var utag_data = {
 <td>Name to identify the event</td>
 <td><code>&quot;Event button click&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8464,14 +8294,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="trackeventforinstance"><code>trackEventForInstance()</code></h3>
-
 <p>Track non-view events, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.trackEventForInstance(instance, eventName, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8481,7 +8307,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8489,14 +8314,12 @@ var utag_data = {
 <td>Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>eventName</code></td>
 <td><code>String</code></td>
 <td>Name to identify the event</td>
 <td><code>&quot;Event button click&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8505,14 +8328,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="trackview"><code>trackView()</code></h3>
-
 <p>Track screen views.</p>
-
 <pre><code class="language-java">Tealium.trackView(viewName, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8522,7 +8341,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>viewName</code></td>
@@ -8530,7 +8348,6 @@ var utag_data = {
 <td>Name to identify screen view</td>
 <td><code>&quot;View screen&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8539,14 +8356,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h3 id="trackviewforinstance"><code>trackViewForInstance()</code></h3>
-
 <p>Track screen views, for a specific Tealium instance.</p>
-
 <pre><code class="language-java">Tealium.trackViewForInstance(instance, viewName, data)
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -8556,7 +8369,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -8564,14 +8376,12 @@ var utag_data = {
 <td>Tealium instance name</td>
 <td><code>&quot;instance123&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>viewName</code></td>
 <td><code>String</code></td>
 <td>Name to identify the view</td>
 <td><code>&quot;Event button click&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>data</code></td>
 <td><code>Map&lt;String, dynamic&gt;</code></td>
@@ -8587,7 +8397,7 @@ var utag_data = {
 	<div class="di">
 		
 		
-		<a href="/platforms/flutter-v1/data-management/"
+		<a href="https://docs-preview.tealium.com/platforms/flutter-v1/data-management/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Data Management "</title>
@@ -8606,7 +8416,7 @@ var utag_data = {
 	<div class="fr">
 
 		
-		<a href="/platforms/flutter-v1/release-notes/"
+		<a href="https://docs-preview.tealium.com/platforms/flutter-v1/release-notes/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -8621,7 +8431,7 @@ var utag_data = {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -8637,7 +8447,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  May 10, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

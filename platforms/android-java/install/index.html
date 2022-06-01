@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -938,8 +938,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-java-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/android-java/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".android-java-overview">Overview</a>
       </li>
       
     
@@ -7505,130 +7505,102 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li><a href="https://developer.android.com/studio">Android Studio</a></li>
 <li>Android (KitKat/4.4+ / API Level 19+)</li>
 <li><a href="https://community.tealiumiq.com/t5/Getting-Started/Creating-a-Mobile-Profile/ta-p/16328">Tealium iQ Mobile Profile</a></li>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
-
 <h2 id="sample-apps">Sample Apps</h2>
-
 <p>To help to familiarize yourself with our library, tracking methods, and best practice implementation, explore the Tealium for Android <a href="https://github.com/Tealium/tealium-android/tree/master/Samples">sample apps</a>.</p>
-
 <h2 id="get-the-code">Get the Code</h2>
-
 <p>Clone the <a href="https://github.com/Tealium/tealium-android">Tealium Android library</a>. Cloning the library, rather than downloading, makes it easier to update to future releases.</p>
-
-<p class="tip"><i class="fas fa-star"></i>See the <a href="https://tealium.github.io/tealium-android/">Tealium API</a> for a complete listing of Tealium classes and methods for Android.</p>
-
+<!-- raw HTML omitted -->
 <h2 id="install">Install</h2>
-
 <p>Install the Tealium SDK for Android with Maven, or manually.</p>
-
 <h3 id="maven">Maven</h3>
-
 <p>To install Tealium for Android library with Maven (recommended):</p>
-
 <ol>
-<li><p>Add the Tealium Maven URL to your project&rsquo;s top-level <code>build.gradle</code> file:</p>
-
-<pre><code class="language-groovy">allprojects {
-  repositories {
-    jcenter()
-    maven {
-      url &quot;https://maven.tealiumiq.com/android/releases/&quot;
-    }
-  }
-}
-</code></pre></li>
-
-<li><p>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</p>
-
-<pre><code class="language-groovy">dependencies {
-  implementation 'com.tealium:library:5.8.0'
-}
-</code></pre></li>
+<li>Add the Tealium Maven URL to your project&rsquo;s top-level <code>build.gradle</code> file:</li>
 </ol>
-
+<pre><code class="language-groovy">allprojects {
+      repositories {
+        jcenter()
+        maven {
+          url &quot;https://maven.tealiumiq.com/android/releases/&quot;
+        }
+      }
+}
+</code></pre>
+<ol start="2">
+<li>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</li>
+</ol>
+<pre><code class="language-groovy">dependencies {
+      implementation 'com.tealium:library:5.8.0'
+}
+</code></pre>
 <h3 id="manual">Manual</h3>
-
 <p>To install Tealium for Android library manually:</p>
-
 <ol>
-<li><p>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</p>
-
+<li>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</li>
+</ol>
 <pre><code class="language-groovy">allprojects {
-  repositories {
-     jcenter()
-     flatDir {
-         dirs 'libs'
-     }
-  }
+      repositories {
+         jcenter()
+         flatDir {
+             dirs 'libs'
+         }
+      }
 }
-</code></pre></li>
-
-<li><p>Add <code>tealium-5.x.x.aar</code> to <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code>.</p></li>
-
-<li><p>Add the Tealium library dependency to your <code>build.gradle</code> file:</p>
-
+</code></pre>
+<ol start="2">
+<li>
+<p>Add <code>tealium-5.x.x.aar</code> to <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code>.</p>
+</li>
+<li>
+<p>Add the Tealium library dependency to your <code>build.gradle</code> file:</p>
+</li>
+</ol>
 <pre><code class="language-groovy">dependencies {
-  implementation(name:'tealium-5.6.1', ext:'aar')
+      implementation(name:'tealium-5.6.1', ext:'aar')
 }
-</code></pre></li>
-</ol>
-
+</code></pre>
 <h2 id="initialize">Initialize</h2>
-
 <p>To initialize, make the following changes in app&rsquo;s <code>onCreate()</code> method:</p>
-
 <ol>
-<li><p>Create instance of the <a href="/platforms/android-java/api/tealium-config/#class-tealium-config"><code>Tealium.Config</code></a> object:</p>
-
-<pre><code class="language-java">Tealium.Config tealConfig = Tealium.Config.create(
-    this,
-    &quot;ACCOUNT&quot;,
-    &quot;PROFILE&quot;,
-    &quot;ENVIRONMENT&quot;);
-</code></pre></li>
-
-<li><p>Call any additional needed methods to set the configuration data such as <a href="/platforms/android-java/api/tealium-config/#setdatasourceid"><code>setDatasourceId()</code></a>:</p>
-
-<pre><code class="language-java">tealConfig.setDatasourceId(&quot;DATASOURCE_ID&quot;);
-</code></pre></li>
-
-<li><p>Call the <a href="/platforms/android-java/api/life-cycle/#setupinstance"><code>setupInstance()</code></a> method to setup the app&rsquo;s lifecycle instance:</p>
-
-<pre><code class="language-java">LifeCycle.setupInstance(&quot;INSTANCE_NAME&quot;, config, true);
-</code></pre></li>
-
-<li><p>Call the <a href="/platforms/android-java/api/tealium/#createinstance"><code>createInstance()</code></a> method to create the Tealium instance, passing the configuration instance as a constructor argument:</p>
-
-<pre><code class="language-java">tealium = Tealium.createInstance(&quot;INSTANCE_NAME&quot;, tealConfig);
-</code></pre></li>
+<li>Create instance of the <a href="/platforms/android-java/api/tealium-config/#class-tealium-config"><code>Tealium.Config</code></a> object:</li>
 </ol>
-
-<p class="note"><i class="fas fa-info-circle"></i>When Collect is enabled in versions 5.5.1+, data is sent to the profile provided in <code>Tealium.Config</code> object. In previous versions, data is sent to the default profile (<code>&quot;main&quot;</code>)</p>
-
+<pre><code class="language-java">Tealium.Config tealConfig = Tealium.Config.create(
+        this,
+        &quot;ACCOUNT&quot;,
+        &quot;PROFILE&quot;,
+        &quot;ENVIRONMENT&quot;);
+</code></pre>
+<ol start="2">
+<li>Call any additional needed methods to set the configuration data such as <a href="/platforms/android-java/api/tealium-config/#setdatasourceid"><code>setDatasourceId()</code></a>:</li>
+</ol>
+<pre><code class="language-java">tealConfig.setDatasourceId(&quot;DATASOURCE_ID&quot;);
+</code></pre>
+<ol start="3">
+<li>Call the <a href="/platforms/android-java/api/life-cycle/#setupinstance"><code>setupInstance()</code></a> method to setup the app&rsquo;s lifecycle instance:</li>
+</ol>
+<pre><code class="language-java">LifeCycle.setupInstance(&quot;INSTANCE_NAME&quot;, config, true);
+</code></pre>
+<ol start="4">
+<li>Call the <a href="/platforms/android-java/api/tealium/#createinstance"><code>createInstance()</code></a> method to create the Tealium instance, passing the configuration instance as a constructor argument:</li>
+</ol>
+<pre><code class="language-java">tealium = Tealium.createInstance(&quot;INSTANCE_NAME&quot;, tealConfig);
+</code></pre>
+<!-- raw HTML omitted -->
 <h2 id="log-level">Log Level</h2>
-
 <p>The log level is controlled by the remote publish settings and is inferred from the environment set in the initialization.</p>
-
 <p>In versions 5.3.1+, it is possible to override the log level locally with the <a href="/platforms/android-java/api/tealium-config/#setforceoverrideloglevel"><code>setForceOverrideLogLevel()</code></a> method as shown in the following example:</p>
-
 <pre><code class="language-java">tealConfig.setForceOverrideLogLevel(&quot;LOG_LEVEL&quot;);
 </code></pre>
-
 <h2 id="cookies">Cookies</h2>
-
 <p>Enabling cookies is required if you have enabled Tag Management in your mobile profile.</p>
-
 <p>Add the following code, after the initialization statement, to activate cookie management.</p>
-
 <pre><code class="language-java">config.getEventListeners().add(createCookieEnablerListener());
 private static WebViewCreatedListener createCookieEnablerListener() {
     return new WebViewCreatedListener() {
@@ -7648,31 +7620,18 @@ private static WebViewCreatedListener createCookieEnablerListener() {
     };
 }
 </code></pre>
-
 <p>This code allows the tag management <code>Webview</code> to <a href="https://developer.android.com/reference/android/webkit/CookieManager.html#acceptCookie()">accept</a> first-party, third-party, and file scheme cookies.</p>
-
-<p class="note"><i class="fas fa-info-circle"></i>In versions 5.1.0+, <code>CookieManager</code> is <strong>enabled</strong> by default. In versions 5.0.4 and below, <code>CookieManager</code> is <strong>disabled</strong> by default.</p>
-
+<!-- raw HTML omitted -->
 <h2 id="event-batching">Event Batching</h2>
-
 <p>To enable event batching, go to the <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Creating-a-Mobile-Profile/ta-p/16328">Mobile Publish Settings</a> and set the batch size to a value greater than 1. Events are dispatched when the number of events in the queue equals the batch size.</p>
-
 <p>The dispatch of events can also be triggered based on the <em>batch timeout</em> setting. This setting ensures that, when the batch size is not reached, the queue is still dispatched after an elapsed period of time.  Set the batch timeout by calling the method <a href="/platforms/android-java/api/tealium-config/#setsecondsbeforebatchtimeout"><code>setSecondsBeforeBatchTimeout()</code></a>.</p>
-
 <p>To override the batch size and batch timeout checks, flush the queue immediately by calling the method <a href="/platforms/android-java/api/tealium/#requestflush"><code>requestFlush()</code></a>.</p>
-
-<p class="note"><i class="fas fa-info-circle"></i>If the device is offline or has the Consent Manager enabled, the flush override has no effect.</p>
-
+<!-- raw HTML omitted -->
 <h2 id="multiprocess-apps">Multiprocess Apps</h2>
-
 <h4 id="android-9-multiprocess-applications">Android 9+ Multiprocess Applications</h4>
-
 <p>Android 9 introduced a behavior change around <code>WebView</code> data directories in multiprocess applications. In this change, a <code>WebView</code> no longer shares a single data directory across multiple processes. Typically, you&rsquo;ll want to have all your Activities that use a <code>WebView</code> in the same process.</p>
-
 <p>If you use the Tag Management module and implement additional instances of <code>WebView</code>, we recommend calling <code>WebView.setDataDirectorySuffix()</code> before creating the Tealium instance to prevent the app from crashing.</p>
-
 <p>If you need to access cookies and web data from the Tag Management module, copy it between processes using the <code>CookieManager.getCookie()</code> and <code>CookieManager.setCookie()</code> methods.</p>
-
 <p>To learn more, see <a href="https://developer.android.com/about/versions/pie/android-9.0-changes-28#web-data-dirs">Web-based data directories separated by process</a>.</p>
 
 </div>
@@ -7682,7 +7641,7 @@ private static WebViewCreatedListener createCookieEnablerListener() {
 	<div class="fr">
 
 		
-		<a href="/platforms/android-java/track/"
+		<a href="https://docs-preview.tealium.com/platforms/android-java/track/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7697,7 +7656,7 @@ private static WebViewCreatedListener createCookieEnablerListener() {
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7713,7 +7672,7 @@ private static WebViewCreatedListener createCookieEnablerListener() {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 14, 2022 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

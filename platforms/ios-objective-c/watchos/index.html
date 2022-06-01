@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -2882,8 +2882,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/ios-objective-c/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".ios-objective-c-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/ios-objective-c/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".ios-objective-c-overview">Overview</a>
       </li>
       
     
@@ -7505,130 +7505,67 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="requirements">Requirements</h2>
-
+  <h2 id="requirements">Requirements</h2>
 <ul>
 <li>Xcode 7+</li>
 <li>iOS 8.1+</li>
 <li>watchOS 2.0+</li>
 <li><a href="/platforms/ios-swift/">Tealium for iOS</a> installed in the host app</li>
-<li>400KB available space in <code>.ipa</code>file size (this accounts for the <code>tealium-ios</code> library needed in the host app)</li>
+<li>400KB available space in <code>.ipa </code>file size (this accounts for the <code>tealium-ios</code> library needed in the host app)</li>
 <li><a href="https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/AppThinning/AppThinning.html">Bitcode compliant</a> framework</li>
 </ul>
-
 <h2 id="sample-apps">Sample Apps</h2>
-
 <p>To help familiarize yourself with the Tealium library, tracking methods, and best practice implementation, it is recommended to download the sample apps:</p>
-
 <ul>
 <li><a href="https://github.com/Tealium/tealium-ios/tree/master/Samples/WatchOS_Catalog%2BTealium_ObjC">Objective-C WatchOS sample app</a></li>
 <li><a href="https://github.com/Tealium/tealium-ios/tree/master/Samples/WatchOS_Sample_Swift">Swift WatchOS sample app</a></li>
 </ul>
-
 <p>To abstract the Tealium implementation from the rest of your app, we recommend the use of the <a href="https://github.com/Tealium/tealium-ios/blob/master/Samples/WatchOS_Catalog%2BTealium_ObjC/WatchKit%20Catalog/Tealium/TealiumHelper.m">sample helper class</a>. This gives you a single entry point from which to initialize and make tracking calls. It also allows you to update the code in your helper file, and not in every single header/method file.</p>
-
 <h2 id="install">Install</h2>
-
 <p>Install Tealium for watchOS as an extension application where <code>TealiumIOS.framework</code> has been implemented in the host application. </p>
-
 <ol>
-<li><p>Add <code>TealiumWATCHOSExtension.framework</code> to your project&rsquo;s watchOS Extension target, and copy the framework to the project in the resulting dialog box.</p></li>
-
-<li><p>In the target&rsquo;s <strong>General: Embedded Binaries</strong> section, add the framework:</p>
-
+<li>
+<p>Add <code>TealiumWATCHOSExtension.framework</code> to your project&rsquo;s watchOS Extension target, and copy the framework to the project in the resulting dialog box.</p>
+</li>
+<li>
+<p>In the target&rsquo;s <strong>General: Embedded Binaries</strong> section, add the framework:</p>
+</li>
+</ol>
 <pre><code class="language-perl">TealiumWATCHOSExtension.framework
 </code></pre>
-
-<p class="note"><i class="fas fa-info-circle"></i>For Swift projects, add <code>&lt;TealiumWATCHOSExtension/TEALWKExtension.h&gt;</code> to your bridging header file.</p>
-  </li>
-
-<li><p>Make sure all paths are as expected under <strong>Projects: Target: Build Settings</strong>. </p></li>
+<!-- raw HTML omitted -->
+<ol start="3">
+<li>Make sure all paths are as expected under <strong>Projects: Target: Build Settings</strong>. </li>
 </ol>
-
 <h2 id="initialize">Initialize</h2>
-
 <p>Once Tealium for watchOS is added to your project you are ready to start coding.</p>
-
 <p>In the Application Delegate, or within a helper class setup method, add the following code to initialize the Tealium instance: </p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <pre><code class="language-swift">// Get Tealium instance
-let config = TEALWKExtensionConfiguration.configuration()
-guard let tealium = TEALWKExtension.newInstanceForKey(&quot;[INSTANCE]&quot;) else {
-    // Any additional failure response here
-    return
-}
-</code></pre>
-
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <pre><code class="language-objc">// Import area
-#import &lt;TealiumWATCHOSExtension/TealiumWATCHOS.h&gt;
-
-// Within a setup method
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>// Within a setup method
 TEALWKExtensionConfiguration *config = [TEALWKExtensionConfiguration configuration];
 config.logLevel = TEALLogLevelDev;
 [TEALWKExtension newInstanceForKey:@&quot;[INSTANCE]&quot; configuration:config]; 
-</code></pre>
-
-</div>
-
-<p></div>
-</div></p>
-
+<!-- raw HTML omitted --><!-- raw HTML omitted --></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="track-views">Track Views</h2>
-
 <p>Track screen views by calling <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackViewWithTitle:dataSources:"><code>trackViewWithTitle()</code></a> with two parameters: the name of the screen and (optionally) contextual view data.</p>
-
 <p>In any UIViewController&rsquo;s <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621423-viewdidappear"><code>viewDidAppear()</code></a> method, use this code:</p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <pre><code class="language-swift">TEALWKExtension.instanceForKey(&quot;[hostTealiumInstanceKey]&quot;)?.trackViewWithTitle(NSStringFromClass(self.classForCoder), dataSources: [String:String]())
-</code></pre>
-
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <pre><code class="language-objc">[[TEALWKExtension instanceForKey:@&quot;[INSTANCE]&quot;] trackViewWithTitle:NSStringFromClass([self class]) dataSources:@{}];
-</code></pre>
-
-</div>
-
-<p></div>
-</div></p>
-
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 <h2 id="track-events">Track Events</h2>
-
 <p>Track non-view activity by calling <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackEventWithTitle:dataSources:"><code>trackEventWithTitle()</code></a> with two parameters: an event name and (optionally) contextual event data. </p>
-
 <p>In any method that triggers or responds to an event trigger, use this code: </p>
-
-<div class="code-tabs">
-  <ul class="nav nav-tabs"></ul>
-  <div class="tab-content">
-<div class="tab-pane" data-lang="Swift" title="Swift">
-  <pre><code class="language-swift">TEALWKExtension.instanceForKey(&quot;[INSTANCE]&quot;)?.trackEventwWithTitle(&quot;EVENT_NAME&quot;), dataSources: [String:String]())
-</code></pre>
-
-</div>
-
-<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
-  <pre><code class="language-objc">[[Tealium instanceForKey:@&quot;[INSTANCE]&quot;] trackEventWithTitle:@&quot;EVENT_NAME&quot; dataSources:@{@&quot;optionalKey&quot;:@&quot;optionalValue&quot;}];
-</code></pre>
-
-</div>
-
-<p></div>
-</div></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
 
 </div>
 
@@ -7636,7 +7573,7 @@ config.logLevel = TEALLogLevelDev;
 	<div class="di">
 		
 		
-		<a href="/platforms/ios-objective-c/tvos/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-objective-c/tvos/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"tvOS "</title>
@@ -7655,7 +7592,7 @@ config.logLevel = TEALLogLevelDev;
 	<div class="fr">
 
 		
-		<a href="/platforms/ios-objective-c/api/"
+		<a href="https://docs-preview.tealium.com/platforms/ios-objective-c/api/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7670,7 +7607,7 @@ config.logLevel = TEALLogLevelDev;
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7686,7 +7623,7 @@ config.logLevel = TEALLogLevelDev;
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  February 20, 2020 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

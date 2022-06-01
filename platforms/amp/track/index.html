@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -6096,8 +6096,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/amp/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".amp-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/amp/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".amp-overview">Overview</a>
       </li>
       
     
@@ -7505,14 +7505,9 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="track-views">Track Views</h2>
-
+  <h2 id="track-views">Track Views</h2>
 <p>The base installation makes a tracking call every time a user opens or changes a screen in your AMP site.</p>
-
 <p>To customize the data layer used for this tracking, add the <a href="https://amp.dev/documentation/components/amp-analytics/?format=websites#extra-url-params">extra URL Params</a> block <code>extraUrlParams</code> with key-value pairs for your variables:</p>
-
 <pre><code class="language-html">&lt;amp-analytics type=&quot;tealiumcollect&quot;&gt;
 &lt;script type=&quot;application/json&quot;&gt;
 {
@@ -7529,7 +7524,6 @@ var utag_data = {
 &lt;/script&gt;
 &lt;/amp-analytics&gt;
 </code></pre>
-
 <table>
 <thead>
 <tr>
@@ -7539,7 +7533,6 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7547,14 +7540,12 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
-
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code> </td>
 </tr>
-
 <tr>
 <td><code>datasource</code></td>
 <td><code>String</code></td>
@@ -7563,13 +7554,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-
 <h2 id="track-events">Track Events</h2>
-
 <p>The <code>triggers</code> configuration object defines which events to track. A trigger is define as a key-value pair of trigger name and configuration. Trigger names are alphanumeric strings and the configuration determines the targets of the events.</p>
-
 <p>The following is an example of a trigger:</p>
-
 <pre><code class="language-json">&quot;triggers&quot;: {
   &quot;trigger_name&quot;: {
     &quot;on&quot;: &quot;VALUE&quot;,
@@ -7584,15 +7571,10 @@ var utag_data = {
   }
 }
 </code></pre>
-
 <p>AMP supports the following <a href="https://www.ampproject.org/docs/reference/components/amp-analytics#triggers"><code>amp-analytics</code> triggers</a>.</p>
-
 <h2 id="dynamic-tracking-variables">Dynamic Tracking Variables</h2>
-
 <p>For the event types <code>visible</code> and <code>click</code> (used in the <code>on</code> property), dynamic tracking variables are passed using HTML5 elemental attributes in the format <code>data-vars-*</code>. Variables passed this way are converted to camel-case naming.</p>
-
 <p>For example, the property <code>data-vars-link-name=&quot;register&quot;</code> becomes the variable <code>${linkName}</code> that is referenced in the <code>extraUrlParams</code> block of your trigger.</p>
-
 <pre><code class="language-json">&quot;triggers&quot;: {
   &quot;custom_click&quot;: {
     &quot;on&quot;: &quot;click&quot;,
@@ -7607,11 +7589,8 @@ var utag_data = {
   }
 }
 </code></pre>
-
 <p>AMP supports the following <a href="https://amp.dev/documentation/components/amp-analytics/?referrer=ampproject.org#extra-url-params"><code>amp-analytics</code> extra URL params</a>.</p>
-
 <p>The button&rsquo;s HTML example:</p>
-
 <pre><code class="language-html">&lt;span id=&quot;the-button&quot; data-vars-link-name=&quot;register&quot;&gt;
 Button Text
 &lt;/span&gt;
@@ -7623,7 +7602,7 @@ Button Text
 	<div class="di">
 		
 		
-		<a href="/platforms/amp/install/"
+		<a href="https://docs-preview.tealium.com/platforms/amp/install/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"Install "</title>
@@ -7642,7 +7621,7 @@ Button Text
 	<div class="fr">
 
 		
-		<a href="/platforms/amp/data-layer/"
+		<a href="https://docs-preview.tealium.com/platforms/amp/data-layer/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -7657,7 +7636,7 @@ Button Text
 		
 	</div>
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7673,7 +7652,7 @@ Button Text
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 11, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>

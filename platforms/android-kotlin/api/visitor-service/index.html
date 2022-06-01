@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.59.0" />
+     <meta name="generator" content="Hugo 0.98.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -1424,8 +1424,8 @@ var utag_data = {
       
       
       
-      <li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
-        <a href="/platforms/android-kotlin/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".android-kotlin-overview">Overview</a>
+      <li class="w-100 hover-accent-color-light fw4 f6 active" data-level="2">
+        <a href="/platforms/android-kotlin/" class="db link pl3 pr2 pv1 bg-secondary white" data-target=".android-kotlin-overview">Overview</a>
       </li>
       
     
@@ -7505,12 +7505,8 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  
-
-<h2 id="class-visitorservice">Class: <code>VisitorService</code></h2>
-
+  <h2 id="class-visitorservice">Class: <code>VisitorService</code></h2>
 <p>The following summarizes the commonly used methods and properties of the <code>VisitorService</code> module for Kotlin.</p>
-
 <table>
 <thead>
 <tr>
@@ -7518,80 +7514,55 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><a href="#overridevisitorserviceurl"><code>overrideVisitorServiceUrl</code></a></td>
 <td><code>TealiumConfig</code> option to override the URL used to retrieve the current VisitorProfile</td>
 </tr>
-
 <tr>
 <td><a href="#overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></a></td>
 <td><code>TealiumConfig</code> option to override the profile name used to retrieve the current VisitorProfile</td>
 </tr>
-
 <tr>
 <td><a href="#requestvisitorprofile"><code>requestVisitorProfile()</code></a></td>
 <td>Method to request that the current VisitorProfile be updated</td>
 </tr>
-
 <tr>
 <td><a href="#visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></a></td>
 <td><code>TealiumConfig</code> option to set the minimum time interval before the SDK will automatically retrieve the latest VisitorProfile</td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="overridevisitorserviceurl"><code>overrideVisitorServiceUrl</code></h3>
-
 <p>Extension property on the <code>TealiumConfig</code> object; only available when the VisitorService module is included in your project.</p>
-
 <p>Overrides the URL used by the VisitorService module to get the VisitorProfile object.
 Default URL: <code>&quot;https://visitor-service.tealiumiq.com/{ACOUNT_NAME}/{PROFILE_NAME}/{VISITOR_ID}&quot;</code></p>
-
 <pre><code class="language-java">val config = TealiumConfig(...)
 config.overrideVisitorServiceUrl = url
 </code></pre>
-
 <h3 id="overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></h3>
-
 <p>Extension property on the <code>TealiumConfig</code> object; only available when the VisitorService module is included in your project.</p>
-
 <p>Overrides the Tealium profile name used by the VisitorService module to fetch the VisitorProfile object. By default the VisitorService module uses the profile name set in <code>TealiumConfig</code>.</p>
-
 <pre><code class="language-java">val config = TealiumConfig(...)
 config.overrideVisitorServiceProfile = &quot;main&quot;
 </code></pre>
-
 <h3 id="requestvisitorprofile"><code>requestVisitorProfile</code></h3>
-
 <p>Method to request that the VisitorProfile be updated. This happens after each dispatch, or batch of dispatches, has been sent to the Tealium Customer Data Hub.</p>
-
 <p>Use this method to request an update at any other point in time. It&rsquo;s a <code>suspend</code> function that needs to be called from a coroutine. As it makes a network request, your coroutine is not called on main thread.</p>
-
 <pre><code class="language-java">runBlocking(Dispatchers.IO) {
     tealium.visitorService?.requestVisitorProfile()
 }
 </code></pre>
-
 <h3 id="visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></h3>
-
 <p>Sets the time interval in seconds between updates to the VisitorProfile data. Calls to <code>requestVisitorProfile()</code> ignore this setting.</p>
-
 <p>Default: 300 (5 minutes)</p>
-
 <pre><code class="language-java">val config = TealiumConfig(...)
 config.visitorServiceRefreshInterval = TimeUnit.MINUTES.toSeconds(30) // 30 minutes
 </code></pre>
-
 <h2 id="interface-visitorupdatedlistener">Interface: <code>VisitorUpdatedListener</code></h2>
-
 <p>The <code>VisitorUpdatedListener</code> is a listener class. Register to receive the latest version of the VisitorProfile each time there has been an update. There is only a single method to implement: <a href="#onVisitorUpdated"><code>onVisitorUpdated(visitorProfile: VisitorProfile)</code></a>.</p>
-
 <h3 id="onvisitorupdated"><code>onVisitorUpdated</code></h3>
-
 <p>Implement the <code>onVisitorUpdated</code> method on an existing class, or pass in an anonymous object after creating your <code>Tealium</code> instance. The below example shows the latter.</p>
-
 <pre><code class="language-java">val tealium = Tealium.create(...) {
     events.subscribe(object : VisitorUpdatedListener {
         override fun onVisitorUpdated(visitorProfile: VisitorProfile) {
@@ -7600,7 +7571,6 @@ config.visitorServiceRefreshInterval = TimeUnit.MINUTES.toSeconds(30) // 30 minu
     })
 }
 </code></pre>
-
 <p>Please see the <a href="/platforms/android-kotlin/api/visitor-profile">VisitorProfile</a> documentation for full details on available properties.</p>
 
 </div>
@@ -7609,7 +7579,7 @@ config.visitorServiceRefreshInterval = TimeUnit.MINUTES.toSeconds(30) // 30 minu
 	<div class="di">
 		
 		
-		<a href="/platforms/android-kotlin/api/visitor-profile/"
+		<a href="https://docs-preview.tealium.com/platforms/android-kotlin/api/visitor-profile/"
 			class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
       <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
 				<title>"VisitorProfile "</title>
@@ -7625,7 +7595,7 @@ config.visitorServiceRefreshInterval = TimeUnit.MINUTES.toSeconds(30) // 30 minu
 	</div>
 
 
-</div>
+  </div>
 <br>&nbsp;</br>
 
           
@@ -7641,7 +7611,7 @@ config.visitorServiceRefreshInterval = TimeUnit.MINUTES.toSeconds(30) // 30 minu
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  December 14, 2021 
+    <span><p>This page was last updated:  June 1, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
