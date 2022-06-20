@@ -7230,19 +7230,18 @@ var utag_data = {
 </li>
 <li>
 <p>Add the following dependency to your Podfile:</p>
-</li>
-</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;TealiumAirship&#34;</span>
-</span></span></code></pre></div><p>The <code>TealiumAirship</code> pod includes the following <code>TealiumSwift</code> dependencies:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/Core&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/RemoteCommands&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/TagManagement&#34;</span>
-</span></span></code></pre></div><ol start="3">
-<li>Add any other required modules manually to your Podfile, such as the following:</li>
+</span></span></code></pre></div></li>
 </ol>
+<p>The <code>TealiumAirship</code> pod includes the following <code>TealiumSwift</code> dependencies:<br>
+<code>bash &quot;tealium-swift/Core&quot; &quot;tealium-swift/RemoteCommands&quot; &quot;tealium-swift/TagManagement&quot; </code></p>
+<ol start="3">
+<li>Add any other required modules manually to your Podfile, such as the following:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;tealium-swift/Lifecycle&#34;</span>
 </span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;tealium-swift/VisitorService&#34;</span>
-</span></span></code></pre></div><p>Learn more about the <a href="/platforms/ios-swift/modules/">recommended modules for iOS</a>.</p>
+</span></span></code></pre></div></li>
+</ol>
+<p>Learn more about the <a href="/platforms/ios-swift/modules/">recommended modules for iOS</a>.</p>
 <ol start="4">
 <li>Import the modules <code>TealiumSwift</code> and <code>TealiumAirship</code> in your <code>TealiumHelper</code> file, and any other files that access the <code>Tealium</code> class, or the Airship remote command.</li>
 </ol>
@@ -7255,14 +7254,13 @@ var utag_data = {
 </li>
 <li>
 <p>Remove the following line if it exists in your Cartfile:</p>
-</li>
-</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;urbanairship/ios-library&#34;</span>
-</span></span></code></pre></div><ol start="3">
-<li>Add the following dependency to your Cartfile:</li>
-</ol>
+</span></span></code></pre></div></li>
+<li>
+<p>Add the following dependency to your Cartfile:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;tealium/tealium-ios-airship-remote-command&#34;</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div></li>
+</ol>
 </div>
 <div class="tab-pane" data-lang="Maven" title="Maven">
   <p>To install Airship remote commands for Android using Maven:</p>
@@ -7280,12 +7278,11 @@ var utag_data = {
 </span></span></code></pre></div></li>
 <li>
 <p>Import the Tealium-Airship remote commands by adding the following dependencies in your app project&rsquo;s <code>build.gradle</code> file:</p>
-</li>
-</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium.remotecommands:airship:1.1.0&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div>
+</span></span></code></pre></div></li>
+</ol>
 </div>
 </div>
 </div>
@@ -7309,25 +7306,25 @@ var utag_data = {
 <h3 id="manual-android">Manual (Android)</h3>
 <p>The manual installation for Airship remote commands requires <a href="/platforms/android-kotlin/install/">Tealium for Android (Kotlin)</a> or <a href="/platforms/android-java/install/">Tealium for Android (Java)</a> to be installed. To install the Airship remote commands for your Android project:</p>
 <ol>
-<li>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</li>
-</ol>
+<li>
+<p>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>repositories <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    flatDir <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        dirs <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/src/main/libs&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="2">
+</span></span></code></pre></div></li>
 <li>
 <p>Add <code>tealium-airship.aar</code> to <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code>.</p>
 </li>
 <li>
 <p>Add the Tealium library dependency to your <code>build.gradle</code> file:</p>
-</li>
-</ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-airship&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+</span></span></code></pre></div></li>
+</ol>
+<h2 id="initialize">Initialize</h2>
 <p>Initialize remote commands with a JSON configuration file or the Remote Command tag for Tealium&rsquo;s Android or Swift library.</p>
 <p>To initialize the Airship remote command:</p>
 <h3 id="android-kotlin">Android (Kotlin)</h3>
@@ -7425,170 +7422,170 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>initialize</code></td>
-<td style="text-align:center"><code>takeOff()</code></td>
+<td style="text-align:left"><code>initialize</code></td>
+<td style="text-align:left"><code>takeOff()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>trackevent</code></td>
-<td style="text-align:center"><code>UACustomEvent.track()</code></td>
+<td style="text-align:left"><code>trackevent</code></td>
+<td style="text-align:left"><code>UACustomEvent.track()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>trackscreenview</code></td>
-<td style="text-align:center"><code>trackScreen</code></td>
+<td style="text-align:left"><code>trackscreenview</code></td>
+<td style="text-align:left"><code>trackScreen</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enableanalytics</code></td>
-<td style="text-align:center"><code>analytics()?.isEnabled</code></td>
+<td style="text-align:left"><code>enableanalytics</code></td>
+<td style="text-align:left"><code>analytics()?.isEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disableanalytics</code></td>
-<td style="text-align:center"><code>analytics()?.isEnabled</code></td>
+<td style="text-align:left"><code>disableanalytics</code></td>
+<td style="text-align:left"><code>analytics()?.isEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setnameduser</code></td>
-<td style="text-align:center"><code>UAirship.namedUser()?.identifier</code></td>
+<td style="text-align:left"><code>setnameduser</code></td>
+<td style="text-align:left"><code>UAirship.namedUser()?.identifier</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setcustomidentifiers</code></td>
-<td style="text-align:center"><code>analytics()?.associateDeviceIdentifiers</code></td>
+<td style="text-align:left"><code>setcustomidentifiers</code></td>
+<td style="text-align:left"><code>analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enableadvertisingidentifiers</code></td>
-<td style="text-align:center"><code>analytics()?.associateDeviceIdentifiers</code></td>
+<td style="text-align:left"><code>enableadvertisingidentifiers</code></td>
+<td style="text-align:left"><code>analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enableinappmessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td style="text-align:left"><code>enableinappmessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disableinappmessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td style="text-align:left"><code>disableinappmessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>pauseinappmessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td style="text-align:left"><code>pauseinappmessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>unpauseinappmessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td style="text-align:left"><code>unpauseinappmessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setinappmessagingdisplayinterval</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
+<td style="text-align:left"><code>setinappmessagingdisplayinterval</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enableuserpushnotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>enableuserpushnotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disableuserpushnotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>disableuserpushnotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enablebackgroundpushnotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>enablebackgroundpushnotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disablebackgroundpushnotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>disablebackgroundpushnotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setpushnotificationoptions</code></td>
-<td style="text-align:center"><code>UAirship.push()?.notificationOptions</code></td>
+<td style="text-align:left"><code>setpushnotificationoptions</code></td>
+<td style="text-align:left"><code>UAirship.push()?.notificationOptions</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setforegroundpresentationoptions</code></td>
-<td style="text-align:center"><code>UAirship.push()?.defaultPresentationOptions</code></td>
+<td style="text-align:left"><code>setforegroundpresentationoptions</code></td>
+<td style="text-align:left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setbadgenumber</code></td>
-<td style="text-align:center"><code>UAirship.push()?.badgeNumber</code></td>
+<td style="text-align:left"><code>setbadgenumber</code></td>
+<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>resetbadgenumber</code></td>
-<td style="text-align:center"><code>UAirship.push()?.resetBadge()</code></td>
+<td style="text-align:left"><code>resetbadgenumber</code></td>
+<td style="text-align:left"><code>UAirship.push()?.resetBadge()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enableautobadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td style="text-align:left"><code>enableautobadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disableautobadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td style="text-align:left"><code>disableautobadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enablequiettime</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td style="text-align:left"><code>enablequiettime</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disablequiettime</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td style="text-align:left"><code>disablequiettime</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setquiettimestart</code></td>
-<td style="text-align:center"><code>UAirship.push()?.setQuietTimeStartHour</code></td>
+<td style="text-align:left"><code>setquiettimestart</code></td>
+<td style="text-align:left"><code>UAirship.push()?.setQuietTimeStartHour</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setchanneltags</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.tags</code></td>
+<td style="text-align:left"><code>setchanneltags</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.tags</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setnamedusertags</code></td>
-<td style="text-align:center"><code>UAirship.namedUser()?.setTags()</code></td>
+<td style="text-align:left"><code>setnamedusertags</code></td>
+<td style="text-align:left"><code>UAirship.namedUser()?.setTags()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>addtag</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.addTag()</code></td>
+<td style="text-align:left"><code>addtag</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.addTag()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>removetag</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.removeTag</code></td>
+<td style="text-align:left"><code>removetag</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.removeTag</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>addtaggroup</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.addTags, UAirship.namedUser()?.addTags</code></td>
+<td style="text-align:left"><code>addtaggroup</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.addTags, UAirship.namedUser()?.addTags</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>removetaggroup</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.removeTags, UAirship.namedUser()?.removeTags</code></td>
+<td style="text-align:left"><code>removetaggroup</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.removeTags, UAirship.namedUser()?.removeTags</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setattributes</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.apply</code></td>
+<td style="text-align:left"><code>setattributes</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.apply</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>displaymessagecenter</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared().display()</code></td>
+<td style="text-align:left"><code>displaymessagecenter</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared().display()</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setmessagecentertitle</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared()?.defaultUI.title</code></td>
+<td style="text-align:left"><code>setmessagecentertitle</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared()?.defaultUI.title</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>setmessagecenterstyle</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared().defaultUI.style</code></td>
+<td style="text-align:left"><code>setmessagecenterstyle</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enablelocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td style="text-align:left"><code>enablelocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disablelocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td style="text-align:left"><code>disablelocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>enablebackgroundlocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td style="text-align:left"><code>enablebackgroundlocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>disablebackgroundlocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td style="text-align:left"><code>disablebackgroundlocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
@@ -7614,61 +7611,61 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>productionAppKey</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>MyProdKey</code></td>
+<td style="text-align:left"><code>productionAppKey</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>MyProdKey</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>productionAppSecret</code> (required)</td>
-<td style="text-align:center">`String</td>
-<td style="text-align:center">MyProdSecret`</td>
+<td style="text-align:left"><code>productionAppSecret</code> (required)</td>
+<td style="text-align:left">`String</td>
+<td style="text-align:left">MyProdSecret`</td>
 </tr>
 <tr>
-<td style="text-align:center"><code>developmentAppKey</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>MyDevKey</code></td>
+<td style="text-align:left"><code>developmentAppKey</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>MyDevKey</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>developmentAppSecret</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>MyDevSecret</code></td>
+<td style="text-align:left"><code>developmentAppSecret</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>MyDevSecret</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>site</code> (optional)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>eu/us</code></td>
+<td style="text-align:left"><code>site</code> (optional)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>eu/us</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>isDataCollectionOptInEnabled</code> (optional)</td>
-<td style="text-align:center"><code>Boolean</code></td>
-<td style="text-align:center"><code>true</code></td>
+<td style="text-align:left"><code>isDataCollectionOptInEnabled</code> (optional)</td>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left"><code>true</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>isInProduction</code> (optional)</td>
-<td style="text-align:center"><code>Boolean</code></td>
-<td style="text-align:center"><code>true</code></td>
+<td style="text-align:left"><code>isInProduction</code> (optional)</td>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left"><code>true</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>developmentLogLevel</code> (optional)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>debug/error/info/none/trace/undefined/warn</code></td>
+<td style="text-align:left"><code>developmentLogLevel</code> (optional)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>debug/error/info/none/trace/undefined/warn</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>productionLogLevel</code> (optional)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>debug/error/info/none/trace/undefined/warn</code></td>
+<td style="text-align:left"><code>productionLogLevel</code> (optional)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>debug/error/info/none/trace/undefined/warn</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>isAnalyticsEnabled</code> (optional)</td>
-<td style="text-align:center"><code>Boolean</code></td>
-<td style="text-align:center"><code>true</code></td>
+<td style="text-align:left"><code>isAnalyticsEnabled</code> (optional)</td>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left"><code>true</code></td>
 </tr>
 </tbody>
 </table>
@@ -7696,26 +7693,26 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>event_name</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>Purchase</code></td>
+<td style="text-align:left"><code>event_name</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>Purchase</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>event</code> (optional)</td>
-<td style="text-align:center"><code>JSON object</code></td>
-<td style="text-align:center"><code>{&quot;my_numeric_property&quot;: 1}</code></td>
+<td style="text-align:left"><code>event</code> (optional)</td>
+<td style="text-align:left"><code>JSON object</code></td>
+<td style="text-align:left"><code>{&quot;my_numeric_property&quot;: 1}</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>event_value</code> (optional)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>1.5</code></td>
+<td style="text-align:left"><code>event_value</code> (optional)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>1.5</code></td>
 </tr>
 </tbody>
 </table>
@@ -7729,30 +7726,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>trackScreenView</code></td>
-<td style="text-align:center"><code>UAirship.analytics()?.trackScreen</code></td>
+<td style="text-align:left"><code>trackScreenView</code></td>
+<td style="text-align:left"><code>UAirship.analytics()?.trackScreen</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>screen_name</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>Home Screen</code></td>
+<td style="text-align:left"><code>screen_name</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>Home Screen</code></td>
 </tr>
 </tbody>
 </table>
@@ -7766,14 +7763,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableAnalytics</code></td>
-<td style="text-align:center"><code>UAirship.analytics()?.isEnabled</code></td>
+<td style="text-align:left"><code>enableAnalytics</code></td>
+<td style="text-align:left"><code>UAirship.analytics()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -7787,14 +7784,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableAnalytics</code></td>
-<td style="text-align:center"><code>UAirship.analytics()?.isEnabled</code></td>
+<td style="text-align:left"><code>disableAnalytics</code></td>
+<td style="text-align:left"><code>UAirship.analytics()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -7808,30 +7805,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setNamedUser</code></td>
-<td style="text-align:center"><code>UAirship.namedUser()?.identifier</code></td>
+<td style="text-align:left"><code>setNamedUser</code></td>
+<td style="text-align:left"><code>UAirship.namedUser()?.identifier</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>named_user_identifier</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>email@tealium.com</code></td>
+<td style="text-align:left"><code>named_user_identifier</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>email@tealium.com</code></td>
 </tr>
 </tbody>
 </table>
@@ -7845,30 +7842,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setCustomIdentifiers</code></td>
-<td style="text-align:center"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
+<td style="text-align:left"><code>setCustomIdentifiers</code></td>
+<td style="text-align:left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>custom</code> (required)</td>
-<td style="text-align:center"><code>JSON Object</code> (Strings Only)</td>
-<td style="text-align:center"><code>{&quot;my_custom_identifier&quot;:&quot;user@email.com&quot;}</code></td>
+<td style="text-align:left"><code>custom</code> (required)</td>
+<td style="text-align:left"><code>JSON Object</code> (Strings Only)</td>
+<td style="text-align:left"><code>{&quot;my_custom_identifier&quot;:&quot;user@email.com&quot;}</code></td>
 </tr>
 </tbody>
 </table>
@@ -7882,14 +7879,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setCustomIdentifiers</code></td>
-<td style="text-align:center"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
+<td style="text-align:left"><code>setCustomIdentifiers</code></td>
+<td style="text-align:left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 </tbody>
 </table>
@@ -7903,14 +7900,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableInAppMessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td style="text-align:left"><code>enableInAppMessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -7924,14 +7921,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableInAppMessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td style="text-align:left"><code>disableInAppMessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -7945,14 +7942,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>pauseInAppMessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td style="text-align:left"><code>pauseInAppMessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 </tbody>
 </table>
@@ -7966,14 +7963,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>unPauseInAppMessaging</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td style="text-align:left"><code>unPauseInAppMessaging</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 </tbody>
 </table>
@@ -7987,30 +7984,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setInAppMessagingDisplayInterval</code></td>
-<td style="text-align:center"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
+<td style="text-align:left"><code>setInAppMessagingDisplayInterval</code></td>
+<td style="text-align:left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>in_app_messaging_display_interval</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>&quot;10&quot;</code></td>
+<td style="text-align:left"><code>in_app_messaging_display_interval</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>&quot;10&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -8024,33 +8021,33 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableUserPushNotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>enableUserPushNotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>push_notification_options</code> (optional)</td>
-<td style="text-align:center"><code>Array of Strings</code></td>
-<td style="text-align:center"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
+<td style="text-align:left"><code>push_notification_options</code> (optional)</td>
+<td style="text-align:left"><code>Array of Strings</code></td>
+<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
 </tr>
 <tr>
-<td style="text-align:center">Possible Push Messaging Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code>, <code>&quot;carplay&quot;</code>, <code>&quot;announcement&quot;</code>, <code>&quot;critical&quot;</code>, <code>&quot;app_notification_settings&quot;</code></td>
+<td style="text-align:left">Possible Push Messaging Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code>, <code>&quot;carplay&quot;</code>, <code>&quot;announcement&quot;</code>, <code>&quot;critical&quot;</code>, <code>&quot;app_notification_settings&quot;</code></td>
 <td></td>
 <td></td>
 </tr>
@@ -8066,14 +8063,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableUserPushNotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>enableUserPushNotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8087,14 +8084,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableUserPushNotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?. backgroundPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>enableUserPushNotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?. backgroundPushNotificationsEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8108,14 +8105,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableBackgroundPushNotifications</code></td>
-<td style="text-align:center"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+<td style="text-align:left"><code>disableBackgroundPushNotifications</code></td>
+<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8129,30 +8126,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setPushNotificationOptions</code></td>
-<td style="text-align:center"><code>UAirship.push()?.notificationOptions</code></td>
+<td style="text-align:left"><code>setPushNotificationOptions</code></td>
+<td style="text-align:left"><code>UAirship.push()?.notificationOptions</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>push_notification_options</code> (required)</td>
-<td style="text-align:center"><code>Array of Strings</code></td>
-<td style="text-align:center"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
+<td style="text-align:left"><code>push_notification_options</code> (required)</td>
+<td style="text-align:left"><code>Array of Strings</code></td>
+<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
 </tr>
 </tbody>
 </table>
@@ -8166,30 +8163,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setForegroundPresentationOptions</code></td>
-<td style="text-align:center"><code>UAirship.push()?.defaultPresentationOptions</code></td>
+<td style="text-align:left"><code>setForegroundPresentationOptions</code></td>
+<td style="text-align:left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>foreground_presentation_options</code> (required)</td>
-<td style="text-align:center"><code>Array of Strings</code></td>
-<td style="text-align:center"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;alert&quot;]</code></td>
+<td style="text-align:left"><code>foreground_presentation_options</code> (required)</td>
+<td style="text-align:left"><code>Array of Strings</code></td>
+<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;alert&quot;]</code></td>
 </tr>
 </tbody>
 </table>
@@ -8203,30 +8200,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setBadgeNumber</code></td>
-<td style="text-align:center"><code>UAirship.push()?.badgeNumber</code></td>
+<td style="text-align:left"><code>setBadgeNumber</code></td>
+<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>badge_number</code> (required)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>3</code></td>
+<td style="text-align:left"><code>badge_number</code> (required)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>3</code></td>
 </tr>
 </tbody>
 </table>
@@ -8239,14 +8236,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setBadgeNumber</code></td>
-<td style="text-align:center"><code>UAirship.push()?.badgeNumber</code></td>
+<td style="text-align:left"><code>setBadgeNumber</code></td>
+<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
 </tbody>
 </table>
@@ -8259,14 +8256,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableAutoBadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td style="text-align:left"><code>enableAutoBadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8279,14 +8276,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableAutoBadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td style="text-align:left"><code>disableAutoBadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8299,14 +8296,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableAutoBadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td style="text-align:left"><code>enableAutoBadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8319,14 +8316,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableAutoBadge</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td style="text-align:left"><code>disableAutoBadge</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8339,33 +8336,33 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setQuietTimeStart</code></td>
-<td style="text-align:center"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td style="text-align:left"><code>setQuietTimeStart</code></td>
+<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>quiet</code> (required)</td>
-<td style="text-align:center"><code>JSON Object</code></td>
-<td style="text-align:center"><code>{'start_hour': 3, 'start_minute': 30, 'end_hour': 4, 'end_minute': 30</code></td>
+<td style="text-align:left"><code>quiet</code> (required)</td>
+<td style="text-align:left"><code>JSON Object</code></td>
+<td style="text-align:left"><code>{'start_hour': 3, 'start_minute': 30, 'end_hour': 4, 'end_minute': 30</code></td>
 </tr>
 <tr>
-<td style="text-align:center">Required within the quiet object:</td>
+<td style="text-align:left">Required within the quiet object:</td>
 <td></td>
 <td></td>
 </tr>
@@ -8374,31 +8371,31 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>start_hour</code> (required)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>3</code></td>
+<td style="text-align:left"><code>start_hour</code> (required)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>3</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>start_minute</code> (required)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>30</code></td>
+<td style="text-align:left"><code>start_minute</code> (required)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>30</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>end_hour</code> (required)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>4</code></td>
+<td style="text-align:left"><code>end_hour</code> (required)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>4</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>end_minute</code> (required)</td>
-<td style="text-align:center"><code>Number</code></td>
-<td style="text-align:center"><code>30</code></td>
+<td style="text-align:left"><code>end_minute</code> (required)</td>
+<td style="text-align:left"><code>Number</code></td>
+<td style="text-align:left"><code>30</code></td>
 </tr>
 </tbody>
 </table>
@@ -8411,14 +8408,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>updateRegistration</code></td>
-<td style="text-align:center"><code>UAirship.push()?.updateRegistration</code></td>
+<td style="text-align:left"><code>updateRegistration</code></td>
+<td style="text-align:left"><code>UAirship.push()?.updateRegistration</code></td>
 </tr>
 </tbody>
 </table>
@@ -8431,35 +8428,35 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setNamedUserTags</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.addTags</code></td>
+<td style="text-align:left"><code>setNamedUserTags</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.addTags</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>named_user_tags</code> (required)</td>
-<td style="text-align:center"><code>String Array</code></td>
-<td style="text-align:center"><code>[&quot;silver-member&quot;, &quot;gold-member&quot;]</code></td>
+<td style="text-align:left"><code>named_user_tags</code> (required)</td>
+<td style="text-align:left"><code>String Array</code></td>
+<td style="text-align:left"><code>[&quot;silver-member&quot;, &quot;gold-member&quot;]</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>tag_group</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>loyalty</code></td>
+<td style="text-align:left"><code>tag_group</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>loyalty</code></td>
 </tr>
 </tbody>
 </table>
@@ -8473,30 +8470,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>addTag</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.addTag</code></td>
+<td style="text-align:left"><code>addTag</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.addTag</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>channel_tag</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>&quot;a_tag&quot;</code></td>
+<td style="text-align:left"><code>channel_tag</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>&quot;a_tag&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -8510,30 +8507,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>removeTag</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.removeTag</code></td>
+<td style="text-align:left"><code>removeTag</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.removeTag</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>channel_tag</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>&quot;a_tag&quot;</code></td>
+<td style="text-align:left"><code>channel_tag</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>&quot;a_tag&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -8547,40 +8544,40 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>addTagGroup</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.addTags</code></td>
+<td style="text-align:left"><code>addTagGroup</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.addTags</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>named_user_tags</code></td>
-<td style="text-align:center"><code>channel_tags</code> (required)</td>
-<td style="text-align:center"><code>String Array</code></td>
+<td style="text-align:left"><code>named_user_tags</code></td>
+<td style="text-align:left"><code>channel_tags</code> (required)</td>
+<td style="text-align:left"><code>String Array</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>tag_group</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>loyalty</code></td>
+<td style="text-align:left"><code>tag_group</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>loyalty</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>tag_type</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center">`channel</td>
+<td style="text-align:left"><code>tag_type</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">`channel</td>
 </tr>
 </tbody>
 </table>
@@ -8594,40 +8591,40 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>removeTagGroup</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.removeTags</code></td>
+<td style="text-align:left"><code>removeTagGroup</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.removeTags</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>named_user_tags</code></td>
-<td style="text-align:center"><code>channel_tags</code> (required)</td>
-<td style="text-align:center"><code>String Array</code></td>
+<td style="text-align:left"><code>named_user_tags</code></td>
+<td style="text-align:left"><code>channel_tags</code> (required)</td>
+<td style="text-align:left"><code>String Array</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>tag_group</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>loyalty</code></td>
+<td style="text-align:left"><code>tag_group</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>loyalty</code></td>
 </tr>
 <tr>
-<td style="text-align:center"><code>tag_type</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>channel</code></td>
+<td style="text-align:left"><code>tag_type</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>channel</code></td>
 </tr>
 </tbody>
 </table>
@@ -8641,30 +8638,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setAttributes</code></td>
-<td style="text-align:center"><code>UAirship.channel()?.apply</code></td>
+<td style="text-align:left"><code>setAttributes</code></td>
+<td style="text-align:left"><code>UAirship.channel()?.apply</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>attributes</code> (required)</td>
-<td style="text-align:center"><code>JSON object</code></td>
-<td style="text-align:center"><code>{&quot;last\_product\_purchased&quot;: &quot;A1234567&quot;}</code></td>
+<td style="text-align:left"><code>attributes</code> (required)</td>
+<td style="text-align:left"><code>JSON object</code></td>
+<td style="text-align:left"><code>{&quot;last\_product\_purchased&quot;: &quot;A1234567&quot;}</code></td>
 </tr>
 </tbody>
 </table>
@@ -8679,14 +8676,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>displayMessageCenter</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared().display</code></td>
+<td style="text-align:left"><code>displayMessageCenter</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared().display</code></td>
 </tr>
 </tbody>
 </table>
@@ -8700,30 +8697,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setMessageCenterTitle</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared().defaultUI.title</code></td>
+<td style="text-align:left"><code>setMessageCenterTitle</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.title</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>message_center_title</code> (required)</td>
-<td style="text-align:center"><code>String</code></td>
-<td style="text-align:center"><code>&quot;Custom Message Center&quot;</code></td>
+<td style="text-align:left"><code>message_center_title</code> (required)</td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left"><code>&quot;Custom Message Center&quot;</code></td>
 </tr>
 </tbody>
 </table>
@@ -8736,30 +8733,30 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>setMessageCenterStyle</code></td>
-<td style="text-align:center"><code>UAMessageCenter.shared().defaultUI.style</code></td>
+<td style="text-align:left"><code>setMessageCenterStyle</code></td>
+<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
 </tr>
 </tbody>
 </table>
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Parameter</th>
-<th style="text-align:center">Type</th>
-<th style="text-align:center">Example</th>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>message_center_style</code> (required)</td>
-<td style="text-align:center"><code>JSON object</code></td>
-<td style="text-align:center">Example below</td>
+<td style="text-align:left"><code>message_center_style</code> (required)</td>
+<td style="text-align:left"><code>JSON object</code></td>
+<td style="text-align:left">Example below</td>
 </tr>
 </tbody>
 </table>
@@ -8779,14 +8776,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableLocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td style="text-align:left"><code>enableLocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8800,14 +8797,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableLocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td style="text-align:left"><code>disableLocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 </tbody>
 </table>
@@ -8821,14 +8818,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>enableBackgroundLocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td style="text-align:left"><code>enableBackgroundLocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
@@ -8842,14 +8839,14 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th style="text-align:center">Remote Command</th>
-<th style="text-align:center">Airship Method</th>
+<th style="text-align:left">Remote Command</th>
+<th style="text-align:left">Airship Method</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><code>disableBackgroundLocation</code></td>
-<td style="text-align:center"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td style="text-align:left"><code>disableBackgroundLocation</code></td>
+<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
