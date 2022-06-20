@@ -7228,7 +7228,7 @@ var utag_data = {
 </ol>
 <p>Tealium wraps the calls to <code>SKAdNetwork</code>.  If the <code>TealiumAttribution</code> module and the configuration flag are enabled, then <code>SKAdNetwork.registerAppForAdNetworkAttribution()</code> is called on app launch.</p>
 <p>Additionally, if you have defined the <a href="/platforms/ios-swift/api/tealium-config/#skadconversionkeys"><code>skAdConversionKeys</code></a>, then the <code>SKAdNetwork.updateConversionValue(_:)</code> method is called and passed in the specified conversion value. Tealium permits you to manage your calls to <code>SKAdNetwork</code> through the tracking you already have in place.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>You may need to request tracking authorization from your users and add the appropriate keys to your <code>.plist</code> file.</p>
 <p>The following diagram shows shows how Tealium works with <code>SKAdNetwork</code>:</p>
 <p><img src="/images/platforms/ios/skad-tealium-custom.png" alt="skad-tealium-custom.png" title="skad-tealium-custom.png"></p>
 <h4 id="validation">Validation</h4>
@@ -7238,7 +7238,7 @@ var utag_data = {
 <p>In some cases there may be several events after launch. These variables are only retrieved from Apple&rsquo;s servers once during the app&rsquo;s lifetime, and are stored as persistent variables so that they become available on future app launches.</p>
 <h2 id="data-layer">Data Layer</h2>
 <p>The following variables are transmitted with each tracking call while the module is enabled:</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>Variables prefixed with <code>ad_</code> are only set if <a href="#search-ads-api">Search Ads</a> has been enabled.</p>
 <table>
 <thead>
 <tr>

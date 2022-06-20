@@ -7165,7 +7165,7 @@ var utag_data = {
 <li><a href="https://github.com/Tealium/tealium-ios/blob/master/Samples/iOS_UIKitCatalog%2BTealium_ObjC/UIKitCatalog/TealiumHelper.m">TealiumHelper for Objective-C</a></li>
 <li><a href="https://github.com/Tealium/tealium-ios/blob/master/Samples/iOS_UIKitCatalog%2BTealium_Swift/UIKitCatalog/TealiumHelper.swift">TealiumHelper for Swift</a></li>
 </ul>
-<!-- raw HTML omitted -->
+<p class="tip"><i class="fas fa-star"></i>See the <a href="https://tealium.github.io/tealium-ios/">TealiumIOS API</a> for a complete listing of Tealium classes and methods for iOS.</p>
 <h2 id="install">Install</h2>
 <p>Install the Tealium SDK for iOS (Objective-C) with CocoaPods, Carthage, or manually.</p>
 <h3 id="cocoapods">CocoaPods</h3>
@@ -7191,7 +7191,7 @@ var utag_data = {
 <li>
 <p>To download and extract the frameworks, run the following command:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>carthage update <span style="color:#f92672">--</span>platform ios <span style="color:#f92672">--</span><span style="color:#66d9ef">use</span><span style="color:#f92672">-</span>xcframeworks
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div> <p class="note"><i class="fas fa-info-circle"></i>Be sure to use the <code>--use-xcframeworks</code> flag, or the build will fail. This requires <a href="https://github.com/Carthage/Carthage/releases/tag/0.38.0">Carthage 0.38.0</a>.</p>
 </li>
 <li>
 <p>For the required frameworks to be copied automatically at build-time, verify sure that Carthage is <a href="https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos">properly integrated</a> into your Xcode project. </p>
@@ -7210,16 +7210,60 @@ var utag_data = {
 <p>In the Target go to <strong>General &gt; Frameworks, Libraries &amp; Embedded Content</strong> and add <code>TealiumIOS.xcframework</code> with the &ldquo;Embed &amp; Sign&rdquo; option selected.</p>
 </li>
 </ol>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>For Swift projects go to the <strong>Build Settings &gt; Swift Compiler &gt; Objective-C Bridging Header</strong> option and include the file <code>TealiumIOSBridgingHeader.h</code>.</p>
 <h2 id="initialize">Initialize</h2>
 <p>In the Application Delegate or within a helper class setup method use the following initialization code:  </p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Swift" title="Swift">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// set your account, profile, and environment</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealConfig = TEALConfiguration.<span style="color:#66d9ef">init</span>(account: <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                        profile: <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
+</span></span><span style="display:flex;"><span>                                    environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                     datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Initialize with a unique key for this instance</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> tealium = Tealium.newInstanceForKey(<span style="color:#e6db74">&#34;INSTANCE&#34;</span>, configuration: tealConfig) <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>     <span style="color:#75715e">// Any additional failure response here           </span>
+</span></span><span style="display:flex;"><span>     <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span><span style="color:#75715e">// import area
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>@import TealiumIOS;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Set your account, profile, and environment
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>TEALConfiguration <span style="color:#f92672">*</span>tealConfig <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span>
+</span></span><span style="display:flex;"><span>                          profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span>
+</span></span><span style="display:flex;"><span>                          environment:<span style="color:#e6db74">@&#34;ENVIRONMENT&#34;</span>
+</span></span><span style="display:flex;"><span>                          datasource:<span style="color:#e6db74">@&#34;DATASOURCE&#34;</span>];
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">// Initialize with a unique key for this instance
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium <span style="color:#f92672">*</span>tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span> configuration:tealConfig]; 
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <p>The log level is set by default from the publish settings from your iQ account. To override this setting set the <code>logLevel</code> property in the TEALConfiguration instance:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Swift" title="Swift">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// Set the log verbosity to errors only</span>
+</span></span><span style="display:flex;"><span>tealConfig.logLevel = .prod
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Objective-C" title="Objective-C">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span><span style="color:#75715e">// Set the log verbosity to maximum
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>[tealConfig setLogLevel: TEALLogLevelDev];
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <p>The Tealium instance must be configured with the following parameters before it begins tracking:</p>
 <table>
 <thead>

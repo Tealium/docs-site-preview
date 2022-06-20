@@ -7152,7 +7152,7 @@ var utag_data = {
 
 <div class="prose" id="prose">
   <p>A native app can display web content and delegate functionality to an embedded browser called a webview. To track events from a webview in the Tealium iOS or Android SDK you need a communication bridge to the native code. This is done using JavaScript to invoke native code by sending messages to your app.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>This solution works in webviews <em>with or without</em> the Tealium Universal Tag (utag.js) installed.</p>
 <h2 id="how-it-works">How It Works</h2>
 <p>This solution uses the following components:</p>
 <ul>
@@ -7205,7 +7205,7 @@ This native code uses a JavaScript interface to receive the messages containing 
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="webview-with-tealium">Webview With Tealium</h3>
 <p>If the pages loaded in the webview already have the Tealium Universal Tag (utag.js), then add the JavaScript handler code using two <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/JavaScript-Code-Extension/ta-p/11925">JavaScript Code extensions</a>: one to initialize the wrapper functions and one to forward existing tracking calls to the JavaScript interface.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>In this scenario the webview pages and the native app must be using different Tealium iQ profiles.</p>
 <ol>
 <li>
 <p>Add the <a href="#webview-javascript-handler">JavaScript handler code</a> to a JavaScript Code extension scoped to <strong>Pre Loader</strong>.</p>
@@ -7222,10 +7222,59 @@ This native code uses a JavaScript interface to receive the messages containing 
 <h3 id="webview-without-tealium">Webview Without Tealium</h3>
 <p>If the pages loaded in the webview do not have Tealium, then add the JavaScript handler code to each page that loads inside a webview. Then call <code>tealView</code> to track page views and <code>tealLink</code> when a non-page view event occurs, such as a button click or cart event.</p>
 <h2 id="native-message-handler">Native Message Handler</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <p>To invoke native Android code from JavaScript, implement a class with methods marked <a href="https://developer.android.com/reference/android/webkit/JavascriptInterface"><code>@JavaScriptInterface</code></a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WebViewInterface</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@JavascriptInterface</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">trackView</span><span style="color:#f92672">(</span>String viewName<span style="color:#f92672">,</span> String data<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> JSONException <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	    tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span>viewName<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> JSONObject<span style="color:#f92672">(</span>data<span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@JavascriptInterface</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">trackEvent</span><span style="color:#f92672">(</span>String eventName<span style="color:#f92672">,</span> String data<span style="color:#f92672">)</span> <span style="color:#66d9ef">throws</span> JSONException <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    	tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span>eventName<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> JSONObject<span style="color:#f92672">(</span>data<span style="color:#f92672">));</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Once the native interface is created, register it with your <code>WebView</code> to make it visible to JavaScript code running in the <code>WebView</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>mWebView<span style="color:#f92672">.</span><span style="color:#a6e22e">addJavascriptInterface</span><span style="color:#f92672">(</span>mInterface<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;WebViewInterface&#34;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>Call the method <a href="https://developer.android.com/reference/android/webkit/WebView.html#addJavascriptInterface(java.lang.Object,%20java.lang.String)"><code>addJavascriptInterface()</code></a> prior to calling the <code>webView.loadUrl()</code> method. Also, due to security concerns, only add the <a href="https://developer.android.com/reference/android/webkit/WebView#addJavascriptInterface(java.lang.Object,%20java.lang.String)"><code>JavaScriptInterface</code></a> on API version JELLY_BEAN_MR1 and above.</p>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <p>Add the following message handler to the WebView&rsquo;s user <a href="https://developer.apple.com/documentation/webkit/wkusercontentcontroller">content controller</a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>webView.configuration.userContentController.add(<span style="color:#66d9ef">self</span>, name: <span style="color:#e6db74">&#34;tealium&#34;</span>)
+</span></span></code></pre></div><p>To invoke native iOS code from JavaScript, create a message handler class conforming to the <a href="https://developer.apple.com/documentation/webkit/wkscriptmessagehandler">WKScriptMessageHandler</a> protocol. For tracking, call <a href="/platforms/ios-swift/track/">Tealium.track</a> inside the <a href="https://developer.apple.com/documentation/webkit/wkscriptmessagehandler/1396222-usercontentcontroller">userContentController:didReceive:</a> callback:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">userContentController</span>(<span style="color:#66d9ef">_</span> userContentController: WKUserContentController,
+</span></span><span style="display:flex;"><span>                          didReceive message: WKScriptMessage) {
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> body = message.body <span style="color:#66d9ef">as</span>? [String: Any],
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> command = body[<span style="color:#e6db74">&#34;command&#34;</span>] <span style="color:#66d9ef">as</span>? String,
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> title = body[<span style="color:#e6db74">&#34;title&#34;</span>] <span style="color:#66d9ef">as</span>? String,
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> webViewData = body[<span style="color:#e6db74">&#34;data&#34;</span>] <span style="color:#66d9ef">as</span>? [String: Any] <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">switch</span> command {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;track&#34;</span>:
+</span></span><span style="display:flex;"><span>      TealiumHelper.shared.tealium?.track(title: title,
+</span></span><span style="display:flex;"><span>                                          data: webViewData,
+</span></span><span style="display:flex;"><span>                                          completion: <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">case</span> <span style="color:#e6db74">&#34;trackView&#34;</span>:
+</span></span><span style="display:flex;"><span>      TealiumHelper.shared.tealium?.trackView(title: title,
+</span></span><span style="display:flex;"><span>                                              data: webViewData,
+</span></span><span style="display:flex;"><span>                                              completion: <span style="color:#66d9ef">nil</span>)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">default</span>:
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h2 id="supported-libraries">Supported Libraries</h2>
 <p>The following platforms support the JavaScript interface solution:</p>
 <ul>

@@ -7199,11 +7199,49 @@ A tag in iQ Tag Management that offers configuration options for the vendor&rsqu
 <p>See the <a href="/platforms/remote-commands/integrations/">list of remote command vendor integrations</a>.</p>
 <h3 id="examples">Examples</h3>
 <p>The Remote Command tag is configurable in Tealium iQ Tag Management, via a JSON file in your app, or JSON file on a remote server.  Once the remote command is configured and the module is installed, add the following lines to the initialization:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Tealium iQ" title="Tealium iQ">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
+</span></span><span style="display:flex;"><span>        Environment.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// register the command
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Local JSON File" title="Local JSON File">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
+</span></span><span style="display:flex;"><span>        Environment.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands, filename = <span style="color:#e6db74">&#34;FILENAME.json&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Remote Hosted JSON" title="Remote Hosted JSON">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
+</span></span><span style="display:flex;"><span>        Environment.DEV,
+</span></span><span style="display:flex;"><span>        dispatchers = mutableSetOf(Dispatchers.RemoteCommands));
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = Tealium.create(TEALIUM_MAIN, config) {
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">val</span> remoteCommands = RemoteCommand(<span style="color:#66d9ef">this</span>);
+</span></span><span style="display:flex;"><span>  remoteCommands<span style="color:#f92672">?.</span>add(remoteCommands, remoteUrl = <span style="color:#e6db74">&#34;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/FILENAME.json&#34;</span>);
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <p>After the JSON file has been configured and either added to your app or hosted on a server, learn about the different <a href="/platforms/remote-commands/how-it-works/#load-options">JSON load options</a>.</p>
 <h2 id="data-layer">Data Layer</h2>
 <p>No additional variables are introduced by this module.</p>

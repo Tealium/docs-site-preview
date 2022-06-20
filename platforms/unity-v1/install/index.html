@@ -7162,12 +7162,34 @@ var utag_data = {
 <h2 id="install">Install</h2>
 <p>To integrate Tealium mobile libraries (iOS/Android) into your Unity application, copy all the contents of the Unity <a href="https://github.com/Tealium/unity-plugin">plugin code</a> into the <code>Assets/Plugins/</code> directory within your Unity project.</p>
 <p>When the Unity plugin is deployed to an Android or iOS device, Tealium events are logged in the respective device logs.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>Tealium only supports Android and iOS platforms within Unity.</p>
 <h2 id="initialize">Initialize</h2>
 <p>To initialize the Tealium instance, configure the following parameters:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <p>Update the following <a href="https://developer.android.com/guide/topics/manifest/meta-data-element">meta-data</a> keys in the Android manifest file <code>~/Assets/Plugins/Android/AndroidManifest.xml</code> to point to your Tealium instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-xml" data-lang="xml"><span style="display:flex;"><span><span style="color:#f92672">&lt;meta-data</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.tealium.library.ACCOUNT&#34;</span> <span style="color:#a6e22e">android:value=</span><span style="color:#e6db74">&#34;ACCOUNT&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;meta-data</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.tealium.library.PROFILE&#34;</span> <span style="color:#a6e22e">android:value=</span><span style="color:#e6db74">&#34;PROFILE&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;meta-data</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.tealium.library.ENVIRONMENT&#34;</span> <span style="color:#a6e22e">android:value=</span><span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;meta-data</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.tealium.library.DATA_SOURCE&#34;</span> <span style="color:#a6e22e">android:value=</span><span style="color:#e6db74">&#34;DATASOURCE&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">&lt;!--TODO: remove for release builds--&gt;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">&lt;meta-data</span> <span style="color:#a6e22e">android:name=</span><span style="color:#e6db74">&#34;com.tealium.library.DEBUG&#34;</span> <span style="color:#a6e22e">android:value=</span><span style="color:#e6db74">&#34;true&#34;</span> <span style="color:#f92672">/&gt;</span>
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <p>Update the Tealium account information in the bridging code file <code>Assets/Plugins/iOS/TealiumBridge.mm</code> to point to your Tealium instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>#define TEALIUM_INSTANCE_NAME    @<span style="color:#e6db74">&#34;TEALIUM_INSTANCE&#34;</span>
+</span></span><span style="display:flex;"><span>#define TEALIUM_ACCOUNT_NAME     @<span style="color:#e6db74">&#34;ACCOUNT&#34;</span>
+</span></span><span style="display:flex;"><span>#define TEALIUM_PROFILE_NAME     @<span style="color:#e6db74">&#34;PROFILE&#34;</span>
+</span></span><span style="display:flex;"><span>#define TEALIUM_ENVIRONMENT_NAME @<span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>
+</span></span><span style="display:flex;"><span>#define TEALIUM_DATA_SOURCE      @<span style="color:#e6db74">&#34;DATASOURCE&#34;</span>
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h2 id="verify">Verify</h2>
 <p>The following steps verify that Tealium is properly installed on your Unity application.</p>
 <ul>
@@ -7192,7 +7214,7 @@ var utag_data = {
 	custom_beta : beta
 	screen_title : SCREEN_NAME
 }
-</code></pre><!-- raw HTML omitted -->
+</code></pre><p class="tip"><i class="fas fa-star"></i>To open the Console from Unity’s main menu, select <strong>Window &gt; General &gt; Console</strong>. Click the speech balloon icon to see full details.</p>
 
 </div>
 

@@ -7165,7 +7165,7 @@ var utag_data = {
 <h2 id="install">Install</h2>
 <p>The Tealium iOS library is divided into modules. It is recommended to install only the modules that you need in order to maintain a smaller resource footprint. <a href="/platforms/ios-swift/modules/">Learn more</a> about the modules available for iOS.</p>
 <p>Install the Tealium for iOS library with Swift Package Manager, CocoaPods, or Carthage.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>If you do not require consent management, exclude or disable the consent manager module. The <a href="/platforms/ios-swift/consent-management/">Consent Manager</a> module is enabled by default, which initially prevents tracking calls from being sent. In order to allow tracking calls, set the consent status to <code>.consented</code>.</p>
 <h3 id="swift-package-manager-recommended">Swift Package Manager (Recommended)</h3>
 <p>Supported in version 1.9.0+, the Swift Package Manager is the recommended and simplest way to install the Tealium Swift library:</p>
 <ol>
@@ -7208,7 +7208,7 @@ var utag_data = {
 <li>Once you have added your desired modules, run the following command:</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod install
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>If the command doesn&rsquo;t find the correct Pods, try running the command <code>pod repo update</code>.</p>
 <ol start="3">
 <li>
 <p>Open your Xcode project using the <code>.xcworkspace</code> file (Do not use the <code>.xcodeproj</code> file).</p>
@@ -7220,7 +7220,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumSwift</span>
 </span></span></code></pre></div><h4 id="recommended-podfile">Recommended Podfile</h4>
 <p>The following is the recommended Podfile:</p>
-<!-- raw HTML omitted -->
+<p class="tip"><i class="fas fa-star"></i>To disable specific modules from the Podfile, comment them out in the Podfile with <code>#</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#75715e"># Podfile</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># replace CPodTest with your target</span>
 </span></span><span style="display:flex;"><span>target <span style="color:#e6db74">&#39;CPodTest&#39;</span> <span style="color:#66d9ef">do</span>
@@ -7322,7 +7322,7 @@ var utag_data = {
 </span></span></code></pre></div><ol start="4">
 <li>Drag the frameworks you require into your Xcode project&rsquo;s <strong>General &gt; Embedded Binaries</strong> section.</li>
 </ol>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>Verify that the Tealium frameworks have been added to the Embedded Binaries section in your project settings, otherwise your app crashes at launch.</p>
 <ol start="5">
 <li>Follow the instructions listed in the Carthage <a href="https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos">Getting Started</a> documentation to add the relevant build phases scripts, to ensure you don&rsquo;t run into any issues when submitting your app.</li>
 </ol>
@@ -7369,7 +7369,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>		}
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>In version 1.9.0+, Mobile Publish Settings are enabled by default, and must be disabled if you don’t wish to use them. Configure the Mobile Publish Settings in iQ Tag Management, or disable it using <code>config.shouldUseRemotePublishSettings = false</code>.</p>
 <h2 id="log-level">Log Level</h2>
 <p>To set a log level, call the <a href="/platforms/ios-swift/api/tealium-config/#setloglevel"><code>setLogLevel()</code></a> method on your <code>TealiumConfig</code> instance with one of the following values:</p>
 <ul>

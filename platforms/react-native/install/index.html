@@ -7189,7 +7189,7 @@ var utag_data = {
 <p>To install the pods, run the following commands:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>// From your React Native application folder:
 </span></span><span style="display:flex;"><span>cd ios <span style="color:#f92672">&amp;&amp;</span> pod install
-</span></span></code></pre></div><!-- raw HTML omitted -->
+</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>From version 2.2.0 and above, add the following reference to your Podfile: <code>pod &quot;tealium-react-native-swift&quot;, :path =&gt; '../node_modules/tealium-react-native/tealium-react-native-swift.podspec'</code></p>
 <p>In some cases, it&rsquo;s necessary to enable the clang parameter to allow non-modular includes in the framework modules. To enable the clang parameter:</p>
 <ol>
 <li>
@@ -7212,7 +7212,7 @@ var utag_data = {
 <li>When the prompt &ldquo;Would you like to configure an Objective-D bridging header?&rdquo; appears, select <strong>Create Bridging Header</strong> to generate the bridging header file.</li>
 </ol>
 <p>The bridging header file name is in the format: <code>YourProject-Bridging-Header.h</code>. Do not rename the file, as Xcode configures the project with the generated file name.</p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>You are only prompted once per project for adding a bridging header.</p>
 <h2 id="javascript">JavaScript</h2>
 <p>The method for importing the module into your app depends on how you installed.</p>
 <p>If you installed via NPM, add this line to your code:</p>

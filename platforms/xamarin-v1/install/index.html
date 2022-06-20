@@ -7173,7 +7173,7 @@ Abstraction DLLS are included to create a C# API wrapper for the native Tealium 
 <li><code>Tealium.Platform.Droid.dll</code></li>
 <li><code>Tealium.Platform.iOS.dll</code></li>
 </ul>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>Binding libraries may be used by themselves. The fact that they are automatically generated results in vastly different namespaces for each platform, which adds an extra complication to development efforts. It is advised to make use of the <code>Common</code> and platform-specific abstraction libraries instead.</p>
 <h4 id="lifecycle-modules">Lifecycle Modules</h4>
 <p>An optional lifecycle module is available by referencing the relevant DLL for the platform. These are binding libraries for the native equivalent SDKs:</p>
 <ul>
@@ -7182,7 +7182,7 @@ Abstraction DLLS are included to create a C# API wrapper for the native Tealium 
 </ul>
 <h4 id="android-example">Android Example</h4>
 <p>The following example illustrates the Shared project and Android platform-specific project from a typical Xamarin based app:</p>
-<!-- raw HTML omitted -->
+<img src="/images/platforms/xamarin/consent-manager-model.png" alt="Consent Manager Model" title="Consent Manager Model" width="450">
 <p>As shown in the example, the Shared Project references only the <code>Tealium.Common.dll</code> library, whereas the Android-specific project references all of the following:</p>
 <ul>
 <li><code>Tealium.Common.dll</code></li>
@@ -7192,9 +7192,30 @@ Abstraction DLLS are included to create a C# API wrapper for the native Tealium 
 </ul>
 <h2 id="install">Install</h2>
 <p>To install Tealium library for Xamarin, first verify that your projects reference the appropriate libraries. We recommend using the <code>TealiumInstanceManager</code> classes provided as they provide out-of-the-box, thread-safe Tealium instance management.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Tealium.Droid;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ITealiumInstanceManager instanceManager = <span style="color:#66d9ef">new</span> TealiumInstanceManager(<span style="color:#66d9ef">new</span> TealiumInstanceFactoryDroid(&lt;myAndroidApplication&gt;));
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.Droid.dll</span>
+</span></span><span style="display:flex;"><span>TealiumLifecycleManager.SetLifecycleAutoTracking = TealiumDroid.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Tealium.iOS;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ITealiumInstanceManager instanceManager = <span style="color:#66d9ef">new</span> TealiumInstanceManager(<span style="color:#66d9ef">new</span> TealiumInstanceFactoryIOS());
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//Optional Lifecycle Module enablement - must reference Tealium.Platform.Lifecycle.iOS.dll</span>
+</span></span><span style="display:flex;"><span>TealiumLifecycleManager.SetLifecycleAutoTracking =TealiumIOS.Lifecycle.TealiumLifecycleControlDelegation.SetLifecycleAutoTracking;
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h3 id="nuget">NuGet</h3>
 <p>To install the Tealium library for Xamarin as a NuGet package, install it directly from Visual Studio using the built-in NuGet package manager. <a href="https://www.nuget.org/packages/Tealium.Xamarin/">Learn more</a> about the Tealium NuGet listing.</p>
 <h2 id="initialize">Initialize</h2>

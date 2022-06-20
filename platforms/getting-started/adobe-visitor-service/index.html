@@ -7172,14 +7172,40 @@ var utag_data = {
 <p>There are several methods for <a href="#passing-your-own-visitor-id">passing your own visitor ID</a> to the Visitor API so that the ID service matches the anonymous ECID to a known ID.</p>
 <h4 id="set-a-known-visitor-id">Set a known visitor ID</h4>
 <p>If you know the visitor&rsquo;s ID and authentication state when you initialize, use the configuration property <code>adobeVisitorDataProviderId</code> which sets the visitor&rsquo;s known ID when the module starts:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Kotlin" title="Kotlin">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>config.adobeVisitorDataProviderId = <span style="color:#e6db74">&#34;01&#34;</span> <span style="color:#75715e">// Data provider ID for this type of visitor ID
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>config.adobeVisitorAuthState = AdobeAuthState.AUTH_STATE_AUTHENTICATED
+</span></span><span style="display:flex;"><span>config.adobeVisitorCustomVisitorId = <span style="color:#e6db74">&#34;customeremail@emailprovider.com&#34;</span>
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Swift" title="Swift">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorDataProviderId = <span style="color:#e6db74">&#34;01&#34;</span> <span style="color:#75715e">// Data provider ID for this type of visitor ID</span>
+</span></span><span style="display:flex;"><span>config.adobeVisitorAuthState = .authenticated
+</span></span><span style="display:flex;"><span>config.adobeVisitorCustomVisitorId = <span style="color:#e6db74">&#34;customeremail@emailprovider.com&#34;</span>
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <p>The module automatically requests a new ID if needed, and subsequently sends an additional API call to link the ECID to the known ID supplied in the <code>TealiumConfig</code> properties.</p>
 <p>If you need to pass the ID and authentication state when the visitor logs in, call the following method to link the visitor&rsquo;s known ID to the anonymous ECID:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Kotlin" title="Kotlin">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.adobeVisitorApi<span style="color:#f92672">?.</span>linkEcidToKnownIdentifier(<span style="color:#e6db74">&#34;myidentifier&#34;</span>, <span style="color:#e6db74">&#34;123456&#34;</span>, AdobeAuthState.AUTH_STATE_AUTHENTICATED, <span style="color:#66d9ef">null</span>)
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="Swift" title="Swift">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.adobeVisitorApi?.linkECIDToKnownIdentifier(<span style="color:#e6db74">&#34;myidentifier&#34;</span>, adobeDataProviderId: <span style="color:#e6db74">&#34;123456&#34;</span>, .unknown)
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h2 id="troubleshooting">Troubleshooting</h2>
 <p>The following lists the different API failure behaviors:</p>
 <ul>
@@ -7199,7 +7225,7 @@ In the event that an error is returned while sending a request, such as connecti
 <p>The module encounters either (2) or (3) above, but the visitor&rsquo;s previous ECID has been provided on the <code>TealiumConfig</code> object. After the maximum retries, the module uses the provided visitor ID value and does not block any requests.</p>
 </li>
 </ul>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>If your top priority is getting data to Tealium, then set the number of retries to 0 to skip retrieving the ECID in case of failure. The number of retries is controlled by the <code>config.adobeVisitorRetries</code> property.</p>
 <h2 id="data-layer">Data Layer</h2>
 <p>The following variables are sent to the data layer:</p>
 <table>

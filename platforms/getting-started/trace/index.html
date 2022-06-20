@@ -7174,7 +7174,7 @@ var utag_data = {
 <p>To use the Mobile Trace Tool, determine which URLs are handled by your mobile apps in order to configure the URL schemes. </p>
 <p>The QR code trace feature launches your app from a URL and listens for a specific query parameter. In order to launch your app directly from a URL, your app must have registered itself to handle specific domains.</p>
 <p>Typically, most apps already handle specific URLs. For example, if your website domain is <a href="https://mycompany.com">https://mycompany.com</a>, your app registers itself as a handler for this domain and, if your app is installed on a user&rsquo;s device, the user is prompted to launch the link in your app instead of within a browser. </p>
-<!-- raw HTML omitted -->
+<p class="note"><i class="fas fa-info-circle"></i>Some apps register custom URL schemes instead of <code>http</code> or <code>https</code>, for example <code>mycompanyapp://</code>. These also work with the Mobile Trace Tool.</p>
 <p>Once you have established which URL schemes launch your app, enter these into the input fields in the Mobile Trace Tool. The tool supports different schemes for Android and iOS if necessary, but are usually the same for both platforms.</p>
 <p><img src="/images/platforms/getting-started/trace-tool.png" alt="trace-tool.png" title="trace-tool.png"></p>
 <p>Click <strong>Save</strong> next to each URL scheme to store the setting in the browser&rsquo;s <code>localStorage</code>. Click the blue pencil icon to edit the URL schemes as needed.</p>
@@ -7214,7 +7214,7 @@ var utag_data = {
 <li>Set the <strong>Name</strong> field to <code>Add Trace ID</code> and click <strong>Add</strong> to add a location.</li>
 <li>Fill out the location fields and set the <strong>Host</strong> field to the Collect tag URL.</li>
 </ol>
-<!-- raw HTML omitted -->
+<p class="tip"><i class="fas fa-star"></i>If you click outside of the <strong>Edit Location</strong> dialog box, Charles automatically determines the additional URL components.</p>
 <ol start="4">
 <li>Leave the <strong>Query</strong> field empty and click <strong>OK</strong>.</li>
 </ol>
@@ -7231,14 +7231,42 @@ var utag_data = {
 <p>If you are in development mode using an emulator, or do not want to use Charles, then another option is to add and leave a trace manually through native code.</p>
 <h3 id="start-trace-manual">Start Trace (Manual)</h3>
 <p>To start and run a trace manually, add the trace ID to the volatile data within your native code.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>instance.getDataSources().getVolatileDataSources().put(<span style="color:#e6db74">&#34;tealium_trace_id&#34;</span>, <span style="color:#e6db74">&#34;TRACE_ID&#34;</span>);
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <p><strong>Swift</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.add(data: [<span style="color:#e6db74">&#34;tealium_trace_id&#34;</span>: <span style="color:#e6db74">&#34;TRACE_ID&#34;</span>])
+</span></span></code></pre></div><p><strong>Objective-C</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>tealiumTrace <span style="color:#f92672">=</span> <span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;tealium_trace_id&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">@&#34;TRACE_ID&#34;</span><span style="color:#ae81ff">}</span>;
+</span></span><span style="display:flex;"><span>[[Tealium instanceForKey:TEALIUM_INSTANCE_ID] addVolatileDataSources: tealiumTrace];
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h3 id="end-trace-manual">End Trace (Manual)</h3>
 <p>To end a trace manually and simulate any &ldquo;end of visit&rdquo; enrichments, add the following track to the optional data anywhere within the app:</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;(</span>1<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;event&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;kill_visitor_session&#34;</span><span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cp.trace_id&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;TRACE_ID&#34;</span><span style="color:#f92672">);</span>
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.trackViewWithTitle(<span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, dataSources: [<span style="color:#e6db74">&#34;event&#34;</span>:<span style="color:#e6db74">&#34;kill_visitor_session&#34;</span>, <span style="color:#e6db74">&#34;cp.trace_id&#34;</span>:<span style="color:#e6db74">&#34;XXXXX&#34;</span>])
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 
 </div>
 

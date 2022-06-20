@@ -7183,8 +7183,8 @@ There are DLLs specific to each mobile platform which are referenced by the abst
 </ul>
 </li>
 </ul>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<p class="tip"><i class="fas fa-star"></i>Binding libraries may be used by themselves. The fact that they are automatically generated results in vastly different namespaces for each platform, which can complicate your setup. We recommend using the <code>Common</code> and platform-specific abstraction libraries instead.</p>
+<p class="note"><i class="fas fa-info-circle"></i>Lifecycle modules are included by default. Additional DLLs are not needed.</p>
 <h3 id="android-example">Android Example</h3>
 <p>The following example illustrates the Shared project and Android platform-specific project from a typical Xamarin based app:</p>
 <p><img src="/images/platforms/xamarin/consent-manager-model.png" alt="Consent Manager Shared Project in Xamarin App"></p>
@@ -7197,9 +7197,26 @@ There are DLLs specific to each mobile platform which are referenced by the abst
 <h2 id="initialize">Initialize</h2>
 <h3 id="instance-manager">Instance Manager</h3>
 <p>To instantiate a class instance, first verify that your projects reference the appropriate libraries. We recommend using the <code>TealiumInstanceManager</code> classes, which provide thread-safe Tealium instance management.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Tealium.Droid;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ITealiumInstanceManager instanceManager = <span style="color:#66d9ef">new</span> TealiumInstanceManager(<span style="color:#66d9ef">new</span> TealiumInstanceFactoryDroid(&lt;myAndroidApplication&gt;));
+</span></span></code></pre></div>
+</div>
+<div class="tab-pane" data-lang="iOS" title="iOS">
+  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#66d9ef">using</span> Tealium.iOS;
+</span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>ITealiumInstanceManager instanceManager = <span style="color:#66d9ef">new</span> TealiumInstanceManager(<span style="color:#66d9ef">new</span> TealiumInstanceFactoryIOS());
+</span></span></code></pre></div>
+</div>
+</div>
+</div>
+
 <h3 id="config">Config</h3>
 <p>After you create the <code>TealiumInstanceManager</code>, create a <code>TealiumConfig</code> object with your account details and configuration settings:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig tealConfig = <span style="color:#66d9ef">new</span> TealiumConfig(
