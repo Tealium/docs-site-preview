@@ -11,7 +11,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.98.0" />
+     <meta name="generator" content="Hugo 0.61.0" />
 
       
         <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -276,7 +276,8 @@ var utag_data = {
     
       
       
-      <li class="w-100 hover-accent-color-light fw4 f5 active" data-level="1">
+      
+      <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
         <a href="/partners/" class="db link pl2 pr2 pv1 primary-color hover-bg-primary " data-target=".partners-overview">Overview</a>
       </li>
       
@@ -293,6 +294,7 @@ var utag_data = {
   
   
     
+      
       
       
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
@@ -314,6 +316,7 @@ var utag_data = {
     
       
       
+      
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
         <a href="/partners/cmp-plugins/" class="db link pl2 pr2 pv1 primary-color hover-bg-primary " data-target=".partner-cmp-plugins">CMP Plugins</a>
       </li>
@@ -331,6 +334,7 @@ var utag_data = {
   
   
     
+      
       
       
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
@@ -352,6 +356,7 @@ var utag_data = {
     
       
       
+      
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
         <a href="/partners/tags/" class="db link pl2 pr2 pv1 primary-color hover-bg-primary " data-target=".partner-tags">Tags</a>
       </li>
@@ -371,6 +376,7 @@ var utag_data = {
     
       
       
+      
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
         <a href="/partners/mobile/" class="db link pl2 pr2 pv1 primary-color hover-bg-primary " data-target=".partner-mobile">Mobile</a>
       </li>
@@ -388,6 +394,7 @@ var utag_data = {
   
   
     
+      
       
       
       <li class="w-100 hover-accent-color-light fw4 f5" data-level="1">
@@ -486,24 +493,25 @@ Data sources send data into Tealium. A data source can a website, a CRM system, 
 <li>Tealium users can identify the origin of all incoming data for a clearer understanding of their data supply chain.</li>
 <li>Higher quality of incoming data.</li>
 </ul>
-<p class="note"><i class="fas fa-info-circle"></i>Tealium offers a <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/File-Import-Data-Source/ta-p/26216">file import data source</a> which processes CSV files from several cloud storage providers. However, file imports are not currently offered as an integration method for partners.</p>
+<!-- raw HTML omitted -->
 <h2 id="example-mailchimp">Example: Mailchimp</h2>
 <p>Mailchimp is an all-in-one marketing platform that offers webhooks for common email actions such as subscriptions, profile updates, email changes, and campaign statuses. For example, when MailChimp receives a subscribe action it can trigger a webhook with the data related to that event. In this case, the <code>subscribe</code> event type has the following fields (brackets indicate nested JSON):</p>
-<pre tabindex="0"><code>{
-  &#34;type&#34;: &#34;subscribe&#34;,
-  &#34;fired_at&#34;: &#34;2009-03-26 21:35:57&#34;,
-  &#34;data[id]&#34;: &#34;8a25ff1d98&#34;,
-  &#34;data[list_id]&#34;: &#34;a6b5da1054&#34;,
-  &#34;data[email]&#34;: &#34;api@mailchimp.com&#34;,
-  &#34;data[email_type]&#34;: &#34;html&#34;,
-  &#34;data[merges][EMAIL]&#34;: &#34;api@mailchimp.com&#34;,
-  &#34;data[merges][FNAME]&#34;: &#34;Mailchimp&#34;,
-  &#34;data[merges][LNAME]&#34;: &#34;API&#34;,
-  &#34;data[merges][INTERESTS]&#34;: &#34;Group1,Group2&#34;,
-  &#34;data[ip_opt]&#34;: &#34;10.20.10.30&#34;,
-  &#34;data[ip_signup]&#34;: &#34;10.20.10.30&#34;
+<pre><code>{
+  &quot;type&quot;: &quot;subscribe&quot;,
+  &quot;fired_at&quot;: &quot;2009-03-26 21:35:57&quot;,
+  &quot;data[id]&quot;: &quot;8a25ff1d98&quot;,
+  &quot;data[list_id]&quot;: &quot;a6b5da1054&quot;,
+  &quot;data[email]&quot;: &quot;api@mailchimp.com&quot;,
+  &quot;data[email_type]&quot;: &quot;html&quot;,
+  &quot;data[merges][EMAIL]&quot;: &quot;api@mailchimp.com&quot;,
+  &quot;data[merges][FNAME]&quot;: &quot;Mailchimp&quot;,
+  &quot;data[merges][LNAME]&quot;: &quot;API&quot;,
+  &quot;data[merges][INTERESTS]&quot;: &quot;Group1,Group2&quot;,
+  &quot;data[ip_opt]&quot;: &quot;10.20.10.30&quot;,
+  &quot;data[ip_signup]&quot;: &quot;10.20.10.30&quot;
 }
-</code></pre><p>Tealium&rsquo;s official data source integration with Mailchimp offers these additional benefits from using the generic HTTP API:</p>
+</code></pre>
+<p>Tealium's official data source integration with Mailchimp offers these additional benefits from using the generic HTTP API:</p>
 <ul>
 <li><strong>Dedicated Endpoint</strong><br>
 Tealium issues a customized endpoint for this data source. For example: <code>https://collect.tealiumiq.com/integration/event/my_account/main/abc123</code>.</li>
@@ -522,7 +530,7 @@ Tealium flattens the JSON body and prepends <code>mailchimp_</code> to all field
 	<div class="fr">
 
 		
-		<a href="https://docs-preview.tealium.com/partners/cmp-plugins/"
+		<a href="/partners/cmp-plugins/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
@@ -553,7 +561,7 @@ Tealium flattens the JSON body and prepends <code>mailchimp_</code> to all field
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  June 20, 2022 
+    <span><p>This page was last updated:  June 22, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
