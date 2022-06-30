@@ -7196,6 +7196,47 @@ When tracking events for a known visitor (when a value exists for a visitor ID 
 (Required for AudienceStream)
 When tracking events for an anonymous visitor from a website (without a known ID), then the value of the <code>tealium_visitor_id</code>  needs to match the value in the <code>utag_main_v_id</code> cookie.</p>
 <p><a href="/platforms/javascript/data-layer/">Learn more</a> about the built-in variables from <code>utag.js</code>.</p>
+<h3 id="visitor-switching">Visitor Switching</h3>
+<p>When a first-party cookie is unavailable, the server side uses incoming data in the following order of precedence to determine the ID of a visitor:</p>
+<ul>
+<li>The <code>TAPID</code> cookie, also called the <code>tealium_thirdparty_visitor_id</code></li>
+<li>The <code>tealium_visitor_id</code></li>
+<li>The <code>utag_main v_id</code>, also called the <code>tealium_firstparty_visitor_id</code></li>
+</ul>
+<p>Because AudienceStream gives the ID in <code>TAPID</code> precedence over other IDs to determine the visitor profile to use, this can cause problems with tracking multiple users on the same device.</p>
+<p>For example, if a user logs in and their ID is added to the <code>TAPID</code>, traffic from all the anonymous users on the device are logged to that user. And if a second user logs in to that device, assuming that the anonymous cookie is not cleared, AudienceStream will continue log activity to the first user. If the visitors use a shared smart television or a public kiosk, this can cause contamination of data in the visitors’ profiles.</p>
+<p>Use the following parameters to control how the endpoint handles the <code>tealium_visitor_id</code> and <code>tealium_thirdparty_visitor_id</code> values in the event:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>tealium_override_tapid</code></td>
+<td>string</td>
+<td>Override  <code>tealium_visitor_id</code> and <code>tealium_thirdparty_visitor_id</code> with this value.</td>
+</tr>
+<tr>
+<td><code>tealium_skip_3rd_party_vid_cookies</code></td>
+<td>boolean</td>
+<td>Set to <code>true</code> to skip collecting the <code>TAPID</code> third-party cookie.</td>
+</tr>
+<tr>
+<td><code>tealium_delete_3rd_party_vid_cookies</code></td>
+<td>boolean</td>
+<td>Set to <code>true</code> to delete the <code>TAPID</code> third-party cookie.</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>A <code>tealium_override_tapid</code> value prevents the <code>tealium_delete_3rd_party_vid_cookies</code> parameter from deleting the cookie.</li>
+<li>If removing the <code>account/profile</code> information from TAPID empties that cookie, <code>set-cookie maxAge=0</code> is returned to delete that cookie from the client.</li>
+</ul>
+<p>For further explanation and a demonstration of how to use visitor switching, see: <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Visitor-Switching/ta-p/37709">Visitor Switching</a>.</p>
 <h2 id="methods">Methods</h2>
 <h3 id="get">GET</h3>
 <p>The GET method is used to request data from a specified resource. It passes data using key-value pairs in the query string of the endpoint, and returns a 1x1 transparent GIF to make it compatible with HTML-based implementations.</p>
@@ -7236,7 +7277,7 @@ When tracking events for an anonymous visitor from a website (without a known I
 </table>
 <p>The <code>400 Bad Request</code> status code occurs when at least of the following is true:</p>
 <ul>
-<li>The JSON key contains a period, is invalid, or exceeds 1MB in size</li>
+<li>The JSON key contains a period, is invalid, or exceeds 1 MB in size</li>
 <li>The file-type parameter contains a value other than &ldquo;json&rdquo; or &ldquo;javascript&rdquo;</li>
 <li>The combination of <code>account</code>, <code>profile</code>, and <code>datalayer_id</code> exceeds 250 characters in length, or contains restricted characters</li>
 <li><code>tealium_account</code> or <code>tealium_profile</code> is missing, or contains typographical errors</li>
@@ -7320,7 +7361,7 @@ When tracking events for an anonymous visitor from a website (without a known I
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  June 23, 2022 
+    <span><p>This page was last updated:  June 30, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -7348,6 +7389,7 @@ When tracking events for an anonymous visitor from a website (without a known I
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#tealium-collect-url">Tealium Collect URL</a></li>
               <li><a href="#visitor-id-attribute">Visitor ID Attribute</a></li>
               <ul class="toc-h3"><li><a href="#anonymous-id">Anonymous ID</a></li>
+              <li><a href="#visitor-switching">Visitor Switching</a></li>
               </ul><li><a href="#methods">Methods</a></li>
               <ul class="toc-h3"><li><a href="#get">GET</a></li>
               <li><a href="#post">POST</a></li>
