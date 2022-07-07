@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="track-views">Track Views</h2>
+  
+
+<h2 id="track-views">Track Views</h2>
+
 <p>The base installation makes a tracking call every time a user opens or changes a screen in your AMP site.</p>
+
 <p>To customize the data layer used for this tracking, add the <a href="https://amp.dev/documentation/components/amp-analytics/?format=websites#extra-url-params">extra URL Params</a> block <code>extraUrlParams</code> with key-value pairs for your variables:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">amp-analytics</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;tealiumcollect&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;application/json&#34;</span>&gt;
@@ -7187,8 +7191,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>}     
 </span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">script</span>&gt;
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">amp-analytics</span>&gt;
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">amp-analytics</span>&gt;</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7197,6 +7201,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7204,12 +7209,14 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code> </td>
 </tr>
+
 <tr>
 <td><code>datasource</code></td>
 <td><code>String</code></td>
@@ -7218,8 +7225,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="track-events">Track Events</h2>
+
 <p>The <code>triggers</code> configuration object defines which events to track. A trigger is define as a key-value pair of trigger name and configuration. Trigger names are alphanumeric strings and the configuration determines the targets of the events.</p>
+
 <p>The following is an example of a trigger:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;triggers&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;trigger_name&#34;</span>: {
@@ -7233,10 +7243,13 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;extra_var&#34;</span>: <span style="color:#e6db74">&#34;${extraVar}&#34;</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>AMP supports the following <a href="https://www.ampproject.org/docs/reference/components/amp-analytics#triggers"><code>amp-analytics</code> triggers</a>.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>AMP supports the following <a href="https://www.ampproject.org/docs/reference/components/amp-analytics#triggers"><code>amp-analytics</code> triggers</a>.</p>
+
 <h2 id="dynamic-tracking-variables">Dynamic Tracking Variables</h2>
+
 <p>For the event types <code>visible</code> and <code>click</code> (used in the <code>on</code> property), dynamic tracking variables are passed using HTML5 elemental attributes in the format <code>data-vars-*</code>. Variables passed this way are converted to camel-case naming.</p>
+
 <p>For example, the property <code>data-vars-link-name=&quot;register&quot;</code> becomes the variable <code>${linkName}</code> that is referenced in the <code>extraUrlParams</code> block of your trigger.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#e6db74">&#34;triggers&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;custom_click&#34;</span>: {
@@ -7250,13 +7263,13 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;link_name&#34;</span>: <span style="color:#e6db74">&#34;${linkName}&#34;</span>
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>AMP supports the following <a href="https://amp.dev/documentation/components/amp-analytics/?referrer=ampproject.org#extra-url-params"><code>amp-analytics</code> extra URL params</a>.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>AMP supports the following <a href="https://amp.dev/documentation/components/amp-analytics/?referrer=ampproject.org#extra-url-params"><code>amp-analytics</code> extra URL params</a>.</p>
+
 <p>The button&rsquo;s HTML example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">span</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;the-button&#34;</span> <span style="color:#a6e22e">data-vars-link-name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;register&#34;</span>&gt;
 </span></span><span style="display:flex;"><span>Button Text
-</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">span</span>&gt;
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">span</span>&gt;</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

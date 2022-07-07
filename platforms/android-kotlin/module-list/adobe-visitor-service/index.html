@@ -7170,26 +7170,41 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>The Adobe Visitor Service module interfaces directly with Adobe’s REST API to retrieve and maintain the Experience Cloud ID (ECID) for visitors.</p>
+  
+
+<p>The Adobe Visitor Service module interfaces directly with Adobe’s REST API to retrieve and maintain the Experience Cloud ID (ECID) for visitors.</p>
+
 <p>Learn more about the <a href="/platforms/getting-started/adobe-visitor-service/">AdobeVisitorService</a> module.</p>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="/platforms/android-kotlin/">Tealium Kotlin for Android</a></li>
 <li>Valid Adobe account and Adobe organization ID</li>
 </ul>
+
 <h2 id="sample-app">Sample App</h2>
+
 <p>Explore the <a href="https://github.com/Tealium/tealium-kotlin/tree/master/mobile">AdobeVisitorService module sample app</a> for Android to further your knowledge of the Tealium library and best practice implementations.</p>
+
 <h2 id="install">Install</h2>
+
 <p>The AdobeVisitorService module is configured when initializing the Tealium SDK, and does not have remote configuration capabilities.</p>
+
 <p>The module acts as a <code>DispatchValidator</code>, preventing calls being sent without an Adobe organization ID. It attempts to retrieve an ECID from the Adobe API, but after 5 failed attempts, calls are permitted to continue without an ECID to avoid data loss. Sending data is prioritized over having a valid ECID.</p>
+
 <p>Possible causes for no ECID being retrieved are:</p>
+
 <ul>
 <li>Invalid response, such as a response was received but did not contain a valid ECID.</li>
 <li>There was no response.</li>
 <li>The Adobe organization ID was invalid.</li>
 </ul>
+
 <h3 id="maven">Maven</h3>
+
 <p>Add Tealium Maven Repo: <a href="http://maven.tealiumiq.com/releases/">http://maven.tealiumiq.com/releases/</a></p>
+
 <p>Add dependency: <code>com.tealium:kotlin-adobe-visitor</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.tealium.adobe.api.AdobeAuthState
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> com.tealium.adobe.api.AdobeVisitor
@@ -7208,8 +7223,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  )
 </span></span><span style="display:flex;"><span>  config.adobeVisitorOrgId = BuildConfig.ADOBE_ORG_ID
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>  tealium = Tealium.create(BuildConfig.TEALIUM_INSTANCE, config)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>  tealium = Tealium.create(BuildConfig.TEALIUM_INSTANCE, config)</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

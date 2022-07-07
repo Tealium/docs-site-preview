@@ -7170,24 +7170,30 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  
+
+<h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>To install Tealium library for Ruby, run the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gem install tealium
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>gem install tealium</span></span></code></pre></div>
+<h2 id="initialize">Initialize</h2>
+
 <p>To initialize Tealium:</p>
+
 <ol>
-<li>Import the Tealium package with the following command:</li>
+<li><p>Import the Tealium package with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;tealium&#39;</span></span></span></code></pre></div></li>
+
+<li><p>Initialize the Tealium object with the <a href="/platforms/ruby/api/#initialize"><code>new()</code></a> method, as shown in the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>teal <span style="color:#f92672">=</span> <span style="color:#66d9ef">Tealium</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">&#34;ACCOUNT&#34;</span>, <span style="color:#e6db74">&#34;PROFILE&#34;</span>, <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>require <span style="color:#e6db74">&#39;tealium&#39;</span>
-</span></span></code></pre></div><ol start="2">
-<li>Initialize the Tealium object with the <a href="/platforms/ruby/api/#initialize"><code>new()</code></a> method, as shown in the following example:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>teal <span style="color:#f92672">=</span> <span style="color:#66d9ef">Tealium</span><span style="color:#f92672">.</span>new(<span style="color:#e6db74">&#34;ACCOUNT&#34;</span>, <span style="color:#e6db74">&#34;PROFILE&#34;</span>, <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
-</span></span></code></pre></div>
+
 </div>
 
 <div class="pv3">

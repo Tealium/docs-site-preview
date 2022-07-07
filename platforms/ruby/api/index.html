@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+  
+
+<h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>Tealium</code> class for the Ruby library.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,21 +7183,25 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>initialize()</code></td>
-<td>Initialize the Tealium instance. Called via <code>Tealium.new </code></td>
+<td>Initialize the Tealium instance. Called via <code>Tealium.new</code></td>
 </tr>
+
 <tr>
 <td><code>track()</code></td>
 <td>Track events</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="initialize"><code>initialize()</code></h3>
+
 <p>Initialize the Tealium instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">initialize</span>(account, profile, datasource)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">initialize</span>(account, profile, datasource)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7202,6 +7210,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7209,12 +7218,14 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;account123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>datasource</code></td>
 <td>String</td>
@@ -7223,11 +7234,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>When you call the method <code>new</code> on the Tealium class, as in <code>Tealium.new</code>, the class creates a new instance of itself. It will then, internally, call the <code>initialize()</code> method on the new object. Doing so it will simply pass all the arguments that you passed to new on to the <code>initialize()</code> method.</p>
+
 <h3 id="track"><code>track()</code></h3>
+
 <p>Tracks events.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>track(event_name, data)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>track(event_name, data)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7236,6 +7250,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>event</code></td>
@@ -7243,6 +7258,7 @@ var utag_data = {
 <td>Title of the tracked event</td>
 <td><code>&quot;some event&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Hash</code></td>

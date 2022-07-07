@@ -7174,8 +7174,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The AutoTracking module automatically triggers tracking calls when certain user interface interactions take place. For example, taps, swipes, screen views. In general, usage of this module is discouraged and <strong>not recommended</strong> for the following reasons:</p>
+
 <ul>
 <li>Increased memory usage.</li>
 <li>Increased possibility for crashes to occur due to UI changes outside of Tealium&rsquo;s control. For example, UI component being deallocated before the track call has completed.</li>
@@ -7183,67 +7187,81 @@ var utag_data = {
 <li>Unwanted additional tracking calls.</li>
 <li>Does not fully remove the need to add additional tracking data/events, so additional coding is still required.</li>
 </ul>
+
 <p>As an alternative to Autotracking, we strongly recommend you spend time carefully planning the tracking and data you need to capture, and have your developers pass this data to Tealium at the appropriate time. Autotracking may be useful if you are evaluating Tealium and need a quick implementation, but it is unlikely to fulfill all your tracking requirements on its own.</p>
+
 <p>The following platforms are supported:</p>
+
 <ul>
 <li>iOS</li>
 <li>tvOS</li>
 </ul>
+
 <h2 id="features">Features</h2>
+
 <p>The AutoTracking module provides the following features:</p>
+
 <ul>
 <li>Automatically trigger track calls from <code>UIViewController</code> view appearances.</li>
 <li>Automatically trigger track calls for UI Events, such as button taps.</li>
 <li>Includes delegate methods for reporting or suppressing auto-tracked data.</li>
 <li>Uses method swizzling on <code>UIApplication</code> and <code>UIViewController</code> classes. Disable/exclude if you prefer to avoid swizzling in your app.</li>
 </ul>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>UIKit</li>
 <li>UIApplication</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the AutoTracking module with CocoaPods or Carthage.</p>
+
 <h3 id="cocoapods">CocoaPods</h3>
+
 <p>To install the AutoTracking module with CocoaPods, add the following pod to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumAutotracking&#39;</span>
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumAutotracking&#39;</span></span></span></code></pre></div>
+<p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+
 <h3 id="carthage">Carthage</h3>
+
 <p>To install the AutoTracking module with Carthage, following these steps:</p>
+
 <ol>
-<li>
-<p>Go to the app target&rsquo;s General configuration page in Xcode.</p>
-</li>
-<li>
-<p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
-</li>
+<li><p>Go to the app target&rsquo;s General configuration page in Xcode.</p></li>
+
+<li><p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumAutotracking</span><span style="color:#f92672">.</span>framework</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumAutotracking</span><span style="color:#f92672">.</span>framework
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
+<p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
 <h3 id="bridging-header">Bridging Header</h3>
+
 <p>This module has been ported from Objective-C code, and as such, requires a Bridging Header.</p>
+
 <p>To create a bridging header:</p>
+
 <ol>
-<li>
-<p>In your Swift project, create a new file. When prompted to select a file type, select &ldquo;Objective-C File.&rdquo;</p>
-</li>
-<li>
-<p>Give this file a temporary name, such as <code>placeholder.m</code>, as you are going to remove it later.</p>
-</li>
-<li>
-<p>Click <strong>Finish</strong>. Xcode prompts you to create a Bridging Header (if it doesn&rsquo;t, you probably already have a Bridging Header in your project). Click <strong>Create Bridging Header</strong> to continue and have Xcode create the new header file for you.</p>
-</li>
-<li>
-<p>Delete p<code>laceholder.m</code> from your project. Notice a new file called <code>ProjectName-Bridging-Header.h</code>.</p>
-</li>
-<li>
-<p>Add the following import statements to the new Bridging Header:</p>
+<li><p>In your Swift project, create a new file. When prompted to select a file type, select &ldquo;Objective-C File.&rdquo;</p></li>
+
+<li><p>Give this file a temporary name, such as <code>placeholder.m</code>, as you are going to remove it later.</p></li>
+
+<li><p>Click <strong>Finish</strong>. Xcode prompts you to create a Bridging Header (if it doesn&rsquo;t, you probably already have a Bridging Header in your project). Click <strong>Create Bridging Header</strong> to continue and have Xcode create the new header file for you.</p></li>
+
+<li><p>Delete p<code>laceholder.m</code> from your project. Notice a new file called <code>ProjectName-Bridging-Header.h</code>.</p></li>
+
+<li><p>Add the following import statements to the new Bridging Header:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>#<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;uiapplication+tealiumtracker.h&#34;</span>
-</span></span><span style="display:flex;"><span>#<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;uiviewcontroller+tealiumtracker.h&#34;</span>
-</span></span></code></pre></div></li>
+</span></span><span style="display:flex;"><span>#<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#34;uiviewcontroller+tealiumtracker.h&#34;</span></span></span></code></pre></div></li>
 </ol>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call while the module is enabled:</p>
+
 <table>
 <thead>
 <tr>
@@ -7252,6 +7270,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>autotracked</code></td>
@@ -7260,11 +7279,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="api-reference">API Reference</h2>
+
 <p>The following methods are available to change the default behavior of the Autotracking module, or to monitor auto-tracked tracking calls:</p>
+
 <h3 id="tealiumautotrackingshouldtrack"><code>tealiumAutotrackingShouldTrack()</code></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealiumAutotrackingShouldTrack(data: [String:Any]) -&gt; Bool
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealiumAutotrackingShouldTrack(data: [String:Any]) -&gt; Bool</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7273,6 +7295,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7282,9 +7305,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="tealiumautotrackdidcomplete"><code>tealiumAutotrackDidComplete()</code></h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealiumAutotrackDidComplete(success:Bool, info:[String:Any]?, error:Error?)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealiumAutotrackDidComplete(success:Bool, info:[String:Any]?, error:Error?)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7293,6 +7317,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>success</code></td>
@@ -7300,12 +7325,14 @@ var utag_data = {
 <td>If the auto-tracked triggered call was successful</td>
 <td>[<code>&quot;true&quot;</code>, <code>&quot;false&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>info</code></td>
 <td><code>String</code> or <code>[String]</code></td>
 <td>(Optional) Holds delivery type info, final call format, and the payload (the data dictionary used to generate the call)</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>error</code></td>
 <td><code>Error</code></td>

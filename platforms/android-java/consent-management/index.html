@@ -7170,14 +7170,24 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Usage of the Consent Management module is recommended, as it is automatically included in the library and enabled in the native code upon initialization.</p>
+
 <p>Supported Platforms include: Android mobile, Android TV, and Android Wear.</p>
+
 <p><a href="/platforms/getting-started/consent-management/">Learn more</a> about Consent Management.</p>
+
 <h2 id="sample-app">Sample App</h2>
+
 <p>To help to familiarize yourself with our library, tracking methods, and best practice implementation, explore the Android Consent Management <a href="https://github.com/Tealium/tealium-android/tree/master/Samples/ConsentManagerDemoApp">sample app</a>.</p>
+
 <p>See the <a href="/platforms/android-java/api/consent-manager/">API Reference</a> for a list of Consent Management methods for Android.</p>
+
 <h2 id="enable">Enable</h2>
+
 <p>The following example enables Consent Management:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">//TealiumHelper.java
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">import</span> com.tealium.library.ConsentManager<span style="color:#f92672">;</span>
@@ -7190,9 +7200,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>	config<span style="color:#f92672">.</span><span style="color:#a6e22e">enableConsentManager</span><span style="color:#f92672">(</span>TEALIUM_MAIN<span style="color:#f92672">);</span> <span style="color:#75715e">//enable with tealium instance name
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">final</span> Tealium tealiumInstance <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">createInstance</span><span style="color:#f92672">(</span>TEALIUM_MAIN<span style="color:#f92672">,</span> config<span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="data-layer">Data Layer</h2>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call while Consent Management is enabled:</p>
+
 <table>
 <thead>
 <tr>
@@ -7201,17 +7213,20 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>policy</code></td>
 <td>The policy under which consent was collected</td>
 <td><code>gdpr</code></td>
 </tr>
+
 <tr>
 <td><code>consent_status</code></td>
 <td>The user&rsquo;s current consent status</td>
 <td><code>consented</code></td>
 </tr>
+
 <tr>
 <td><code>consent_categories</code></td>
 <td>The user&rsquo;s current categories they are consented to</td>
@@ -7219,25 +7234,32 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="examples">Examples</h2>
+
 <h3 id="simple-opt-in">Simple Opt-in</h3>
+
 <p>The following example shows how to opt-in to Consent Management:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="group-opt-in">Group Opt-in</h3>
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">.</span><span style="color:#a6e22e">setUserConsentStatus</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="group-opt-in">Group Opt-in</h3>
+
 <p>The following example shows a category-based consent model, where tracking categories are grouped into a smaller number of higher-level categories, defined by you:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>     <span style="color:#f92672">.</span><span style="color:#a6e22e">setUserConsentStatusWithCategories</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span> <span style="color:#f92672">{</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentCategory</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">});</span>
-</span></span></code></pre></div><p>For examples, you may choose to group the Tealium consent categories <code>&quot;big_data&quot;</code>, <code>&quot;analytics&quot;</code>, and <code>&quot;monitoring&quot;</code> under a single category called &ldquo;performance&rdquo;. This may be easier for the user than selecting from the full list of categories. You may choose to represent this in a slider interface, ranging from least-permissive to most permissive (all categories).</p>
-<p><img src="/images/platforms/android/consent-slider.gif" alt="consent-slider.gif" title="consent-slider.gif"></p>
+</span></span><span style="display:flex;"><span>          <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span> <span style="color:#f92672">{</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentCategory</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">});</span></span></span></code></pre></div>
+<p>For examples, you may choose to group the Tealium consent categories <code>&quot;big_data&quot;</code>, <code>&quot;analytics&quot;</code>, and <code>&quot;monitoring&quot;</code> under a single category called &ldquo;performance&rdquo;. This may be easier for the user than selecting from the full list of categories. You may choose to represent this in a slider interface, ranging from least-permissive to most permissive (all categories).</p>
+
+<p><img src="/images/platforms/android/consent-slider.gif" alt="consent-slider.gif" title="consent-slider.gif" /></p>
+
 <h3 id="category-based-opt-in">Category-based Opt-in</h3>
+
 <p>The following example shows a category-based consent model where the user must explicitly select each category from the full list of categories. The default is <code>UNKNOWN</code>, which queues hits until the user provides their consent. If the user consents to any categories, events are de-queued, and the consent category data is appended to each tracking call.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">getConsentManager</span><span style="color:#f92672">()</span>
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">setUserConsentStatusWithCategories</span><span style="color:#f92672">(</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentStatus</span><span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>       <span style="color:#66d9ef">new</span> String<span style="color:#f92672">[]</span> <span style="color:#f92672">{</span>ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentCategory</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>                     ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentCategory</span><span style="color:#f92672">.</span><span style="color:#a6e22e">PERSONALIZATION</span><span style="color:#f92672">});</span>
-</span></span></code></pre></div><p><img src="/images/platforms/android/consent-categories.gif" alt="consent-categories.gif" title="consent-categories.gif"></p>
+</span></span><span style="display:flex;"><span>                     ConsentManager<span style="color:#f92672">.</span><span style="color:#a6e22e">ConsentCategory</span><span style="color:#f92672">.</span><span style="color:#a6e22e">PERSONALIZATION</span><span style="color:#f92672">});</span></span></span></code></pre></div>
+<p><img src="/images/platforms/android/consent-categories.gif" alt="consent-categories.gif" title="consent-categories.gif" /></p>
 
 </div>
 

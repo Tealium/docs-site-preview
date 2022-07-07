@@ -7170,13 +7170,19 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Some variables are required on every event. To prevent having to manually add required variable data to every event, you have the option to store data as either volatile or persistent. Once data is stored, it will be appended to every event, including lifecycle events.</p>
+
 <p><a href="/platforms/getting-started/mobile-concepts/#data-management">Learn more</a> about Data Management.</p>
+
 <h2 id="persistent-data">Persistent Data</h2>
+
 <p>The <a href="/platforms/cordova-v1/api/#addpersistent"><code>addPersistent()</code></a> method adds persistent data, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">addPersistent</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;DATA&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);
-</span></span></code></pre></div><p>The <a href="/platforms/cordova-v1/api/#getpersistent"><code>getPersistent()</code></a> method gets persistent data, with a callback, as shown in the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">addPersistent</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;DATA&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);</span></span></code></pre></div>
+<p>The <a href="/platforms/cordova-v1/api/#getpersistent"><code>getPersistent()</code></a> method gets persistent data, with a callback, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">getPersistent</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">val</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// this callback will be called when the persistent data source has been found
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">val</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">null</span>) {
@@ -7184,13 +7190,14 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Requested persistent data could not be found&#34;</span>);
 </span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Persistent object data returned: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;mypersistentvariable = &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">val</span>.<span style="color:#a6e22e">toString</span>());
-</span></span><span style="display:flex;"><span>    }});
-</span></span></code></pre></div><p>The <a href="/platforms/cordova-v1/api/#removepersistent"><code>removePersistent()</code></a> method removes persistent data, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">removePersistent</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);
-</span></span></code></pre></div><h2 id="volatile-data">Volatile Data</h2>
+</span></span><span style="display:flex;"><span>    }});</span></span></code></pre></div>
+<p>The <a href="/platforms/cordova-v1/api/#removepersistent"><code>removePersistent()</code></a> method removes persistent data, as shown in the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">removePersistent</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);</span></span></code></pre></div>
+<h2 id="volatile-data">Volatile Data</h2>
+
 <p>The <a href="/platforms/cordova-v1/api/#addvolatile"><code>addVolatile()</code></a> method adds volatile data, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">addVolatile</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;DATA&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);
-</span></span></code></pre></div><p>The <a href="/platforms/cordova-v1/api/#getvolatile"><code>getVolatile()</code></a> method gets volatile data, with a callback, as shown in the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">addVolatile</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;DATA&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>);</span></span></code></pre></div>
+<p>The <a href="/platforms/cordova-v1/api/#getvolatile"><code>getVolatile()</code></a> method gets volatile data, with a callback, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">getVolatile</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, <span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">val</span>) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// this callback will be called when the volatile data source has been found
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">val</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">null</span>) {
@@ -7198,10 +7205,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Requested volatile data could not be found&#34;</span>);
 </span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">&#34;Volatile object data returned: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;myvolatilevariable = &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">val</span>.<span style="color:#a6e22e">toString</span>());
-</span></span><span style="display:flex;"><span>    }});
-</span></span></code></pre></div><p>The <a href="/platforms/cordova-v1/api/#removevolatile"><code>removeVolatile()</code></a> method removes volatile data, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">removeVolatile</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, window.<span style="color:#a6e22e">tealium_instance</span>);
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    }});</span></span></code></pre></div>
+<p>The <a href="/platforms/cordova-v1/api/#removevolatile"><code>removeVolatile()</code></a> method removes volatile data, as shown in the following example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">removeVolatile</span>(<span style="color:#e6db74">&#34;KEY_NAME&#34;</span>, window.<span style="color:#a6e22e">tealium_instance</span>);</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

@@ -7170,53 +7170,61 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  
+
+<h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="/platforms/android-java/">Tealium for Android</a> (5.0.0+)</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the Crash Reporter module with Maven or manually.</p>
+
 <h3 id="maven">Maven</h3>
+
 <p>To install the Crash Reporter module with Maven:</p>
+
 <ol>
-<li>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</li>
-</ol>
+<li><p>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span><span style="color:#75715e">// Top-level build file where you add configuration options common to all sub-projects/modules.
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>allprojects <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      repositories <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        jcenter<span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Tealium Maven repo directive
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        maven <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  repositories <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    jcenter<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Tealium Maven repo directive
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    maven <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="2">
-<li>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</li>
-</ol>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// only add if not already present
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.tealium:library:5.8.0&#39;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// add crash reporter to list of dependencies
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.tealium:crashreporter:1.1.0&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="manual">Manual</h3>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// only add if not already present
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.tealium:library:5.8.0&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// add crash reporter to list of dependencies
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.tealium:crashreporter:1.1.0&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+</ol>
+
+<h3 id="manual">Manual</h3>
+
 <p>To install the Crash Reporter module manually:</p>
+
 <ol>
-<li>
-<p>Download the Tealium <a href="https://github.com/Tealium/tealium-android/tree/master/Modules/CrashReporter">Crash Reporter</a> module.</p>
-</li>
-<li>
-<p>Copy the file <code>tealium.crashreporter-1.1.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p>
-</li>
-<li>
-<p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
-</li>
-</ol>
+<li><p>Download the Tealium <a href="https://github.com/Tealium/tealium-android/tree/master/Modules/CrashReporter">Crash Reporter</a> module.</p></li>
+
+<li><p>Copy the file <code>tealium.crashreporter-1.1.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p></li>
+
+<li><p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium.crashreporter-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+</span></span><span style="display:flex;"><span>  implementation <span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium.crashreporter-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+</ol>
+
+<h2 id="initialize">Initialize</h2>
+
 <p>Initialize the Crash Reporter module, as shown in the following example::</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span> config <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>application<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;ACCOUNT&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;PROFILE&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>
@@ -7224,13 +7232,19 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>CrashReporter<span style="color:#f92672">.</span><span style="color:#a6e22e">initialize</span><span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">TEALIUM_MAIN</span><span style="color:#f92672">,</span> config<span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//Standard Tealium instance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">createInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">,</span> config<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h2 id="tracked-events">Tracked Events</h2>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">createInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">,</span> config<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h2 id="tracked-events">Tracked Events</h2>
+
 <p>Once initialized, the Crash Reporter module automatically captures crash data. If a thread abruptly terminates, <code>.uncaughtExceptionHandler()</code> is invoked and the crash information is saved to disk. Upon the next launch, the saved crash information will be dispatched along with your other events.</p>
+
 <p>Crash events are tracked as <code>tealium_event=&quot;crash&quot;</code>.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>Crash Reporter is a singleton instance call. Chaining handlers is not currently supported.</p>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The Crash Reporter module sends the following crash attributes in the event:</p>
+
 <table>
 <thead>
 <tr>
@@ -7240,6 +7254,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>crash_cause</code></td>
@@ -7247,24 +7262,28 @@ var utag_data = {
 <td>The exception type</td>
 <td><code>java.lang.RuntimeException</code></td>
 </tr>
+
 <tr>
 <td><code>crash_count</code></td>
 <td><code>Number</code></td>
 <td>An incremented counter for each crash since install</td>
 <td><code>1</code></td>
 </tr>
+
 <tr>
 <td><code>crash_name</code></td>
 <td><code>String</code></td>
 <td>The exception message</td>
 <td><code>&quot;Connection refused by server&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>crash_threads</code></td>
 <td><code>[String]</code></td>
 <td>Array of JSON strings  containing data of the crashed thread, including the thread ID and stack trace</td>
-<td><code> ['{ &quot;crashed&quot;: &quot;true&quot;, &quot;state&quot;: &quot;RUNNABLE&quot;, &quot;threadNumber&quot;: &quot;1&quot;, &quot;threadId&quot;: &quot;main&quot;, &quot;priority&quot;: &quot;5&quot;, &quot;stack&quot;:  [ { &quot;fileName&quot;: &quot;MainActivity.java&quot;, &quot;className&quot;: &quot;com.tealium.libraryproject.MainActivity$1&quot;, &quot;methodName&quot;: &quot;onClick&quot;, &quot;lineNumber&quot;: &quot;38&quot; }] }']</code></td>
+<td><code>['{ &quot;crashed&quot;: &quot;true&quot;, &quot;state&quot;: &quot;RUNNABLE&quot;, &quot;threadNumber&quot;: &quot;1&quot;, &quot;threadId&quot;: &quot;main&quot;, &quot;priority&quot;: &quot;5&quot;, &quot;stack&quot;:  [ { &quot;fileName&quot;: &quot;MainActivity.java&quot;, &quot;className&quot;: &quot;com.tealium.libraryproject.MainActivity$1&quot;, &quot;methodName&quot;: &quot;onClick&quot;, &quot;lineNumber&quot;: &quot;38&quot; }] }']</code></td>
 </tr>
+
 <tr>
 <td><code>crash_uuid</code></td>
 <td><code>String</code></td>
@@ -7273,11 +7292,15 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="integrations">Integrations</h2>
+
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/New-Relic-Mobile-Crash-Tracking-Setup-Guide/ta-p/20849">New Relic Mobile Crash Tracking Connector</a></li>
 </ul>
+
 <h2 id="api-reference">API Reference</h2>
+
 <p>For the complete reference of methods for the Crash Reporter module, see the <a href="https://tealium.github.io/tealium-android/com/tealium/crashreporter/CrashReporter.html"><code>CrashReporter</code></a> class in the Tealium SDK for Android API.</p>
 
 </div>

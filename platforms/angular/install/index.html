@@ -7170,47 +7170,57 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>This sample is based on the <a href="https://angular.io/docs/ts/latest/cli-quickstart.html">Angular CLI Quickstart</a>.</p>
+  
+
+<p>This sample is based on the <a href="https://angular.io/docs/ts/latest/cli-quickstart.html">Angular CLI Quickstart</a>.</p>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>Tealium iQ Tag Management account</li>
 <li>Angular application</li>
 </ul>
+
 <h2 id="sample-app">Sample app</h2>
+
 <p>To help familiarize yourself with the Tealium library, tracking methods, and best practice implementation, explore the Tealium for Angular <a href="https://github.com/Tealium/integration-angular">sample app</a>.</p>
+
 <h2 id="install">Install</h2>
+
 <p>The installation only requires one file to be added to your application. This service takes care of loading the Tealium <code>utag.js</code> library for your account and handling the tracking calls.</p>
+
 <p>To install the Tealium library for Angular:</p>
+
 <ol>
-<li>
-<p>Create the directory <code>./src/app/tealium</code> in your Angular application.</p>
-</li>
-<li>
-<p>Copy the file <a href="https://github.com/Tealium/integration-angular/tree/master/example/src/app/tealium">utag.service.ts</a> into your application&rsquo;s path <code>./src/app/tealium/</code>.</p>
-</li>
-<li>
-<p>Follow the example found in the sample app&rsquo;s <a href="https://github.com/Tealium/integration-angular/blob/master/example/src/app/app.component.ts"><code>app.compontent.ts</code></a> file to define and invoke the Tealium service in your app.</p>
-</li>
-</ol>
+<li><p>Create the directory <code>./src/app/tealium</code> in your Angular application.</p></li>
+
+<li><p>Copy the file <a href="https://github.com/Tealium/integration-angular/tree/master/example/src/app/tealium">utag.service.ts</a> into your application&rsquo;s path <code>./src/app/tealium/</code>.</p></li>
+
+<li><p>Follow the example found in the sample app&rsquo;s <a href="https://github.com/Tealium/integration-angular/blob/master/example/src/app/app.component.ts"><code>app.compontent.ts</code></a> file to define and invoke the Tealium service in your app.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>import { <span style="color:#66d9ef">Component</span>, <span style="color:#66d9ef">OnInit</span> } from <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
 </span></span><span style="display:flex;"><span>import { <span style="color:#66d9ef">TealiumUtagService</span> } from <span style="color:#e6db74">&#39;./tealium/utag.service&#39;</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>@Component({
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">selector</span>: <span style="color:#e6db74">&#39;app-root&#39;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">providers</span>: <span style="color:#f92672">[</span><span style="color:#66d9ef">TealiumUtagService</span><span style="color:#f92672">]</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">templateUrl</span>: <span style="color:#e6db74">&#39;./app.component.html&#39;</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">styleUrls</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./app.component.css&#39;</span><span style="color:#f92672">]</span>
-</span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">selector</span>: <span style="color:#e6db74">&#39;app-root&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">providers</span>: <span style="color:#f92672">[</span><span style="color:#66d9ef">TealiumUtagService</span><span style="color:#f92672">]</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">templateUrl</span>: <span style="color:#e6db74">&#39;./app.component.html&#39;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#e6db74">styleUrls</span>: <span style="color:#f92672">[</span><span style="color:#e6db74">&#39;./app.component.css&#39;</span><span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></div></li>
+</ol>
+
+<h2 id="initialize">Initialize</h2>
+
 <p>The <a href="/platforms/angular/api/#setconfig"><code>setConfig()</code></a> method initializes Tealium and builds the path to the <code>utag.js</code> file, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>constructor(<span style="color:#66d9ef">private</span> <span style="color:#e6db74">tealium</span>: <span style="color:#66d9ef">TealiumUtagService</span>) {
 </span></span><span style="display:flex;"><span>    this<span style="color:#f92672">.</span>tealium<span style="color:#f92672">.</span>setConfig({
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;account&#34;</span>     : <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;profile&#34;</span>     : <span style="color:#e6db74">&#34;PROFILE&#34;</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;environment&#34;</span> : <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>});
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The installation adds a new class to your application called <code>TealiumUtagService</code> which available by registering it as a provider to a component.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>The installation adds a new class to your application called <code>TealiumUtagService</code> which available by registering it as a provider to a component.</p>
+
 <h2 id="example">Example</h2>
+
 <p>The following is a full example of importing the Tealium service to your application, <a href="https://github.com/Tealium/integration-angular/blob/master/example/src/app/app.component.ts"><code>app.component.ts</code></a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>import { <span style="color:#66d9ef">Component</span>, <span style="color:#66d9ef">OnInit</span> } from <span style="color:#e6db74">&#39;@angular/core&#39;</span>;
 </span></span><span style="display:flex;"><span>import { <span style="color:#66d9ef">TealiumUtagService</span> } from <span style="color:#e6db74">&#39;./tealium/utag.service&#39;</span>;
@@ -7235,8 +7245,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    this<span style="color:#f92672">.</span>tealium<span style="color:#f92672">.</span>view({<span style="color:#e6db74">event_name</span>: <span style="color:#e6db74">&#39;init&#39;</span>});
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">//</span>this<span style="color:#f92672">.</span>tealium<span style="color:#f92672">.</span>track(<span style="color:#e6db74">&#39;view&#39;</span>, {<span style="color:#e6db74">&#39;event_name&#39;</span> : <span style="color:#e6db74">&#39;init&#39;</span>});
 </span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

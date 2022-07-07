@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-config">Class: <code>Config</code></h2>
+  
+
+<h2 id="class-config">Class: <code>Config</code></h2>
+
 <p>The following summarizes the commonly used methods of the C# <code>Config</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,6 +7183,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>Config()</code></td>
@@ -7186,12 +7191,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="config"><code>Config()</code></h3>
+
 <p>Constructor to configure the Tealium instance</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Config tealConfig = <span style="color:#66d9ef">new</span> Config(account, profile, environment,
 </span></span><span style="display:flex;"><span>                               visitorID, modules, dataSourceKey,
-</span></span><span style="display:flex;"><span>                               overrideCollectUrl, optionalData, method);
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>                               overrideCollectUrl, optionalData, method);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7200,6 +7207,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7207,48 +7215,56 @@ var utag_data = {
 <td>Tealium Account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>string</code></td>
 <td>Tealium profile  name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>string</code></td>
 <td>(Optional) Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>visitorID</code></td>
 <td><code>string</code></td>
 <td>32-char alphanumeric string ID, unique to a user, app instance, or device (<code>null</code> ok)</td>
 <td><code>&quot;t3aL...1uM&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>modules</code></td>
 <td><code>[string]</code></td>
 <td>(Optional) Modules to be initialized with Collect library</td>
 <td>See <a href="#available-modules">Available Modules</a></td>
 </tr>
+
 <tr>
 <td><code>dataSourceKey</code></td>
 <td><code>string</code></td>
 <td>(Optional) Data source key</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>overrideCollectUrl</code></td>
 <td><code>string</code></td>
 <td>(Optional) Override Collect URL (custom destination URL for data)</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>optionalData</code></td>
 <td><code>Dictionary&lt;string, object&gt;</code></td>
 <td>(Optional) Data as key-value pairs for module use (<code>null</code> acceptable - not needed for most setups)</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>method</code></td>
 <td><code>Method</code> enum</td>
@@ -7257,8 +7273,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the C# <code>Tealium</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7266,47 +7285,58 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>Disable()</code></td>
 <td>Disable Tealium library modules</td>
 </tr>
+
 <tr>
 <td><code>Enable()</code></td>
 <td>Enable Tealium library modules</td>
 </tr>
+
 <tr>
 <td><code>JoinTrace()</code></td>
 <td>Join a trace</td>
 </tr>
+
 <tr>
 <td><code>KillTraceSession()</code></td>
 <td>Kill/end a trace</td>
 </tr>
+
 <tr>
 <td><code>LeaveTrace()</code></td>
 <td>Leave a trace</td>
 </tr>
+
 <tr>
 <td><code>Tealium()</code></td>
 <td>Tealium constructor</td>
 </tr>
+
 <tr>
 <td><code>Track()</code></td>
 <td>Track events</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="enable"><code>Enable()</code></h3>
+
 <p>Enable the <code>Tealium</code> instance, after a <code>Disable()</code> call. Automatically called with the initial initialization. Re-enable the Tealium instance and any internal modules if the library had been disabled prior.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Enable()
-</span></span></code></pre></div><h3 id="disable"><code>Disable()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Enable()</span></span></code></pre></div>
+<h3 id="disable"><code>Disable()</code></h3>
+
 <p>Diable the <code>Tealium</code> instance. Disables library modules from temporarily processing events. It may de-initialize internal class objects.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Disable()
-</span></span></code></pre></div><h3 id="jointrace"><code>JoinTrace()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Disable()</span></span></code></pre></div>
+<h3 id="jointrace"><code>JoinTrace()</code></h3>
+
 <p>Join a trace identified by the <code>traceId</code> parameter. <code>traceId</code> will be sent on all subsequent events as the key, allowing you to debug your events, until the <code>LeaveTrace()</code> method is called.  The <code>traceId</code> parameter should be generated in advance within Tealium Customer Data Hub.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.JoinTrace(traceId);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.JoinTrace(traceId);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7315,6 +7345,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>traceId</code></td>
@@ -7324,16 +7355,20 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="killtracesession"><code>KillTraceSession()</code></h3>
+
 <p>Kill a trace. Issues a specific event that kills the trace visitor session at the server. This is useful for testing end-of-session behavior in Customer Data Hub.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealiumObj.KillTraceSession();
-</span></span></code></pre></div><h3 id="leavetrace"><code>LeaveTrace()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealiumObj.KillTraceSession();</span></span></code></pre></div>
+<h3 id="leavetrace"><code>LeaveTrace()</code></h3>
+
 <p>Leave a trace, if one has been joined.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealiumObj.LeaveTrace();
-</span></span></code></pre></div><h3 id="tealium"><code>Tealium()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealiumObj.LeaveTrace();</span></span></code></pre></div>
+<h3 id="tealium"><code>Tealium()</code></h3>
+
 <p>Constructor method of the <code>Tealium</code> class.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Tealium tealium = <span style="color:#66d9ef">new</span> Tealium(tealConfig);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>Tealium tealium = <span style="color:#66d9ef">new</span> Tealium(tealConfig);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7341,6 +7376,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealConfig</code></td>
@@ -7349,10 +7385,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="track"><code>Track()</code></h3>
+
 <p>Track Events.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Track(title, customData, completion);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>tealium.Track(title, customData, completion);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7360,17 +7398,20 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>title</code></td>
 <td><code>string</code></td>
 <td>Event identifier</td>
 </tr>
+
 <tr>
 <td><code>customData</code></td>
 <td><code>Dictionary&lt;string, object&gt;</code></td>
 <td>(Optional)  Event data as key-value pairs (set to <code>null</code> if none)</td>
 </tr>
+
 <tr>
 <td><code>completion</code></td>
 <td><code>TrackCompletion</code> (set to <code>null</code> if none)</td>
@@ -7378,33 +7419,39 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="available-modules">Available Modules</h2>
+
 <p>The following constant string values are used to enable modules with the current build:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>config.Modules = <span style="color:#66d9ef">new</span> <span style="color:#66d9ef">string</span>[] { AppDataModule.Name,
 </span></span><span style="display:flex;"><span>                                CollectModule.Name,
-</span></span><span style="display:flex;"><span>                                LoggerModule.Name };
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>                                LoggerModule.Name };</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Module Name</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>AppDataModule</code></td>
 <td>Adds automatic data points to calls</td>
 </tr>
+
 <tr>
 <td><code>CollectModule</code></td>
 <td>Delivers processed events to Tealium Collect endpoint</td>
 </tr>
+
 <tr>
 <td><code>LoggerModule</code></td>
 <td>Provides debug output</td>
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>Use the <code>.Name</code> constant of each Module class.</p>
 
 </div>

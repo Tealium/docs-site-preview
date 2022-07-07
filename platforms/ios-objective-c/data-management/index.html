@@ -7170,21 +7170,30 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Some variables are required on every event. To prevent having to manually add required variable data to every event, you have the option to store data as either volatile or persistent. Once data is stored, it will be appended to every event, including lifecycle events.</p>
+
 <p>Persistent and volatile data values are stored on the device as an <a href="https://developer.apple.com/documentation/foundation/nsdictionary">NSDictionary</a> objects.</p>
+
 <p><a href="/platforms/getting-started/mobile-concepts/#data-management">Learn more</a> about Data Management.</p>
+
 <h2 id="persistent-data">Persistent Data</h2>
+
 <p>The persistent object is merged into each event and preserved between launches of the app.</p>
+
 <p>The <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/addPersistentDataSources:"><code>addPersistentDataSources()</code></a> method adds key-value data into the library instance&rsquo;s persistent data store, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>[self.tealium addPersistentDataSources:<span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;KEY&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">@&#34;VALUE&#34;</span><span style="color:#ae81ff">}</span>];
-</span></span><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>persistentDataSources <span style="color:#f92672">=</span> [self.tealium persistentDataSourcesCopy];
-</span></span></code></pre></div><h2 id="volatile-data">Volatile Data</h2>
+</span></span><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>persistentDataSources <span style="color:#f92672">=</span> [self.tealium persistentDataSourcesCopy];</span></span></code></pre></div>
+<h2 id="volatile-data">Volatile Data</h2>
+
 <p>A volatile object is discarded upon closing the app and restarting.</p>
+
 <p>The <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/addVolatileDataSources:"><code>addVolatileDataSources()</code></a> method adds key-value data into the temporary data sources dictionary, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>[self.tealium addVolatileDataSources:<span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;KEY&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">@&#34;VALUE&#34;</span><span style="color:#ae81ff">}</span>];
-</span></span><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>volatileDataSources <span style="color:#f92672">=</span> [self.tealium volatileDataSourcesCopy];
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>NSDictionary <span style="color:#f92672">*</span>volatileDataSources <span style="color:#f92672">=</span> [self.tealium volatileDataSourcesCopy];</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

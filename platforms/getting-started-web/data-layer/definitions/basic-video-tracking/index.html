@@ -7170,7 +7170,10 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="data-layer-attributes">Data Layer Attributes</h2>
+  
+
+<h2 id="data-layer-attributes">Data Layer Attributes</h2>
+
 <table>
 <thead>
 <tr>
@@ -7180,6 +7183,7 @@ var utag_data = {
 <th>Type</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event</code></td>
@@ -7187,36 +7191,42 @@ var utag_data = {
 <td><code>video_pause</code></td>
 <td>String</td>
 </tr>
+
 <tr>
 <td><code>video_playhead</code></td>
 <td>The playhead position (in seconds) of the video at the time of the event</td>
 <td><code>75</code></td>
 <td>Number</td>
 </tr>
+
 <tr>
 <td><code>video_id</code></td>
 <td>A unique ID for the video</td>
 <td><code>xWlEk2i9r5Q</code></td>
 <td>String</td>
 </tr>
+
 <tr>
 <td><code>video_length</code></td>
 <td>The total length (in seconds) of the video.</td>
 <td><code>300</code></td>
 <td>Number</td>
 </tr>
+
 <tr>
 <td><code>video_milestone</code></td>
 <td>The percentage of video played</td>
 <td><code>25</code></td>
 <td>Number</td>
 </tr>
+
 <tr>
 <td><code>video_name</code></td>
 <td>The display name of the video</td>
 <td><code>How to track videos in Tealium</code></td>
 <td>String</td>
 </tr>
+
 <tr>
 <td><code>video_platform</code></td>
 <td>The name of the platform serving the video</td>
@@ -7225,8 +7235,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="event-tracking">Event Tracking</h2>
+
 <h3 id="video-load">Video Load</h3>
+
 <table>
 <thead>
 <tr>
@@ -7234,6 +7247,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_load&quot;</code></td>
@@ -7241,6 +7255,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_load&#34;</span>,
@@ -7248,8 +7263,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-start">Video Start</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-start">Video Start</h3>
+
 <table>
 <thead>
 <tr>
@@ -7257,6 +7273,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_start&quot;</code></td>
@@ -7264,6 +7281,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_start&#34;</span>,     
@@ -7271,8 +7289,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-play">Video Play</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-play">Video Play</h3>
+
 <table>
 <thead>
 <tr>
@@ -7280,6 +7299,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_play&quot;</code></td>
@@ -7287,6 +7307,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{  
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_play&#34;</span>,     
@@ -7295,8 +7316,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;300&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-pause">Video Pause</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-pause">Video Pause</h3>
+
 <table>
 <thead>
 <tr>
@@ -7304,6 +7326,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_pause&quot;</code></td>
@@ -7311,6 +7334,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_pause&#34;</span>,     
@@ -7319,8 +7343,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-seek">Video Seek</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-seek">Video Seek</h3>
+
 <table>
 <thead>
 <tr>
@@ -7328,6 +7353,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_seek&quot;</code></td>
@@ -7335,6 +7361,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_seek&#34;</span>,     
@@ -7343,8 +7370,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-complete">Video Complete</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-complete">Video Complete</h3>
+
 <table>
 <thead>
 <tr>
@@ -7352,6 +7380,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_complete&quot;</code></td>
@@ -7359,6 +7388,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_complete&#34;</span>,     
@@ -7366,8 +7396,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_length&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#ae81ff">300</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>     <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="video-milestone">Video Milestone</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="video-milestone">Video Milestone</h3>
+
 <table>
 <thead>
 <tr>
@@ -7375,6 +7406,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_event=&quot;video_milestone&quot;</code></td>
@@ -7382,6 +7414,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Sample:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{   
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;tealium_event&#34;</span>   <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;video_milestone&#34;</span>,     
@@ -7391,8 +7424,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_milestone&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">25</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_name&#34;</span>      <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;How to track videos in Tealium&#34;</span>,     
 </span></span><span style="display:flex;"><span>   <span style="color:#e6db74">&#34;video_platform&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;YouTube&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

@@ -7170,14 +7170,18 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-currentvisit">Class: <code>CurrentVisit</code></h2>
+  
+
+<h2 id="class-currentvisit">Class: <code>CurrentVisit</code></h2>
+
 <p>The <code>CurrentVisit</code> contains all data associated with the current visitor profile from the Tealium Customer Data Hub. It has the same API as the <a href="platforms/android-kotlin/api/visitor-profile/"><code>VisitorProfile</code></a> with one additional property: <a href="#createdat"><code>createdAt</code></a>.</p>
+
 <h3 id="createdat"><code>createdAt</code></h3>
+
 <p>Returns the timestamp describing the time at which this Current Visit object was created.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>visitorProfile<span style="color:#f92672">.</span><span style="color:#a6e22e">currentVisit</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">let</span> <span style="color:#f92672">{</span> visit <span style="color:#f92672">-&gt;</span>
 </span></span><span style="display:flex;"><span>    Log<span style="color:#f92672">.</span><span style="color:#a6e22e">d</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;VisitorService&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Visit created at ${visit.createdAt}&#34;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

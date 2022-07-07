@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="standard-parameters">Standard Parameters</h2>
+  
+
+<h2 id="standard-parameters">Standard Parameters</h2>
+
 <p>Tealium Collect supports the following standard parameters in each request:</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,35 +7183,44 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_account</code></td>
 <td>The name of your Tealium account</td>
 </tr>
+
 <tr>
 <td><code>tealium_profile</code></td>
 <td>The name of your Tealium profile (Default: <code>&quot;main&quot;</code>)</td>
 </tr>
+
 <tr>
 <td><code>tealium_datasource</code></td>
 <td>(Optional) The data source key (<a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Data-Sources/ta-p/17933">Learn more</a> about Data Sources)</td>
 </tr>
+
 <tr>
 <td><code>tealium_event</code></td>
 <td>(Recommended) The name of the event for tracking purposes</td>
 </tr>
+
 <tr>
 <td><code>tealium_visitor_id</code></td>
 <td>(Required for Tealium AudienceStream) An anonymized and unique identifier for the visitor associated with the event (see <a href="#visitor-identifiers">Visitor Identifiers</a> below)</td>
 </tr>
+
 <tr>
 <td><code>tealium_trace_id</code></td>
 <td>(Optional) For use with <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Trace/ta-p/12058">Trace</a></td>
 </tr>
 </tbody>
 </table>
+
 <p>The format of the request varies depending on the HTTP method used. In the examples below placeholder values are represented with curly braces in the following format: <code>{VALUE}</code>.</p>
+
 <h2 id="custom-event-parameters">Custom Event Parameters</h2>
+
 <p>Additional event attributes are sent as custom parameters according to your tracking needs. Define these parameters as <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Using-Attributes/ta-p/11926">event attributes in the Tealium Customer Data Hub</a>.</p>
 
 </div>

@@ -7170,51 +7170,64 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="install">Install</h2>
+  
+
+<h2 id="install">Install</h2>
+
 <p>Get started with installing Tealium for <a href="/platforms/android-java/install">Android</a> or <a href="/platforms/ios-swift/install">iOS</a>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To install Tealium for Android library with Maven:</p>
+
 <ol>
-<li>Add the Tealium Maven URL to your project&rsquo;s top-level <code>build.gradle</code> file:</li>
-</ol>
+<li><p>Add the Tealium Maven URL to your project&rsquo;s top-level <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>allprojects {
-</span></span><span style="display:flex;"><span>      repositories {
-</span></span><span style="display:flex;"><span>        jcenter()
-</span></span><span style="display:flex;"><span>        maven {
-</span></span><span style="display:flex;"><span>          url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>      }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><ol start="2">
-<li>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</li>
-</ol>
+</span></span><span style="display:flex;"><span>  repositories {
+</span></span><span style="display:flex;"><span>    jcenter()
+</span></span><span style="display:flex;"><span>    maven {
+</span></span><span style="display:flex;"><span>      url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+
+<li><p>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>dependencies {
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.X.X&#39;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>Check for the latest releases on <a href="https://github.com/tealium/tealium-kotlin/releases">Github</a> and replace 1.X.X with the latest release number.</p>
+</span></span><span style="display:flex;"><span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.X.X&#39;</span>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div></li>
+</ol>
+
+<p class="note"><i class="fas fa-info-circle"></i>Check for the latest releases on <a href="https://github.com/tealium/tealium-kotlin/releases">Github</a> and replace 1.X.X with the latest release number.</p>
+
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To install Tealium for iOS library with Swift Package Manager:</p>
+
 <ol>
 <li>In your Xcode project, select <strong>File &gt; Swift Packages &gt; Add Package Dependency</strong></li>
 <li>Enter the repository URL: <code>https://github.com/tealium/tealium-swift</code></li>
 <li>Configure the version rules. Typically, <strong>Up to next major</strong> is recommended. If the current Tealium Swift library version does not appear in the list, then reset your Swift package cache.</li>
 <li>Select the modules to install and add the modules to each of your app targets in your Xcode project, under <strong>Frameworks &gt; Libraries &amp; Embedded Content</strong></li>
 </ol>
+
 </div>
 </div>
 </div>
 
+
 <h2 id="initialize">Initialize</h2>
+
 <p>Get started with initializing Tealium for <a href="/platforms/android-java/install/#initialize">Android</a> or <a href="/platforms/ios-swift/install/#initialize">iOS</a>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To initialize Tealium, configure a <a href="/platforms/android-kotlin/api/tealium-config/"><code>TealiumConfig</code></a> instance and pass it into a <a href="/platforms/android-kotlin/api/tealium/"><code>Tealium</code></a> instance. It&rsquo;s recommended to initialize the Tealium Kotlin library in the app&rsquo;s global application class within the <code>onCreate()</code> method.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>Manage your <a href="/platforms/android-kotlin/api/tealium/#class-tealium"><code>Tealium</code></a> instance by using a tracking helper class, which provides a single point of entry for the Tealium Kotlin library and simplifies future upgrades.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">object</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>
@@ -7232,11 +7245,12 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                    )
 </span></span><span style="display:flex;"><span>    tealium = Tealium.create(<span style="color:#e6db74">&#34;tealium_instance&#34;</span>, tealiumConfig)
 </span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To initialize Tealium, pass a <a href="/platforms/ios-swift/api/tealium-config/"><code>TealiumConfig</code></a> instance to the <a href="/platforms/ios-swift/api/tealium/#tealium"><code>Tealium()</code></a> constructor.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>Manage your <a href="/platforms/ios-swift/api/tealium/#class-tealium"><code>Tealium</code></a> instance by using a tracking helper class, which provides a single point of entry for the Tealium iOS library and simplifies future upgrades.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">let</span> shared = TealiumHelper()
@@ -7281,114 +7295,138 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> tealEvent = TealiumEvent(title, dataLayer: data)
 </span></span><span style="display:flex;"><span>      TealiumHelper.shared.tealium?.track(tealEvent)
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>Mobile Publish Settings are enabled by default, and must be disabled if you don’t wish to use them. Configure the Mobile Publish Settings in iQ Tag Management, or disable them using <code>config.shouldUseRemotePublishSettings = false</code>.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p class="note"><i class="fas fa-info-circle"></i>Mobile Publish Settings are enabled by default, and must be disabled if you don’t wish to use them. Configure the Mobile Publish Settings in iQ Tag Management, or disable them using <code>config.shouldUseRemotePublishSettings = false</code>.</p>
+
 </div>
 </div>
 </div>
 
+
 <h2 id="track">Track</h2>
+
 <p>Get started with tracking views and events for <a href="/platforms/android-kotlin/track/">Android</a> or <a href="/platforms/ios-swift/track/">iOS</a>.</p>
+
 <h3 id="track-views">Track Views</h3>
+
 <p>To track screen views, pass an instance of <code>TealiumView(viewName:dataLayer:)</code> to the <code>track()</code> method.  <code>TealiumView</code> is comprised of a view name, which appears in the data layer as <code>tealium_event</code>, and an optional data dictionary.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To track views:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealView = TealiumView(<span style="color:#e6db74">&#34;screen_view&#34;</span>, mutableMapOf(<span style="color:#e6db74">&#34;screen_name&#34;</span> to <span style="color:#e6db74">&#34;Home&#34;</span>))
-</span></span><span style="display:flex;"><span>tealium.track(tealView);
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium.track(tealView);</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To track views:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealView = TealiumView(<span style="color:#e6db74">&#34;screen_view&#34;</span>, dataLayer: [<span style="color:#e6db74">&#34;screen_name&#34;</span>: <span style="color:#e6db74">&#34;Home&#34;</span>])
-</span></span><span style="display:flex;"><span>tealium?.track(tealView)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium?.track(tealView)</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h3 id="track-events">Track Events</h3>
+
 <p>To track non-view events, pass an instance of <code>TealiumEvent(eventName:dataLayer:)</code> to the <code>track()</code> method.  <code>TealiumEvent</code> is comprised of an event name, which appears in the data layer as <code>tealium_event</code>, and an optional data dictionary.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To track events:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> tealEvent = TealiumEvent(<span style="color:#e6db74">&#34;user_login&#34;</span>, mutableMapOf(<span style="color:#e6db74">&#34;customer_id&#34;</span> to <span style="color:#e6db74">&#34;1234567890&#34;</span>))
-</span></span><span style="display:flex;"><span>tealium.track(tealEvent);
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium.track(tealEvent);</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To track events:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealEvent = TealiumEvent(<span style="color:#e6db74">&#34;user_login&#34;</span>, dataLayer: [<span style="color:#e6db74">&#34;customer_id&#34;</span>: <span style="color:#e6db74">&#34;1234567890&#34;</span>])
-</span></span><span style="display:flex;"><span>tealium?.track(tealEvent)
-</span></span></code></pre></div><p>The <a href="/platforms/ios-swift/api/tealium/#track"><code>track()</code></a> method tracks an event by accepting a <code>TealiumDispatch</code> of type <code>TealiumEvent</code>, which is comprised of an event name and an optional data dictionary.</p>
+</span></span><span style="display:flex;"><span>tealium?.track(tealEvent)</span></span></code></pre></div>
+<p>The <a href="/platforms/ios-swift/api/tealium/#track"><code>track()</code></a> method tracks an event by accepting a <code>TealiumDispatch</code> of type <code>TealiumEvent</code>, which is comprised of an event name and an optional data dictionary.</p>
+
 </div>
 </div>
 </div>
 
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>Get started managing common data layer values and the data provided by each module for <a href="/platforms/android-kotlin/data-layer/">Android</a> or <a href="/platforms/ios-swift/data-layer/">iOS</a>.</p>
+
 <p>To add data to the data layer:</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To set a <code>String</code> value use the <a href="/platforms/android-kotlin/api/data-layer/#putstring">putString()</a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.dataLayer.putString(<span style="color:#e6db74">&#34;my_string&#34;</span>, <span style="color:#e6db74">&#34;my_string_value&#34;</span>)
-</span></span></code></pre></div><p>Similarly for different data types, the method begins with <code>put</code>, such as <a href="/platforms/android-kotlin/api/data-layer/#putint">putInt()</a> for integers and <a href="/platforms/android-kotlin/api/data-layer/#getdoublearray">putDoubleArray()</a> for an array of floating-point numbers. Learn more about methods for different <a href="/platforms/android-kotlin/data-layer/#data-types">data type</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.dataLayer.putString(<span style="color:#e6db74">&#34;my_string&#34;</span>, <span style="color:#e6db74">&#34;my_string_value&#34;</span>)</span></span></code></pre></div>
+<p>Similarly for different data types, the method begins with <code>put</code>, such as <a href="/platforms/android-kotlin/api/data-layer/#putint">putInt()</a> for integers and <a href="/platforms/android-kotlin/api/data-layer/#getdoublearray">putDoubleArray()</a> for an array of floating-point numbers. Learn more about methods for different <a href="/platforms/android-kotlin/data-layer/#data-types">data type</a>.</p>
+
 <p>To set a <code>String</code> value to expire after 1 day:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.dataLayer.putString(<span style="color:#e6db74">&#34;my_string&#34;</span>, <span style="color:#e6db74">&#34;my_string_value&#34;</span>, Expiry.afterTimeUnit(<span style="color:#ae81ff">1</span>, TimeUnit.DAYS))
-</span></span></code></pre></div><p>Learn more about the <a href="/platforms/android-kotlin/data-layer/#data-expiration">expiration types</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.dataLayer.putString(<span style="color:#e6db74">&#34;my_string&#34;</span>, <span style="color:#e6db74">&#34;my_string_value&#34;</span>, Expiry.afterTimeUnit(<span style="color:#ae81ff">1</span>, TimeUnit.DAYS))</span></span></code></pre></div>
+<p>Learn more about the <a href="/platforms/android-kotlin/data-layer/#data-expiration">expiration types</a>.</p>
+
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To set a value of any type, use the <a href="/platforms/ios-swift/api/tealium-data-layer/#add"><code>add()</code></a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.add(key: <span style="color:#e6db74">&#34;my_value&#34;</span>, value: <span style="color:#ae81ff">123456</span>)
-</span></span></code></pre></div><p>To set a value of any type to expire after 1 day:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.add(key: <span style="color:#e6db74">&#34;my_value&#34;</span>, value: <span style="color:#ae81ff">123456</span>, expiry: .afterCustom((.days, <span style="color:#ae81ff">1</span>)))
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.add(key: <span style="color:#e6db74">&#34;my_value&#34;</span>, value: <span style="color:#ae81ff">123456</span>)</span></span></code></pre></div>
+<p>To set a value of any type to expire after 1 day:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.add(key: <span style="color:#e6db74">&#34;my_value&#34;</span>, value: <span style="color:#ae81ff">123456</span>, expiry: .afterCustom((.days, <span style="color:#ae81ff">1</span>)))</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h2 id="identify">Identify</h2>
+
 <p>Get started with adding a custom visitor ID for <a href="/platforms/android-kotlin/identity-resolution/">Android</a> or <a href="/platforms/ios-swift/identity-resolution/">iOS</a>.</p>
+
 <h3 id="visitor-id">Visitor ID</h3>
+
 <p>The Tealium Android and Swift libraries generates a unique persistent visitor ID the first time it is launched and stores it in <code>visitorId</code>. This value is the primary visitor ID included in each tracked event as the attribute <code>tealium_visitor_id</code>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To get the visitor ID:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> tealium: Tealium
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">lateinit</span> <span style="color:#66d9ef">var</span> tealium: Tealium
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">getVisitorId</span>(): String {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> tealium.visitorId
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To get the visitor ID:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
-</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">var</span> visitorId: String? {
-</span></span><span style="display:flex;"><span>		tealium?.visitorId
-</span></span><span style="display:flex;"><span>	}
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>        tealium?.visitorId
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <p>Provide additional visitor ID attributes to the data layer, as needed, by sending them as variables in your tracking calls.</p>
+
 <p>If you are using Tealium AudienceStream, <code>visitorId</code> is the primary visitor ID associated with the visitor. Learn more about <a href="https://community.tealiumiq.com/t5/Getting-Started-with/Visitor-Stitching-Visitor-ID/ta-p/25790">configuring visitor IDs in AudienceStream</a>.</p>
+
 <h3 id="secondary-visitor-id">Secondary Visitor ID</h3>
+
 <p>Include secondary visitor ID attributes as needed by adding them to the persistent data storage.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -7396,64 +7434,73 @@ var utag_data = {
   <p>To add a known visitor ID, such as a customer ID:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">setKnownVisitorId</span>(id: String) {
 </span></span><span style="display:flex;"><span>    tealium.dataLayer.putString(<span style="color:#e6db74">&#34;customer_id&#34;</span>, id, Expiry.FOREVER)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To add a known visitor ID, such as a customer ID:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">setKnownVisitorId</span>(<span style="color:#66d9ef">_</span> id: String) {
-</span></span><span style="display:flex;"><span>	tealium?.dataLayer.add(key: <span style="color:#e6db74">&#34;customer_id&#34;</span>, value: id, expiry: .forever)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    tealium?.dataLayer.add(key: <span style="color:#e6db74">&#34;customer_id&#34;</span>, value: id, expiry: .forever)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h2 id="validate">Validate</h2>
+
 <p>Validate your data by inspecting log files, running a trace, and viewing live events.</p>
+
 <h3 id="logs">Logs</h3>
+
 <p>Get started with logging for <a href="/platforms/android-kotlin/install/#log-level">Android</a> or <a href="/platforms/ios-swift/install/#log-level">iOS</a>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To set the log level, set the <a href="/platforms/android-kotlin/api/tealium-config/#loglevel"><code>logLevel</code></a> property:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Logger.logLevel = LogLevel.DEV <span style="color:#75715e">// or LogLevel.QA, LogLevel.PROD
-</span></span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Logger.logLevel = LogLevel.DEV <span style="color:#75715e">// or LogLevel.QA, LogLevel.PROD</span></span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To set the log level, set the <a href="/platforms/ios-swift/api/tealium-config/#loglevel"><code>logLevel</code></a> property:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logLevel = .debug <span style="color:#75715e">// or .info, .error, .fault, .silent</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logLevel = .debug <span style="color:#75715e">// or .info, .error, .fault, .silent</span></span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h3 id="trace">Trace</h3>
+
 <p>Get started with <a href="/platforms/getting-started/trace/">trace</a> for <a href="/platforms/android-kotlin/track/#trace">Android</a> or <a href="/platforms/ios-swift/track/#trace">iOS</a>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Android" title="Android">
   <p>To join a trace, call the <a href="/platforms/android-kotlin/api/tealium/#jointrace">joinTrace()</a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Tealium[<span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>]<span style="color:#f92672">?.</span>joinTrace(<span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)
-</span></span></code></pre></div><p>To leave a trace, call the <a href="/platforms/android-kotlin/api/tealium/#leavetrace">leaveTrace()</a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Tealium[<span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>]<span style="color:#f92672">?.</span>leaveTrace()
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Tealium[<span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>]<span style="color:#f92672">?.</span>joinTrace(<span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)</span></span></code></pre></div>
+<p>To leave a trace, call the <a href="/platforms/android-kotlin/api/tealium/#leavetrace">leaveTrace()</a> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>Tealium[<span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span>]<span style="color:#f92672">?.</span>leaveTrace()</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="iOS" title="iOS">
   <p>To join a trace, call the <a href="/platforms/ios-swift/api/tealium/#jointrace">joinTrace()</a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.joinTrace(id: <span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)
-</span></span></code></pre></div><p>To leave a trace, call the <a href="/platforms/ios-swift/api/tealium/#leavetrace">leaveTrace()</a> method:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace()
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.joinTrace(id: <span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)</span></span></code></pre></div>
+<p>To leave a trace, call the <a href="/platforms/ios-swift/api/tealium/#leavetrace">leaveTrace()</a> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace()</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <p>The <a href="/platforms/getting-started/trace/#mobile-trace-tool">Mobile Trace Tool</a> enhances the trace feature by providing a QR code that is scannable by your device, enabling you to quickly view events coming from the Tealium Mobile SDKs.</p>
+
 <h3 id="live-events">Live Events</h3>
+
 <p>The Live Events feature in Tealium EventStream is available to all Tealium customers for the purpose of <a href="/platforms/getting-started/troubleshooting/">toubleshooting mobile installations</a>.</p>
+
 <p>Learn more about using <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Live-Events-and-Feeds/ta-p/11805">Live Events</a>.</p>
 
 </div>

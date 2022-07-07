@@ -7170,45 +7170,67 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>The Tealium library for Swift is fully compatible with apps running pure Swift, Objective-C, or any combination of the two. Since it is the newest and most up-to-date library, we strongly recommend implementing the Swift library if possible.</p>
+  
+
+<p>The Tealium library for Swift is fully compatible with apps running pure Swift, Objective-C, or any combination of the two. Since it is the newest and most up-to-date library, we strongly recommend implementing the Swift library if possible.</p>
+
 <p>The Objective-C library is still fully supported, but the Swift library generally updates faster and has the newest features. Additionally, Swift has the widest compatibility of all Tealium libraries, including support for server-side Swift environments.</p>
+
 <p>Check the comparison table below to figure out which is most suitable for your needs.</p>
-<h2 id="memory-footprint--performance">Memory Footprint &amp; Performance</h2>
+
+<h2 id="memory-footprint-performance">Memory Footprint &amp; Performance</h2>
+
 <p>All SDKs have some performance and memory impacts on your app. This varies between apps, and may be difficult to measure the exact footprint of a specific SDK.</p>
+
 <p>We have measured the Tealium Swift SDK against a baseline of a standard blank iOS Single View app. These figures may vary for your specific implementation, so they only serve as a rough indicator.  All figures obtained using XCode Allocations Instrument.</p>
+
 <p><strong>Compiled App Archive (<code>.ipa</code> file)</strong></p>
+
 <ul>
 <li>3+ MB (includes all modules)</li>
 </ul>
+
 <p><strong>Runtime Memory Usage</strong></p>
+
 <ul>
 <li>2 - 2.5+ MB (Collect module and supporting modules)</li>
 <li>7 - 10+ MB (Tag Management module, Collect module, and supporting modules)</li>
 </ul>
+
 <p><strong>Startup Time</strong></p>
+
 <ul>
 <li>≈0.05 seconds (approximate time from initialization to completion callback firing)</li>
 </ul>
+
 <h2 id="swift-versions">Swift Versions</h2>
+
 <ul>
 <li>4.0+ (Xcode 9.0+)</li>
 </ul>
+
 <h2 id="operating-systems">Operating Systems</h2>
+
 <ul>
 <li>iOS 9.0+</li>
 <li>tvOS 9.2+</li>
 <li>macOS 10.11+</li>
 <li>WatchOS 3.0+</li>
 </ul>
+
 <h2 id="tealium-products">Tealium Products</h2>
+
 <ul>
 <li>Tealium iQ Tag Management</li>
 <li>Tealium EventStream</li>
 <li>Tealium AudienceStream</li>
 <li>Tealium DataAccess</li>
 </ul>
+
 <h2 id="tealium-swift-vs-tealium-ios">tealium-swift vs. tealium-ios</h2>
+
 <p>The Swift library was built from scratch on a completely new codebase to the <a href="https://github.com/Tealium/tealium-ios">Objective-C library</a>, and there are some subtle differences between the two libraries in terms of the current feature set. Below, we have compared the different features of both libraries. If you have requests for new features, feel free to open an issue on our GitHub page, or contact your account manager.</p>
+
 <table>
 <thead>
 <tr>
@@ -7219,6 +7241,7 @@ var utag_data = {
 <th>Notes</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>Instance Manager/Multiton</td>
@@ -7227,6 +7250,7 @@ var utag_data = {
 <td>Enables support for multiple Tealium instances (profiles) running in the same app.</td>
 <td>May be added to Swift in a future release. Not a widely-used feature of the Objective-C library. Most customers do not need this feature.</td>
 </tr>
+
 <tr>
 <td>UI Auto Tracking</td>
 <td></td>
@@ -7234,6 +7258,7 @@ var utag_data = {
 <td>Automatically tracks UIViews and Events</td>
 <td>Available as an optional module, but not recommended due to additional performance overheads</td>
 </tr>
+
 <tr>
 <td>Lifecycle Tracking</td>
 <td>✔</td>
@@ -7241,6 +7266,7 @@ var utag_data = {
 <td>Tracks App lifecycle events.</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Tag Management</td>
 <td>✔</td>
@@ -7248,6 +7274,7 @@ var utag_data = {
 <td>Allows use of Tealium iQ through a non-rendered web view</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Tealium Collect</td>
 <td>✔</td>
@@ -7255,6 +7282,7 @@ var utag_data = {
 <td>Sends data to Tealium Customer Data Hub using a native HTTPS request</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Offline functionality/queuing</td>
 <td>✔</td>
@@ -7262,6 +7290,7 @@ var utag_data = {
 <td>Automatically queues events if the device is online, and transmits when the device is online again</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Remote Mobile Publish Settings (MPS)</td>
 <td>✔</td>
@@ -7269,6 +7298,7 @@ var utag_data = {
 <td>Allows remote configuration of certain library settings</td>
 <td>Support added in version 1.9.0</td>
 </tr>
+
 <tr>
 <td>Volatile Data</td>
 <td>✔</td>
@@ -7276,6 +7306,7 @@ var utag_data = {
 <td>Stores data for the current session (until app is terminated)</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Persistent Data</td>
 <td>✔</td>
@@ -7283,6 +7314,7 @@ var utag_data = {
 <td>Stores data between app launches</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Remote Commands</td>
 <td>✔</td>
@@ -7290,6 +7322,7 @@ var utag_data = {
 <td>Allows triggering of specified native code blocks from Tealium iQ</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Apple Search Ads Support</td>
 <td></td>
@@ -7297,6 +7330,7 @@ var utag_data = {
 <td>Adds support for the Apple Search Ads API to collect attribution data automatically</td>
 <td>Not planning to port to Objective-C</td>
 </tr>
+
 <tr>
 <td>Optimizely Experiment Tracking</td>
 <td>✔</td>
@@ -7304,6 +7338,7 @@ var utag_data = {
 <td>Tracks Optimizely experiment data automatically</td>
 <td>May port to Swift in future.</td>
 </tr>
+
 <tr>
 <td>iOS Support</td>
 <td>✔</td>
@@ -7311,6 +7346,7 @@ var utag_data = {
 <td></td>
 <td></td>
 </tr>
+
 <tr>
 <td>watchOS Support</td>
 <td>✔</td>
@@ -7318,6 +7354,7 @@ var utag_data = {
 <td></td>
 <td></td>
 </tr>
+
 <tr>
 <td>tvOS Support</td>
 <td>✔</td>
@@ -7325,6 +7362,7 @@ var utag_data = {
 <td></td>
 <td></td>
 </tr>
+
 <tr>
 <td>macOS Support</td>
 <td></td>
@@ -7332,6 +7370,7 @@ var utag_data = {
 <td></td>
 <td></td>
 </tr>
+
 <tr>
 <td>CocoaPods Support</td>
 <td>✔</td>
@@ -7339,6 +7378,7 @@ var utag_data = {
 <td>Support for the CocoaPods dependency manager</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Carthage Support</td>
 <td>✔</td>
@@ -7346,6 +7386,7 @@ var utag_data = {
 <td>Support for the Carthage dependency manager</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Swift Package Manager (SPM) Support</td>
 <td></td>
@@ -7353,6 +7394,7 @@ var utag_data = {
 <td>Support for the Swift Package Manager dependency manager</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Source Code Available</td>
 <td></td>
@@ -7360,6 +7402,7 @@ var utag_data = {
 <td>May assist with debugging</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Consent Manager</td>
 <td>✔</td>
@@ -7367,6 +7410,7 @@ var utag_data = {
 <td>Assists with GDPR/privacy compliance</td>
 <td></td>
 </tr>
+
 <tr>
 <td>Tealium Visitor Service API</td>
 <td>✔</td>
@@ -7458,7 +7502,7 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">Table of Contents</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#memory-footprint--performance">Memory Footprint &amp; Performance</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#memory-footprint-performance">Memory Footprint &amp; Performance</a></li>
               <li><a href="#swift-versions">Swift Versions</a></li>
               <li><a href="#operating-systems">Operating Systems</a></li>
               <li><a href="#tealium-products">Tealium Products</a></li>

@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumconfig">Class: <code>Tealium.Config</code></h2>
+  
+
+<h2 id="class-tealium-config">Class: <code>Tealium.Config</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>Tealium.Config</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,57 +7183,70 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#create"><code>create()</code></a></td>
 <td>Create instance of the Config object</td>
 </tr>
+
 <tr>
 <td><a href="#enableconsentmanager"><code>enableConsentManager()</code></a></td>
 <td>Enable Consent Manager</td>
 </tr>
+
 <tr>
 <td><a href="#isconsentmanagerenabled"><code>isConsentManagerEnabled()</code></a></td>
 <td>Checks if Consent Manager is enabled</td>
 </tr>
+
 <tr>
 <td><a href="#sessioncountingenabled"><code>sessionCountingEnabled</code></a></td>
 <td>Disables session counting for Tealium iQ accounts. Use this if you are self-hosting your Tealium JavaScript files</td>
 </tr>
+
 <tr>
 <td><a href="#setdatasourceid"><code>setDatasourceId()</code></a></td>
 <td>Sets the data source key</td>
 </tr>
+
 <tr>
 <td><a href="#setforceoverrideloglevel"><code>setForceOverrideLogLevel()</code></a></td>
 <td>Set to force a specific log level at init time</td>
 </tr>
+
 <tr>
 <td><a href="#setoverridecollectdispatchprofile"><code>setOverrideCollectDispatchProfile()</code></a></td>
 <td>Overrides the Tealium Collect profile</td>
 </tr>
+
 <tr>
 <td><a href="#setoverridecollectdispatchurl"><code>setOverrideCollectDispatchUrl()</code></a></td>
 <td>Overrides the Tealium Collect URL</td>
 </tr>
+
 <tr>
 <td><a href="#setoverridevisitorservicedomain"><code>setOverrideVisitorServiceDomain()</code></a></td>
 <td>Overrides the Tealium Collect visitor service domain</td>
 </tr>
+
 <tr>
 <td><a href="#setsecondsbeforebatchtimeout"><code>setSecondsBeforeBatchTimeout()</code></a></td>
 <td>Sets the number of seconds before batch timeout</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="create"><code>create()</code></h3>
+
 <p>Create instance of the Config object.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span> config <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>      application<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>      account<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>      profile<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>      environment<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The Tealium <code>Config</code> instance is configured with the following parameters:</p>
+</span></span><span style="display:flex;"><span>      environment<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The Tealium <code>Config</code> instance is configured with the following parameters:</p>
+
 <table>
 <thead>
 <tr>
@@ -7239,6 +7256,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>application</code></td>
@@ -7246,18 +7264,21 @@ var utag_data = {
 <td>The application instance</td>
 <td><code>applicationObj</code></td>
 </tr>
+
 <tr>
 <td><code>account</code></td>
 <td><code>String</code></td>
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
@@ -7266,12 +7287,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="enableconsentmanager"><code>enableConsentManager()</code></h3>
+
 <p>Enable Consent Manager. This method is to be used before Tealium initialization.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">final</span> String TEALIUM_INSTANCE <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;main&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">final</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span> config <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Config</span><span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(...);</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">enableConsentManager</span><span style="color:#f92672">(</span>TEALIUM_INSTANCE<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">enableConsentManager</span><span style="color:#f92672">(</span>TEALIUM_INSTANCE<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7280,6 +7303,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>instance</code></td>
@@ -7289,16 +7313,20 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="isconsentmanagerenabled"><code>isConsentManagerEnabled()</code></h3>
+
 <p>Checks if Consent Manager is enabled.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">isConsentMangerEnabled</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="sessioncountingenabled"><code>sessionCountingEnabled</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">isConsentMangerEnabled</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="sessioncountingenabled"><code>sessionCountingEnabled</code></h3>
+
 <p>Disables session counting for Tealium iQ accounts. Use this if you are self-hosting your Tealium JavaScript files. Default <code>true</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sessionCountingEnabled = <span style="color:#66d9ef">false</span>
-</span></span></code></pre></div><h3 id="setdatasourceid"><code>setDatasourceId()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sessionCountingEnabled = <span style="color:#66d9ef">false</span></span></span></code></pre></div>
+<h3 id="setdatasourceid"><code>setDatasourceId()</code></h3>
+
 <p>Sets the data source key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataSourceId</span><span style="color:#f92672">(</span>dataSourceId<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setDataSourceId</span><span style="color:#f92672">(</span>dataSourceId<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7307,6 +7335,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>dataSourceId</code></td>
@@ -7316,10 +7345,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setforceoverrideloglevel"><code>setForceOverrideLogLevel()</code></h3>
+
 <p>Set to force a specific log level at init time. Returns instance of the config object for method chaining.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setForceOverrideLogLevel</span><span style="color:#f92672">(</span>forceOverrideLogLevel<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The following <code>String</code> options are available for <code>forceOverrideLogLevel</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setForceOverrideLogLevel</span><span style="color:#f92672">(</span>forceOverrideLogLevel<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The following <code>String</code> options are available for <code>forceOverrideLogLevel</code>:</p>
+
 <table>
 <thead>
 <tr>
@@ -7327,29 +7359,35 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>&quot;dev&quot;</code></td>
 <td>Activity, Info, Warnings, and Errors</td>
 </tr>
+
 <tr>
 <td><code>&quot;qa&quot;</code></td>
 <td>Info, Warnings, and Errors</td>
 </tr>
+
 <tr>
 <td><code>&quot;prod&quot;</code></td>
 <td>Errors</td>
 </tr>
+
 <tr>
 <td><code>&quot;silent&quot;</code></td>
 <td>None</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="setoverridecollectdispatchprofile"><code>setOverrideCollectDispatchProfile()</code></h3>
+
 <p>Overrides the Tealium Collect dispatch profile.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchProfile</span><span style="color:#f92672">(</span>profile<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchProfile</span><span style="color:#f92672">(</span>profile<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7357,6 +7395,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>profile</code></td>
@@ -7365,10 +7404,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setoverridecollectdispatchurl"><code>setOverrideCollectDispatchUrl()</code></h3>
+
 <p>Overrides the Tealium Collect dispatch URL to send data to a different endpoint.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchUrl</span><span style="color:#f92672">(</span>url<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchUrl</span><span style="color:#f92672">(</span>url<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7376,6 +7417,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>url</code></td>
@@ -7384,16 +7426,18 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>The default URL is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/event/
-</span></span></code></pre></div><p>The default URL with event batching is:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/bulk-event/
-</span></span></code></pre></div><p>The method is typically used to set a custom hostname, or to set a specific region hostname. The following example sets the Tealium Collect base URL to stay within the EU Central region:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchUrl</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://collect-eu-central-1.tealiumiq.com/event/&#34;</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="setoverridevisitorservicedomain"><code>setOverrideVisitorServiceDomain()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/event/</span></span></code></pre></div>
+<p>The default URL with event batching is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/bulk-event/</span></span></code></pre></div>
+<p>The method is typically used to set a custom hostname, or to set a specific region hostname. The following example sets the Tealium Collect base URL to stay within the EU Central region:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideCollectDispatchUrl</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;https://collect-eu-central-1.tealiumiq.com/event/&#34;</span><span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="setoverridevisitorservicedomain"><code>setOverrideVisitorServiceDomain()</code></h3>
+
 <p>Overrides the Tealium Collect visitor service domain to send data to a different domain.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideVisitorServiceDomain</span><span style="color:#f92672">(</span>domain<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setOverrideVisitorServiceDomain</span><span style="color:#f92672">(</span>domain<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7401,6 +7445,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>domain</code></td>
@@ -7409,10 +7454,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setsecondsbeforebatchtimeout"><code>setSecondsBeforeBatchTimeout()</code></h3>
+
 <p>Sets the number of seconds before batch timeout. If the batch size limit has not been reached before reaching the timeout, the queued events are dispatched.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setSecondsBeforeBatchTimeout</span><span style="color:#f92672">(</span>timeout<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">setSecondsBeforeBatchTimeout</span><span style="color:#f92672">(</span>timeout<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7421,6 +7468,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>timeout</code></td>
@@ -7512,7 +7560,7 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">Table of Contents</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#class-tealiumconfig">Class: Tealium.Config</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#class-tealium-config">Class: Tealium.Config</a></li>
               <ul class="toc-h3"><li><a href="#create">create()</a></li>
               <li><a href="#enableconsentmanager">enableConsentManager()</a></li>
               <li><a href="#isconsentmanagerenabled">isConsentManagerEnabled()</a></li>

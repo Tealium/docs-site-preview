@@ -7170,796 +7170,942 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-datalayer">Class: <code>DataLayer</code></h2>
+  
+
+<h2 id="class-datalayer">Class: <code>DataLayer</code></h2>
+
 <p>This class provides persistent and volatile data storage for key-value data to be included with every tracked event.</p>
+
 <p>The following methods are available for the <code>DataLayer</code> class.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Method</th>
-<th style="text-align:left">Description</th>
+<th align="left">Method</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><a href="#all"><code>all()</code></a></td>
-<td style="text-align:left">Retrieves all key-value pairs currently in the data layer</td>
+<td align="left"><a href="#all"><code>all()</code></a></td>
+<td align="left">Retrieves all key-value pairs currently in the data layer</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#clear"><code>clear()</code></a></td>
-<td style="text-align:left">Removes all data from the data layer</td>
+<td align="left"><a href="#clear"><code>clear()</code></a></td>
+<td align="left">Removes all data from the data layer</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#contains"><code>contains()</code></a></td>
-<td style="text-align:left">Returns true if the key exists in the data layer</td>
+<td align="left"><a href="#contains"><code>contains()</code></a></td>
+<td align="left">Returns true if the key exists in the data layer</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#count"><code>count()</code></a></td>
-<td style="text-align:left">Returns a count of all values currently in the data layer</td>
+<td align="left"><a href="#count"><code>count()</code></a></td>
+<td align="left">Returns a count of all values currently in the data layer</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#get"><code>get()</code></a></td>
-<td style="text-align:left">Retrieves the value for the given key</td>
+<td align="left"><a href="#get"><code>get()</code></a></td>
+<td align="left">Retrieves the value for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getboolean"><code>getBoolean()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Boolean</code> for the given key</td>
+<td align="left"><a href="#getboolean"><code>getBoolean()</code></a></td>
+<td align="left">Retrieves the <code>Boolean</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getbooleanarray"><code>getBooleanArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Array&lt;Boolean&gt;</code> for the given key</td>
+<td align="left"><a href="#getbooleanarray"><code>getBooleanArray()</code></a></td>
+<td align="left">Retrieves the <code>Array&lt;Boolean&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getdouble"><code>getDouble()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Double</code> for the given key</td>
+<td align="left"><a href="#getdouble"><code>getDouble()</code></a></td>
+<td align="left">Retrieves the <code>Double</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getdoublearray"><code>getDoubleArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Array&lt;Double&gt;</code> for the given key</td>
+<td align="left"><a href="#getdoublearray"><code>getDoubleArray()</code></a></td>
+<td align="left">Retrieves the <code>Array&lt;Double&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getint"><code>getInt()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Int</code> for the given key</td>
+<td align="left"><a href="#getint"><code>getInt()</code></a></td>
+<td align="left">Retrieves the <code>Int</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getintarray"><code>getIntArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Array&lt;Int&gt;</code> for the given key</td>
+<td align="left"><a href="#getintarray"><code>getIntArray()</code></a></td>
+<td align="left">Retrieves the <code>Array&lt;Int&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getjsonarray"><code>getJsonArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>org.json.JSONArray</code> for the given key</td>
+<td align="left"><a href="#getjsonarray"><code>getJsonArray()</code></a></td>
+<td align="left">Retrieves the <code>org.json.JSONArray</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getjsonobject"><code>getJsonObject()</code></a></td>
-<td style="text-align:left">Retrieves the <code>org.json.JSONObject</code> for the given key</td>
+<td align="left"><a href="#getjsonobject"><code>getJsonObject()</code></a></td>
+<td align="left">Retrieves the <code>org.json.JSONObject</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="(#getlong)"><code>getLong()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Long</code> for the given key</td>
+<td align="left"><a href="(#getlong)"><code>getLong()</code></a></td>
+<td align="left">Retrieves the <code>Long</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getlongarray"><code>getLongArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Array&lt;Long&gt;</code> for the given key</td>
+<td align="left"><a href="#getlongarray"><code>getLongArray()</code></a></td>
+<td align="left">Retrieves the <code>Array&lt;Long&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getstring"><code>getString()</code></a></td>
-<td style="text-align:left">Retrieves the <code>String</code> for the given key</td>
+<td align="left"><a href="#getstring"><code>getString()</code></a></td>
+<td align="left">Retrieves the <code>String</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#getstringarray"><code>getStringArray()</code></a></td>
-<td style="text-align:left">Retrieves the <code>Array&lt;String&gt;</code> for the given key</td>
+<td align="left"><a href="#getstringarray"><code>getStringArray()</code></a></td>
+<td align="left">Retrieves the <code>Array&lt;String&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#keys"><code>keys()</code></a></td>
-<td style="text-align:left">Returns a <code>List&lt;String&gt;</code> of all keys currently in the data layer</td>
+<td align="left"><a href="#keys"><code>keys()</code></a></td>
+<td align="left">Returns a <code>List&lt;String&gt;</code> of all keys currently in the data layer</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putboolean"><code>putBoolean()</code></a></td>
-<td style="text-align:left">Stores a <code>Boolean</code> for the given key</td>
+<td align="left"><a href="#putboolean"><code>putBoolean()</code></a></td>
+<td align="left">Stores a <code>Boolean</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putbooleanarray"><code>putBooleanArray()</code></a></td>
-<td style="text-align:left">Stores a <code>Array&lt;Boolean&gt;</code> for the given key</td>
+<td align="left"><a href="#putbooleanarray"><code>putBooleanArray()</code></a></td>
+<td align="left">Stores a <code>Array&lt;Boolean&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putdouble"><code>putDouble()</code></a></td>
-<td style="text-align:left">Stores a <code>Double</code> for the given key</td>
+<td align="left"><a href="#putdouble"><code>putDouble()</code></a></td>
+<td align="left">Stores a <code>Double</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putdoublearray"><code>putDoubleArray()</code></a></td>
-<td style="text-align:left">Stores a <code>Array&lt;Double&gt;</code> for the given key</td>
+<td align="left"><a href="#putdoublearray"><code>putDoubleArray()</code></a></td>
+<td align="left">Stores a <code>Array&lt;Double&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putint"><code>putInt()</code></a></td>
-<td style="text-align:left">Stores an <code>Int</code> for the given key</td>
+<td align="left"><a href="#putint"><code>putInt()</code></a></td>
+<td align="left">Stores an <code>Int</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putintarray"><code>putIntArray()</code></a></td>
-<td style="text-align:left">Stores an <code>Array&lt;Int&gt;</code> for the given key</td>
+<td align="left"><a href="#putintarray"><code>putIntArray()</code></a></td>
+<td align="left">Stores an <code>Array&lt;Int&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putjsonarray"><code>putJsonArray()</code></a></td>
-<td style="text-align:left">Stores a <code>org.json.JSONArray</code> for the given key</td>
+<td align="left"><a href="#putjsonarray"><code>putJsonArray()</code></a></td>
+<td align="left">Stores a <code>org.json.JSONArray</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putjsonobject"><code>putJsonObject()</code></a></td>
-<td style="text-align:left">Stores a <code>org.json.JSONObject</code> for the given key</td>
+<td align="left"><a href="#putjsonobject"><code>putJsonObject()</code></a></td>
+<td align="left">Stores a <code>org.json.JSONObject</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putlong"><code>putLong()</code></a></td>
-<td style="text-align:left">Stores a <code>Long</code> for the given key</td>
+<td align="left"><a href="#putlong"><code>putLong()</code></a></td>
+<td align="left">Stores a <code>Long</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putlongarray"><code>putLongArray()</code></a></td>
-<td style="text-align:left">Stores a <code>Array&lt;Long&gt;</code> for the given key</td>
+<td align="left"><a href="#putlongarray"><code>putLongArray()</code></a></td>
+<td align="left">Stores a <code>Array&lt;Long&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putstring"><code>putString()</code></a></td>
-<td style="text-align:left">Stores a <code>String</code> for the given key</td>
+<td align="left"><a href="#putstring"><code>putString()</code></a></td>
+<td align="left">Stores a <code>String</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#putstringarray"><code>putStringArray()</code></a></td>
-<td style="text-align:left">Stores a <code>Array&lt;String&gt;</code> for the given key</td>
+<td align="left"><a href="#putstringarray"><code>putStringArray()</code></a></td>
+<td align="left">Stores a <code>Array&lt;String&gt;</code> for the given key</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#remove"><code>remove()</code></a></td>
-<td style="text-align:left">Removes the value for the given key</td>
+<td align="left"><a href="#remove"><code>remove()</code></a></td>
+<td align="left">Removes the value for the given key</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="all"><code>all</code></h3>
+
 <p>Returns a map of all the key-value pairs currently stored in the data layer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val dataLayer <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">all</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="clear"><code>clear</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val dataLayer <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">all</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="clear"><code>clear</code></h3>
+
 <p>Clears all items currently stored in the data layer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="contains"><code>contains</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">clear</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="contains"><code>contains</code></h3>
+
 <p>Returns <code>true</code> if the given key exists in the data layer, otherwise <code>false</code>.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be removed</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be removed</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="count"><code>count</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">contains</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="count"><code>count</code></h3>
+
 <p>Returns a the number of items currently stored in the data layer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">count</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="get"><code>get</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">count</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="get"><code>get</code></h3>
+
 <p>Retrieves the value at the given key. Return types match one of the allowed types, else <code>null</code> is returned.</p>
+
 <p>The method gets a variable of type <code>Any</code> (equivalent to Java’s <code>Object</code>). Inspect the type by using type casting or <code>instanceof</code> in order to use the data type appropriately.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val any <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getboolean"><code>getBoolean</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val any <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">get</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getboolean"><code>getBoolean</code></h3>
+
 <p>Retrieves the <code>Boolean</code> value at the given key. If the value at this key is not a <code>Boolean</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val bool <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getbooleanarray"><code>getBooleanArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val bool <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getbooleanarray"><code>getBooleanArray</code></h3>
+
 <p>Retrieves the <code>Array&lt;Boolean&gt;</code> value at the given key. If the value at this key is not a <code>Array&lt;Boolean&gt;</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val booleanArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getBooleanArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getdouble"><code>getDouble</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val booleanArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getBooleanArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getdouble"><code>getDouble</code></h3>
+
 <p>Retrieves the <code>Double</code> value at the given key. If the value at this key is not a <code>Double</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">double</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getDouble</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getdoublearray"><code>getDoubleArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">double</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getDouble</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getdoublearray"><code>getDoubleArray</code></h3>
+
 <p>Retrieves the <code>Array&lt;Double&gt;</code> value at the given key. If the value at this key is not a <code>Array&lt;Double&gt;</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val doubleArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getDoubleArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getint"><code>getInt</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val doubleArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getDoubleArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getint"><code>getInt</code></h3>
+
 <p>Retrieves the <code>Int</code> value at the given key. If the value at this key is not a <code>Int</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left"><code>Type</code></th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left"><code>Type</code></th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getintarray"><code>getIntArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">int</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getintarray"><code>getIntArray</code></h3>
+
 <p>Retrieves the <code>Array&lt;Int&gt;</code> value at the given key. If the value at this key is not a <code>Array&lt;Int&gt;</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val intArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIntArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getjsonarray"><code>getJsonArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val intArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getIntArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getjsonarray"><code>getJsonArray</code></h3>
+
 <p>Retrieves the <code>org.json.JSONArray</code> value at the given key. If the value at this key is not a JSONArray, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val jsonArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getJsonArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getjsonobject"><code>getJsonObject</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val jsonArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getJsonArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getjsonobject"><code>getJsonObject</code></h3>
+
 <p>Retrieves the <code>org.json.JSONObject</code> value at the given key. If the value at this key is not a JSONObject, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val jsonObject <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getJsonObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getlong"><code>getLong</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val jsonObject <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getJsonObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getlong"><code>getLong</code></h3>
+
 <p>Retrieves the <code>Long</code> value at the given key. If the value at this key is not a <code>Long</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">long</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getlongarray"><code>getLongArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val <span style="color:#66d9ef">long</span> <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getlongarray"><code>getLongArray</code></h3>
+
 <p>Retrieves the <code>Array&lt;Long&gt;</code> value at the given key. If the value at this key is not a <code>Array&lt;Long&gt;</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val longArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getLongArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getstring"><code>getString</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val longArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getLongArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getstring"><code>getString</code></h3>
+
 <p>Retrieves the <code>String</code> value at the given key. If the value at this key is not a <code>String</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val string <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="getstringarray"><code>getStringArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val string <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="getstringarray"><code>getStringArray</code></h3>
+
 <p>Retrieves the <code>Array&lt;String&gt;</code> value at the given key. If the value at this key is not a <code>Array&lt;String&gt;</code>, then <code>null</code> is returned.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be retrieved</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be retrieved</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val stringArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getStringArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="keys"><code>keys</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val stringArray <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">getStringArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="keys"><code>keys</code></h3>
+
 <p>Returns the <code>List&lt;String&gt;</code> of all keys currently stored in the data layer</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">keys</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="putboolean"><code>putBoolean</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">keys</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="putboolean"><code>putBoolean</code></h3>
+
 <p>Stores a <code>Boolean</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left">The <code>Boolean</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Boolean</code></td>
+<td align="left">The <code>Boolean</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putbooleanarray"><code>putBooleanArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putBoolean</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putbooleanarray"><code>putBooleanArray</code></h3>
+
 <p>Stores a <code>Array&lt;Boolean&gt;</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Array&lt;Boolean&gt;</code></td>
-<td style="text-align:left">The <code>Array&lt;Boolean&gt;</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Array&lt;Boolean&gt;</code></td>
+<td align="left">The <code>Array&lt;Boolean&gt;</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putBooleanArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putdouble"><code>putDouble</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putBooleanArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">false</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">true</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putdouble"><code>putDouble</code></h3>
+
 <p>Stores a <code>Double</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Double</code></td>
-<td style="text-align:left">The <code>Double</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Double</code></td>
+<td align="left">The <code>Double</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putDouble</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putdoublearray"><code>putDoubleArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putDouble</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putdoublearray"><code>putDoubleArray</code></h3>
+
 <p>Stores a <code>Array&lt;Double&gt;</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Array&lt;Double&gt;</code></td>
-<td style="text-align:left">The <code>Array&lt;Double&gt;</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Array&lt;Double&gt;</code></td>
+<td align="left">The <code>Array&lt;Double&gt;</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putDoubleArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">1</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putint"><code>putInt</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putDoubleArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>0<span style="color:#f92672">.</span><span style="color:#a6e22e">1</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">5</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putint"><code>putInt</code></h3>
+
 <p>Stores a <code>Int</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Int</code></td>
-<td style="text-align:left">The <code>Int</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Int</code></td>
+<td align="left">The <code>Int</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putintarray"><code>putIntArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> 10<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putintarray"><code>putIntArray</code></h3>
+
 <p>Stores a <code>Array&lt;Int&gt;</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Array&lt;Int&gt;</code></td>
-<td style="text-align:left">The <code>Array&lt;Int&gt;</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Array&lt;Int&gt;</code></td>
+<td align="left">The <code>Array&lt;Int&gt;</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putIntArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>100<span style="color:#f92672">,</span> Int<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putjsonarray"><code>putJsonArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putIntArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>100<span style="color:#f92672">,</span> Int<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putjsonarray"><code>putJsonArray</code></h3>
+
 <p>Stores an <code>org.json.JSONArray</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>JSONArray</code></td>
-<td style="text-align:left">The <code>org.json.JSONArray</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>JSONArray</code></td>
+<td align="left">The <code>org.json.JSONArray</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val my_list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSONArray<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>my_list<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;value_1&#34;</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>my_list<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;value_2&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putJsonArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> my_list<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="putjsonobject"><code>putJsonObject</code></h3>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putJsonArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> my_list<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="putjsonobject"><code>putJsonObject</code></h3>
+
 <p>Stores an <code>org.json.JSONObject</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>JSONObject</code></td>
-<td style="text-align:left">The <code>org.json.JSONObject</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>JSONObject</code></td>
+<td align="left">The <code>org.json.JSONObject</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val my_obj <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> JSONObject<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>my_obj<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;value&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putJsonObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> my_obj<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="putlong"><code>putLong</code></h3>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putJsonObject</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> my_obj<span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="putlong"><code>putLong</code></h3>
+
 <p>Stores a <code>Long</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Long</code></td>
-<td style="text-align:left">The <code>Long</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Long</code></td>
+<td align="left">The <code>Long</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> Long<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putlongarray"><code>putLongArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putLong</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> Long<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putlongarray"><code>putLongArray</code></h3>
+
 <p>Stores a <code>Array&lt;Long&gt;</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Array&lt;Long&gt;</code></td>
-<td style="text-align:left">The <code>Array&lt;Long&gt;</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Array&lt;Long&gt;</code></td>
+<td align="left">The <code>Array&lt;Long&gt;</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putLongArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>1000L<span style="color:#f92672">,</span> Long<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putstring"><code>putString</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putLongArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> arrayOf<span style="color:#f92672">(</span>1000L<span style="color:#f92672">,</span> Long<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putstring"><code>putString</code></h3>
+
 <p>Stores a <code>String</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The <code>String</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The <code>String</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;String Value&#34;</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="putstringarray"><code>putStringArray</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putString</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;String Value&#34;</span><span style="color:#f92672">,</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="putstringarray"><code>putStringArray</code></h3>
+
 <p>Stores a <code>Array&lt;String&gt;</code> value at the given key.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable being stored</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable being stored</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>value</code></td>
-<td style="text-align:left"><code>Array&lt;String&gt;</code></td>
-<td style="text-align:left">The <code>Array&lt;String&gt;</code> value to be store</td>
+<td align="left"><code>value</code></td>
+<td align="left"><code>Array&lt;String&gt;</code></td>
+<td align="left">The <code>Array&lt;String&gt;</code> value to be store</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>expiry</code></td>
-<td style="text-align:left"><code>Expiry</code></td>
-<td style="text-align:left">(Optional) The Expiry time of this variable</td>
+<td align="left"><code>expiry</code></td>
+<td align="left"><code>Expiry</code></td>
+<td align="left">(Optional) The Expiry time of this variable</td>
 </tr>
 </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">putStringArray</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>    arrayOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;String 1&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;String 2&#34;</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="remove"><code>remove</code></h3>
+</span></span><span style="display:flex;"><span>    arrayOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;String 1&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;String 2&#34;</span><span style="color:#f92672">),</span> Expiry<span style="color:#f92672">.</span><span style="color:#a6e22e">FOREVER</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="remove"><code>remove</code></h3>
+
 <p>Removes the value stored at the given key</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>key</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the variable to be removed</td>
+<td align="left"><code>key</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the variable to be removed</td>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">dataLayer</span><span style="color:#f92672">.</span><span style="color:#a6e22e">remove</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">)</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

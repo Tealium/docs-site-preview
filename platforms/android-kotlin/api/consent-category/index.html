@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-consentcategory">Class: <code>ConsentCategory</code></h2>
+  
+
+<h2 id="class-consentcategory">Class: <code>ConsentCategory</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>ConsentCategory</code> class for Kotlin.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,25 +7183,30 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#all"><code>ALL</code></a></td>
 <td>Returns the complete list of supported consent categories</td>
 </tr>
+
 <tr>
 <td><a href="#consentcategory-string"><code>consentCategory(String)</code></a></td>
 <td>Returns the ConsentCategory relating to the given String; else null</td>
 </tr>
+
 <tr>
 <td><a href="#consentcategories-set-string"><code>consentCategories(Set&lt;String&gt;)</code></a></td>
 <td>Returns the Set of <code>ConsentCategory</code> objects relating to the given Strings; invalid entries are ignored.</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="all"><code>ALL</code></h3>
+
 <p>Returns the full set of all available <code>ConsentCategory</code> items.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">ALL</span>
-</span></span></code></pre></div><p>The following is the entire set of available categories:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">ALL</span></span></span></code></pre></div>
+<p>The following is the entire set of available categories:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>setOf<span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>    AFFILIATES<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>    ANALYTICS<span style="color:#f92672">,</span>
@@ -7214,11 +7223,14 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    SEARCH<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>    SOCIAL<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>    MISC
-</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="consentcategorystring"><code>consentCategory(String)</code></h3>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="consentcategory-string"><code>consentCategory(String)</code></h3>
+
 <p>Returns the relevant <code>ConsentCategory</code> for the given String. The parameter is case-insensitive.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">consentCategory</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cdp&#34;</span><span style="color:#f92672">)</span> <span style="color:#75715e">// returns ConsentCategory.CDP
-</span></span></span></code></pre></div><h3 id="consentcategoriessetstring"><code>consentCategories(Set&lt;String&gt;)</code></h3>
+</span></span></span></code></pre></div>
+<h3 id="consentcategories-set-string"><code>consentCategories(Set&lt;String&gt;)</code></h3>
+
 <p>Returns the set of relevant <code>ConsentCategory</code> object for the given Strings. The parameters are case-insensitive.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">consentCategories</span><span style="color:#f92672">(</span>setOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;cdp&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;invalid&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;email&#34;</span><span style="color:#f92672">))</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// returns setOf(ConsentCategory.CDP, ConsentCategory.EMAIL)
@@ -7288,8 +7300,8 @@ var utag_data = {
       <p class="b">Table of Contents</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#class-consentcategory">Class: ConsentCategory</a></li>
               <ul class="toc-h3"><li><a href="#all">ALL</a></li>
-              <li><a href="#consentcategorystring">consentCategory(String)</a></li>
-              <li><a href="#consentcategoriessetstring">consentCategories(Set&lt;String&gt;)</a></li>
+              <li><a href="#consentcategory-string">consentCategory(String)</a></li>
+              <li><a href="#consentcategories-set-string">consentCategories(Set&lt;String&gt;)</a></li>
               </nav>
   </aside></div>
 

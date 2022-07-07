@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-locationmanager">Class: LocationManager</h2>
+  
+
+<h2 id="class-locationmanager">Class: LocationManager</h2>
+
 <p>The <code>LocationManager</code> class provides methods for gathering location data, creating and monitoring geofences. The following summarizes the commonly used methods of the <code>LocationManager</code> class for Tealium Kotlin. For additional details, explore <a href="/platforms/android-kotlin/module-list/location">Location </a>.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,38 +7183,47 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#addgeofence"><code>addGeofence()</code></a></td>
 <td>Creates and adds a new <code>GeofenceLocation</code> to allGeofenceLocations</td>
 </tr>
+
 <tr>
 <td><a href="#allgeofencenames"><code>allGeofenceNames()</code></a></td>
 <td>Returns a list of all <code>GeofenceLocation</code> names</td>
 </tr>
+
 <tr>
 <td><a href="#lastlocation"><code>lastLocation()</code></a></td>
 <td>Returns last known location result for user&rsquo;s device</td>
 </tr>
+
 <tr>
 <td><a href="#lastlocationlatitude"><code>lastLocationLatitude()</code></a></td>
 <td>Returns latitude for last location result</td>
 </tr>
+
 <tr>
 <td><a href="#lastlocationlongitude"><code>lastLocationLongitude()</code></a></td>
 <td>Returns longitude for last location result</td>
 </tr>
+
 <tr>
 <td><a href="#startlocationtracking"><code>startLocationTracking()</code></a></td>
 <td>Starts location tracking based on desired accuracy and interval updates</td>
 </tr>
+
 <tr>
 <td><a href="#stoplocationtracking"><code>stopLocationTracking()</code></a></td>
 <td>Stops location tracking updates</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="addgeofence"><code>addGeofence()</code></h3>
+
 <p>Provides to ability to manually create and add geofences for monitoring.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">addGeofence</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>							<span style="color:#e6db74">&#34;Tealium-HQ&#34;</span><span style="color:#f92672">,</span>
@@ -7221,7 +7234,8 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>							0<span style="color:#f92672">,</span> <span style="color:#75715e">// loiter duration
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>							<span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> <span style="color:#75715e">// events triggered on entry of geofence
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>							<span style="color:#66d9ef">true</span><span style="color:#f92672">)</span> <span style="color:#75715e">// events triggered on exit of geofence
-</span></span></span></code></pre></div><table>
+</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7230,6 +7244,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7237,42 +7252,49 @@ var utag_data = {
 <td>Name of location</td>
 <td><code>&quot;Tealium-HQ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>latitude</code></td>
 <td><code>Double</code></td>
 <td>Latitude of location</td>
 <td><code>45.0</code></td>
 </tr>
+
 <tr>
 <td><code>longitude</code></td>
 <td><code>Double</code></td>
 <td>Longitude of location</td>
 <td><code>100.0</code></td>
 </tr>
+
 <tr>
 <td><code>radius</code></td>
 <td><code>Int</code></td>
 <td>Radius in meters of geofence</td>
 <td><code>100</code></td>
 </tr>
+
 <tr>
 <td><code>expireTime</code></td>
 <td><code>Int</code></td>
 <td>Sets expiration duration in milliseconds for geofence</td>
 <td><code>-1</code></td>
 </tr>
+
 <tr>
 <td><code>loiterTime</code></td>
 <td><code>Int</code></td>
 <td>Sets duration in milliseconds for time delay between entering and dwelling a geofence</td>
 <td><code>0</code></td>
 </tr>
+
 <tr>
 <td><code>triggerEnter</code></td>
 <td><code>Boolean</code></td>
 <td>Enables events being triggered upon entering a geofence</td>
 <td><code>true</code></td>
 </tr>
+
 <tr>
 <td><code>triggerExit</code></td>
 <td><code>Boolean</code></td>
@@ -7281,22 +7303,28 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="allgeofencenames"><code>allGeofenceNames()</code></h3>
+
 <p>Returns a list of all geofence names to be observed.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">allGeofenceNames</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="lastlocation"><code>lastLocation()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">allGeofenceNames</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="lastlocation"><code>lastLocation()</code></h3>
+
 <p>Returns most recent location recorded for a user&rsquo;s device or <code>null</code> if location is not available.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val location <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocation</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="lastlocationlatitude"><code>lastLocationLatitude()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val location <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocation</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="lastlocationlatitude"><code>lastLocationLatitude()</code></h3>
+
 <p>Returns the latitude for the most recent location recorded for a user&rsquo;s device.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val latitude <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocationLatitude</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="lastlocationlongitude"><code>lastLocationLongitude()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val latitude <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocationLatitude</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="lastlocationlongitude"><code>lastLocationLongitude()</code></h3>
+
 <p>Returns the longitude for the most recent location recorded for a user&rsquo;s device.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val longitude <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocationLongitude</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="startlocationtracking"><code>startLocationTracking()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val longitude <span style="color:#f92672">=</span> tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">lastLocationLongitude</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="startlocationtracking"><code>startLocationTracking()</code></h3>
+
 <p>Starts continuous location tracking, as well as sets desired accuracy and preferred interval in milliseconds for location updates. Enabling precise location and frequent location update intervals may be costly to battery consumption.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startLocationTracking</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> 1000<span style="color:#f92672">)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">startLocationTracking</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> 1000<span style="color:#f92672">)</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7305,13 +7333,15 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>isHighAcuracy</code></td>
 <td><code>Boolean</code></td>
-<td>Set to &rsquo;true&rsquo; for high precision location tracking, or <code>false</code> for accuracy within 100 meters</td>
+<td>Set to &lsquo;true&rsquo; for high precision location tracking, or <code>false</code> for accuracy within 100 meters</td>
 <td><code>true</code></td>
 </tr>
+
 <tr>
 <td><code>updateInterval</code></td>
 <td><code>Int</code></td>
@@ -7320,10 +7350,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="stoplocationtracking"><code>stopLocationTracking()</code></h3>
+
 <p>Halts continuous location tracking updates.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">stopLocationTracking</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">location</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">stopLocationTracking</span><span style="color:#f92672">()</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

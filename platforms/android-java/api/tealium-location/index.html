@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumlocation">Class: <code>TealiumLocation</code></h2>
+  
+
+<h2 id="class-tealiumlocation">Class: <code>TealiumLocation</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>TealiumLocation</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,53 +7183,66 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>requestDeviceLastLocation()</code></td>
 <td>Returns the last known location of a user&rsquo;s device</td>
 </tr>
+
 <tr>
 <td><code>setupInstance()</code></td>
 <td>Sets the Tealium geolocation instance with geofencing disabled</td>
 </tr>
+
 <tr>
 <td><code>setupInstanceWithConfig()</code></td>
 <td>Sets the Tealium geolocation instance with geofences provided from a Tealium Config file (hosted with Tealium&rsquo;s hosted data layer)</td>
 </tr>
+
 <tr>
 <td><code>setupInstanceWithFile()</code></td>
 <td>Sets the Tealium geolocation instance with geofences provided from a JSON file in assets</td>
 </tr>
+
 <tr>
 <td><code>setupInstanceWithUrl()</code></td>
 <td>Sets the Tealium geolocation instance with geofences provided from a URL hosting a raw JSON file</td>
 </tr>
+
 <tr>
 <td><code>startLocationUpdates()</code></td>
 <td>Sets the accuracy of location updates and the update interval time for continuous tracking</td>
 </tr>
+
 <tr>
 <td><code>stopLocationUpdates()</code></td>
 <td>Stops/disables continuous location tracking updates</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="requestdevicelastlocation"><code>requestDeviceLastLocation()</code></h3>
+
 <p>Returns the last known location of a user&rsquo;s device. This method relies on the location client being used by other apps on the device for accuracy. If no other apps are receiving location updates, then the method returns the last known location. Returns <code>null</code> if a location is not available.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">requestDeviceLastLocation</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div><h3 id="setupinstance"><code>setupInstance()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">requestDeviceLastLocation</span><span style="color:#f92672">();</span></span></span></code></pre></div>
+<h3 id="setupinstance"><code>setupInstance()</code></h3>
+
 <p>Sets the Tealium geolocation instance with geofencing disabled.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstance</span><span style="color:#f92672">(</span>applicationContext<span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="setupinstancewithconfig"><code>setupInstanceWithConfig()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstance</span><span style="color:#f92672">(</span>applicationContext<span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="setupinstancewithconfig"><code>setupInstanceWithConfig()</code></h3>
+
 <p>Sets the Tealium geolocation instance with geofences provided from a Tealium Config file (hosted with Tealium&rsquo;s hosted data layer). It creates a custom URL in the following format: <code>&quot;https://tags.tiqcdn.com/dle/ACCOUNT/PROFILE/geofences.json&quot;</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithConfig</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> mTealiumConfig<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="setupinstancewithfile"><code>setupInstanceWithFile()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithConfig</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> mTealiumConfig<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="setupinstancewithfile"><code>setupInstanceWithFile()</code></h3>
+
 <p>Sets the Tealium geolocation instance with geofences provided from a JSON file in assets.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithFile</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;geofences.json&#34;</span><span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="setupinstancewithurl"><code>setupInstanceWithUrl()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithFile</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;geofences.json&#34;</span><span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="setupinstancewithurl"><code>setupInstanceWithUrl()</code></h3>
+
 <p>Sets the Tealium geolocation instance with geofences provided from a URL hosting a raw JSON file. This option is recommended if you have overridden the publish settings URL.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithUrl</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> url<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">setupInstanceWithUrl</span><span style="color:#f92672">(</span><span style="color:#66d9ef">this</span><span style="color:#f92672">,</span> tealiumInstances<span style="color:#f92672">,</span> url<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7234,6 +7251,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>url</code></td>
@@ -7243,10 +7261,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="startlocationupdates"><code>startLocationUpdates()</code></h3>
+
 <p>Sets the accuracy of location updates and the update interval time for continuous tracking. Enabling pin-point location accuracy and frequent updates provides higher accuracy, but at the cost of more battery consumption. Enabling &ldquo;block&rdquo; accuracy requests location precision to within a city block, which is an accuracy of approximately 100 meters.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startLocationUpdates</span><span style="color:#f92672">(</span>isHighAccuracy<span style="color:#f92672">,</span> updateInterval<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">startLocationUpdates</span><span style="color:#f92672">(</span>isHighAccuracy<span style="color:#f92672">,</span> updateInterval<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7255,6 +7275,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>isHighAccuracy</code></td>
@@ -7262,6 +7283,7 @@ var utag_data = {
 <td>Set to <code>true</code> for pin-point location accuracy, or <code>false</code> for &ldquo;block&rdquo; accuracy.</td>
 <td><code>true</code></td>
 </tr>
+
 <tr>
 <td><code>updateInterval</code></td>
 <td><code>double</code></td>
@@ -7270,10 +7292,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="stoplocationupdates"><code>stopLocationUpdates()</code></h3>
+
 <p>Disables continuous location tracking updates.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stopLocationUpdates</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>TealiumLocation<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">().</span><span style="color:#a6e22e">stopLocationUpdates</span><span style="color:#f92672">();</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

@@ -7170,37 +7170,51 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>We recommend using our native Swift library, even for Objective-C projects, but if you still need to use the Objective-C library, this document helps.</p>
+  
+
+<p>We recommend using our native Swift library, even for Objective-C projects, but if you still need to use the Objective-C library, this document helps.</p>
+
 <h2 id="call-objective-c-from-swift">Call Objective-C from Swift</h2>
+
 <p>Call the Objective-C library from Swift code by simply adding a bridging header to your project, and importing the appropriate headers.</p>
+
 <h3 id="bridging-header">Bridging Header</h3>
+
 <p>To create a bridging header:</p>
+
 <ol>
 <li>In your Swift project, create a new file. When prompted to select a file type, select Objective-C File.</li>
 <li>Give this file a temporary name, such as &ldquo;placeholder.m&rdquo;, as you are going to remove it later.</li>
 <li>Click &ldquo;Finish&rdquo; and XCode prompts you to create a Bridging Header (if it doesn&rsquo;t, you probably already have a Bridging Header in your project). Press &ldquo;Create Bridging Header&rdquo; to continue, and Xcode automatically creates the new header file for you.</li>
 <li>Delete the <code>placeholder.m</code> file from the project and notice a new file called <code>&lt;ProjectName&gt;-Bridging-Header.h</code></li>
-<li>Add the following import statement to the new Bridging Header:</li>
+
+<li><p>Add the following import statement to the new Bridging Header:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>@import TealiumIOS;</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>@import TealiumIOS;
-</span></span></code></pre></div><p>Next, to call the Objective-C code from Swift:</p>
+
+<p>Next, to call the Objective-C code from Swift:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> TealiumHelper {
 </span></span><span style="display:flex;"><span>    func somefunc () {
 </span></span><span style="display:flex;"><span>        let tealConfig <span style="color:#f92672">=</span> TEALConfiguration.init(account: <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>, profile: <span style="color:#e6db74">&#34;PROFILE&#34;</span>, environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>)
 </span></span><span style="display:flex;"><span>        let teal <span style="color:#f92672">=</span> Tealium.newInstance(forKey: <span style="color:#e6db74">&#34;KEY&#34;</span>, configuration: tealConfig)
 </span></span><span style="display:flex;"><span>        teal.trackView(withTitle: <span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, dataSources: [<span style="color:#e6db74">&#34;DATA&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">&#34;VALUE&#34;</span>])
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h2 id="call-swift-from-objective-c">Call Swift from Objective-C</h2>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h2 id="call-swift-from-objective-c">Call Swift from Objective-C</h2>
+
 <p>The Swift library cannot be directly called from Objective-C, since it is missing the required annotations in the code, and in many cases, modules do not inherit from NSObject, rather they use the native Swift data types.
 However, by using an intermediate helper class, it is possible to call the Swift library from Objective-C.</p>
+
 <h3 id="helper-class">Helper Class</h3>
+
 <ol>
 <li>In your Objective-C project, create a new Swift file. You are prompted to add a bridging header if you don&rsquo;t already have one. Accept this prompt. Name the new Swift file &ldquo;TealiumHelper.swift&rdquo;.</li>
-<li>Import the new Swift header (<code>&lt;ProjectName&gt;-Swift.h</code>) into files that need to call the new helper.</li>
+
+<li><p>Import the new Swift header (<code>&lt;ProjectName&gt;-Swift.h</code>) into files that need to call the new helper.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#75715e">#import &#34;ProjectName-Swift.h&#34;</span></span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#75715e">#import &#34;ProjectName-Swift.h&#34;
-</span></span></span></code></pre></div><p>The methods in the helper file are now be available to use in your Objective-C code. We recommend making the helper a singleton.</p>
+
+<p>The methods in the helper file are now be available to use in your Objective-C code. We recommend making the helper a singleton.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span><span style="color:#75715e">#import &#34;TestSwiftBridge-Swift.h&#34;
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
 </span></span><span style="display:flex;"><span>- (<span style="color:#66d9ef">BOOL</span>)<span style="color:#a6e22e">application:</span>(UIApplication <span style="color:#f92672">*</span>)application <span style="color:#a6e22e">didFinishLaunchingWithOptions:</span>(NSDictionary <span style="color:#f92672">*</span>)launchOptions {
@@ -7211,8 +7225,8 @@ However, by using an intermediate helper class, it is possible to call the Swift
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// trigger a new event tracking call from objective-c
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    [help track:<span style="color:#e6db74">@&#34;this is from objective-c!&#34;</span> data:<span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;mydata&#34;</span><span style="color:#f92672">:</span><span style="color:#e6db74">@&#34;hello from obj-c&#34;</span><span style="color:#ae81ff">}</span>];
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> YES;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="sample-tealiumhelper-file">Sample TealiumHelper file</h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="sample-tealiumhelper-file">Sample TealiumHelper file</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// </span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// TealiumHelper.swift</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//</span>
@@ -7350,8 +7364,7 @@ However, by using an intermediate helper class, it is possible to call the Swift
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">leaveTrace</span>() {
 </span></span><span style="display:flex;"><span>        tealium?.leaveTrace()
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

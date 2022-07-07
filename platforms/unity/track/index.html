@@ -7170,23 +7170,26 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="track-game-events">Track Game Events</h2>
+  
+
+<h2 id="track-game-events">Track Game Events</h2>
+
 <p>To track a user&rsquo;s interaction with a game, such as <code>achievement_unlocked</code> or <code>level_started</code>, create a <a href="/platforms/unity/api/#class-tealiumevent"><code>TealiumEvent</code></a> object and pass it to the <a href="/platforms/unity/api/#track"><code>Track()</code></a> method. <code>TealiumEvent</code> is comprised of an event name, which appears in the tracking call as <code>tealium_event</code>, and an optional data dictionary.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumEvent</span> <span style="color:#a6e22e">event</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">TealiumEvent</span>(<span style="color:#e6db74">&#34;level_completed&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dictionary</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">string</span>, <span style="color:#a6e22e">object</span><span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;user_id&#34;</span>, <span style="color:#e6db74">&#34;gamer123&#34;</span>},
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;level&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>},
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;bonus_points&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1500</span>}});
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumUnityPlugin</span>.<span style="color:#a6e22e">Track</span>(<span style="color:#a6e22e">event</span>);
-</span></span></code></pre></div><h2 id="track-game-views">Track Game Views</h2>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumUnityPlugin</span>.<span style="color:#a6e22e">Track</span>(<span style="color:#a6e22e">event</span>);</span></span></code></pre></div>
+<h2 id="track-game-views">Track Game Views</h2>
+
 <p>To track a view in a game, such as the leaderboards screen, create a <a href="/platforms/unity/api/#class-tealiumview"><code>TealiumView</code></a> object and pass it to the <a href="/platforms/unity/api/#track"><code>Track()</code></a> method. <code>TealiumView</code> is comprised of a view name, which appears in the tracking call as <code>tealium_event</code>, and an optional data dictionary.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumView</span> <span style="color:#a6e22e">view</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">TealiumView</span>(<span style="color:#e6db74">&#34;level_completed_screen&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Dictionary</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">string</span>, <span style="color:#a6e22e">object</span><span style="color:#f92672">&gt;</span> {
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;user_id&#34;</span>, <span style="color:#e6db74">&#34;gamer123&#34;</span>},
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;level&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">2</span>},
 </span></span><span style="display:flex;"><span>        {<span style="color:#e6db74">&#34;total_points&#34;</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">17500</span>}});
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumUnityPlugin</span>.<span style="color:#a6e22e">Track</span>(<span style="color:#a6e22e">view</span>);
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumUnityPlugin</span>.<span style="color:#a6e22e">Track</span>(<span style="color:#a6e22e">view</span>);</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

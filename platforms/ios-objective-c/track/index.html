@@ -7170,9 +7170,14 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="track-views">Track Views</h2>
+  
+
+<h2 id="track-views">Track Views</h2>
+
 <p>Track screen views with the <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackViewWithTitle:dataSources:"><code>trackViewWithTitle()</code></a> method. This is done in the <a href="https://developer.apple.com/documentation/uikit/uiviewcontroller/1621423-viewdidappear"><code>viewDidAppear()</code></a> method of any View Controller. This method accepts two parameters: the name of the screen and (optionally) contextual view data. </p>
+
 <p class="note"><i class="fas fa-info-circle"></i>The screen name value is set in the event attribute <code>screen_title</code>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -7189,9 +7194,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// With optional array data</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> optionalData = [<span style="color:#e6db74">&#34;KEY1&#34;</span>: [<span style="color:#e6db74">&#34;STRING1&#34;</span>, <span style="color:#e6db74">&#34;STRING2&#34;</span>]]
-</span></span><span style="display:flex;"><span>tealium?.trackView(withTitle: <span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, dataSources: optionalData)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium?.trackView(withTitle: <span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, dataSources: optionalData)</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="Objective-C" title="Objective-C">
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span><span style="color:#75715e">// Retrieve instance
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium <span style="color:#f92672">*</span>tealium <span style="color:#f92672">=</span> [Tealium instanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span>];
@@ -7205,11 +7210,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// With optional array data
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>NSDictionary <span style="color:#f92672">*</span>optionalData <span style="color:#f92672">=</span> <span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;KEY1&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">@[</span><span style="color:#e6db74">@&#34;STRING1&#34;</span>, <span style="color:#e6db74">&#34;STRING2&#34;</span><span style="color:#ae81ff">]}</span>;
-</span></span><span style="display:flex;"><span>[tealium trackViewWithTitle:<span style="color:#e6db74">@&#34;SCREEN_NAME&#34;</span> dataSources: optionalData];
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>[tealium trackViewWithTitle:<span style="color:#e6db74">@&#34;SCREEN_NAME&#34;</span> dataSources: optionalData];</span></span></code></pre></div>
 </div>
 </div>
 </div>
+
 
 <table>
 <thead>
@@ -7221,6 +7226,7 @@ var utag_data = {
 <th>iOS Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>title</code></td>
@@ -7229,6 +7235,7 @@ var utag_data = {
 <td><code>&quot;screenName&quot;</code></td>
 <td><code>&quot;screenName&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>customDataSources</code></td>
 <td><code>[String]</code></td>
@@ -7238,9 +7245,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="track-events">Track Events</h2>
+
 <p>Track non-view activity with the <a href="https://tealium.github.io/tealium-ios/Classes/Tealium.html#//api/name/trackEventWithTitle:dataSources:"><code>trackEventWithTitle()</code></a> method. This method accepts two parameters: an event name and (optionally) contextual event data.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>The event name value is populated in the event attribute named <code>tealium_event</code>.</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -7257,9 +7268,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// With optional array data</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> optionalData = [<span style="color:#e6db74">&#34;KEY1&#34;</span>: [<span style="color:#e6db74">&#34;STRING1&#34;</span>, <span style="color:#e6db74">&#34;STRING2&#34;</span>]]
-</span></span><span style="display:flex;"><span>tealium?.trackEvent(withTitle: <span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, dataSources: optionalData)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium?.trackEvent(withTitle: <span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, dataSources: optionalData)</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="Objective-C" title="Objective-C">
   <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span><span style="color:#75715e">// Retrieve instance
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium <span style="color:#f92672">*</span>tealium <span style="color:#f92672">=</span> [Tealium instanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span>];
@@ -7273,11 +7284,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// With optional array data
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>NSDictionary <span style="color:#f92672">*</span>optionalData <span style="color:#f92672">=</span> <span style="color:#ae81ff">@{</span><span style="color:#e6db74">@&#34;KEY1&#34;</span> <span style="color:#f92672">:</span> <span style="color:#ae81ff">@[</span><span style="color:#e6db74">@&#34;STRING1&#34;</span>, <span style="color:#e6db74">@&#34;STRING2&#34;</span><span style="color:#ae81ff">]}</span>;
-</span></span><span style="display:flex;"><span>[tealium trackEventWithTitle:<span style="color:#e6db74">@&#34;EVENT_NAME&#34;</span> dataSources:optionalData];
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>[tealium trackEventWithTitle:<span style="color:#e6db74">@&#34;EVENT_NAME&#34;</span> dataSources:optionalData];</span></span></code></pre></div>
 </div>
 </div>
 </div>
+
 
 <table>
 <thead>
@@ -7289,6 +7300,7 @@ var utag_data = {
 <th>iOS Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>title</code></td>
@@ -7297,6 +7309,7 @@ var utag_data = {
 <td><code>&quot;someEvent&quot;</code></td>
 <td><code>&quot;someEvent&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>customDataSources</code></td>
 <td><code>[String]</code></td>

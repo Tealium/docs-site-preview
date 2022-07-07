@@ -7170,7 +7170,10 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="track-views">Track Views</h2>
+  
+
+<h2 id="track-views">Track Views</h2>
+
 <p>Track views with the <a href="/platforms/java/api/#track"><code>track()</code></a> method, as shown in the following examples:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Set event attributes
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Udo data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Udo<span style="color:#f92672">();</span>
@@ -7183,11 +7186,13 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dispatch successful: &#34;</span> <span style="color:#f92672">+</span> String<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>success<span style="color:#f92672">));</span>    
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The following example tracks a page view:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SCREEN_VIEW&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The data and callback arguments are optional.</p>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The following example tracks a page view:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SCREEN_VIEW&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The data and callback arguments are optional.</p>
+
 <h2 id="track-events">Track Events</h2>
+
 <p>Track events with the same <a href="/platforms/java/api/#track"><code>track()</code></a> method used to track views, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Set event attributes
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Udo data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Udo<span style="color:#f92672">();</span>
@@ -7200,8 +7205,8 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>       System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Dispatch successful: &#34;</span> <span style="color:#f92672">+</span> String<span style="color:#f92672">.</span><span style="color:#a6e22e">valueOf</span><span style="color:#f92672">(</span>success<span style="color:#f92672">));</span>    
 </span></span><span style="display:flex;"><span>   <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The following example tracks a user login:</p>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The following example tracks a user login:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Event attributes
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Udo data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Udo<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;user_id&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;0123456789&#34;</span><span style="color:#f92672">);</span>
@@ -7213,8 +7218,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// Callback handling  
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;user_login&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span>
-</span></span></code></pre></div><p>The data and callback arguments are optional.</p>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">track</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;user_login&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">);</span></span></span></code></pre></div>
+<p>The data and callback arguments are optional.</p>
 
 </div>
 

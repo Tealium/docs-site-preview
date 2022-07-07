@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+  
+
+<h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>Tealium</code> class for React Native library.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,169 +7183,210 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>addRemoteCommand()</code></td>
 <td>Adds a remote command to the remote command manager</td>
 </tr>
+
 <tr>
 <td><code>addRemoteCommandForInstance()</code></td>
 <td>Adds a remote command to the remote command manager, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>getPersistentData()</code></td>
 <td>Gets the value for a specific key</td>
 </tr>
+
 <tr>
 <td><code>getPersistentDataForInstanceName()</code></td>
 <td>Get a persistent data value, for a specific Tealium instance and key</td>
 </tr>
+
 <tr>
 <td><code>getUserConsentCategories()</code></td>
 <td>Gets the consent categories of a user</td>
 </tr>
+
 <tr>
 <td><code>getUserConsentCatgoriesForInstanceName()</code></td>
 <td>Gets the consent categories of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>getUserConsentStatus()</code></td>
 <td>Gets the consent status of a user</td>
 </tr>
+
 <tr>
 <td><code>getUserConsentStatusForInstanceName()</code></td>
 <td>Gets the consent status of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>getVisitorID()</code></td>
 <td>Gets the visitorID of a user</td>
 </tr>
+
 <tr>
 <td><code>getVisitorIDForInstanceName()</code></td>
 <td>Gets the visitorID of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>getVolatileData()</code></td>
 <td>Gets the value for the key passed in</td>
 </tr>
+
 <tr>
 <td><code>getVolatileDataForInstanceName()</code></td>
 <td>Get a volatile data value, for a specific Tealium instance and key</td>
 </tr>
+
 <tr>
 <td><code>initialize()</code></td>
 <td>Initialize Tealium before calling any other method</td>
 </tr>
+
 <tr>
 <td><code>initializeCustom()</code></td>
 <td>Initialize Tealium with all options before calling any other method</td>
 </tr>
+
 <tr>
 <td><code>initializeWithConsentManager()</code></td>
 <td>Initialize Tealium with Consent Management before calling any other method</td>
 </tr>
+
 <tr>
 <td><code>isConsentLoggingEnabled()</code></td>
 <td>Checks if consent logging is enabled for a user</td>
 </tr>
+
 <tr>
 <td><code>isConsentLoggingEnabledForInstanceName()</code></td>
 <td>Checks if consent logging is enabled, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>removePersistentData()</code></td>
 <td>Remove persistent data that has been previously set using <code>setPersistentData()</code></td>
 </tr>
+
 <tr>
 <td><code>removePersistentDataForInstanceName()</code></td>
 <td>Remove persistent data that has been previously set using <code>setPersistentData()</code> for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>removeRemoteCommand()</code></td>
 <td>Removes a remote command from the remote command manager</td>
 </tr>
+
 <tr>
 <td><code>removeRemoteCommandForInstanceName()</code></td>
 <td>Removes a remote command from the remote command manager, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>removeVolatileData()</code></td>
 <td>Remove volatile data that has been previously set using <code>setVolatileData()</code></td>
 </tr>
+
 <tr>
 <td><code>removeVolatileDataForInstanceName()</code></td>
 <td>Remove volatile data that has been previously set using <code>setVolatileData()</code>, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>resetUserConsentPreferences()</code></td>
 <td>Resets the user consent status and categories of a user</td>
 </tr>
+
 <tr>
 <td><code>resetUserConsentPreferencesForInstanceName()</code></td>
 <td>Resets the user consent status and categories of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>setConsentLoggingEnabled()</code></td>
 <td>Sets user&rsquo;s consent logging</td>
 </tr>
+
 <tr>
 <td><code>setConsentLoggingEnabledForInstanceName()</code></td>
 <td>Sets user&rsquo;s consent logging, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>setPersistentData()</code></td>
 <td>Set persistent data to be sent with each subsequent event or view, even between app restarts</td>
 </tr>
+
 <tr>
 <td><code>setPersistentDataForInstanceName()</code></td>
 <td>Set persistent data to be sent with each subsequent event or view, even between app restarts, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>setUserConsentCategories()</code></td>
 <td>Sets the consent categories of a user</td>
 </tr>
+
 <tr>
 <td><code>setUserConsentCategoriesForInstanceName()</code></td>
 <td>Sets the consent categories of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>setUserConsentStatus()</code></td>
 <td>Sets the consent status of a user</td>
 </tr>
+
 <tr>
 <td><code>setUserConsentStatusForInstanceName()</code></td>
 <td>Sets the consent status of a user, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>setVolatileData()</code></td>
 <td>Set volatile data to be sent with each subsequent event or view until the app is terminated</td>
 </tr>
+
 <tr>
 <td><code>setVolatileDataForInstanceName()</code></td>
 <td>Set volatile data to be included with each subsequent tracking call until the app is terminated, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>trackEvent()</code></td>
 <td>Track an event with an event name and event data</td>
 </tr>
+
 <tr>
 <td><code>trackEventForInstanceName()</code></td>
 <td>Track an event when you have multiple instances of Tealium in your app, for a specific Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>trackView()</code></td>
 <td>Track a view with a screen name and view data</td>
 </tr>
+
 <tr>
 <td><code>trackViewForInstanceName()</code></td>
 <td>Track a view when you have multiple instances of Tealium in your app, for a specific Tealium instance</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="addremotecommand"><code>addRemoteCommand()</code></h3>
+
 <p>Adds a remote command to the remote command manager.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addRemoteCommand</span>(<span style="color:#a6e22e">commandID</span>, <span style="color:#a6e22e">description</span>, <span style="color:#a6e22e">callback</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addRemoteCommand</span>(<span style="color:#a6e22e">commandID</span>, <span style="color:#a6e22e">description</span>, <span style="color:#a6e22e">callback</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7350,6 +7395,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>commandID</code></td>
@@ -7357,20 +7403,23 @@ var utag_data = {
 <td>Name of the command ID from the tag configuration</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>description</code></td>
-<td><code>String </code></td>
+<td><code>String</code></td>
 <td>Description of the remote command</td>
 <td><code>&quot;Firebase remote command&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
-<td><code>Function </code></td>
+<td><code>Function</code></td>
 <td>A callback function to execute once the response is received from the remote command. The callback returns a payload of key-value pairs from the tag mappings.</td>
 <td>(see example)</td>
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">addRemoteCommand</span>(<span style="color:#e6db74">&#34;firebase&#34;</span>, <span style="color:#e6db74">&#34;Firebase remote command&#34;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">payload</span>) {
 </span></span><span style="display:flex;"><span>
@@ -7378,11 +7427,12 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">var</span> <span style="color:#a6e22e">eventProperties</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">payload</span>[<span style="color:#e6db74">&#34;firebase_event_properties&#34;</span>];
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">analytics</span>.<span style="color:#a6e22e">logEvent</span>(<span style="color:#a6e22e">eventName</span>, <span style="color:#a6e22e">eventProperties</span>);
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="addremotecommandforinstancename"><code>addRemoteCommandForInstanceName()</code></h3>
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
+<h3 id="addremotecommandforinstancename"><code>addRemoteCommandForInstanceName()</code></h3>
+
 <p>Adds a remote command to the remote command manager, for a specific Tealium instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addRemoteCommandForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">commandID</span>, <span style="color:#a6e22e">description</span>, <span style="color:#a6e22e">callback</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addRemoteCommandForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">commandID</span>, <span style="color:#a6e22e">description</span>, <span style="color:#a6e22e">callback</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7391,6 +7441,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>instanceName</code></td>
@@ -7398,26 +7449,30 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>commandID</code></td>
 <td><code>String</code></td>
 <td>Name of the command ID from the tag configuration</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>description</code></td>
-<td><code>String </code></td>
+<td><code>String</code></td>
 <td>Description of the remote command</td>
 <td><code>&quot;Firebase remote command&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
-<td><code>Function </code></td>
+<td><code>Function</code></td>
 <td>A callback function to execute once the response is received from the remote command. The callback returns a payload of key-value pairs from the tag mappings.</td>
 <td>(see example)</td>
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">addRemoteCommand</span>(<span style="color:#e6db74">&#34;instance-2&#34;</span>, <span style="color:#e6db74">&#34;survey&#34;</span>, <span style="color:#e6db74">&#34;Display feedback survey&#34;</span>, <span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">payload</span>) {
 </span></span><span style="display:flex;"><span>
@@ -7427,11 +7482,12 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">Alert</span>.<span style="color:#a6e22e">alert</span>(<span style="color:#a6e22e">title</span>, <span style="color:#a6e22e">question</span>, [{<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Yes&#39;</span>, <span style="color:#a6e22e">onPress</span><span style="color:#f92672">:</span> () =&gt; <span style="color:#a6e22e">surveyHandler</span>()},
 </span></span><span style="display:flex;"><span>								  {<span style="color:#a6e22e">text</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;No&#39;</span>, <span style="color:#a6e22e">onPress</span><span style="color:#f92672">:</span> () =&gt; <span style="color:#a6e22e">surveyHandler</span>()}]);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
+<h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
+
 <p>Gets the value for a specific key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getPersistentData</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getPersistentData</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7440,6 +7496,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>key</code></td>
@@ -7447,6 +7504,7 @@ var utag_data = {
 <td>Key name of value</td>
 <td><code>&quot;foo&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>value</code></td>
 <td><code>Object</code></td>
@@ -7455,10 +7513,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getpersistentdataforinstancename"><code>getPersistentDataForInstanceName()</code></h3>
+
 <p>Get a persistent data value, for a specific Tealium instance and key. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getPersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getPersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7467,6 +7527,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7474,12 +7535,14 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
 <td>Key name of value</td>
 <td><code>&quot;foo&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -7488,10 +7551,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getuserconsentcategories"><code>getUserConsentCategories()</code></h3>
+
 <p>Gets the consent categories of a user. Pass in a callback to use the userConsentCategories.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentCategories</span>(<span style="color:#a6e22e">userConsentCategories</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentCategories</span>(<span style="color:#a6e22e">userConsentCategories</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7500,6 +7565,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>userConsentCategories</code></td>
@@ -7509,10 +7575,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getuserconsentcatgoriesforinstancename"><code>getUserConsentCatgoriesForInstanceName()</code></h3>
+
 <p>Gets the consent categories of a user, for a specific Tealium instance. Pass in a callback to use the userConsentCategories. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentCategoriesForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentCategories</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentCategoriesForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentCategories</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7521,6 +7589,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7528,6 +7597,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>userConsentCategories</code></td>
 <td><code>Callback</code></td>
@@ -7536,10 +7606,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getuserconsentstatus"><code>getUserConsentStatus()</code></h3>
+
 <p>Gets the consent status of a user. Pass in a callback to use the userConsentStatus.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentStatus</span>(<span style="color:#a6e22e">userConsentStatus</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentStatus</span>(<span style="color:#a6e22e">userConsentStatus</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7548,6 +7620,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>userConsentStatus</code></td>
@@ -7557,10 +7630,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getuserconsentstatusforinstancename"><code>getUserConsentStatusForInstanceName()</code></h3>
+
 <p>Gets the consent status of a user, for a specific Tealium instance. Pass in a callback to use the userConsentStatus. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentStatusForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentStatus</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getUserConsentStatusForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentStatus</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7569,6 +7644,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7576,6 +7652,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>userConsentStatus</code></td>
 <td><code>Callback</code></td>
@@ -7584,10 +7661,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getvisitorid"><code>getVisitorID()</code></h3>
+
 <p>Gets the visitorID of a user. Pass in a callback to use the visitorID.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVisitorID</span>(<span style="color:#a6e22e">visitorID</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVisitorID</span>(<span style="color:#a6e22e">visitorID</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7596,6 +7675,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>visitorID</code></td>
@@ -7605,10 +7685,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getvisitoridforinstancename"><code>getVisitorIDForInstanceName()</code></h3>
+
 <p>Gets the visitorID of a user, for a specific Tealium instance. Pass in a callback to use the visitorID. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVisitorIDForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">visitorID</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVisitorIDForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">visitorID</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7617,6 +7699,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7624,6 +7707,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>visitorID</code></td>
 <td><code>Callback</code></td>
@@ -7632,10 +7716,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getvolatiledata"><code>getVolatileData()</code></h3>
+
 <p>Gets the value for the key passed in.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVolatileData</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVolatileData</span>(<span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7644,6 +7730,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>key</code></td>
@@ -7651,6 +7738,7 @@ var utag_data = {
 <td>Key name of value</td>
 <td><code>&quot;foo&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>value</code></td>
 <td><code>Object</code></td>
@@ -7659,10 +7747,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getvolatiledataforinstancename"><code>getVolatileDataForInstanceName()</code></h3>
+
 <p>Get a volatile data value, for a specific Tealium instance and key. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVolatileDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">getVolatileDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">key</span>, <span style="color:#a6e22e">value</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7671,6 +7761,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7678,12 +7769,14 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
 <td>Key name of value</td>
 <td><code>&quot;foo&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -7692,7 +7785,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="initialize"><code>initialize()</code></h3>
+
 <p>Initialize Tealium before calling any other method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">initialize</span>(<span style="color:#a6e22e">account</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">profile</span>,
@@ -7700,8 +7795,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">iosDatasource</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">androidDatasource</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">instance</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">isLifecycleEnabled</span>);
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">isLifecycleEnabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7710,43 +7805,50 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
 <td><code>String</code></td>
 <td>Tealium account name</td>
-<td><code>&quot;companyXYZ&quot; </code></td>
+<td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>iosDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium iOS data source key</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>androidDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium Android data source key</td>
 <td><code>&quot;xyz123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>instance</code></td>
 <td><code>String</code></td>
 <td>Tealium instance name (default: <code>&quot;MAIN&quot;</code>)</td>
 <td><code>&quot;MAIN&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
@@ -7755,7 +7857,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="initializecustom"><code>initializeCustom()</code></h3>
+
 <p>Initialize Tealium with all options before calling any other method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">initializeCustom</span>(<span style="color:#a6e22e">account</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">profile</span>,
@@ -7769,8 +7873,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">collectURL</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">enableConsentManager</span>,
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">overrideCollectDispatchURL</span>
-</span></span><span style="display:flex;"><span>    );
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>    );</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7779,73 +7883,85 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
 <td><code>String</code></td>
 <td>Tealium account name</td>
-<td><code>&quot;companyXYZ&quot; </code></td>
+<td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>iosDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium iOS data source key</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>androidDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium Android data source key</td>
 <td><code>&quot;xyz123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>instance</code></td>
 <td><code>String</code></td>
 <td>Tealium instance name (default: <code>&quot;MAIN&quot;</code>)</td>
 <td><code>&quot;MAIN&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
 <td>(Optional) To enable lifecycle tracking  (default: <code>true</code>)</td>
 <td>[<code>true</code>, <code>false</code>]</td>
 </tr>
+
 <tr>
 <td><code>overridePublishSettingsURL</code></td>
 <td><code>String</code></td>
 <td>The publish settings URL if overriding (default: <code>null</code>)</td>
 <td><code>null</code></td>
 </tr>
+
 <tr>
 <td><code>overrideTagManagementURL</code></td>
 <td><code>String</code></td>
 <td>The tag management URL if overriding (default: <code>null</code>)</td>
 <td><code>null</code></td>
 </tr>
+
 <tr>
 <td><code>collectURL</code></td>
 <td><code>Boolean</code></td>
 <td>To send data to the Collect endpoint if enabled (default: true)</td>
 <td>[<code>true</code>, <code>false</code>]</td>
 </tr>
+
 <tr>
 <td><code>enableConsentManager</code></td>
 <td><code>Boolean</code></td>
 <td>To enable Consent Management</td>
 <td>[<code>true</code>, <code>false</code>]</td>
 </tr>
+
 <tr>
 <td><code>overrideCollectDispatchURL</code></td>
 <td><code>String</code></td>
@@ -7854,7 +7970,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="initializewithconsentmanager"><code>initializeWithConsentManager()</code></h3>
+
 <p>Initialize Tealium with Consent Management before calling any other method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">initializeWithConsentManager</span>(<span style="color:#a6e22e">account</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">profile</span>,
@@ -7862,8 +7980,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">iosDatasource</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">androidDatasource</span>,
 </span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">instance</span>,
-</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">isLifecycleEnabled</span>);
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">isLifecycleEnabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7872,43 +7990,50 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
 <td><code>String</code></td>
 <td>Tealium account name</td>
-<td><code>&quot;companyXYZ&quot; </code></td>
+<td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>iosDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium iOS data source key</td>
 <td><code>&quot;abc123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>androidDatasource</code></td>
 <td><code>String</code></td>
 <td>(Optional) Tealium Android data source key</td>
 <td><code>&quot;xyz123&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>instancee</code></td>
 <td><code>String</code></td>
 <td>Tealium instance name (default: <code>&quot;MAIN&quot;</code>)</td>
 <td><code>&quot;MAIN&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>isLifecycleEnabled</code></td>
 <td><code>Boolean</code></td>
@@ -7917,10 +8042,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="isconsentloggingenabled"><code>isConsentLoggingEnabled()</code></h3>
+
 <p>Checks if consent logging is enabled for a user. Pass in a callback to use the value of consent logging.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">isConsentLoggingEnabled</span>(<span style="color:#a6e22e">enabled</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">isConsentLoggingEnabled</span>(<span style="color:#a6e22e">enabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7929,19 +8056,22 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>callback</code></td>
 <td><code>Callback</code></td>
 <td>Checks if consent logging is enabled for a user</td>
-<td>&lsquo;function (enabled) {console.log(&ldquo;consent logging enabled &lsquo;main&rsquo;: &quot; + enabled);}&rsquo;</td>
+<td>&lsquo;function (enabled) {console.log(&ldquo;consent logging enabled &lsquo;main&rsquo;: &ldquo; + enabled);}&rsquo;</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="isconsentloggingenabledforinstancename"><code>isConsentLoggingEnabledForInstanceName()</code></h3>
+
 <p>Checks if user&rsquo;s consent logging is enabled, for a specific Tealium instance. Pass in a callback to use the value of consent logging. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">isConsentLoggingEnabledForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">enabled</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">isConsentLoggingEnabledForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">enabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7950,6 +8080,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -7957,18 +8088,21 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
 <td><code>Callback</code></td>
 <td>Checks if consent logging is enabled for a user</td>
-<td>&lsquo;function (enabled) {console.log(&ldquo;consent logging enabled &lsquo;main&rsquo;: &quot; + enabled);}&rsquo;</td>
+<td>&lsquo;function (enabled) {console.log(&ldquo;consent logging enabled &lsquo;main&rsquo;: &ldquo; + enabled);}&rsquo;</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="removepersistentdata"><code>removePersistentData()</code></h3>
+
 <p>Remove persistent data that has been previously set using <code>Tealium.setPersistentData()</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removePersistentData</span>(<span style="color:#a6e22e">keys</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removePersistentData</span>(<span style="color:#a6e22e">keys</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7977,6 +8111,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>keys</code></td>
@@ -7986,10 +8121,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="removepersistentdataforinstancename"><code>removePersistentDataForInstanceName()</code></h3>
+
 <p>Remove persistent data that has been previously set using <code>Tealium.setPersistentData()</code>, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removePersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">keys</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removePersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">keys</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7998,6 +8135,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8005,6 +8143,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>keys</code></td>
 <td><code>[String]</code></td>
@@ -8013,10 +8152,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="removeremotecommand"><code>removeRemoteCommand()</code></h3>
+
 <p>Removes a remote command from the remote command manager.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#a6e22e">commandID</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#a6e22e">commandID</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8025,21 +8166,24 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td><code>commandID </code></td>
+<td><code>commandID</code></td>
 <td><code>String</code></td>
 <td>Name of the command ID to remove</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#e6db74">&#34;firebase&#34;</span>);
-</span></span></code></pre></div><h3 id="removeremotecommandforinstancename"><code>removeRemoteCommandForInstanceName()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#e6db74">&#34;firebase&#34;</span>);</span></span></code></pre></div>
+<h3 id="removeremotecommandforinstancename"><code>removeRemoteCommandForInstanceName()</code></h3>
+
 <p>Removes a remote command from the remote command manager, for a specific Tealium instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">removeRemoteCommandForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">commandID</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">removeRemoteCommandForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">commandID</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8048,6 +8192,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>instanceName</code></td>
@@ -8055,20 +8200,23 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
-<td><code>commandID </code></td>
+<td><code>commandID</code></td>
 <td><code>String</code></td>
 <td>Name of the command ID to remove</td>
 <td><code>&quot;test_command&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#e6db74">&#34;instance-2&#34;</span>, <span style="color:#e6db74">&#34;firebase&#34;</span>);
-</span></span></code></pre></div><h3 id="removevolatiledata"><code>removeVolatileData()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeRemoteCommand</span>(<span style="color:#e6db74">&#34;instance-2&#34;</span>, <span style="color:#e6db74">&#34;firebase&#34;</span>);</span></span></code></pre></div>
+<h3 id="removevolatiledata"><code>removeVolatileData()</code></h3>
+
 <p>Remove volatile data that has been previously set using <code>Tealium.setVolatileData()</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeVolatileData</span>(<span style="color:#a6e22e">keys</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeVolatileData</span>(<span style="color:#a6e22e">keys</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8077,6 +8225,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>keys</code></td>
@@ -8086,10 +8235,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="removevolatiledataforinstancename"><code>removeVolatileDataForInstanceName()</code></h3>
+
 <p>Remove volatile data for provided instance names. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeVolatileDataForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">keys</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeVolatileDataForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">keys</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8098,6 +8249,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8105,6 +8257,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>keys</code></td>
 <td><code>[String]</code></td>
@@ -8113,13 +8266,16 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
+
 <p>Resets the user consent status and categories of a user.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">resetUserConsentPreferences</span>();
-</span></span></code></pre></div><h3 id="resetuserconsentpreferencesforinstancename"><code>resetUserConsentPreferencesForInstanceName()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">resetUserConsentPreferences</span>();</span></span></code></pre></div>
+<h3 id="resetuserconsentpreferencesforinstancename"><code>resetUserConsentPreferencesForInstanceName()</code></h3>
+
 <p>Resets the user consent status and categories of a user, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">resetUserConsentPreferencesForInstanceName</span>(<span style="color:#a6e22e">name</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">resetUserConsentPreferencesForInstanceName</span>(<span style="color:#a6e22e">name</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8128,6 +8284,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8137,10 +8294,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setconsentloggingenabled"><code>setConsentLoggingEnabled()</code></h3>
+
 <p>Sets consent logging for a user.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setConsentLoggingEnabled</span>(<span style="color:#a6e22e">enabled</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setConsentLoggingEnabled</span>(<span style="color:#a6e22e">enabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8149,6 +8308,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>enabled</code></td>
@@ -8158,10 +8318,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setconsentloggingenabledforinstancename"><code>setConsentLoggingEnabledForInstanceName()</code></h3>
+
 <p>Sets user&rsquo;s consent logging, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setConsentLoggingEnabledForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">enabled</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setConsentLoggingEnabledForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">enabled</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8170,6 +8332,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8177,6 +8340,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>enabled</code></td>
 <td><code>boolean</code></td>
@@ -8185,10 +8349,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setpersistentdata"><code>setPersistentData()</code></h3>
+
 <p>Set persistent data to be sent with each subsequent event or view, even between app restarts.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setPersistentData</span>(<span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setPersistentData</span>(<span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8197,6 +8363,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -8206,10 +8373,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setpersistentdataforinstancename"><code>setPersistentDataForInstanceName()</code></h3>
+
 <p>Set persistent data to be sent with each subsequent event or view, even between app restarts, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setPersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setPersistentDataForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8218,6 +8387,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8225,6 +8395,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -8233,10 +8404,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setuserconsentcategories"><code>setUserConsentCategories()</code></h3>
+
 <p>Sets the consent categories of a user. Pass in an array of Strings to set the categories.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentCategories</span>(<span style="color:#a6e22e">userConsentCategories</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentCategories</span>(<span style="color:#a6e22e">userConsentCategories</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8245,6 +8418,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>userConsentCategories</code></td>
@@ -8254,10 +8428,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setuserconsentcategoriesforinstancename"><code>setUserConsentCategoriesForInstanceName()</code></h3>
+
 <p>Sets the consent ;categories of a user, for a specific Tealium instance. Pass in an array of Strings to set the categories. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentCategoriesForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentCategories</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentCategoriesForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentCategories</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8266,6 +8442,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8273,6 +8450,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>userConsentCategories</code></td>
 <td><code>[String]</code></td>
@@ -8281,10 +8459,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setuserconsentstatus"><code>setUserConsentStatus()</code></h3>
+
 <p>Sets the consent status of a user.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentStatus</span>(<span style="color:#a6e22e">userConsentStatus</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentStatus</span>(<span style="color:#a6e22e">userConsentStatus</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8293,6 +8473,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>userConsentStatus</code></td>
@@ -8302,6 +8483,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
@@ -8309,29 +8491,35 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>0</td>
 <td>Unknown</td>
 </tr>
+
 <tr>
 <td>1</td>
 <td>Consented</td>
 </tr>
+
 <tr>
 <td>2</td>
 <td>Not Consented</td>
 </tr>
+
 <tr>
 <td>3</td>
 <td>Disabled (Objective-C only)</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="setuserconsentstatusforinstancename"><code>setUserConsentStatusForInstanceName()</code></h3>
+
 <p>Sets the consent status of a user, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentStatusForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentStatus</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setUserConsentStatusForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">userConsentStatus</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8340,6 +8528,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8347,6 +8536,7 @@ var utag_data = {
 <td>Instance name</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>userConsentStatus</code></td>
 <td><code>int</code></td>
@@ -8355,6 +8545,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
@@ -8362,29 +8553,35 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>0</td>
 <td>Unknown</td>
 </tr>
+
 <tr>
 <td>1</td>
 <td>Consented</td>
 </tr>
+
 <tr>
 <td>2</td>
 <td>Not Consented</td>
 </tr>
+
 <tr>
 <td>3</td>
 <td>Disabled (Objective-C only)</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="setvolatiledata"><code>setVolatileData()</code></h3>
+
 <p>Set volatile data to be sent with each subsequent event or view until the app is terminated, where data is a JSON object of key-value pairs where keys are strings and the values are either a string or array of strings.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVolatileData</span>(<span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVolatileData</span>(<span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8393,6 +8590,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -8402,10 +8600,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setvolatiledataforinstancename"><code>setVolatileDataForInstanceName()</code></h3>
+
 <p>Set volatile data to be included with each subsequent tracking call until the app is terminated, for a specific Tealium instance. For use if you have multiple instances of Tealium in your app.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVolatileDataForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">setVolatileDataForInstanceName</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8414,6 +8614,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8421,6 +8622,7 @@ var utag_data = {
 <td>Key name of value</td>
 <td>&ldquo;instance-2&rdquo;</td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -8429,10 +8631,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="trackevent"><code>trackEvent()</code></h3>
+
 <p>Track an event with an event name and event data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackEvent</span>(<span style="color:#a6e22e">stringTitle</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackEvent</span>(<span style="color:#a6e22e">stringTitle</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8441,6 +8645,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>stringTitle</code></td>
@@ -8448,6 +8653,7 @@ var utag_data = {
 <td>Name of event (becomes the <code>event_name</code> attribute in Tealium Customer Data Hub)</td>
 <td><code>&quot;test_event&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -8456,10 +8662,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="trackeventforinstancename"><code>trackEventForInstanceName()</code></h3>
+
 <p>Track an event when you have multiple instances of Tealium in your app, for a specific Tealium instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackEvent</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">stringTitle</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackEvent</span>(<span style="color:#a6e22e">name</span>, <span style="color:#a6e22e">stringTitle</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8468,6 +8676,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8475,12 +8684,14 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>stringTitle</code></td>
 <td><code>String</code></td>
 <td>Name of event (becomes the <code>event_name</code> attribute in Customer Data Hub)</td>
 <td><code>&quot;test_event_2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -8489,10 +8700,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="trackview"><code>trackView()</code></h3>
+
 <p>Track a view with a screen name and view data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackView</span>(<span style="color:#a6e22e">screenName</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">trackView</span>(<span style="color:#a6e22e">screenName</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8501,6 +8714,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>stringTitle</code></td>
@@ -8508,6 +8722,7 @@ var utag_data = {
 <td>Name of event (becomes the <code>screen_title</code> attribute in Customer Data Hub)</td>
 <td><code>&quot;test_view&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>
@@ -8516,10 +8731,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="trackviewforinstancename"><code>trackViewForInstanceName()</code></h3>
+
 <p>Track a view when you have multiple instances of Tealium in your app, for a specific Tealium instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">trackViewForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">screenName</span>, <span style="color:#a6e22e">data</span>);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">trackViewForInstanceName</span>(<span style="color:#a6e22e">instanceName</span>, <span style="color:#a6e22e">screenName</span>, <span style="color:#a6e22e">data</span>);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -8528,6 +8745,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
@@ -8535,12 +8753,14 @@ var utag_data = {
 <td>Name of the Tealium instance</td>
 <td><code>&quot;instance-2&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>stringTitle</code></td>
 <td><code>String</code></td>
 <td>Name of event (becomes the <code>screen_title</code> attribute in Customer Data Hub)</td>
 <td><code>&quot;instance_2_view&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Object</code></td>

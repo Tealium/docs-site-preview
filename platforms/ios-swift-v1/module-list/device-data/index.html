@@ -7174,42 +7174,57 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The DeviceData module gathers information about the current device and adds to the tracking call/dispatch. Usage of this module is recommended.</p>
+
 <p>The following platforms are supported:</p>
+
 <ul>
 <li>iOS</li>
 <li>tvOS</li>
 <li>watchOS</li>
 <li>macOS</li>
 </ul>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>UIKit</li>
 <li>Darwin</li>
 <li>CoreTelephony</li>
 <li>WatchKit</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the DeviceData module with CocoaPods or Carthage.</p>
+
 <h3 id="cocoapods">CocoaPods</h3>
+
 <p>To install the DeviceData module with CocoaPods, add the following pod to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumDeviceData&#39;</span>
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumDeviceData&#39;</span></span></span></code></pre></div>
+<p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+
 <h3 id="carthage">Carthage</h3>
+
 <p>To install the DeviceData module with Carthage, following these steps:</p>
+
 <ol>
-<li>
-<p>Go to the app target&rsquo;s General configuration page in Xcode.</p>
-</li>
-<li>
-<p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
-</li>
+<li><p>Go to the app target&rsquo;s General configuration page in Xcode.</p></li>
+
+<li><p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumDeviceData</span><span style="color:#f92672">.</span>framework</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumDeviceData</span><span style="color:#f92672">.</span>framework
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
+<p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call while the module is enabled:</p>
+
 <table>
 <thead>
 <tr>
@@ -7218,202 +7233,242 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>app_memory_usage</code></td>
 <td>Memory being used by the current process/app in Megabytes</td>
 <td><code>35.75MB</code></td>
 </tr>
+
 <tr>
 <td><code>app_orientation</code></td>
 <td>Orientation of the app (from statusBarOrientation; may differ from device orientation if app is locked in a specific orientation)</td>
 <td><code>Portrait</code></td>
 </tr>
+
 <tr>
 <td><code>app_orientation_ extended</code></td>
 <td>Extended Orientation of the app (from statusBarOrientation; may differ from device orientation if app is locked in a specific orientation)</td>
 <td><code>Portrait Upside Down</code></td>
 </tr>
+
 <tr>
 <td><code>battery_percent</code></td>
 <td>Current battery percentage at time of track call</td>
 <td><code>58</code></td>
 </tr>
+
 <tr>
 <td><code>carrier</code></td>
 <td>Mobile network carrier name</td>
 <td><code>EE</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_iso</code></td>
 <td>Mobile network ISO country code</td>
 <td><code>gb</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mcc</code></td>
 <td><a href="https://en.wikipedia.org/wiki/Mobilecountrycode">Mobile network country code</a></td>
 <td><code>234</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mnc</code></td>
 <td><a href="https://en.wikipedia.org/wiki/Mobilecountrycode">Mobile network code</a></td>
 <td><code>34</code></td>
 </tr>
+
 <tr>
 <td><code>connection_type</code></td>
 <td>Current connection type</td>
 <td>[<code>wifi</code>, <code>cellular</code>]</td>
 </tr>
+
 <tr>
 <td><code>cpu_architecture</code></td>
 <td>CPU architecture</td>
 <td><code>64</code></td>
 </tr>
+
 <tr>
 <td><code>cpu_type</code></td>
 <td>CPU type</td>
 <td><code>ARM64v8</code></td>
 </tr>
+
 <tr>
 <td><code>device_battery_percent</code></td>
 <td>Current battery percentage at time of track call</td>
 <td><code>58</code></td>
 </tr>
+
 <tr>
 <td><code>device_architecture</code></td>
 <td>CPU architecture</td>
 <td><code>64</code></td>
 </tr>
+
 <tr>
 <td><code>device</code></td>
 <td>Consumer device name</td>
 <td><code>iPhone 7 Plus</code></td>
 </tr>
+
 <tr>
 <td><code>device_cputype</code></td>
 <td>CPU type</td>
 <td><code>ARM64v8</code></td>
 </tr>
+
 <tr>
 <td><code>device_is_charging</code></td>
 <td>Boolean to indicate if device is currently charging at time of track call</td>
 <td>[<code>true</code>, <code>false</code>]</td>
 </tr>
+
 <tr>
 <td><code>device_language</code></td>
 <td>Current device language</td>
 <td><code>en</code></td>
 </tr>
+
 <tr>
 <td><code>device_orientation</code></td>
 <td>Simple orientation</td>
 <td>[<code>Portrait</code>, <code>Landscape</code>]</td>
 </tr>
+
 <tr>
 <td><code>device_orientation_ extended</code></td>
 <td>Full orientation</td>
 <td><code>Face Up</code></td>
 </tr>
+
 <tr>
 <td><code>device_os_version</code></td>
 <td>Operating system version</td>
 <td><code>11.1</code></td>
 </tr>
+
 <tr>
 <td><code>device_resolution</code></td>
 <td>Screen resolution</td>
 <td><code>1080x1920</code></td>
 </tr>
+
 <tr>
 <td><code>device_type</code></td>
 <td>Apple internal device identifier</td>
 <td><code>iPhone8,4</code></td>
 </tr>
+
 <tr>
 <td><code>memory_active*</code></td>
 <td>Total active memory on the device</td>
 <td><code>997.78MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_compressed*</code></td>
 <td>Total compressed memory on the device</td>
 <td><code>153.39MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_free*</code></td>
 <td>Total free memory on the device</td>
 <td><code>120.81MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_inactive*</code></td>
 <td>Total inactive memory on the device</td>
 <td><code>441.83MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_physical*</code></td>
 <td>Total physical memory on the device (RAM) in Megabytes</td>
 <td><code>2013.50MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_wired*</code></td>
 <td>Total wired memory on the device</td>
 <td><code>207.12MB</code></td>
 </tr>
+
 <tr>
 <td><code>model_name</code></td>
 <td>Consumer device name</td>
 <td><code>iPhone 7 Plus</code></td>
 </tr>
+
 <tr>
 <td><code>model_variant</code></td>
 <td>Model variant (generally indicates which radio technology is available on the device)</td>
 <td>[<code>CDMA</code>, <code>GSM</code>, <code>WiFi</code>, <code>Cellular</code>]</td>
 </tr>
+
 <tr>
 <td><code>network_connection_ type</code></td>
 <td>Current connection type</td>
 <td>[<code>wifi</code>, <code>cellular</code>]</td>
 </tr>
+
 <tr>
 <td><code>network_iso_ country_code</code></td>
 <td>Mobile network ISO country code</td>
 <td><code>gb</code></td>
 </tr>
+
 <tr>
 <td><code>network_mcc</code></td>
 <td><a href="https://en.wikipedia.org/wiki/Mobilecountrycode">Mobile network Country Code</a></td>
 <td><code>234</code></td>
 </tr>
+
 <tr>
 <td><code>network_mnc</code></td>
 <td><a href="https://en.wikipedia.org/wiki/Mobilecountrycode">Mobile network code</a></td>
 <td><code>34</code></td>
 </tr>
+
 <tr>
 <td><code>network_name</code></td>
 <td>Mobile network carrier name</td>
 <td><code>EE</code></td>
 </tr>
+
 <tr>
 <td><code>os_build</code></td>
 <td>Operating System Build Version</td>
 <td><code>15J580</code></td>
 </tr>
+
 <tr>
 <td><code>os_name</code></td>
 <td>Operating System Name</td>
 <td>[<code>iOS</code>, <code>tvOS</code>, <code>watchOS</code>, <code>macOS</code>]</td>
 </tr>
+
 <tr>
 <td><code>os_version</code></td>
 <td>Operating system version</td>
 <td><code>11.1</code></td>
 </tr>
+
 <tr>
 <td><code>platform</code></td>
 <td>Operating System Name</td>
 <td>[<code>iOS</code>, <code>tvOS</code>, <code>watchOS</code>, <code>macOS</code>]</td>
 </tr>
+
 <tr>
 <td><code>user_locale</code></td>
 <td>Current device language</td>
@@ -7421,6 +7476,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <ul>
 <li>These variables are only transmitted if you explicitly enable memory data collection via the <code>TealiumConfig</code> object. They are disabled by default.</li>
 <li>These variables are duplicated for backward-compatibility with previous releases.</li>

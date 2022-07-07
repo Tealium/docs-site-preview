@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-locationmodule">Class: LocationModule</h2>
+  
+
+<h2 id="class-locationmodule">Class: LocationModule</h2>
+
 <p>The <code>LocationModule</code> class provides methods for gathering location data, creating and monitoring geofences. The following summarizes methods of the <code>LocationModule</code> class for Tealium iOS (Swift) which can be used to make custom changes to the default behavior of the Location Module. For additional details, explore <a href="/platforms/ios-swift/module-list/location">Location</a>.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,138 +7183,164 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#clearmonitoredgeofences"><code>clearMonitoredGeofences()</code></a></td>
 <td>Removes all currently monitored geofences from the location client</td>
 </tr>
+
 <tr>
 <td><a href="#getcreatedgeofences"><code>getCreatedGeofences()</code></a></td>
 <td>Returns the names of all the created geofences (those currently being monitored and those that are not)</td>
 </tr>
+
 <tr>
 <td><a href="#getlastlocation"><code>getLastLocation()</code></a></td>
 <td>Gets the last known location for a user&rsquo;s device</td>
 </tr>
+
 <tr>
 <td><a href="#getmonitoredgeofences"><code>getMonitoredGeofences()</code></a></td>
 <td>Returns the names of all currently monitored geofences</td>
 </tr>
+
 <tr>
 <td><a href="#requestauthorization"><code>requestAuthorization()</code></a></td>
 <td>Prompts the user to enable permission for location servies</td>
 </tr>
+
 <tr>
 <td><a href="#requesttemporaryfullaccuracyauthorization"><code>requestTemporaryFullAccuracyAuthorization()</code></a></td>
 <td>Automatically requests temporary full accuracy if precise accuracy is disabled</td>
 </tr>
+
 <tr>
 <td><a href="#startlocationupdates"><code>startLocationUpdates()</code></a></td>
 <td>Enables regular updates of location data through the location client</td>
 </tr>
+
 <tr>
 <td><a href="#stoplocationupdates"><code>stopLocationUpdates()</code></a></td>
 <td>Stops the updating of location data through the location client</td>
 </tr>
+
 <tr>
 <td><a href="#startmonitoring"><code>startMonitoring()</code></a></td>
 <td>Adds geofences to the location client to be monitored</td>
 </tr>
+
 <tr>
 <td><a href="#stopmonitoring"><code>stopMonitoring()</code></a></td>
 <td>Removes geofences from being monitored by the location client</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="clearmonitoredgeofences"><code>clearMonitoredGeofences()</code></h3>
+
 <p>Removes all currently monitored geofences from the location client.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.clearMonitoredGeofences()
-</span></span></code></pre></div><h3 id="getcreatedgeofences"><code>getCreatedGeofences()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.clearMonitoredGeofences()</span></span></code></pre></div>
+<h3 id="getcreatedgeofences"><code>getCreatedGeofences()</code></h3>
+
 <p>Returns the names of all the created geofences (those currently being monitored and those that are not).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.getCreatedGeofences(completion: { createdGeofences <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> createdGeofences = createdGeofences {
 </span></span><span style="display:flex;"><span>                <span style="color:#75715e">// use geofences here</span>
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        })
-</span></span></code></pre></div><h3 id="getlastlocation"><code>getLastLocation()</code></h3>
+</span></span><span style="display:flex;"><span>        })</span></span></code></pre></div>
+<h3 id="getlastlocation"><code>getLastLocation()</code></h3>
+
 <p>Gets the last known location for a user&rsquo;s device.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.getLastLocation(completion: { lastLocation <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> lastLocation = lastLocation {
 </span></span><span style="display:flex;"><span>                <span style="color:#75715e">// use last location here</span>
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        })
-</span></span></code></pre></div><h3 id="getmonitoredgeofences"><code>getMonitoredGeofences()</code></h3>
+</span></span><span style="display:flex;"><span>        })</span></span></code></pre></div>
+<h3 id="getmonitoredgeofences"><code>getMonitoredGeofences()</code></h3>
+
 <p>Returns the names of all currently monitored geofences.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.getMonitoredGeofences(completion: { monitoredGeofences <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> monitoredGeofences = monitoredGeofences {
 </span></span><span style="display:flex;"><span>                <span style="color:#75715e">// use monitored geofences here</span>
 </span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        })
-</span></span></code></pre></div><h3 id="requestauthorization"><code>requestAuthorization()</code></h3>
+</span></span><span style="display:flex;"><span>        })</span></span></code></pre></div>
+<h3 id="requestauthorization"><code>requestAuthorization()</code></h3>
+
 <p>Prompts the user to enable permission for location servies.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.requestAuthorization()
-</span></span></code></pre></div><h3 id="requesttemporaryfullaccuracyauthorization"><code>requestTemporaryFullAccuracyAuthorization()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.requestAuthorization()</span></span></code></pre></div>
+<h3 id="requesttemporaryfullaccuracyauthorization"><code>requestTemporaryFullAccuracyAuthorization()</code></h3>
+
 <p>Automatically requests temporary full accuracy if precise accuracy is disabled.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> purposeKey = <span style="color:#e6db74">&#34;a key in the NSLocationTemporaryUsageDescriptionDictionary&#34;</span>
-</span></span><span style="display:flex;"><span>tealium.location?.requestTemporaryFullAccuracyAuthorization(purposeKey: purposeKey)
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>tealium.location?.requestTemporaryFullAccuracyAuthorization(purposeKey: purposeKey)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>purposeKey</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">A key in the <code>NSLocationTemporaryUsageDescriptionDictionary</code> dictionary of the app’s <code>Info.plist</code> file</td>
+<td align="left"><code>purposeKey</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">A key in the <code>NSLocationTemporaryUsageDescriptionDictionary</code> dictionary of the app’s <code>Info.plist</code> file</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="startlocationupdates"><code>startLocationUpdates()</code></h3>
+
 <p>Enables regular updates of location data through the location client. Update frequency is dependent on <code>config.useHighAccuracy</code>, a parameter passed on initialization of this class.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.startLocationUpdates()
-</span></span></code></pre></div><h3 id="stoplocationupdates"><code>stopLocationUpdates()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.startLocationUpdates()</span></span></code></pre></div>
+<h3 id="stoplocationupdates"><code>stopLocationUpdates()</code></h3>
+
 <p>Stops the updating of location data through the location client.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.stopLocationUpdates()
-</span></span></code></pre></div><h3 id="startmonitoring"><code>startMonitoring()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.stopLocationUpdates()</span></span></code></pre></div>
+<h3 id="startmonitoring"><code>startMonitoring()</code></h3>
+
 <p>Adds geofences to the location client to be monitored.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> myGeofences = [CLCircularRegion]() <span style="color:#75715e">// Store your self-managed geofences somewhere if you want to stop them later</span>
-</span></span><span style="display:flex;"><span>tealium.location?.startMonitoring(geofences: myGeofences)
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>tealium.location?.startMonitoring(geofences: myGeofences)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>geofences</code></td>
-<td style="text-align:left"><code>[CLCircularRegion]()</code></td>
-<td style="text-align:left">Geofences to be added</td>
+<td align="left"><code>geofences</code></td>
+<td align="left"><code>[CLCircularRegion]()</code></td>
+<td align="left">Geofences to be added</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="stopmonitoring"><code>stopMonitoring()</code></h3>
+
 <p>Removes geofences from being monitored by the location client.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.stopMonitoring(geofences: myGeofences)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.location?.stopMonitoring(geofences: myGeofences)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>geofences</code></td>
-<td style="text-align:left"><code>[CLCircularRegion]()</code></td>
-<td style="text-align:left">Geofences to be removed</td>
+<td align="left"><code>geofences</code></td>
+<td align="left"><code>[CLCircularRegion]()</code></td>
+<td align="left">Geofences to be removed</td>
 </tr>
 </tbody>
 </table>

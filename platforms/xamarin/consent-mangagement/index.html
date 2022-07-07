@@ -7170,23 +7170,36 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Consent management is a recommended feature and is automatically included in the library. To manage consent you must set a consent policy, then track the user&rsquo;s consent status and consent preferences.</p>
+
 <p><a href="/platforms/getting-started/consent-management/">Learn more about consent management</a>.</p>
+
 <h2 id="sample-app">Sample App</h2>
+
 <p>Use the Xamarin Consent Management sample app to familiarize yourself with our library, the tracking methods, and best practices:</p>
+
 <p><a href="https://github.com/Tealium/tealium-xamarin/tree/master/Samples/ExampleAppConsentMgr">Download Xamarin Consent Management Sample App</a></p>
+
 <h2 id="enable">Enable</h2>
+
 <p>The consent management feature comes from the native SDKs embedded into the DLLs named <code>Tealium.Platform.*.dlls</code>.</p>
+
 <p>To enable consent management, set the <code>consentPolicy</code> parameter when you initialize <a href="/platforms/xamarin/api/#consentpolicy"><code>TealiumConfig</code></a>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig config = <span style="color:#66d9ef">new</span> TealiumConfig(
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//...</span>
 </span></span><span style="display:flex;"><span>  consentPolicy = ConsentPolicy.GDPR,
 </span></span><span style="display:flex;"><span>  <span style="color:#75715e">//...</span>
-</span></span><span style="display:flex;"><span>);
-</span></span></code></pre></div><h2 id="consent-status">Consent Status</h2>
+</span></span><span style="display:flex;"><span>);</span></span></code></pre></div>
+<h2 id="consent-status">Consent Status</h2>
+
 <p>As with the native SDKs for both Android and iOS, when consent management is enabled, new users are assumed to be in an unknown state. Tracking requests are queued up until the consent status has been opted-in or out, at which point events are sent or purged, respectively.</p>
+
 <p>Use the following methods to manage a user&rsquo;s consent:</p>
+
 <ul>
 <li><a href="/platforms/xamarin/api/#setconsentstatus"><code>SetConsentStatus()</code></a></li>
 <li><a href="/platforms/xamarin/api/#getconsentstatus"><code>GetConsentStatus()</code></a></li>
@@ -7194,7 +7207,9 @@ var utag_data = {
 <li><a href="/platforms/xamarin/api/#getconsentcategories"><code>GetConsentCategories()</code></a></li>
 <li><a href="/platforms/xamarin/api/#setconsentexpirylistener"><code>SetConsentExpiryListener()</code></a></li>
 </ul>
+
 <p>The <code>Tealium.Common.dll</code> provides the following category and status enums to use:</p>
+
 <ul>
 <li><a href="/platforms/xamarin/api/#consentstatus"><code>Tealium.ConsentManager.ConsentStatus</code></a></li>
 <li><a href="/platforms/xamarin/api/#consentcategory"><code>Tealium.ConsentManager.ConsentCategory</code></a></li>

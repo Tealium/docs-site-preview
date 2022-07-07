@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumconsentmanager">Class: <code>TealiumConsentManager</code></h2>
+  
+
+<h2 id="class-tealiumconsentmanager">Class: <code>TealiumConsentManager</code></h2>
+
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumConsentManager</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,41 +7183,49 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#onconsentexpiration"><code>onConsentExpiration</code></a></td>
 <td>Callback to execute once consent selections expire</td>
 </tr>
+
 <tr>
 <td><a href="#resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></a></td>
 <td>Clears all currently stored consent preferences in memory and in persistent storage</td>
 </tr>
+
 <tr>
 <td><a href="#userconsentstatus"><code>userConsentStatus</code></a></td>
 <td>Gets or sets the user&rsquo;s consent status</td>
 </tr>
+
 <tr>
 <td><a href="#userconsentcategories"><code>userConsentCategories</code></a></td>
 <td>Gets or sets the user&rsquo;s consent categories</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="onconsentexpiration"><code>onConsentExpiration</code></h3>
+
 <p>Callback to execute once consent selections expire.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.onConsentExpiration = {
 </span></span><span style="display:flex;"><span>   <span style="color:#75715e">// display consent modal</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
+
 <p>Gets or sets the current consent status.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> categories = tealium.consentManager?.userConsentStatus
-</span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentStatus = .consented
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentStatus = .consented</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>TealiumConsentStatus</code></td>
@@ -7221,20 +7233,24 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="resetuserconsentpreferences"><code>resetUserConsentPreferences()</code></h3>
+
 <p>Clears all currently stored consent preferences in memory and in persistent storage. Reverts to <code>&quot;unknown&quot;</code> consent state, with no categories.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetUserConsentPreferences()
-</span></span></code></pre></div><h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetUserConsentPreferences()</span></span></code></pre></div>
+<h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
+
 <p>Gets or sets all current consent categories.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> categories = tealium.consentManager?.userConsentCategories
-</span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentCategories = [.cdp]
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>tealium.consentManager?.userConsentCategories = [.cdp]</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>TealiumConsentCategories</code></td>

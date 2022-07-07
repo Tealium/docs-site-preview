@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumconsentmanagerdelegate">Class: <code>TealiumConsentManagerDelegate</code></h2>
+  
+
+<h2 id="class-tealiumconsentmanagerdelegate">Class: <code>TealiumConsentManagerDelegate</code></h2>
+
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumInstanceManagerDelegate</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,41 +7183,50 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>consentStatusChanged()</code></td>
 <td>Called whenever the consent state has been successfully updated</td>
 </tr>
+
 <tr>
 <td><code>userChangedConsentCategories()</code></td>
 <td>Called when the user updates their consent categories preferences</td>
 </tr>
+
 <tr>
 <td><code>userConsentedToTracking()</code></td>
 <td>Called when the consent state is changed to <code>.consented</code></td>
 </tr>
+
 <tr>
 <td><code>userOptedOutOfTracking()</code></td>
 <td>Called when the user declines/revokes consent</td>
 </tr>
+
 <tr>
 <td><code>willDropTrackingCall()</code></td>
 <td>Called when the Consent Manager is going to drop a tracking call</td>
 </tr>
+
 <tr>
 <td><code>willQueueTrackingCall()</code></td>
 <td>Called when the Consent Manager is in the <code>&quot;unknown&quot;</code> state, and tracking calls are being queued locally until the user grants or declines consent</td>
 </tr>
+
 <tr>
 <td><code>willSendTrackingCall()</code></td>
 <td>Called when the user has consented to tracking, and a tracking call is about to pass through the Consent Manager without being blocked</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="consentstatuschanged"><code>consentStatusChanged()</code></h3>
+
 <p>Called when the consent state has been successfully updated.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>consentStatusChanged(state)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>consentStatusChanged(state)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7221,6 +7234,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>state</code></td>
@@ -7229,11 +7243,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="userchangedconsentcategories"><code>userChangedConsentCategories()</code></h3>
+
 <p>Called when the user updates their consent categories preferences.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>userChangedConsentCategories(categories)
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>    }</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7241,6 +7257,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>categories</code></td>
@@ -7249,16 +7266,20 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="userconsentedtotracking"><code>userConsentedToTracking()</code></h3>
+
 <p>Called when the consent state is changed to <code>.consented</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>userConsentedToTracking()
-</span></span></code></pre></div><h3 id="useroptedoutoftracking"><code>userOptedOutOfTracking()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>userConsentedToTracking()</span></span></code></pre></div>
+<h3 id="useroptedoutoftracking"><code>userOptedOutOfTracking()</code></h3>
+
 <p>Called when the user declines/revokes consent (consent status: <code>.notConsented</code>).</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>userOptedOutOfTracking()
-</span></span></code></pre></div><h3 id="willdroptrackingcall"><code>willDropTrackingCall()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>userOptedOutOfTracking()</span></span></code></pre></div>
+<h3 id="willdroptrackingcall"><code>willDropTrackingCall()</code></h3>
+
 <p>Called when the Consent Manager is going to drop a tracking call. For example, when the user has declined tracking consent.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willDropTrackingCall(request)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willDropTrackingCall(request)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7266,6 +7287,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>request</code></td>
@@ -7274,10 +7296,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="willqueuetrackingcall"><code>willQueueTrackingCall()</code></h3>
+
 <p>Called when the Consent Manager is in the <code>&quot;unknown&quot;</code> state, and tracking calls are being queued locally until the user grants or declines consent.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willQueueTrackingCall(request)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willQueueTrackingCall(request)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7285,6 +7309,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>request</code></td>
@@ -7293,10 +7318,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="willsendtrackingcall"><code>willSendTrackingCall()</code></h3>
+
 <p>Called when the user has consented to tracking, and a tracking call is about to pass through the Consent Manager without being blocked.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willSendTrackingCall(request)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>willSendTrackingCall(request)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7304,6 +7331,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>request</code></td>

@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumpersistentdata">Class: <code>TealiumPersistentData</code></h2>
+  
+
+<h2 id="class-tealiumpersistentdata">Class: <code>TealiumPersistentData</code></h2>
+
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumPersistentData</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,29 +7183,35 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>add()</code></td>
 <td>Adds additional persistent data that will be available to all track calls for lifetime of app. Values will overwrite any pre-existing values for a given ke</td>
 </tr>
+
 <tr>
 <td><code>deleteAllData()</code></td>
 <td>Deletes all data in the persistent data store</td>
 </tr>
+
 <tr>
 <td><code>deleteData()</code></td>
 <td>Deletes data for a specific set of known keys from the persistent data store</td>
 </tr>
+
 <tr>
 <td><code>getData()</code></td>
 <td>Gets data from the persistent data store</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="add"><code>add()</code></h3>
+
 <p>Adds additional persistent data that will be available to all track calls for lifetime of app. Values will overwrite any pre-existing values for a given key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.add(data: [String: Any])
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.add(data: [String: Any])</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7210,6 +7220,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>Any</code></td>
@@ -7219,13 +7230,16 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="deletealldata"><code>deleteAllData()</code></h3>
+
 <p>Deletes all data in the persistent data store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.deleteAllData()
-</span></span></code></pre></div><h3 id="deletedata"><code>deleteData()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.deleteAllData()</span></span></code></pre></div>
+<h3 id="deletedata"><code>deleteData()</code></h3>
+
 <p>Deletes data for a specific set of known keys from the persistent data store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.deleteDate(forKeys: [String])
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.persistentData()?.deleteDate(forKeys: [String])</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7234,6 +7248,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>forKeys</code></td>
@@ -7243,10 +7258,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getdata"><code>getData()</code></h3>
+
 <p>Gets data from the persistent data store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data = tealium?.persistentData()?.getData()
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data = tealium?.persistentData()?.getData()</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

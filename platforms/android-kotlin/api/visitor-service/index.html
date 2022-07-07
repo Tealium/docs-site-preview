@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-visitorservice">Class: <code>VisitorService</code></h2>
+  
+
+<h2 id="class-visitorservice">Class: <code>VisitorService</code></h2>
+
 <p>The following summarizes the commonly used methods and properties of the <code>VisitorService</code> module for Kotlin.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,50 +7183,67 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#overridevisitorserviceurl"><code>overrideVisitorServiceUrl</code></a></td>
 <td><code>TealiumConfig</code> option to override the URL used to retrieve the current VisitorProfile</td>
 </tr>
+
 <tr>
 <td><a href="#overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></a></td>
 <td><code>TealiumConfig</code> option to override the profile name used to retrieve the current VisitorProfile</td>
 </tr>
+
 <tr>
 <td><a href="#requestvisitorprofile"><code>requestVisitorProfile()</code></a></td>
 <td>Method to request that the current VisitorProfile be updated</td>
 </tr>
+
 <tr>
 <td><a href="#visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></a></td>
 <td><code>TealiumConfig</code> option to set the minimum time interval before the SDK will automatically retrieve the latest VisitorProfile</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="overridevisitorserviceurl"><code>overrideVisitorServiceUrl</code></h3>
+
 <p>Extension property on the <code>TealiumConfig</code> object; only available when the VisitorService module is included in your project.</p>
+
 <p>Overrides the URL used by the VisitorService module to get the VisitorProfile object.
 Default URL: <code>&quot;https://visitor-service.tealiumiq.com/{ACOUNT_NAME}/{PROFILE_NAME}/{VISITOR_ID}&quot;</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceUrl</span> <span style="color:#f92672">=</span> url
-</span></span></code></pre></div><h3 id="overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></h3>
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceUrl</span> <span style="color:#f92672">=</span> url</span></span></code></pre></div>
+<h3 id="overridevisitorserviceprofile"><code>overrideVisitorServiceProfile</code></h3>
+
 <p>Extension property on the <code>TealiumConfig</code> object; only available when the VisitorService module is included in your project.</p>
+
 <p>Overrides the Tealium profile name used by the VisitorService module to fetch the VisitorProfile object. By default the VisitorService module uses the profile name set in <code>TealiumConfig</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
-</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceProfile</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;main&#34;</span>
-</span></span></code></pre></div><h3 id="requestvisitorprofile"><code>requestVisitorProfile</code></h3>
+</span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideVisitorServiceProfile</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;main&#34;</span></span></span></code></pre></div>
+<h3 id="requestvisitorprofile"><code>requestVisitorProfile</code></h3>
+
 <p>Method to request that the VisitorProfile be updated. This happens after each dispatch, or batch of dispatches, has been sent to the Tealium Customer Data Hub.</p>
+
 <p>Use this method to request an update at any other point in time. It&rsquo;s a <code>suspend</code> function that needs to be called from a coroutine. As it makes a network request, your coroutine is not called on main thread.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>runBlocking<span style="color:#f92672">(</span>Dispatchers<span style="color:#f92672">.</span><span style="color:#a6e22e">IO</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorService</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">requestVisitorProfile</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></h3>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<h3 id="visitorservicerefreshinterval"><code>visitorServiceRefreshInterval</code></h3>
+
 <p>Sets the time interval in seconds between updates to the VisitorProfile data. Calls to <code>requestVisitorProfile()</code> ignore this setting.</p>
+
 <p>Default: 300 (5 minutes)</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...)</span>
 </span></span><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">visitorServiceRefreshInterval</span> <span style="color:#f92672">=</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">MINUTES</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toSeconds</span><span style="color:#f92672">(</span>30<span style="color:#f92672">)</span> <span style="color:#75715e">// 30 minutes
-</span></span></span></code></pre></div><h2 id="interface-visitorupdatedlistener">Interface: <code>VisitorUpdatedListener</code></h2>
+</span></span></span></code></pre></div>
+<h2 id="interface-visitorupdatedlistener">Interface: <code>VisitorUpdatedListener</code></h2>
+
 <p>The <code>VisitorUpdatedListener</code> is a listener class. Register to receive the latest version of the VisitorProfile each time there has been an update. There is only a single method to implement: <a href="#onVisitorUpdated"><code>onVisitorUpdated(visitorProfile: VisitorProfile)</code></a>.</p>
+
 <h3 id="onvisitorupdated"><code>onVisitorUpdated</code></h3>
+
 <p>Implement the <code>onVisitorUpdated</code> method on an existing class, or pass in an anonymous object after creating your <code>Tealium</code> instance. The below example shows the latter.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val tealium <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    events<span style="color:#f92672">.</span><span style="color:#a6e22e">subscribe</span><span style="color:#f92672">(</span>object <span style="color:#f92672">:</span> VisitorUpdatedListener <span style="color:#f92672">{</span>
@@ -7230,8 +7251,8 @@ Default URL: <code>&quot;https://visitor-service.tealiumiq.com/{ACOUNT_NAME}/{PR
 </span></span><span style="display:flex;"><span>            Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">dev</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;--&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;VisitorProfile updated: $visitorProfile&#34;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">})</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Please see the <a href="/platforms/android-kotlin/api/visitor-profile">VisitorProfile</a> documentation for full details on available properties.</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>Please see the <a href="/platforms/android-kotlin/api/visitor-profile">VisitorProfile</a> documentation for full details on available properties.</p>
 
 </div>
 

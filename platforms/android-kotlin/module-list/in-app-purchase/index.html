@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="what-is-an-in-app-purchase">What is an in-app purchase?</h2>
+  
+
+<h2 id="what-is-an-in-app-purchase">What is an in-app purchase?</h2>
+
 <p>An in-app purchase is additional content, services, or a subscription that you buy inside the app. Some examples of in-app purchases include:</p>
+
 <ul>
 <li>Upgrade to remove ads</li>
 <li>Game credits</li>
@@ -7179,51 +7183,58 @@ var utag_data = {
 <li>Extra game levels</li>
 <li>Unlock more features</li>
 </ul>
+
 <p>Examples of purchases that are not considered in-app purchases include:</p>
+
 <ul>
 <li>Purchasing clothes or other items in an e-commerce app.</li>
 <li>Using Google Pay to complete a purchase.</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the In-App Purchase module using Maven (recommended) or manually.</p>
+
 <h3 id="maven">Maven</h3>
+
 <p>To install the module using Maven:</p>
+
 <ol>
-<li>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>    allprojects <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      repositories <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        jcenter<span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>        maven <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>          url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
+<li><p>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>allprojects <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>  repositories <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    jcenter<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>    maven <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>      url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="2">
-<li>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependencies:</li>
-</ol>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependencies:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.X.X&#39;</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-inapppurchase:1.0.0&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>Ensure you are using the latest version of kotlin-core.</p>
+</span></span><span style="display:flex;"><span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.X.X&#39;</span>
+</span></span><span style="display:flex;"><span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-inapppurchase:1.0.0&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>Ensure you are using the latest version of kotlin-core.</p></li>
+</ol>
+
 <h3 id="manual">Manual</h3>
+
 <p>To install the In-App Purchase module manually:</p>
+
 <ol>
-<li>
-<p>Download the Tealium <a href="https://github.com/Tealium/tealium-kotlin/tree/main/inapppurchase">In-App Purchase</a> module.</p>
-</li>
-<li>
-<p>Copy the file <code>tealium-kotlin.inapppurchase-1.0.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p>
-</li>
-<li>
-<p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
-</li>
-</ol>
+<li><p>Download the Tealium <a href="https://github.com/Tealium/tealium-kotlin/tree/main/inapppurchase">In-App Purchase</a> module.</p></li>
+
+<li><p>Copy the file <code>tealium-kotlin.inapppurchase-1.0.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p></li>
+
+<li><p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.inapppurchase-1.0.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+</span></span><span style="display:flex;"><span>  implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.inapppurchase-1.0.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+</ol>
+
+<h2 id="initialize">Initialize</h2>
+
 <p>Initialize the In-App Purchase module, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
@@ -7233,57 +7244,67 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>              dispatchers = mutableSetOf(
 </span></span><span style="display:flex;"><span>                Dispatchers.Collect,
 </span></span><span style="display:flex;"><span>                Dispatchers.RemoteCommands)
-</span></span><span style="display:flex;"><span>)
-</span></span></code></pre></div><h2 id="data-layer">Data Layer</h2>
+</span></span><span style="display:flex;"><span>)</span></span></code></pre></div>
+<h2 id="data-layer">Data Layer</h2>
+
 <p>The In-App Purchase module sends the following attributes in the event:</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Variable</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Variable</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>purchase_order_id</code></td>
-<td style="text-align:left">The order ID of the purchase.</td>
-<td style="text-align:left">&ldquo;1234567890&rdquo;</td>
+<td align="left"><code>purchase_order_id</code></td>
+<td align="left">The order ID of the purchase.</td>
+<td align="left">&ldquo;1234567890&rdquo;</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>purchase_timestamp</code></td>
-<td style="text-align:left">The timestamp of the purchase in ISO 8601 format.</td>
-<td style="text-align:left">&ldquo;2022-01-17T14:42:28Z&rdquo;</td>
+<td align="left"><code>purchase_timestamp</code></td>
+<td align="left">The timestamp of the purchase in ISO 8601 format.</td>
+<td align="left">&ldquo;2022-01-17T14:42:28Z&rdquo;</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>purchase_quantity</code></td>
-<td style="text-align:left">The total number of items purchased.</td>
-<td style="text-align:left">&ldquo;2&rdquo;</td>
+<td align="left"><code>purchase_quantity</code></td>
+<td align="left">The total number of items purchased.</td>
+<td align="left">&ldquo;2&rdquo;</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>purchase_skus</code></td>
-<td style="text-align:left">An array of the product IDs purchased.</td>
-<td style="text-align:left">[&ldquo;premium_upgrade&rdquo;, &ldquo;sub&rdquo;]</td>
+<td align="left"><code>purchase_skus</code></td>
+<td align="left">An array of the product IDs purchased.</td>
+<td align="left">[&ldquo;premium_upgrade&rdquo;, &ldquo;sub&rdquo;]</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>purchase_state</code></td>
-<td style="text-align:left">1 = Purchased, 2 = Pending, 0 = Unspecified (See <a href="https://developer.android.com/reference/com/android/billingclient/api/Purchase.PurchaseState">Android Developers: Purchase.PurchaseState</a> to learn more about this attribute.)</td>
-<td style="text-align:left">&ldquo;1&rdquo;</td>
+<td align="left"><code>purchase_state</code></td>
+<td align="left">1 = Purchased, 2 = Pending, 0 = Unspecified (See <a href="https://developer.android.com/reference/com/android/billingclient/api/Purchase.PurchaseState">Android Developers: Purchase.PurchaseState</a> to learn more about this attribute.)</td>
+<td align="left">&ldquo;1&rdquo;</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>purchase_is_auto_renewing</code></td>
-<td style="text-align:left">Set to <code>true</code> if the subscription will auto-renew.</td>
-<td style="text-align:left">true</td>
+<td align="left"><code>purchase_is_auto_renewing</code></td>
+<td align="left">Set to <code>true</code> if the subscription will auto-renew.</td>
+<td align="left">true</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>autotracked</code></td>
-<td style="text-align:left">Set to <code>true</code> to indicate that the event was tracked automatically.</td>
-<td style="text-align:left">true</td>
+<td align="left"><code>autotracked</code></td>
+<td align="left">Set to <code>true</code> to indicate that the event was tracked automatically.</td>
+<td align="left">true</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tealium_event</code></td>
-<td style="text-align:left">The name of the event.</td>
-<td style="text-align:left">&ldquo;in_app_purchase&rdquo;</td>
+<td align="left"><code>tealium_event</code></td>
+<td align="left">The name of the event.</td>
+<td align="left">&ldquo;in_app_purchase&rdquo;</td>
 </tr>
 </tbody>
 </table>

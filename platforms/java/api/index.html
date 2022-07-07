@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+  
+
+<h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the Java <code>Tealium</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,41 +7183,50 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>addPersistentData()</code></td>
 <td>Use the <code>DataManager</code> to make data available across multiple app sessions</td>
 </tr>
+
 <tr>
 <td><code>deletePersistentData()</code></td>
 <td>Use the <code>DataManager</code> to delete previously persisted data by providing a list of keys to delete</td>
 </tr>
+
 <tr>
 <td><code>getDataManager()</code></td>
 <td>Get the <code>DataManager</code> object which processes call time data and handles persistent data</td>
 </tr>
+
 <tr>
 <td><code>getPersistentData()</code></td>
 <td>Use the <code>DataManager</code> to retrieve data that has been persisted</td>
 </tr>
+
 <tr>
 <td><code>getSessionId()</code></td>
 <td>Use the <code>DataManager</code> to fetch the current session ID</td>
 </tr>
+
 <tr>
 <td><code>resetSessionId()</code></td>
 <td>Use the <code>DataManager</code> to reset the session ID</td>
 </tr>
+
 <tr>
 <td><code>track()</code></td>
 <td>Track events</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="addpersistentdata"><code>addPersistentData()</code></h3>
+
 <p>Use the <code>DataManager</code> to make data available across multiple app sessions.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>addPersistentData<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>addPersistentData<span style="color:#f92672">(</span>data<span style="color:#f92672">)</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7222,6 +7235,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7233,11 +7247,12 @@ var utag_data = {
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Udo data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Udo<span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;VALUE&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">addPersistentData</span><span style="color:#f92672">(</span>data<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="deletepersistentdata"><code>deletePersistentData()</code></h3>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">addPersistentData</span><span style="color:#f92672">(</span>data<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="deletepersistentdata"><code>deletePersistentData()</code></h3>
+
 <p>Use the <code>DataManager</code> to delete previously persisted data by providing a list of keys to delete.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>deletePersistentData<span style="color:#f92672">(</span>list<span style="color:#f92672">)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>deletePersistentData<span style="color:#f92672">(</span>list<span style="color:#f92672">)</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7246,6 +7261,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>list</code></td>
@@ -7257,17 +7273,19 @@ var utag_data = {
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>List<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span> list <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> List<span style="color:#f92672">&lt;&gt;();</span>
 </span></span><span style="display:flex;"><span>list<span style="color:#f92672">.</span><span style="color:#a6e22e">append</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key_to_delete&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">deletePersistentData</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="getdatamanager"><code>getDataManager()</code></h3>
+</span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">deletePersistentData</span><span style="color:#f92672">(</span>list<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="getdatamanager"><code>getDataManager()</code></h3>
+
 <p>Get the <code>DataManager</code> object which processes call time data and handles persistent data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getDataManager<span style="color:#f92672">()</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getDataManager<span style="color:#f92672">()</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>DataManager</code></td>
@@ -7275,11 +7293,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>DataManager dm <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>DataManager dm <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="getpersistentdata"><code>getPersistentData()</code></h3>
+
 <p>Use the <code>DataManager</code> to retrieve data that has been persisted.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getPersistentData<span style="color:#f92672">()</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getPersistentData<span style="color:#f92672">()</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
@@ -7287,6 +7306,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>Udo</code></td>
@@ -7295,11 +7315,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Udo persistentData <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPersistentData</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="getsessionid"><code>getSessionId()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Udo persistentData <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPersistentData</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="getsessionid"><code>getSessionId()</code></h3>
+
 <p>Use the <code>DataManager</code> to fetch the current session ID. A session ID is created on initialization of the <code>Tealium</code> object.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getSessionId<span style="color:#f92672">()</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>getSessionId<span style="color:#f92672">()</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
@@ -7307,6 +7328,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>String</code></td>
@@ -7315,11 +7337,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getSessionId</span><span style="color:#f92672">()</span> 
-</span></span></code></pre></div><h3 id="resetsessionid"><code>resetSessionId()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getSessionId</span><span style="color:#f92672">()</span> </span></span></code></pre></div>
+<h3 id="resetsessionid"><code>resetSessionId()</code></h3>
+
 <p>Use the <code>DataManager</code> to reset the session ID. Used when you need to start a new session other than at app start time.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>resetSessionId<span style="color:#f92672">()</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>resetSessionId<span style="color:#f92672">()</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
@@ -7327,6 +7350,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>String</code></td>
@@ -7335,13 +7359,14 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">resetSessionId</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="track"><code>track()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataManager</span><span style="color:#f92672">().</span><span style="color:#a6e22e">resetSessionId</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="track"><code>track()</code></h3>
+
 <p>Track events.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>track<span style="color:#f92672">(</span>eventTitle<span style="color:#f92672">)</span>
-</span></span></code></pre></div><p>Track events with optional parameters for data and a callback.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>track<span style="color:#f92672">(</span>eventTitle<span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>track<span style="color:#f92672">(</span>eventTitle<span style="color:#f92672">)</span></span></span></code></pre></div>
+<p>Track events with optional parameters for data and a callback.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>track<span style="color:#f92672">(</span>eventTitle<span style="color:#f92672">,</span> data<span style="color:#f92672">,</span> callback<span style="color:#f92672">)</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7350,6 +7375,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>eventTitle</code></td>
@@ -7357,12 +7383,14 @@ var utag_data = {
 <td>Title of event (becomes the <code>tealium_event</code> and <code>event_name</code> event attribute values)</td>
 <td><code>&quot;Some Event&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Udo</code></td>
 <td>(Optional) Universal Data Object (UDO) with event data as key-value pairs</td>
 <td><code>udoObject</code></td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
 <td><code>DispatchCallback</code></td>
@@ -7371,8 +7399,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<h2 id="class-tealiumbuilder">Class: <code>Tealium.Builder</code></h2>
+
+<h2 id="class-tealium-builder">Class: <code>Tealium.Builder</code></h2>
+
 <p>The following summarizes the commonly used methods of the Java <code>Tealium.Builder</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7380,41 +7411,48 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>build()</code></td>
 <td>Executes the build, and sets the persistent data and collect dispatcher</td>
 </tr>
+
 <tr>
 <td><code>Builder()</code></td>
 <td>Constructor to instantiate a Tealium object</td>
 </tr>
+
 <tr>
 <td><code>setDatasource()</code></td>
 <td>Data source key</td>
 </tr>
+
 <tr>
 <td><code>setEnvironment()</code></td>
 <td>Sets the Tealium environment name</td>
 </tr>
+
 <tr>
 <td><code>setPersistentData()</code></td>
 <td>Sets the persistent data</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="build"><code>build()</code></h3>
+
 <p>Executes the build. Sets the persistent data if it hasn&rsquo;t been explicitly set with the <code>setPersistentData()</code> method. Sets the collect dispatcher if it hasn&rsquo;t been explicitly set with the setCollectDispatcher() method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div><h3 id="builder"><code>Builder()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span></span></span></code></pre></div>
+<h3 id="builder"><code>Builder()</code></h3>
+
 <p>Constructor to instantiate a Tealium object.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>account<span style="color:#f92672">,</span> profile<span style="color:#f92672">,</span> environment<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Init Tealium
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>account<span style="color:#f92672">,</span> profile<span style="color:#f92672">,</span> environment<span style="color:#f92672">).</span><span style="color:#a6e22e">build</span><span style="color:#f92672">()</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#75715e">// Init Tealium
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium tealium <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">Builder</span><span style="color:#f92672">(</span>account<span style="color:#f92672">,</span> profile<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">setEnvironment</span><span style="color:#f92672">(</span>environment<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">setDatasource</span><span style="color:#f92672">(</span>datasource<span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">.</span><span style="color:#a6e22e">build</span><span style="color:#f92672">();</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7423,6 +7461,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7430,18 +7469,21 @@ var utag_data = {
 <td>Tealium account name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>environment</code></td>
 <td><code>String</code></td>
 <td>Tealium environment name</td>
 <td>[<code>&quot;dev&quot;</code>, <code>&quot;qa&quot;</code>, <code>&quot;prod&quot;</code>]</td>
 </tr>
+
 <tr>
 <td><code>datasource</code></td>
 <td><code>String</code></td>
@@ -7450,10 +7492,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<h3 id="setdatasource-"><code>setDatasource() </code></h3>
+
+<h3 id="setdatasource"><code>setDatasource()</code></h3>
+
 <p>Sets the data source key. Set to <code>null</code> if none.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnvironment</span><span style="color:#f92672">(</span>datasource<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnvironment</span><span style="color:#f92672">(</span>datasource<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7462,6 +7506,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>datasource</code></td>
@@ -7471,10 +7516,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setenvironment"><code>setEnvironment()</code></h3>
+
 <p>Sets the Tealium environment name</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnvironment</span><span style="color:#f92672">(</span>environment<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setEnvironment</span><span style="color:#f92672">(</span>environment<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7483,6 +7530,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>environment</code></td>
@@ -7492,10 +7540,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="setpersistentdata"><code>setPersistentData()</code></h3>
+
 <p>Sets the persistent data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setPersistentData</span><span style="color:#f92672">(</span>persistentData<span style="color:#f92672">);</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">setPersistentData</span><span style="color:#f92672">(</span>persistentData<span style="color:#f92672">);</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7504,6 +7554,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>persistentData</code></td>
@@ -7603,10 +7654,10 @@ var utag_data = {
               <li><a href="#getsessionid">getSessionId()</a></li>
               <li><a href="#resetsessionid">resetSessionId()</a></li>
               <li><a href="#track">track()</a></li>
-              </ul><li><a href="#class-tealiumbuilder">Class: Tealium.Builder</a></li>
+              </ul><li><a href="#class-tealium-builder">Class: Tealium.Builder</a></li>
               <ul class="toc-h3"><li><a href="#build">build()</a></li>
               <li><a href="#builder">Builder()</a></li>
-              <li><a href="#setdatasource">setDatasource() </a></li>
+              <li><a href="#setdatasource">setDatasource()</a></li>
               <li><a href="#setenvironment">setEnvironment()</a></li>
               <li><a href="#setpersistentdata">setPersistentData()</a></li>
               </nav>

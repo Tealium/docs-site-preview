@@ -7170,33 +7170,40 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  
+
+<h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 <li>Python 2.7+ </li>
 </ul>
+
 <h2 id="sample-script">Sample Script</h2>
+
 <p>To help familiarize yourself with the Tealium library, the tracking methods, and best practice implementation, see the <a href="https://github.com/Tealium/tealium-python/blob/master/sample.py">Python sample script</a>.</p>
+
 <h2 id="install">Install</h2>
+
 <p>To install the Tealium library for Python:</p>
+
 <ol>
-<li>Determine which version of Python you are using with the following command:</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python <span style="color:#f92672">-</span>V
-</span></span></code></pre></div><ol start="2">
-<li>
-<p>Run the following <a href="https://pip.pypa.io/en/stable/installing/">pip</a> command:</p>
+<li><p>Determine which version of Python you are using with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>python <span style="color:#f92672">-</span>V</span></span></code></pre></div></li>
+
+<li><p>Run the following <a href="https://pip.pypa.io/en/stable/installing/">pip</a> command:</p>
+
 <p><strong>Python 2</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install tealium
-</span></span></code></pre></div><p><strong>Python 3</strong></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip3 install tealium
-</span></span></code></pre></div></li>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install tealium</span></span></code></pre></div>
+<p><strong>Python 3</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip3 install tealium</span></span></code></pre></div></li>
 </ol>
+
 <h2 id="initialize">Initialize</h2>
+
 <p>Import the module and initialize the <code>Tealium</code> instance with the <a href="/platforms/python/api/#tealium"><code>Tealium()</code></a> constructor, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> tealium <span style="color:#f92672">import</span> Tealium
-</span></span><span style="display:flex;"><span>teal <span style="color:#f92672">=</span> Tealium(<span style="color:#e6db74">&#34;ACCOUNT&#34;</span>, <span style="color:#e6db74">&#34;PROFILE&#34;</span>, <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>, <span style="color:#e6db74">&#34;PATH&#34;</span>, <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>teal <span style="color:#f92672">=</span> Tealium(<span style="color:#e6db74">&#34;ACCOUNT&#34;</span>, <span style="color:#e6db74">&#34;PROFILE&#34;</span>, <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>, <span style="color:#e6db74">&#34;PATH&#34;</span>, <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

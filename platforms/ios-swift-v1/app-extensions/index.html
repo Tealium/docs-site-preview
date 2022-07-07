@@ -7170,15 +7170,26 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="today-extensions">Today Extensions</h2>
+  
+
+<h2 id="today-extensions">Today Extensions</h2>
+
 <p><strong>Today Extensions</strong> are widgets that appear on the device&rsquo;s &ldquo;Today&rdquo; screen. These app extensions are allowed very limited resources by the OS, and may be terminated if they consume too much memory or processing power.</p>
+
 <p>Use the Swift library as normal inside a Today Extension but, in order to keep the memory footprint low, we recommend using only the <a href="/platforms/ios-swift/module-list/collect/">Collect module</a> to transmit data. The <a href="/platforms/ios-swift/module-list/tag-management/">Tag Management module</a> may be too resource intensive and result in your widget being terminated.</p>
+
 <p>Regardless of the option chosen, it is important to thoroughly test and ensure your widget performs as expected. Embedding fewer Tealium modules in your widget results in greater performance and a lower memory footprint.</p>
+
 <h2 id="watchos-extensions-and-independent-apps">watchOS Extensions and Independent Apps</h2>
+
 <p>If you are adding a watchOS target to an iOS project that already has Tealium installed then add the necessary modules, <code>TealiumHelper</code> to the Watch Extension target, and necessary tracking calls. The Tag Management module is not supported on watchOS, due to the dependency on <code>WKWebView</code>; the Collect module is the only supported method of data collection on watchOS.</p>
+
 <p>Alternatively, you could use the <code>WatchConnectivty</code> framework&rsquo;s <code>WCSession</code> API to send a message to the host iOS app each time you wish to send a tracking call. This allows the event to be tracked by the Tag Management module if you are using it, but is not an option for an independent watchOS app.</p>
+
 <h2 id="visitor-id-in-app-extensions">Visitor ID in App Extensions</h2>
+
 <p>App Extensions have their own sandboxed data storage, which is not shared with the host iOS app (if available). Therefore, by default, a new persistent visitor ID is generated when the app is started for the first time.</p>
+
 <p>An issue causing 3 distinct visitor IDs for the same visitor arises when you have an iOS app, Today widget, and the watchOS extension. This is not an issue if you are using visitor stitching and already have a known visitor ID for the app user. Avoid this situation by synchronizing the visitor IDs across the app and its extensions. This is done by passing the current Tealium first party visitor ID in the <code>TealiumConfig</code> object of the app extension when initializing Tealium. The ID is stored and used for future launches of the app, without being regenerated.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
 </span></span><span style="display:flex;"><span>
@@ -7203,8 +7214,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">self</span>.tealium = Tealium(config: config)
 </span></span><span style="display:flex;"><span>	}
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Alternatively, generate a visitor ID centrally and pass it to each Tealium instance at initialization. It is recommended to use a UUID.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>Alternatively, generate a visitor ID centrally and pass it to each Tealium instance at initialization. It is recommended to use a UUID.</p>
+
 <p class="tip"><i class="fas fa-star"></i>Do not use a simple ID, such as email address, for your first party visitor ID.</p>
 
 </div>

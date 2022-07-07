@@ -7170,7 +7170,10 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>The following tracking functions are available:</p>
+  
+
+<p>The following tracking functions are available:</p>
+
 <table>
 <thead>
 <tr>
@@ -7178,81 +7181,99 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>utag.link()</code></td>
 <td>Tracks non-page views, page interactions, and other dynamic page events</td>
 </tr>
+
 <tr>
 <td><code>utag.track()</code></td>
 <td>Tracks either page views or events, based on the first parameter value</td>
 </tr>
+
 <tr>
 <td><code>utag.view()</code></td>
 <td>Tracks page views, virtual page views, and Ajax page flows</td>
 </tr>
 </tbody>
 </table>
-<h2 id="utaglink"><code>utag.link()</code></h2>
+
+<h2 id="utag-link"><code>utag.link()</code></h2>
+
 <p>Tracks non-page views, page interactions, and other dynamic page events. Calling this function triggers the corresponding vendor tracking functionality within your configured tags. </p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>(<span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>(<span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data_object</code></td>
 <td>A data object containing the data layer variables associated with the event.</td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
 <td>A function to be executed after the tracking call has completed.</td>
 </tr>
+
 <tr>
 <td><code>uid_array</code></td>
 <td>An array of tag UID&rsquo;s to trigger.</td>
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>Using the <code>uid_array</code> parameter bypasses load rules.</p>
-<h2 id="utagtrack"><code>utag.track()</code></h2>
+
+<h2 id="utag-track"><code>utag.track()</code></h2>
+
 <p>Tracks either page views or events, based on the first parameter value. Both <a href="/platforms/javascript/api/tracking-functions#utag-link"><code>utag.link()</code></a> and <a href="/platforms/javascript/api/#utag-view"><code>utag.view()</code></a> wrap around this function.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">track</span>(<span style="color:#a6e22e">event_type</span>, <span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">track</span>(<span style="color:#a6e22e">event_type</span>, <span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>event_type</code></td>
 <td>The type of event. Set to <code>view</code> for page views, or <code>link</code> for events</td>
 </tr>
+
 <tr>
 <td><code>data_object</code></td>
 <td>A data object containing the data layer variables associated with the event.</td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
 <td>A function to be executed after the tracking call has completed.</td>
 </tr>
+
 <tr>
 <td><code>uid_array</code></td>
 <td>An array of tag UID&rsquo;s to trigger.</td>
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>Using the <code>uid_array</code> parameter bypasses load rules.</p>
-<h2 id="utagview"><code>utag.view()</code></h2>
+
+<h2 id="utag-view"><code>utag.view()</code></h2>
+
 <p>Tracks page views, virtual page views, and Ajax page flows. Calling this function triggers the corresponding page tracking functionality within your configured vendor tags. <code>utag.js</code> automatically triggers this function on every page load.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>(<span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>(<span style="color:#a6e22e">data_object</span>, <span style="color:#a6e22e">callback</span>, [<span style="color:#a6e22e">uid_array</span>]);</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7260,17 +7281,20 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data_object</code></td>
 <td>Object</td>
 <td>(Optional) A data object containing the attributes associated with this specific tracking call. Uses the same format and variable names as the Universal Data Object.</td>
 </tr>
+
 <tr>
 <td><code>callback</code></td>
 <td>Function</td>
 <td>(Optional) A function to be executed after the tracking call has completed.</td>
 </tr>
+
 <tr>
 <td><code>uid_array</code></td>
 <td>Array</td>
@@ -7278,6 +7302,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>Using the <code>uid_array</code> parameter bypasses load rules.</p>
 
 </div>
@@ -7361,9 +7386,9 @@ var utag_data = {
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">Table of Contents</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#utaglink">utag.link()</a></li>
-              <li><a href="#utagtrack">utag.track()</a></li>
-              <li><a href="#utagview">utag.view()</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#utag-link">utag.link()</a></li>
+              <li><a href="#utag-track">utag.track()</a></li>
+              <li><a href="#utag-view">utag.view()</a></li>
               </nav>
   </aside></div>
 

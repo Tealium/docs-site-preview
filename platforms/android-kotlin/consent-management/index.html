@@ -7170,29 +7170,41 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The Consent Management module is recommended and automatically enabled upon initialization. It is supported on Android mobile and Android TV.</p>
+
 <p>Initialize the consent manager policy inside <a href="platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy"><code>TealiumConfig</code></a>. Then manage user consent using the Tealium instance at <a href="/platforms/android-kotlin/api/tealium/#consentmanager"><code>tealium.consentManager</code></a>.</p>
+
 <p>Learn more about <a href="/platforms/getting-started/consent-management/">Consent Management</a> and consent policies.</p>
+
 <h2 id="consent">Consent</h2>
+
 <h3 id="set-policy">Set Policy</h3>
+
 <p>Set the consent policy during initialization to one of the following:</p>
+
 <ul>
 <li><code>ConsentPolicy.GDPR</code></li>
 <li><code>ConsentPolicy.CCPA</code></li>
 </ul>
+
 <p class="note"><i class="fas fa-info-circle"></i>Only one policy may be enforced on a device at any given time.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...).</span><span style="color:#a6e22e">apply</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  consentManagerPolicy <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">GDPR</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="consent-expiration">Consent Expiration</h3>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<h3 id="consent-expiration">Consent Expiration</h3>
+
 <p>Set the expiration time for the consent selections using the <a href="/platforms/android-kotlin/api/tealium-config/#consentexpiry"><code>consentExpiry</code></a> property.</p>
+
 <p>The following example sets the consent manager policy to GDPR and the expiration time to 90 days:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val config <span style="color:#f92672">=</span> TealiumConfig<span style="color:#f92672">(...).</span><span style="color:#a6e22e">apply</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  consentManagerPolicy <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">GDPR</span>
 </span></span><span style="display:flex;"><span>  consentExpiry <span style="color:#f92672">=</span> ConsentExpiry<span style="color:#f92672">(</span>90<span style="color:#f92672">,</span> TimeUnit<span style="color:#f92672">.</span><span style="color:#a6e22e">DAYS</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>To trigger a callback once the consent has expired, use the <a href="/platforms/android-kotlin/api/consent-manager/#onuserconsentpreferencesupdated"><code>onUserConsentPreferencesUpdated()</code></a> method to check when the <code>ConsentStatus</code> is <code>UNKNOWN</code>:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>To trigger a callback once the consent has expired, use the <a href="/platforms/android-kotlin/api/consent-manager/#onuserconsentpreferencesupdated"><code>onUserConsentPreferencesUpdated()</code></a> method to check when the <code>ConsentStatus</code> is <code>UNKNOWN</code>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">TEALIUM_INSTANCE</span><span style="color:#f92672">,</span> config<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    events<span style="color:#f92672">.</span><span style="color:#a6e22e">subscribe</span><span style="color:#f92672">(</span>object <span style="color:#f92672">:</span> UserConsentPreferencesUpdatedListener <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        override fun <span style="color:#a6e22e">onUserConsentPreferencesUpdated</span><span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span> UserConsentPreferences<span style="color:#f92672">,</span>
@@ -7202,35 +7214,41 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">})</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h3 id="set-full-consent">Set Full Consent</h3>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<h3 id="set-full-consent">Set Full Consent</h3>
+
 <p>To set full consent:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span>
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>Setting full consent implicitly sets the consent categories to the full list of available <a href="/platforms/android-kotlin/api/consent-category/#class-consentcategory"><code>ConsentCategory</code></a> types.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span></span></span></code></pre></div>
+<p class="note"><i class="fas fa-info-circle"></i>Setting full consent implicitly sets the consent categories to the full list of available <a href="/platforms/android-kotlin/api/consent-category/#class-consentcategory"><code>ConsentCategory</code></a> types.</p>
+
 <h3 id="set-partial-consent-by-category">Set Partial Consent by Category</h3>
+
 <p>To set partial consent, specify a subset of consent categories. This implicitly sets <a href="/platforms/android-kotlin/api/consent-manager/#userconsentstatus"><code>userConsentStatus</code></a> to <code>CONSENTED</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentCategories</span> <span style="color:#f92672">=</span> setOf<span style="color:#f92672">(</span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">,</span> ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">EMAIL</span><span style="color:#f92672">)</span>
-</span></span></code></pre></div><h3 id="set-declined-consent">Set Declined Consent</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentCategories</span> <span style="color:#f92672">=</span> setOf<span style="color:#f92672">(</span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">ANALYTICS</span><span style="color:#f92672">,</span> ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">EMAIL</span><span style="color:#f92672">)</span></span></span></code></pre></div>
+<h3 id="set-declined-consent">Set Declined Consent</h3>
+
 <p>To decline consent set the consent status:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">NOT_CONSENTED</span>
-</span></span></code></pre></div><p>Alternatively, set the consent categories to <code>null</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">NOT_CONSENTED</span></span></span></code></pre></div>
+<p>Alternatively, set the consent categories to <code>null</code>.</p>
+
 <h2 id="custom-consent">Custom Consent</h2>
+
 <p>If your organization&rsquo;s consent requirements are not covered by our standard GDPR and CCPA policies, create a custom consent policy.</p>
+
 <ol>
-<li>Implement the <code>ConsentManagementPolicy</code> interface.</li>
-</ol>
+<li><p>Implement the <code>ConsentManagementPolicy</code> interface.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val customPolicy <span style="color:#f92672">=</span> object<span style="color:#f92672">:</span> ConsentManagementPolicy <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">//implement methods...
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="2">
-<li>Pass the <code>ConsentManagementPolicy</code> implementation to the <code>ConsentPolicy.CUSTOM</code> enum using the <code>setCustomPolicy()</code> method.</li>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">//implement methods...
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>Pass the <code>ConsentManagementPolicy</code> implementation to the <code>ConsentPolicy.CUSTOM</code> enum using the <code>setCustomPolicy()</code> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">CUSTOM</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setCustomPolicy</span><span style="color:#f92672">(</span>customPolicy<span style="color:#f92672">)</span></span></span></code></pre></div></li>
+
+<li><p>Pass the <code>ConsentPolicy.CUSTOM</code> option on your <code>TealiumConfig</code> object via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy"><code>consentManagerPolicy</code></a> property.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManagerPolicy</span> <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">CUSTOM</span></span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">CUSTOM</span><span style="color:#f92672">.</span><span style="color:#a6e22e">setCustomPolicy</span><span style="color:#f92672">(</span>customPolicy<span style="color:#f92672">)</span>
-</span></span></code></pre></div><ol start="3">
-<li>Pass the <code>ConsentPolicy.CUSTOM</code> option on your <code>TealiumConfig</code> object via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy"><code>consentManagerPolicy</code></a> property.</li>
-</ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>config<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManagerPolicy</span> <span style="color:#f92672">=</span> ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">CUSTOM</span>
-</span></span></code></pre></div><p>Your custom <code>ConsentManagementPolicy</code> implementation may delegate existing consent management methods and properties to the provided <code>superPolicy</code>, which overrides the <code>policy</code> key with its own name on each event.</p>
+
+<p>Your custom <code>ConsentManagementPolicy</code> implementation may delegate existing consent management methods and properties to the provided <code>superPolicy</code>, which overrides the <code>policy</code> key with its own name on each event.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomPolicy</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>        val superPolicy<span style="color:#f92672">:</span> ConsentManagementPolicy
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">)</span> <span style="color:#f92672">:</span> ConsentManagementPolicy by superPolicy <span style="color:#f92672">{</span>
@@ -7244,8 +7262,9 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>val customPolicy <span style="color:#f92672">=</span> CustomPolicy<span style="color:#f92672">(</span>ConsentPolicy<span style="color:#f92672">.</span><span style="color:#a6e22e">GDPR</span><span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(</span>
-</span></span><span style="display:flex;"><span>    UserConsentPreferences<span style="color:#f92672">(</span>ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">UNKNOWN</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)))</span>
-</span></span></code></pre></div><p>After the custom consent policy is implemented, override the following properties and methods available on the <code>ConsentManagementPolicy</code> as needed:</p>
+</span></span><span style="display:flex;"><span>    UserConsentPreferences<span style="color:#f92672">(</span>ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">UNKNOWN</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)))</span></span></span></code></pre></div>
+<p>After the custom consent policy is implemented, override the following properties and methods available on the <code>ConsentManagementPolicy</code> as needed:</p>
+
 <table>
 <thead>
 <tr>
@@ -7254,52 +7273,62 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>name</code></td>
 <td><code>String</code></td>
 <td>Name of the <code>ConsentManagementPolicy</code></td>
 </tr>
+
 <tr>
 <td><code>userConsentPreferences</code></td>
 <td><code>UserConsentPreferences</code></td>
 <td>The current <code>UserConsentPreferences</code> that are automatically updated by the <code>ConsentManager</code> when the preferences change</td>
 </tr>
+
 <tr>
 <td><code>consentLoggingEnabled</code></td>
 <td><code>Boolean</code></td>
 <td>Sets whether or not logging of consent changes are required</td>
 </tr>
+
 <tr>
 <td><code>consentLoggingEventName</code></td>
 <td><code>String</code></td>
 <td>Sets the event name (key: <code>tealium_event</code>) to use when logging a change in consent</td>
 </tr>
+
 <tr>
 <td><code>defaultConsentExpiry</code>]</td>
 <td><code>ConsentExpiry</code></td>
 <td>Sets the default expiry time for the <code>ConsentManagementPolicy</code></td>
 </tr>
+
 <tr>
 <td><code>cookieUpdateRequired</code></td>
 <td><code>Boolean</code></td>
 <td>Sets whether or not to update a cookie in the TagManagement module&rsquo;s webview</td>
 </tr>
+
 <tr>
 <td><code>cookieUpdateEventName</code></td>
 <td><code>String</code></td>
 <td>Sets the event name to use when <code>cookieUpdateRequired</code> is set to <code>true</code></td>
 </tr>
+
 <tr>
 <td><code>policyStatusInfo()</code></td>
 <td><code>Map&lt;String, Any&gt;</code></td>
 <td>Returns a map of key value data to be added to the payload of each dispatch</td>
 </tr>
+
 <tr>
 <td><code>shouldQueue()</code></td>
 <td><code>Boolean</code></td>
 <td>Returns whether or not to queue dispatches according to the <code>ConsentPolicy</code> rules</td>
 </tr>
+
 <tr>
 <td><code>shouldDrop()</code></td>
 <td><code>Boolean</code></td>
@@ -7307,7 +7336,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="examples">Examples</h3>
+
 <p>The following example re-maps the policy data keys to avoid Tealium EventStream fixed consent values:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomPolicy</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>        val superPolicy<span style="color:#f92672">:</span> ConsentManagementPolicy
@@ -7322,8 +7353,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>            put<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;custom_consent_categories&#34;</span><span style="color:#f92672">,</span> categories<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>The following example customizes the consent logging event name that is sent:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>The following example customizes the consent logging event name that is sent:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomPolicy</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>        val superPolicy<span style="color:#f92672">:</span> ConsentManagementPolicy
 </span></span><span style="display:flex;"><span><span style="color:#f92672">)</span> <span style="color:#f92672">:</span> ConsentManagementPolicy by superPolicy <span style="color:#f92672">{</span>
@@ -7335,8 +7366,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">UNKNOWN</span> <span style="color:#f92672">-&gt;</span> <span style="color:#e6db74">&#34;user_consent_unknown&#34;</span>
 </span></span><span style="display:flex;"><span>            <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p>The following example returns third-party consent values, where <code>thirdPartyConsentProvider</code> is a reference to another consent provider:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p>The following example returns third-party consent values, where <code>thirdPartyConsentProvider</code> is a reference to another consent provider:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomPolicy</span><span style="color:#f92672">(</span>
 </span></span><span style="display:flex;"><span>        val superPolicy<span style="color:#f92672">:</span> ConsentManagementPolicy<span style="color:#f92672">,</span>
 </span></span><span style="display:flex;"><span>        val thirdPartyConsentLibrary<span style="color:#f92672">:</span> OtherConsentProvider
@@ -7346,8 +7377,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                <span style="color:#f92672">.</span><span style="color:#a6e22e">getConsent</span><span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">.</span><span style="color:#a6e22e">consentStatus</span> <span style="color:#f92672">==</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;my_consent_status&#34;</span> to status<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

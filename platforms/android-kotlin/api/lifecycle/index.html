@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-lifecycle">Class: <code>Lifecycle</code></h2>
+  
+
+<h2 id="class-lifecycle">Class: <code>Lifecycle</code></h2>
+
 <p>The following summarizes the methods of the <code>Lifecycle</code> class for manually tracking application lifecycle. To allow the Lifecycle module to manually track lifecycle events, disable lifecycle autotracking by setting the <code>TealiumConfig</code> option <code>isAutotrackingEnabled</code> to <code>false</code>. Usage of manual lifecycle tracking is only recommended for unconventional lifecycle paradigms.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,25 +7183,30 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#tracklaunchevent"><code>trackLaunchEvent()</code></a></td>
 <td>Manually tracks launch event</td>
 </tr>
+
 <tr>
 <td><a href="#tracksleepevent"><code>trackSleepEvent()</code></a></td>
 <td>Manually tracks sleep event</td>
 </tr>
+
 <tr>
 <td><a href="#trackwakeevent"><code>trackWakeEvent()</code></a></td>
 <td>Manually tracks wake event</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="tracklaunchevent"><code>trackLaunchEvent()</code></h3>
+
 <p>Manually tracks launch event with optional data map.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackLaunchEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;launch-value&#34;</span><span style="color:#f92672">))</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackLaunchEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;launch-value&#34;</span><span style="color:#f92672">))</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7206,6 +7215,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7215,10 +7225,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="tracksleepevent"><code>trackSleepEvent()</code></h3>
+
 <p>Manually tracks sleep event with optional data map.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackSleepEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;sleep-value&#34;</span><span style="color:#f92672">))</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackSleepEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;sleep-value&#34;</span><span style="color:#f92672">))</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7227,6 +7239,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7236,10 +7249,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="trackwakeevent"><code>trackWakeEvent()</code></h3>
+
 <p>Manually tracks wake event with optional data map.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackWakeEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;wake-value&#34;</span><span style="color:#f92672">))</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealiumInstance<span style="color:#f92672">.</span><span style="color:#a6e22e">lifecycle</span><span style="color:#f92672">?.</span><span style="color:#a6e22e">trackWakeEvent</span><span style="color:#f92672">(</span>mapOf<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;key&#34;</span> to <span style="color:#e6db74">&#34;wake-value&#34;</span><span style="color:#f92672">))</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7248,6 +7263,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>

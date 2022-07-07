@@ -7170,18 +7170,29 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>This tag management feature allows you to integrate JavaScript based vendor tags into your app and manage them remotely using Tealium iQ, similarly to a website.</p>
+  
+
+<p>This tag management feature allows you to integrate JavaScript based vendor tags into your app and manage them remotely using Tealium iQ, similarly to a website.</p>
+
 <h2 id="how-it-works">How It Works</h2>
+
 <p>Once you have <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Creating-a-Mobile-Profile/ta-p/16328">created a mobile profile in Tealium iQ</a> with Tag Management enabled, when you initialize the Tealium instance in your app, a non-rendered web view is created to load a simple HTML file from the Tealium mCDN network in which to load the Universal Tag <code>utag.js</code>. This web view is never rendered to the user.</p>
+
 <ul>
 <li>Versions 5.5.0 and newer, running iOS 11.0 and newer use <a href="https://developer.apple.com/documentation/webkit/wkwebview?language=objc">WKWebView</a>.</li>
 <li>Versions 5.4.x and older, running iOS 10.0 and older use <a href="https://developer.apple.com/documentation/uikit/uiwebview">UIWebView</a>.</li>
 </ul>
+
 <p class="note"><i class="fas fa-info-circle"></i>If you are supporting iOS versions lower than iOS 11.0 and would still like to use WKWebView, then upgrade to version 5.5.0 or newer. The caveat is that your visitor_id and other cookies will be reset. This is because the <a href="https://developer.apple.com/documentation/webkit/wkhttpcookiestore">WKHTTPCookieStore</a> is only supported in iOS 11.0</p>
+
 <h3 id="sample">Sample</h3>
+
 <p>To better familiarize yourself with Tealium&rsquo;s <code>WKWebView</code>, explore the <a href="https://github.com/Tealium/tealium-ios/tree/master/Samples/iOS_WKWebView%2BTealium_Objc">WKWebView sample</a>.</p>
+
 <h3 id="usage">Usage</h3>
+
 <p><code>WKWebView</code> is required to be attached to a <code>UIView</code>, even if it is not rendered. To accommodate this the Tealium SDK attempts to attach the non-rendered <code>WKWebView</code> to the <code>rootViewController.view</code>, the most common scenario when your window&rsquo;s <code>rootViewController</code> is a subclass of <code>UIViewController</code> or one of Apple&rsquo;s container view controllers (<code>UINavigationController</code> or <code>UITabBarController</code>).</p>
+
 <p>If your app has a complex view hierarchy, set the <code>TEALConfiguration</code> instance with a view to attach to in <code>viewDidLoad</code>, <code>viewWillAppear:</code>, or <code>viewDidAppear:</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>TEALConfiguration <span style="color:#f92672">*</span>tealConfig <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span>
 </span></span><span style="display:flex;"><span>                                              profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span>
@@ -7189,44 +7200,50 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                                              datasource:<span style="color:#e6db74">@&#34;DATASOURCE&#34;</span>];
 </span></span><span style="display:flex;"><span>tealConfig.view <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;</span>UIVIEW<span style="color:#f92672">&gt;</span>; <span style="color:#75715e">// For example, self.view in a UIViewController subclass
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">// Initialize with a unique key for this instance
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium <span style="color:#f92672">*</span>tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span> configuration:tealConfig]; 
-</span></span></code></pre></div><table>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>Tealium <span style="color:#f92672">*</span>tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE&#34;</span> configuration:tealConfig]; </span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>account</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">Tealium account name</td>
-<td style="text-align:left"><code>&quot;companyXYZ&quot;</code></td>
+<td align="left"><code>account</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">Tealium account name</td>
+<td align="left"><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>profile</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">Tealium profile name</td>
-<td style="text-align:left"><code>&quot;main&quot; </code></td>
+<td align="left"><code>profile</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">Tealium profile name</td>
+<td align="left"><code>&quot;main&quot; </code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>environment</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">Tealium environment name</td>
-<td style="text-align:left"><code>&quot;prod&quot;</code></td>
+<td align="left"><code>environment</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">Tealium environment name</td>
+<td align="left"><code>&quot;prod&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>datasource</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">(Optional) data source key (Set to <code>null</code> if none)</td>
-<td style="text-align:left"><code>&quot;abc123&quot;</code></td>
+<td align="left"><code>datasource</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">(Optional) data source key (Set to <code>null</code> if none)</td>
+<td align="left"><code>&quot;abc123&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Upon receiving a push notification, if your app jumps to a <code>UIViewController</code> and has a different view hierarchy than when Tealium was initialized, you must remove the old instance of Tealium and create a new one with the view to attach to. The sample app shows an example of this in <a href="https://github.com/Tealium/tealium-ios/blob/master/Samples/iOS_WKWebView%2BTealium_Objc/iOS_WKWebView%2BTealium_Objc/GreenViewController.m"><code>GreenViewController.m</code></a> and <a href="https://github.com/Tealium/tealium-ios/blob/master/Samples/iOS_WKWebView%2BTealium_Objc/iOS_WKWebView%2BTealium_Objc/TealiumHelper.m">TealiumHelper.m</a>.</p>
+
 <p>Although the Objective-C SDK is currently closed source, to provide more context, this following code snippet shows how the web view is created.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>- (UIView <span style="color:#f92672">*</span>_Nullable)<span style="color:#a6e22e">webViewContainer</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#f92672">!</span>_webViewContainer) {
@@ -7248,20 +7265,26 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> _webViewContainer;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The view is only used once to initialize the <code>WKWebView</code>.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>The view is only used once to initialize the <code>WKWebView</code>.</p>
+
 <h2 id="tealiumconfig"><code>TealiumConfig</code></h2>
+
 <h3 id="wkprocesspool"><code>WKProcessPool</code></h3>
+
 <p>If you use a <code>WKWebView</code> webview in your app, create and retain a singleton <code>WKProcessPool</code> instance and set it prior to instantiating Tealium. This also prevents cookie synchronization issues if your app contains other webviews besides the Tealium Tag Management webview.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>WKProcessPool <span style="color:#f92672">*</span>wkProcessPool <span style="color:#f92672">=</span> [[WKProcessPool alloc] init];
-</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>WKProcessPool <span style="color:#f92672">*</span>wkProcessPool <span style="color:#f92672">=</span> [[WKProcessPool alloc] init];</span></span></code></pre></div>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>_configuration <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span> profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span> environment:<span style="color:#e6db74">@&#34;ENV&#34;</span>];
 </span></span><span style="display:flex;"><span>_configuration.wkProcessPool <span style="color:#f92672">=</span> MyApp.wkProcessPool;
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>self.tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE_KEY&#34;</span> configuration:_configuration];
-</span></span></code></pre></div><h3 id="wkwebviewconfiguration"><code>WKWebviewConfiguration</code></h3>
+</span></span><span style="display:flex;"><span>self.tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE_KEY&#34;</span> configuration:_configuration];</span></span></code></pre></div>
+<h3 id="wkwebviewconfiguration"><code>WKWebviewConfiguration</code></h3>
+
 <p>Permits a custom <code>WKWebviewConfiguration</code> object to be passed, which is used by the Tealium Tag Management webview. If using this option instead of <code>webviewProcessPool</code> option, set the singleton <code>WKProcessPool</code> via the customizable <code>WKWebviewConfiguration</code> <code>processPool</code> property.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>It is recommended to use this option as it may be required if future API changes are made to <code>WKWebView</code>.</p>
+
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-obj-c" data-lang="obj-c"><span style="display:flex;"><span>_configuration <span style="color:#f92672">=</span> [TEALConfiguration configurationWithAccount:<span style="color:#e6db74">@&#34;ACCOUNT&#34;</span> profile:<span style="color:#e6db74">@&#34;PROFILE&#34;</span> environment:<span style="color:#e6db74">@&#34;ENV&#34;</span>];
 </span></span><span style="display:flex;"><span>
@@ -7269,8 +7292,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>webviewConfiguration.processPool <span style="color:#f92672">=</span> MyApp.wkProcessPool;
 </span></span><span style="display:flex;"><span>_configuration.wkWebViewConfig <span style="color:#f92672">=</span> webviewConfiguration
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>self.tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE_KEY&#34;</span> configuration:_configuration];
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>self.tealium <span style="color:#f92672">=</span> [Tealium newInstanceForKey:<span style="color:#e6db74">@&#34;INSTANCE_KEY&#34;</span> configuration:_configuration];</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

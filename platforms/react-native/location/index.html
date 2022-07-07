@@ -7170,14 +7170,21 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>Tealium for React Native allows you to use the Tealium native mobile libraries (iOS, Android) in your React Native application.</p>
+  
+
+<p>Tealium for React Native allows you to use the Tealium native mobile libraries (iOS, Android) in your React Native application.</p>
+
 <h2 id="how-it-works">How It Works</h2>
+
 <p>Tealium mobile libraries are integrated into your React Native application using one of the following two methods:</p>
+
 <ul>
 <li>NPM package (recommended)</li>
 <li>Manual via <a href="https://github.com/Tealium/tealium-react-native">GitHub</a></li>
 </ul>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>Access to your native build environments</li>
 <li><a href="/platforms/tealium-react-native">Tealium for React Native v2.2.0+</a></li>
@@ -7186,26 +7193,29 @@ var utag_data = {
 <li><a href="https://developer.android.com/studio/">Android Studio</a> or <a href="https://developer.apple.com/xcode/">Xcode</a></li>
 <li><a href="/platforms/android-kotlin/">Tealium for Android</a> or <a href="/platforms/ios-swift/">Tealium for iOS</a></li>
 </ul>
-<h2 id="install-npmyarn">Install (NPM/YARN)</h2>
+
+<h2 id="install-npm-yarn">Install (NPM/YARN)</h2>
+
 <p>To install the Tealium Location module for React Native with NPM:</p>
+
 <ol>
-<li>
-<p>Follow the installation instructions for the main <code>tealium-react-native</code> library installation <a href="/platforms/react-native/install">here</a>. Ensure you have installed at least verion 2.2.0 or above.</p>
-</li>
-<li>
-<p>Navigate to the root of your React Native project.</p>
-</li>
-<li>
-<p>Download and install the <code>tealium-react-native-location</code> package with the following command:</p>
-</li>
+<li><p>Follow the installation instructions for the main <code>tealium-react-native</code> library installation <a href="/platforms/react-native/install">here</a>. Ensure you have installed at least verion 2.2.0 or above.</p></li>
+
+<li><p>Navigate to the root of your React Native project.</p></li>
+
+<li><p>Download and install the <code>tealium-react-native-location</code> package with the following command:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yarn install tealium-react-native-location</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yarn install tealium-react-native-location
-</span></span></code></pre></div><h2 id="javascript">JavaScript</h2>
+
+<h2 id="javascript">JavaScript</h2>
+
 <p>To import the relevant classes into your app, do the following:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumLocation</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;tealium-react-native-location&#39;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">TealiumLocationConfig</span>, <span style="color:#a6e22e">Accuracy</span>, <span style="color:#a6e22e">DesiredAccuracy</span>, <span style="color:#a6e22e">LocationData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;tealium-react-native-location/common&#39;</span>;
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">TealiumLocationConfig</span>, <span style="color:#a6e22e">Accuracy</span>, <span style="color:#a6e22e">DesiredAccuracy</span>, <span style="color:#a6e22e">LocationData</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;tealium-react-native-location/common&#39;</span>;</span></span></code></pre></div>
+<h2 id="initialize">Initialize</h2>
+
 <p>Configure the Location module prior to initializing the main Tealium React Native integration.</p>
+
 <p>You can configure all your required options in one single method, or by calling the helper methods individually:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">locationConfig</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TealiumLocationConfig</span> <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">accuracy</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Accuracy</span>.<span style="color:#a6e22e">high</span>,
@@ -7223,22 +7233,27 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">setAccuracy</span>(<span style="color:#a6e22e">Accuracy</span>.<span style="color:#a6e22e">high</span>);
 </span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">setGeofenceUrl</span>(<span style="color:#e6db74">&#34;.../...&#34;</span>);
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// etc
-</span></span></span></code></pre></div><h2 id="api-reference">API Reference</h2>
+</span></span></span></code></pre></div>
+<h2 id="api-reference">API Reference</h2>
+
 <p>After the Location Module and the main Tealium React Native integration have both been initialized, you can request that location tracking be started or stopped, and request the latest known location point data.</p>
+
 <h3 id="startlocationtracking"><code>startLocationTracking()</code></h3>
+
 <p>Starts location data tracking - you should ensure that the relevant permissions have been granted prior to starting location tracking.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">startLocationTracking</span>();
-</span></span></code></pre></div><h3 id="stoplocationtracking"><code>stopLocationTracking()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">startLocationTracking</span>();</span></span></code></pre></div>
+<h3 id="stoplocationtracking"><code>stopLocationTracking()</code></h3>
+
 <p>Stops location data tracking - only relevant if you are currently tracking location data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">stopLocationTracking</span>();
-</span></span></code></pre></div><h3 id="lastlocationcallback"><code>lastLocation(callback)</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">stopLocationTracking</span>();</span></span></code></pre></div>
+<h3 id="lastlocation-callback"><code>lastLocation(callback)</code></h3>
+
 <p>Requests the last known location, and returns an object containing the latitude and longitude coordinates as <code>lat</code> and <code>lng</code> keys - only relevant if you are currently tracking location data.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumLocation</span>.<span style="color:#a6e22e">lastLocation</span>((<span style="color:#a6e22e">loc</span>) =&gt; {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">loc</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">Alert</span>.<span style="color:#a6e22e">alert</span>(<span style="color:#e6db74">`Lat: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">loc</span>.<span style="color:#a6e22e">lat</span><span style="color:#e6db74">}</span><span style="color:#e6db74"> | Lng: </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">loc</span>.<span style="color:#a6e22e">lng</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>)
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></div>
 </div>
 
 <div class="pv3">
@@ -7322,13 +7337,13 @@ var utag_data = {
       <p class="b">Table of Contents</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#how-it-works">How It Works</a></li>
               <li><a href="#requirements">Requirements</a></li>
-              <li><a href="#install-npmyarn">Install (NPM/YARN)</a></li>
+              <li><a href="#install-npm-yarn">Install (NPM/YARN)</a></li>
               <li><a href="#javascript">JavaScript</a></li>
               <li><a href="#initialize">Initialize</a></li>
               <li><a href="#api-reference">API Reference</a></li>
               <ul class="toc-h3"><li><a href="#startlocationtracking">startLocationTracking()</a></li>
               <li><a href="#stoplocationtracking">stopLocationTracking()</a></li>
-              <li><a href="#lastlocationcallback">lastLocation(callback)</a></li>
+              <li><a href="#lastlocation-callback">lastLocation(callback)</a></li>
               </nav>
   </aside></div>
 

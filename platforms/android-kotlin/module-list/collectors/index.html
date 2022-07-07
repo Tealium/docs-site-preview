@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Collectors modules are available in the core library. The data gathered from each Collector module is added to the data layer and sent in each track call. Usage of these collectors is recommended, but not required. Excluding a collector omits the data variables from your data layer for that given collector.</p>
+
 <p>To add a Collector module to your app implementation, add a <code>collectors</code> parameter when creating the <code>TealiumConfig</code> instance:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">val</span> config = TealiumConfig(application,
 </span></span><span style="display:flex;"><span>                 <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
@@ -7184,9 +7188,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>                     Collectors.Device,
 </span></span><span style="display:flex;"><span>                     Collectors.Connectivity
 </span></span><span style="display:flex;"><span>                 )
-</span></span><span style="display:flex;"><span>          )
-</span></span></code></pre></div><h3 id="tealium-collector">Tealium Collector</h3>
+</span></span><span style="display:flex;"><span>          )</span></span></code></pre></div>
+<h3 id="tealium-collector">Tealium Collector</h3>
+
 <p>Gathers information about your Tealium account.</p>
+
 <table>
 <thead>
 <tr>
@@ -7195,27 +7201,32 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>tealium_account</code></td>
 <td>Tealium account name from <code>TealiumConfig</code></td>
 <td><code>tealium</code></td>
 </tr>
+
 <tr>
 <td><code>tealium_profile</code></td>
 <td>Tealium profile name from <code>TealiumConfig</code></td>
 <td><code>mobile</code></td>
 </tr>
+
 <tr>
 <td><code>tealium_environment</code></td>
 <td>Tealium environment from <code>TealiumConfig</code></td>
 <td><code>dev</code></td>
 </tr>
+
 <tr>
 <td><code>tealium_datasource</code></td>
 <td>Identifies Tealium data source name from <code>TealiumConfig</code></td>
 <td><code>abc123</code></td>
 </tr>
+
 <tr>
 <td><code>tealium_visitor_id</code></td>
 <td>Tealium visitor ID</td>
@@ -7223,8 +7234,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="app-collector">App Collector</h3>
+
 <p>Gathers information about you app package.</p>
+
 <table>
 <thead>
 <tr>
@@ -7233,27 +7247,32 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>app_build</code></td>
 <td>App build version</td>
 <td><code>1</code></td>
 </tr>
+
 <tr>
 <td><code>app_name</code></td>
 <td>Application name (from the <a href="https://developer.android.com/guide/topics/manifest/application-element.html#label">application manifest attribute <code>android:label</code></a>)</td>
 <td><code>My App</code></td>
 </tr>
+
 <tr>
 <td><code>app_memory_usage</code></td>
 <td>Memory (MB) in use by app process</td>
 <td><code>57</code></td>
 </tr>
+
 <tr>
 <td><code>app_rdns</code></td>
 <td>Reverse DNS application ID (from the <a href="https://developer.android.com/guide/topics/manifest/manifest-element.html">root manifest attribute <code>package</code></a>)</td>
 <td><code>com.example.myapp</code></td>
 </tr>
+
 <tr>
 <td><code>app_version</code></td>
 <td>Application version</td>
@@ -7261,8 +7280,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="connectivity-collector">Connectivity Collector</h3>
+
 <p>Gathers information about device network and carrier.</p>
+
 <table>
 <thead>
 <tr>
@@ -7271,27 +7293,32 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>carrier</code></td>
 <td>The device&rsquo;s mobile carrier</td>
 <td><code>Verizon</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_iso</code></td>
 <td>Carrier ISO country code</td>
 <td><code>ISO 3166-1</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mcc</code></td>
 <td>Mobile country code</td>
 <td><code>ITU-T Recommendation E.212</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mnc</code></td>
 <td>Mobile network code</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>connection_type</code></td>
 <td>Connection type</td>
@@ -7299,8 +7326,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="device-collector">Device Collector</h3>
+
 <p>Gathers information about your user&rsquo;s device.</p>
+
 <table>
 <thead>
 <tr>
@@ -7309,72 +7339,86 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>device</code></td>
 <td>Device type.</td>
 <td>iPhone, iPad</td>
 </tr>
+
 <tr>
 <td><code>device_android_runtime</code></td>
 <td>Android Runtime version</td>
 <td><code>2.1.0</code></td>
 </tr>
+
 <tr>
 <td><code>device_available_external_storage</code></td>
 <td>Total available external storage on device</td>
 <td></td>
 </tr>
+
 <tr>
 <td><code>device_available_system_storage</code></td>
 <td>Total available storage on device</td>
 <td><code>273772544</code></td>
 </tr>
+
 <tr>
 <td><code>device_architecture</code></td>
 <td>Bit architecture of the device</td>
 <td><code>64</code></td>
 </tr>
+
 <tr>
 <td><code>device_battery_percent</code></td>
 <td>Integer percent representation of device&rsquo;s remaining power</td>
 <td><code>50</code></td>
 </tr>
+
 <tr>
 <td><code>device_cputype</code></td>
 <td>CPU type</td>
 <td><code>arm7s</code></td>
 </tr>
+
 <tr>
 <td><code>device_ischarging</code></td>
 <td>Is the device actively charging?</td>
 <td><code>true</code>, <code>false</code></td>
 </tr>
+
 <tr>
 <td><code>device_language</code></td>
 <td>Two-letter ISO-639-1 language setting identifier</td>
 <td><code>en</code></td>
 </tr>
+
 <tr>
 <td><code>device_orientation</code></td>
 <td>Orientation of device at time of call</td>
 <td><code>Portrait</code>, <code>Landscape Left</code>, <code>Landscape Right</code>, <code>Portrait UpsideDown</code>, <code>Face Up</code>, <code>Face Down</code>, <code>Unknown</code></td>
 </tr>
+
 <tr>
 <td><code>device_os_build</code></td>
 <td>Operating System build version</td>
 <td><code>4499259</code></td>
 </tr>
+
 <tr>
 <td><code>device_os_version</code></td>
 <td>Operating System version on device</td>
 <td><code>7.0</code></td>
 </tr>
+
 <tr>
 <td><code>origin</code></td>
 <td>Constant used in mapping to distinguish mobile from web implementations</td>
 <td><code>mobile</code></td>
 </tr>
+
 <tr>
 <td><code>platform</code></td>
 <td>Mobile platform</td>
@@ -7382,8 +7426,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="time-collector">Time Collector</h3>
+
 <p>Gathers timestamps information when a track call occurs.</p>
+
 <table>
 <thead>
 <tr>
@@ -7392,27 +7439,32 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>timestamp</code></td>
 <td>Timestamp to seconds of event occurrence [ISO8601 at Zulu]</td>
 <td><code>2013-07-11T19:57:47Z</code></td>
 </tr>
+
 <tr>
 <td><code>timestamp_local</code></td>
 <td>Local Timestamp to seconds of event occurrence (ISO8601 without offset)</td>
 <td><code>2013-07-11T19:57:47</code></td>
 </tr>
+
 <tr>
 <td><code>timestamp_offset</code></td>
 <td>Local timezone offset of device&rsquo;s location in hours</td>
 <td><code>-3</code></td>
 </tr>
+
 <tr>
 <td><code>timestamp_unix</code></td>
 <td>GMT/UTC Unix timestamp of event occurrence</td>
 <td><code>1373498679</code></td>
 </tr>
+
 <tr>
 <td><code>timestamp_unix_milliseconds</code></td>
 <td>5.5.1</td>

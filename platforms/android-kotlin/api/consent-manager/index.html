@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-consentmanager">Class: <code>ConsentManager</code></h2>
+  
+
+<h2 id="class-consentmanager">Class: <code>ConsentManager</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>ConsentManager</code> class for Kotlin. See <a href="/platforms/android-kotlin/consent-management">Consent Management</a> for more details.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,51 +7183,68 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#isconsentloggingenabled"><code>isConsentLoggingEnabled</code></a></td>
 <td>Gets/sets whether to log consent preference changes</td>
 </tr>
+
 <tr>
 <td><a href="#policy"><code>policy</code></a></td>
 <td>Gets the current policy that is in force (nullable)</td>
 </tr>
+
 <tr>
 <td><a href="#reset"><code>reset()</code></a></td>
 <td>Resets the Consent Status and Categories back to default values</td>
 </tr>
+
 <tr>
 <td><a href="#userconsentcategories"><code>userConsentCategories</code></a></td>
 <td>Gets/sets the currently consented set of <code>ConsentCategory</code>s</td>
 </tr>
+
 <tr>
 <td><a href="#userconsentstatus"><code>userConsentStatus</code></a></td>
 <td>Gets/sets the current user <code>ConsentStatus</code></td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="isconsentloggingenabled"><code>isConsentLoggingEnabled</code></h3>
+
 <p>Get or set whether to log changes to the user consent preferences. Initialized via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerloggingenabled">TealiumConfig.consentManagerLoggingEnabled</a> option.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">isConsentLoggingEnabled</span> <span style="color:#75715e">// e.g. false
-</span></span></span></code></pre></div><h3 id="policy"><code>policy</code></h3>
+</span></span></span></code></pre></div>
+<h3 id="policy"><code>policy</code></h3>
+
 <p>Returns the currently in-use <code>ConsentPolicy</code>. Initialized via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy">TealiumConfig.consentManagerPolicy</a> option, and may be set to <code>null</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val policy <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">policy</span> <span style="color:#75715e">// e.g. ConsentPolicy.GDPR
-</span></span></span></code></pre></div><h3 id="reset"><code>reset()</code></h3>
+</span></span></span></code></pre></div>
+<h3 id="reset"><code>reset()</code></h3>
+
 <p>Returns the provided <code>userConsentStatus</code> and <code>userConsentCategories</code> back to their default values; <code>ConsentStatus.UNKNOWN</code> and <code>null</code> respectively.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">reset</span><span style="color:#f92672">()</span>
-</span></span></code></pre></div><h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">reset</span><span style="color:#f92672">()</span></span></span></code></pre></div>
+<h3 id="userconsentcategories"><code>userConsentCategories</code></h3>
+
 <p>Set or get the current Consent Status as granted by the app user. Learn more about the <a href="/platforms/android-kotlin/api/consent-manager-categories">available options</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentCategories</span> <span style="color:#f92672">=</span> setOf<span style="color:#f92672">(</span>ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">CDP</span><span style="color:#f92672">,</span> ConsentCategory<span style="color:#f92672">.</span><span style="color:#a6e22e">EMAIL</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>val categories <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentCategories</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// returns setOf(ConsentCategory.CDP, ConsentCategory.EMAIL)
-</span></span></span></code></pre></div><h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
+</span></span></span></code></pre></div>
+<h3 id="userconsentstatus"><code>userConsentStatus</code></h3>
+
 <p>Set or get the current consent status as granted by the app user. Available options are: <code>UNKOWN</code>, <code>CONSENTED</code> and <code>NOT_CONSENTED</code></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentPreferences</span> <span style="color:#f92672">=</span> ConsentStatus<span style="color:#f92672">.</span><span style="color:#a6e22e">CONSENTED</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>val status <span style="color:#f92672">=</span> tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">userConsentStatus</span> <span style="color:#75715e">// returns ConsentStatus.CONSENTED
-</span></span></span></code></pre></div><h2 id="interface-userconsentpreferencesupdatedlistener">Interface: <code>UserConsentPreferencesUpdatedListener</code></h2>
+</span></span></span></code></pre></div>
+<h2 id="interface-userconsentpreferencesupdatedlistener">Interface: <code>UserConsentPreferencesUpdatedListener</code></h2>
+
 <p>The <code>UserConsentPreferencesUpdatedListener</code> is a listener interface. Register to receive the latest version updates of <code>UserConsentPreferences</code> and <code>ConsentPolicy</code>.</p>
+
 <table>
 <thead>
 <tr>
@@ -7231,6 +7252,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#onuserconsentpreferencesupdated"><code>onUserConsentPreferencesUpdated()</code></a></td>
@@ -7238,10 +7260,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="onuserconsentpreferencesupdated"><code>onUserConsentPreferencesUpdated()</code></h3>
+
 <p>Gets or sets whether to log consent preference changes. Implement the method on a class that implements the interface, or pass in an anonymous object after creating your <code>Tealium</code> instance.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>onUserConsentPreferencesUpdated<span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span>policy<span style="color:#f92672">:)</span>
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>onUserConsentPreferencesUpdated<span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span>policy<span style="color:#f92672">:)</span></span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7249,12 +7273,14 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>userConsentPreferences</code></td>
 <td><code>UserConsentPreferences</code></td>
 <td>User consent preferences</td>
 </tr>
+
 <tr>
 <td><code>policy</code></td>
 <td><code>ConsentManagementPolicy</code></td>
@@ -7262,6 +7288,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val tealium <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        events<span style="color:#f92672">.</span><span style="color:#a6e22e">subscribe</span><span style="color:#f92672">(</span>object <span style="color:#f92672">:</span> UserConsentPreferencesUpdatedListener <span style="color:#f92672">{</span>
@@ -7271,8 +7298,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">})</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

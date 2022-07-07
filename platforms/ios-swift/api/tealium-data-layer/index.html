@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-datalayer">Class: <code>DataLayer</code></h2>
+  
+
+<h2 id="class-datalayer">Class: <code>DataLayer</code></h2>
+
 <p>The following summarizes the commonly used methods and properties of the iOS (Swift) <code>DataLayer</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,37 +7183,45 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><a href="#add"><code>add()</code></a></td>
 <td>Adds data to the data layer, based on expiration type.</td>
 </tr>
+
 <tr>
 <td><a href="#all"><code>all</code></a></td>
 <td>Returns all data stored on the data layer.</td>
 </tr>
+
 <tr>
 <td><a href="#allsessiondata"><code>allSessionData</code></a></td>
 <td>Returns all data stored on the data layer for the active session.</td>
 </tr>
+
 <tr>
 <td><a href="#delete"><code>delete()</code></a></td>
 <td>Deletes the specified values from storage.</td>
 </tr>
+
 <tr>
 <td><a href="#deleteall"><code>deleteAll()</code></a></td>
 <td>Deletes all values from storage.</td>
 </tr>
+
 <tr>
 <td><a href="#persistentdatastorage"><code>persistentDataStorage</code></a></td>
 <td>Returns all event data stored in persistent storage.</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="add"><code>add()</code></h3>
-<p>Adds data to the data layer, based on <a href="/platforms/ios-swift/data-layer/#data-expiration">expiration type</a>.  If the <code>expiry</code> parameter is not provided, the expiration type defaults to<code> .session</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.add(key, value, expiry)
-</span></span></code></pre></div><table>
+
+<p>Adds data to the data layer, based on <a href="/platforms/ios-swift/data-layer/#data-expiration">expiration type</a>.  If the <code>expiry</code> parameter is not provided, the expiration type defaults to<code>.session</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.add(key, value, expiry)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7217,17 +7229,20 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>key</code></td>
 <td><code>String</code></td>
 <td>Name of key to be stored</td>
 </tr>
+
 <tr>
 <td><code>value</code></td>
 <td><code>Any</code></td>
 <td>Data to be stored</td>
 </tr>
+
 <tr>
 <td><code>expiry</code> (optional)</td>
 <td><code>Expiry</code></td>
@@ -7235,16 +7250,19 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="all"><code>all</code></h3>
+
 <p>Returns all data stored on the data layer.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.all
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.all</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>[String]</code></td>
@@ -7252,16 +7270,19 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="allsessiondata"><code>allSessionData</code></h3>
+
 <p>Returns all data stored on the data layer for the active session.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.allSessionData
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: [String: Any] = tealium?.dataLayer.allSessionData</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>[String]</code></td>
@@ -7269,10 +7290,12 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="delete"><code>delete()</code></h3>
+
 <p>Deletes specified value from storage based on a specific key.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.delete(<span style="color:#66d9ef">for</span> key)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.delete(<span style="color:#66d9ef">for</span> key)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7280,6 +7303,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>key</code></td>
@@ -7288,9 +7312,10 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p>To delete multiple values from storage based on multiple keys:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.delete(<span style="color:#66d9ef">for</span> keys)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.delete(<span style="color:#66d9ef">for</span> keys)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7298,6 +7323,7 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>keys</code></td>
@@ -7306,19 +7332,23 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="deleteall"><code>deleteAll()</code></h3>
+
 <p>Deletes all values from storage.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.deleteAll()
-</span></span></code></pre></div><h3 id="persistentdatastorage"><code>persistentDataStorage</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.dataLayer.deleteAll()</span></span></code></pre></div>
+<h3 id="persistentdatastorage"><code>persistentDataStorage</code></h3>
+
 <p>Returns all event data stored in persistent storage.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: Set&lt;DataLayerItem&gt; = tealium?.dataLayer.persistentDataStorage
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data: Set&lt;DataLayerItem&gt; = tealium?.dataLayer.persistentDataStorage</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Return Type</th>
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>Set&lt;DataLayerItem&gt;</code></td>

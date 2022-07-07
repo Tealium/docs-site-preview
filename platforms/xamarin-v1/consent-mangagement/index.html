@@ -7170,17 +7170,27 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Usage of this module is recommended, as it is automatically included in the library and enabled in the native code upon initialization. Android and iOS are both supported platforms.</p>
+
 <p><a href="/platforms/getting-started/consent-management/">Learn more</a> about Consent Management.</p>
+
 <h2 id="sample-app">Sample App</h2>
+
 <p>To help to familiarize yourself with our library, the tracking methods, and best practice implementation, download the Xamarin Consent Management <a href="https://github.com/Tealium/tealium-xamarin/tree/master/Samples/ExampleAppConsentMgr">sample app</a>.</p>
+
 <h2 id="enable">Enable</h2>
+
 <p>The Consent Management feature comes from the two native SDKs embedded into the DLLs named <code>Tealium.Platform.*.dlls</code>. The <code>Tealium.Common.dll</code> provides the following category and status enums to use:</p>
+
 <ul>
 <li><code>Tealium.ConsentManager.ConsentStatus</code></li>
 <li><code>Tealium.ConsentManager.ConsentCategory</code></li>
 </ul>
+
 <p>To enable Consent Management, simply pass the optional parameter in the constructor of <code>TealiumConfig</code>, or set it as a property as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>TealiumConfig tealConfig = <span style="color:#66d9ef">new</span> TealiumConfig(
 </span></span><span style="display:flex;"><span>        TealiumConsts.INSTANCE_ID,
@@ -7196,9 +7206,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>tealConfig.IsConsentManagerEnabled = <span style="color:#66d9ef">true</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// initialise your Tealium Instance:</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = instanceManager.CreateInstance(tealConfig);
-</span></span></code></pre></div><h2 id="consent-status">Consent Status</h2>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium = instanceManager.CreateInstance(tealConfig);</span></span></code></pre></div>
+<h2 id="consent-status">Consent Status</h2>
+
 <p>As with the native SDKs for both Android and iOS, when Consent Management is enabled, new users are assumed to be in an unknown state. Tracking requests are queued up until the consent status has been opted-in or out, at which point events are sent or purged, respectively.</p>
+
 <p>Override the initial status through properties on the <code>TealiumConfig</code> object, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// enable Consent Manager:</span>
 </span></span><span style="display:flex;"><span>tealConfig.IsConsentManagerEnabled = <span style="color:#66d9ef">true</span>;
@@ -7216,9 +7228,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>tealConfig.InitialUserConsentCategories = <span style="color:#66d9ef">new</span> ConsentCategory[]{
 </span></span><span style="display:flex;"><span>    ConsentManager.ConsentCategory.Analytics,
 </span></span><span style="display:flex;"><span>        ConsentManager.ConsentCategory.Mobile
-</span></span><span style="display:flex;"><span>};
-</span></span></code></pre></div><h2 id="consent-selection">Consent Selection</h2>
+</span></span><span style="display:flex;"><span>};</span></span></code></pre></div>
+<h2 id="consent-selection">Consent Selection</h2>
+
 <p>Interact directly with Consent Management from the Tealium instance, through the <code>ConsentManager</code> property.</p>
+
 <p>If you need to update a user&rsquo;s consent selection, pass one of enum values available in the <code>ConsentManager.ConsentCategory</code> and <code>ConsentManager.ConsentStatus</code>, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span><span style="color:#75715e">// if the user is in an Unknown state, then the following code triggers any queued events are sent after this:</span>
 </span></span><span style="display:flex;"><span>ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
@@ -7228,13 +7242,14 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// To grant consent and opt into a subset of categories, use the overload:</span>
 </span></span><span style="display:flex;"><span>tealium.ConsentManager.UserConsentStatusWithCategories(ConsentManager.ConsentStatus.Consented, <span style="color:#66d9ef">new</span> ConsentCategory[]{
 </span></span><span style="display:flex;"><span>    ConsentManager.ConsentCategory.Analytics
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h2 id="resetting">Resetting</h2>
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
+<h2 id="resetting">Resetting</h2>
+
 <p>Additional options are available to reset the currently selected consent preferences. This reverts the user back to an <code>Unknown</code> status so that subsequent events begin being queued again.</p>
+
 <p>To completely disable, disable it on the <code>TealiumConfig</code> object, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-csharp" data-lang="csharp"><span style="display:flex;"><span>ITealium tealium = instanceManager.GetExistingInstance(TealiumConsts.INSTANCE_ID);
-</span></span><span style="display:flex;"><span>tealium.ConsentManager.ResetUserConsentPreferences();
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium.ConsentManager.ResetUserConsentPreferences();</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

@@ -7170,38 +7170,49 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>Tealium for Flutter allows you to use the Tealium native mobile libraries for <a href="/platforms/android-java">Android</a> or <a href="/platforms/ios-swift">iOS</a> in your Flutter application.</p>
+  
+
+<p>Tealium for Flutter allows you to use the Tealium native mobile libraries for <a href="/platforms/android-java">Android</a> or <a href="/platforms/ios-swift">iOS</a> in your Flutter application.</p>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="https://flutter.dev/">Flutter</a> application development framework</li>
 <li>IDE such as <a href="https://developer.android.com/studio">Android Studio</a> or <a href="https://code.visualstudio.com/">VS Code</a></li>
 <li>Flutter <a href="https://github.com/flutter/plugins">plugin</a> installed on the IDE</li>
 </ul>
+
 <h2 id="sample-apps">Sample Apps</h2>
+
 <p>To help to familiarize yourself with our library, the tracking methods, and best practice implementation, explore the Tealium for Flutter sample apps.</p>
+
 <ul>
 <li><a href="https://github.com/Tealium/tealium-flutter/tree/master/android">Sample app for Android</a></li>
 <li><a href="https://github.com/Tealium/tealium-flutter/tree/master/ios">Sample app for iOS</a></li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>To install the Tealium library for Flutter:</p>
+
 <ol>
-<li>In your Flutter app project, update the <code>pubspec.yaml</code> file to add the Tealium Flutter plugin dependency as follows:</li>
-</ol>
+<li><p>In your Flutter app project, update the <code>pubspec.yaml</code> file to add the Tealium Flutter plugin dependency as follows:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">dependencies:
-  flutter:
-  sdk: flutter
-  tealium: &#39;2.0.3&#39;
-</code></pre><ol start="2">
-<li>To pull the Tealium Flutter plugin dependency in your project, run the following command:</li>
+flutter:
+sdk: flutter
+tealium: &#39;2.0.3&#39;</code></pre></li>
+
+<li><p>To pull the Tealium Flutter plugin dependency in your project, run the following command:</p>
+<pre tabindex="0"><code class="language-flutter" data-lang="flutter">flutter pub get</code></pre></li>
+
+<li><p>Import the Dart code to your project:</p>
+<pre tabindex="0"><code class="language-flutter" data-lang="flutter">import tealium/tealium.dart</code></pre></li>
 </ol>
-<pre tabindex="0"><code class="language-flutter" data-lang="flutter">flutter pub get
-</code></pre><ol start="3">
-<li>Import the Dart code to your project:</li>
-</ol>
-<pre tabindex="0"><code class="language-flutter" data-lang="flutter">import tealium/tealium.dart
-</code></pre><p>Use The Tealium APIs in your Flutter project.</p>
+
+<p>Use The Tealium APIs in your Flutter project.</p>
+
 <h2 id="initialize">Initialize</h2>
+
 <p>Initialize the Tealium instance with the <a href="/platforms/flutter/api/tealium/#initialize"><code>initialize()</code></a> method, as shown in the following example:</p>
 <pre tabindex="0"><code class="language-flutter" data-lang="flutter">var config = TealiumConfig(
     &#39;ACCOUNT&#39;,
@@ -7217,8 +7228,8 @@ var utag_data = {
 
   Tealium.initialize(config).then((value) =&gt; {
       print(&#39;Tealium initialized&#39;);
-  });
-</code></pre><p>See the <a href="/platforms/flutter/api">Flutter API</a> to learn more about initialization options.</p>
+  });</code></pre>
+<p>See the <a href="/platforms/flutter/api">Flutter API</a> to learn more about initialization options.</p>
 
 </div>
 

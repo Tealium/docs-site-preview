@@ -7170,7 +7170,10 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  
+
+<h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>Android TV app with <a href="/platforms/android-java/">Tealium for Android</a></li>
 <li>Android (Lollipop/5.0+ / API Level 21+ for Android TV)</li>
@@ -7178,30 +7181,45 @@ var utag_data = {
 <li><a href="https://community.tealiumiq.com/t5/Getting-Started/Creating-a-Mobile-Profile/ta-p/16328">Tealium iQ Mobile Profile</a></li>
 <li><a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Introduction-to-Customer-Data-Hub/ta-p/17571">Tealium Customer Data Hub account</a></li>
 </ul>
+
 <h2 id="api-reference">API Reference</h2>
+
 <p>For the complete reference of classes and methods for Android TV, see the <a href="https://tealium.github.io/tealium-android/com/tealium/library/package-summary.html"><code>com.tealium.library</code></a> package in the Tealium SDK for Android API (it is the same for Android TV).</p>
+
 <h2 id="sample-app">Sample App</h2>
+
 <p>To help familiarize yourself with the Tealium library, tracking methods, and best practice implementation, explore the Tealium for Android TV <a href="https://github.com/Tealium/tealium-android/tree/master/Samples/AndroidTVSample">sample app</a>.</p>
+
 <p>To abstract the Tealium implementation from the rest of your app, we recommend the use of the <a href="https://github.com/Tealium/tealium-android/blob/master/Samples/BlankApp%2BTealium/app/src/main/java/com/tealium/blankapp/helper/TealiumHelper.java">sample helper class</a>. This gives you a single entry point from which to initialize and make tracking calls. It also allows you to update the code in your helper file, and not in every single Java file.</p>
+
 <h2 id="install">Install</h2>
+
 <p>Install Tealium for Android TV on any Android TV device, including Amazon Fire TV.</p>
+
 <h3 id="android-tv-device">Android TV Device</h3>
+
 <p>To install Tealium for Android TV, the installation steps are the same as found on the <a href="/platforms/android-java/install/">Tealium for Android</a> install guide.</p>
+
 <h3 id="amazon-fire-tv">Amazon Fire TV</h3>
+
 <p>It is recommended to leverage Tealium when developing using the Amazon&rsquo;s Fire TV <a href="https://github.com/amzn/fire-app-builder">Fire App Builder framework</a>. Tealium is a vendor-neutral solution allowing you to send your data to multiple platforms without being locked into a single vendor.</p>
+
 <p>Clone this fork of Amazon&rsquo;s <a href="https://github.com/jonwongswong/fire-app-builder">Fire App Builder</a> library to get started with developing streaming apps on Fire TV and leverage the Tealium SDK.</p>
+
 <h2 id="tracking">Tracking</h2>
+
 <h3 id="track-views">Track Views</h3>
+
 <p>The <a href="/platforms/android-java/api/tealium/#trackview"><code>trackView()</code></a> method tracks screen views, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;(</span>1<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;VALUE&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE KEY&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">trackView</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-</span></span></code></pre></div><h3 id="track-events">Track Events</h3>
+</span></span><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE KEY&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">trackView</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span></span></span></code></pre></div>
+<h3 id="track-events">Track Events</h3>
+
 <p>The <a href="/platforms/android-java/api/tealium/#trackevent"><code>trackEvent()</code></a> method tracks non-view events, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Object<span style="color:#f92672">&gt;</span> data <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;&gt;(</span>1<span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>data<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;VALUE&#34;</span><span style="color:#f92672">);</span>
-</span></span><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE KEY&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">trackEvent</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT NAME&#34;</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span>
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">getInstance</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;INSTANCE KEY&#34;</span><span style="color:#f92672">).</span><span style="color:#a6e22e">trackEvent</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;EVENT NAME&#34;</span><span style="color:#960050;background-color:#1e0010">&#34;</span><span style="color:#f92672">,</span> data<span style="color:#f92672">);</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

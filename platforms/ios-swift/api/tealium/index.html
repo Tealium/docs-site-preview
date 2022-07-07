@@ -7170,340 +7170,404 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+  
+
+<h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>Tealium</code> class.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Method/Property</th>
-<th style="text-align:left">Description</th>
+<th align="left">Method/Property</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><a href="#canceltimedevent"><code>cancelTimedEvent()</code></a></td>
-<td style="text-align:left">Cancels the timer for a timed event.</td>
+<td align="left"><a href="#canceltimedevent"><code>cancelTimedEvent()</code></a></td>
+<td align="left">Cancels the timer for a timed event.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#clearalltimedevents"><code>clearAllTimedEvents()</code></a></td>
-<td style="text-align:left">Clears all previously started timed events.</td>
+<td align="left"><a href="#clearalltimedevents"><code>clearAllTimedEvents()</code></a></td>
+<td align="left">Clears all previously started timed events.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#disable"><code>disable()</code></a></td>
-<td style="text-align:left">Disables the Tealium library.</td>
+<td align="left"><a href="#disable"><code>disable()</code></a></td>
+<td align="left">Disables the Tealium library.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#flushqueue"><code>flushQueue()</code></a></td>
-<td style="text-align:left">Sends any queued dispatches immediately.</td>
+<td align="left"><a href="#flushqueue"><code>flushQueue()</code></a></td>
+<td align="left">Sends any queued dispatches immediately.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#gathertrackdata"><code>gatherTrackData()</code></a></td>
-<td style="text-align:left">Returns all custom data layer values and collector module data layer values.</td>
+<td align="left"><a href="#gathertrackdata"><code>gatherTrackData()</code></a></td>
+<td align="left">Returns all custom data layer values and collector module data layer values.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#jointrace"><code>joinTrace()</code></a></td>
-<td style="text-align:left">Joins a trace with the specified ID.</td>
+<td align="left"><a href="#jointrace"><code>joinTrace()</code></a></td>
+<td align="left">Joins a trace with the specified ID.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#leavetrace"><code>leaveTrace()</code></a></td>
-<td style="text-align:left">Leave a previously joined trace and end the visitor session.</td>
+<td align="left"><a href="#leavetrace"><code>leaveTrace()</code></a></td>
+<td align="left">Leave a previously joined trace and end the visitor session.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier</code></a></td>
-<td style="text-align:left">Links the current ECID to a known secondary ID.</td>
+<td align="left"><a href="#linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier</code></a></td>
+<td align="left">Links the current ECID to a known secondary ID.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#resetvisitor"><code>resetVisitor()</code></a></td>
-<td style="text-align:left">Resets the visitor ECID by retrieving a new one on the next tracking call.</td>
+<td align="left"><a href="#resetvisitor"><code>resetVisitor()</code></a></td>
+<td align="left">Resets the visitor ECID by retrieving a new one on the next tracking call.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#resetvisitorid"><code>resetVisitorId()</code></a></td>
-<td style="text-align:left">Generates a new visitor ID for the user.</td>
+<td align="left"><a href="#resetvisitorid"><code>resetVisitorId()</code></a></td>
+<td align="left">Generates a new visitor ID for the user.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#starttimedevent"><code>startTimedEvent()</code></a></td>
-<td style="text-align:left">Starts a timed event with the given name.</td>
+<td align="left"><a href="#starttimedevent"><code>startTimedEvent()</code></a></td>
+<td align="left">Starts a timed event with the given name.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#stoptimedevent"><code>stopTimedEvent()</code></a></td>
-<td style="text-align:left">Stops the timer for a timed event which triggers the <code>timed_event</code> tracking call.</td>
+<td align="left"><a href="#stoptimedevent"><code>stopTimedEvent()</code></a></td>
+<td align="left">Stops the timer for a timed event which triggers the <code>timed_event</code> tracking call.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#tealium"><code>Tealium()</code></a></td>
-<td style="text-align:left">Constructor for a new <code>Tealium</code> object.</td>
+<td align="left"><a href="#tealium"><code>Tealium()</code></a></td>
+<td align="left">Constructor for a new <code>Tealium</code> object.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#track"><code>track()</code></a></td>
-<td style="text-align:left">Tracks an event with associated data and, optionally, triggers a callback function.</td>
+<td align="left"><a href="#track"><code>track()</code></a></td>
+<td align="left">Tracks an event with associated data and, optionally, triggers a callback function.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#visitor"><code>visitor</code></a></td>
-<td style="text-align:left">Returns the full <code>AdobeVisitor</code> instance.</td>
+<td align="left"><a href="#visitor"><code>visitor</code></a></td>
+<td align="left">Returns the full <code>AdobeVisitor</code> instance.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><a href="#visitorid"><code>visitorId</code></a></td>
-<td style="text-align:left">Returns a randomly generated and unique persistent visitor ID.</td>
+<td align="left"><a href="#visitorid"><code>visitorId</code></a></td>
+<td align="left">Returns a randomly generated and unique persistent visitor ID.</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="canceltimedevent"><code>cancelTimedEvent()</code></h3>
+
 <p>Cancels the timer for a timed event. The timed event is not tracked.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.cancelTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.cancelTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>name</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the timed event</td>
+<td align="left"><code>name</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the timed event</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="clearalltimedevents"><code>clearAllTimedEvents()</code></h3>
+
 <p>Clears all previously started timed events. The timed events are not tracked.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.clearAllTimedEvents()
-</span></span></code></pre></div><h3 id="disable"><code>disable()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.clearAllTimedEvents()</span></span></code></pre></div>
+<h3 id="disable"><code>disable()</code></h3>
+
 <p>Disables the Tealium library and removes all module references. Re-enable by creating a new Tealium instance if required.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.disable()
-</span></span></code></pre></div><h3 id="flushqueue"><code>flushQueue()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.disable()</span></span></code></pre></div>
+<h3 id="flushqueue"><code>flushQueue()</code></h3>
+
 <p>Sends all queued dispatches immediately. Requests may still be blocked by <code>DispatchValidator</code>s such as Consent Manager</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.disable()
-</span></span></code></pre></div><h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.disable()</span></span></code></pre></div>
+<h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
+
 <p>Retrieves all the current custom data layer values and collector module data layer values. The results are cached for subsequent calls and returned asynchronously. Set <code>retrieveCachedData</code> to <code>false</code> to get the most recent values. Use the completion handler to process the returned values. Reference custom data layer values directly using their custom keys and reference collector module values using <code>TealiumDataKey.</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span> tealium?.gatherTrackData(retreiveCachedData: <span style="color:#66d9ef">false</span>, completion: { allData <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> lifecycleTotalWakeCount = allData[TealiumDataKey.totalWakeCount]
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> visitorId = allData[TealiumDataKey.visitorId]
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> userLanguage = allData[<span style="color:#e6db74">&#34;user_language&#34;</span>]
-</span></span><span style="display:flex;"><span>})
-</span></span></code></pre></div><p>See also <a href="/platforms/ios-swift/data-layer/#retrieve-all-data"><code>Tealium.dataLayer.all</code></a>.</p>
+</span></span><span style="display:flex;"><span>})</span></span></code></pre></div>
+<p>See also <a href="/platforms/ios-swift/data-layer/#retrieve-all-data"><code>Tealium.dataLayer.all</code></a>.</p>
+
 <h3 id="jointrace"><code>joinTrace()</code></h3>
+
 <p>Joins a trace with the specified ID. The trace remains active for the duration of the app session until <code>leaveTrace()</code> is called. Learn more about the <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Trace/ta-p/12058">trace feature</a> in the Tealium Customer Data Hub.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>joinTrace(traceId: String)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>joinTrace(traceId: String)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>traceId</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The trace ID acquired from the Trace tool</td>
-<td style="text-align:left"><code>&quot;12345&quot;</code></td>
+<td align="left"><code>traceId</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The trace ID acquired from the Trace tool</td>
+<td align="left"><code>&quot;12345&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="leavetrace"><code>leaveTrace()</code></h3>
+
 <p>Leave a previously joined trace and end the visitor session. Optional parameter to preserve the trace visitor session when leaving the trace.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace(killVisitorSession: <span style="color:#66d9ef">false</span>)
-</span></span></code></pre></div><h3 id="linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.leaveTrace(killVisitorSession: <span style="color:#66d9ef">false</span>)</span></span></code></pre></div>
+<h3 id="linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier()</code></h3>
+
 <p>Links the current ECID to a known secondary identifier, such as an email address or other internal ID.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>linkECIDToKnownIdentifier(
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">_</span> knownID: String,
 </span></span><span style="display:flex;"><span>  adobeDataProviderId: String,
 </span></span><span style="display:flex;"><span>  authState: AdobeVisitorAuthState?,
-</span></span><span style="display:flex;"><span>  completion: ((Result&lt;AdobeVisitor, Error&gt;) <span style="color:#960050;background-color:#1e0010">→</span> Void)
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>  completion: ((Result&lt;AdobeVisitor, Error&gt;) <span style="color:#960050;background-color:#1e0010">→</span> Void)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>knownId</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The known identifier.</td>
+<td align="left"><code>knownId</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The known identifier.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>adobeDataProviderId</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The Adobe data provider identifier.</td>
+<td align="left"><code>adobeDataProviderId</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The Adobe data provider identifier.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>authState</code></td>
-<td style="text-align:left"><code>AdobeVisitorAuthState</code></td>
-<td style="text-align:left">The authenticated state.</td>
+<td align="left"><code>authState</code></td>
+<td align="left"><code>AdobeVisitorAuthState</code></td>
+<td align="left">The authenticated state.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>completion</code></td>
-<td style="text-align:left"><code>Result&lt;AdobeVisitor, Error&gt;</code></td>
-<td style="text-align:left">The Adobe response listener.</td>
+<td align="left"><code>completion</code></td>
+<td align="left"><code>Result&lt;AdobeVisitor, Error&gt;</code></td>
+<td align="left">The Adobe response listener.</td>
 </tr>
 </tbody>
 </table>
+
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span><span style="color:#f92672">..</span>.
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>tealium<span style="color:#f92672">?.</span>adobeVisitorApi<span style="color:#f92672">?.</span>linkECIDToKnownIdentifier(
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;myidentifier&#34;</span>, adobeDataProviderId: <span style="color:#e6db74">&#34;123456&#34;</span>, .unknown
-</span></span><span style="display:flex;"><span>  )
-</span></span></code></pre></div><h3 id="resetvisitor"><code>resetVisitor()</code></h3>
+</span></span><span style="display:flex;"><span>  )</span></span></code></pre></div>
+<h3 id="resetvisitor"><code>resetVisitor()</code></h3>
+
 <p>Resets the visitor ECID by retrieving a new one on the next tracking call.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetVisitor()
-</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>resetVisitor()</span></span></code></pre></div>
+<p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
-</span></span><span style="display:flex;"><span>tealium?.adobeVisitorApi?.resetVisitor()
-</span></span></code></pre></div><h3 id="resetvisitorid"><code>resetVisitorId()</code></h3>
+</span></span><span style="display:flex;"><span>tealium?.adobeVisitorApi?.resetVisitor()</span></span></code></pre></div>
+<h3 id="resetvisitorid"><code>resetVisitorId()</code></h3>
+
 <p>Generates a new visitor ID for the user.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.resetVisitorId()
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.resetVisitorId()</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>killVisitorSession</code></td>
-<td style="text-align:left"><code>Bool</code></td>
-<td style="text-align:left">(Optional) Defaults to <code>true</code> if no params are passed or pass <code>false</code> if you do not wish to terminate the visitor session</td>
-<td style="text-align:left"><code>true</code></td>
+<td align="left"><code>killVisitorSession</code></td>
+<td align="left"><code>Bool</code></td>
+<td align="left">(Optional) Defaults to <code>true</code> if no params are passed or pass <code>false</code> if you do not wish to terminate the visitor session</td>
+<td align="left"><code>true</code></td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="starttimedevent"><code>startTimedEvent()</code></h3>
+
 <p>Starts a timed event with the given name. If this method is called again with the same event name, it is ignored if the event has not been ended or canceled. The event start time is not persisted.</p>
+
 <p>If optional data is passed along with the event name, it is added to the track call when the timer is stopped with the <a href="#stoptimedevent"><code>stopTimedEvent()</code></a> call.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.startTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>, with: [<span style="color:#e6db74">&#34;custom_key&#34;</span>: <span style="color:#e6db74">&#34;custom_value&#34;</span>])
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.startTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>, with: [<span style="color:#e6db74">&#34;custom_key&#34;</span>: <span style="color:#e6db74">&#34;custom_value&#34;</span>])</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>name</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the timed event</td>
+<td align="left"><code>name</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the timed event</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>[&quot;custom_key&quot;: &quot;custom_value&quot;]</code> (optional)</td>
-<td style="text-align:left"><code>Map</code></td>
-<td style="text-align:left">An object of key-value pair data to be tracked in the data layer</td>
+<td align="left"><code>[&quot;custom_key&quot;: &quot;custom_value&quot;]</code> (optional)</td>
+<td align="left"><code>Map</code></td>
+<td align="left">An object of key-value pair data to be tracked in the data layer</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="stoptimedevent"><code>stopTimedEvent()</code></h3>
+
 <p>Stops the timer for a timed event which triggers the <code>timed_event</code> tracking call.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.stopTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.stopTimedEvent(name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>name</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the timed event</td>
+<td align="left"><code>name</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the timed event</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="tealium"><code>Tealium()</code></h3>
+
 <p>Constructor for a new <code>Tealium</code> object.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Tealium(config: TealiumConfig, completion: Closure)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Tealium(config: TealiumConfig, completion: Closure)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>config</code></td>
-<td style="text-align:left"><code>TealiumConfig</code></td>
-<td style="text-align:left">Initialize the Tealium object with a <code>TealiumConfig</code> object containing your account details.</td>
+<td align="left"><code>config</code></td>
+<td align="left"><code>TealiumConfig</code></td>
+<td align="left">Initialize the Tealium object with a <code>TealiumConfig</code> object containing your account details.</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>completion</code></td>
-<td style="text-align:left"><code>Closure</code></td>
-<td style="text-align:left">(Optional) Completion closure to be called on init completion<code>()-&gt; Void )?</code></td>
+<td align="left"><code>completion</code></td>
+<td align="left"><code>Closure</code></td>
+<td align="left">(Optional) Completion closure to be called on init completion<code>()-&gt; Void )?</code></td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="track"><code>track()</code></h3>
+
 <p>Tracks a screen view or event with optional associated data using the <code>TealiumView</code> or <code>TealiumEvent</code> type.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealView = TealiumView(<span style="color:#e6db74">&#34;VIEW_NAME&#34;</span>, dataLayer: [<span style="color:#e6db74">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;value&#34;</span>])
-</span></span><span style="display:flex;"><span>tealium?.track(tealView)
-</span></span></code></pre></div><table>
+</span></span><span style="display:flex;"><span>tealium?.track(tealView)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>viewName</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the screen to be tracked</td>
-<td style="text-align:left"><code>viewName: &quot;Buy Now&quot;</code></td>
+<td align="left"><code>viewName</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the screen to be tracked</td>
+<td align="left"><code>viewName: &quot;Buy Now&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dataLayer</code></td>
-<td style="text-align:left"><code>Dictionary</code></td>
-<td style="text-align:left">An object of key-value pairs with data associated with the event to be tracked</td>
-<td style="text-align:left"><code>data: data: [&quot;product_id&quot; : [&quot;widget123&quot;]]</code></td>
+<td align="left"><code>dataLayer</code></td>
+<td align="left"><code>Dictionary</code></td>
+<td align="left">An object of key-value pairs with data associated with the event to be tracked</td>
+<td align="left"><code>data: data: [&quot;product_id&quot; : [&quot;widget123&quot;]]</code></td>
 </tr>
 </tbody>
 </table>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealEvent = TealiumEvent(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, dataLayer: [<span style="color:#e6db74">&#34;key&#34;</span>: <span style="color:#e6db74">&#34;value&#34;</span>])
-</span></span><span style="display:flex;"><span>tealium?.track(tealEvent)
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>The value passed to <code>viewName</code> appears in the data layer as the variable <code>tealium_event</code>.</p>
+</span></span><span style="display:flex;"><span>tealium?.track(tealEvent)</span></span></code></pre></div>
+<p class="note"><i class="fas fa-info-circle"></i>The value passed to <code>viewName</code> appears in the data layer as the variable <code>tealium_event</code>.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameters</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>eventName</code></td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">The name of the event to be tracked</td>
-<td style="text-align:left"><code>eventName: &quot;Buy Now&quot;</code></td>
+<td align="left"><code>eventName</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">The name of the event to be tracked</td>
+<td align="left"><code>eventName: &quot;Buy Now&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dataLayer</code></td>
-<td style="text-align:left"><code>Dictionary</code></td>
-<td style="text-align:left">An object of key-value pairs with data associated with the event to be tracked</td>
-<td style="text-align:left"><code>data: data: [&quot;product_id&quot; : [&quot;widget123&quot;]]</code></td>
+<td align="left"><code>dataLayer</code></td>
+<td align="left"><code>Dictionary</code></td>
+<td align="left">An object of key-value pairs with data associated with the event to be tracked</td>
+<td align="left"><code>data: data: [&quot;product_id&quot; : [&quot;widget123&quot;]]</code></td>
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>The value passed to <code>eventName</code> appears in the data layer as the variable <code>tealium_event</code>.</p>
+
 <h3 id="visitor"><code>visitor</code></h3>
+
 <p>Returns the full AdobeVisitor instance.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium: Tealium?
 </span></span><span style="display:flex;"><span><span style="color:#75715e">//...</span>
@@ -7512,11 +7576,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> nextRefresh: Date? = visitor?.nextRefresh
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> blob: String? = visitor?.blob
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> region: String? = visitor?.dcsRegion
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ttl: String? = visitor?.idSyncTTL
-</span></span></code></pre></div><h3 id="visitorid"><code>visitorId</code></h3>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> ttl: String? = visitor?.idSyncTTL</span></span></code></pre></div>
+<h3 id="visitorid"><code>visitorId</code></h3>
+
 <p>Returns a randomly generated and unique persistent visitor ID.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> visitorId: String? = tealium.visitorId
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> visitorId: String? = tealium.visitorId</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

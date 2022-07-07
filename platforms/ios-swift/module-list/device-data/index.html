@@ -7170,30 +7170,44 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The DeviceData module gathers information about the current device and adds it to the data layer. Usage of this module is recommended.</p>
+
 <p>The following platforms are supported:</p>
+
 <ul>
 <li>iOS</li>
 <li>tvOS</li>
 <li>watchOS</li>
 <li>macOS</li>
 </ul>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>UIKit</li>
 <li>Darwin</li>
 <li>CoreTelephony</li>
 <li>WatchKit</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>This module is included as part of the Core library and does not require separate installation.</p>
+
 <h2 id="initialize">Initialize</h2>
+
 <p>To initialize the module, verify that it&rsquo;s specified on the <code>TealiumConfig</code> <a href="/platforms/ios-swift/api/tealium-config/#collectors"><code>collectors</code></a> property</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.collectors = [Collectors.DeviceData]
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>If you don&rsquo;t specify any optional collectors on your <code>TealiumConfig</code> instance, then this module is automatically enabled.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.collectors = [Collectors.DeviceData]</span></span></code></pre></div>
+<p class="note"><i class="fas fa-info-circle"></i>If you don&rsquo;t specify any optional collectors on your <code>TealiumConfig</code> instance, then this module is automatically enabled.</p>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call while the module is enabled:</p>
+
 <table>
 <thead>
 <tr>
@@ -7202,142 +7216,170 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>app_memory_usage</code></td>
 <td>Memory being used by the current process/app in Megabytes</td>
 <td><code>35.75MB</code></td>
 </tr>
+
 <tr>
 <td><code>carrier</code></td>
 <td>Mobile network carrier name</td>
 <td><code>EE</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_iso</code></td>
 <td>Mobile carrier ISO</td>
 <td><code>gb</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mcc</code></td>
 <td>Carrier mobile country code</td>
 <td><code>234</code></td>
 </tr>
+
 <tr>
 <td><code>carrier_mnc</code></td>
 <td>Carrier mobile network code</td>
 <td><code>34</code></td>
 </tr>
+
 <tr>
 <td><code>connection_type</code></td>
 <td>Current connection type</td>
 <td><code>wifi</code>, <code>cellular</code></td>
 </tr>
+
 <tr>
 <td><code>device</code></td>
 <td>Consumer device name</td>
 <td><code>iPhone 7 Plus</code></td>
 </tr>
+
 <tr>
 <td><code>device_architecture</code></td>
 <td>Device architecture</td>
 <td><code>64</code></td>
 </tr>
+
 <tr>
 <td><code>device_battery_percent</code></td>
 <td>Current battery percentage at time of track call</td>
 <td><code>58</code></td>
 </tr>
+
 <tr>
 <td><code>device_cputype</code></td>
 <td>Device CPU type</td>
 <td><code>ARM64v8</code></td>
 </tr>
+
 <tr>
 <td><code>device_ischarging</code></td>
 <td>Boolean to indicate if device is currently charging at time of track call</td>
 <td><code>true</code></td>
 </tr>
+
 <tr>
 <td><code>device_language</code></td>
 <td>Current device language</td>
 <td><code>en-US</code></td>
 </tr>
+
 <tr>
 <td><code>device_orientation</code></td>
 <td>Simple orientation</td>
 <td><code>Portrait</code>, <code>Landscape</code></td>
 </tr>
+
 <tr>
 <td><code>device_orientation_extended</code></td>
 <td>Full orientation</td>
 <td><code>Face Up</code></td>
 </tr>
+
 <tr>
 <td><code>device_os_version</code></td>
 <td>Operating system version</td>
 <td><code>11.1</code></td>
 </tr>
+
 <tr>
 <td><code>device_resolution</code></td>
 <td>Screen resolution</td>
 <td><code>1080x1920</code></td>
 </tr>
+
 <tr>
 <td><code>device_type</code></td>
 <td>Apple internal device identifier</td>
 <td><code>iPhone8,4</code></td>
 </tr>
+
 <tr>
 <td><code>memory_active*</code></td>
 <td>Total active memory on the device</td>
 <td><code>997.78MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_compressed*</code></td>
 <td>Total compressed memory on the device</td>
 <td><code>153.39MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_free*</code></td>
 <td>Total free memory on the device</td>
 <td><code>120.81MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_inactive*</code></td>
 <td>Total inactive memory on the device</td>
 <td><code>441.83MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_physical*</code></td>
 <td>Total physical memory on the device (RAM) in Megabytes</td>
 <td><code>2013.50MB</code></td>
 </tr>
+
 <tr>
 <td><code>memory_wired*</code></td>
 <td>Total wired memory on the device</td>
 <td><code>207.12MB</code></td>
 </tr>
+
 <tr>
 <td><code>model_name</code></td>
 <td>Model name</td>
 <td><code>iPhone 7 Plus</code></td>
 </tr>
+
 <tr>
 <td><code>model_variant</code></td>
 <td>Model variant (generally indicates which radio technology is available on the device)</td>
 <td><code>CDMA</code>, <code>GSM</code>, <code>WiFi</code>, <code>Cellular</code></td>
 </tr>
+
 <tr>
 <td><code>network_iso_country_code</code></td>
 <td>Mobile network ISO country code</td>
 <td><code>gb</code></td>
 </tr>
+
 <tr>
 <td><code>os_name</code></td>
 <td>Operating System Name</td>
 <td><code>iOS</code>, <code>tvOS</code>, <code>watchOS</code>, <code>macOS</code></td>
 </tr>
+
 <tr>
 <td><code>platform</code></td>
 <td>Operating System Name</td>
@@ -7345,6 +7387,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <ul>
 <li>These variables are only transmitted if you explicitly enable memory data collection via the <code>TealiumConfig</code> object. They are disabled by default.</li>
 </ul>

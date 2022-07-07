@@ -7170,77 +7170,80 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="install">Install</h2>
+  
+
+<h2 id="install">Install</h2>
+
 <p>Install the Install Referrer module with Maven or manually.</p>
+
 <h3 id="maven">Maven</h3>
+
 <p>To install the Install Referrer module with Maven:</p>
+
 <ol>
-<li>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</li>
-</ol>
+<li><p>In your project&rsquo;s top-level <code>build.gradle</code> file, add the following Maven repository:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>maven <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="2">
-<li>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</li>
-</ol>
+</span></span><span style="display:flex;"><span>  url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>In your project module&rsquo;s <code>build.gradle</code> file, add the following Maven dependency:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies<span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// only required if you do not have this reference
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.3.0&#39;</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-install-referrer:1.1.0&#39;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// only required if you do not already have this reference and require lifecycle tracking
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-lifecycle:1.1.0&#39;</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Google&#39;s Install Referrer API
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.android.installreferrer:installreferrer:1.0&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><p class="note"><i class="fas fa-info-circle"></i>The <a href="https://developer.android.com/google/play/installreferrer/library">Google Install Referrer API</a> is a dependency for this module, but is not automatically added for you. Add the module to your build.</p>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// only required if you do not have this reference
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.3.0&#39;</span>
+</span></span><span style="display:flex;"><span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-install-referrer:1.1.0&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// only required if you do not already have this reference and require lifecycle tracking
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-lifecycle:1.1.0&#39;</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Google&#39;s Install Referrer API
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.android.installreferrer:installreferrer:1.0&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div>
+<p class="note"><i class="fas fa-info-circle"></i>The <a href="https://developer.android.com/google/play/installreferrer/library">Google Install Referrer API</a> is a dependency for this module, but is not automatically added for you. Add the module to your build.</p></li>
+</ol>
+
 <h3 id="manual">Manual</h3>
+
 <p>To install the Install Referrer module manually:</p>
+
 <ol>
-<li>
-<p>Download the Tealium <a href="https://github.com/Tealium/tealium-kotlin/tree/master/installreferrer">Install Referrer</a> module.</p>
-</li>
-<li>
-<p>In your top-level <code>build.gradle</code> file, verify the following:</p>
-</li>
-</ol>
+<li><p>Download the Tealium <a href="https://github.com/Tealium/tealium-kotlin/tree/master/installreferrer">Install Referrer</a> module.</p></li>
+
+<li><p>In your top-level <code>build.gradle</code> file, verify the following:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>allprojects <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      repositories <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>        jcenter<span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>        flatDir <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            dirs <span style="color:#e6db74">&#39;libs&#39;</span>
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><ol start="3">
-<li>
-<p>Copy the file <code>tealium-kotlin.installreferrer-1.1.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p>
-</li>
-<li>
-<p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
-</li>
-</ol>
+</span></span><span style="display:flex;"><span>  repositories <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    jcenter<span style="color:#f92672">()</span>
+</span></span><span style="display:flex;"><span>    flatDir <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>        dirs <span style="color:#e6db74">&#39;libs&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>Copy the file <code>tealium-kotlin.installreferrer-1.1.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p></li>
+
+<li><p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// only required if you do not already have this reference
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin-1.3.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.installreferrer-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// only required if you do not already have this reference and require lifecycle tracking
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.lifecycle-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Google&#39;s Install Referrer API
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      implementation <span style="color:#e6db74">&#39;com.android.installreferrer:installreferrer:1.0&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div><h2 id="data-layer">Data Layer</h2>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// only required if you do not already have this reference
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin-1.3.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.installreferrer-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// only required if you do not already have this reference and require lifecycle tracking
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.lifecycle-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#75715e">// Google&#39;s Install Referrer API
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>  implementation <span style="color:#e6db74">&#39;com.android.installreferrer:installreferrer:1.0&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+</ol>
+
+<h2 id="data-layer">Data Layer</h2>
+
 <p>Expect the following referral data as retrieved from the Google Play</p>
 <pre tabindex="0"><code>&#34;install_referrer&#34; - the referrer URL of the install package
 &#34;install_referrer_begin_timestamp&#34; - the timestamp, in seconds, of when the referral click happened
-&#34;install_referrer_click_timestamp&#34; - the timestamp, in seconds, of when the installation began
-</code></pre><h2 id="additional-considerations">Additional Considerations</h2>
-<p><strong>Delete the Stored Referrer</strong><br>
+&#34;install_referrer_click_timestamp&#34; - the timestamp, in seconds, of when the installation began</code></pre>
+<h2 id="additional-considerations">Additional Considerations</h2>
+
+<p><strong>Delete the Stored Referrer</strong><br />
 To delete the stored install referrer string, call the <code>remove()</code> method on the Tealium data layer.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// remove one or all of the following keys from the data layer
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>tealium.dataLayer.remove(InstallReferrerConstants.KEY_INSTALL_REFERRER)
 </span></span><span style="display:flex;"><span>tealium.dataLayer.remove(InstallReferrerConstants.KEY_INSTALL_REFERRER_BEGIN_TIMESTAMP)
-</span></span><span style="display:flex;"><span>tealium.dataLayer.remove(InstallReferrerConstants.KEY_INSTALL_REFERRER_CLICK_TIMESTAMP)
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>tealium.dataLayer.remove(InstallReferrerConstants.KEY_INSTALL_REFERRER_CLICK_TIMESTAMP)</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

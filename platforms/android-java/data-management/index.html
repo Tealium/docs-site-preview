@@ -7170,20 +7170,28 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>Some variables are required on every event. To prevent having to manually add required variable data to every event, you have the option to store data as either volatile or persistent. Once data is stored, it will be appended to every event, including lifecycle events.</p>
+
 <p><a href="/platforms/getting-started/mobile-concepts/#data-management">Learn more</a> about Data Management.</p>
+
 <h2 id="persistent-data">Persistent Data</h2>
+
 <p>Persistent data values are stored on the device as <a href="https://developer.android.com/reference/android/content/SharedPreferences">SharedPreferences</a> and are merged into each event. They are preserved between launches of the app.</p>
+
 <p>The <a href="/platforms/android-java/api/data-sources/#getpersistentdatasources"><code>getPersistentDataSources()</code></a> method gets persistent data, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>SharedPreferences sp <span style="color:#f92672">=</span> instance<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataSources</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getPersistentDataSources</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>sp<span style="color:#f92672">.</span><span style="color:#a6e22e">edit</span><span style="color:#f92672">().</span><span style="color:#a6e22e">putInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span><span style="color:#f92672">,</span> sp<span style="color:#f92672">.</span><span style="color:#a6e22e">getInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">commit</span><span style="color:#f92672">();</span>
-</span></span></code></pre></div><h2 id="volatile-data">Volatile Data</h2>
+</span></span><span style="display:flex;"><span>sp<span style="color:#f92672">.</span><span style="color:#a6e22e">edit</span><span style="color:#f92672">().</span><span style="color:#a6e22e">putInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span><span style="color:#f92672">,</span> sp<span style="color:#f92672">.</span><span style="color:#a6e22e">getInt</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INIT_COUNT&#34;</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">)</span> <span style="color:#f92672">+</span> 1<span style="color:#f92672">).</span><span style="color:#a6e22e">commit</span><span style="color:#f92672">();</span></span></span></code></pre></div>
+<h2 id="volatile-data">Volatile Data</h2>
+
 <p>Volatile data values are stored on the device as <a href="https://developer.android.com/reference/android/content/SharedPreferences">SharedPreferences</a> and are merged into to each event. They are discarded upon closing the app and restarting.</p>
+
 <p>The <a href="/platforms/android-java/api/data-sources/#getvolatiledatasources"><code>getVolatileDataSources()</code></a> method gets volatile data, as shown in the following example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>instance<span style="color:#f92672">.</span><span style="color:#a6e22e">getDataSources</span><span style="color:#f92672">().</span><span style="color:#a6e22e">getVolatileDataSources</span><span style="color:#f92672">()</span>
-</span></span><span style="display:flex;"><span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INITIALIZED&#34;</span><span style="color:#f92672">,</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">());</span>
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;KEY_TEALIUM_INITIALIZED&#34;</span><span style="color:#f92672">,</span> System<span style="color:#f92672">.</span><span style="color:#a6e22e">currentTimeMillis</span><span style="color:#f92672">());</span></span></span></code></pre></div>
 </div>
 
 <div class="pv3">

@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealiumvolatiledata">Class: <code>TealiumVolatileData</code></h2>
+  
+
+<h2 id="class-tealiumvolatiledata">Class: <code>TealiumVolatileData</code></h2>
+
 <p>The following summarizes the commonly used methods of the iOS (Swift) <code>TealiumVolatileData</code> class.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,37 +7183,45 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>add()</code></td>
 <td>Add data to all dispatches for the remainder of an active session</td>
 </tr>
+
 <tr>
 <td><code>deleteAllData()</code></td>
 <td>Deletes all data in the volatile data store</td>
 </tr>
+
 <tr>
 <td><code>deleteData()</code></td>
 <td>Deletes data for a specific set of known keys from the volatile data store</td>
 </tr>
+
 <tr>
 <td><code>getData()</code></td>
 <td>Returns all volatile data previously set with the <code>add()</code> method</td>
 </tr>
+
 <tr>
 <td><code>resetSessionId()</code></td>
 <td>Reset the session ID for current session</td>
 </tr>
+
 <tr>
 <td><code>setSessionId()</code></td>
 <td>Override the existing session ID for current session</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="add"><code>add()</code></h3>
+
 <p>Add data to all dispatches for the remainder of an active session.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.add(data)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.add(data)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7218,6 +7230,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>data</code></td>
@@ -7227,13 +7240,16 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="deletealldata"><code>deleteAllData()</code></h3>
+
 <p>Deletes all data in the volatile data store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.deleteAllData()
-</span></span></code></pre></div><h3 id="deletedata"><code>deleteData()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.deleteAllData()</span></span></code></pre></div>
+<h3 id="deletedata"><code>deleteData()</code></h3>
+
 <p>Deletes data for a specific set of known keys from the volatile data store.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.deleteData(forKeys)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.deleteData(forKeys)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7242,6 +7258,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>forKeys</code></td>
@@ -7251,16 +7268,19 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="getdata"><code>getData()</code></h3>
+
 <p>Returns all volatile data previously set with the <code>add()</code> method.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data = tealium?.volatileData()?.getData()
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> data = tealium?.volatileData()?.getData()</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Returns</th>
 <th>Return Type</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td>Volatile data as key-value pairs</td>
@@ -7268,13 +7288,16 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="resetsessionid"><code>resetSessionId()</code></h3>
+
 <p>Reset the session ID for current session.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.resetSessionId()
-</span></span></code></pre></div><h3 id="setsessionid"><code>setSessionId()</code></h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.resetSessionId()</span></span></code></pre></div>
+<h3 id="setsessionid"><code>setSessionId()</code></h3>
+
 <p>Override the existing session ID for current session.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.setSessionId(sessionId)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.volatileData()?.setSessionId(sessionId)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7283,6 +7306,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>sessionId</code></td>

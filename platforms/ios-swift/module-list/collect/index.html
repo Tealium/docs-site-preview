@@ -7170,48 +7170,69 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The Collect module dispatches tracking calls to Tealium Customer Data Hub. Usage of this module is strongly recommended if you are using Customer Data Hub server-side.</p>
+
 <p>As an alternative, if you are using the Tag Management module, you may instead use the Collect tag via Tealium iQ. This may give greater control over the data and events dispatched to the Customer Data Hub, as you may then use load rules and extensions to manipulate the data prior to dispatch. If you are using the Collect tag via Tealium iQ, ensure that the Collect module is <em>disabled</em> to avoid duplicate tracking requests.</p>
+
 <p>The following platforms are supported:</p>
+
 <ul>
 <li>iOS</li>
 <li>tvOS</li>
 <li>watchOS</li>
 <li>macOS</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the Collect module with Swift Package Manager, CocoaPods or Carthage.</p>
+
 <h3 id="swift-package-manager-recommended">Swift Package Manager (Recommended)</h3>
+
 <p>Supported in version 1.9.0+, the Swift Package Manager is the recommended and simplest way to install the Tealium Swift library:</p>
+
 <ol>
 <li>In your Xcode project, select <strong>File &gt; Swift Packages &gt; Add Package Dependency</strong></li>
 <li>Enter the repository URL: <code>https://github.com/tealium/tealium-swift</code></li>
 <li>Configure the version rules. Typically, <code>&quot;Up to next major&quot;</code> is recommended. If the current Tealium Swift library version does not appears in the list, then reset your Swift package cache.</li>
 <li>Select the <code>Collect</code> module from the list of modules to install and add it each of your app targets in your Xcode project, under <strong>Frameworks &gt; Libraries &amp; Embedded Content</strong></li>
 </ol>
+
 <p>Learn more about the <a href="/platforms/ios-swift/install/#swift-package-manager-recommended">Swift Package Manager installation for iOS</a>.</p>
+
 <h3 id="cocoapods">CocoaPods</h3>
+
 <p>To install the Collect module with CocoaPods, add the following pod to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/Collect&#39;</span>
-</span></span></code></pre></div><p>Learn more about the <a href="/platforms/ios-swift/install/#cocoapods">CocoaPods installation for iOS</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/Collect&#39;</span></span></span></code></pre></div>
+<p>Learn more about the <a href="/platforms/ios-swift/install/#cocoapods">CocoaPods installation for iOS</a>.</p>
+
 <h3 id="carthage">Carthage</h3>
+
 <p>To install the Collect module with Carthage, following these steps:</p>
+
 <ol>
-<li>
-<p>Go to the app target&rsquo;s General configuration page in Xcode.</p>
-</li>
-<li>
-<p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
-</li>
+<li><p>Go to the app target&rsquo;s General configuration page in Xcode.</p></li>
+
+<li><p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>TealiumCollect<span style="color:#f92672">.</span>framework</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>TealiumCollect<span style="color:#f92672">.</span>framework
-</span></span></code></pre></div><p><a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
+<p><a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
 <h2 id="initialize">Initialize</h2>
+
 <p>To initialize the module, verify that it&rsquo;s specified on the <code>TealiumConfig</code> <a href="/platforms/ios-swift/api/tealium-config/#collectors"><code>collectors</code></a> property</p>
+
 <p><code>config.dispatchers = [Dispatchers.Collect]</code></p>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call while the module is enabled:</p>
+
 <table>
 <thead>
 <tr>
@@ -7220,6 +7241,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>dispatch_service</code></td>

@@ -7174,36 +7174,51 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="usage">Usage</h2>
+  
+
+<h2 id="usage">Usage</h2>
+
 <p>The TagManagement module is a client-side implementation of the Universal Tag (<code>utag.js</code>) which uses a non-rendered <code>WKWebView</code> instance to execute JavaScript. This module is required in apps that make use of Tealium iQ Tag Management. It is automatically included in Carthage and CocoaPods framework builds.</p>
+
 <h2 id="supported-platforms">Supported Platforms</h2>
+
 <ul>
 <li>iOS</li>
 </ul>
+
 <h2 id="requirements">Requirements</h2>
+
 <ul>
 <li>WebKit (WKWebView)</li>
 </ul>
+
 <h2 id="install">Install</h2>
+
 <p>Install the TagManagement module with CocoaPods or Carthage.</p>
+
 <h3 id="cocoapods">CocoaPods</h3>
+
 <p>To install the TagManagement module with CocoaPods, add the following pod to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumTagManagement&#39;</span>
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;tealium-swift/TealiumTagManagement&#39;</span></span></span></code></pre></div>
+<p>The framework is auto-instantiated. It has a dependency on the <code>TealiumCore</code> pod. <a href="/platforms/ios-swift/install/#cocoapods">Learn more</a> about CocoaPods installation for iOS.</p>
+
 <h3 id="carthage">Carthage</h3>
+
 <p>To install the TagManagement module with Carthage, following these steps:</p>
+
 <ol>
-<li>
-<p>Go to the app target&rsquo;s General configuration page in Xcode.</p>
-</li>
-<li>
-<p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
-</li>
+<li><p>Go to the app target&rsquo;s General configuration page in Xcode.</p></li>
+
+<li><p>Add the following framework to the <strong>Embedded Binaries</strong> section:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumTagManagement</span><span style="color:#f92672">.</span>framework</span></span></code></pre></div></li>
 </ol>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span><span style="color:#66d9ef">TealiumTagManagement</span><span style="color:#f92672">.</span>framework
-</span></span></code></pre></div><p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
+<p>The framework is auto-instantiated. It has a dependency on <code>TealiumCore</code>. No additional import statements are necessary. <a href="/platforms/ios-swift/install/#carthage">Learn more</a> about Carthage installation for iOS.</p>
+
 <h2 id="data-layer">Data Layer</h2>
+
 <p>The following variables are transmitted with each tracking call:</p>
+
 <table>
 <thead>
 <tr>
@@ -7213,6 +7228,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>dispatch_service</code></td>
@@ -7222,13 +7238,19 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h2 id="public-api">Public API</h2>
+
 <p>The WKWebView protocols are accessible by adding another object conforming the <code>WKWebView</code> delegate to the module&rsquo;s multicast delegate:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.tagManagement()?.delegates.add(MY_OBJECT)
-</span></span></code></pre></div><h2 id="about-wkwebview">About WKWebView</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.tagManagement()?.delegates.add(MY_OBJECT)</span></span></code></pre></div>
+<h2 id="about-wkwebview">About WKWebView</h2>
+
 <p>Prior to version 1.7.0, this module used <code>UIWebView</code> which is now deprecated in favor of <code>WKWebView</code>. The OS requires that <code>WKWebView</code> always be attached to a <code>UIView</code>, even if it is not rendered. If it is not attached to a UIView, the OS severely throttles the performance and the JavaScript executes suboptimally. <strong>To accommodate this the Tag Management module attempts to attach the non-rendered WKWebView to the root UIView of your app.</strong></p>
+
 <p>If your app has a complex view hierarchy and the module cannot detect the <code>rootViewController</code>, initialize <a href="/platforms/ios-swift/class-definitions/tealium-config/">TealiumConfig</a> with a view to attach to in <code>viewDidLoad</code>, <code>viewWillAppear:</code>, or <code>viewDidAppear:</code>.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>Release 1.7.1 significantly improves the auto-detection of views and removes the need to specify a view in most scenarios. But you must test this in your app to verify that tracking calls are sent correctly. See <a href="/platforms/ios-swift/release-notes">Release Notes</a> for full details.</p>
+
 <p>If your app jumps to a <code>UIViewController</code> upon receiving a push notification, and has a different view hierarchy than when Tealium was initialized, you must update the current <code>UIView</code> using the following API method.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">override</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">viewDidLoad</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">super</span>.viewDidLoad()
@@ -7238,10 +7260,13 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>        tealium?.updateRootView(<span style="color:#66d9ef">self</span>.view)
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// Do any additional setup after loading the view.</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>See the sample app <a href="https://github.com/Tealium/tealium-swift/tree/master/samples/Swift-WKWebView">Swift-WKWebView</a> for a full example.</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>See the sample app <a href="https://github.com/Tealium/tealium-swift/tree/master/samples/Swift-WKWebView">Swift-WKWebView</a> for a full example.</p>
+
 <p><code>WKWebView</code> and <code>UIWebView</code> use different methods to store cookies (<code>WKHTTPCookieStore</code> and <code>HTTPCookieStorage</code> respectively), so the module automatically synchronizes cookies the first time that WKWebView is launched. The cookies in <code>HTTPCookieStorage</code> are not deleted, but eventually expire on their own.</p>
+
 <p class="note"><i class="fas fa-info-circle"></i>The <a href="/platforms/ios-swift/api/tealium-config/#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a> method allows you to use your own cookie observer during cookie synchronization, which requires a cookie observer to retrieve cookies on the main thread after setting them. This issue is caused by bugs in <code>WKWebView</code>, which prevents your own observer from being called.</p>
+  
 
 </div>
 

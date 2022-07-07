@@ -7170,181 +7170,224 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <p>The data layer contains built-in variables that collect basic information about the page being tracked. These variables include cookies, standard DOM variables from the page, and Tealium-specific variables about the loaded configuration.</p>
+  
+
+<p>The data layer contains built-in variables that collect basic information about the page being tracked. These variables include cookies, standard DOM variables from the page, and Tealium-specific variables about the loaded configuration.</p>
+
 <p><a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Data-Layer-Variables/ta-p/9427">Learn more</a> about the types of data layer variables available.</p>
+
 <h2 id="standard-page-data">Standard Page Data</h2>
+
 <p>The following variables are generated from the standard JavaScript properties available for the web page.</p>
+
 <p>The example values shown are based on the following page URL:</p>
+
 <p><code>http://www.example.com/path/file.html?param1=value1#hash=fragment</code></p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Variable</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Variable</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>dom.domain</code></td>
-<td style="text-align:left">The full domain of the URL. Source: location.hostname</td>
-<td style="text-align:left"><code>www.example.com</code></td>
+<td align="left"><code>dom.domain</code></td>
+<td align="left">The full domain of the URL. Source: location.hostname</td>
+<td align="left"><code>www.example.com</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.hash</code></td>
-<td style="text-align:left">The hash fragment of the URL (excluding the # character). Source: location.hash</td>
-<td style="text-align:left"><code>hash=fragment</code></td>
+<td align="left"><code>dom.hash</code></td>
+<td align="left">The hash fragment of the URL (excluding the # character). Source: location.hash</td>
+<td align="left"><code>hash=fragment</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.pathname</code></td>
-<td style="text-align:left">The path of the URL, excluding the query parameters and domain. Source: location.pathname</td>
-<td style="text-align:left"><code>&quot;/path/file.html&quot;</code></td>
+<td align="left"><code>dom.pathname</code></td>
+<td align="left">The path of the URL, excluding the query parameters and domain. Source: location.pathname</td>
+<td align="left"><code>&quot;/path/file.html&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.query_string</code></td>
-<td style="text-align:left">The full query string of the URL. Source: location.search</td>
-<td style="text-align:left"><code>param1=value1</code></td>
+<td align="left"><code>dom.query_string</code></td>
+<td align="left">The full query string of the URL. Source: location.search</td>
+<td align="left"><code>param1=value1</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.referrer</code></td>
-<td style="text-align:left">URL of previous page. Source: document.referrer</td>
-<td style="text-align:left"></td>
+<td align="left"><code>dom.referrer</code></td>
+<td align="left">URL of previous page. Source: document.referrer</td>
+<td align="left"></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.title</code></td>
-<td style="text-align:left">Text in the &lt;title&gt; tag. Source: document.title</td>
-<td style="text-align:left"><code>&quot;Page Title&quot; </code></td>
+<td align="left"><code>dom.title</code></td>
+<td align="left">Text in the &lt;title&gt; tag. Source: document.title</td>
+<td align="left"><code>&quot;Page Title&quot;</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.url</code></td>
-<td style="text-align:left">The full URL of the page. Source: document.URL</td>
-<td style="text-align:left"><code>http://www.example.com/ PATH/FILE.html?param1=VALUE#hash=FRAGMENT</code></td>
+<td align="left"><code>dom.url</code></td>
+<td align="left">The full URL of the page. Source: document.URL</td>
+<td align="left"><code>http://www.example.com/ PATH/FILE.html?param1=VALUE#hash=FRAGMENT</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.viewport_height</code></td>
-<td style="text-align:left">The height of the browser view port. Source: window.innerHeight or document.documentElement.clientHeight</td>
-<td style="text-align:left"><code>1320</code></td>
+<td align="left"><code>dom.viewport_height</code></td>
+<td align="left">The height of the browser view port. Source: window.innerHeight or document.documentElement.clientHeight</td>
+<td align="left"><code>1320</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>dom.viewport_width</code></td>
-<td style="text-align:left">The width of the browser view port. Source: window.innerWidth or document.documentElement.clientWidth</td>
-<td style="text-align:left"><code>1278</code></td>
+<td align="left"><code>dom.viewport_width</code></td>
+<td align="left">The width of the browser view port. Source: window.innerWidth or document.documentElement.clientWidth</td>
+<td align="left"><code>1278</code></td>
 </tr>
 </tbody>
 </table>
+
 <h2 id="cookies">Cookies</h2>
+
 <p>The following variables are stored and maintained in a single cookie named <code>TEAL</code>. Each is a variable in the <code>TEAL</code> object.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Variable</th>
-<th style="text-align:left">Description</th>
-<th style="text-align:left">Example</th>
+<th align="left">Variable</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>tealium)_session_event_number</code></td>
-<td style="text-align:left">The number of events in the current session.</td>
-<td style="text-align:left"><code>2</code></td>
+<td align="left"><code>tealium)_session_event_number</code></td>
+<td align="left">The number of events in the current session.</td>
+<td align="left"><code>2</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tealium_session_number</code></td>
-<td style="text-align:left">The number of sessions for this unique visitor.</td>
-<td style="text-align:left"><code>1</code></td>
+<td align="left"><code>tealium_session_number</code></td>
+<td align="left">The number of sessions for this unique visitor.</td>
+<td align="left"><code>1</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tealium_session_id</code></td>
-<td style="text-align:left">The unique identifier for the session.</td>
-<td style="text-align:left"><code>1628542077230</code></td>
+<td align="left"><code>tealium_session_id</code></td>
+<td align="left">The unique identifier for the session.</td>
+<td align="left"><code>1628542077230</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tealium_visitor_id</code></td>
-<td style="text-align:left">A unique identifier for the visitor. May be 40 characters or more.</td>
-<td style="text-align:left"><code>016297481...</code></td>
+<td align="left"><code>tealium_visitor_id</code></td>
+<td align="left">A unique identifier for the visitor. May be 40 characters or more.</td>
+<td align="left"><code>016297481...</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>The following is an example of the document.cookie format of the TEAL cookie, which shows the variable values separated by <code>$</code> characters.</p>
+
 <p><code>TEAL=v:927b2ebc092a70110329356772472215264145f9fa1$t:1628543914615$s:1628542077230%3Bexp-sess$sn:1$en:3</code></p>
+
 <h2 id="tealium-data">Tealium Data</h2>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Variable</th>
-<th style="text-align:left">Name</th>
-<th style="text-align:left">Example</th>
+<th align="left">Variable</th>
+<th align="left">Name</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left">tealium_account</td>
-<td style="text-align:left">Account Name</td>
-<td style="text-align:left">sandbox</td>
+<td align="left">tealium_account</td>
+<td align="left">Account Name</td>
+<td align="left">sandbox</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_datasource</td>
-<td style="text-align:left">Data Source Key</td>
-<td style="text-align:left">abc123</td>
+<td align="left">tealium_datasource</td>
+<td align="left">Data Source Key</td>
+<td align="left">abc123</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_environment</td>
-<td style="text-align:left">Publish Environment</td>
-<td style="text-align:left">prod</td>
+<td align="left">tealium_environment</td>
+<td align="left">Publish Environment</td>
+<td align="left">prod</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_event</td>
-<td style="text-align:left">Tealium Event Name</td>
-<td style="text-align:left">my_event</td>
+<td align="left">tealium_event</td>
+<td align="left">Tealium Event Name</td>
+<td align="left">my_event</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_library_name</td>
-<td style="text-align:left">Library Name</td>
-<td style="text-align:left">tealium.js</td>
+<td align="left">tealium_library_name</td>
+<td align="left">Library Name</td>
+<td align="left">tealium.js</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_library_version</td>
-<td style="text-align:left">Library Version</td>
-<td style="text-align:left">5.0.3</td>
+<td align="left">tealium_library_version</td>
+<td align="left">Library Version</td>
+<td align="left">5.0.3</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_profile</td>
-<td style="text-align:left">Account Profile</td>
-<td style="text-align:left">main</td>
+<td align="left">tealium_profile</td>
+<td align="left">Account Profile</td>
+<td align="left">main</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_random</td>
-<td style="text-align:left">Random Number</td>
-<td style="text-align:left">7782219645308327</td>
+<td align="left">tealium_random</td>
+<td align="left">Random Number</td>
+<td align="left">7782219645308327</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_timestamp_epoch</td>
-<td style="text-align:left">Current Unix timestamp in seconds</td>
-<td style="text-align:left">1522956509</td>
+<td align="left">tealium_timestamp_epoch</td>
+<td align="left">Current Unix timestamp in seconds</td>
+<td align="left">1522956509</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_timestamp_local</td>
-<td style="text-align:left">Local Timestamp</td>
-<td style="text-align:left">2018-04-05T12:28:29.019</td>
+<td align="left">tealium_timestamp_local</td>
+<td align="left">Local Timestamp</td>
+<td align="left">2018-04-05T12:28:29.019</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_timestamp_utc</td>
-<td style="text-align:left">UTC Timestamp</td>
-<td style="text-align:left">2018-04-05T19:28:29.019z</td>
+<td align="left">tealium_timestamp_utc</td>
+<td align="left">UTC Timestamp</td>
+<td align="left">2018-04-05T19:28:29.019z</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_cookie_domain</td>
-<td style="text-align:left">Domain where TEAL cookie is set</td>
-<td style="text-align:left">example.com</td>
+<td align="left">tealium_cookie_domain</td>
+<td align="left">Domain where TEAL cookie is set</td>
+<td align="left">example.com</td>
 </tr>
+
 <tr>
-<td style="text-align:left">tealium_domain</td>
-<td style="text-align:left">Domain of website</td>
-<td style="text-align:left">example.com</td>
+<td align="left">tealium_domain</td>
+<td align="left">Domain of website</td>
+<td align="left">example.com</td>
 </tr>
 </tbody>
 </table>
+
 <h2 id="example-data">Example Data</h2>
+
 <p>The following is an example of the built-in data layer that is automatically available.</p>
 <pre tabindex="0"><code>{
         &#34;cp._ga&#34;: &#34;GA1.2.1370368844.1628542067&#34;,
@@ -7393,9 +7436,11 @@ var utag_data = {
         &#34;timing.fetch_to_response&#34;: 210,
         &#34;timing.fetch_to_complete&#34;: 373,
         &#34;timing.fetch_to_interactive&#34;: 244
-}
-</code></pre><h2 id="how-data-layer-variables-are-flattened">How Data Layer Variables are Flattened</h2>
+}</code></pre>
+<h2 id="how-data-layer-variables-are-flattened">How Data Layer Variables are Flattened</h2>
+
 <p>Adobe Experience Platform Launch events are converted into flattened attribute names in order to meet the Tealium Customer Data Hub specifications.</p>
+
 <p>Here is an example of an Adobe Experience Platform Launch event prior to being flattened:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">digitalData</span> <span style="color:#f92672">=</span> {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">product</span><span style="color:#f92672">:</span> [{
@@ -7425,8 +7470,8 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>            <span style="color:#a6e22e">cartTotal</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">125</span>
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The flattened event sent by Tealium Collect:</p>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
+<p>The flattened event sent by Tealium Collect:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>{
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;product.productInfo.productID&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;4859&#34;</span>],
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;product.productInfo.productName&#34;</span><span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;Example product&#34;</span>],
@@ -7447,8 +7492,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart.price.shippingMethod&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;UPS&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart.price.priceWithTax&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;120&#34;</span>,
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;cart.price.cartTotal&#34;</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;125&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 
 <div class="pv3">

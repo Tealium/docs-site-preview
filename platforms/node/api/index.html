@@ -7170,8 +7170,12 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="class-tealium">Class: <code>Tealium</code></h2>
+  
+
+<h2 id="class-tealium">Class: <code>Tealium</code></h2>
+
 <p>The following summarizes the commonly used methods of the <code>Tealium</code> class for the Node library.</p>
+
 <table>
 <thead>
 <tr>
@@ -7179,25 +7183,30 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>addModule()</code></td>
 <td>Add a module</td>
 </tr>
+
 <tr>
 <td><code>Tealium()</code></td>
 <td>Constructor to build the Tealium instance</td>
 </tr>
+
 <tr>
 <td><code>track()</code></td>
 <td>Track views and events</td>
 </tr>
 </tbody>
 </table>
+
 <h3 id="addmodule"><code>addModule()</code></h3>
+
 <p>Add a module to the tealium instance</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addModule</span>(<span style="color:#a6e22e">module</span>)
-</span></span></code></pre></div><table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">addModule</span>(<span style="color:#a6e22e">module</span>)</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameter</th>
@@ -7206,6 +7215,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>module</code></td>
@@ -7215,28 +7225,11 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="tealium"><code>Tealium()</code></h3>
+
 <p>Constructor to build the Tealium instance</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>(<span style="color:#a6e22e">config</span>);
-</span></span></code></pre></div><table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>config</code></td>
-<td>var</td>
-<td>Tealium configuration object data as key-value pairs</td>
-<td><code>{&quot;account&quot;:&quot;ACCOUNT&quot;, &quot;profile&quot;:&quot;PROFILE&quot;, &quot;datasource&quot;:&quot;DATASOURCE&quot;};</code></td>
-</tr>
-</tbody>
-</table>
-<p>The <code>config</code> object parameter has the following has the following key-value pairs</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>(<span style="color:#a6e22e">config</span>);</span></span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -7246,6 +7239,29 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
+<tbody>
+<tr>
+<td><code>config</code></td>
+<td>var</td>
+<td>Tealium configuration object data as key-value pairs</td>
+<td><code>{&quot;account&quot;:&quot;ACCOUNT&quot;, &quot;profile&quot;:&quot;PROFILE&quot;, &quot;datasource&quot;:&quot;DATASOURCE&quot;};</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>The <code>config</code> object parameter has the following has the following key-value pairs</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+<th>Example</th>
+</tr>
+</thead>
+
 <tbody>
 <tr>
 <td><code>account</code></td>
@@ -7253,12 +7269,14 @@ var utag_data = {
 <td>Tealium profile name</td>
 <td><code>&quot;companyXYZ&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>profile</code></td>
 <td><code>String</code></td>
 <td>Tealium profile name</td>
 <td><code>&quot;main&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>datasource</code></td>
 <td><code>String</code></td>
@@ -7267,10 +7285,13 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <h3 id="track"><code>track()</code></h3>
+
 <p>Tracks views and events.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">tealium</span>.<span style="color:#a6e22e">track</span>(<span style="color:#a6e22e">event</span>, <span style="color:#a6e22e">data</span>); 
-</span></span></code></pre></div><table>
+</span></span></code></pre></div>
+<table>
 <thead>
 <tr>
 <th>Parameters</th>
@@ -7279,6 +7300,7 @@ var utag_data = {
 <th>Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>event</code></td>
@@ -7286,6 +7308,7 @@ var utag_data = {
 <td>Name of the event (sets the value of <code>tealium_event</code>)</td>
 <td><code>&quot;event&quot;</code></td>
 </tr>
+
 <tr>
 <td><code>data</code></td>
 <td><code>Dictionary</code></td>

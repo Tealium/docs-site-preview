@@ -7170,14 +7170,20 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="track-views">Track Views</h2>
+  
+
+<h2 id="track-views">Track Views</h2>
+
 <p>The <a href="/platforms/python/api/#trackevent"><code>trackEvent()</code></a> method is used to track views, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>trackEvent(<span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, data, callback)
-</span></span></code></pre></div><p>The parameters <code>data</code> and <code>callback</code> are optional.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>trackEvent(<span style="color:#e6db74">&#34;SCREEN_NAME&#34;</span>, data, callback)</span></span></code></pre></div>
+<p>The parameters <code>data</code> and <code>callback</code> are optional.</p>
+
 <h2 id="track-events">Track Events</h2>
+
 <p>The same <a href="/platforms/python/api/#trackevent"><code>trackEvent()</code></a> method is used to track events, as shown in the following example:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>trackEvent(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, data, callback)
-</span></span></code></pre></div><p>The parameters <code>data</code> and <code>callback</code> are optional.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>trackEvent(<span style="color:#e6db74">&#34;EVENT_NAME&#34;</span>, data, callback)</span></span></code></pre></div>
+<p>The parameters <code>data</code> and <code>callback</code> are optional.</p>
+
 <p>The following example demonstrates an event with the optional data and callback arguments provided:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">tealiumCallback</span>(info, success, error<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> error <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> <span style="color:#66d9ef">None</span>:
@@ -7188,8 +7194,7 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>eventData <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#39;KEY&#39;</span>: <span style="color:#e6db74">&#39;VALUE&#39;</span>}
 </span></span><span style="display:flex;"><span>teal<span style="color:#f92672">.</span>trackEvent(<span style="color:#e6db74">&#39;EVENT_NAME&#39;</span>,
 </span></span><span style="display:flex;"><span>                data:eventData,
-</span></span><span style="display:flex;"><span>                callback:tealiumCallback) 
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>                callback:tealiumCallback) </span></span></code></pre></div>
 </div>
 
 <div class="pv3">

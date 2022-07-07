@@ -7170,24 +7170,32 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="install">Install</h2>
+  
+
+<h2 id="install">Install</h2>
+
 <p>The Lifecycle Tracking module must be added to your app. Install the module with CocoaPods or manually similar to the Tealium for iOS library.</p>
+
 <p>In any abstraction class (like <code>TealiumHelper.h</code>) replace any <code>@import TealiumIOS</code> with <code>@import TealiumIOSLifecycle</code>.</p>
+
 <h3 id="cocoapods">CocoaPods</h3>
+
 <p>To install the Lifecycle Tracking module with CocoaPods, add the following to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;TealiumIOSLifecycle&#39;</span>
-</span></span></code></pre></div><h3 id="manual">Manual</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-perl" data-lang="perl"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#39;TealiumIOSLifecycle&#39;</span></span></span></code></pre></div>
+<h3 id="manual">Manual</h3>
+
 <p>To install the Lifecycle Tracking module manually, following these steps:</p>
+
 <ol>
-<li>
-<p>Download the <a href="https://github.com/Tealium/tealium-ios/tree/master/TealiumIOSLifecycle.framework">Lifecycle Tracking module</a>.</p>
-</li>
-<li>
-<p>Add the <code>TealiumIOSLifecycle.framework</code> file to your project (in the Embedded Binaries section).</p>
-</li>
+<li><p>Download the <a href="https://github.com/Tealium/tealium-ios/tree/master/TealiumIOSLifecycle.framework">Lifecycle Tracking module</a>.</p></li>
+
+<li><p>Add the <code>TealiumIOSLifecycle.framework</code> file to your project (in the Embedded Binaries section).</p></li>
 </ol>
+
 <h2 id="track">Track</h2>
+
 <p>The module tracks the following lifecycle events:</p>
+
 <table>
 <thead>
 <tr>
@@ -7195,48 +7203,64 @@ var utag_data = {
 <th>Description</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>launch</code></td>
 <td>App is launched</td>
 </tr>
+
 <tr>
 <td><code>sleep</code></td>
 <td>App sent to background</td>
 </tr>
+
 <tr>
 <td><code>wake</code></td>
 <td>App sent to foreground</td>
 </tr>
+
 <tr>
 <td><code>none</code></td>
 <td>For data added to events but not associated with a lifecycle event</td>
 </tr>
 </tbody>
 </table>
+
 <p>These values are indicated in the <code>lifecycle_type</code> variable.</p>
+
 <h3 id="automatic-tracking">Automatic Tracking</h3>
+
 <p>Configure the Lifecycle Tracking module to automatically listen for the standard <code>UIApplication</code> notifications to automatically trigger <code>launch</code>, <code>wake</code> and <code>sleep</code> events.</p>
+
 <p>Unlink or remove the <code>TealiumIOSLifecycle.framework</code> from your project to remove lifecycle tracking.</p>
-<p><strong>Launch Event</strong><br>
+
+<p><strong>Launch Event</strong><br />
 Generated on detection of <code>UIApplicationDidFinishLaunchingNotification</code>.</p>
-<p><strong>Sleep Event</strong><br>
+
+<p><strong>Sleep Event</strong><br />
 Generated on detection of <code>UIApplicationWillResignActiveNotification</code>.</p>
-<p><strong>Wake Event</strong><br>
+
+<p><strong>Wake Event</strong><br />
 Generated on detection of <code>UIApplicationWillEnterForegroundNotification</code>.</p>
+
 <h3 id="manual-tracking">Manual Tracking</h3>
+
 <p>Available for specific lifecycle paradigms and non-conventional lifecycle tracking. In order to manually track lifecycle events, disable lifecycle auto-tracking by setting <code>setLifecycleAutotrackingIsEnabled</code> to <code>NO</code>.</p>
-<p><strong>Launch Event</strong><br>
+
+<p><strong>Launch Event</strong><br />
 To manually track a <code>launch</code> event, call:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] launch];
-</span></span></code></pre></div><p><strong>Sleep Event</strong><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] launch];</span></span></code></pre></div>
+<p><strong>Sleep Event</strong><br />
 To manually track a <code>sleep</code> event, call:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] sleep];
-</span></span></code></pre></div><p><strong>Wake Event</strong><br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] sleep];</span></span></code></pre></div>
+<p><strong>Wake Event</strong><br />
 To manually track a <code>wake</code> event, call:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] wake];
-</span></span></code></pre></div><h2 id="data-layer">Data Layer</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-objc" data-lang="objc"><span style="display:flex;"><span>[[Tealium instanceForKey:<span style="color:#e6db74">@&#34;(uniqueInstanceId)&#34;</span>] wake];</span></span></code></pre></div>
+<h2 id="data-layer">Data Layer</h2>
+
 <p>The Lifecycle Tracking module adds the following data layer variables:</p>
+
 <table>
 <thead>
 <tr>
@@ -7247,6 +7271,7 @@ To manually track a <code>wake</code> event, call:</p>
 <th>Event</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>lifecycle_ dayofweek_local</code></td>
@@ -7255,6 +7280,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>2</code></td>
 <td>all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ dayssincelaunch</code></td>
 <td><code>Number</code></td>
@@ -7262,6 +7288,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>23</code></td>
 <td>all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ dayssinceupdate</code></td>
 <td><code>Number</code></td>
@@ -7269,6 +7296,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>46</code></td>
 <td>all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ dayssincelastwake</code></td>
 <td><code>Number</code></td>
@@ -7276,6 +7304,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>1</code></td>
 <td>all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ diddetectcrash</code></td>
 <td><code>Boolean</code></td>
@@ -7283,6 +7312,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>true</code>, <code>false</code>]</td>
 <td>launch</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ firstlaunchdate</code></td>
 <td><code>String</code></td>
@@ -7290,6 +7320,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>&quot;2013-07-11T17:55:04Z&quot;</code> </td>
 <td>all </td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ firstlaunchdate_ MMDDYYYY </code></td>
 <td><code>String</code></td>
@@ -7297,6 +7328,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>&quot;01/17/2012&quot;</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ hourofday_local</code></td>
 <td><code>String</code></td>
@@ -7304,6 +7336,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>&quot;12&quot;</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ isfirstlaunch</code></td>
 <td><code>Boolean</code></td>
@@ -7311,6 +7344,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>true</code>, <code>false</code>]</td>
 <td>launch</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ isfirstlaunchupdate</code></td>
 <td><code>Boolean</code></td>
@@ -7318,6 +7352,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>true</code>, <code>false</code>]</td>
 <td>launch</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ isfirstwakemonth</code></td>
 <td><code>Boolean</code></td>
@@ -7325,6 +7360,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>true</code>, <code>false</code>]</td>
 <td>launch, wake </td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ isfirstwaketoday</code></td>
 <td><code>Boolean</code></td>
@@ -7332,6 +7368,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>true</code>, <code>false</code>]</td>
 <td>launch, wake</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ launchcount</code></td>
 <td><code>Number</code></td>
@@ -7339,6 +7376,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>3</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ secondsawake</code></td>
 <td><code>Number</code></td>
@@ -7346,6 +7384,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>30</code></td>
 <td>all </td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ priorsecondsawake </code></td>
 <td><code>Number</code></td>
@@ -7353,6 +7392,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>126</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ sleepcount</code></td>
 <td><code>Number</code></td>
@@ -7360,6 +7400,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>5</code> </td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ totalcrashcount</code></td>
 <td><code>Number</code></td>
@@ -7367,6 +7408,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>21 </code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ totallaunchcount</code></td>
 <td><code>Number</code></td>
@@ -7374,6 +7416,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>3</code> </td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ totalsecondsawake</code></td>
 <td><code>Number</code></td>
@@ -7381,6 +7424,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>36</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ totalsleepcount</code></td>
 <td><code>Number</code></td>
@@ -7388,6 +7432,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td> <code>&quot;400&quot;</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ totalwakecount</code></td>
 <td><code>Number</code></td>
@@ -7395,6 +7440,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>563</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_type</code></td>
 <td><code>String</code></td>
@@ -7402,6 +7448,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td>[<code>&quot;launch&quot;</code>, <code>&quot;wake&quot;</code>, <code>&quot;sleep&quot;</code>]</td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ updatelaunchdate</code></td>
 <td><code>String</code></td>
@@ -7409,6 +7456,7 @@ To manually track a <code>wake</code> event, call:</p>
 <td><code>&quot;2014-09-08T18:10:01Z&quot;</code></td>
 <td> all</td>
 </tr>
+
 <tr>
 <td><code>lifecycle_ wakecount</code></td>
 <td><code>Number</code></td>

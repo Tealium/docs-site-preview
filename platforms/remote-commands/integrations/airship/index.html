@@ -7170,103 +7170,112 @@ var utag_data = {
 
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  
+
+<h2 id="requirements">Requirements</h2>
+
 <ul>
 <li><a href="https://docs.airship.com/guides/messaging/user-guide/admin/security/app-keys-secrets/">Airship credentials</a></li>
 <li>One of these mobile libraries:
+
 <ul>
 <li><a href="/platforms/android-java/">Tealium for Android</a></li>
 <li><a href="/platforms/ios-swift/">Tealium for iOS-Swift</a></li>
-</ul>
-</li>
+</ul></li>
 <li>Airship Remote Command tag in Tealium iQ Tag Management</li>
 </ul>
+
 <h2 id="how-it-works">How It Works</h2>
+
 <p>The Airship integration uses three items:</p>
+
 <ol>
 <li>The Airship native SDK</li>
 <li>The Tealium Airship remote commands module that wraps the Airship methods</li>
 <li>The Airship Remote Command tag that translates event tracking into native Airship calls</li>
 </ol>
+
 <p>When you add the Airship remote command module to your app, the required Airship libraries are automatically installed without adding any vendor-specific code to your app. There is no need to install the Airship SDK separately.</p>
+
 <h2 id="install">Install</h2>
+
 <h3 id="dependency-manager">Dependency Manager</h3>
+
 <p>We recommend using one of the following dependency managers for installation:</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Swift Package Manager(Recommended)" title="Swift Package Manager(Recommended)">
   <p>Swift Package Manager is the recommended and simplest way to install the TealiumFirebase package. To install Airship remote commands for iOS using Swift Package Manager:</p>
+
 <ol>
-<li>
-<p>In your Xcode project, select <strong>File &gt; Add Packages&hellip; &gt; Add Package Dependency</strong></p>
-</li>
-<li>
-<p>Enter the repository URL: <code>https://github.com/tealium/tealium-ios-airship-remote-command</code></p>
-</li>
-<li>
-<p>Configure the version rules. Typically, <code>Up to next major</code> is recommended. If the current <code>TealiumAirship</code>  version does not appears in the list, then reset your Swift package cache.</p>
-</li>
-<li>
-<p>Select the <code>TealiumAirship</code> module to install, and select the app target you want the module to be installed in.</p>
-</li>
-<li>
-<p>If you are using any additional modules from the Tealium Swift library, follow <a href="/platforms/ios-swift/install/#swift-package-manager-recommended">the Swift Package Manager instructions</a> to add them.</p>
-</li>
+<li><p>In your Xcode project, select <strong>File &gt; Add Packages&hellip; &gt; Add Package Dependency</strong></p></li>
+
+<li><p>Enter the repository URL: <code>https://github.com/tealium/tealium-ios-airship-remote-command</code></p></li>
+
+<li><p>Configure the version rules. Typically, <code>Up to next major</code> is recommended. If the current <code>TealiumAirship</code>  version does not appears in the list, then reset your Swift package cache.</p></li>
+
+<li><p>Select the <code>TealiumAirship</code> module to install, and select the app target you want the module to be installed in.</p></li>
+
+<li><p>If you are using any additional modules from the Tealium Swift library, follow <a href="/platforms/ios-swift/install/#swift-package-manager-recommended">the Swift Package Manager instructions</a> to add them.</p></li>
 </ol>
+
 <p>If your project has more than one app target and needs <code>TealiumAirship</code> module in more app targets, you have to manually add them in the <strong>Frameworks, Libraries, and Embedded Content</strong> section.</p>
+
 <p>To install <code>TealiumAirship</code> in additional app targets:</p>
+
 <ol>
 <li>Select your Xcode project in the <strong>Project Navigator</strong>.</li>
 <li>In your Xcode project, select the app target under the <strong>TARGETS</strong> section.</li>
 <li>Navigate to <strong>General &gt; Frameworks, Libraries &amp; Embedded Content</strong> and  select the <code>TealiumAirship</code> module to add it to your app target.</li>
 </ol>
+
 </div>
+
 <div class="tab-pane" data-lang="CocoaPods" title="CocoaPods">
   <p>To install Airship remote commands for iOS using CocoaPods:</p>
+
 <ol>
-<li>
-<p>Remove <code>pod &quot;tealium-swift&quot;</code> and <code>pod &quot;Airship&quot;</code> if they exist in your Podfile. The dependency for <code>tealium-swift</code> is already included in the <code>TealiumAirship</code> framework.</p>
-</li>
-<li>
-<p>Add the following dependency to your Podfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;TealiumAirship&#34;</span>
-</span></span></code></pre></div></li>
-</ol>
-<p>The <code>TealiumAirship</code> pod includes the following <code>TealiumSwift</code> dependencies:<br>
-<code>bash &quot;tealium-swift/Core&quot; &quot;tealium-swift/RemoteCommands&quot; &quot;tealium-swift/TagManagement&quot; </code></p>
-<ol start="3">
-<li>Add any other required modules manually to your Podfile, such as the following:
+<li><p>Remove <code>pod &quot;tealium-swift&quot;</code> and <code>pod &quot;Airship&quot;</code> if they exist in your Podfile. The dependency for <code>tealium-swift</code> is already included in the <code>TealiumAirship</code> framework.</p></li>
+
+<li><p>Add the following dependency to your Podfile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;TealiumAirship&#34;</span></span></span></code></pre></div>
+<p>The <code>TealiumAirship</code> pod includes the following <code>TealiumSwift</code> dependencies:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/Core&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/RemoteCommands&#34;</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;tealium-swift/TagManagement&#34;</span></span></span></code></pre></div></li>
+
+<li><p>Add any other required modules manually to your Podfile, such as the following:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-ruby" data-lang="ruby"><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;tealium-swift/Lifecycle&#34;</span>
-</span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;tealium-swift/VisitorService&#34;</span>
-</span></span></code></pre></div></li>
+</span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;tealium-swift/VisitorService&#34;</span></span></span></code></pre></div>
+<p>Learn more about the <a href="/platforms/ios-swift/modules/">recommended modules for iOS</a>.</p></li>
+
+<li><p>Import the modules <code>TealiumSwift</code> and <code>TealiumAirship</code> in your <code>TealiumHelper</code> file, and any other files that access the <code>Tealium</code> class, or the Airship remote command.</p></li>
 </ol>
-<p>Learn more about the <a href="/platforms/ios-swift/modules/">recommended modules for iOS</a>.</p>
-<ol start="4">
-<li>Import the modules <code>TealiumSwift</code> and <code>TealiumAirship</code> in your <code>TealiumHelper</code> file, and any other files that access the <code>Tealium</code> class, or the Airship remote command.</li>
-</ol>
+
 </div>
+
 <div class="tab-pane" data-lang="Carthage" title="Carthage">
   <p>To install Airship remote commands for iOS using Carthage:</p>
+
 <ol>
-<li>
-<p>Remove <code>tealium-swift</code> from your Cartfile. The dependency for <code>tealium-swift</code> is already included in the <code>TealiumAirship</code> framework.</p>
-</li>
-<li>
-<p>Remove the following line if it exists in your Cartfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;urbanairship/ios-library&#34;</span>
-</span></span></code></pre></div></li>
-<li>
-<p>Add the following dependency to your Cartfile:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;tealium/tealium-ios-airship-remote-command&#34;</span>
-</span></span></code></pre></div></li>
+<li><p>Remove <code>tealium-swift</code> from your Cartfile. The dependency for <code>tealium-swift</code> is already included in the <code>TealiumAirship</code> framework.</p></li>
+
+<li><p>Remove the following line if it exists in your Cartfile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;urbanairship/ios-library&#34;</span></span></span></code></pre></div></li>
+
+<li><p>Add the following dependency to your Cartfile:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>github <span style="color:#e6db74">&#34;tealium/tealium-ios-airship-remote-command&#34;</span></span></span></code></pre></div></li>
 </ol>
+
 </div>
+
 <div class="tab-pane" data-lang="Maven" title="Maven">
   <p>To install Airship remote commands for Android using Maven:</p>
+
 <ol>
-<li>
-<p>Install <a href="/platforms/android-java/install/">Tealium for Android</a> and add the Tealium Maven URL to your project’s top-level <code>build.gradle</code> file, if you haven&rsquo;t done so already.</p>
+<li><p>Install <a href="/platforms/android-java/install/">Tealium for Android</a> and add the Tealium Maven URL to your project’s top-level <code>build.gradle</code> file, if you haven&rsquo;t done so already.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>allprojects <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>  repositories <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    jcenter<span style="color:#f92672">()</span>
@@ -7274,61 +7283,63 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      url <span style="color:#e6db74">&#34;https://maven.tealiumiq.com/android/releases/&#34;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>  <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
-<li>
-<p>Import the Tealium-Airship remote commands by adding the following dependencies in your app project&rsquo;s <code>build.gradle</code> file:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>Import the Tealium-Airship remote commands by adding the following dependencies in your app project&rsquo;s <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium.remotecommands:airship:1.1.0&#39;</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
 </ol>
+
 </div>
 </div>
 </div>
 
+
 <h3 id="manual-ios">Manual (iOS)</h3>
+
 <p>The manual installation for Airship remote commands requires the <a href="/platforms/ios-swift/">Tealium for Swift</a> library to be installed. To install the Airship remote commands for your iOS project:</p>
+
 <ol>
-<li>
-<p>Install the <a href="https://github.com/urbanairship/ios-library">Airship SDK</a>, if you haven&rsquo;t already done so.</p>
-</li>
-<li>
-<p>Clone the <a href="https://github.com/tealium/tealium-ios-airship-remote-command">Tealium iOS Airship remote command</a> repo and drag the files within the <code>Sources</code> folder into your project.</p>
-</li>
-<li>
-<p>Add <code>Dispatchers.RemoteCommands</code> as a dispatcher.</p>
-</li>
-<li>
-<p>Set the <a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> configuration flag to <code>true</code>.</p>
-</li>
+<li><p>Install the <a href="https://github.com/urbanairship/ios-library">Airship SDK</a>, if you haven&rsquo;t already done so.</p></li>
+
+<li><p>Clone the <a href="https://github.com/tealium/tealium-ios-airship-remote-command">Tealium iOS Airship remote command</a> repo and drag the files within the <code>Sources</code> folder into your project.</p></li>
+
+<li><p>Add <code>Dispatchers.RemoteCommands</code> as a dispatcher.</p></li>
+
+<li><p>Set the <a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> configuration flag to <code>true</code>.</p></li>
 </ol>
+
 <h3 id="manual-android">Manual (Android)</h3>
+
 <p>The manual installation for Airship remote commands requires <a href="/platforms/android-kotlin/install/">Tealium for Android (Kotlin)</a> or <a href="/platforms/android-java/install/">Tealium for Android (Java)</a> to be installed. To install the Airship remote commands for your Android project:</p>
+
 <ol>
-<li>
-<p>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</p>
+<li><p>Add <code>flatDir</code> to your project root <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>repositories <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    flatDir <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        dirs <span style="color:#f92672">(</span><span style="color:#e6db74">&#39;/src/main/libs&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
-<li>
-<p>Add <code>tealium-airship.aar</code> to <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code>.</p>
-</li>
-<li>
-<p>Add the Tealium library dependency to your <code>build.gradle</code> file:</p>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
+
+<li><p>Add <code>tealium-airship.aar</code> to <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code>.</p></li>
+
+<li><p>Add the Tealium library dependency to your <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-airship&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
-</span></span></code></pre></div></li>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
 </ol>
+
 <h2 id="initialize">Initialize</h2>
+
 <p>Initialize remote commands with a JSON configuration file or the Remote Command tag for Tealium&rsquo;s Android or Swift library.</p>
+
 <p>To initialize the Airship remote command:</p>
+
 <h3 id="android-kotlin">Android (Kotlin)</h3>
+
 <p>The following example creates a Tealium instance and then registers the Airship remote command for Android (Kotlin):</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -7346,9 +7357,9 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> airshipCommand = AirshipRemoteCommand(application)
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    remoteCommands<span style="color:#f92672">?.</span>add(airshipCommand)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="Android - JSON Remote Command" title="Android - JSON Remote Command">
   <p>The following code is designed for use with the JSON Remote Command feature, using the local file option:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span><span style="color:#75715e">// Sets up a config object and creates a Tealium instance
@@ -7363,14 +7374,16 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">val</span> airshipCommand = AirshipRemoteCommand(application)
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// register the command
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    remoteCommands<span style="color:#f92672">?.</span>add(airshipCommand, filename = <span style="color:#e6db74">&#34;airship.json&#34;</span>) <span style="color:#75715e">// add remote command file name
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
-</span></span></code></pre></div>
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h3 id="ios-swift">iOS (Swift)</h3>
+
 <p>The following example creates a Tealium instance and then registers the Airship remote command with Tealium&rsquo;s Swift library for iOS:</p>
+
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
@@ -7389,11 +7402,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> remoteCommands = <span style="color:#66d9ef">self</span>.tealium?.remoteCommands <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">let</span> airship = AirshipRemoteCommand(type: .local(file: <span style="color:#e6db74">&#34;airship&#34;</span>))
-</span></span><span style="display:flex;"><span>	remoteCommands.add(airship)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> airship = AirshipRemoteCommand(type: .local(file: <span style="color:#e6db74">&#34;airship&#34;</span>))
+</span></span><span style="display:flex;"><span>    remoteCommands.add(airship)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
+
 <div class="tab-pane" data-lang="Remote Command tag" title="Remote Command tag">
   <p>The following code is designed for use with the Remote Command tag feature:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> tealium : Tealium?
@@ -7409,190 +7422,237 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">guard</span> <span style="color:#66d9ef">let</span> remoteCommands = <span style="color:#66d9ef">self</span>.tealium?.remoteCommands <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
 </span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>  	<span style="color:#66d9ef">let</span> airship = AirshipRemoteCommand()
-</span></span><span style="display:flex;"><span>	remoteCommands.add(airship)
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> airship = AirshipRemoteCommand()
+</span></span><span style="display:flex;"><span>    remoteCommands.add(airship)
+</span></span><span style="display:flex;"><span>}</span></span></code></pre></div>
 </div>
 </div>
 </div>
 
+
 <h2 id="supported-methods">Supported Methods</h2>
+
 <p>The following Airship methods are triggered using a data mapping in the Airship Remote Command tag using these Tealium commands:</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>initialize</code></td>
-<td style="text-align:left"><code>takeOff()</code></td>
+<td align="left"><code>initialize</code></td>
+<td align="left"><code>takeOff()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>trackevent</code></td>
-<td style="text-align:left"><code>UACustomEvent.track()</code></td>
+<td align="left"><code>trackevent</code></td>
+<td align="left"><code>UACustomEvent.track()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>trackscreenview</code></td>
-<td style="text-align:left"><code>trackScreen</code></td>
+<td align="left"><code>trackscreenview</code></td>
+<td align="left"><code>trackScreen</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enableanalytics</code></td>
-<td style="text-align:left"><code>analytics()?.isEnabled</code></td>
+<td align="left"><code>enableanalytics</code></td>
+<td align="left"><code>analytics()?.isEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disableanalytics</code></td>
-<td style="text-align:left"><code>analytics()?.isEnabled</code></td>
+<td align="left"><code>disableanalytics</code></td>
+<td align="left"><code>analytics()?.isEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setnameduser</code></td>
-<td style="text-align:left"><code>UAirship.namedUser()?.identifier</code></td>
+<td align="left"><code>setnameduser</code></td>
+<td align="left"><code>UAirship.namedUser()?.identifier</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setcustomidentifiers</code></td>
-<td style="text-align:left"><code>analytics()?.associateDeviceIdentifiers</code></td>
+<td align="left"><code>setcustomidentifiers</code></td>
+<td align="left"><code>analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enableadvertisingidentifiers</code></td>
-<td style="text-align:left"><code>analytics()?.associateDeviceIdentifiers</code></td>
+<td align="left"><code>enableadvertisingidentifiers</code></td>
+<td align="left"><code>analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enableinappmessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td align="left"><code>enableinappmessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disableinappmessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td align="left"><code>disableinappmessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>pauseinappmessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td align="left"><code>pauseinappmessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>unpauseinappmessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td align="left"><code>unpauseinappmessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setinappmessagingdisplayinterval</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
+<td align="left"><code>setinappmessagingdisplayinterval</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enableuserpushnotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td align="left"><code>enableuserpushnotifications</code></td>
+<td align="left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disableuserpushnotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td align="left"><code>disableuserpushnotifications</code></td>
+<td align="left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enablebackgroundpushnotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+<td align="left"><code>enablebackgroundpushnotifications</code></td>
+<td align="left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disablebackgroundpushnotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+<td align="left"><code>disablebackgroundpushnotifications</code></td>
+<td align="left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setpushnotificationoptions</code></td>
-<td style="text-align:left"><code>UAirship.push()?.notificationOptions</code></td>
+<td align="left"><code>setpushnotificationoptions</code></td>
+<td align="left"><code>UAirship.push()?.notificationOptions</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setforegroundpresentationoptions</code></td>
-<td style="text-align:left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
+<td align="left"><code>setforegroundpresentationoptions</code></td>
+<td align="left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setbadgenumber</code></td>
-<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
+<td align="left"><code>setbadgenumber</code></td>
+<td align="left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>resetbadgenumber</code></td>
-<td style="text-align:left"><code>UAirship.push()?.resetBadge()</code></td>
+<td align="left"><code>resetbadgenumber</code></td>
+<td align="left"><code>UAirship.push()?.resetBadge()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enableautobadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td align="left"><code>enableautobadge</code></td>
+<td align="left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disableautobadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td align="left"><code>disableautobadge</code></td>
+<td align="left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enablequiettime</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td align="left"><code>enablequiettime</code></td>
+<td align="left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disablequiettime</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td align="left"><code>disablequiettime</code></td>
+<td align="left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setquiettimestart</code></td>
-<td style="text-align:left"><code>UAirship.push()?.setQuietTimeStartHour</code></td>
+<td align="left"><code>setquiettimestart</code></td>
+<td align="left"><code>UAirship.push()?.setQuietTimeStartHour</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setchanneltags</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.tags</code></td>
+<td align="left"><code>setchanneltags</code></td>
+<td align="left"><code>UAirship.channel()?.tags</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setnamedusertags</code></td>
-<td style="text-align:left"><code>UAirship.namedUser()?.setTags()</code></td>
+<td align="left"><code>setnamedusertags</code></td>
+<td align="left"><code>UAirship.namedUser()?.setTags()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>addtag</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.addTag()</code></td>
+<td align="left"><code>addtag</code></td>
+<td align="left"><code>UAirship.channel()?.addTag()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>removetag</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.removeTag</code></td>
+<td align="left"><code>removetag</code></td>
+<td align="left"><code>UAirship.channel()?.removeTag</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>addtaggroup</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.addTags, UAirship.namedUser()?.addTags</code></td>
+<td align="left"><code>addtaggroup</code></td>
+<td align="left"><code>UAirship.channel()?.addTags, UAirship.namedUser()?.addTags</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>removetaggroup</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.removeTags, UAirship.namedUser()?.removeTags</code></td>
+<td align="left"><code>removetaggroup</code></td>
+<td align="left"><code>UAirship.channel()?.removeTags, UAirship.namedUser()?.removeTags</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setattributes</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.apply</code></td>
+<td align="left"><code>setattributes</code></td>
+<td align="left"><code>UAirship.channel()?.apply</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>displaymessagecenter</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared().display()</code></td>
+<td align="left"><code>displaymessagecenter</code></td>
+<td align="left"><code>UAMessageCenter.shared().display()</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setmessagecentertitle</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared()?.defaultUI.title</code></td>
+<td align="left"><code>setmessagecentertitle</code></td>
+<td align="left"><code>UAMessageCenter.shared()?.defaultUI.title</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>setmessagecenterstyle</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
+<td align="left"><code>setmessagecenterstyle</code></td>
+<td align="left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enablelocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td align="left"><code>enablelocation</code></td>
+<td align="left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disablelocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td align="left"><code>disablelocation</code></td>
+<td align="left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>enablebackgroundlocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td align="left"><code>enablebackgroundlocation</code></td>
+<td align="left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>disablebackgroundlocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td align="left"><code>disablebackgroundlocation</code></td>
+<td align="left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
+
 <p class="note"><i class="fas fa-info-circle"></i>Since the Airship SDK is integrated with the Tealium SDK, you can trigger any native Airship functionality by calling the SDK directly, even if the functionality is not provided by the Tealium Airship Remote Command tag.</p>
+
 <h3 id="sdk-setup">SDK Setup</h3>
+
 <h4 id="initialize-1">Initialize</h4>
+
 <p>The Airship SDK is initialized automatically upon launch. The Airship API keys are set in the tag configuration.</p>
+
 <table>
 <thead>
 <tr>
@@ -7600,6 +7660,7 @@ var utag_data = {
 <th>Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>initialize</code></td>
@@ -7607,75 +7668,92 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <p><strong>Possible UAConfig parameters</strong></p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>productionAppKey</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>MyProdKey</code></td>
+<td align="left"><code>productionAppKey</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>MyProdKey</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>productionAppSecret</code> (required)</td>
-<td style="text-align:left">`String</td>
-<td style="text-align:left">MyProdSecret`</td>
+<td align="left"><code>productionAppSecret</code> (required)</td>
+<td align="left">`String</td>
+<td align="left">MyProdSecret`</td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>developmentAppKey</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>MyDevKey</code></td>
+<td align="left"><code>developmentAppKey</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>MyDevKey</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>developmentAppSecret</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>MyDevSecret</code></td>
+<td align="left"><code>developmentAppSecret</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>MyDevSecret</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>site</code> (optional)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>eu/us</code></td>
+<td align="left"><code>site</code> (optional)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>eu/us</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>isDataCollectionOptInEnabled</code> (optional)</td>
-<td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left"><code>true</code></td>
+<td align="left"><code>isDataCollectionOptInEnabled</code> (optional)</td>
+<td align="left"><code>Boolean</code></td>
+<td align="left"><code>true</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>isInProduction</code> (optional)</td>
-<td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left"><code>true</code></td>
+<td align="left"><code>isInProduction</code> (optional)</td>
+<td align="left"><code>Boolean</code></td>
+<td align="left"><code>true</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>developmentLogLevel</code> (optional)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>debug/error/info/none/trace/undefined/warn</code></td>
+<td align="left"><code>developmentLogLevel</code> (optional)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>debug/error/info/none/trace/undefined/warn</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>productionLogLevel</code> (optional)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>debug/error/info/none/trace/undefined/warn</code></td>
+<td align="left"><code>productionLogLevel</code> (optional)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>debug/error/info/none/trace/undefined/warn</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>isAnalyticsEnabled</code> (optional)</td>
-<td style="text-align:left"><code>Boolean</code></td>
-<td style="text-align:left"><code>true</code></td>
+<td align="left"><code>isAnalyticsEnabled</code> (optional)</td>
+<td align="left"><code>Boolean</code></td>
+<td align="left"><code>true</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Initial SDK Setup</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/getting-started/#takeoff">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/getting-started/#takeoff">Android</a></li>
 </ul>
+
 <h4 id="trackevent">trackEvent</h4>
+
 <p>Sends a custom event to Airship.</p>
+
 <table>
 <thead>
 <tr>
@@ -7683,6 +7761,7 @@ var utag_data = {
 <th>Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
 <td><code>trackEvent</code></td>
@@ -7690,1073 +7769,1322 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>event_name</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>Purchase</code></td>
+<td align="left"><code>event_name</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>Purchase</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>event</code> (optional)</td>
-<td style="text-align:left"><code>JSON object</code></td>
-<td style="text-align:left"><code>{&quot;my_numeric_property&quot;: 1}</code></td>
+<td align="left"><code>event</code> (optional)</td>
+<td align="left"><code>JSON object</code></td>
+<td align="left"><code>{&quot;my_numeric_property&quot;: 1}</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>event_value</code> (optional)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>1.5</code></td>
+<td align="left"><code>event_value</code> (optional)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>1.5</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Event Tracking</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#ios-custom-events">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#android-custom-events">Android</a></li>
 </ul>
+
 <h4 id="trackscreenview">trackScreenView</h4>
+
 <p>Tracks a screen view.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>trackScreenView</code></td>
-<td style="text-align:left"><code>UAirship.analytics()?.trackScreen</code></td>
+<td align="left"><code>trackScreenView</code></td>
+<td align="left"><code>UAirship.analytics()?.trackScreen</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>screen_name</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>Home Screen</code></td>
+<td align="left"><code>screen_name</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>Home Screen</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Event Tracking</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#ios-screen-tracking">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#android-screen-tracking">Android</a></li>
 </ul>
+
 <h4 id="enableanalytics">enableAnalytics</h4>
+
 <p>Enables Airship Analytics after previously being disabled (default is enabled).</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableAnalytics</code></td>
-<td style="text-align:left"><code>UAirship.analytics()?.isEnabled</code></td>
+<td align="left"><code>enableAnalytics</code></td>
+<td align="left"><code>UAirship.analytics()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Enable Analytics</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#disabling-analytics">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#disabling-analytics">Android</a></li>
 </ul>
+
 <h4 id="disableanalytics">disableAnalytics</h4>
+
 <p>Disables Airship Analytics after previously being enabled (default is enabled).</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableAnalytics</code></td>
-<td style="text-align:left"><code>UAirship.analytics()?.isEnabled</code></td>
+<td align="left"><code>disableAnalytics</code></td>
+<td align="left"><code>UAirship.analytics()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Disable Analytics</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#disabling-analytics">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#disabling-analytics">Android</a></li>
 </ul>
+
 <h4 id="setnameduser">setNamedUser</h4>
+
 <p>Sets a known user identifier for the current app user.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setNamedUser</code></td>
-<td style="text-align:left"><code>UAirship.namedUser()?.identifier</code></td>
+<td align="left"><code>setNamedUser</code></td>
+<td align="left"><code>UAirship.namedUser()?.identifier</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>named_user_identifier</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>email@tealium.com</code></td>
+<td align="left"><code>named_user_identifier</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>email@tealium.com</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide: Event Tracking</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#named-users-ios">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#named-users-android">Android</a></li>
 </ul>
+
 <h4 id="setcustomidentifiers">setCustomIdentifiers</h4>
+
 <p>Sets any additional custom identifiers that you deem significant for the user.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setCustomIdentifiers</code></td>
-<td style="text-align:left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
+<td align="left"><code>setCustomIdentifiers</code></td>
+<td align="left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>custom</code> (required)</td>
-<td style="text-align:left"><code>JSON Object</code> (Strings Only)</td>
-<td style="text-align:left"><code>{&quot;my_custom_identifier&quot;:&quot;user@email.com&quot;}</code></td>
+<td align="left"><code>custom</code> (required)</td>
+<td align="left"><code>JSON Object</code> (Strings Only)</td>
+<td align="left"><code>{&quot;my_custom_identifier&quot;:&quot;user@email.com&quot;}</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#ios-custom-identifiers">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#android-custom-identifiers">Android</a></li>
 </ul>
+
 <h4 id="enableadvertisingidentifiers">enableAdvertisingIdentifiers</h4>
+
 <p>Adds advertising identifiers to the dictionary of custom identifiers (IDFV, IDFA, Ad Tracking Enabled.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setCustomIdentifiers</code></td>
-<td style="text-align:left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
+<td align="left"><code>setCustomIdentifiers</code></td>
+<td align="left"><code>UAirship.analytics()?.associateDeviceIdentifiers</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/analytics-and-reporting/#ios-custom-identifiers">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/analytics-and-reporting/#android-custom-identifiers">Android</a></li>
 </ul>
+
 <h4 id="enableinappmessaging">enableInAppMessaging</h4>
+
 <p>Enables the in-app messaging feature.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableInAppMessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td align="left"><code>enableInAppMessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/in-app-automation/#component-enablement">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/in-app-automation/#feature-enablement">Android</a></li>
 </ul>
+
 <h4 id="disableinappmessaging">disableInAppMessaging</h4>
+
 <p>Disables the in-app messaging feature.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableInAppMessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
+<td align="left"><code>disableInAppMessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/in-app-automation/#component-enablement">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/in-app-automation/#feature-enablement">Android</a></li>
 </ul>
+
 <h4 id="pauseinappmessaging">pauseInAppMessaging</h4>
+
 <p>Enables the in-app messaging feature.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>pauseInAppMessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td align="left"><code>pauseInAppMessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/in-app-automation/#pausing-message-display">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/in-app-automation/#pausing-message-display">Android</a></li>
 </ul>
+
 <h4 id="unpauseinappmessaging">unPauseInAppMessaging</h4>
+
 <p>Enables the in-app messaging feature.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>unPauseInAppMessaging</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
+<td align="left"><code>unPauseInAppMessaging</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.isPaused</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/in-app-automation/#pausing-message-display">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/in-app-automation/#pausing-message-display">Android</a></li>
 </ul>
+
 <h3 id="setinappmessagingdisplayinterval">setInAppMessagingDisplayInterval</h3>
+
 <p>The amount of time Airship must wait before displaying a new in-app message, in <em>seconds</em>.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setInAppMessagingDisplayInterval</code></td>
-<td style="text-align:left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
+<td align="left"><code>setInAppMessagingDisplayInterval</code></td>
+<td align="left"><code>UAInAppMessageManager.shared()?.displayInterval</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>in_app_messaging_display_interval</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>&quot;10&quot;</code></td>
+<td align="left"><code>in_app_messaging_display_interval</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>&quot;10&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/in-app-automation/#pausing-message-display">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/in-app-automation/#pausing-message-display">Android</a></li>
 </ul>
+
 <h4 id="enableuserpushnotifications">enableUserPushNotifications</h4>
+
 <p>Enables user push notifications.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableUserPushNotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+<td align="left"><code>enableUserPushNotifications</code></td>
+<td align="left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>push_notification_options</code> (optional)</td>
-<td style="text-align:left"><code>Array of Strings</code></td>
-<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
-</tr>
-<tr>
-<td style="text-align:left">Possible Push Messaging Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code>, <code>&quot;carplay&quot;</code>, <code>&quot;announcement&quot;</code>, <code>&quot;critical&quot;</code>, <code>&quot;app_notification_settings&quot;</code></td>
-<td></td>
-<td></td>
+<td align="left"><code>push_notification_options</code> (optional)</td>
+<td align="left"><code>Array of Strings</code></td>
+<td align="left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
 </tr>
 </tbody>
 </table>
-<p>Airship Developer Guide:</p>
-<ul>
-<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
-<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
-</ul>
-<h4 id="disableuserpushnotifications">disableUserPushNotifications</h4>
-<p>Disables user push notifications.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>enableUserPushNotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
-</tr>
-</tbody>
-</table>
-<p>Airship Developer Guide:</p>
-<ul>
-<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
-<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
-</ul>
-<h4 id="enablebackgroundpushnotifications">enableBackgroundPushNotifications</h4>
-<p>Enables background push notifications.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>enableUserPushNotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?. backgroundPushNotificationsEnabled</code></td>
-</tr>
-</tbody>
-</table>
-<p>Airship Developer Guide:</p>
-<ul>
-<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
-<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
-</ul>
-<h4 id="disablebackgroundpushnotifications">disableBackgroundPushNotifications</h4>
-<p>Disables background push notifications.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>disableBackgroundPushNotifications</code></td>
-<td style="text-align:left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
-</tr>
-</tbody>
-</table>
-<p>Airship Developer Guide:</p>
-<ul>
-<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
-<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
-</ul>
-<h4 id="setpushnotificationoptions">setPushNotificationOptions</h4>
-<p>Sets push notification options. iOS Only.</p>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>setPushNotificationOptions</code></td>
-<td style="text-align:left"><code>UAirship.push()?.notificationOptions</code></td>
-</tr>
-</tbody>
-</table>
-<table>
-<thead>
-<tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:left"><code>push_notification_options</code> (required)</td>
-<td style="text-align:left"><code>Array of Strings</code></td>
-<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
-</tr>
-</tbody>
-</table>
+
 <p>Possible Push Messaging Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code>, <code>&quot;carplay&quot;</code>, <code>&quot;announcement&quot;</code>, <code>&quot;critical&quot;</code>, <code>&quot;app_notification_settings&quot;</code></p>
+
 <p>Airship Developer Guide:</p>
+
+<ul>
+<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
+<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
+</ul>
+
+<h4 id="disableuserpushnotifications">disableUserPushNotifications</h4>
+
+<p>Disables user push notifications.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>enableUserPushNotifications</code></td>
+<td align="left"><code>UAirship.push()?.userPushNotificationsEnabled</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Airship Developer Guide:</p>
+
+<ul>
+<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
+<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
+</ul>
+
+<h4 id="enablebackgroundpushnotifications">enableBackgroundPushNotifications</h4>
+
+<p>Enables background push notifications.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>enableUserPushNotifications</code></td>
+<td align="left"><code>UAirship.push()?. backgroundPushNotificationsEnabled</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Airship Developer Guide:</p>
+
+<ul>
+<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
+<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
+</ul>
+
+<h4 id="disablebackgroundpushnotifications">disableBackgroundPushNotifications</h4>
+
+<p>Disables background push notifications.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>disableBackgroundPushNotifications</code></td>
+<td align="left"><code>UAirship.push()?.backgroundPushNotificationsEnabled</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Airship Developer Guide:</p>
+
+<ul>
+<li><a href="https://docs.airship.com/platform/ios/push-notifications/#enabling-user-notifications">iOS</a></li>
+<li><a href="https://docs.airship.com/platform/android/push-notifications/#enabling-user-notifications">Android</a></li>
+</ul>
+
+<h4 id="setpushnotificationoptions">setPushNotificationOptions</h4>
+
+<p>Sets push notification options. iOS Only.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>setPushNotificationOptions</code></td>
+<td align="left"><code>UAirship.push()?.notificationOptions</code></td>
+</tr>
+</tbody>
+</table>
+
+<table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>push_notification_options</code> (required)</td>
+<td align="left"><code>Array of Strings</code></td>
+<td align="left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;announcement&quot;]</code></td>
+</tr>
+</tbody>
+</table>
+
+<p>Possible Push Messaging Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code>, <code>&quot;carplay&quot;</code>, <code>&quot;announcement&quot;</code>, <code>&quot;critical&quot;</code>, <code>&quot;app_notification_settings&quot;</code></p>
+
+<p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#notification-options">iOS</a></li>
 </ul>
+
 <h4 id="setforegroundpresentationoptions">setForegroundPresentationOptions</h4>
+
 <p>Sets push notification presentation options. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setForegroundPresentationOptions</code></td>
-<td style="text-align:left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
+<td align="left"><code>setForegroundPresentationOptions</code></td>
+<td align="left"><code>UAirship.push()?.defaultPresentationOptions</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>foreground_presentation_options</code> (required)</td>
-<td style="text-align:left"><code>Array of Strings</code></td>
-<td style="text-align:left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;alert&quot;]</code></td>
+<td align="left"><code>foreground_presentation_options</code> (required)</td>
+<td align="left"><code>Array of Strings</code></td>
+<td align="left"><code>[&quot;badge&quot;, &quot;sound&quot;, &quot;alert&quot;]</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Possible Foreground Presentation Options: <code>&quot;badge&quot;</code>, <code>&quot;sound&quot;</code>, <code>&quot;alert&quot;</code></p>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#foreground-presentation-options">iOS</a></li>
 </ul>
+
 <h4 id="setbadgenumber">setBadgeNumber</h4>
+
 <p>Sets badge number on your app&rsquo;s icon to a specified number. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setBadgeNumber</code></td>
-<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
+<td align="left"><code>setBadgeNumber</code></td>
+<td align="left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>badge_number</code> (required)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>3</code></td>
+<td align="left"><code>badge_number</code> (required)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>3</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#ios-feature-badges">iOS</a></li>
 </ul>
+
 <h4 id="resetbadgenumber">resetBadgeNumber</h4>
+
 <p>Resets the badge number. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setBadgeNumber</code></td>
-<td style="text-align:left"><code>UAirship.push()?.badgeNumber</code></td>
+<td align="left"><code>setBadgeNumber</code></td>
+<td align="left"><code>UAirship.push()?.badgeNumber</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#ios-feature-badges">iOS</a></li>
 </ul>
+
 <h4 id="enableautobadge">enableAutoBadge</h4>
+
 <p>Enables the auto-badge feature. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableAutoBadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td align="left"><code>enableAutoBadge</code></td>
+<td align="left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#ios-feature-badges">iOS</a></li>
 </ul>
+
 <h4 id="disableautobadge">disableAutoBadge</h4>
+
 <p>Disables the auto-badge feature. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableAutoBadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
+<td align="left"><code>disableAutoBadge</code></td>
+<td align="left"><code>UAirship.push()?.isAutobadgeEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#ios-feature-badges">iOS</a></li>
 </ul>
+
 <h4 id="enablequiettime">enableQuietTime</h4>
+
 <p>Enables the quiet time feature. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableAutoBadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td align="left"><code>enableAutoBadge</code></td>
+<td align="left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#quiet-time">iOS</a></li>
 </ul>
+
 <h4 id="disablequiettime">disableQuietTime</h4>
+
 <p>Disables the quiet time feature. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableAutoBadge</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td align="left"><code>disableAutoBadge</code></td>
+<td align="left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#quiet-time">iOS</a></li>
 </ul>
+
 <h4 id="setquiettimestart">setQuietTimeStart</h4>
+
 <p>Sets the time constraints for the Quiet Time feature. iOS only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setQuietTimeStart</code></td>
-<td style="text-align:left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
+<td align="left"><code>setQuietTimeStart</code></td>
+<td align="left"><code>UAirship.push()?.isQuietTimeEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>quiet</code> (required)</td>
-<td style="text-align:left"><code>JSON Object</code></td>
-<td style="text-align:left"><code>{'start_hour': 3, 'start_minute': 30, 'end_hour': 4, 'end_minute': 30</code></td>
-</tr>
-<tr>
-<td style="text-align:left">Required within the quiet object:</td>
-<td></td>
-<td></td>
+<td align="left"><code>quiet</code> (required)</td>
+<td align="left"><code>JSON Object</code></td>
+<td align="left"><code>{'start_hour': 3, 'start_minute': 30, 'end_hour': 4, 'end_minute': 30</code></td>
 </tr>
 </tbody>
 </table>
+
+<p>Required within the quiet object:</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>start_hour</code> (required)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>3</code></td>
+<td align="left"><code>start_hour</code> (required)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>3</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>start_minute</code> (required)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>30</code></td>
+<td align="left"><code>start_minute</code> (required)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>30</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>end_hour</code> (required)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>4</code></td>
+<td align="left"><code>end_hour</code> (required)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>4</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>end_minute</code> (required)</td>
-<td style="text-align:left"><code>Number</code></td>
-<td style="text-align:left"><code>30</code></td>
+<td align="left"><code>end_minute</code> (required)</td>
+<td align="left"><code>Number</code></td>
+<td align="left"><code>30</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#quiet-time">iOS</a></li>
 </ul>
+
 <h4 id="setchanneltags">setChannelTags</h4>
+
 <p>Calls the updateRegistration function. Must be called after changing notification options. iOS Only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>updateRegistration</code></td>
-<td style="text-align:left"><code>UAirship.push()?.updateRegistration</code></td>
+<td align="left"><code>updateRegistration</code></td>
+<td align="left"><code>UAirship.push()?.updateRegistration</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/push-notifications/#quiet-time">iOS</a></li>
 </ul>
+
 <h4 id="setnamedusertags">setNamedUserTags</h4>
+
 <p>Sets tags for the named user, overwriting previously set tags.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setNamedUserTags</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.addTags</code></td>
+<td align="left"><code>setNamedUserTags</code></td>
+<td align="left"><code>UAirship.channel()?.addTags</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>named_user_tags</code> (required)</td>
-<td style="text-align:left"><code>String Array</code></td>
-<td style="text-align:left"><code>[&quot;silver-member&quot;, &quot;gold-member&quot;]</code></td>
+<td align="left"><code>named_user_tags</code> (required)</td>
+<td align="left"><code>String Array</code></td>
+<td align="left"><code>[&quot;silver-member&quot;, &quot;gold-member&quot;]</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tag_group</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>loyalty</code></td>
+<td align="left"><code>tag_group</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>loyalty</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#ios-tag-groups">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#android-tag-groups">Android</a></li>
 </ul>
+
 <h4 id="addtag">addTag</h4>
+
 <p>Adds a channel tag.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>addTag</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.addTag</code></td>
+<td align="left"><code>addTag</code></td>
+<td align="left"><code>UAirship.channel()?.addTag</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>channel_tag</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>&quot;a_tag&quot;</code></td>
+<td align="left"><code>channel_tag</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>&quot;a_tag&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#tags">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#tags">Android</a></li>
 </ul>
+
 <h4 id="removetag">removeTag</h4>
+
 <p>Removes a channel tag.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>removeTag</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.removeTag</code></td>
+<td align="left"><code>removeTag</code></td>
+<td align="left"><code>UAirship.channel()?.removeTag</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>channel_tag</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>&quot;a_tag&quot;</code></td>
+<td align="left"><code>channel_tag</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>&quot;a_tag&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#tags">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#tags">Android</a></li>
 </ul>
+
 <h4 id="addtaggroup">addTagGroup</h4>
+
 <p>Adds a tag group for a named user or channel.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>addTagGroup</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.addTags</code></td>
+<td align="left"><code>addTagGroup</code></td>
+<td align="left"><code>UAirship.channel()?.addTags</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>named_user_tags</code></td>
-<td style="text-align:left"><code>channel_tags</code> (required)</td>
-<td style="text-align:left"><code>String Array</code></td>
+<td align="left"><code>named_user_tags</code></td>
+<td align="left"><code>channel_tags</code> (required)</td>
+<td align="left"><code>String Array</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tag_group</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>loyalty</code></td>
+<td align="left"><code>tag_group</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>loyalty</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tag_type</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left">`channel</td>
+<td align="left"><code>tag_type</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left">`channel</td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#ios-tag-groups">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#android-tag-groups">Android</a></li>
 </ul>
+
 <h4 id="removetaggroup">removeTagGroup</h4>
+
 <p>Removes a tag group for a named user or channel.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>removeTagGroup</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.removeTags</code></td>
+<td align="left"><code>removeTagGroup</code></td>
+<td align="left"><code>UAirship.channel()?.removeTags</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>named_user_tags</code></td>
-<td style="text-align:left"><code>channel_tags</code> (required)</td>
-<td style="text-align:left"><code>String Array</code></td>
+<td align="left"><code>named_user_tags</code></td>
+<td align="left"><code>channel_tags</code> (required)</td>
+<td align="left"><code>String Array</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tag_group</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>loyalty</code></td>
+<td align="left"><code>tag_group</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>loyalty</code></td>
 </tr>
+
 <tr>
-<td style="text-align:left"><code>tag_type</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>channel</code></td>
+<td align="left"><code>tag_type</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>channel</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#ios-tag-groups">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#android-tag-groups">Android</a></li>
 </ul>
+
 <h4 id="setattributes">setAttributes</h4>
+
 <p>Sets custom attributes.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setAttributes</code></td>
-<td style="text-align:left"><code>UAirship.channel()?.apply</code></td>
+<td align="left"><code>setAttributes</code></td>
+<td align="left"><code>UAirship.channel()?.apply</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>attributes</code> (required)</td>
-<td style="text-align:left"><code>JSON object</code></td>
-<td style="text-align:left"><code>{&quot;last\_product\_purchased&quot;: &quot;A1234567&quot;}</code></td>
+<td align="left"><code>attributes</code> (required)</td>
+<td align="left"><code>JSON object</code></td>
+<td align="left"><code>{&quot;last\_product\_purchased&quot;: &quot;A1234567&quot;}</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Attribute values must be either Strings or Numbers.</p>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/segmentation/#attributes">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/segmentation/#attributes">Android</a></li>
 </ul>
+
 <h4 id="displaymessagecenter">displayMessageCenter</h4>
+
 <p>Displays the message center.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>displayMessageCenter</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared().display</code></td>
+<td align="left"><code>displayMessageCenter</code></td>
+<td align="left"><code>UAMessageCenter.shared().display</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/message-center/#displaying-the-message-center">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/message-center/#android-rich-push-inbox-intents">Android</a></li>
 </ul>
+
 <h4 id="setmessagecentertitle">setMessageCenterTitle</h4>
+
 <p>Sets the message center title. iOS only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setMessageCenterTitle</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.title</code></td>
+<td align="left"><code>setMessageCenterTitle</code></td>
+<td align="left"><code>UAMessageCenter.shared().defaultUI.title</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>message_center_title</code> (required)</td>
-<td style="text-align:left"><code>String</code></td>
-<td style="text-align:left"><code>&quot;Custom Message Center&quot;</code></td>
+<td align="left"><code>message_center_title</code> (required)</td>
+<td align="left"><code>String</code></td>
+<td align="left"><code>&quot;Custom Message Center&quot;</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/message-center/#title">iOS</a></li>
 </ul>
+
 <h4 id="setmessagecenterstyle">setMessageCenterStyle</h4>
+
 <p>Sets the message center style. iOS only.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>setMessageCenterStyle</code></td>
-<td style="text-align:left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
+<td align="left"><code>setMessageCenterStyle</code></td>
+<td align="left"><code>UAMessageCenter.shared().defaultUI.style</code></td>
 </tr>
 </tbody>
 </table>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Parameter</th>
-<th style="text-align:left">Type</th>
-<th style="text-align:left">Example</th>
+<th align="left">Parameter</th>
+<th align="left">Type</th>
+<th align="left">Example</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>message_center_style</code> (required)</td>
-<td style="text-align:left"><code>JSON object</code></td>
-<td style="text-align:left">Example below</td>
+<td align="left"><code>message_center_style</code> (required)</td>
+<td align="left"><code>JSON object</code></td>
+<td align="left">Example below</td>
 </tr>
 </tbody>
 </table>
@@ -8766,91 +9094,116 @@ var utag_data = {
  &#34;navigationBarColor&#34;: {&#34;red&#34;: Double, &#34;green&#34;: Double, &#34;blue&#34;: Double, &#34;alpha&#34;: Double}
  &#34;titleColor&#34;: {&#34;red&#34;: Double, &#34;green&#34;: Double, &#34;blue&#34;: Double, &#34;alpha&#34;: Double}
  &#34;tintColor&#34;: {&#34;red&#34;: Double, &#34;green&#34;: Double, &#34;blue&#34;: Double, &#34;alpha&#34;: Double}
- }
-</code></pre><p>Airship Developer Guide:</p>
+ }</code></pre>
+<p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/message-center/#styling-ios-mc">iOS</a></li>
 </ul>
+
 <h4 id="enablelocation">enableLocation</h4>
+
 <p>Enables Location.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableLocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td align="left"><code>enableLocation</code></td>
+<td align="left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/location/#enabling-location">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/location-targeting/#continuous-location-updates">Android</a></li>
 </ul>
+
 <h4 id="disablelocation">disableLocation</h4>
+
 <p>Disables location.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableLocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
+<td align="left"><code>disableLocation</code></td>
+<td align="left"><code>UALocation.shared().isLocationUpdatesEnabled</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/location/#allow-background-location">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/location-targeting/#using-airship-location">Android</a></li>
 </ul>
+
 <h4 id="enablebackgroundlocation">enableBackgroundLocation</h4>
+
 <p>Enables background location.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>enableBackgroundLocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td align="left"><code>enableBackgroundLocation</code></td>
+<td align="left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/location/#allow-background-location">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/location-targeting/#continuous-location-updates">Android</a></li>
 </ul>
+
 <h4 id="disablebackgroundlocation">disableBackgroundLocation</h4>
+
 <p>Disables background location.</p>
+
 <table>
 <thead>
 <tr>
-<th style="text-align:left">Remote Command</th>
-<th style="text-align:left">Airship Method</th>
+<th align="left">Remote Command</th>
+<th align="left">Airship Method</th>
 </tr>
 </thead>
+
 <tbody>
 <tr>
-<td style="text-align:left"><code>disableBackgroundLocation</code></td>
-<td style="text-align:left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
+<td align="left"><code>disableBackgroundLocation</code></td>
+<td align="left"><code>UALocation.shared().isBackgroundLocationUpdatesAllowed</code></td>
 </tr>
 </tbody>
 </table>
+
 <p>Airship Developer Guide:</p>
+
 <ul>
 <li><a href="https://docs.airship.com/platform/ios/location/#allow-background-location">iOS</a></li>
 <li><a href="https://docs.airship.com/platform/android/location-targeting/#continuous-location-updates">Android</a></li>
