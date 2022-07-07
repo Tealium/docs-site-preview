@@ -7362,7 +7362,7 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;social&#34;},
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;big_data&#34;},
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;misc&#34;},
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;Ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;cookiematch&#34;},
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;cookiematch&#34;},
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;cdp&#34;},
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;mobile&#34;},
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">{&#34;ct&#34;:&#34;0&#34;,&#34;name&#34;:&#34;engagement&#34;},
@@ -7375,19 +7375,26 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCookieValues</span>()
 </span></span></code></pre></div><p>The following example gives partial consent:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCookieValues</span>()
-</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Returns: {&#34;c1&#34;:&#34;1&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C2&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C3&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;c4&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C5&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C6&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C7&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;c8&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C9&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C10&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;C11&#34;:&#34;0&#34;,&#34;c12&#34;:&#34;0&#34;,&#34;c13&#34;:&#34;0&#34;,&#34;c14&#34;:&#34;0&#34;,&#34;c15&#34;:&#34;0&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;ts&#34;:&#34;1586965568213&#34;,
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e">&#34;consent&#34;:&#34;true&#34;}*/</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">/* Returns:
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">{
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c1&#34;:&#34;1&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c2&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c3&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c4&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c5&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c6&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c7&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c8&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;C9&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c10&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c11&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c12&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c13&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c14&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;c15&#34;:&#34;0&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;ts&#34;:&#34;1586965568213&#34;,
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">    &#34;consent&#34;:&#34;true&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">}*/</span>
 </span></span></code></pre></div><p>The following example gives full consent:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">gdpr</span>.<span style="color:#a6e22e">getCategories</span>(<span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Returns: {&#34;consent&#34;:&#34;true&#34;,&#34;ts&#34;:&#34;1587026030058&#34;}
@@ -7713,7 +7720,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  June 30, 2022 
+    <span><p>This page was last updated:  July 7, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
