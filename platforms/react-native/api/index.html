@@ -7196,6 +7196,11 @@ var utag_data = {
 </tr>
 
 <tr>
+<td align="left"><a href="#gatherTrackData"><code>gatherTrackData()</code></a></td>
+<td align="left">Gathers all track data from collectors and data layer</td>
+</tr>
+
+<tr>
 <td align="left"><a href="#getData"><code>getData()</code></a></td>
 <td align="left">Retrieves a specified value from the data layer</td>
 </tr>
@@ -7587,6 +7592,34 @@ var utag_data = {
 </tbody>
 </table>
 
+<h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
+
+<p>Gathers all track data from Collectors and data layer.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">gatherTrackData</span>(<span style="color:#a6e22e">callback</span>);</span></span></code></pre></div>
+<table>
+<thead>
+<tr>
+<th align="left">Parameters</th>
+<th align="left">Type</th>
+<th align="left">Description</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><code>callback</code></td>
+<td align="left"><code>Function</code></td>
+<td align="left">A Callback function to use the retrieved value for key. The callback returns a JSON object.</td>
+<td align="left">(see example)</td>
+</tr>
+</tbody>
+</table>
+
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">gatherTrackData</span>(<span style="color:#a6e22e">value</span> =&gt; {
+</span></span><span style="display:flex;"><span>   <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Track data: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">value</span>))
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
 <h3 id="getdata"><code>getData()</code></h3>
 
 <p>Retrieves the value for a specified key in the persistent data layer, then returns in the form of a callback function.</p>
@@ -8226,6 +8259,20 @@ var utag_data = {
 </tr>
 
 <tr>
+<td align="left"><code>overrideCollectProfile</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">Overrides the Tealium Collect profile to send data to a different Tealium profile.</td>
+<td align="left"><code>custom-profile</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>overrideCollectDomain</code></td>
+<td align="left"><code>String</code></td>
+<td align="left">Overrides the domain name in the Tealium Collect URL to send data to a different endpoint.</td>
+<td align="left"><code>custom-domain</code></td>
+</tr>
+
+<tr>
 <td align="left"><code>overrideLibrarySettingsURL</code></td>
 <td align="left"><code>String</code></td>
 <td align="left">Overrides the publish settings URL.</td>
@@ -8277,7 +8324,7 @@ var utag_data = {
 <tr>
 <td align="left"><code>consentPolicy</code></td>
 <td align="left"><a href="#consentpolicy"><code>ConsentPolicy</code></a></td>
-<td align="left">Sets the consent policy. e.g. CCPA or GDPR. Consent Manager is only enabled if this property is set.</td>
+<td align="left">Sets the consent policy, such as CCPA or GDPR. Consent Manager is only enabled if this property is set.</td>
 <td align="left"><code>ConsentPolicy.gdpr</code></td>
 </tr>
 
@@ -8300,6 +8347,13 @@ var utag_data = {
 <td align="left"><code>Boolean</code></td>
 <td align="left">Enables or disables the automatic retrieval of the Visitor Profile using the <a href="https://community.tealiumiq.com/t5/Customer-Data-Hub/Data-Layer-Enrichment-Public-API/ta-p/155">Data Layer Enrichment API</a> (default: disabled)</td>
 <td align="left"><code>true</code></td>
+</tr>
+
+<tr>
+<td align="left"><code>sessionCountingEnabled</code></td>
+<td align="left"><code>Boolean</code></td>
+<td align="left">Enables or disables session counting for Tealium iQ accounts. Set this to <code>false</code> if you are self-hosting your Tealium JavaScript files. (default: enabled)</td>
+<td align="left"><code>false</code></td>
 </tr>
 
 <tr>
@@ -8547,7 +8601,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 16, 2022 
+    <span><p>This page was last updated:  July 26, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -8580,6 +8634,7 @@ var utag_data = {
               <li><a href="#consentpolicy">ConsentPolicy</a></li>
               <li><a href="#dispatchers">Dispatchers</a></li>
               <li><a href="#expiry">Expiry</a></li>
+              <li><a href="#gathertrackdata">gatherTrackData()</a></li>
               <li><a href="#getdata">getData()</a></li>
               <li><a href="#getconsentcategories">getConsentCategories()</a></li>
               <li><a href="#getconsentstatus">getConsentStatus()</a></li>
