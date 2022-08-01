@@ -1111,6 +1111,11 @@ var utag_data = {
 </tr>
 
 <tr>
+<td><a href="#gathertrackdata"><code>gatherTrackData()</code></a></td>
+<td>Gathers data from all collectors and data layer</td>
+</tr>
+
+<tr>
 <td><a href="#initialize"><code>initialize()</code></a></td>
 <td>Initializes Tealium with configuration parameters</td>
 </tr>
@@ -1537,7 +1542,7 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">joinTrace</span>(<span style="color:#e6db74">&#34;abc123xy&#34;</span>);</span></span></code></pre></div>
 <h3 id="leavetrace"><code>leaveTrace()</code></h3>
 
-<p>A trace remains active for the duration of the app session until the <code>leaveTrace()</code> method is called, which leaves a previously-joined trace and ends the visitor session.</p>
+<p>A trace remains active for the duration of the app session until the <code>leaveTrace()</code> method is called, which leaves a previously joined trace and ends the visitor session.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">leaveTrace</span>();</span></span></code></pre></div>
 <h3 id="removedata"><code>removeData()</code></h3>
 
@@ -1565,6 +1570,14 @@ var utag_data = {
 
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">removeData</span>([<span style="color:#e6db74">&#34;foo&#34;</span>, <span style="color:#e6db74">&#34;bar&#34;</span>]);</span></span></code></pre></div>
+<h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
+
+<p>Gathers all data from all collectors and data layer.</p>
+
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">Tealium</span>.<span style="color:#a6e22e">gatherTrackData</span>((<span style="color:#a6e22e">response</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">Map</span><span style="color:#f92672">&lt;</span><span style="color:#a6e22e">string</span>, <span style="color:#a6e22e">any</span><span style="color:#f92672">&gt;</span>)<span style="color:#f92672">:</span> <span style="color:#66d9ef">void</span> =&gt; {				
+</span></span><span style="display:flex;"><span>	<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">response</span>);
+</span></span><span style="display:flex;"><span>});</span></span></code></pre></div>
 <h3 id="removeremotecommand"><code>removeRemoteCommand()</code></h3>
 
 <p>Removes a remote command from the remote command manager.</p>
@@ -1712,7 +1725,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 24, 2021 
+    <span><p>This page was last updated:  July 29, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -1747,6 +1760,7 @@ var utag_data = {
               <li><a href="#jointrace">joinTrace()</a></li>
               <li><a href="#leavetrace">leaveTrace()</a></li>
               <li><a href="#removedata">removeData()</a></li>
+              <li><a href="#gathertrackdata">gatherTrackData()</a></li>
               <li><a href="#removeremotecommand">removeRemoteCommand()</a></li>
               <li><a href="#setvisitorservicelistener">setVisitorServiceListener()</a></li>
               <li><a href="#terminateinstance">terminateInstance()</a></li>

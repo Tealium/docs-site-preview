@@ -1118,7 +1118,7 @@ var utag_data = {
 <tr>
 <td><code>consentPolicy</code></td>
 <td><a href="#consentpolicy"><code>ConsentPolicy</code></a></td>
-<td>Sets the consent policy. e.g. CCPA or GDPR. Consent Manager is only enabled if this property is set.</td>
+<td>Sets the consent policy, such as CCPA or GDPR. Consent Manager is only enabled if this property is set.</td>
 <td><code>ConsentPolicy.gdpr</code></td>
 </tr>
 
@@ -1193,6 +1193,20 @@ var utag_data = {
 </tr>
 
 <tr>
+<td><a href="#overridecollectprofile"><code>overrideCollectProfile</code></a></td>
+<td><code>String</code></td>
+<td>Overrides the Tealium Collect profile to send data to a different Tealium profile.</td>
+<td><code>custom-profile</code></td>
+</tr>
+
+<tr>
+<td><a href="#overridecollectdomain"><code>overrideCollectDomain</code></a></td>
+<td><code>String</code></td>
+<td>Overrides the domain name in the Tealium Collect URL to send data to a different endpoint.</td>
+<td><code>custom-domain</code></td>
+</tr>
+
+<tr>
 <td><code>overrideLibrarySettingsURL</code></td>
 <td><code>String</code></td>
 <td>Overrides the publish settings URL.</td>
@@ -1221,6 +1235,13 @@ var utag_data = {
 </tr>
 
 <tr>
+<td><a href="#sessioncountingenabled"><code>sessionCountingEnabled</code></a></td>
+<td><code>Boolean</code></td>
+<td>Enables or disables session counting for Tealium iQ accounts. Set this to <code>false</code> if you are self-hosting your Tealium JavaScript files. (default: enabled)</td>
+<td><code>false</code></td>
+</tr>
+
+<tr>
 <td><code>useRemoteLibrarySettings</code></td>
 <td><code>Boolean</code></td>
 <td>Enables or disables the <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Creating-a-Mobile-Profile/ta-p/16328">Mobile Publish Settings</a> (default: enabled) Configure the Mobile Publish Settings in iQ Tag Management, or disable the feature.</td>
@@ -1237,7 +1258,7 @@ var utag_data = {
 <tr>
 <td><code>visitorServiceRefreshInterval</code></td>
 <td><code>String</code></td>
-<td>Sets the number of minutes between visitor profile refreshes. Only integers are supported, e.g. &ldquo;2&rdquo; would be 2 minutes.</td>
+<td>Sets the number of minutes between visitor profile refreshes. Only integers are supported, for example, &ldquo;2&rdquo; would be 2 minutes.</td>
 <td><code>&quot;2&quot;</code></td>
 </tr>
 </tbody>
@@ -1452,6 +1473,18 @@ var utag_data = {
 </tbody>
 </table>
 
+<h3 id="overridecollectprofile"><code>overrideCollectProfile</code></h3>
+
+<p>Overrides the Tealium Collect profile to send data to a different Tealium profile.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectProfile = <span style="color:#e6db74">&#34;main&#34;</span></span></span></code></pre></div>
+<h3 id="overridecollectdomain"><code>overrideCollectDomain</code></h3>
+
+<p>Overrides the domain name in the Tealium Collect URL to send data to a different endpoint.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectDomain = <span style="color:#e6db74">&#34;my-company.com&#34;</span></span></span></code></pre></div>
+<h3 id="sessioncountingenabled"><code>sessionCountingEnabled</code></h3>
+
+<p>Enables or disables session counting for Tealium iQ accounts. Set this to <code>false</code> if you are self-hosting your Tealium JavaScript files (default: enabled).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sessionCountingEnabled = <span style="color:#66d9ef">false</span></span></span></code></pre></div>
 <h3 id="tealiumenvironment"><code>TealiumEnvironment</code></h3>
 
 <p>The environment is one of three default environments (Dev, QA, Prod) or any custom environments that Tealium publishes to. Select one of these environments.</p>
@@ -1620,7 +1653,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  March 24, 2021 
+    <span><p>This page was last updated:  July 26, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -1651,6 +1684,9 @@ var utag_data = {
               <li><a href="#consentexpiry">ConsentExpiry</a></li>
               <li><a href="#dispatchers">Dispatchers</a></li>
               <li><a href="#loglevel">LogLevel</a></li>
+              <li><a href="#overridecollectprofile">overrideCollectProfile</a></li>
+              <li><a href="#overridecollectdomain">overrideCollectDomain</a></li>
+              <li><a href="#sessioncountingenabled">sessionCountingEnabled</a></li>
               <li><a href="#tealiumenvironment">TealiumEnvironment</a></li>
               <li><a href="#visitorprofile">VisitorProfile</a></li>
               </nav>
