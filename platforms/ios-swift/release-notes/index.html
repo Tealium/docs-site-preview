@@ -1079,6 +1079,27 @@ var utag_data = {
 <p><strong>Low Impact Changes</strong></p>
 
 <ul>
+<li>Updated <code>SKAdNetwork</code> calls to use <code>updatePostbackConversionValue</code> if on iOS 15</li>
+</ul>
+
+<p><strong>High Impact Changes</strong></p>
+
+<ul>
+<li>Removed initial call to <code>trackUserConsentCategories</code> this may effect you
+if you rely on that being called.</li>
+</ul>
+
+<p><strong>New Features</strong></p>
+
+<ul>
+<li>Added config option <a href="/platforms/ios-swift/api/tealium-config/#overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></a> to override the name of the Tealium consent categories attribute, to support custom enforcement of server-side consent.</li>
+</ul>
+
+<h2 id="2-6-5-may-2022-1">2.6.5 (May 2022)</h2>
+
+<p><strong>Low Impact Changes</strong></p>
+
+<ul>
 <li>No functional changes. Fixed a compile error on prebuilt frameworks.</li>
 </ul>
 
@@ -1490,7 +1511,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  June 7, 2022 
+    <span><p>This page was last updated:  August 10, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -1516,6 +1537,7 @@ var utag_data = {
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--moon-gray pv4 pv0-ns ph4-l nested-links nested-copy-line-height">
       <p class="b">Table of Contents</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#2-6-5-may-2022">2.6.5 (May 2022)</a></li>
+              <li><a href="#2-6-5-may-2022">2.6.5 (May 2022)</a></li>
               <li><a href="#2-6-4-may-2022">2.6.4 (May 2022)</a></li>
               <li><a href="#2-6-3-march-2022">2.6.3 (March 2022)</a></li>
               <li><a href="#2-6-2-february-2022">2.6.2 (February 2022)</a></li>
