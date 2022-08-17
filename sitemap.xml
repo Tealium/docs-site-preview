@@ -673,7 +673,7 @@
     <lastmod>2022-07-07T16:13:20-07:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/how-it-works/</loc>
-    <lastmod>2022-05-13T14:27:25-07:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1030,19 +1030,6 @@
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/module-list/install-referrer/</loc>
     <lastmod>2021-12-14T22:12:40+00:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/</loc>
-    <lastmod>2019-12-17T10:41:17-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/"
-                />
-  </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/api/life-cycle/</loc>
     <lastmod>2020-06-25T22:45:17-07:00</lastmod>
     <xhtml:link
@@ -1223,14 +1210,17 @@
     <loc>https://docs-preview.tealium.com/platforms/javascript/api/tracking-functions/</loc>
     <lastmod>2020-10-06T15:13:58-07:00</lastmod>
   </url><url>
+    <loc>https://docs-preview.tealium.com/platforms/remote-commands/vendor-integrations/</loc>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
+  </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/adjust/</loc>
-    <lastmod>2022-06-09T23:29:57+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/airship/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/appsflyer/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1443,7 +1433,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/branch/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/collect/</loc>
     <lastmod>2022-05-13T17:44:57-07:00</lastmod>
@@ -1476,6 +1466,9 @@
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/flutter/consent-management/"
                 />
+  </url><url>
+    <loc>https://docs-preview.tealium.com/platforms/remote-commands/custom-commands/</loc>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/data-layer/</loc>
     <lastmod>2021-12-14T22:12:40+00:00</lastmod>
@@ -1680,7 +1673,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/braze/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1720,6 +1713,9 @@
                 hreflang="en"
                 href="https://docs-preview.tealium.com/partners/connectors/"
                 />
+  </url><url>
+    <loc>https://docs-preview.tealium.com/platforms/remote-commands/consent-management/</loc>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/xamarin-v1/consent-mangagement/</loc>
     <lastmod>2021-12-15T11:43:14-08:00</lastmod>
@@ -1936,7 +1932,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started/consent-management/</loc>
-    <lastmod>2020-10-20T13:22:20-07:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1949,7 +1945,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/contentsquare/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1975,6 +1971,19 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/ios-swift/module-list/crash-reporter/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/</loc>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/platforms/remote-commands/integrations/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/platforms/remote-commands/integrations/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/location-manager/</loc>
@@ -2106,7 +2115,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/facebook/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -2147,7 +2156,7 @@
     <lastmod>2021-12-14T22:12:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/firebase/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -2234,7 +2243,7 @@
     <lastmod>2022-05-13T17:44:57-07:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/kochava/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/api/tealium/</loc>
     <lastmod>2020-07-23T16:42:41-07:00</lastmod>
@@ -2272,7 +2281,7 @@
     <lastmod>2021-06-22T18:01:46-07:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/usabilla/</loc>
-    <lastmod>2022-06-23T13:27:30+01:00</lastmod>
+    <lastmod>2022-08-17T01:33:01+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"

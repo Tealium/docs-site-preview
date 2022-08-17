@@ -276,6 +276,12 @@ var utag_data = {
         <a href="/platforms/remote-commands/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-overview">Overview</a>
       </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
         <a href="/platforms/remote-commands/how-it-works/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-how-it-works">How It Works</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/remote-commands/vendor-integrations/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-vendor-integrations">Vendor Integrations</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/remote-commands/custom-commands/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-custom-commands">Custom Commands</a>
+      </li><li class="w-100 hover-accent-color-light fw4 f6" data-level="2">
+        <a href="/platforms/remote-commands/consent-management/" class="db link pl3 pr2 pv1 primary-color hover-bg-primary " data-target=".remote-commands-consent-management">Consent Management</a>
       </li>
       <li class="w-100 hover-accent-color-light fw8  active" data-level="2">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link pv1 primary-color hover-bg-primary pl3 pr2 primary-color expanded " data-target=".remote-commands-integrations">Integrations</a>
@@ -1173,9 +1179,13 @@ var utag_data = {
 </div>
 
 
-<h3 id="manual-ios">Manual (iOS)</h3>
+<h3 id="manual-installation">Manual Installation</h3>
 
-<p>The manual installation for Kochava remote commands requires the <a href="/platforms/ios-swift/">Tealium for Swift</a> library to be installed. To install the Kochava remote commands for your iOS project:</p>
+
+<div class="code-tabs">
+  <ul class="nav nav-tabs"></ul>
+  <div class="tab-content"><div class="tab-pane" data-lang="iOS" title="iOS">
+  <p>The manual installation for Kochava remote commands requires the <a href="/platforms/ios-swift/">Tealium for Swift</a> library to be installed. To install the Kochava remote commands for your iOS project:</p>
 
 <ol>
 <li><p>Install the <a href="https://support.kochava.com/sdk-integration/ios-sdk-integration/">Kochava SDK</a>, if you haven&rsquo;t already done so.</p></li>
@@ -1185,9 +1195,10 @@ var utag_data = {
 <li><p>Set the <a href="/platforms/ios-swift/api/tealium-config/#remoteapienabled"><code>remoteAPIEnabled</code></a> configuration flag to <code>true</code></p></li>
 </ol>
 
-<h3 id="manual-android">Manual (Android)</h3>
+</div>
 
-<p>The manual installation for Kochava remote commands requires <a href="/platforms/android-kotlin/install/">Tealium for Android (Kotlin)</a> or <a href="/platforms/android-java/install/">Tealium for Android (Java)</a> to be installed.</p>
+<div class="tab-pane" data-lang="Android" title="Android">
+  <p>The manual installation for Kochava remote commands requires <a href="/platforms/android-kotlin/install/">Tealium for Android (Kotlin)</a> or <a href="/platforms/android-java/install/">Tealium for Android (Java)</a> to be installed.</p>
 
 <p>To install the Kochava remote commands for your Android project:</p>
 
@@ -1209,6 +1220,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kochava&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span></span></span></code></pre></div></li>
 </ol>
+
+</div>
+</div>
+</div>
+
 
 <h2 id="initialize">Initialize</h2>
 
@@ -1989,7 +2005,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  June 23, 2022 
+    <span><p>This page was last updated:  August 17, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -2018,8 +2034,7 @@ var utag_data = {
               <li><a href="#how-it-works">How It Works</a></li>
               <li><a href="#install">Install</a></li>
               <ul class="toc-h3"><li><a href="#dependency-manager">Dependency Manager</a></li>
-              <li><a href="#manual-ios">Manual (iOS)</a></li>
-              <li><a href="#manual-android">Manual (Android)</a></li>
+              <li><a href="#manual-installation">Manual Installation</a></li>
               </ul><li><a href="#initialize">Initialize</a></li>
               <ul class="toc-h3"><li><a href="#android-kotlin">Android (Kotlin)</a></li>
               <li><a href="#android-java">Android (Java)</a></li>
