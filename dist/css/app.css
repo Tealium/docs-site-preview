@@ -1575,6 +1575,66 @@ html[data-theme=dark] {
     --docsearch-logo-color: #fff;
     --docsearch-muted-color: #7f8497
 }
+.DocSearch-Button {
+    -ms-flex-align: center;
+        align-items: center;
+    background: hsla(0, 0%, 100%, .1);
+    border: 0;
+    color: rgba(255, 255, 255, .6);
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 300;
+    height: 36px;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    padding: 4px 12px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none
+}
+.DocSearch-Button:active,.DocSearch-Button:focus,.DocSearch-Button:hover {
+    color: rgba(255, 255, 255, .9);
+    outline: none
+}
+.DocSearch-Button-Container {
+    -ms-flex-align: center;
+        align-items: center;
+    display: -ms-flexbox;
+    display: flex
+}
+.DocSearch-Button-Placeholder {
+    font-size: 1rem;
+    padding: 0 12px 0 6px
+}
+.DocSearch-Button-Keys {
+    display: -ms-flexbox;
+    display: flex;
+    min-width: calc(40px + .8em)
+}
+.DocSearch-Button-Key {
+    -ms-flex-align: center;
+        align-items: center;
+    background: rgb(247, 250, 252);
+    border-radius: 4px;
+    color: #147dc0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-right: .4em;
+    padding: 3px 7px;
+    border: 0;
+    top: -1px;
+    font-family: "Menlo", "Consolas";
+    font-size: .9em;
+}
+@media (max-width: 750px) {
+    .DocSearch-Button-Keys {
+        display:none
+    }
+}
 @media (max-width: 750px) {
     :root {
         --docsearch-spacing:10px;
