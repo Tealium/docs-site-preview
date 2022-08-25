@@ -1,4 +1,3 @@
-@import url(https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css);
 /*Base Styles*/
 /*! TACHYONS v4.7.0 | http://tachyons.io */
 /*
@@ -166,9 +165,6 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-fieldset {
-  padding: 0.35em 0.75em 0.625em;
-}
 /**
  * 1. Correct the text wrapping in Edge and IE.
  * 2. Correct the color inheritance from `fieldset` elements in IE.
@@ -260,8 +256,6 @@ main,
 nav,
 footer,
 header,
-form,
-fieldset,
 pre,
 code,
 a,
@@ -326,10 +320,6 @@ img { max-width: 100%; }
       -l  = large
 
  */
-.bg-left {   
-  background-repeat: no-repeat; 
-  background-position: center left;   
-}
 /*@import 'tachyons/src/_outlines';*/
 /*
 
@@ -386,6 +376,7 @@ img { max-width: 100%; }
 .b--light-gray {   border-color: #eee; }
 .b--white-40 {   border-color: rgba(255, 255, 255, .4); }
 .b--black-20 {   border-color: rgba(0, 0, 0, .2); }
+.b--blue { border-color: #147DC0; }
 /*
 
    BORDER RADIUS
@@ -672,15 +663,6 @@ img { max-width: 100%; }
    FORMS
    
 */
-.input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.input-reset::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
 /*
 
    HEIGHTS
@@ -860,7 +842,6 @@ img { max-width: 100%; }
 .w1 {    width: 1rem; }
 .w3 {    width: 4rem; }
 .w4 {    width: 8rem; }
-.w5 {    width: 16rem; }
 .w-20 {  width:  20%; }
 .w-80 {  width:  80%; }
 .w-90 {  width:  90%; }
@@ -1334,12 +1315,6 @@ img { max-width: 100%; }
     Text that is hidden but accessible
     Ref: http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
 */
-.clip {
-  position: fixed !important;
-  _position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-}
 /*
 
    WHITE SPACE
@@ -1578,6 +1553,43 @@ code.hljs{padding:3px 5px}
 /*@import 'font/_muli-800';*/
 :root { /* #0594CB; */ /* #0A1922; */ /* #f9f9f9; main background */ /* #FF4088; */ /* #373737; */ /* <p note> */ /* <p note> */ /* <p tip> */ /* <p tip> */
 }
+/**
+ * Original file: @import url("https://cdn.jsdelivr.net/npm/@docsearch/css@3");
+ *
+ */
+/*! @docsearch/css 3.1.1 | MIT License | © Algolia, Inc. and contributors | https://docsearch.algolia.com */
+html[data-theme=dark] {
+    --docsearch-text-color: #f5f6f7;
+    --docsearch-container-background: rgba(9, 10, 17, .8);
+    --docsearch-modal-background: #15172a;
+    --docsearch-modal-shadow: inset 1px 1px 0 0 #2c2e40,0 3px 8px 0 #000309;
+    --docsearch-searchbox-background: #090a11;
+    --docsearch-searchbox-focus-background: #000;
+    --docsearch-hit-color: #bec3c9;
+    --docsearch-hit-shadow: none;
+    --docsearch-hit-background: #090a11;
+    --docsearch-key-gradient: linear-gradient(-26.5deg,#565872,#31355b);
+    --docsearch-key-shadow: inset 0 -2px 0 0 #282d55,inset 0 0 1px 1px #51577d,0 2px 2px 0 rgba(3, 4, 9, .3);
+    --docsearch-footer-background: #1e2136;
+    --docsearch-footer-shadow: inset 0 1px 0 0 rgba(73, 76, 106, .5),0 -4px 8px 0 rgba(0, 0, 0, .2);
+    --docsearch-logo-color: #fff;
+    --docsearch-muted-color: #7f8497
+}
+@media (max-width: 750px) {
+    :root {
+        --docsearch-spacing:10px;
+        --docsearch-footer-height: 40px
+    }
+}
+@keyframes fade-in {
+    0% {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
 .header-link:after {
   position: relative;
   left: 0.5em;
@@ -1677,7 +1689,7 @@ p.tip .fa-star:before {
 .documentation-copy h2 {
   border-bottom: 1px solid #EEE
 }
-.documentation-copy h2.minor{
+.documentation-copy h2.minor {
   font-size: inherit;
   margin-top: inherit;
   border-bottom: none;
@@ -1909,14 +1921,14 @@ h4 {font-size: 1.25em;}
     border: 1px solid #eee
 
 }
-.prose table th{
+.prose table th {
   background-color: #147DC0;
   color: white;
   font-weight: 400;
   text-align: left;
   padding: .375em .5em;
 }
-.prose table td, .prose table tc{
+.prose table td, .prose table tc {
   padding: .75em .5em;
   text-align: left;
   border-right: 1px solid #eee;
@@ -1927,28 +1939,6 @@ h4 {font-size: 1.25em;}
 .prose table tr:nth-child(odd) {
   background-color: #FFFFFF;
 }
-input[type=search]:focus, textarea:focus {
-    box-shadow: 0 0 3px;
-}
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: rgba(255, 255, 255, .6);
-}
-::-moz-placeholder { /* Firefox 19+ */
-  color: rgba(255, 255, 255, .6);
-}
-:-ms-input-placeholder { /* IE 10+ */
-  color: rgba(255, 255, 255, .6);
-}
-:-moz-placeholder { /* Firefox 18- */
-  color: rgba(255, 255, 255, .6);
-}
-/* --------- Algolia Overrides --------- */
-/* Main dropdown wrapper */
-/* Main category (eg. Getting Started) */
-/* Category (eg. Downloads) */
-/* Title (eg. Bootstrap CDN) */
-/* Description description (eg. Bootstrap currently works...) */
-/* Highlighted text */
 /* From http://cssfontstack.com */
 code, .code, pre code, .highlight pre  {
   font-family: 'inconsolata',Menlo,Monaco,'Courier New',monospace;
@@ -2064,6 +2054,9 @@ nav.side-nav>ul>li.active{
   background: rgba(0, 0, 0, .26);
 }
 .sticky-l::-webkit-scrollbar-corner {
+}
+.b--blue {
+  border-color: #147DC0;
 }
 .bg-subtle {
   background-color: #F6FAFF;
