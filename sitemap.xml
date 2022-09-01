@@ -1387,7 +1387,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/</loc>
-    <lastmod>2022-08-25T12:42:30-07:00</lastmod>
+    <lastmod>2022-09-01T11:58:41-07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -4331,6 +4331,18 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/getting-started/site-components/"
+                />
+  </url><url>
+    <loc>https://docs-preview.tealium.com/tags/index.json</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="ja"
+                href="https://docs-preview.tealium.co.jp/tags/index.json"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://docs-preview.tealium.com/tags/index.json"
                 />
   </url>
 </urlset>
