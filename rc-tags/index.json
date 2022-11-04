@@ -1,0 +1,58 @@
+
+{
+    "kind": "taxonomy",
+    "name": "rc-tags",
+    "count": 7,
+    "items": [
+
+    
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_consent/index.json",
+            "name": "iq_consent"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_dashboard/index.json",
+            "name": "iq_dashboard"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_data_layer/index.json",
+            "name": "iq_data_layer"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_extensions/index.json",
+            "name": "iq_extensions"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_load_rules/index.json",
+            "name": "iq_load_rules"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_tags/index.json",
+            "name": "iq_tags"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_versions/index.json",
+            "name": "iq_versions"
+        }  
+
+    ]
+}
