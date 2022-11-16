@@ -1184,13 +1184,13 @@ var utag_data = {
 
 <tr>
 <td><code>cp.utag_main__ss</code></td>
-<td><strong>Is Start of Session</strong> - A flag that indicates whether or not a page view is the start of a session (1=yes, 0=no)</td>
+<td><strong>Is Start of Session</strong> - A flag that indicates whether or not a page view is the start of a session (<code>1</code>=yes, <code>0</code>=no)</td>
 <td><code>0</code></td>
 </tr>
 
 <tr>
 <td><code>cp.utag_main__st</code></td>
-<td><strong>Timestamp</strong> - The Unix/Epoch time stamp in milliseconds</td>
+<td><strong>Session Timeout Timestamp</strong> - A Unix/Epoch time stamp in milliseconds indicating when the session will time out (30 minutes after the last page view)</td>
 <td><code>1522968400449</code></td>
 </tr>
 
@@ -1460,7 +1460,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  September 9, 2022 
+    <span><p>This page was last updated:  November 15, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
