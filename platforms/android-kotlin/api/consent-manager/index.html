@@ -1031,11 +1031,6 @@ var utag_data = {
 </tr>
 
 <tr>
-<td><a href="#overrideconsentcategorieskey"><code>overrideConsentCategorieskey</code></a></td>
-<td>Allows for custom consent categories key</td>
-</tr>
-
-<tr>
 <td><a href="#policy"><code>policy</code></a></td>
 <td>Gets the current policy that is in force (nullable)</td>
 </tr>
@@ -1062,10 +1057,6 @@ var utag_data = {
 <p>Get or set whether to log changes to the user consent preferences. Initialized via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerloggingenabled">TealiumConfig.consentManagerLoggingEnabled</a> option.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">consentManager</span><span style="color:#f92672">.</span><span style="color:#a6e22e">isConsentLoggingEnabled</span> <span style="color:#75715e">// e.g. false
 </span></span></span></code></pre></div>
-<h3 id="overrideconsentcategorieskey"><code>overrideConsentCategorieskey</code></h3>
-
-<p>Overrides the consent categories key. Default key: <code>consent_categories</code>.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">overrideConsentCategorieskey</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;custom_consent_categories&#34;</span></span></span></code></pre></div>
 <h3 id="policy"><code>policy</code></h3>
 
 <p>Returns the currently in-use <code>ConsentPolicy</code>. Initialized via the <a href="/platforms/android-kotlin/api/tealium-config/#consentmanagerpolicy">TealiumConfig.consentManagerPolicy</a> option, and may be set to <code>null</code>.</p>
@@ -1141,9 +1132,9 @@ var utag_data = {
 <p>Example:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>val tealium <span style="color:#f92672">=</span> Tealium<span style="color:#f92672">.</span><span style="color:#a6e22e">create</span><span style="color:#f92672">(...)</span> <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>        events<span style="color:#f92672">.</span><span style="color:#a6e22e">subscribe</span><span style="color:#f92672">(</span>object <span style="color:#f92672">:</span> UserConsentPreferencesUpdatedListener <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>            override fun <span style="color:#a6e22e">onUserConsentPreferencesUpdated</span><span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span> UserConsentPreferences<span style="color:#f92672">,</span>
-</span></span><span style="display:flex;"><span>                                                         policy<span style="color:#f92672">:</span> ConsentManagementPolicy<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>                Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">dev</span><span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">TAG</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Consent preferences have been updated&#34;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>	        override fun <span style="color:#a6e22e">onUserConsentPreferencesUpdated</span><span style="color:#f92672">(</span>userConsentPreferences<span style="color:#f92672">:</span> UserConsentPreferences<span style="color:#f92672">,</span>
+</span></span><span style="display:flex;"><span>	                                                     policy<span style="color:#f92672">:</span> ConsentManagementPolicy<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>	            Logger<span style="color:#f92672">.</span><span style="color:#a6e22e">dev</span><span style="color:#f92672">(</span>BuildConfig<span style="color:#f92672">.</span><span style="color:#a6e22e">TAG</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;Consent preferences have been updated&#34;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">})</span>
@@ -1204,7 +1195,7 @@ var utag_data = {
   </span>
 	<span id="feedback_comment">
 		<p><textarea id="feedback_textarea" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea></p>
-    <span><p>This page was last updated:  December 5, 2022 
+    <span><p>This page was last updated:  November 29, 2022 
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <button disabled id="feedback_submit" class="f6 ph3 pv1 br2 dib tc mv3 bg-primary-color white hover-bg-blue link">Send Feedback</button></span>
     </p>
@@ -1228,7 +1219,6 @@ var utag_data = {
       <p class="b">Table of Contents</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li><a href="#class-consentmanager">Class: ConsentManager</a></li>
               <ul class="toc-h3"><li><a href="#isconsentloggingenabled">isConsentLoggingEnabled</a></li>
-              <li><a href="#overrideconsentcategorieskey">overrideConsentCategorieskey</a></li>
               <li><a href="#policy">policy</a></li>
               <li><a href="#reset">reset()</a></li>
               <li><a href="#userconsentcategories">userConsentCategories</a></li>
