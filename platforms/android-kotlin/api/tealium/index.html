@@ -365,6 +365,10 @@ var utag_data = {
 <td style="text-align:left">Allows you to provide listener classes to a numerous events throughout the Tealium SDK.</td>
 </tr>
 <tr>
+<td style="text-align:left"><a href="#gathertrackdata"><code>gatherTrackData()</code></a></td>
+<td style="text-align:left">Exposes all track data for data layer and Collectors.</td>
+</tr>
+<tr>
 <td style="text-align:left"><a href="#jointrace"><code>joinTrace()</code></a></td>
 <td style="text-align:left">Adds the supplied trace ID to the data layer for the current session.</td>
 </tr>
@@ -455,6 +459,9 @@ Additional listeners available at <code>com.tealium.core.messaging</code>.</p>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// take action on consent changes
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">})</span>
+</span></span></code></pre></div><h3 id="gathertrackdata"><code>gatherTrackData()</code></h3>
+<p>Retrieves track data from data layer and Collectors.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">gatherTrackData</span><span style="color:#f92672">()</span>
 </span></span></code></pre></div><h3 id="jointrace"><code>joinTrace()</code></h3>
 <p>Adds the supplied trace ID to the data layer for the current session.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>Tealium<span style="color:#f92672">[</span><span style="color:#e6db74">&#34;INSTANCE_NAME&#34;</span><span style="color:#f92672">]?.</span><span style="color:#a6e22e">joinTrace</span><span style="color:#f92672">(</span>traceId<span style="color:#f92672">)</span>
@@ -701,7 +708,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 7, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -721,6 +728,7 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#datalayer">dataLayer</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#endtracevisitorsession">endTraceVisitorSession()</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#events">events</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#gathertrackdata">gatherTrackData()</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#jointrace">joinTrace()</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#leavetrace">leaveTrace()</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#linkecidtoknownidentifier">linkEcidToKnownIdentifier()</a></li>
