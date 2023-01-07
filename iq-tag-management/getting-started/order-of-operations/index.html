@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -654,42 +654,36 @@ var utag_data = {
 <ol>
 <li><strong>Request and Response</strong><br>
 The browser requests the page located at a URL and the raw page content (HTML) is returned.</li>
-<li><strong>Build</strong><br>
-The browser begins to parse the HTML document, from the top to the bottom. It must process various elements as they are encountered, such as images, links, text, or scripts like the Universal Tag (<code>utag.js</code>). The browser continues to download these elements as it encounters them while it downloads the HTML document itself. Synchronous scripts force the browser to stop and interpret the script before continuing. Asynchronous scripts, like utag.js, allow the browser to continue processing while the script is loaded. When the browser is done building the HTML of the page it is commonly called the &ldquo;DOM Ready&rdquo; event.</li>
+<li><strong>Build</strong>
+<ul>
+<li>The browser begins to parse the HTML document, from the top to the bottom. It must process various elements as they are encountered, such as images, links, text, or scripts like the Universal Tag (<code>utag.js</code>).</li>
+<li>The browser continues to download these elements as it encounters them while it downloads the HTML document itself.</li>
+<li>Synchronous scripts force the browser to stop and interpret the script before continuing. Asynchronous scripts, like utag.js, allow the browser to continue processing while the script is loaded.</li>
+<li>When the browser is done building the HTML of the page it is commonly called the &ldquo;DOM Ready&rdquo; event.</li>
+</ul>
+</li>
 <li><strong>Render</strong><br>
 The browser renders the web page (DOM) on the screen.</li>
 </ol>
 <h2 id="order-of-operations-overview">Order of operations overview</h2>
 <p>The default order of operations:</p>
 <ul>
-<li>
-<p><strong>utag Sync</strong> (when enabled)</p>
-</li>
-<li>
-<p><strong>Pre Loader</strong> (extensions)</p>
+<li><strong>utag Sync</strong> (when enabled)</li>
+<li><strong>Pre Loader</strong> (extensions)
 <ul>
 <li>Prompt for Privacy Consent</li>
 <li>Process Data Layer</li>
 </ul>
 </li>
-<li>
-<p><strong>Before Load Rules</strong> (extensions)</p>
+<li><strong>Before Load Rules</strong> (extensions)
 <ul>
 <li>Process Load Rules</li>
 </ul>
 </li>
-<li>
-<p><strong>After Load Rules</strong> (extensions)</p>
-</li>
-<li>
-<p><strong>Prioritized Tags</strong></p>
-</li>
-<li>
-<p><strong>DOM Ready</strong> (tags and extensions)</p>
-</li>
-<li>
-<p><strong>After Tags</strong> (extensions)</p>
-</li>
+<li><strong>After Load Rules</strong> (extensions)</li>
+<li><strong>Prioritized Tags</strong></li>
+<li><strong>DOM Ready</strong> (tags and extensions)</li>
+<li><strong>After Tags</strong> (extensions)</li>
 </ul>
 <h2 id="order-of-operations-details">Order of operations details</h2>
 <p>The following sections provide a step-by-step overview of the order of operations of the Universal Tag (<code>utag.js</code>) to show how it processes the data layer and executes extensions and tags.</p>
@@ -700,7 +694,7 @@ The browser renders the web page (DOM) on the screen.</li>
 <h3 id="pre-loader">Pre loader</h3>
 <p>Extensions scoped to <strong>Pre Loader</strong> run before anything else is processed. Due to this, it is important that they do not have dependencies on other parts of <code>utag.js</code> that run later (data layer, other extensions, et cetera.).</p>
 <h4 id="prompt-for-privacy-consent-optional">Prompt for privacy consent (optional)</h4>
-<p>After Pre Loader extensions are complete, and if you have the Consent Manager enabled, the <a href="/iq-tag-management/consent-management/explicit-consent-prompt/">Explicit Consent Prompt</a> is run.</p>
+<p>After Pre Loader extensions are complete, and if you have the Consent Manager enabled, the prompt for consent is run.</p>
 <h4 id="process-data-layer">Process data layer</h4>
 <p>After Pre Loader extensions are complete, the Universal Tag is initialized and the data layer is processed. During this step the Universal Data Object (<code>utag_data</code>) is combined with data from the rest of the web page such as, first-party cookies, meta tags, query string parameters, and global JavaScript variables, to form the final data layer object, <code>utag.data</code>. The data from this object can be used in your iQ configuration.</p>
 <h3 id="before-load-rules">Before load rules</h3>
@@ -718,9 +712,9 @@ The browser renders the web page (DOM) on the screen.</li>
 <h3 id="after-tags">After tags</h3>
 <p>After the tags are run the extensions scoped to <strong>After Tags</strong> are run.</p>
 <h3 id="about-single-page-applications">About single page applications</h3>
-<p>When you use <code>utag.view()</code> to track screen views manually, load rules are re-evaluated upon each call. <a href="https://docs.tealium.com/platforms/javascript/release-notes/#version-4-26-4-35"><code>utag.js</code> versions 4.26</a> and later. Versions of the Universal Tag prior to 4.26 do not re-evaluate load rules when calling <code>utag.view()</code> .</p>
+<p>When you use <code>utag.view()</code> to track screen views manually, load rules are re-evaluated upon each call. <a href="/platforms/javascript/release-notes/#version-4-26-4-35"><code>utag.js</code> versions 4.26</a> and later. Versions of the Universal Tag prior to 4.26 do not re-evaluate load rules when calling <code>utag.view()</code> .</p>
 <p>Additionally, the behavior of load rules can be controlled using a configuration option called <code>load_rules_at_wait</code>, available in versions 4.26 and later of the Universal Tag. This is a legacy customization and we recommend that you contact your customer success manager before implementing it.</p>
-<p>Learn more about the <a href="https://docs.tealium.com/platforms/javascript/settings/">configuration settings of the Universal Tag</a>.</p>
+<p>Learn more about the <a href="/platforms/javascript/settings/">configuration settings of the Universal Tag</a>.</p>
 <h2 id="glossary-of-terms">Glossary of terms</h2>
 <h3 id="data-mappings">Data mappings</h3>
 <p>When you map a Tealium variable to a vendor variable, you create a connection between them called a data mapping. Data mappings are how you configure what data gets sent to your tags.</p>
@@ -749,41 +743,6 @@ The browser renders the web page (DOM) on the screen.</li>
          alt="waterfall with ready-wait.png"
          title="waterfall with ready-wait.png"/>
 </figure>
-
-</div>
-
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/getting-started/extension-basics/">Extension basics</a></li>
-		
-		
-		
-		
-		
-			<li><a href="/iq-tag-management/extensions/about/">About extensions</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/extensions/load-order-manager/">Load Order Manager</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/extensions/extensions-list/">List of extensions</a></li>
-		
-		
-		</ul>
-
-
-
 
 </div>
 
@@ -844,7 +803,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

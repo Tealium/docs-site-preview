@@ -748,14 +748,18 @@ Read the <a href="/server-side/connectors/about/">Connector Overview</a> article
 <li>
 <p>In the <strong>Report Suite ID</strong> field, enter your Report Suite ID.<br>
 This is the Report Suite used to submit the data. To send data to multiple destinations use a comma-separated list of report suites.</p>
+ <p class="note"><i class="fas fa-info-circle"></i>This value can also be set with a data mapping.</p>
 </li>
-</ol>
-<p class="note"><i class="fas fa-info-circle"></i>This value can also be set with a data mapping.</p>
-<ol>
-<li>In the <strong>Notes</strong> field, enter any relevant notes about this connector.</li>
-<li>Click <strong>Next</strong>.<br>
-You are now on the <strong>Actions</strong> tab.</li>
-<li>From the <strong>Actions</strong> drop-down list, select <strong>Send Analytics Event</strong> from the drop-down list and configure the following parameters:</li>
+<li>
+<p>In the <strong>Notes</strong> field, enter any relevant notes about this connector.</p>
+</li>
+<li>
+<p>Click <strong>Next</strong>.<br>
+You are now on the <strong>Actions</strong> tab.</p>
+</li>
+<li>
+<p>From the <strong>Actions</strong> drop-down list, select <strong>Send Analytics Event</strong> from the drop-down list and configure the following parameters:</p>
+</li>
 </ol>
 <table>
 <thead>
@@ -821,7 +825,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 </table>
 <p>When you are done configuring parameters, click <strong>Save</strong>, and then Save and Publish your changes.</p>
 <h2 id="general-attributes">General Attributes</h2>
-<p>For a full reference of all attributes, including details on exactly what each field should contain, see Adobe&rsquo;s <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md">API documentation</a> and the <a href="#toc-hId--50956055">Visitor &amp; Experience Cloud IDs</a> section of this article.</p>
+<p>For a full reference of all attributes, including details on exactly what each field should contain, see Adobe&rsquo;s <a href="https://github.com/AdobeDocs/analytics-1.4-apis/blob/master/docs/data-insertion-api/reference/r_supported_tags.md">API documentation</a> and the <a href="#visitor-and-experience-cloud-ids">Visitor &amp; Experience Cloud IDs</a> section of this article.</p>
 <h4 id="report-suite-ids">Report Suite IDs</h4>
 <ul>
 <li>Specify a report suite ID, which will override any value previously entered in the Connector Configuration UI. If you do not need to override that value, you can leave this field blank. You can use either a data layer variable, or a <strong>Custom Value</strong>. If you wish to send data to multiple report suites, you may use a comma-separated list.</li>
@@ -954,7 +958,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">companyname.someproperty</td>
 <td style="text-align:left">Maps a defined Customer Data Hub attribute to a Context Data attribute</td>
 <td style="text-align:left">Map: (Customer Data Hub Attribute) Campaign Name to &ldquo;tealium.productColor&rdquo;</td>
-<td style="text-align:left">&lt;contextData&gt;&lt;tealium.productColor&gt;Red&lt;/tealium.productColor&gt;&lt;/contextData&gt;</td>
+<td style="text-align:left"><code>&lt;contextData&gt;&amp;lt;tealium.productColor&amp;gt;Red&amp;lt;/tealium.productColor&amp;gt;</code></contextData></td>
 </tr>
 </tbody>
 </table>
@@ -976,7 +980,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">eVarX, where X is an integer in the range 1 - 250</td>
 <td style="text-align:left">Maps a defined Customer Data Hub attribute to an eVar in your analytics reports</td>
 <td style="text-align:left">Map: (Customer Data Hub Attribute) Campaign Name to &ldquo;eVar75&rdquo;</td>
-<td style="text-align:left">&lt;eVar75&gt;Summer2018&lt;/eVar75&gt;</td>
+<td style="text-align:left"><code>&lt;eVar75&gt;Summer2018</code></eVar75></td>
 </tr>
 </tbody>
 </table>
@@ -998,7 +1002,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">propX, where X is an integer in the range 1 - 75</td>
 <td style="text-align:left">Maps a defined Customer Data Hub attribute to an prop in your analytics reports</td>
 <td style="text-align:left">Map: (Customer Data Hub Attribute) Link Name to &ldquo;prop4&rdquo;</td>
-<td style="text-align:left">&lt;prop4&gt;Buy Now&lt;/prop4&gt;</td>
+<td style="text-align:left"><code>&lt;prop4&gt;Buy Now</code></prop4></td>
 </tr>
 </tbody>
 </table>
@@ -1022,7 +1026,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">Customer Data Hub attribute representing a list of events</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">[&ldquo;event1&rdquo;, &ldquo;event5&rdquo;, &ldquo;event9&rdquo;]</td>
-<td style="text-align:left">&lt;events&gt;event1,event5,event9&lt;/events&gt;</td>
+<td style="text-align:left"><code>&lt;events&gt;event1,event5,event9&lt;/events&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -1045,7 +1049,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">Name of event to trigger, for example, event8</td>
 <td style="text-align:left">[&ldquo;newsletter_registration&rdquo;, &ldquo;homepage_viewed&rdquo;]</td>
 <td style="text-align:left">&ldquo;newsletter_registration&rdquo;</td>
-<td style="text-align:left">&lt;events&gt;event8&lt;/events&gt; (because string &ldquo;newsletter_registration&rdquo; appeared in the events array)</td>
+<td style="text-align:left"><code>&lt;events&gt;event8&lt;/events&gt;</code> (because string &ldquo;newsletter_registration&rdquo; appeared in the events array)</td>
 </tr>
 </tbody>
 </table>
@@ -1067,7 +1071,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">Number</td>
 <td style="text-align:left">eventX, where X is the number of the event</td>
 <td style="text-align:left">Map &ldquo;9&rdquo; to &ldquo;event5&rdquo;</td>
-<td style="text-align:left">&lt;events&gt;event5=9&lt;/events&gt;</td>
+<td style="text-align:left"><code>&lt;events&gt;event5=9&lt;/events&gt;</code></td>
 </tr>
 </tbody>
 </table>
@@ -1089,10 +1093,159 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">String</td>
 <td style="text-align:left">The event number</td>
 <td style="text-align:left">Map &ldquo;ABC123&rdquo; to &ldquo;1&rdquo;,<br> Map &ldquo;ABC123&rdquo; to &ldquo;2&rdquo;</td>
-<td style="text-align:left">&lt;events&gt;event1=ABC123,event2:ABC123&lt;/events&gt;</td>
+<td style="text-align:left"><code>&lt;events&gt;event1=ABC123,event2:ABC123&lt;/events&gt;</code></td>
 </tr>
 </tbody>
 </table>
+<h3 id="lifecycle-events">Lifecycle Events</h3>
+<p>Adobe Analytics has the ability to track Application Lifecycle events. The Tealium mobile libraries each have an optional module available to support this feature, which automatically generates the required data for Adobe Analytics.</p>
+<table>
+<thead>
+<tr>
+<th>Tealium Attribute</th>
+<th>Adobe Variable</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lifecycle_diddetect_crash</td>
+<td>a.CrashEvent</td>
+<td>Was a crash detected during this launch/wake event. Populated only if true.</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lifecycle_dayofweek_local</td>
+<td>a.DayOfWeek</td>
+<td>Local day of week that call was made - 1=Sunday, 2=Monday, etc.)</td>
+<td>Number</td>
+<td>13</td>
+</tr>
+<tr>
+<td>lifecycle_dayssincelaunch</td>
+<td>a.DaysSinceFirstUse</td>
+<td>Days since first launch in integer increments</td>
+<td>Number</td>
+<td>23</td>
+</tr>
+<tr>
+<td>lifecycle_dayssinceupdate</td>
+<td>a.DaysSinceLastUpgrade</td>
+<td>Days since the last detected app version update in integer increments</td>
+<td>Number</td>
+<td>46</td>
+</tr>
+<tr>
+<td>lifecycle_dayssincelastwake</td>
+<td>a.DaysSinceLastUse</td>
+<td>Days since last detected wake in integer increments</td>
+<td>Number</td>
+<td>1</td>
+</tr>
+<tr>
+<td>lifecycle_firstlaunchdate_MMDDYYYY</td>
+<td>a.InstallDate</td>
+<td>GMT Timestamp formatted as MM/DD/YYYY</td>
+<td>String</td>
+<td>01/18/2012</td>
+</tr>
+<tr>
+<td>lifecycle_hourofday_local</td>
+<td>a.HourOfDay</td>
+<td>Local hour of day that call was made (24 hour format)</td>
+<td>String</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lifecycle_isfirstlaunch</td>
+<td>a.InstallEvent</td>
+<td>Only present if call is very first launch/wake call</td>
+<td>String</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lifecycle_isfirstlaunchupdate</td>
+<td>a.UpgradeEvent</td>
+<td>Only present if call is first launch/wake after a detected updated</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lifecycle_isfirstwakemonth</td>
+<td>a.MonthlyEngUserEvent</td>
+<td>Only present if call is first launch/wake of the month</td>
+<td>Boolean</td>
+<td>true</td>
+</tr>
+<tr>
+<td>lifecycle_priorsecondsawake</td>
+<td>a.PrevSessionLength</td>
+<td>Whole seconds app was awake since last launch only. Aggregates total from all wakes prior. Sent only with lifecycle_type: launch calls.</td>
+<td>Number</td>
+<td>126</td>
+</tr>
+<tr>
+<td>lifecycle_totalwakecount</td>
+<td>a.Launches</td>
+<td>Total number of launches + wakes since install (only reset if app deleted)</td>
+<td>Number</td>
+<td>&ldquo;563&rdquo;</td>
+</tr>
+<tr>
+<td>lifecycle_type</td>
+<td>a.LaunchEvent if lifecycle_type == &ldquo;launch&rdquo;</td>
+<td>Type of lifecycle call</td>
+<td>String</td>
+<td>&ldquo;launch&rdquo;, &ldquo;wake&rdquo;, &ldquo;sleep&rdquo;</td>
+</tr>
+<tr>
+<td>device (obj-c/android) or model_name (swift)</td>
+<td>a.DeviceName</td>
+<td>Device model</td>
+<td>String</td>
+<td>iPhone 7 Plus</td>
+</tr>
+<tr>
+<td>carrier (obj-c/android) or network_name (swift)</td>
+<td>a.CarrierName</td>
+<td>Network carrier name</td>
+<td>String</td>
+<td>Verizon</td>
+</tr>
+<tr>
+<td>device_resolution</td>
+<td>a.Resolution</td>
+<td>Screen Resolution</td>
+<td>String</td>
+<td>1080x1920</td>
+</tr>
+<tr>
+<td>resolution</td>
+<td>Screen Resolution</td>
+<td>String</td>
+<td>1080x1920</td>
+<td></td>
+</tr>
+<tr>
+<td>app_id</td>
+<td>a.AppID</td>
+<td>App ID</td>
+<td>String</td>
+<td>Digital Velocity 1.0</td>
+</tr>
+<tr>
+<td>device_os_version (obj-c/android) or os_version (swift)</td>
+<td>a.OSVersion</td>
+<td>Operating system version</td>
+<td>String</td>
+<td>11.1</td>
+</tr>
+</tbody>
+</table>
+<p>For more information, see <a href="https://marketing.adobe.com/resources/help/en_US/mobile/android/metrics.html">Adobe: Lifecycle Metrics</a>.</p>
 <h3 id="products">Products</h3>
 <p>The <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en">Products</a> variable is used wherever it is necessary to capture e-commerce information about one or more products on a particular page (Category, Product ID, Price, Quantity).</p>
 <p>Only Customer Data Hub attributes with Array data types may be used to populate the Products variable. All arrays must be equal in length (i.e. if there are 5 products on the page, Product ID, Quantity, Price, and Category must all be 5 elements in length).</p>
@@ -1112,28 +1265,28 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Products Category</td>
 <td style="text-align:left">[&ldquo;Shoes&rdquo;, &ldquo;Shirts&rdquo;]</td>
-<td style="text-align:left">&lt;products&gt;Shoes;;;,Shirts;;;&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;Shoes;;;,Shirts;;;</code></products></td>
 </tr>
 <tr>
 <td style="text-align:left">Customer Data Hub attribute representing Product ID</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Products ID</td>
 <td style="text-align:left">[&ldquo;ABC123&rdquo;, &ldquo;EFG234&rdquo;]</td>
-<td style="text-align:left">&lt;products&gt;;ABC123;;,;EFG234;;&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;;ABC123;;,;EFG234;;</code></products></td>
 </tr>
 <tr>
 <td style="text-align:left">Customer Data Hub attribute representing Quantity</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Products Quantity</td>
 <td style="text-align:left">[&ldquo;1&rdquo;, &ldquo;2&rdquo;]</td>
-<td style="text-align:left">&lt;products&gt;;;1;,;;2;;&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;;;1;,;;2;;</code></products></td>
 </tr>
 <tr>
 <td style="text-align:left">Customer Data Hub attribute representing Price</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Products Price</td>
 <td style="text-align:left">[&ldquo;149.99&rdquo;, &ldquo;79.80&rdquo;]</td>
-<td style="text-align:left">&lt;products&gt;;;;149.99,;;;79.80&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;;;;149.99,;;;79.80</code></products></td>
 </tr>
 </tbody>
 </table>
@@ -1158,14 +1311,14 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">String</td>
 <td style="text-align:left">Name of event to trigger, for example, event8</td>
 <td style="text-align:left">&ldquo;9.99&rdquo; (custom value)</td>
-<td style="text-align:left">&lt;events&gt;event8&lt;/events&gt;&lt;products&gt;Footwear;Running Shoes;1;99.99;<strong>event8=9.99</strong>,Apparel;T-Shirt;1;49.99;<strong>event8=9.99</strong>&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;events&gt;event8&lt;/events&gt;``&lt;products&gt;Footwear;Running Shoes;1;99.99;**event8=9.99**,Apparel;T-Shirt;1;49.99;**event8=9.99**</code></products></td>
 </tr>
 <tr>
 <td style="text-align:left">Customer Data Hub attribute representing array of numerical data</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Name of event to trigger, for example, event12</td>
 <td style="text-align:left">[&ldquo;1.99&rdquo;, &ldquo;4.99&rdquo;]</td>
-<td style="text-align:left">&lt;events&gt;event8&lt;/events&gt;&lt;products&gt;Footwear;Running Shoes;1;99.99;<strong>event12=1.99</strong>,Apparel;T-Shirt;1;49.99;<strong>event12=4.99</strong>&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;events&gt;event8&lt;/events&gt;``&lt;products&gt;Footwear;Running Shoes;1;99.99;**event12=1.99**,Apparel;T-Shirt;1;49.99;**event12=4.99**</code></products></td>
 </tr>
 </tbody>
 </table>
@@ -1188,14 +1341,14 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">String</td>
 <td style="text-align:left">Name of eVar to trigger, for example, eVar4</td>
 <td style="text-align:left">&ldquo;my_custom_value&rdquo;</td>
-<td style="text-align:left">&lt;products&gt;Footwear;Running Shoes;1;99.99;event8=9.99;<strong>eVar4=my_custom_value</strong>,Apparel;T-Shirt;1;49.99;event8=9.99;<strong>eVar4=my_custom_value</strong>&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;Footwear;Running Shoes;1;99.99;event8=9.99;**eVar4=my\_custom\_value**,Apparel;T-Shirt;1;49.99;event8=9.99;**eVar4=my\_custom\_value**</code></products></td>
 </tr>
 <tr>
 <td style="text-align:left">Customer Data Hub attribute representing array of eVar values (for example, Product Color)</td>
 <td style="text-align:left">Array</td>
 <td style="text-align:left">Name of eVar to trigger, for example, eVar6</td>
 <td style="text-align:left">[&ldquo;red&rdquo;, &ldquo;green&rdquo;]</td>
-<td style="text-align:left">&lt;products&gt;Footwear;Running Shoes;1;99.99;event8=9.99;<strong>eVar6=red</strong>,Apparel;T-Shirt;1;49.99;event8=9.99;<strong>eVar6=green</strong>&lt;/products&gt;</td>
+<td style="text-align:left"><code>&lt;products&gt;Footwear;Running Shoes;1;99.99;event8=9.99;**eVar6=red**,Apparel;T-Shirt;1;49.99;event8=9.99;**eVar6=green**</code></products></td>
 </tr>
 </tbody>
 </table>
@@ -1219,7 +1372,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">hier1 - hier5 (drop-down selection)</td>
 <td style="text-align:left">Maps a defined Customer Data Hub attribute in Array format to a specified hierarchy var in Adobe Analytics</td>
 <td style="text-align:left">Map: (Customer Data Hub Attribute) Page Classification to &ldquo;hier1&rdquo;</td>
-<td style="text-align:left">&lt;hier1&gt;Article&lt;/hier1&gt;</td>
+<td style="text-align:left"><code>&lt;hier1&gt;Article</code></hier1></td>
 </tr>
 </tbody>
 </table>
@@ -1243,7 +1396,7 @@ You are now on the <strong>Actions</strong> tab.</li>
 <td style="text-align:left">list1, list2, list3 (dropdown selection)</td>
 <td style="text-align:left">Maps a defined Customer Data Hub attribute in Array format to a specified list var in Adobe Analytics</td>
 <td style="text-align:left">Map: (Customer Data Hub Attribute) Referrer List to &ldquo;list1&rdquo;</td>
-<td style="text-align:left">&lt;list1&gt;google.com&lt;/list1&gt;</td>
+<td style="text-align:left"><code>&lt;list1&gt;google.com</code></list1></td>
 </tr>
 </tbody>
 </table>
@@ -1304,29 +1457,19 @@ You are now on the <strong>Actions</strong> tab.</li>
 <h2 id="debugging-common-issues">Debugging Common Issues</h2>
 <ul>
 <li>
-<p>To test the connector, we recommend using the <a href="/server-side/connectors/trace/Manage/">Trace</a> tool. While running a trace, look for the &ldquo;HTTP Request Body&rdquo; field, which will show the formatted XML that was sent to Adobe. You can compare the XML output to the &ldquo;Sample Connector Output&rdquo; fields in the above tables to verify the output.</p>
+<p>To test the connector, we recommend using <a href="/server-side/connectors/trace/about/">trace</a>. While running a trace, look for the &ldquo;HTTP Request Body&rdquo; field, which will show the formatted XML that was sent to Adobe. You can compare the XML output to the &ldquo;Sample Connector Output&rdquo; fields in the above tables to verify the output.</p>
 </li>
 <li>
 <p>Look for any errors in the response code being returned from Adobe. Anything other than HTTP Response Status: 200/Successful indicates that there was an error with the request.</p>
 </li>
 <li>
-<p>The full URL structure for the Data Insertion API follows the format <code>http://namespace.112.2o7.net/b/ss//6</code>. Note that the double forward slash is intentional and valid (in the JavaScript Adobe Analytics implementation, the Report Suite ID would reside here). <code>/6</code> indicates that an XML payload is being transmitted, and the reportSuite value is sent as part of the XML payload. This is the value you will see when running a <a href="/server-side/connectors/trace/Manage/">Trace</a> session.</p>
+<p>The full URL structure for the Data Insertion API follows the format <code>http://namespace.112.2o7.net/b/ss//6</code>. Note that the double forward slash is intentional and valid (in the JavaScript Adobe Analytics implementation, the Report Suite ID would reside here). <code>/6</code> indicates that an XML payload is being transmitted, and the reportSuite value is sent as part of the XML payload. This is the value you will see when running a <a href="/server-side/connectors/trace/about/">trace</a> session.</p>
+  <p class="note"><i class="fas fa-info-circle"></i>You do not need to enter the full URL value into the connector configuration; Tealium auto-generates the URL based on the Data Insertion Domain value. You will only see the full URL when running a Trace session.</p>
+</li>
+<li>
+<p>For your specific implementation, you may have a different value for the Data Insertion Domain (for example, <code>sc.omtrdc.net</code>), but the namespace should always precede the domain (for example, <code>namespace.sc.omtrdc.net</code>), except where you have your own first-party tracking domain (for example, <code>smetrics.acme.com</code>).</p>
 </li>
 </ul>
-<p class="note"><i class="fas fa-info-circle"></i>You do not need to enter the full URL value into the connector configuration; Tealium auto-generates the URL based on the Data Insertion Domain value. You will only see the full URL when running a Trace session.</p>
-<ul>
-<li>For your specific implementation, you may have a different value for the Data Insertion Domain (for example, <code>sc.omtrdc.net</code>), but the namespace should always precede the domain (for example, <code>namespace.sc.omtrdc.net</code>), except where you have your own first-party tracking domain (for example, <code>smetrics.acme.com</code>).</li>
-</ul>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -1412,6 +1555,7 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#events-sevents">Events (s.events)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-value-mapping">Event Value Mapping</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-serialization">Event Serialization</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#lifecycle-events">Lifecycle Events</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#products">Products</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#product-event-value-mapping">Product Event Value Mapping</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#product-merchandising-evars">Product Merchandising eVars</a></li>

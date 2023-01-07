@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -663,7 +663,7 @@ var utag_data = {
 <p>The Adobe Target Content Modification extension along with the Adobe Target tag is used to change the content of an HTML element. This is used to show A/B content based on a condition. In order for this extension to work, it needs to be scoped to the <a href="https://community.tealiumiq.com/t5/Tags-and-Client-side/Test-amp-Target-Tag-Basic-Configuration/ta-p/13361">Adobe Target tag</a>.</p>
 <p>This extension requires initialization code. This must be done by placing the <code>utag.sync.js</code> snippet in the <code>&lt;head&gt;</code> section of your page. Learn more about <a href="/iq-tag-management/getting-started/install/utag-sync/">using utag.sync.js</a>.</p>
 <h3 id="using-the-extension">Using the extension</h3>
-<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/">how extensions work</a>.</p>
+<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/about/">how extensions work</a>.</p>
 <p>You must set the scope of this extension to the tag Adobe Target.</p>
 <p>Once the extension is added, if you require an additional mbox besides the global mbox, configure the extension by clicking the <strong>Add mbox</strong> button. The following configuration options are available:</p>
 <ul>
@@ -696,16 +696,6 @@ var utag_data = {
 </li>
 </ul>
 <p>Click <strong>Add Condition</strong> to create the logic statement that determines when and where the extension modifies content. To add more content modification entries, click the <strong>+</strong> button in the upper right corner of the extension settings. Another option is to duplicate the extension for each entry instead, but keeping multiple entries in the one extension is a cleaner implementation, as all entries in this extension share the load condition for the extension.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -766,7 +756,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

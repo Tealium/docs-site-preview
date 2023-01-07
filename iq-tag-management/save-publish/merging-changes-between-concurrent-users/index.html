@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -650,7 +650,7 @@ var utag_data = {
 <div class="prose" id="prose">
   <p>In a <strong>locked</strong> profile, only one user is allowed to modify a version at any given time. But in the case of an <strong>unlocked</strong> profile, several users are able to make changes in the same version at the same time. In the event that one of them saves or publishes their version first, the remaining concurrent users are alerted to the new change.</p>
 <p>In this event, the remaining users have the opportunity to salvage any changes they made in that version before it was overwritten. This is made possible by <strong>Merge Changes</strong>, a feature built into Tealium iQ for resolving concurrent user situations. This feature is automatically invoked the instant it detects a combination of saved and unsaved changes inside the same version. It then allows concurrent users to merge their unsaved changes with the saved changes in order to keep from losing their efforts.</p>
-<p class="note"><i class="fas fa-info-circle"></i>The <strong>Merge Changes</strong> feature does not support <a href="https://community.tealiumiq.com/t5/Developers/Profile-Inheritance/m-p/1329">Profile Inheritance (Libraries)</a>.</p>
+<p class="note"><i class="fas fa-info-circle"></i>The <strong>Merge Changes</strong> feature does not support <a href="/iq-tag-management/profiles/profile-libraries/about/">profile libraries</a>.</p>
 <h3 id="how-merge-changes-works">How Merge Changes works</h3>
 <p>In this scenario, User A is editing a certain Version X and overwrites it with <strong>Save/Publish</strong> just when User B is also editing it. Version X now has a new revision, along with unsaved changes. What can User B do to salvage their changes? There are two options:</p>
 <ul>
@@ -748,16 +748,6 @@ var utag_data = {
 
 </div>
 
-<div id="related">
-  
-
-
-
-
-
-
-</div>
-
 <div class="pv3 overflow-hidden"><div class="di">
   
   
@@ -799,7 +789,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

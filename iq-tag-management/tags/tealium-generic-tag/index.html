@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -677,7 +677,7 @@ var utag_data = {
 <p>In our sample pixel above, the base url is: <code>//www.example.com/tag.gif</code></p>
 <h3 id="static-and-dynamic-parameters">Static and dynamic parameters</h3>
 <p>Many tags collect data by using the query string of the URL. These are the key/value pairs that appear in the URL after the <code>?</code> character. In our example the parameters are:</p>
-<pre tabindex="0"><code>cid=112233&amp;rg=us&amp;rnd=&#39; + rnd_nocache + &#39;&amp;ref=&#39; + referrer
+<pre tabindex="0"><code class="language-nohl" data-lang="nohl">cid=112233&amp;rg=us&amp;rnd=&#39; + rnd_nocache + &#39;&amp;ref=&#39; + referrer
 </code></pre><p>Static parameters have values that you can see in the snippet and do not change from page to page. In this example, the static parameters are:</p>
 <ul>
 <li><code>cid=112233</code></li>
@@ -688,7 +688,7 @@ var utag_data = {
 <li><code>rnd=</code></li>
 <li><code>ref=</code></li>
 </ul>
-<p>Dynamic parameters must be configured using <a href="/iq-tag-management/data-mappings/">data mappings</a>. All variables configured as mappings will be appended to the query string parameter of the tag URL as key/value pairs.</p>
+<p>Dynamic parameters must be configured using <a href="/iq-tag-management/data-mappings/about/">data mappings</a>. All variables configured as mappings will be appended to the query string parameter of the tag URL as key/value pairs.</p>
 <h3 id="cache-bust">Cache bust</h3>
 <p>It&rsquo;s common for vendor tags to require a cache bust variable in the query string. This value is randomly generated and added to URLs to prevent the browser from caching the request. Our example includes a cache busting variable called <code>rnd</code>.</p>
 <p>This functionality is built into the Generic Tag. Simply enable the cache bust setting and specify the name of the cache bust parameter and the Generic Tag will generate and assign the random value for you.</p>
@@ -724,9 +724,9 @@ var utag_data = {
 <li><strong>Cookie Value</strong> - <code>@@cp.variable@@</code></li>
 </ul>
 <h3 id="load-rules">Load rules</h3>
-<p><a href="https://community.tealiumiq.com/t5/Getting-Started/Load-Rules-Creation/ta-p/9422">Load rules</a> determine when and where to load an instance of this tag on your site.</p>
+<p><a href="/iq-tag-management/load-rules/about/">Load rules</a> determine when and where to load an instance of this tag on your site.</p>
 <h3 id="data-mappings">Data mappings</h3>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/data-layer-variables/">Data Layer Variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-layer/data-layer-variables/">Data Mappings</a>.</p>
+<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/data-layer-variables/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
 <p class="note"><i class="fas fa-info-circle"></i>The Generic Tag supports custom mappings only. You can define a custom destination name in the text field.</p>
 <h3 id="callback-function">Callback function</h3>
 <p>If your tag requires code to run after the main library has loaded you can use the callback function.The Generic Tag defines an internal callback property named <code>u.callback</code> that you can redefine within a tag-scoped <a href="/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/">Javascript Code extension</a>. Simply create a new extension, add your callback code, and scope it to the Generic Tag. This code will then run after the tag code has executed on the page.</p>
@@ -740,53 +740,6 @@ var utag_data = {
          alt="Generic Tag- Callback Extension"
          title="Generic Tag- Callback Extension"/>
 </figure>
-
-</div>
-
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/tags/tag-templates/about/">About templates</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/advanced-settings/">Avanced settings</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/about/">About tags</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/data-mappings/">Data mappings</a></li>
-		
-		
-		
-		
-		
-			<li><a href="/iq-tag-management/getting-started/tag-basics/">Tag basics</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/data-mappings/about/">About data mappings</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/">Tag Marketplace policy</a></li>
-		
-		
-		</ul>
-
-
-
 
 </div>
 
@@ -809,15 +762,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/iq-tag-management/tags/manage-tags/"
+  <a href="/iq-tag-management/tags/advanced-settings/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Manage tags "</title>
+      <title>"Advanced tag settings "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Manage tags</div>
+      <div>Advanced tag settings</div>
     </section>
   </a>
   
@@ -847,7 +800,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

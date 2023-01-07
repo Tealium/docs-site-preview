@@ -374,7 +374,7 @@ var utag_data = {
     <header class="bb b--light-gray bg-subtle db-ns dn" role="banner">
     <section class="w-100 ph4 ph5-ns pv3 flex">
       <div class="pr4 w-70">
-          <div class="f2 f2-l fw8 primary-color m0 lh-title pt2 pb3">Glossary</div>
+          <div id="intro" class="f2 f2-l fw8 primary-color m0 lh-title pt2 pb3">Glossary</div>
           <div class="lh-copy f4 fw2 silver"></div>
       </div>
       <div class="w-30 flex justify-center">
@@ -620,10 +620,6 @@ var utag_data = {
               <a href="#E" aria-label="Words starting with the letter E">E</a>
               
             
-          
-          
-
-          
           
           
 
@@ -1096,10 +1092,6 @@ var utag_data = {
           
 
           
-          
-          
-
-          
               
                   |
               
@@ -1380,7 +1372,7 @@ software to communicate with each other.</p>
 
                 
                 <dt id="audiencedb-previously-called-managed-redshift-for-audiences">AudienceDB (previously called Managed Redshift for Audiences)</dt>
-                <dd aria-labelledby="audiencedb-previously-called-managed-redshift-for-audiences"><p>One of Tealium&rsquo;s database solutions that uses <a href="https://community.tealiumiq.com/t5/Universal-Data-Hub-DataAccess/Structured-Data-vs-Semi-Structured-Data/ta-p/15617">structured data</a> to organize audience level data.</p>
+                <dd aria-labelledby="audiencedb-previously-called-managed-redshift-for-audiences"><p>One of Tealium&rsquo;s database solutions that uses structured data to organize audience level data.</p>
 </dd>
                 
                 
@@ -1390,7 +1382,7 @@ software to communicate with each other.</p>
 
                 
                 <dt id="audiencestore">AudienceStore</dt>
-                <dd aria-labelledby="audiencestore"><p>One of Tealium&rsquo;s database solutions that uses <a href="https://community.tealiumiq.com/t5/Universal-Data-Hub-DataAccess/Structured-Data-vs-Semi-Structured-Data/ta-p/15617">semi structured data</a> to format audience level data.</p>
+                <dd aria-labelledby="audiencestore"><p>One of Tealium&rsquo;s database solutions that uses semi-structured data to format audience level data.</p>
 </dd>
                 
                 
@@ -1413,7 +1405,7 @@ software to communicate with each other.</p>
 
                 
                 <dt id="b-object">b Object</dt>
-                <dd aria-labelledby="b-object"><p>The <a href="https://community.tealiumiq.com/t5/uTag/The-b-Object/ta-p/13620">b object</a> is an alias and local instantiation of the utag.data object, such as your data layer.</p>
+                <dd aria-labelledby="b-object"><p>The <a href="/platforms/javascript/data-layer-object/">b object</a> is an alias and local instantiation of the utag.data object, such as your data layer.</p>
 </dd>
                 
                 
@@ -1701,7 +1693,7 @@ association with laws and regulations.</p>
                 
                 <dt id="data-layer">Data Layer</dt>
                 <dd aria-labelledby="data-layer"><p>The behind-the-scenes structure that web sites and mobile
-apps tap into for timely and consistent visitor data. For more information on data layers in Tealium, see <a href="https://tealium.com/resource/fundamentals/what-is-a-data-layer/">What is a Data Layer</a>.</p>
+apps tap into for timely and consistent visitor data. For more information on data layers in Tealium, see <a href="/iq-tag-management/getting-started/data-layer/basics/">What is a Data Layer?</a></p>
 </dd>
                 
                 
@@ -1878,24 +1870,6 @@ apps tap into for timely and consistent visitor data. For more information on da
           
 
                 
-                <dt id="events">Event(s)</dt>
-                <dd aria-labelledby="events"><p>Event is an ambiguous term with several meanings, depending on the context and vendor tag.</p>
-<ul>
-<li><a href="/client-side-tags/adobe-analytics-sitecatalyst-tag-legacy/">Adobe Analytics</a>
-Events are triggers that help in the collection of data. For example, in case you want to check how many times a certain product has been viewed, you can use an event that is fired each time that product page is viewed.</li>
-<li>Google Analytics<br>
-Event tracking is a method available in the ga.js tracking code that you can use to record user interactions with website elements, such as a Flash-driven menu system.</li>
-<li>Tealium<br>
-Tealium handles events with a view method for tracking page views and a link method for tracking link clicks.</li>
-</ul>
-</dd>
-                
-                
-          
-
-          
-
-                
                 <dt id="eventdb-previously-called-managed-s3-for-audiences">EventDB (previously called Managed S3 for Audiences)</dt>
                 <dd aria-labelledby="eventdb-previously-called-managed-s3-for-audiences"><p>One of Tealium&rsquo;s database solutions that uses <a href="https://community.tealiumiq.com/t5/Universal-Data-Hub-DataAccess/Structured-Data-vs-Semi-Structured-Data/ta-p/15617">structured data</a> to organize event level data.</p>
 </dd>
@@ -1917,7 +1891,7 @@ Tealium handles events with a view method for tracking page views and a link met
 
                 
                 <dt id="extension">Extension</dt>
-                <dd aria-labelledby="extension"><p>An <a href="/iq-tag-management/extensions/manage-extensions/">extension</a> is a tool in TiQ for manipulating data collected from your site before you send it to your vendor tags.</p>
+                <dd aria-labelledby="extension"><p>An <a href="/iq-tag-management/extensions/about/">extension</a> is a tool for manipulating data collected from your site before you send it to your vendor tags.</p>
 </dd>
                 
                 
@@ -2944,7 +2918,7 @@ image file is too small to be seen by people and requires a call back to a serve
 
                 
                 <dt id="server-side-tracking">Server-Side Tracking</dt>
-                <dd aria-labelledby="server-side-tracking"><p>In a server-side situation, also called “sessions,&quot;
+                <dd aria-labelledby="server-side-tracking"><p>In a server-side situation, also called &ldquo;sessions,&rdquo;
 everything known about an individual is kept back on a server and
 can be accessed any time. The only data stored on a user’s machine is
 a session ID, which can be connected to the additional data on the
@@ -2959,16 +2933,6 @@ advertiser’s servers.</p>
                 
                 <dt id="session">Session</dt>
                 <dd aria-labelledby="session"><p>A session, also known as a visit, is the amount of time a visitor spends navigating through your site, beginning with the first page request and ending when the visitor navigates away from your site, or a pre-determined period of time has elapsed. Usually, this period of time is set to 30 minutes.</p>
-</dd>
-                
-                
-          
-
-          
-
-                
-                <dt id="site-scan">Site Scan</dt>
-                <dd aria-labelledby="site-scan"><p><a href="https://community.tealiumiq.com/t5/Customer-Documentation/Site-Scan/ta-p/5065">Site Scan</a> is validation tool that allows you to scan your site for Tealium code and ensure that it has been implemented correctly.</p>
 </dd>
                 
                 
@@ -3188,7 +3152,7 @@ who need this data to provide a better customer experience.</p>
 
                 
                 <dt id="top-level-domain">Top Level Domain</dt>
-                <dd aria-labelledby="top-level-domain"><p>The highest level of the domain name system. In the domain <a href="https://www.example.com">www.example.com</a>, &lsquo;com&rsquo; is the top level domain.</p>
+                <dd aria-labelledby="top-level-domain"><p>The highest level of the domain name system. In the domain <code>www.example.com</code>, <code>com</code> is the top level domain.</p>
 </dd>
                 
                 

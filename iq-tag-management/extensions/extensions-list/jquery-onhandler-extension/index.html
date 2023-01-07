@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -652,13 +652,12 @@ var utag_data = {
 <div class="prose" id="prose">
   <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>jQuery version 1.7 and up<br>
-See the <a href="https://community.tealiumiq.com/t5/Productivity-Tools/Determine-Version-of-jQuery-on-a-Site/ta-p/5113">jQuery Version</a> article for detailed instructions on how to check the jQuery version for your site.</li>
+<li>jQuery version 1.7 and up</li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>Use the jQuery onHandler extension works by selecting a jQuery selector identifier to be tracked, and then selecting the type of trigger action event. Standard on-page events, such as click, mouse down, focus, and others may be tracked by providing custom JavaScript code.</p>
 <h2 id="using-the-extension">Using the extension</h2>
-<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/">how extensions work</a>.</p>
+<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/about/">how extensions work</a>.</p>
 <p>Once the extension is added, it has several configuration options. If you are fimilar with the <a href="http://api.jquery.com/on/">jQuery on() method</a> then these settings will be familiar.</p>
 <ul>
 <li>
@@ -715,7 +714,7 @@ See the <a href="https://community.tealiumiq.com/t5/Productivity-Tools/Determine
 </span></span></code></pre></div><p>You can see that when the <strong>Tracking Event</strong> is set to <code>link</code> or <code>view</code>, the code that executes is simply a call to the corresponding utag tracking call, <code>utag.link() </code>or <code>utag.view()</code>. If you use the <strong>Set To</strong> options to set data layer variables, then those will appear as an inline object passed to the tracking method.</p>
 <p>If you set <strong>Tracking Event</strong> to <strong>custom</strong>, then the code that you provide in the text box is that code that will run.</p>
 <h3 id="determining-the-selector">Determining the selector</h3>
-<p>There are many ways to determine the selector of a page element. Read more about this in the article <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/How-to-Determine-the-CSS-Selector-of-an-Element/ta-p/28227">How to Determine the CSS Selector of an Element</a>.</p>
+<p>There are many ways to determine the selector of a page element. Read more about this in the article <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363465-how-to-determine-the-css-selector-of-an-element">How to Determine the CSS Selector of an Element</a>.</p>
 <h3 id="order-of-operations">Order of operations</h3>
 <p>It&rsquo;s important to note that this extension always runs at DOM Ready. This means it runs once on page load and out of band from the All Tags extensions. Learn more about <a href="/iq-tag-management/getting-started/order-of-operations/">Order of Operations</a>.</p>
 <h3 id="working-with-the-data-layer">Working with the data layer</h3>
@@ -760,16 +759,6 @@ See the <a href="https://community.tealiumiq.com/t5/Productivity-Tools/Determine
 </span></span><span style="display:flex;"><span>    })
 </span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div>
-</div>
-
-<div id="related">
-  
-
-
-
-
-
-
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
@@ -829,7 +818,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

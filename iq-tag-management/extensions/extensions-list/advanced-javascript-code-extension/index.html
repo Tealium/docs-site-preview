@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,14 +656,14 @@ var utag_data = {
 <div class="prose" id="prose">
   <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li>utag v4.38 or higher. (See: <a href="https://community.tealiumiq.com/t5/Browser-utag-js/How-do-I-upgrade-to-the-latest-utag-js/ta-p/5042">How to upgrade utag.js</a>)</li>
+<li>utag v4.38 or higher</li>
 <li>To create drafts of code, you need the <a href="/iq-tag-management/administration/user-permissions/about/">Manage JavaScript Code Extensions</a> account-level permission.</li>
 <li>To publish this extension, you need the <a href="/iq-tag-management/administration/user-permissions/about/">JavaScript Draft Promotion</a> profile-level permission.</li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>The JavaScript Code extension has its own publish workflow that uses drafts and a publish queue. Drafts are in-progress versions of the code that are preserved when you save the profile, but are not included in the published files by default. The publish queue allows you to mark a draft to be published, which causes it to become read-only and includes it in the next publish to the corresponding environment.</p>
 <p>This new publish workflow ensures that your code doesn&rsquo;t get published until it&rsquo;s ready. It allows you to see what code has been published to each environment and easily compare code between drafts and environments.</p>
-<p>For information about using the JavaScript Code extension with GitHub, see <a href="/iq-tag-management/administration/linking-to-github/">Syncing with GitHub</a></p>
+<p>For information about using the JavaScript Code extension with GitHub, see <a href="/iq-tag-management/administration/linking-to-github/about/">Syncing with GitHub</a>.</p>
 <h3 id="drafts">Drafts</h3>
 <p>Use drafts to maintain different versions of the code without affecting your published profile. Drafts are only published when you specify an environment using the <strong>Approve for Publish</strong> workflow.</p>
 <p>Drafts are named versions of the JavaScript code. Each instance of the extension holds up to 20 drafts. Drafts are are saved each time the profile is saved, but are only published when they are explicitly added to the publish queue for specific environments. This allows you to edit code and save your progress (even if it is incomplete), without affecting your publish environments.</p>
@@ -710,7 +710,9 @@ Language aware syntax highlighting for JavaScript.</li>
 Automatic indenting as you type. Supports the <code>tab</code> key and <code>shift+tab</code> key bindings.</li>
 <li><strong>Code Folding</strong><br>
 Collapse blocks of code to eliminate distractions and focus on your changes.<br>
-<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/6952iFC9998F858E3B55F/image-dimensions/443x75?v=v2"  width="443" height="75"/></li>
+<img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/6952iFC9998F858E3B55F/image-dimensions/443x75?v=v2" 
+         alt="JSCode Extension Code Folding"
+         title="JSCode Extension Code Folding" width="443" height="75"/></li>
 <li><strong>Full Screen Mode</strong><br>
 Expand the <strong>Code Editor</strong> window to full screen mode to work on larger code projects.</li>
 </ul>
@@ -722,22 +724,18 @@ Expand the <strong>Code Editor</strong> window to full screen mode to work on la
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>}
 </span></span></code></pre></div><p>The two parameters passed to the function are:</p>
 <ul>
-<li>
-<p><code>a</code> - the event type (&ldquo;view&rdquo; or &ldquo;link&rdquo; or a custom value)</p>
-</li>
-<li>
-<p><code>b</code> - a reference to <code>utag_data</code> allowing you to set UDO values as <code>b.VARIABLE_NAME=&quot;somevalue&quot;</code>.</p>
-</li>
+<li><code>a</code> - the event type (&ldquo;view&rdquo; or &ldquo;link&rdquo; or a custom value)</li>
+<li><code>b</code> - a reference to <code>utag_data</code> allowing you to set UDO values as <code>b.VARIABLE_NAME=&quot;somevalue&quot;</code>.</li>
 </ul>
 <p>Be sure to scope all of your variable references accordingly to avoid overwriting global variables.</p>
 <h3 id="compare-code">Compare code</h3>
 <p>Compare a draft or a publish environment to any other draft or publish environment. The comparison window displays the versions of the code side by side with highlights for each line that differs. For example, compare Prod vs QA, Draft 1 vs Draft 2, or Draft 1 vs Prod.</p>
-<p><figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/6953iCDF22865CAA94C53/image-size/large?v=v2&amp;amp;px=999"
+<figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/6953iCDF22865CAA94C53/image-size/large?v=v2&amp;amp;px=999"
          alt="JSCode diff"
          title="JSCode diff"/>
-</figure>|</p>
+</figure>
 <h2 id="using-the-extension">Using the extension</h2>
-<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/">how extensions work</a>.</p>
+<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/about/">how extensions work</a>.</p>
 <p>Once the extension is added, create a draft as described below.</p>
 <h3 id="working-with-drafts">Working with drafts</h3>
 <p>Add JavaScript code to the extension using drafts.</p>
@@ -756,8 +754,8 @@ Expand the <strong>Code Editor</strong> window to full screen mode to work on la
 <li><strong>Draft Name</strong>: Set the name of the draft. The name appears in the sidebar, sorted alphabetically in the list of drafts.</li>
 <li><strong>Reset</strong>: Undo all code edits made to a draft since the last time the profile was saved.</li>
 <li><strong>Delete</strong>: Delete the draft. To undo, refresh the profile without saving.</li>
-<li><strong>Compare Diff&hellip;</strong>: Compare the draft with another draft or with a publish environment.</li>
-<li><strong>Queue for publish&hellip;</strong>: Mark the draft to be published in one or more publish environments.</li>
+<li><strong>Compare Diff</strong>: Compare the draft with another draft or with a publish environment.</li>
+<li><strong>Queue for publish</strong>: Mark the draft to be published in one or more publish environments.</li>
 </ul>
 <h3 id="copy-the-file-to-draft-mode">Copy the file to draft mode</h3>
 <p>Files added through GitHub are read-only and cannot be edited. To edit these files, edit directly in GitHub or copy the file to Draft mode and edit the draft copy.</p>
@@ -803,7 +801,7 @@ The published draft now appears as the active code in the corresponding publish 
 <h3 id="working-with-github">Working with GitHub</h3>
 <p>The following sections describe how to reference files in a GitHub respository. Use this feature instead of writing code directly in the extension.</p>
 <p class="note"><i class="fas fa-info-circle"></i>To work with GitHub files you must link your GitHub account to your iQ Tag Management account.
-Learn more about <a href="/iq-tag-management/administration/linking-to-github/">Linking to GitHub</a>.</p>
+Learn more about <a href="/iq-tag-management/administration/linking-to-github/about/">Linking to GitHub</a>.</p>
 <h4 id="add-a-github-file">Add a GitHub file</h4>
 <p>To reference a file from a GitHub repository:</p>
 <ol>
@@ -812,7 +810,7 @@ You are prompted to enter the URL for the file you want to add.</li>
 <li>Enter the URL, for example:<code>&lt;https://github.com/your_account/your_repository/blob/master/Tealium.js&gt;</code></li>
 <li>Click <strong>Add File</strong>, and the code is now referenced in the extension.</li>
 </ol>
-<p class="note"><i class="fas fa-info-circle"></i>To access files in a private repository, you must link your GitHub account with a personal access token that has the repo scope selected. Learn more about <a href="/iq-tag-management/administration/linking-to-github/faq/">personal access tokens and the repo scope</a>.</p>
+<p class="note"><i class="fas fa-info-circle"></i>To access files in a private repository, you must link your GitHub account with a personal access token that has the repo scope selected.</p>
 <h4 id="synchronize-the-file">Synchronize the file</h4>
 <p>When there is a newer version of a referenced file, you must synchronize the file. Synchronize a referenced file by expanding the view of the JavaScript Code extension.</p>
 <p>All GitHub files attempt to sync when you open the extension unless the file is approved for publish.</p>
@@ -834,8 +832,8 @@ The updated file appears with the time and date and a green check mark to indica
 <h3 id="tips">Tips</h3>
 <p>Use the following tips to make the best use of this extension and avoid common mistakes:</p>
 <ul>
-<li><strong>Omit &lt;script&gt; Tags</strong>: Do not surround the code with <code>&lt;script&gt;</code> tags. The content of the text box is included in a JavaScript file exactly as you enter it.</li>
-<li><strong>Reference the UDO</strong>: If you are referencing a variable from the <code>utag_data</code> object, such as <code>page_name</code> , use the <code>b</code> object like this: <code>b['page_name'</code>]. Learn more about <a href="https://docs.tealium.com/platforms/javascript/the-b-object/">the b object</a>.</li>
+<li><strong>Omit <code>&lt;script&gt;</code> Tags</strong>: Do not surround the code with <code>&lt;script&gt;</code> tags. The content of the text box is included in a JavaScript file exactly as you enter it.</li>
+<li><strong>Reference the UDO</strong>: If you are referencing a variable from the <code>utag_data</code> object, such as <code>page_name</code> , use the <code>b</code> object like this: <code>b['page_name'</code>]. Learn more about [the b object]/platforms/javascript/the-b-object/).</li>
 <li><strong>Reference Tag Template Variables</strong>: If you are referencing a variable defined in the tag template of the scoped tag, such as <code>account_id</code> , use <code>u['account_id']</code>.</li>
 <li><strong>Create Useful Draft Names</strong>: Your TiQ profile is a shared working environment so use meaningful names for drafts to make them easily identifiable to you and others.</li>
 <li><strong>Comment Your Code</strong>: Write useful comments to make it easier for your future self and other users to understand your code and how to maintain it.</li>
@@ -857,7 +855,7 @@ The updated file appears with the time and date and a green check mark to indica
 </ul>
 <h2 id="faq">FAQ</h2>
 <h4 id="can-i-continue-using-the-deprecated-javascript-code-extension">Can I continue using the deprecated JavaScript Code extension?</h4>
-<p>Yes. The <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/JavaScript-Code-Extension-deprecated-version/ta-p/25510">older versions of the JavaScript Code extension</a> continues to operate normally, but are not able to add a new one using the old version.</p>
+<p>Yes. The <a href="/iq-tag-management/extensions/extensions-list/javascript-code-basic-extension/">older versions of the JavaScript Code extension</a> continues to operate normally, but are not able to add a new one using the old version.</p>
 <h4 id="why-am-i-unable-to-add-or-edit-the-javascript-code-extension">Why am I unable to add or edit the JavaScript Code extension?</h4>
 <p>The following reasons may explain why you are unable to edit the JavaScript Code extension:</p>
 <ol>
@@ -872,16 +870,6 @@ The updated file appears with the time and date and a green check mark to indica
 <p>If you have a condition defined, the Pre Loader option is no longer available. In Pre Loader scope, the data layer is not yet populated so there is no data object with which to evaluate the conditional logic. Likewise, the <strong>Add Condition</strong> option is disabled when the scope is set to Pre Loader.</p>
 <h4 id="whats-the-difference-between-pre-loader-and-run-once-before-load-rules">What&rsquo;s the difference between Pre Loader and Run Once before Load Rules?</h4>
 <p>Both Pre Loader and Run Once Before Load Rules cause the extension to run once before the data layer is populated and before load rules are evaluated. The difference is that conditions are not supported in the Pre Loader scope.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -942,7 +930,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

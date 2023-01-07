@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,13 +656,13 @@ var utag_data = {
 <div class="prose" id="prose">
   <h2 id="requirements">Requirements</h2>
 <ul>
-<li>utag v4.38 or higher (<a href="http:/t5/Browser-utag-js/How-do-I-upgrade-to-the-latest-utag-js/ta-p/5042">How to upgrade utag.js</a>)</li>
+<li>utag v4.38 or higher</li>
 <li><a href="/client-side-tags/tealium-currency-converter-tag/">Tealium Currency Converter Tag</a> (can be scoped to All Tags or any specific tag)</li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>The Currency Converter extension works with the Tealium Currency Converter tag, which makes the exchange rates available to the extension. The extension coverts the value of a data layer variable in one currency into a different currency. The extension may be configured to convert many data layer variables. Each conversion is controlled by a load rule to help run the conversion only when needed.</p>
 <h2 id="using-the-extension">Using the extension</h2>
-<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/">how extensions work</a>.</p>
+<p>Before you begin, familiarize yourself with <a href="/iq-tag-management/extensions/about/">how extensions work</a>.</p>
 <p>Once the extension is added, click <strong>Add Currency Conversion</strong> to add a new conversion, then set the following fields (repeat this step as needed):</p>
 <ul>
 <li><strong>Convert</strong>: The data layer variable containing the value to convert.</li>
@@ -683,16 +683,6 @@ var utag_data = {
          alt="Currency extension"
          title="Currency extension"/></li>
 </ul>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -753,7 +743,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

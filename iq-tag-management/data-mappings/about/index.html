@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -648,8 +648,7 @@ var utag_data = {
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="about-data-mappings">About data mappings</h2>
-<p>A data mapping is a connection between a data layer variable and a vendor tag. Data mappings determine the data a tag receives and the type of event tracking it performs.</p>
+  <p>A data mapping is a connection between a data layer variable and a vendor tag. Data mappings determine the data a tag receives and the type of event tracking it performs.</p>
 <p>For example, a tag might collect the page name in a parameter named <code>pName</code>, but your data layer might store this value in a variable named <code>page_name</code>. To send the value of <code>page_name</code> to <code>pName</code>, you create a data mapping. After the mapping is configured, the value of <code>page_name</code> will always be passed to the vendor parameter <code>pName</code> when that tag is triggered.</p>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8104i81D321D105FE2FE9/image-size/large?v=v2&amp;amp;px=999"
          alt="page_name to pName"
@@ -716,53 +715,6 @@ var utag_data = {
 
 </div>
 
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/tags/tag-templates/about/">About templates</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/advanced-settings/">Avanced settings</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/about/">About tags</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/data-mappings/">Data mappings</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/tealium-generic-tag/">Tealium Generic Tag</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/getting-started/tag-basics/">Tag basics</a></li>
-		
-		
-		
-		
-		
-			<li><a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/">Tag Marketplace policy</a></li>
-		
-		
-		</ul>
-
-
-
-
-</div>
-
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
@@ -804,7 +756,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 3, 2023 
+          <p>This page was last updated:  January 5, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -818,8 +770,7 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#about-data-mappings">About data mappings</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#variable-mapping">Variable mapping</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#variable-mapping">Variable mapping</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-mapping">Event mapping</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#custom-value-mapping">Custom value mapping</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#example-custom-value-with-plain-text">Example: Custom value with plain text</a></li>

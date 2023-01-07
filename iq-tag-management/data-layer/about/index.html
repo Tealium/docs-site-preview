@@ -261,7 +261,7 @@ var utag_data = {
         <ul class="bl b--primary bw1 pl2 data-layer desktopmenu animated fadeIn list "><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -644,26 +644,15 @@ var utag_data = {
 </div>
 
 <div class="prose" id="prose">
-  <p>The <strong>Data Layer</strong> screen offers several ways to manage the variables in your data layer. Each variable that you implemented on your website must also be created here so that it can be used in your configuration. In addition to the <a href="https://docs.tealium.com/platforms/javascript/about-utag-data/">dynamic data you populate in your site&rsquo;s Universal Data Object (UDO)</a>, a number of other built-in variables from your pages are available to be added from this screen.</p>
+  <p>The <strong>Data Layer</strong> screen offers several ways to manage the variables in your data layer. Each variable that you implemented on your website must also be created here so that it can be used in your configuration. In addition to the <a href="/platforms/javascript/about-utag-data/">dynamic data you populate in your site&rsquo;s Universal Data Object (UDO)</a>, a number of other built-in variables from your pages are available to be added from this screen.</p>
 <p>Learn more about the <a href="/platforms/javascript/built-in-variables/">built-in variables available in the UDO</a>.</p>
 <p>If you&rsquo;re unsure about what data might be available from a web page on which Tealium is installed, use the <a href="/iq-tag-management/troubleshooting/utag-debugger/">Universal Tag Monitor</a> to quickly see what data is being collected.</p>
-<p>Learn More: <a href="/platforms/getting-started-web/data-layer/">An Introduction to the Data Layer</a></p>
 <h2 id="variable-details-view">Variable details view</h2>
 <p>When you expand the variable summary to show the details, a list of the dependencies displays. The dependencies make it easy to see which tags, load rules, and extensions are referencing this variable. This is also where you can edit or delete a single variable. In addition, you can apply new labels or manage any existing labels.</p>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8050i44569DF2D3C0559D/image-size/large?v=v2&amp;amp;px=999"
          alt="iQ_ViewAndEditVariables.png"
          title="iQ_ViewAndEditVariables.png"/>
 </figure>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -674,10 +663,10 @@ var utag_data = {
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Data layer variable types</div>
+      <div>Variable types</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Data layer variable types"</title>
+      <title>"Variable types"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -708,7 +697,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

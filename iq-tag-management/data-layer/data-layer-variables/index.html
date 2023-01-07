@@ -261,7 +261,7 @@ var utag_data = {
         <ul class="bl b--primary bw1 pl2 data-layer desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -659,14 +659,14 @@ var utag_data = {
 </figure></li>
 </ul>
 <h2 id="udo-variable">UDO variable</h2>
-<p>This type is for variables defined in your <a href="https://docs.tealium.com/platforms/javascript/about-utag-data/">Universal Data Object</a>, also referred to as <code>utag_data</code>, which you can find in the code for your webpage. Most of your variables will be this type.</p>
+<p>This type is for variables defined in your [Universal Data Object]/platforms/javascript/about-utag-data/), also referred to as <code>utag_data</code>, which you can find in the code for your webpage. Most of your variables will be this type.</p>
 <h4 id="example">Example</h4>
 <p>In the page: <code>var utag_data = { language : &quot;en&quot;, currency : &quot;usd&quot; };</code></p>
 <p>Name in iQ: <code>language</code> and <code>currency</code></p>
 <p>Reference this variable with JavaScript in an extension: <code>b[&quot;language&quot;]</code></p>
 <h2 id="local-and-session-storage">Local and session storage</h2>
 <p>Local and session storage keys appear automatically in the data layer using <code>localStorage</code> and <code>sessionStorage</code> variables. For more information about the differences between storage types and uses, see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Window.localStorage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">Window.sessionStorage</a> articles in the MDN Web Docs.</p>
-<p>Session and local storage are sub-domain based. For example, your data will not persist if you move between <code>www.example.com</code> to <code>secure.example.com</code>. For more information, see <a href="/server-side/attributes/data-layer-enrichment/enable/">Same Origin Policy</a>.</p>
+<p>Session and local storage are sub-domain based. For example, your data will not persist if you move between <code>www.example.com</code> to <code>secure.example.com</code>. For more information, see <a href="/server-side/attributes/data-layer-enrichment/about/#same-origin-policy">Same Origin Policy</a>.</p>
 <p>To use these storage variables, navigate to <strong>iQ Tag Management &gt; Data Layer &gt; +Add Variable</strong>. Select <strong>UDO Variable</strong> and type in a source variable name.</p>
 <p>Variable name in iQ:</p>
 <ul>
@@ -679,7 +679,7 @@ var utag_data = {
 <li><code>b[&quot;ss.my_session_storage_var&quot;]</code></li>
 </ul>
 <h2 id="javascript-variables">JavaScript variables</h2>
-<p>Select this type to reference a JavaScript variable on your web page (other than the utag_data object). Normal syntax rules apply to the JavaScript variable type.</p>
+<p>Select this type to reference a JavaScript variable on your web page (other than the <code>utag_data</code> object). Normal syntax rules apply to the JavaScript variable type.</p>
 <h4 id="example-1">Example</h4>
 <p>In the page: <code>var myApp = { page : { name : &quot;Home Page&quot; } };</code></p>
 <p>Variable name in iQ: <code>myApp.page.name</code></p>
@@ -750,38 +750,7 @@ var utag_data = {
 <p>Reference this variable with JavaScript in an extension: <code>b[&quot;meta.author&quot;]</code></p>
 <h2 id="dom-variable">DOM variable</h2>
 <p>These are built-in DOM variables that cannot be modified. They are set automatically in the page.</p>
-<p><a href="https://docs.tealium.com/platforms/javascript/built-in-variables/">Learn more about built-in utag.js variables</a>.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/getting-started/data-layer/basics/">Data layer basics</a></li>
-		
-		
-		
-		
-		
-			<li><a href="/iq-tag-management/getting-started/data-layer/how-it-works/">How the data layer works</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/getting-started/data-layer/data-layer-best-practices/">Data layer best practices</a></li>
-		
-		
-		</ul>
-
-
-
+<p><a href="/platforms/javascript/built-in-variables/">Learn more about built-in utag.js variables</a>.</p>
 
 </div>
 
@@ -842,7 +811,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 3, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

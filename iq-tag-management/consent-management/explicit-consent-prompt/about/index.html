@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,7 +656,7 @@ var utag_data = {
 <div class="prose" id="prose">
   <p>This tool offers full access to customize the code behind the prompt as well as the option to use translated content for global customers. This feature replaces the functionality previously offered by the Privacy Manager extension and is part of our consent management features designed to help you stay compliant with GDPR.</p>
 <h2 id="how-it-works">How it works</h2>
-<p>The Explicit Consent Prompt Manager works together with the <a href="/iq-tag-management/consent-management/consent-preferences-dialog/">Consent Preferences Manager</a> to present tracking options to your customers. A consent prompt notifies your customers about your desire to track their activity on your digital property and to acquire their consent. Explicit consent is a proactive approach in encouraging your customers to opt-in or opt-out by forcing a pop-up prompt until a selection is made.</p>
+<p>The Explicit Consent Prompt Manager works together with the <a href="/iq-tag-management/consent-management/consent-preferences-dialog/about/">Consent Preferences Manager</a> to present tracking options to your customers. A consent prompt notifies your customers about your desire to track their activity on your digital property and to acquire their consent. Explicit consent is a proactive approach in encouraging your customers to opt-in or opt-out by forcing a pop-up prompt until a selection is made.</p>
 <ul>
 <li>If a customer opts-out, the website suppresses all tracking activity and cookie storage that is not directly relevant to the digital experience.</li>
 <li>If the customer opts-in, the website can track the user behavior (commonly using third-party services).</li>
@@ -670,7 +670,7 @@ var utag_data = {
 <p>The Explicit Consent Prompt satisfies a requirement of the General Data Protection Regulation that a data subject (EU residents) must give explicit consent before activity can be tracked.</p>
 <h2 id="visitor-experience">Visitor experience</h2>
 <p>After you deploy to your website using the standard iQ JavaScript container ( <code>utag.js</code> ), the consent prompt operates automatically – no additional coding is needed for the consent prompt to function. The prompt behavior is based on the configured load rule and the presence of a consent cookie. The prompt is triggered automatically on pages matching the load rule if that cookie is not detected. After a response to the prompt is submitted (for example, the visitor selects <strong>Opt-in</strong> or <strong>Opt-out</strong>), the consent cookie is created and subsequent page views do not trigger the consent prompt.</p>
-<p class="tip"><i class="fas fa-star"></i>The consent prompt can be displayed programmatically <a href="#functions">using the JavaScript helper functions</a>.</p>
+<p class="tip"><i class="fas fa-star"></i>The consent prompt can be displayed programmatically <a href="/iq-tag-management/consent-management/explicit-consent-prompt/manage/#javascript-helper-functions">using the JavaScript helper functions</a>.</p>
 <h2 id="features">Features</h2>
 <p>The Explicit Consent Prompt in Tealium iQ offers the following features:</p>
 <ul>
@@ -701,37 +701,6 @@ If you do not use the <strong>Consent Preferences Dialog</strong> and have a ser
 <h2 id="global-settings">Global settings</h2>
 <p>The <strong>Explicit Consent Prompt</strong> can be configured for multiple profiles simultaneously when using the global parameters setting. This allows you to configure your consent prompt at the account level and have each profile inherit that configuration.</p>
 <p>To learn more, see <a href="/iq-tag-management/consent-management/global-parameters/">Managing Global Consent Content</a>.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/consent-management/privacy-banner-and-popup/about/">About the CCPA Privacy Banner and Popup</a></li>
-		
-		
-		
-		
-		
-			<li><a href="/iq-tag-management/consent-management/consent-preferences-dialog/about/">How the consent preferences manager works</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/consent-management/global-parameters/">Global consent parameters</a></li>
-		
-		
-		</ul>
-
-
-
 
 </div>
 
@@ -776,7 +745,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 5, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

@@ -302,7 +302,7 @@ var utag_data = {
 
 <div class="prose" id="prose">
   <h2 id="get-visitor">GET visitor</h2>
-<p>Use the following <code>GET</code> command to retrieve a visitor record: </p>
+<p>Use the following <code>GET</code> command to retrieve a visitor record:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GET /v2/visitor/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>?attributeId<span style="color:#f92672">={</span>attributeId<span style="color:#f92672">}</span>&amp;attributeValue<span style="color:#f92672">={</span>attributeValue<span style="color:#f92672">}</span>&amp;prettyName<span style="color:#f92672">={</span>prettyName<span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="get-visitor-parameters">GET visitor parameters</h3>
 <p>This command uses the following parameters:</p>
@@ -430,10 +430,10 @@ var utag_data = {
 </table>
 <h2 id="get-transaction">GET transaction</h2>
 <p>A <em>transaction</em> refers to any <code>GET</code> visitor or <code>DELETE</code> visitor request. <code>DELETE</code> visitor requests are queued for later processing, which makes the <code>transaction_id</code> the unique record for that request and ID to be used when checking the processing status.</p>
-<p>Use the following <code>GET</code> command to check the status of a transaction: </p>
+<p>Use the following <code>GET</code> command to check the status of a transaction:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>GET /v2/visitor/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/transactions/<span style="color:#f92672">{</span>transaction_id<span style="color:#f92672">}</span>
 </span></span></code></pre></div><h3 id="example-curl-request-2">Example cURL request</h3>
-<p>See the <a href="https://community.tealiumiq.com/t5/Tealium-API/Getting-Started/ta-p/14357">Tealium API Getting Started</a> guide to learn about generating a bearer token from the API key. The bearer token is used in the API calls, rather than the API key.</p>
+<p>Read about <a href="/api/getting-started/auth/">API authentication</a> to learn how to generate a bearer token from the API key. The bearer token is used in the API calls, rather than the API key.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>curl -H <span style="color:#e6db74">&#39;Authorization: Bearer {token}&#39;</span> <span style="color:#ae81ff">\ </span>
 </span></span><span style="display:flex;"><span>https://api.tealiumiq.com/v2/visitor/accounts/my_account/profiles/main/transactions/0123456789
 </span></span></code></pre></div><h3 id="example-response-2">Example response</h3>
@@ -454,16 +454,6 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>  <span style="color:#e6db74">&#34;57&#34;</span> : <span style="color:#e6db74">&#34;Tax ID Number&#34;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div>
-</div>
-
-<div id="related">
-  
-
-
-
-
-
-
 </div>
 
 <div class="pv3 overflow-hidden"><div class="di">
@@ -507,7 +497,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

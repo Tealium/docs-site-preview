@@ -443,7 +443,7 @@ This integration is only available for network-level Invoca accounts</li>
 <p>To add and configure the Invoca tag in Tealium:</p>
 <ol>
 <li>Log in to your Tealium account.</li>
-<li>Follow the steps to<a href="https://community.tealiumiq.com/t5/Getting-Started-with-iQ-Tag/Tag-Basics-Add-a-Tag/ta-p/23929"> add a new tag</a> from the tag marketplace.<br>
+<li>Follow the steps to <a href="/iq-tag-management/tags/manage-tags/">add a new tag</a> from the tag marketplace.<br>
 To find the Invoca tag, type <strong>Invoca</strong> in the search field.</li>
 <li>Find the <strong>InvocaJS Web Integration</strong> tag and click <strong>Add</strong>.</li>
 </ol>
@@ -485,11 +485,8 @@ The Invoca Tag is now successfully implemented onto the enabled environments.</p
 <h3 id="set-up-audiencestream-to-receive-invoca-data">Set up AudienceStream to receive Invoca data</h3>
 <p>To send Invoca data to AudienceStream:</p>
 <ol>
-<li>
-<p>Log in to your Invoca account.</p>
-</li>
-<li>
-<p>Create a new Marketing Data field with the following settings:</p>
+<li>Log in to your Invoca account.</li>
+<li>Create a new Marketing Data field with the following settings:
 <ul>
 <li><strong>Field type</strong><br>
 Short Text</li>
@@ -501,45 +498,24 @@ Tealium Visitor ID</li>
 Unique</li>
 </ul>
 </li>
-<li>
-<p>Click the gear icon in the menu ribbon and select <strong>Invoca Tags</strong>.<br>
-If you have more than one Invoca tag, use the tag selection drop-down menu to find the tags that you want to use with your Tealium integration and edit those tags.</p>
-</li>
-<li>
-<p>Scroll down to the Marketing Data section of the Tag Wizard and locate the new “Tealium Visitor ID” Marketing Data field you just created.</p>
-</li>
-<li>
-<p>Click the <strong>Enabled</strong> slider to enable the tag to collect data for that field.</p>
-</li>
-<li>
-<p>Complete the data source type and name fields as follows:<br>
-Tealium Visitor ID (<code>tealium_vid</code>):</p>
+<li>Click the gear icon in the menu ribbon and select <strong>Invoca Tags</strong>.<br>
+If you have more than one Invoca tag, use the tag selection drop-down menu to find the tags that you want to use with your Tealium integration and edit those tags.</li>
+<li>Scroll down to the Marketing Data section of the Tag Wizard and locate the new &ldquo;Tealium Visitor ID&rdquo; Marketing Data field you just created.</li>
+<li>Click the <strong>Enabled</strong> slider to enable the tag to collect data for that field.</li>
+<li>Complete the data source type and name fields as follows:<br>
+Tealium Visitor ID (<code>tealium_vid</code>):
 <ul>
-<li><strong>Data Source Type</strong><br>
-JavaScript Data Layer</li>
-<li><strong>Data Source Name</strong><br>
-utag_data.tealium_visitor_id</li>
+<li><strong>Type</strong>: JavaScript Data Layer</li>
+<li><strong>Name</strong>: <code>utag_data.tealium_visitor_id</code></li>
 </ul>
 </li>
-<li>
-<p>Log in to your Tealium AudienceStream account and add a new Data Source. (<a href="/server-side/data-sources/about-data-sources/">Learn more</a>)</p>
-</li>
-<li>
-<p>Under Developer Languages, select the <strong>HTTP API Data Source</strong>.</p>
-</li>
-<li>
-<p>Name the new Data Source “Invoca Post-Call Webhook”.</p>
-</li>
-<li>
-<p>Skip the Event Specifications step and continue to the <strong>Get Code</strong> page.</p>
-</li>
-<li>
-<p>Copy the Account, Profile, and Data Source Key shown on this page into a separate document — you will need these soon.</p>
-</li>
-<li>
-<p>When finished, save and publish your new AudienceStream profile.<br>
-Now your Tealium AudienceStream account is set up to receive Invoca data.</p>
-</li>
+<li>Log in to your Tealium AudienceStream account and add a new Data Source. (<a href="/server-side/data-sources/about-data-sources/">Learn more</a>)</li>
+<li>Under Developer Languages, select the <strong>HTTP API Data Source</strong>.</li>
+<li>Name the new Data Source &ldquo;Invoca Post-Call Webhook&rdquo;.</li>
+<li>Skip the Event Specifications step and continue to the <strong>Get Code</strong> page.</li>
+<li>Copy the Account, Profile, and Data Source Key shown on this page into a separate document — you will need these soon.</li>
+<li>When finished, save and publish your new AudienceStream profile.<br>
+Now your Tealium AudienceStream account is set up to receive Invoca data.</li>
 </ol>
 <h3 id="create-an-invoca-webhook-to-send-data-to-audiencestream">Create an Invoca webhook to send data to AudienceStream</h3>
 <p>Next, you will create a new Invoca webhook that will send that data over to Tealium AudienceStream.</p>
@@ -558,7 +534,7 @@ Now your Tealium AudienceStream account is set up to receive Invoca data.</p>
 <ul>
 <li><strong>Name</strong>: Tealium AudienceStream POST</li>
 <li><strong>HTTP Verb</strong>: POST</li>
-<li><strong>URL</strong>: <a href="https://collect.tealiumiq.com/event">https://collect.tealiumiq.com/event</a></li>
+<li><strong>URL</strong>: <code>https://collect.tealiumiq.com/event</code></li>
 </ul>
 </li>
 <li>Click the <strong>Body</strong> tab of your webhook and select JSON.</li>
@@ -566,71 +542,54 @@ Now your Tealium AudienceStream account is set up to receive Invoca data.</p>
 Each line in the sample webhook body text copied represents a data parameter captured by Invoca that this webhook will send to AudienceStream.</li>
 </ol>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“tealium_account”</span>          <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“{Your</span> <span style="color:#960050;background-color:#1e0010">Tealium</span> <span style="color:#960050;background-color:#1e0010">Account</span> <span style="color:#960050;background-color:#1e0010">Name</span>}<span style="color:#960050;background-color:#1e0010">”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“tealium_profile”</span>          <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“main”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“tealium_datasource”</span>       <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“</span>{<span style="color:#960050;background-color:#1e0010">Data</span> <span style="color:#960050;background-color:#1e0010">Source</span> <span style="color:#960050;background-color:#1e0010">Key</span>}<span style="color:#960050;background-color:#1e0010">”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“tealium_event”</span>            <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“InvocaPhoneCall”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“tealium_visitor_id”</span>       <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;tealium_vid&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“connect_duration”</span>         <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;connect_duration&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“advertiser_campaign_name”</span> <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;advertiser_campaign_name&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“advertiser_name”</span>          <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;advertiser_name&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“unique_promo_number”</span>      <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;call_source_description&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“media_type”</span>               <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;media_type&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“phone_type”</span>               <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;mobile&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“calling_phone_number”</span>     <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;calling_phone_number&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“unique_promo_description”</span> <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;promo_line_description&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“call_start_time_utc”</span> <span style="color:#960050;background-color:#1e0010">.</span>    <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;start_time_utc&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“destination_phone_number”</span> <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;destination_phone_number&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“utm_campaign”</span>             <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;utm_campaign&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“gclid”</span>                    <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;gclid&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“g_cid”</span>                    <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;g_cid&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“utm_source”</span>               <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;utm_source&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“utm_medium”</span>               <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;utm_medium&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“utm_content”</span>              <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;utm_content&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“first_page”</span>               <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;firstPage&gt;”,</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#960050;background-color:#1e0010">“last_page”</span>                <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">“&lt;lastPage&gt;”</span>
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">}</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_account&#34;</span>          : <span style="color:#e6db74">&#34;{Your Tealium Account Name}&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_profile&#34;</span>          : <span style="color:#e6db74">&#34;main&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_datasource&#34;</span>       : <span style="color:#e6db74">&#34;{Data Source Key}&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_event&#34;</span>            : <span style="color:#e6db74">&#34;InvocaPhoneCall&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;tealium_visitor_id&#34;</span>       : <span style="color:#e6db74">&#34;&lt;tealium_vid&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;connect_duration&#34;</span>         : <span style="color:#e6db74">&#34;&lt;connect_duration&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;advertiser_campaign_name&#34;</span> : <span style="color:#e6db74">&#34;&lt;advertiser_campaign_name&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;advertiser_name&#34;</span>          : <span style="color:#e6db74">&#34;&lt;advertiser_name&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;unique_promo_number&#34;</span>      : <span style="color:#e6db74">&#34;&lt;call_source_description&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;media_type&#34;</span>               : <span style="color:#e6db74">&#34;&lt;media_type&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;phone_type&#34;</span>               : <span style="color:#e6db74">&#34;&lt;mobile&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;calling_phone_number&#34;</span>     : <span style="color:#e6db74">&#34;&lt;calling_phone_number&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;unique_promo_description&#34;</span> : <span style="color:#e6db74">&#34;&lt;promo_line_description&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;call_start_time_utc&#34;</span>      : <span style="color:#e6db74">&#34;&lt;start_time_utc&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;destination_phone_number&#34;</span> : <span style="color:#e6db74">&#34;&lt;destination_phone_number&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;utm_campaign&#34;</span>             : <span style="color:#e6db74">&#34;&lt;utm_campaign&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;gclid&#34;</span>                    : <span style="color:#e6db74">&#34;&lt;gclid&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;g_cid&#34;</span>                    : <span style="color:#e6db74">&#34;&lt;g_cid&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;utm_source&#34;</span>               : <span style="color:#e6db74">&#34;&lt;utm_source&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;utm_medium&#34;</span>               : <span style="color:#e6db74">&#34;&lt;utm_medium&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;utm_content&#34;</span>              : <span style="color:#e6db74">&#34;&lt;utm_content&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;first_page&#34;</span>               : <span style="color:#e6db74">&#34;&lt;firstPage&gt;&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;last_page&#34;</span>                : <span style="color:#e6db74">&#34;&lt;lastPage&gt;&#34;</span>
+</span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><ol>
-<li>
-<p>Replace the fields from the sample above with information from your Tealium account:</p>
+<li>Replace the fields from the sample above with information from your Tealium account:
 <ul>
 <li><code>{Your Tealium Account Name}</code> - Replace with the name of your Tealium account, assigned when your account was created. If you do not know your account name, you can find it by logging into Tealium — your account name displays at the top left corner of the window.</li>
 <li><code>{Data Source Key}</code> - Replace with the Data Source Key copied and saved from the previous section.</li>
 </ul>
 </li>
-<li>
-<p>(Optional) You can delete any line of the sample body text to omit that data from your webhook or send additional data, such as custom Marketing Data fields or Signals you created.</p>
-</li>
-<li>
-<p>To send additional data, return to the body text sample and press <strong>Enter</strong> to create a new line in your webhook.</p>
-</li>
-<li>
-<p>Click the <strong>Add Substitution Paramete</strong>r (<strong>&lt;&gt;</strong>) button and select the Invoca data parameter you want to send.</p>
-</li>
-<li>
-<p>Complete the remainder of the webhook line in the following format:<br>
-<code>“parametername” : “&lt;parametername&gt;”</code></p>
-</li>
-<li>
-<p>Click the <strong>Firing Conditions</strong> tab for your webhook, and complete in the following settings:</p>
+<li>(Optional) You can delete any line of the sample body text to omit that data from your webhook or send additional data, such as custom Marketing Data fields or Signals you created.</li>
+<li>To send additional data, return to the body text sample and press <strong>Enter</strong> to create a new line in your webhook.</li>
+<li>Click the <strong>Add Substitution Parameter</strong> (<strong>&lt;&gt;</strong>) button and select the Invoca data parameter you want to send.</li>
+<li>Complete the remainder of the webhook line in the following format: <code>&quot;parametername&quot; : &quot;&lt;parametername&gt;&quot;</code></li>
+<li>Click the <strong>Firing Conditions</strong> tab for your webhook, and complete in the following settings:
 <ul>
 <li><strong>Fire On:</strong> Signal<br>
-Select Tealium Visitor in the drop-down menu</li>
+Select <strong>Tealium Visitor</strong> in the drop-down menu</li>
 <li><strong>Retry if first attempt fails:</strong> Yes</li>
 <li><strong>Fire for call corrections:</strong> No</li>
 <li><strong>How should batches be sent:</strong> Do not send batches</li>
 </ul>
 </li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Locate your new webhook in your Custom Webhooks menu.</p>
-</li>
-<li>
-<p>In the Actions menu, click the <strong>Settings</strong> button and select <strong>Activate</strong>.<br>
-Your Invoca account is now set up to send your call data to AudienceStream.</p>
-</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Locate your new webhook in your Custom Webhooks menu.</li>
+<li>In the Actions menu, click the <strong>Settings</strong> button and select <strong>Activate</strong>.<br>
+Your Invoca account is now set up to send your call data to AudienceStream.</li>
 </ol>
 <p>You can now add Invoca call and conversion data to your visitor profiles within your Customer Data Platform (CDP) and throughout all of your marketing applications.</p>
 <h3 id="send-tealium-audiencestream-data-to-invoca">Send Tealium AudienceStream data to Invoca</h3>
@@ -652,8 +611,7 @@ Example: <code>invoca_leadscore</code> for a lead score variable</li>
 <h3 id="create-custom-marketing-data-fields-in-invoca">Create custom marketing data fields in Invoca</h3>
 <p>Use the following steps to create custom marketing data fields in Invoca to enable the Invoca tag to pick up the data specified:</p>
 <ol>
-<li>
-<p>Return to your Invoca account use the following settings to create a new custom Marketing Data field for each data mapping you created.</p>
+<li>Return to your Invoca account use the following settings to create a new custom Marketing Data field for each data mapping you created.
 <ul>
 <li><strong>Field type</strong><br>
 Short Text</li>
@@ -661,38 +619,22 @@ Short Text</li>
 Choose a name that reflects the variable you selected in previous steps, such as <code>tealium_leadscore</code>.</li>
 <li><strong>Friendly Name</strong><br>
 Choose the &ldquo;friendly name&rdquo; that reflects the variable you selected in previous steps, such as Tealium Lead Score.</li>
-<li><strong>Attribution</strong><br>
-Last</li>
+<li><strong>Attribution</strong>  Last</li>
 </ul>
 </li>
-<li>
-<p>Click the gear icon in the menu ribbon and, then select <strong>Invoca Tags</strong>.</p>
-</li>
-<li>
-<p>If you have more than one Invoca tag, use the tag selection drop-down menu to find the tags that you want to use with your Tealium integration and edit those tags.</p>
-</li>
-<li>
-<p>Scroll down to the Marketing Data section of the Tag Wizard and locate the new “Tealium Visitor ID” Marketing Data field you just created.</p>
-</li>
-<li>
-<p>Click the <strong>Enabled</strong> slider to enable the tag to collect data for that field.</p>
-</li>
-<li>
-<p>Complete the data source type and name fields as follows:</p>
+<li>Click the gear icon in the menu ribbon and, then select <strong>Invoca Tags</strong>.</li>
+<li>If you have more than one Invoca tag, use the tag selection drop-down menu to find the tags that you want to use with your Tealium integration and edit those tags.</li>
+<li>Scroll down to the Marketing Data section of the Tag Wizard and locate the new &ldquo;Tealium Visitor ID&rdquo; Marketing Data field you just created.</li>
+<li>Click the <strong>Enabled</strong> slider to enable the tag to collect data for that field.</li>
+<li>Complete the data source type and name fields as follows:
 <ul>
-<li><strong>Data Source Type</strong><br>
-JavaScript Data Layer</li>
-<li><strong>Data Source Name</strong><br>
-localStorage.getItem(&ldquo;DESTINATION NAME&rdquo;)</li>
+<li><strong>Type</strong>: JavaScript Data Layer</li>
+<li><strong>Name</strong>: <code>localStorage.getItem(&quot;DESTINATION NAME&quot;)</code></li>
 </ul>
 </li>
-<li>
-<p>Click <strong>Save</strong>.</p>
-</li>
-<li>
-<p>Click <strong>Go Live</strong>.<br>
-Your Invoca Tag will now capture any data from Tealium that you want in the Marketing Data fields you created.</p>
-</li>
+<li>Click <strong>Save</strong>.</li>
+<li>Click <strong>Go Live</strong>.<br>
+Your Invoca Tag will now capture any data from Tealium that you want in the Marketing Data fields you created.</li>
 </ol>
 <p>You can now use your Marketing Data fields as part of a Real Time Routing Webhook, to build new rule-based signals, in your Call Treatment (IVR) options, or to pass along in other Invoca integrations.</p>
 <h2 id="validate-and-troubleshoot-with-eventstream">Validate and troubleshoot with EventStream</h2>
@@ -711,21 +653,11 @@ Your Invoca Tag will now capture any data from Tealium that you want in the Mark
 From here, you will be able to view all data sent to Tealium from one phone call.</li>
 <li>Create a new event specification from this event.<br>
 If you need help, see <a href="/server-side/event-specifications/manage/">Event Specifications</a> and follow the instructions outlined.</li>
-<li>Title the event specification “InvocaPhoneCall”.</li>
+<li>Title the event specification &ldquo;InvocaPhoneCall&rdquo;.</li>
 <li>Uncheck the <strong>Required</strong> checkbox for all attributes.<br>
 This event specification will primarily be used for troubleshooting purposes and to track the total volume of phone calls passing through Invoca.</li>
 <li>Save and publish your changes to the appropriate environments.</li>
 </ol>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -786,7 +718,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

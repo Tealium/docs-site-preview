@@ -749,7 +749,7 @@ var utag_data = {
 <p>Google Universal Analytics has several hit types, including event tracking, pageviews, timing events, and social shares. GA4 is completely event-based, meaning that there are only event hits. GA4 does not have the event categories, actions, labels, and values used in Google Universal Analytics. Instead, the data sent with GA4 events includes an event name and customizable event parameters that contain contextual data for the event.</p>
 <p>For more information about migrating to GA4 from Google Universal Analytics, see <a href="https://community.tealiumiq.com/t5/Tags/Migrating-from-Universal-Analytics-gtag-js-analytics-js-to/ta-p/35786">Migrating from Universal Analytics to Google Analytics 4</a>.</p>
 <h2 id="configuring-the-google-analytics-4-tag">Configuring the Google Analytics 4 tag</h2>
-<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/tag-templates/manage/">Tag Overview</a> article for general instructions on how to add a tag.</p>
+<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
 <li><strong>Measurement ID</strong>
@@ -874,16 +874,6 @@ var utag_data = {
 <p>In Google Universal Analytics, one network call is made for each hit that was triggered. GA4 is different in that it batches events that occur within a few seconds into a single call. When investigating network calls to validate the implementation, be aware that multiple events may be sent with a single network request.</p>
 <h3 id="reporting-latency">Reporting latency</h3>
 <p>Per the Google documentation, it can take 24-48 hours after the call is made for GA4 reports to be generated. You can use Realtime reports and Debug View in GA4 to verify that data is being sent to your GA4 property.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

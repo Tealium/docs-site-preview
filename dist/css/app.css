@@ -1533,6 +1533,9 @@ img { max-width: 100%; }
 /* @import 'tachyons/src/_debug'; */
 /* Customizations */
 /* @media (--breakpoint-small) { }*/
+b {
+  font-weight: 500;
+}
 .b--primary {
   border-color: #47A4E6;
 }
@@ -2660,7 +2663,7 @@ nav#breadcrumb ul {
 .prose table td {
   padding: .75em .5em;
   line-height: 1rem;
-  font-weight: normal;
+  font-weight: 300;
   font-size: .875rem;
   text-align: left;
   border-right: none;
@@ -2676,7 +2679,7 @@ dd {
 }
 /* From http://cssfontstack.com */
 code, .code, pre code, .highlight pre  {
-  font-family: 'inconsolata',Menlo,Monaco,'Courier New',monospace;
+  font-family: Monaco,'Courier New',monospace;
 }
 .sans-serif {
   font-family: 'proxima-nova', 'Proxima', 'Helvetica Neue', 'Helvetica', Arial, sans-serif;

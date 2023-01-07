@@ -758,19 +758,19 @@ var utag_data = {
          title="The Trade Desk Cookie"/>
 </figure>
 <h2 id="tag-configuration">Tag Configuration</h2>
-<p>Go to the Tag Marketplace and add the Trade Desk Cookie Matching Service tag (<a href="/iq-tag-management/tags/tag-templates/manage/">see how to add a tag</a>).</p>
+<p>Go to the Tag Marketplace and add the Trade Desk Cookie Matching Service tag (<a href="/iq-tag-management/tags/manage-tags/">see how to add a tag</a>).</p>
 <p>After adding the tag, configure the below settings:</p>
 <ul>
 <li><strong>Tealium Account</strong> - leave blank unless sending The Trade Desk user ID to a different account.</li>
 <li><strong>Tealium Profile</strong> - leave blank unless sending The Trade Desk user ID to a different profile.</li>
 </ul>
 <h3 id="load-rules">Load Rules</h3>
-<p><a href="/iq-tag-management/load-rules/about/">Load Rules</a>determine when and where to load an instance of this tag on your site.</p>
+<p><a href="/iq-tag-management/load-rules/about/">Load rules</a> determine when and where to load an instance of this tag on your site.</p>
 <p>This tag only needs to run if the cookie match has not already occurred. You can determine this by using the cookie variable <code>utag_main_ttd_uuid</code> in a load rule condition such as:</p>
 <p><code>utag_main_ttd_uuid</code> is not defined</p>
 <p>The tag also has built-in logic to only fire when the cookie is not defined, but using a load rule will ensure that the tag is not loaded on a page when it has already run for the current session.</p>
 <h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a<a href="/iq-tag-management/data-mappings/manage/">data layer variable</a> to the corresponding destination variable of the vendor Tag. For instructions on how to map a variable to a tag destination, see<a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
+<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-mappings/manage/">data layer variable</a> to the corresponding destination variable of the vendor Tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
 <table>
 <thead>
 <tr>
@@ -813,16 +813,6 @@ var utag_data = {
 <li>Click <strong>Finish</strong>.</li>
 </ol>
 <p>You can now create audiences of visitors that have their Trade Desk User ID populated. Those audiences will be used in connector actions with The Trade Desk. You will map this attribute to the &ldquo;Trade Desk ID (TDID)&rdquo; parameter in The Trade Desk connector actions.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

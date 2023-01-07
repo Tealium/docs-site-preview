@@ -480,7 +480,7 @@ When using the geofencing capabilities, take the following into account:</p>
 <ul>
 <li>The geofence service does not continuously query for location, so latency is expected when receiving alerts. The latency is typically less than 2 minutes, but if background location limits are set or if the device has been stationary for a while, the latency increases.</li>
 <li>The geofence service depends on the network location provider and a data connection. If there is no reliable network connectivity inside the geofence, alerts may not be triggered.</li>
-<li>If Wi-Fi is turned off on the device, your application might never receive geofence alerts depending on several settings including the radius of the geofence, the device model, or the Android version. In Android 4.3+ provides the capability of “Wi-Fi scan only mode” which allows users to disable Wi-Fi and still receive a reliable network location. It is recommended to prompt the user to enable this setting.</li>
+<li>If Wi-Fi is turned off on the device, your application might never receive geofence alerts depending on several settings including the radius of the geofence, the device model, or the Android version. In Android 4.3+ provides the capability of &ldquo;Wi-Fi scan only mode&rdquo; which allows users to disable Wi-Fi and still receive a reliable network location. It is recommended to prompt the user to enable this setting.</li>
 </ul>
 <p><strong>Number of Active Geofences</strong><br>
 Geofences are added and removed dynamically, using as few resources as possible. There is no limit to the number of geofences defined, but the number of active geofences is limited to 100 per device user across <em>all</em> running applications.</p>
@@ -550,16 +550,6 @@ Geofences are added and removed dynamically, using as few resources as possible.
 </table>
 <h2 id="api-reference">API Reference</h2>
 <p>For the reference of methods used in the Location module, see the <a href="/platforms/android-java/api/tealium-location/#class-tealiumlocation"><code>TealiumLocation</code></a> class in the Tealium SDK for Android API.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

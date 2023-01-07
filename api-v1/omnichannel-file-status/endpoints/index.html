@@ -295,14 +295,14 @@ var utag_data = {
 <p>Returns the count of uploaded files. Only applies to files with the same file prefix.</p>
 <p>The following query parameters are used:</p>
 <ul>
-<li><strong>filePrefix</strong> - the file prefix matching the Omnichannel file definition eg. &ldquo;sales_transactions&rdquo;</li>
-<li><strong>startDate</strong> - the start date of a range of files to query eg. &ldquo;2017-01-01T12:34Z&rdquo;</li>
-<li><strong>endDate</strong> - the end date of a range of files to query eg. &ldquo;2017-01-08T12:34Z&rdquo;</li>
+<li><strong>filePrefix</strong> - the file prefix matching the Omnichannel file definition, for example <code>sales_transactions</code>.</li>
+<li><strong>startDate</strong> - the start date of a range of files to query, for example <code>2017-01-01T12:34Z</code>.</li>
+<li><strong>endDate</strong> - the end date of a range of files to query, for example <code>2017-01-08T12:34Z</code>.</li>
 </ul>
-<p><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/count?utk={utk token}&amp;filePrefix={file prefix}&amp;startDate={start date}&amp;endDate={end date}</code></p>
-<h3 id="curl-request">cURL request</h3>
+<pre tabindex="0"><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/count?utk={utk token}&amp;filePrefix={file prefix}&amp;startDate={start date}&amp;endDate={end date}
+</code></pre><h3 id="curl-request">cURL request</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cURL -i -b JSESSIONID<span style="color:#f92672">={</span>session_id<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.tealiumiq.com/v1/omnichannel/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/files/count?utk<span style="color:#f92672">={</span>token<span style="color:#f92672">}</span>&amp;filePrefix<span style="color:#f92672">={</span>file prefix<span style="color:#f92672">}</span>&amp;startDate<span style="color:#f92672">={</span>start date<span style="color:#f92672">}</span>&amp;endDate<span style="color:#f92672">={</span>end date<span style="color:#f92672">}</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.tealiumiq.com/v1/omnichannel/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/files/count?utk<span style="color:#f92672">={</span>token<span style="color:#f92672">}</span>&amp;filePrefix<span style="color:#f92672">={</span>filePrefix<span style="color:#f92672">}</span>&amp;startDate<span style="color:#f92672">={</span>startDate<span style="color:#f92672">}</span>&amp;endDate<span style="color:#f92672">={</span>endDate<span style="color:#f92672">}</span>
 </span></span></code></pre></div><p class="tip"><i class="fas fa-star"></i>If the file count exceeds 50, try narrowing the date range parameters.</p>
 <h3 id="example-response">Example response</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -324,8 +324,8 @@ var utag_data = {
 </tbody>
 </table>
 <h2 id="single-file-status">Single file status</h2>
-<p><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/{file name}?utk={utk token}</code></p>
-<h3 id="curl-request-1">cURL request</h3>
+<pre tabindex="0"><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/{fileName}?utk={utk token}
+</code></pre><h3 id="curl-request-1">cURL request</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cURL -i -b JSESSIONID<span style="color:#f92672">={</span>session_id<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.tealiumiq.com/v1/omnichannel/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/files/<span style="color:#f92672">{</span>filename<span style="color:#f92672">}</span>.csv?utk<span style="color:#f92672">={</span>utk token<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -o <span style="color:#f92672">{</span>filename<span style="color:#f92672">}</span>.txt
@@ -399,13 +399,13 @@ var utag_data = {
 </table>
 <h2 id="multiple-file-statuses">Multiple file statuses</h2>
 <p>Returns an array of file statuses within the specified date range. Only applies to files with the same file prefix.</p>
-<p><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/search?utk={utk token}&amp;filePrefix={file prefix}&amp;startDate={start date}&amp;endDate={end date}</code></p>
-<h3 id="curl-request-2">cURL request</h3>
+<pre tabindex="0"><code>GET /v1/omnichannel/accounts/{account}/profiles/{profile}/files/search?utk={utk token}&amp;filePrefix={filePrefix}&amp;startDate={startDate}&amp;endDate={endDate}
+</code></pre><h3 id="curl-request-2">cURL request</h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cURL -i -b JSESSIONID<span style="color:#f92672">={</span>session_id<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.tealiumiq.com/v1/omnichannel/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/files/search?utk<span style="color:#f92672">={</span>token<span style="color:#f92672">}</span>&amp;filePrefix<span style="color:#f92672">={</span>file prefix<span style="color:#f92672">}</span>&amp;startDate<span style="color:#f92672">={</span>start date<span style="color:#f92672">}</span>&amp;endDate<span style="color:#f92672">={</span>end date<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  https://api.tealiumiq.com/v1/omnichannel/accounts/<span style="color:#f92672">{</span>account<span style="color:#f92672">}</span>/profiles/<span style="color:#f92672">{</span>profile<span style="color:#f92672">}</span>/files/search?utk<span style="color:#f92672">={</span>token<span style="color:#f92672">}</span>&amp;filePrefix<span style="color:#f92672">={</span>filePrefix<span style="color:#f92672">}</span>&amp;startDate<span style="color:#f92672">={</span>startDate<span style="color:#f92672">}</span>&amp;endDate<span style="color:#f92672">={</span>endDate<span style="color:#f92672">}</span> <span style="color:#ae81ff">\
 </span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -o <span style="color:#f92672">{</span>filename<span style="color:#f92672">}</span>.txt
 </span></span></code></pre></div><h3 id="example-response-2">Example response</h3>
-<p>Below is a sample file status for three files that are all prefixed by &ldquo;sales-transaction&rdquo;. Each file prefix is followed by &ldquo;_&rdquo; and a unique date identifier. Each file entry contains information about the file size, line count (i.e. number of rows) and number of lines processed (including any processing errors).</p>
+<p>Below is a sample file status for three files that are all prefixed by <code>sales-transaction</code>. Each file prefix is followed by <code>_</code> and a unique date identifier. Each file entry contains information about the file size, line count, and number of lines processed (including any processing errors).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>[
 </span></span><span style="display:flex;"><span>  {
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;_id&#34;</span>: {
@@ -596,24 +596,24 @@ var utag_data = {
 <td>Re-upload the file and double check the file prefix in the <a href="/server-side/data-sources/importing-offline-data-omnichannel/">Omnichannel Definitions tab</a>. If the error persists, please contact your Tealium Account Manager.</td>
 </tr>
 <tr>
-<td>DBObject of size {###} is over Max BSON size {###}</td>
+<td>DBObject of size <code>{###}`` is over Max BSON size </code>{###}`</td>
 <td>File is too large to be processed</td>
 <td>Split up your file data into multiple file definitions</td>
 </tr>
 <tr>
 <td>Failed to download (FTP, SFTP, S3) file</td>
-<td>File could not be downloaded due to errors in your service credentials (see<a href="/server-side/data-sources/importing-offline-data-omnichannel/">Omnichannel Configuration tab</a>).</td>
+<td>File could not be downloaded due to errors in your service credentials (see <a href="/server-side/data-sources/importing-offline-data-omnichannel/">Omnichannel Configuration tab</a>).</td>
 <td>* For FTP/SFTP, double check the Host name, user name, and password<br> * For S3/Tealium S3, double check the Access/Secret keys and Bucket/prefix</td>
 </tr>
 <tr>
 <td>Invalid connection type<br> <strong>OR</strong><br> Could not find required (FTP, SFTP, S3) configuration parameters for definition</td>
-<td>Your service credentials (under<a href="/server-side/data-sources/importing-offline-data-omnichannel/">Omnichannel Configuration tab</a>) could not be authenticated.</td>
+<td>Your service credentials (under <a href="/server-side/data-sources/importing-offline-data-omnichannel/">Omnichannel Configuration tab</a>) could not be authenticated.</td>
 <td>* For FTP/SFTP, double check the Host name, user name, and password<br> * For S3/Tealium S3, double check the Access/Secret keys and Bucket/prefix</td>
 </tr>
 </tbody>
 </table>
 <h3 id="configuration-and-definition-errors">Configuration and definition errors</h3>
-<p>These errors are caused by incorrect column mappings in the<a href="/server-side/data-sources/importing-offline-data-omnichannel/">Definitions tab</a>.</p>
+<p>These errors are caused by incorrect column mappings in the <a href="/server-side/data-sources/importing-offline-data-omnichannel/">Definitions tab</a>.</p>
 <table>
 <thead>
 <tr>
@@ -634,17 +634,17 @@ var utag_data = {
 <td>Replace the offending column value and re-upload the file.</td>
 </tr>
 <tr>
-<td>Secondary visitor ID column= {column_name_here} does not exist in the file, unable to continue</td>
+<td>Secondary visitor ID column= <code>{column_name_here}</code> does not exist in the file, unable to continue</td>
 <td>The column header you mapped to the Visitor ID field does not exist in your file. This could be due to a typo or the header is not defined.</td>
 <td>Make sure the column header you supplied matches what is in the file</td>
 </tr>
 <tr>
-<td>{date_format_here} could not be parsed as a Date</td>
+<td><code>{date_format_here}</code> could not be parsed as a Date</td>
 <td>The date format you specified for the mapped column name does not exist in your file.</td>
 <td>Make sure the date format you supplied matches what is in the file</td>
 </tr>
 <tr>
-<td>The number of columns to be processed {##} must match the number of CellProcessors {##}: check that the number of CellProcessors you have defined matches the expected number of columns being read/written</td>
+<td>The number of columns to be processed <code>{##}</code> must match the number of CellProcessors <code>{##}</code>: check that the number of CellProcessors you have defined matches the expected number of columns being read/written</td>
 <td>The column names you mapped under Omnichannel Attributes do not exist in your file. This could be due to a typo or the header is not defined.</td>
 <td>Make sure the column header you supplied matches what is in the file</td>
 </tr>
@@ -653,22 +653,12 @@ var utag_data = {
 <h3 id="internal-server-errors">Internal server errors</h3>
 <p>These errors occur when the different servers processing your files are unable to communicate with each other.</p>
 <ul>
-<li>Connection is already closed due to connection error; cause: com.rabbitmq.client.MissedHeartbeatException</li>
-<li>Can&rsquo;t connect to new replica set master [##.#.#.###:###], err: couldn&rsquo;t connect to server [##.#.#.###:###], error querying server</li>
-<li>DBClientBase::findN: transport error</li>
-<li>socket exception [SEND_ERROR]</li>
+<li><code>Connection is already closed due to connection error; cause: com.rabbitmq.client.MissedHeartbeatException</code></li>
+<li><code>Can't connect to new replica set master [##.#.#.###:###], err: couldn't connect to server [##.#.#.###:###], error querying server</code></li>
+<li><code>DBClientBase::findN: transport error</code></li>
+<li><code>socket exception [SEND_ERROR]</code></li>
 </ul>
 <p><strong>Resolution</strong>: Re-upload your file(s).</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -713,7 +703,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -648,7 +648,7 @@ var utag_data = {
 <ol>
 <li>Click <strong>Save/Publish</strong>.<br>
 The <strong>Save/Publish</strong> dialog appears.</li>
-<li>Click <strong>Configure Publish Settings i</strong>n the upper right corner.<br>
+<li>Click <strong>Configure Publish Settings</strong> in the upper right corner.<br>
 The <strong>Publish Configuration</strong> dialog appears.</li>
 <li>Select the <strong>General Publishing</strong> or <strong>Mobile Library Publishing</strong> configuration tab.<br>
 <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8259i83C12DFE2D10477A/image-size/large?v=v2&amp;amp;px=999" 
@@ -667,7 +667,7 @@ The <strong>Publish Configuration</strong> dialog appears.</li>
 If you want to receive emails whenever a version is published, enter the emails into the Publish Notify Email field. You can add multiple email addresses by separating each additional email with a comma.</li>
 <li><strong>Custom Version Naming</strong><br>
 Allow users to enter a custom version name rather than the default timestamp ID. Default value is <strong>ON</strong>.</li>
-<li><strong>Save</strong>**/Publish for older versions**<br>
+<li><strong>Save/Publish for older versions</strong><br>
 Control whether or not users can modify and save old versions of your profile. If you select Off then only the latest version can be modified and saved. Default value is <strong>ON</strong>.</li>
 <li><strong>Workflow Management</strong><br>
 This setting allows you to set up workflow management, whereby users with Dev and QA publish permissions can request permission to publish to Prod. Enabling workflow management will require approval for all publishes to Prod. Default value is <strong>OFF</strong>.</li>
@@ -736,36 +736,26 @@ Specify the AudienceStream profile from which to retrieve visitor data. The on-p
 <p>These configurations allow you to specify a publication location other than Tealium&rsquo;s default multi-CDN infrastructure. If you want to publish your profiles to a non-standard location (if your prod environment is not specified as &ldquo;prod&rdquo;), then enter the URL in the appropriate field. You may do this for each of the three environments: Dev, QA, and Prod.</p>
 <ul>
 <li><strong>Publish Dev URL</strong><br>
-Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/getting-started/install/self-host/">First-Party Domains</a>.</li>
+Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/administration/first-party-domains/about/">First-Party Domains</a>.</li>
 <li><strong>Publish QA URL</strong><br>
-Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/getting-started/install/self-host/">First-Party Domains</a>.</li>
+Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/administration/first-party-domains/about/">First-Party Domains</a>.</li>
 <li><strong>Publish Prod URL</strong><br>
-Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/getting-started/install/self-host/">First-Party Domains</a>.</li>
+Use this setting if you are self-hosting your Tealium JavaScript files or if you use first-party domains. For more information, see <a href="/iq-tag-management/getting-started/install/self-host/">Self-Hosting utag.js</a> and <a href="/iq-tag-management/administration/first-party-domains/about/">First-Party Domains</a>.</li>
 </ul>
 <p class="note"><i class="fas fa-info-circle"></i>To restrict the delivery of your <code>utag.js</code> files to the Europe geographic region, you must enter <code>//tags-eu.tiqcdn.com/utag/ACCOUNT/PROFILE/ENVIRONMENT</code> into the URL fields. Restricting the delivery locations to Europe in this way means that you are only using one CDN, Akamai, to deliver your <code>utag.js</code> file and only from servers physically located in the EU and not from Tealium&rsquo;s <a href="https://community.tealiumiq.com/t5/Getting-Started/Multi-CDN-White-Paper/ta-p/13635">mCDN</a> infrastructure.</p>
 <h3 id="legacy-settings">Legacy settings</h3>
 <p>These configurations are deprecated, but remain to support legacy deployments and should not be used for newer implementations (utag.js versions 4.26 and later).</p>
 <ul>
 <li><strong>Profile Can Be Subloaded</strong><br>
-This is required when another profile uses the Profile Loader tag to load this profile. This functionality is deprecated in favor of <a href="/iq-tag-management/profiles/profile-libraries/">Profile Libraries</a>.</li>
+This is required when another profile uses the Profile Loader tag to load this profile. This functionality is deprecated in favor of <a href="/iq-tag-management/profiles/profile-libraries/about/">Profile Libraries</a>.</li>
 <li><strong>Force Timeout</strong><br>
-Set this value, in milliseconds, to cancel slowly loading tags. Only tags that take longer than this value to load are cancelled. This configuration only works for profiles using utag.js versions before <a href="https://community.tealiumiq.com/t5/uTag/utag-js-4-26-Release-Notes/ta-p/11907">version 4.26</a>. This configuration will not affect profiles using more recent utag.js versions.<br>
+Set this value, in milliseconds, to cancel slowly loading tags. Only tags that take longer than this value to load are cancelled. This configuration only works for profiles using utag.js versions before version 4.26. This configuration will not affect profiles using more recent utag.js versions.<br>
 Tealium removes from the load queue any tag libraries that have not loaded by the time the force timeout value expires. The countdown to a forced timeout starts when the initial <code>utag.js</code> call is made, not when the subsequent tag library calls (<code>utag.1.js</code>, <code>utag.2.js</code>, et cetera) are made. Be aware that if a visitor&rsquo;s browser is running slowly, the Force Timeout feature could cause a tag to be cancelled even though the <code>utag.js</code> or tag library requests themselves aren&rsquo;t slow. Enter a high <strong>Force Timeout</strong> value to prevent unnecessary timeouts.</li>
-<li><strong>Extensions Scoped To Foote</strong>r<br>
+<li><strong>Extensions Scoped To Footer</strong><br>
 Toggle on or off to set this value if this profile uses a <code>utag.footer.js</code> file to load extensions.</li>
 </ul>
 <h2 id="mobile-library-publishing">Mobile library publishing</h2>
 <p>In this tab, you can activate mobile library support by clicking <strong>Activate Mobile Library</strong>. Learn more about <a href="/iq-tag-management/profiles/creating-a-mobile-profile/">Creating a Mobile Profile</a>.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -826,7 +816,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

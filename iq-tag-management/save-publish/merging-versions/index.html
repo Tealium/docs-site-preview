@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -649,7 +649,7 @@ var utag_data = {
 
 <div class="prose" id="prose">
   <p>For example, you could be testing the old version in Dev or QA environments and it is finally ready to be merged into the Prod environment. Using this built-in feature, you can pick older changes, merge them in the current version, and continue to save and publish as usual.</p>
-<p class="note"><i class="fas fa-info-circle"></i>This feature does not support <a href="/iq-tag-management/profiles/profile-libraries/">Profile Inheritance</a>.</p>
+<p class="note"><i class="fas fa-info-circle"></i>This feature does not support <a href="/iq-tag-management/profiles/profile-libraries/about/">profile libraries</a>.</p>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/1849iBD66451B0F889C26/strip-exif-data/true/image-size/large?v=v2&amp;amp;px=-1"
          alt="Merge version dropdown"
          title="Merge version dropdown" width="378" height="224"/>
@@ -697,13 +697,7 @@ var utag_data = {
 <p>Save/Publish the current version. You have the option to perform a <strong>Save</strong> or a <strong>Save As</strong>.</p>
 </li>
 </ol>
-<p>Watch a quick video tutorial on how to merge changes between concurrent users:</p>
-
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/MSQzY2J" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-<p>Here&rsquo;s another quick video tutorial on how to merge changes between versions:</p>
+<p>Here&rsquo;s a quick video tutorial on how to merge changes between versions:</p>
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe src="https://www.youtube.com/embed/jwJLifIDRcc" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
@@ -741,7 +735,7 @@ var utag_data = {
 <li>Version cannot be merged</li>
 <li>Cannot Merge Version</li>
 <li>Unable to Merge</li>
-<li>Sorry you don&rsquo;t have the required permission to perform this action,&hellip;</li>
+<li>Sorry you don&rsquo;t have the required permission to perform this action</li>
 </ul>
 <h3 id="alert-message-version-cannot-be-merged">Alert message: &ldquo;Version cannot be merged&rdquo;</h3>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/1857i4AA98F19514F0CE2/strip-exif-data/true/image-size/large?v=v2&amp;amp;px=-1"
@@ -797,16 +791,6 @@ var utag_data = {
          title="save perm error" width="636" height="123"/>
 </figure>
 <p><strong>Solution</strong>: Contact your Account Manager for further assistance.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -867,7 +851,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

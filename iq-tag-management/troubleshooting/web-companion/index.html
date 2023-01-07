@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -680,22 +680,17 @@ The environment detected in the page code is outlined in orange. The currently v
 </ul>
 <p class="note"><i class="fas fa-info-circle"></i>To enable this feature, turn on <a href="/iq-tag-management/save-publish/publish-configuration/">the Web Companion setting in your publish settings</a>.</p>
 <ul>
-<li>
-<p><strong>Tags &amp; Extensions Tabs</strong><br>
-This tab will show which tags loaded and whether they successfully sent requests. The extensions that have successfully completed will also be displayed.</p>
-</li>
-<li>
-<p><strong>Timers</strong><br>
-The load and send times of the tag are displayed.</p>
+<li><strong>Tags &amp; Extensions Tabs</strong><br>
+This tab will show which tags loaded and whether they successfully sent requests. The extensions that have successfully completed will also be displayed.</li>
+<li><strong>Timers</strong><br>
+The load and send times of the tag are displayed.
 <ul>
 <li><strong>Loaded</strong> - The time to load the <code>utag.js</code> file into the page.</li>
 <li><strong>Sent</strong> - The time to trigger all the vendor tags on the page.</li>
 </ul>
 </li>
-<li>
-<p><strong>Queue (unsaved changes)</strong><br>
-Changes applied to the profile using Web Companion are queued and will not be committed until you click the <strong>Save&hellip;</strong> button. If you do not wish to commit a change, you may also remove that change from the queue by clicking on the <strong>X</strong> next to the appropriate change.</p>
-</li>
+<li><strong>Queue (unsaved changes)</strong><br>
+Changes applied to the profile using Web Companion are queued and will not be committed until you click the <strong>Save&hellip;</strong> button. If you do not wish to commit a change, you may also remove that change from the queue by clicking on the <strong>X</strong> next to the appropriate change.</li>
 </ul>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/795i5A39F64C3EB7841A/image-size/large?v=v2&amp;amp;px=999"/>
 </figure>
@@ -760,19 +755,9 @@ Use this tool to assist in the configuration of the Adobe Target tag in your acc
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/802iD639FB8871B1D8CF/image-size/large?v=v2&amp;amp;px=999"/>
 </figure>
 <h4 id="adobe-test-and-target"><strong>Adobe Test and Target</strong></h4>
-<p>Add this extension to modify your desired content on the page. Configure the extension and click <strong>Add to Queue</strong> to save it to your profile. For more details, see <a href="/client-side-tags/flicker-free-test-and-target/">Adobe Test and Target Extension</a>.</p>
+<p>Add this extension to modify your desired content on the page. Configure the extension and click <strong>Add to Queue</strong> to save it to your profile. For more details, see <a href="/iq-tag-management/extensions/extensions-list/adobe-target-extension/">Adobe Test and Target Extension</a>.</p>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/803iDD326B6D23C8CEC3/image-size/large?v=v2&amp;amp;px=999"/>
 </figure>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -833,7 +818,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

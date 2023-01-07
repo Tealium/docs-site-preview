@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,7 +656,7 @@ var utag_data = {
 <div class="prose" id="prose">
   <p class="note"><i class="fas fa-info-circle"></i>Before you begin, contact your Account Manager to verify the contracted terms for this feature on your account to ensure availability and appropriate licencing is maintained.</p>
 <h2 id="overview">Overview</h2>
-<p>Tealium iQ publishes your <code>utag.js</code> files to our highly-scaled <a href="https://community.tealiumiq.com/t5/Getting-Started/The-New-Multi-CDN/ta-p/13701">Multi-CDN Infrastructure</a>. When <code>utag.js</code> is implemented on your website, the file is sourced from <code>tags.tiqcdn.com</code>. If you have requirements that prevent you from loading external JavaScript files (or have other restrictions) we offer the ability to self-host these files on your own server. The generated <code>utag</code> files are still published to our CDN, but they are also made available in a <code>.zip</code> archive which can be easily transferred to your system.</p>
+<p>Tealium iQ publishes your <code>utag.js</code> files to our highly-scaled <a href="/iq-tag-management/getting-started/multi-cdn/">Multi-CDN Infrastructure</a>. When <code>utag.js</code> is implemented on your website, the file is sourced from <code>tags.tiqcdn.com</code>. If you have requirements that prevent you from loading external JavaScript files (or have other restrictions) we offer the ability to self-host these files on your own server. The generated <code>utag</code> files are still published to our CDN, but they are also made available in a <code>.zip</code> archive which can be easily transferred to your system.</p>
 <p>The main difference in self-hosting is in the code snippet used to load <code>utag.js</code> on your website. The domain and path to that file must be updated to reflect your server location that hosts the files. In the following example you can see the URL change from Tealium&rsquo;s standard location to a self-hosted location.</p>
 <p><strong>Original Tealium snippet:</strong></p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!-- Tealium Universal Tag --&gt;</span>
@@ -733,19 +733,10 @@ var utag_data = {
          title="self-hosted sha256 digest"/>
 </figure>
 <p>Then you can use your favorite <a href="https://en.wikipedia.org/wiki/Checksum">checksum</a> utility to verify the digest signatures of the files on your hosted location. Here is the SHA-256 checksum for <code>utag.js</code>, which matches the value seen in iQ.</p>
-<figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/3126i637E739AA3D5F675/image-size/large?v=v2&amp;amp;px=999"/><figcaption><p>self-hosted shasum</p>
-        </figcaption>
+<figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/3126i637E739AA3D5F675/image-size/large?v=v2&amp;amp;px=999"
+         alt="self-hosted shasum"
+         title="self-hosted shasum"/>
 </figure>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -806,7 +797,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

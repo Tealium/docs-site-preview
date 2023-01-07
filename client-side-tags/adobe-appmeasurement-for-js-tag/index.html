@@ -753,29 +753,25 @@ var utag_data = {
 <li>For additional information, see: <a href="https://marketing.adobe.com/resources/help/en_US/sc/implement/appmeasure_mjs.htm">About AppMeasurement for JavaScript</a></li>
 </ul>
 <h2 id="tag-configuration">Tag Configuration</h2>
-<p>Go to the Tag Marketplace and add the Adobe Analytics AppMeasurement for JS tag (learn more about <a href="/iq-tag-management/tags/tag-templates/manage/">how to add a tag</a>).</p>
-<p>After adding the tag, configure the following settings:</p>
+<p>Go to the Tag Marketplace and add the Adobe Analytics AppMeasurement for JS tag (learn more about <a href="/iq-tag-management/tags/manage-tags/">how to add a tag</a>).</p>
 <p>After adding the tag, configure the following settings:</p>
 <ul>
-<li>
-<p><strong>Code Version</strong></p>
+<li><strong>Code Version</strong>
 <ul>
 <li>The version of the AppMeasurement.js library.</li>
 </ul>
 </li>
-<li>
-<p><strong>Device Type</strong></p>
+<li><strong>Device Type</strong>
 <ul>
 <li>Select one of the following based on the platform of your implementation:
 <ul>
 <li><strong>Standard</strong> for desktop website installations.</li>
-<li><strong>Mobile App</strong> for native mobile installations with <a href="https://community.tealiumiq.com/t5/iOS/tkb-p/ios-documentation">Tealium for iOS</a> or <a href="https://community.tealiumiq.com/t5/Android/tkb-p/android-documentation">Tealium for Android</a>.</li>
+<li><strong>Mobile App</strong> for native mobile installations with <a href="/platforms/ios-swift/">Tealium for iOS</a> or <a href="/platforms/android-kotlin/">Tealium for Android</a>.</li>
 </ul>
 </li>
 </ul>
 </li>
-<li>
-<p><strong>Report Suite</strong></p>
+<li><strong>Report Suite</strong>
 <ul>
 <li>Required.</li>
 <li>Set a default value even when using mapping to dynamically set report suite.</li>
@@ -783,8 +779,7 @@ var utag_data = {
 <li>Reference AppMeasurement.js: <code>s.account</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Server</strong></p>
+<li><strong>Server</strong>
 <ul>
 <li>Required.</li>
 <li>Data collection server.</li>
@@ -792,8 +787,7 @@ var utag_data = {
 <li>For example, <code>metrics.tealium.com</code> or <code>tealiumclient.122.2o7.net</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Server Secure</strong></p>
+<li><strong>Server Secure</strong>
 <ul>
 <li>Required.</li>
 <li>The <code>https</code> data collection server.</li>
@@ -801,45 +795,39 @@ var utag_data = {
 <li>For example, <code>smetrics.tealium.com</code> or <code>tealiumclient.122.2o7.net</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Auto Event Serialization Detection</strong></p>
+<li><strong>Auto Event Serialization Detection</strong>
 <ul>
 <li>Automatically detect event serialization within trigger strings.</li>
 <li>Must be set to <strong>No</strong> if your event trigger value contains the colon character (<code>:</code>).</li>
 </ul>
 </li>
-<li>
-<p><strong>Auto Link Tracking</strong></p>
+<li><strong>Auto Link Tracking</strong>
 <ul>
 <li>Default value is <strong>Yes</strong> and is the recommended selection.</li>
 <li>If set to <strong>No</strong>, must replicate the automatic link tracking using other methods, such as the <a href="/iq-tag-management/extensions/extensions-list/link-tracking-extension/">Link Tracking Extension</a>.</li>
 </ul>
 </li>
-<li>
-<p><strong>Internal Link Filters</strong></p>
+<li><strong>Internal Link Filters</strong>
 <ul>
 <li>A comma-separated list of your domains ,classified as internal, that is used to ensure that link clicks are not reported as exit clicks to Adobe report.</li>
 <li>Reference AppMeasurement.js: <code>s.linkInternalFilters</code></li>
 <li>For example, <code>tealium.com,tealiumiq.com</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Run clearVars</strong></p>
+<li><strong>Run clearVars</strong>
 <ul>
 <li>Default value is <strong>No</strong>.</li>
 <li>Clears the props, eVars, and events set in the global s object after each tracking request</li>
 </ul>
 </li>
-<li>
-<p><strong>S-Object Name</strong></p>
+<li><strong>S-Object Name</strong>
 <ul>
 <li>Required.</li>
 <li>Default name is <code>s</code>.</li>
 <li>Set a different name if you are running multiple instances of Adobe Analytics or AppMeasurement on the page.</li>
 </ul>
 </li>
-<li>
-<p><strong>Namespace</strong></p>
+<li><strong>Namespace</strong>
 <ul>
 <li>Optional.</li>
 <li>The visitor namespace.</li>
@@ -847,8 +835,7 @@ var utag_data = {
 <li>Reference AppMeasurement.js: <code>s.visitorNamespace</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Experience Cloud ID</strong></p>
+<li><strong>Experience Cloud ID</strong>
 <ul>
 <li>Optional.</li>
 <li>Your Adobe Experience Cloud ID.</li>
@@ -856,21 +843,18 @@ var utag_data = {
 <li>Learn more about the <a href="https://marketing.adobe.com/resources/help/en_US/mcvid/mcvid-requirements.html">Adobe Enterprise Cloud ID Service</a>.</li>
 </ul>
 </li>
-<li>
-<p><strong>Run Advertising Cloud Viewthrough</strong></p>
+<li><strong>Run Advertising Cloud Viewthrough</strong>
 <ul>
 <li>Only available for version 2.17 and up.</li>
 <li>Load the Advertising Cloud Viewthrough file and send the viewthrough data.</li>
 </ul>
 </li>
-<li>
-<p><strong>Viewthrough Interval</strong></p>
+<li><strong>Viewthrough Interval</strong>
 <ul>
 <li>Set the interval, in milliseconds, between each attempt to load the viewthrough script.</li>
 </ul>
 </li>
-<li>
-<p><strong>Viewthrough Max Tries</strong></p>
+<li><strong>Viewthrough Max Tries</strong>
 <ul>
 <li>Set the maximum number of attempts to load viewthrough before running only analytics.</li>
 </ul>
@@ -880,7 +864,7 @@ var utag_data = {
 <p><a href="/iq-tag-management/load-rules/about/">Load Rules</a> determine when and where to load an instance of this tag on your site.</p>
 <p>Recommended load rule: <strong>All Pages</strong>.</p>
 <h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
+<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/about/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
 <p>The available categories are:</p>
 <h3 id="standards">Standards</h3>
 <table>
@@ -966,11 +950,10 @@ You can click the plus icon (<strong>+</strong>) to add additional value/trigger
 </tr>
 <tr>
 <td style="text-align:left">Trigger</td>
-<td style="text-align:left"><ul><li>The event to trigger.</li><li>Select:  <ul><li><strong>prodView</strong> for product views.</li><li><strong>scOpen</strong> for opening/initializing a new shopping cart.</li><li><strong>scAdd</strong> for adding an item to the shopping cart.</li><li><strong>scRemove</strong> for removing an item from the shopping cart.</li><li><strong>scView</strong> for viewing a shopping cart.</li><li><strong>scCheckout</strong> for beginning a checkout.</li><li><strong>purchase</strong> for completing an order.</li><li><strong>event1</strong> through <strong>event1000</strong> to set a custom event. <p class="note"><i class="fas fa-info-circle"></i>Events 101-1000 are available only to library versions 1.4 and up.</p></td>
+<td style="text-align:left"><ul><li>The event to trigger.</li><li>Select:  <ul><li><strong>prodView</strong> for product views.</li><li><strong>scOpen</strong> for opening/initializing a new shopping cart.</li><li><strong>scAdd</strong> for adding an item to the shopping cart.</li><li><strong>scRemove</strong> for removing an item from the shopping cart.</li><li><strong>scView</strong> for viewing a shopping cart.</li><li><strong>scCheckout</strong> for beginning a checkout.</li><li><strong>purchase</strong> for completing an order.</li><li><strong>event1</strong> through <strong>event1000</strong> to set a custom event. <br><strong>Note: Events 101-1000 are available only to library versions 1.4 and up.</strong> <ul><li>SiteCatalyst allows you to use 100 custom events, also referred to as success events.</li><li>These events typically count specific things that happen on a site and do not normally contain a value, such as logins and form views.</li></ul> </li></ul> </li></ul></td>
 </tr>
 </tbody>
 </table>
- <ul><li>SiteCatalyst allows you to use 100 custom events, also referred to as success events.</li><li>These events typically count specific things that happen on a site and do not normally contain a value, such as logins and form views.</li></ul> </li></ul> </li></ul> |
 <h4 id="product-level-events">Product-Level Events</h4>
 <p>SiteCatalyst provides 100 destinations for sending product-specific actions.</p>
 <table>
@@ -1046,7 +1029,7 @@ You can click the plus icon (<strong>+</strong>) to add additional value/trigger
 </tbody>
 </table>
 <h4 id="merchandising-evars">Merchandising eVars</h4>
-<p>Merchandising eVars allow you to associate a product with some value in addition to the category you specify in the Products string (<a href="#product_string">what is product string?</a>).</p>
+<p>Merchandising eVars allow you to associate a product with some value in addition to the category you specify in the products string.</p>
 <table>
 <thead>
 <tr>
@@ -1300,8 +1283,8 @@ When event serialization detection is turned off, the tag does not detect colons
 </ul>
 <p class="note"><i class="fas fa-info-circle"></i>Whether event serialization detection is on or off, serials mapped directly via the <strong>Event Serialization</strong> tab always take precedence (see <a href="#scenario3">scenario 3 example</a>).</p>
 <p>This following scenarios help you understand how event serialization detection interprets a trigger value with and without a colon.</p>
-<p class="tip"><i class="fas fa-star"></i>Throughout this section, the term “mapped trigger” refers to the value in the tag&rsquo;s data mapping configuration and the term “data layer trigger” refers to the value found in the data layer of your website.</p>
-<h4 id="for-example-mapped-trigger-without-a-colon">For example, Mapped trigger without a colon</h4>
+<p class="tip"><i class="fas fa-star"></i>Throughout this section, the term &ldquo;mapped trigger&rdquo; refers to the value in the tag&rsquo;s data mapping configuration and the term &ldquo;data layer trigger&rdquo; refers to the value found in the data layer of your website.</p>
+<h4 id="example-mapped-trigger-without-a-colon">Example: Mapped trigger without a colon</h4>
 <p>As an example, if you want to trigger a <code>prodView</code> event and serialize it when the page contains <code>fireEvt</code>, you would do the following:</p>
 <ol>
 <li>Map the UDO variable <code>serial</code> to <code>SERIAL_prodView</code> in the Event Serialization tab.</li>
@@ -1313,12 +1296,12 @@ When event serialization detection is turned off, the tag does not detect colons
 </figure></li>
 </ol>
 <p>There are many scenarios that could occur in your data layer.</p>
-<h5 id="scenario-1-data-layer-trigger-is-fireevt-and-the-serial-value-is-empty">Scenario 1: Data layer trigger is <code>fireEvt</code> and the <code>serial</code> value is empty</h5>
-<pre tabindex="0"><code>var utag_data = {
-  trigger: &#34;fireEvt&#34;,
-  serial: &#34;&#34;
-}
-</code></pre><ul>
+<h4 id="scenario-1-data-layer-trigger-is-fireevt-and-the-serial-value-is-empty">Scenario 1: Data layer trigger is <code>fireEvt</code> and the <code>serial</code> value is empty</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">utag_data</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">trigger</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;fireEvt&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">serial</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>Event serialization detection: On</strong><br>
 The tag matches <code>fireEvt</code> with the mapped trigger and successfully fires <code>prodView</code> on the page, however there is no serialization.</li>
 <li><strong>Event serialization detection: Off</strong><br>
@@ -1329,7 +1312,7 @@ Same result as above.</li>
          alt="scene 1 network call"
          title="scene 1 network call"/>
 </figure>
-<h5 id="scenario-2--data-layer-trigger-is-fireevt123-and-the-serial-value-is-empty">Scenario 2: . Data layer trigger is <code>fireEvt:123</code> and the <code>serial</code> value is empty</h5>
+<h4 id="scenario-2-data-layer-trigger-is-fireevt123-and-the-serial-value-is-empty">Scenario 2: Data layer trigger is <code>fireEvt:123</code> and the <code>serial</code> value is empty</h4>
 <pre tabindex="0"><code>var utag_data = {
   trigger: &#34;fireEvt:123&#34;,
   serial: &#34;&#34;
@@ -1348,7 +1331,7 @@ The tag serializes <code>123</code> then matches <code>fireEvt</code> with the m
 The tag fails to match <code>fireEvt:123</code> with your mapped trigger, as a result <code>prodView</code> does not fire on the page.</p>
 </li>
 </ul>
-<h5 id="scenario-3-data-layer-trigger-is-fireevt123-and-the-serial-value-is-456">Scenario 3: Data layer trigger is <code>fireEvt:123</code> and the serial value is <code>456</code></h5>
+<h4 id="scenario3">Scenario 3: Data layer trigger is <code>fireEvt:123</code> and the serial value is <code>456</code></h4>
 <pre tabindex="0"><code>var utag_data = {
   trigger: &#34;fireEvt:123&#34;,
   serial: &#34;456&#34;
@@ -1364,18 +1347,18 @@ This happens because serial values detected by event serialization mapping (<cod
 <li><strong>Event serialization detection: Off</strong><br>
 The tag fails to match <code>fireEvt:123</code> with your mapped trigger. As a result, <code>prodView</code> does not fire on the page.</li>
 </ul>
-<h4 id="for-example-mapped-trigger-with-a-colon">For example, Mapped trigger with a colon</h4>
+<h4 id="example-mapped-trigger-with-a-colon">Example: Mapped trigger with a colon</h4>
 <p>This example follows the same path as scenario 2, but the mapped trigger is <code>fireEvt:123</code> instead of <code>fireEvt</code>.</p>
 <figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/3453i2AC7FFB6E9226D85/image-size/large?v=v2&amp;px=999"
          alt="trigger with colon.png"
          title="trigger with colon.png"/>
 </figure>
-<h5 id="scenario-data-layer-trigger-is-fireevt123">Scenario: Data layer trigger is <code>fireEvt:123</code></h5>
-<pre tabindex="0"><code>var utag_data = {
-  trigger: &#34;fireEvt:123&#34;,
-  serial: &#34;&#34;
-}
-</code></pre><ul>
+<h4 id="scenario-data-layer-trigger-is-fireevt123">Scenario: Data layer trigger is <code>fireEvt:123</code></h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">utag_data</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">trigger</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;fireEvt:123&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#a6e22e">serial</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><ul>
 <li><strong>Event serialization detection: On</strong><br>
 The tag serializes <code>123</code> but fails to match <code>fireEvt</code> with your mapped trigger. As a result, <code>prodView</code> does not fire on the page.</li>
 <li><strong>Event serialization detection: Of</strong><br>
@@ -1502,8 +1485,8 @@ Where <code>CUSTOM_EVENT</code> is the event you want to append to the <code>s.e
 <li>Fixed an issue causing the JavaScript error: &ldquo;Attribute only valid on v:image&rdquo;.</li>
 <li>Separated the Marketing Cloud ID support (aka Visitor API) into a new Tag called the Marketing Cloud ID Service Tag.</li>
 </ul>
-<p class="note"><i class="fas fa-info-circle"></i>The Marketing Cloud ID Service Tag has to load before all other Adobe Tags (including AppMeasurement) in your profile. Without that, you&rsquo;ll lose visitor tracking integrity. To load the Tag first, enable the <a href="/iq-tag-management/tags/tag-templates/manage/">bundle the Tag</a> on All Pages and place it before other Adobe Tags in the Tags tab.</p>
-<p>View full Adobe AppMeasurement release notes <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/release/c_release_notes_mjs.html">here</a>.</p>
+<p class="note"><i class="fas fa-info-circle"></i>The Marketing Cloud ID Service Tag has to load before all other Adobe Tags (including AppMeasurement) in your profile. Without that, you&rsquo;ll lose visitor tracking integrity. To load the tag first, enable the <a href="/iq-tag-management/tags/advanced-settings/">bundle setting</a> on All Pages and load it before other Adobe tags.</p>
+<p>View <a href="https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/release/c_release_notes_mjs.html">full Adobe AppMeasurement release notes</a>.</p>
 <h5 id="v161-released-july-28-2016">v1.6.1 Released July 28, 2016</h5>
 <p>The following updates affect AppMeasurement&rsquo;s Events, Value Events, and Event Serialization:</p>
 <ul>
@@ -1525,16 +1508,6 @@ Where <code>CUSTOM_EVENT</code> is the event you want to append to the <code>s.e
 <li><a href="https://experienceleague.adobe.com/docs/mobile-services/using/get-started-ug/mobile-metrics/metrics.html?lang=en">Adobe Experience League: Understanding Mobile Metrics</a></li>
 <li><a href="https://marketing.adobe.com/resources/help/en_US/mobile/metrics_reference.html">Adobe Experience League: Mobile Metrics Reference</a></li>
 </ul>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

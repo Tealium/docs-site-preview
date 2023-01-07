@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,10 +656,10 @@ var utag_data = {
 <div class="prose" id="prose">
   <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="/iq-tag-management/extensions/">About Extensions</a></li>
+<li><a href="/iq-tag-management/extensions/about/">About Extensions</a></li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
-<p>The Modal Offer extension generates a <a href="https://en.wikipedia.org/wiki/Modal_window">modal pop-up</a> window on the page. The content and appearance of the pop-up is configured based on the <strong>Modal Publish Mode</strong> selected:</p>
+<p>The Modal Offer extension generates a modal pop-up window on the page. The content and appearance of the pop-up is configured based on the <strong>Modal Publish Mode</strong> selected:</p>
 <ul>
 <li><strong>Standard</strong>: Content is set by entering text in to three fields: <strong>header</strong>, <strong>body</strong>, and <strong>footer</strong>. The height and width may also be specified.</li>
 <li><strong>Custom</strong>: Content is coded by editing the CSS and HTML directly.</li>
@@ -669,7 +669,7 @@ var utag_data = {
          alt="Modal Popup Extension Example"
          title="Modal Popup Extension Example"/>
 </figure>
-<p>The extension runs in the <a href="/iq-tag-management/extensions/manage-extensions/">DOM Ready scope</a> on every page, but only runs when the defined condition evaluates to <code>true</code>.</p>
+<p>The extension runs in the DOM-Ready scope on every page, but only runs when the defined condition evaluates to <code>true</code>.</p>
 <h2 id="using-the-extension">Using the extension</h2>
 <p>To begin setting up the Modal Offer extension, be sure to have the content of the modal prepared so that you&rsquo;re ready to enter it into the configuration.</p>
 <p>Once the extension is added, the following configuration options are available:</p>
@@ -739,21 +739,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>      });
 </span></span></code></pre></div></li>
 </ul>
-<p>Use this code anywhere in your iQ configuration to launch the modal offer. By using this code in a <a href="/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/">JavaScript Code extension</a> or a <a href="/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/">jQuery onHandler extension</a>, you can customize the launch behavior of the modal offer window.</p>
-<p>Additional reading: <a href="https://community.tealiumiq.com/t5/iQ-Tag-Management/Triggering-the-Modal-Offer-Extension-Use-Cases/ta-p/18656">Triggering the modal offer extension (Use Cases)</a></p>
+<p>Use this code anywhere in your iQ configuration to launch the modal offer. By using this code in a <a href="/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/">JavaScript Code extension</a> or a <a href="/iq-tag-management/extensions/extensions-list/jquery-onhandler-extension/">jQuery onHandler extension</a>, you can customize the launch behavior of the modal offer window.</p>
+<p>Additional reading: <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363394-triggering-the-modal-offer-extension-use-cases-">Triggering the modal offer extension (Use Cases)</a></p>
 <h2 id="faq">FAQ</h2>
 <h4 id="can-i-add-multiple-modal-offer-extensions-to-my-profile">Can I add multiple modal offer extensions to my profile?</h4>
 <p>Yes, but only one modal offer is displayed on a web page at a time. If you add multiple instances of the modal offer extension be sure that each one has a different condition.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -814,7 +804,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

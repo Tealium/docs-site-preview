@@ -766,11 +766,11 @@ Identifies the url the visitor is viewing. By default Google returns the full UR
 <li><strong>UID</strong>
 Identifies the visitor or customer. Map to this destination to manually specify the user’s ID. This value is unique and persistent, and if used with an authentication system, allows you to track a single user across sessions and devices.</li>
 <li><strong>Cookie Domain</strong>
-The Cookie Domain parameter specifies the domain used to store the analytics cookie. Setting this to “none” sets the cookie without specifying a domain. See the “Domain” in the “Tag Configuration” section of the <a href="https://community.tealiumiq.com/t5/Tags/Google-Analytics-Tag-Basic-Configuration/ta-p/13272">Google Universal Analytics: Basic Configuration</a> article for more information.</li>
+The Cookie Domain parameter specifies the domain used to store the analytics cookie. Setting this to &ldquo;none&rdquo; sets the cookie without specifying a domain. See the &ldquo;Domain&rdquo; in the &ldquo;Tag Configuration&rdquo; section of the <a href="https://community.tealiumiq.com/t5/Tags/Google-Analytics-Tag-Basic-Configuration/ta-p/13272">Google Universal Analytics: Basic Configuration</a> article for more information.</li>
 <li><strong>Cookie Expires</strong>
 By default, cookies created by the Google Universal Analytics tag are set to expire after 2 years. This expiration is refreshed every time a hit is sent. Passing this parameter with a value of 0 turns it into a session-based cookie, otherwise the value is measured in seconds.</li>
 <li><strong>Legacy Cookie Domain</strong>
-The Legacy Cookie Domain parameter overrides the domain used to store the analytics cookie. Google will auto-detect this value if you leave it blank. Setting this to “none” creates the cookie without specifying a domain. Read “Domain” in the “Tag Configuration” section of the <a href="https://community.tealiumiq.com/t5/Tags/Google-Analytics-Tag-Basic-Configuration/ta-p/13272">Google Universal Analytics: Basic Configuration</a> article for more information.</li>
+The Legacy Cookie Domain parameter overrides the domain used to store the analytics cookie. Google will auto-detect this value if you leave it blank. Setting this to &ldquo;none&rdquo; creates the cookie without specifying a domain. Read &ldquo;Domain&rdquo; in the &ldquo;Tag Configuration&rdquo; section of the <a href="https://community.tealiumiq.com/t5/Tags/Google-Analytics-Tag-Basic-Configuration/ta-p/13272">Google Universal Analytics: Basic Configuration</a> article for more information.</li>
 <li><strong>Legacy History Import</strong>
 Determines whether or not to import history data from <code>ga.js</code> cookies. Make sure the Variable you are mapping to this destination contains Boolean value &ldquo;true&rdquo; or &ldquo;false&rdquo;.</li>
 <li><strong>nonInteraction</strong>
@@ -786,15 +786,15 @@ Used to specify the size of the user sample from which Google determines page ti
 <li><strong>Sample Rate (sampleRate)</strong>
 Indicates the percentage of visitors that should be tracked. The default value is 100, meaning 100% of users are sampled in. See the Google developers section <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#sampleRate">Sample Rate</a> for additional details.</li>
 <li><strong>Autofill E-Commerce Params (autofill_params)</strong>
-Allows you to turn ON/OFF the “Autofill E-Commerce values” and override the toggle in the Tag settings.</li>
+Allows you to turn ON/OFF the &ldquo;Autofill E-Commerce values&rdquo; and override the toggle in the Tag settings.</li>
 <li><strong>Optimizely Integration (optimizely)</strong>
-Allows you to turn ON/OFF the “Optimizely Integration” and override the toggle in the Tag settings.</li>
+Allows you to turn ON/OFF the &ldquo;Optimizely Integration&rdquo; and override the toggle in the Tag settings.</li>
 <li><strong>Initialize tracker before Extensions (init_before_extensions)</strong>
-Allows you to turn ON/OFF the “Enable create before Extensions” and override the toggle in the Tag settings.</li>
+Allows you to turn ON/OFF the &ldquo;Enable create before Extensions&rdquo; and override the toggle in the Tag settings.</li>
 <li><strong>Session Control (sessionControl)</strong>
-Allows you to set the session duration either to “start” or “end”. See the Google developers reference <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en#sc">Session Control</a> for additional details.</li>
+Allows you to set the session duration either to &ldquo;start&rdquo; or &ldquo;end&rdquo;. See the Google developers reference <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en#sc">Session Control</a> for additional details.</li>
 <li><strong>Anonymize IP (anonymizeip)</strong>
-Allows you to turn ON/OFF the “Anonymize IP” and override the toggle in the Tag settings. See the Google developers reference <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en#aip">Anonymize IP</a> for additional details.</li>
+Allows you to turn ON/OFF the &ldquo;Anonymize IP&rdquo; and override the toggle in the Tag settings. See the Google developers reference <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en#aip">Anonymize IP</a> for additional details.</li>
 <li><strong>Data Source (dataSource)</strong>
 This is the variable value of the hit. Examples include web, mobile, crm, etc. See the Google developers reference <a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters?hl=en#ds">Data Source</a> for additional details.</li>
 <li><strong>Clear Vars</strong><br>
@@ -802,7 +802,7 @@ Recommended for single page applications only. Mapping to destination overrides 
 <li><strong>Client ID</strong><br>
 Randomly generated ID for the browser instance. <a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/field-reference#clientId">Learn more</a>.</li>
 <li><strong>Custom Set Command (set.###)</strong>
-Allows you to pass custom parameters to the “set” command. For example, <code>ga(‘set’, ‘dataSource’, ‘web’)</code>.</li>
+Allows you to pass custom parameters to the &ldquo;set&rdquo; command. For example, <code>ga(‘set’, ‘dataSource’, ‘web’)</code>.</li>
 </ul>
 <h2 id="event-mapping">Event mapping</h2>
 <p class="note"><i class="fas fa-info-circle"></i>Events are only sent if both the Event Category and Event Action are defined.</p>
@@ -848,7 +848,7 @@ Description for the campaign ad.</li>
 Keyword terms for the campaign ad.</li>
 </ul>
 <h2 id="social-mapping">Social mapping</h2>
-<p>This feature set allows you to measure the clicks on social buttons, such as a Facebook “Like” or a “Twitter” tweet. This is similar to event tracking, but allows separate reporting with consistent variables. Note that all three variables must be set in order for the social interaction event to be sent.</p>
+<p>This feature set allows you to measure the clicks on social buttons, such as a Facebook &ldquo;Like&rdquo; or a &ldquo;Twitter&rdquo; tweet. This is similar to event tracking, but allows separate reporting with consistent variables. Note that all three variables must be set in order for the social interaction event to be sent.</p>
 <ul>
 <li><strong>Social Network</strong>
 The network on which the action occurs (e.g. Facebook, Twitter).</li>
@@ -931,16 +931,6 @@ To set a dimension in this range, select <strong>dimension21</strong> **-**<stro
 <li>Enhanced E-Commerce: Impressions/Promo</li>
 <li>Enh E-Comm: Events</li>
 </ul>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

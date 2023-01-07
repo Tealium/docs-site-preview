@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -652,11 +652,11 @@ var utag_data = {
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li><a href="/iq-tag-management/tags/tag-templates/manage/">About Tag Templates</a></li>
-<li><a href="/server-side/labels/manage/">Manage Templates permission</a></li>
+<li><a href="/iq-tag-management/administration/user-permissions/about/">Manage Templates permission</a></li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>The Tealium Custom Container tag uses the same code template as official integrations found in the <strong>Tag Marketplace</strong>. Tags built with the Custom Container can leverage native functionality of iQ such as built-in E-Commerce extension variables, data mappings, event tracking, and other extensions.</p>
-<p>While it is best practice to use a pre-built tag from the <a href="/iq-tag-management/tags/tag-marketplace/">Tag Marketplace</a>, if your desired tag is not available then you have a few options for adding the tag. The majority of tags can be implemented using either the <a href="/iq-tag-management/tags/tag-marketplace/">Tealium Generic Tag</a> or the <a href="/iq-tag-management/tags/tag-marketplace/">Tealium Pixel Container tag</a>.</p>
+<p>While it is best practice to use a pre-built tag from the <a href="/iq-tag-management/tags/tag-marketplace/about/">Tag Marketplace</a>, if your desired tag is not available then you have a few options for adding the tag. The majority of tags can be implemented using either the <a href="/iq-tag-management/tags/tealium-generic-tag/">Tealium Generic Tag</a> or the <a href="/iq-tag-management/tags/tealium-pixel-container-tag/">Tealium Pixel Container tag</a>.</p>
 <p>Implementing the Tealium Custom Container tag requires writing JavaScript code to modify the tag template. You should be comfortable with reading unfamiliar JavaScript code and customizing it for your needs.</p>
 <h2 id="template-overview">Template overview</h2>
 <p>First, go to the <strong>Tag Marketplace</strong> and add the Custom Container Tag.</p>
@@ -989,11 +989,11 @@ Create an object variable for custom parameters and loop through the <code>u.dat
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">77</span>
 </span></span><span style="display:flex;"><span><span style="color:#ae81ff">78</span>  <span style="color:#75715e">/* End Tag Sending Code */</span>
 </span></span></code></pre></div><h4 id="part-b-loader-function-call">Part B: Loader function call</h4>
-<p>This code is used in the <strong>Loader Function Call</strong> section. This script is synchronous and will complete before continuing before the next step. Add a variable to <code>u.data</code> for <code>script\_id</code>, which will store the client-specific part of the base URL (<code>b7381bb8-71e7-408c-91d0-3adb90b5c736</code>).</p>
+<p>This code is used in the <strong>Loader Function Call</strong> section. This script is synchronous and will complete before continuing before the next step. Add a variable to <code>u.data</code> for <code>script_id</code>, which will store the client-specific part of the base URL (<code>b7381bb8-71e7-408c-91d0-3adb90b5c736</code>).</p>
 <p>Update the tag template as follows:</p>
 <ol>
 <li>Uncomment line numbers 99 and 101-104.</li>
-<li>Edit line 101 by replacing the value of &ldquo;src&rdquo; with the vendor&rsquo;s base URL, and ID (/iq-tag-management/data-mappings/)).</li>
+<li>Edit line 101 by replacing the value of &ldquo;src&rdquo; with the vendor&rsquo;s base URL and ID.</li>
 </ol>
 <p>The following snippet shows the completed section in the tag template:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#ae81ff">96</span> <span style="color:#75715e">/* Start Loader Function Call */</span>
@@ -1035,16 +1035,6 @@ Create an object variable for custom parameters and loop through the <code>u.dat
 <p>This code is provides a fallback option for the case when a browser does not support JavaScript, or has JavaScript disabled. Since Tealium requires JavaScript, this fallback code is not an option. Therefore, you can ignore this code.</p>
 <h4 id="save-template">Save template</h4>
 <p>To save a new version of the template without overwriting the original file, click <strong>Save Version Template</strong>. Otherwise, click <strong>Save Profile Template</strong> to overwrite the original file.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -1105,7 +1095,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

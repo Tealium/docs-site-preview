@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,53 +656,40 @@ var utag_data = {
 <div class="prose" id="prose">
   <h2 id="prerequisites">Prerequisites</h2>
 <ul>
-<li><a href="/iq-tag-management/extensions/">About Extensions</a></li>
+<li><a href="/iq-tag-management/extensions/about/">About Extensions</a></li>
 <li><a href="/iq-tag-management/data-layer/hosted-data-layer/about-hosted-data-layer/">About Hosted Data Layer</a></li>
 </ul>
 <h2 id="requirements">Requirements</h2>
 <ul>
-<li>Version 4.43, or greater, of the Universal Tag (<code>utag.js</code>) is required. For more information, see <a href="https://community.tealiumiq.com/t5/JavaScript-utag-js/How-do-I-upgrade-to-the-latest-utag-js/ta-p/5042">Upgrade to the latest utag.js.</a></li>
+<li>Version 4.43, or greater, of the Universal Tag (<code>utag.js</code>) is required. For more information, see <a href="/iq-tag-management/tags/tag-templates/template-status-checker/">Upgrade to the latest utag.js.</a></li>
 <li>Lookup variables - Lookup variables are the link between the on-page data layer and the hosted data layer objects that contain supplemental data.</li>
 </ul>
 <p class="note"><i class="fas fa-info-circle"></i>The values of the lookup variables become the names of the hosted data layer objects.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>This section describes how the hosted data layer extension works as <code>utag.js</code> loads on a page:</p>
 <ol>
-<li>
-<p>The hosted data layer extension executes early and halts<code> utag.js</code> for a duration up to the specified value in the timeout setting.<br>
-While paused, <code>utag.js</code> does not evaluate tags, load rules, or extensions.</p>
-</li>
-<li>
-<p>Then the hosted data layer extension scans the on-page data layer (<code>utag_data</code>) for the specified lookup variables.</p>
-</li>
-<li>
-<p>If the lookup variable exists, the extension queries the CDN for the matching hosted data layer object with the same name as the lookup value.</p>
-</li>
-<li>
-<p>If the <code>.js</code> file exists on the CDN, the extension fetches the <code>.js</code> file.<br>
-The lookup is deemed successful.</p>
-</li>
-<li>
-<p>If a hosted data layer object is found on the CDN, the extension merges that data into the on-page data layer.<br>
-Duplicate variables are handled according to the following setting of the <strong>Overwrite on merge</strong> setting:</p>
+<li>The hosted data layer extension executes early and halts<code> utag.js</code> for a duration up to the specified value in the timeout setting.<br>
+While paused, <code>utag.js</code> does not evaluate tags, load rules, or extensions.</li>
+<li>Then the hosted data layer extension scans the on-page data layer (<code>utag_data</code>) for the specified lookup variables.</li>
+<li>If the lookup variable exists, the extension queries the CDN for the matching hosted data layer object with the same name as the lookup value.</li>
+<li>If the <code>.js</code> file exists on the CDN, the extension fetches the <code>.js</code> file.<br>
+The lookup is deemed successful.</li>
+<li>If a hosted data layer object is found on the CDN, the extension merges that data into the on-page data layer.<br>
+Duplicate variables are handled according to the following setting of the <strong>Overwrite on merge</strong> setting:
 <ul>
 <li><strong>Overwrite on merge: Yes</strong>: Variables in the on-page data layer are overwritten by variables from the incoming object.</li>
 <li><strong>Overwrite on merge: No</strong>: Variables in the on-page data layer are preserved.</li>
 </ul>
 </li>
-<li>
-<p><code>utag.js</code> continues operation when merging is complete or the timeout has expired, whichever occurs first.</p>
-</li>
-<li>
-<p>Load rules and extensions are evaluated and tags are fired accordingly.</p>
-</li>
+<li><code>utag.js</code> continues operation when merging is complete or the timeout has expired, whichever occurs first.</li>
+<li>Load rules and extensions are evaluated and tags are fired accordingly.</li>
 </ol>
 <h2 id="configuration">Configuration</h2>
 <p>Use the following steps to configure the extension:</p>
 <ol>
 <li>
 <p>Go to the <strong>Extensions Marketplace</strong> and add the Hosted Data Layer extension from the <strong>Standard</strong> tab.<br>
-For detailed instructions, see <a href="/iq-tag-management/extensions/">How to add an Extension</a>.</p>
+For detailed instructions, see <a href="/iq-tag-management/extensions/about/">How to add an Extension</a>.</p>
 </li>
 <li>
 <p>In the <strong>Title</strong> field, enter a descriptive title.</p>
@@ -749,7 +736,7 @@ For detailed instructions, see <a href="/iq-tag-management/extensions/">How to a
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><code>{     &quot;product_category&quot; : &quot;shoes&quot;     &quot;product_sku&quot;      : &quot;GEN-PRD-BLU&quot; }</code></td>
+<td style="text-align:left"><code>{ &quot;product_category&quot; : &quot;shoes&quot;     &quot;product_sku&quot;      : &quot;GEN-PRD-BLU&quot; }</code></td>
 <td style="text-align:left"><code>{     &quot;product_category&quot;   : &quot;boots&quot;     &quot;has_instore_pickup&quot; : &quot;1&quot; } </code></td>
 </tr>
 </tbody>
@@ -763,7 +750,7 @@ For detailed instructions, see <a href="/iq-tag-management/extensions/">How to a
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><code>{    &quot;product_category&quot;   : &quot;boots&quot;    &quot;product_sku&quot;        : &quot;GEN-PRD-BLU&quot;    &quot;has_instore_pickup&quot; : &quot;1&quot;  }</code></td>
+<td style="text-align:left"><code>{    &quot;product_category&quot;   : &quot;boots&quot;    &quot;product_sku&quot;        : &quot;GEN-PRD-BLU&quot;    &quot;has_instore_pickup&quot; : &quot;1&quot;  } </code></td>
 <td style="text-align:left"><code>{     &quot;product_category&quot;   : &quot;shoes&quot;     &quot;product_sku&quot;        : &quot;GEN-PRD-BLU&quot;     &quot;has_instore_pickup&quot; : &quot;1&quot;    }</code></td>
 </tr>
 </tbody>
@@ -779,21 +766,11 @@ For detailed instructions, see <a href="/iq-tag-management/extensions/">How to a
 <h4 id="does-enrichment-work-with-event-tracking-or-subsequent-calls-to-utagview-utaglink-or-in-a-single-page-application-environment">Does enrichment work with event tracking or subsequent calls to utag.view, utag.link, or in a single-page application environment?</h4>
 <p>No. The extension is designed to run once per page load.</p>
 <h4 id="can-this-extension-be-used-in-mobile-installations">Can this extension be used in mobile installations?</h4>
-<p>Yes. To learn about the Hosted Data Layer feature for mobile, see <a href="https://docs.tealium.com/platforms/getting-started-mobile/hosted-data-layer/">Hosted Data Layer</a>.</p>
+<p>Yes. To learn about the Hosted Data Layer feature for mobile, see [Hosted Data Layer]/platforms/getting-started-mobile/hosted-data-layer/).</p>
 <h4 id="what-happens-if-the-extension-fails-to-find-the-target-data-layer-object-on-the-cdn">What happens if the extension fails to find the target data layer object on the CDN?</h4>
 <p>The extension receives an empty object and <code>utag.js</code> automatically resumes. No merging occurs.</p>
 <h4 id="what-version-of-utagjs-is-required-for-this-feature">What version of utag.js is required for this feature?</h4>
 <p>You must use version 4.43, or greater. The hosted data layer extension is optimized for the most recent version of <code>utag.js</code>.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -854,7 +831,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

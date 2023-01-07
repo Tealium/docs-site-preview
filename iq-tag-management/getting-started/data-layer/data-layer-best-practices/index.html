@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -660,34 +660,26 @@ var utag_data = {
 <h2 id="naming-conventions">Naming conventions</h2>
 <p>The goal of the data layer is to provide a set of variables that are vendor-neutral and easy to understand. The following best practices apply:</p>
 <ul>
-<li>
-<p><strong>Use lowercase, underscore-separated variable names.</strong><br>
-Examples: <code>site_section</code>, <code>product_unit_price</code>, <code>login_status</code>.</p>
-</li>
-<li>
-<p><strong>Avoid vendor specific naming.</strong><br>
-Avoid <code>eVar1</code>, <code>pv_a3</code>, or <code>oid</code>.</p>
-</li>
-<li>
-<p><strong>Use meaningful variable descriptions.</strong><br>
-Sometimes even a properly named variable still needs additional clarification. A good variable description includes details about when and where a variable is set, which vendor is using the variable, and possible values to expect in the variable. Examples:</p>
+<li><strong>Use lowercase, underscore-separated variable names.</strong><br>
+Examples: <code>site_section</code>, <code>product_unit_price</code>, <code>login_status</code>.</li>
+<li><strong>Avoid vendor specific naming.</strong><br>
+Avoid <code>eVar1</code>, <code>pv_a3</code>, or <code>oid</code>.</li>
+<li><strong>Use meaningful variable descriptions.</strong><br>
+Sometimes even a properly named variable still needs additional clarification. A good variable description includes details about when and where a variable is set, which vendor is using the variable, and possible values to expect in the variable. Examples:
 <ul>
 <li>Login status <code>anonymous</code> or <code>authenticated</code>, used for <code>eVar1</code> in Adobe Analytics.</li>
 <li>Order subtotal does not include tax or shipping, exclude commas and currency symbols.</li>
 </ul>
 </li>
-<li>
-<p><strong>Avoid pluralized variable names.</strong><br>
-Variables that contain multiple values, such as the product array variables, should use the singular form of the name. Examples:</p>
+<li><strong>Avoid pluralized variable names.</strong><br>
+Variables that contain multiple values, such as the product array variables, should use the singular form of the name. Examples:
 <ul>
 <li><code>product_category</code> instead of <code>product_categories</code></li>
 <li><code>product_id</code> instead of <code>product_ids</code></li>
 </ul>
 </li>
-<li>
-<p><strong>Prefix boolean variable names with <code>is_.</code> or <code>has_.</code></strong><br>
-This allows you to quickly identify variables that contain a value of <code>1</code> or <code>0</code>. Examples: <code>is_registered</code>, <code>is_first_time_visitor</code>, <code>is_logged_in</code></p>
-</li>
+<li><strong>Prefix boolean variable names with <code>is_.</code> or <code>has_.</code></strong><br>
+This allows you to quickly identify variables that contain a value of <code>1</code> or <code>0</code>. Examples: <code>is_registered</code>, <code>is_first_time_visitor</code>, <code>is_logged_in</code></li>
 </ul>
 <p><strong>Pros</strong></p>
 <ul>
@@ -811,37 +803,6 @@ This allows you to quickly identify variables that contain a value of <code>1</c
 
 </div>
 
-<div id="related">
-  
-
-
-	
-		
-		
-		<h4>Related topics</h4>
-		<ul>
-		
-		
-			<li><a href="/iq-tag-management/getting-started/data-layer/basics/">Data layer basics</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/data-layer/data-layer-variables/">Data layer variable types</a></li>
-		
-		
-		
-			<li><a href="/iq-tag-management/getting-started/data-layer/how-it-works/">How the data layer works</a></li>
-		
-		
-		
-		
-		</ul>
-
-
-
-
-</div>
-
 <div class="pv3 overflow-hidden"><div class="di">
   
   
@@ -883,7 +844,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

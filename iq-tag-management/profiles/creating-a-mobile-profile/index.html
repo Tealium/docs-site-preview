@@ -261,7 +261,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -335,6 +333,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -651,10 +651,10 @@ var utag_data = {
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>Profiles in your iQ Tag Management account are configured for use on a website by default. Any profile can be activated for use within a native mobile installation. You can activate an existing profile for mobile use or create a new profile. Using separate profiles for your mobile apps allows you to manage settings and vendor tracking deployed to each of your mobile apps.</p>
-<h3 id="create-a-new-profile-for-a-mobile-app">Create a new profile for a mobile app</h3>
+<h2 id="create-a-new-profile-for-a-mobile-app">Create a new profile for a mobile app</h2>
 <p>We recommend that you create a separate profile for each mobile application that you intend to install Tealium on. For example, the most common profile names for mobile apps are: <code>mobile-ios</code> and <code>mobile-android</code>.</p>
-<p>Learn more about <a href="/iq-tag-management/profiles/about/">managing profiles</a>.</p>
-<h3 id="activate-a-mobile-profile">Activate a mobile profile</h3>
+<p>Learn more about <a href="/iq-tag-management/profiles/manage/">managing profiles</a>.</p>
+<h2 id="activate-a-mobile-profile">Activate a mobile profile</h2>
 <p>Use the following steps to activate a profile for use on mobile:</p>
 <ol>
 <li>Log in and load the profile that you intend for use for your mobile application.</li>
@@ -670,7 +670,7 @@ var utag_data = {
 </ol>
 <p>This profile can now be referenced in your Tealium for Mobile application by referencing the account name, profile name, and publish environment.</p>
 <p class="note"><i class="fas fa-info-circle"></i>Standard mobile variables are added to the profile and available to the data layer settings for use with tags and extensions.</p>
-<h3 id="configure-mobile-settings">Configure mobile settings</h3>
+<h2 id="configure-mobile-settings">Configure mobile settings</h2>
 <p>Use your mobile profile to adjust the configuration settings that determine the behavior of your mobile installation.</p>
 <p>Use the following steps to adjust your mobile configuration settings:</p>
 <ol>
@@ -702,10 +702,17 @@ Mobile publish settings are enabled by default. You can optionally scroll throug
 <td style="text-align:left">Tealium S2S Legacy</td>
 <td style="text-align:left"><ul><li>Set to <strong>ON</strong> for events and views to be sent via Tealium S2S legacy protocol.</li></ul></td>
 </tr>
+</tbody>
+</table>
+<h3 id="batching">Batching</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align:left">Batching</td>
-<td style="text-align:left"></td>
+<th style="text-align:left">Configuration</th>
+<th style="text-align:left">Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:left">Send Batch Data after every (#) event</td>
 <td style="text-align:left"><ul><li>Allows you to set the number of events (size of batch) that must occur before data is sent back.</li><li>Entering a value of  or <strong>1</strong> essentially turns off batching.</li><li>The default value is set to <strong>1</strong>.</li></ul></td>
@@ -718,10 +725,17 @@ Mobile publish settings are enabled by default. You can optionally scroll throug
 <td style="text-align:left">Battery Saver</td>
 <td style="text-align:left"><ul><li>By enabling <strong>ON</strong>, data is only sent when the device has adequate battery power and is not in power saving mode.  <ul><li>iOS: 20% battery and not charging.</li><li>Android: 15% battery</li></ul> </li><li>The default value is <strong>ON</strong>.</li></ul></td>
 </tr>
+</tbody>
+</table>
+<h3 id="data-retention">Data Retention</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align:left">Data Retention</td>
-<td style="text-align:left"></td>
+<th style="text-align:left">Configuration</th>
+<th style="text-align:left">Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:left">Dispatch Expiration in (#) days</td>
 <td style="text-align:left"><ul><li>Specify how long (in days) the data persists in the application if no data has been sent back.</li><li>A value of <strong>-1</strong> means there is no dispatch expiration.</li><li>The default value is set to <strong>-1</strong>.</li><li>Dispatch expiration is also applied to events queued due to WiFi only Sending or Battery Saver settings.</li></ul></td>
@@ -734,10 +748,17 @@ Mobile publish settings are enabled by default. You can optionally scroll throug
 <td style="text-align:left">Queue Capacity</td>
 <td style="text-align:left"><ul><li>The number of events and views to store on the device until ready to send.  <ul><li>= no offline dispatching</li><li><strong>-1</strong> = no limit</li></ul> </li><li>The default value is <strong>-1</strong>.</li></ul></td>
 </tr>
+</tbody>
+</table>
+<h3 id="debugging">Debugging</h3>
+<table>
+<thead>
 <tr>
-<td style="text-align:left">Debugging</td>
-<td style="text-align:left"></td>
+<th style="text-align:left">Configuration</th>
+<th style="text-align:left">Description</th>
 </tr>
+</thead>
+<tbody>
 <tr>
 <td style="text-align:left">Set Debugging Log Level</td>
 <td style="text-align:left"><ul><li>Allows you to enable logging.</li><li>Select one of the following settings:  <ul><li><strong>Default</strong> – Sets the log level to match the Environment setting in your configuration.</li><li><strong>Dev</strong> – Log activity, info, warnings, and errors</li><li><strong>QA</strong> – Log info, warnings, and errors</li><li><strong>Prod</strong> – Log errors</li><li><strong>Silent</strong> – Do not log</li></ul> </li></ul></td>
@@ -746,16 +767,6 @@ Mobile publish settings are enabled by default. You can optionally scroll throug
 </table>
 <p>When you are ready, click <strong>Save</strong>, and Save and publish your settings.</p>
 <p>The next time your mobile application is loaded, the new configuration is detected and applied.</p>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 
@@ -800,7 +811,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 4, 2023 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -815,9 +826,12 @@ No</button>
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-new-profile-for-a-mobile-app">Create a new profile for a mobile app</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-new-profile-for-a-mobile-app">Create a new profile for a mobile app</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#activate-a-mobile-profile">Activate a mobile profile</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-mobile-settings">Configure mobile settings</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#batching">Batching</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-retention">Data Retention</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#debugging">Debugging</a></li>
               </nav>
   </aside></nav>
 

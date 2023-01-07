@@ -23,14 +23,17 @@
     <loc>https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/tutorial/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/about/</loc>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
+  </url><url>
     <loc>https://docs-preview.tealium.com/api-v1/getting-started/auth/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T17:49:16-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T14:47:30-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/module-list/adid/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -136,7 +139,7 @@
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/about/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/about/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -151,7 +154,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/live-events-feeds/about-live-events/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/load-rules/about/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -160,7 +163,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:20:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/data-layer-converter/about-data-layer-converter/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -259,13 +262,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audiencestream-dashboard/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/data-layer/basics/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/partners/data-sources/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -281,10 +284,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/api-v1/omnichannel-file-status/endpoints/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:02:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/triggers/</loc>
     <lastmod>2023-01-05T12:46:23-08:00</lastmod>
@@ -298,11 +301,14 @@
     <loc>https://docs-preview.tealium.com/predict/getting-started/</loc>
     <lastmod>2022-12-14T12:51:59-08:00</lastmod>
   </url><url>
+    <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/</loc>
+    <lastmod>2023-01-06T14:41:05-08:00</lastmod>
+  </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/api/location-module/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api/hosted-data-layer/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:02:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api/iq-revisions/about/</loc>
     <lastmod>2022-12-13T13:00:42-08:00</lastmod>
@@ -359,13 +365,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/install/universal-tag/</loc>
-    <lastmod>2022-12-14T12:51:59-08:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/what-is-tealium-iq/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/about-file-import/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -398,17 +401,11 @@
     <loc>https://docs-preview.tealium.com/api/getting-started/auth/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/advanced-settings/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
-  </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/manage-variables/bulk-import-data-layer-variables/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/data-layer-variables/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api/hosted-data-layer/data-objects/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -429,22 +426,25 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/environment/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T14:47:30-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/manage-attributes/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api/getting-started/request-format/</loc>
     <lastmod>2022-12-13T13:00:42-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/hosted-data-layer/use-case-amp-analytisc-remote-configuration-file/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/data-layer-variables/</loc>
+    <lastmod>2023-01-06T16:20:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/prepare-a-csv-file-for-import/</loc>
     <lastmod>2023-01-05T12:46:23-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/configure-file-import/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T17:49:16-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -491,17 +491,17 @@
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/manage-variables/about-data-bundles/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/functions/data-transformation-functions/about-data-transformation-functions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <loc>https://docs-preview.tealium.com/server-side/functions/data-transformation-functions/about/</loc>
+    <lastmod>2023-01-06T15:12:17-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:12:17-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/live-events-feeds/about-event-feeds/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/action-parameters/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/tealium-collect-dle/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -523,7 +523,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/attribution/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -536,7 +536,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/module-list/attribution/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -549,7 +549,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audience-discovery/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/partners/cms-plugins/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -581,7 +581,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/interface/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -634,10 +634,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api/visitor-privacy/endpoints/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:02:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/code-editor/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T14:47:30-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/api/gdpr-functions/</loc>
     <lastmod>2023-01-05T18:31:08+00:00</lastmod>
@@ -662,10 +662,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/live-events-feeds/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/manage-tags/</loc>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/load-rules/manage-load-rules/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/api/media-session/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -687,7 +690,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/flutter/api/tealium-config/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -726,10 +729,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/usage-examples/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/hosted-data-layer/use-case-supplementing-product-data/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:20:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/flutter/api/visitor-profile/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -752,6 +755,9 @@
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/validate-webhook-action/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/advanced-settings/</loc>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/modules/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -836,10 +842,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audience-sizing/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/autotracking/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -890,7 +896,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/data-layer/data-layer-best-practices/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/dle-object/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -905,7 +911,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/load-rules/examples/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-index/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -943,13 +949,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/manage-variables/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/api-v1/hosted-data-layer/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:02:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/partners/tags/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -991,7 +997,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/manage-functions/test-functions/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T14:47:30-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/api/tracking-functions/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1007,7 +1013,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/visitor-id-attribute/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/web-install-concepts/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1035,7 +1041,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/appsflyer/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1062,9 +1068,6 @@
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/android-java/module-list/lifecycle-tracking/"
                 />
-  </url><url>
-    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/branch/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1106,7 +1109,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/create-an-audience/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1115,16 +1118,16 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/data-layer-converter/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-mappings/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/data-layer/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1180,10 +1183,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/manage-functions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/manage-tags/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/partners/mobile/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1199,7 +1199,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tag-marketplace/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/api/tealium/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -1215,7 +1215,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tealium-generic-tag/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T10:14:36-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/api/tealium-config/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1262,11 +1262,11 @@
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/diagram/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/connectors/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <loc>https://docs-preview.tealium.com/server-side/connectors/delayed-actions/</loc>
+    <lastmod>2023-01-05T17:21:41-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/module-list/location/</loc>
     <lastmod>2020-02-06T00:00:00+00:00</lastmod>
@@ -1282,13 +1282,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/restricted-data/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/attributes/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/braze/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1352,13 +1352,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/frequency-capping/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/hosted-data-layer/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/lifecycle/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -1374,7 +1374,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/module-list/location/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -1393,7 +1393,7 @@
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tealium-pixel-container-tag/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T10:14:36-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/api/tealium-config/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -1435,10 +1435,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/guidelines/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T14:41:05-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/module-list/media/</loc>
     <lastmod>2021-04-29T00:00:00+00:00</lastmod>
@@ -1454,13 +1454,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/labels/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/load-rules/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/module-list/remote-commands/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1540,13 +1540,13 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/event-attributes-and-enrichments-reference/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/extension-basics/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/importing-offline-data-omnichannel/</loc>
     <lastmod>2023-01-05T12:46:23-08:00</lastmod>
@@ -1581,7 +1581,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tealium-custom-container-tag/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T10:14:36-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/api/tealium-consent-manager/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -1629,7 +1629,7 @@
     <lastmod>2022-11-29T17:25:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/visit-and-visitor-attributes-and-enrichments-reference/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/media/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1645,13 +1645,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/authentication/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T15:12:17-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/predict/advanced/</loc>
     <lastmod>2022-12-14T12:51:59-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/datasource/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1686,13 +1686,13 @@
     <lastmod>2022-11-29T17:25:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/order-of-operations/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tag-templates/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/tealium/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -1734,7 +1734,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/trace/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/manage-functions/view-function-statistics/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1753,7 +1753,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/scenarios/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T14:41:05-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/firebase/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1772,7 +1772,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/consent/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/defaults-storage/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -1910,7 +1910,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/save-publish/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/api/visitor-profile/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -1926,7 +1926,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/cookie-matching/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audience-discovery/about/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -1938,7 +1938,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-mappings/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/event-specifications/about/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -1962,13 +1962,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/privacy-banner-and-popup/about/</loc>
     <lastmod>2023-01-05T18:31:08+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/explicit-consent-prompt/about/</loc>
-    <lastmod>2023-01-05T18:31:08+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/trace/about/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2016,10 +2016,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/consent-preferences-dialog/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/install/utag-sync/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/module-list/in-app-purchase/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2035,7 +2035,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/labels/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/save-publish/about-save-publish/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2050,7 +2050,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/visitor-function-examples/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2069,19 +2069,19 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/template-variables/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/trimou-templating-engine/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/explicit-consent-prompt/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/file-storage/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2129,10 +2129,10 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/consent-preferences-dialog/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/uid2-token/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:12:17-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/lifecycle/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2161,7 +2161,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tag-templates/manage/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/trace/manage/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2260,7 +2260,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/privacy-banner-and-popup/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/logger/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2289,7 +2289,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tag-marketplace/detect-a-tag-from-code/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2321,7 +2321,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/frequently-asked-questions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-mappings/manage/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2450,10 +2450,10 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T15:21:32-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/user-permissions/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/first-party-domains/configure-domains-and-certificates/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2518,10 +2518,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/security/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/web-companion/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/predict/getting-started/about-predict/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -2599,7 +2599,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/save-publish/test/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audience-sizing/examples/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2637,7 +2637,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/load-order-manager/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/profile-libraries/manage/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2769,7 +2769,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/user-settings/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:21:40-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/validate-tags/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -2787,7 +2787,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/data-sources-for-iq-tag-management/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/attributes-enrichments/</loc>
     <lastmod>2022-12-14T12:51:59-08:00</lastmod>
@@ -2830,13 +2830,13 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/audience-discovery/favorite-numbers/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/global-parameters/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/linking-to-github/faq/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -2963,9 +2963,6 @@
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/increment-decrement-number/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
-  </url><url>
     <loc>https://docs-preview.tealium.com/predict/training-models/review-your-model/</loc>
     <lastmod>2022-12-14T12:51:59-08:00</lastmod>
   </url><url>
@@ -2973,9 +2970,6 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/predict/strategy/start-training/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/difference-between-dates/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/</loc>
@@ -2986,9 +2980,6 @@
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/numbertally-enrichment-set-rolling-average-based-on-timeline/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/audiencestore-data-guide/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -3009,7 +3000,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/profile-libraries/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/cordova-v1/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3129,22 +3120,22 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/visitor-lookup-tool/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T13:10:47-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started-mobile/consent-management/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/creating-a-mobile-profile/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/eventstore-data-guide/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/first-party-domains/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/rule-conditions/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T13:10:47-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/connectors/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3177,7 +3168,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/audiencedb-data-guide/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/data-layer-object/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -3199,13 +3190,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/install/self-host/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/about-saving/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/connectors/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/trace/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3226,19 +3217,19 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/save-publish-a-version/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/publish-configuration/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/switch-environoment/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/version-history/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/custom-publish-environments/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/publish-workflow-management/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -3247,16 +3238,16 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/version-diff-tool/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/merging-versions/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/concurrent-users/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/merging-changes-between-concurrent-users/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/eventdb-data-guide/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -3265,7 +3256,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/consent/sample-privacy-policy-excerpts/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/single-page-applications/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3287,7 +3278,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started-mobile/media/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/saving-and-publishing/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3308,7 +3299,7 @@
     <lastmod>2018-11-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/install/load-utag-china/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -3357,16 +3348,16 @@
     <lastmod>2020-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/security/mfa/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:21:40-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/security/mfa-faq/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/user-permissions/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T17:21:41-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/frequently-asked-questions/lead-scoring-model/</loc>
-    <lastmod>2023-01-05T12:46:23-08:00</lastmod>
+    <lastmod>2023-01-05T17:21:41-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/debugging/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -3404,10 +3395,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/security/api-keys/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:21:40-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/labels/resource-locks/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/cookies/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3422,7 +3413,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/account-settings/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/versions/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -3456,10 +3447,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/administration/iq-dashboard/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T17:21:40-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-tableau/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T15:21:32-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/user-permissions/manage/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3490,16 +3481,16 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/charles-proxy/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/user-permissions/faq/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/frequently-asked-questions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/frequently-asked-questions/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T16:46:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/frequently-asked-questions/how-do-i-remove-a-user/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3535,7 +3526,7 @@
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/administration/understanding-the-usage-report/</loc>
-    <lastmod>2023-01-05T12:46:23-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/http-api/endpoint/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -3924,7 +3915,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/data-layer/</loc>
-    <lastmod>2022-11-08T17:48:16-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -4483,7 +4474,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/data-layer/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="ja"
@@ -4546,9 +4537,6 @@
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/react-native/location/"
                 />
-  </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/numbertally-enrichment-set-rolling-sum-based-on-timeline/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/csharp/api/</loc>
     <lastmod>2022-11-08T17:48:16-08:00</lastmod>
@@ -5430,7 +5418,7 @@
     <lastmod>2022-07-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/industries/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/at-internet-piano-analytics-connector/</loc>
     <lastmod>2022-08-05T00:00:00+00:00</lastmod>
@@ -6651,7 +6639,7 @@
     <lastmod>2018-11-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_connectors/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T17:21:41-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/webhook-connector-setup-guide/</loc>
     <lastmod>2022-06-23T00:00:00+00:00</lastmod>
@@ -6771,22 +6759,19 @@
     <lastmod>2015-03-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/about/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/about/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/adobe-target-extension/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/adobe-target-content-modification-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/affirm/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6829,7 +6814,7 @@
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/as_attributes/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/as_audience_discovery/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -6841,7 +6826,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/as_dashboard/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/as_sizing_jobs/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -6862,22 +6847,22 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-audiencedb/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-audience-store/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/optimizely-integration-with-audiencestream/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-b-object/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-badge/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/badge/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/boolean/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
@@ -6901,7 +6886,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/channels-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/china-cdn-deployment-extension/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6910,7 +6895,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/client-side-tags/</loc>
-    <lastmod>2023-01-03T14:22:12-08:00</lastmod>
+    <lastmod>2023-01-06T10:14:36-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-client-side-tracking/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6928,7 +6913,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/content-modification-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-conversion/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6946,7 +6931,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/crypto-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-css/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6955,7 +6940,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/currency-converter-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-cdh/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -6967,7 +6952,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/da_audiencedb/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/da_audiencestore/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -6988,7 +6973,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-data-layer/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-data-object/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7015,7 +7000,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/do-not-track-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-dom/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7030,13 +7015,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/domain-based-deployment-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-dsp/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/e-commerce-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/early-access/</loc>
     <lastmod>2023-01-04T18:04:48-08:00</lastmod>
@@ -7051,22 +7036,19 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/es_attributes/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/es_feeds/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/es_live_events/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/es_specifications/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-esp/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/glossary/gloss-events/</loc>
-    <lastmod>2023-01-05T01:40:53+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-eventdb/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7075,7 +7057,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-etl/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7090,7 +7072,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/flatten-json-objects-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-flicker/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7105,7 +7087,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/funnel/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-gdpr/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7123,10 +7105,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/google-ads-leads/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/client-side-tags/google-cookie-matching-service/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -7142,7 +7124,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/hosted-data-layer-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-html/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7175,7 +7157,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/integrating-audiencestream-and-optimizely-full-stack/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/intercom/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -7190,25 +7172,25 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_consent/</loc>
-    <lastmod>2023-01-05T18:31:08+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_dashboard/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T17:21:40-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_data_layer/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:20:13-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_extensions/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_load_rules/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_tags/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/iq_versions/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:33:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/webhooks/iterable/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7230,7 +7212,7 @@
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/javascript-code-basic-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-json/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7239,16 +7221,16 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/join-data-values-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-jquery/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/jquery-clickhandler-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/jquery-onhandler-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-kpi/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7266,10 +7248,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/lookup-table-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/lower-casing-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-ma/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7320,13 +7302,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/tealium-tools/mobile-qr-trace/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-mobile-site/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/modal-offer-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-model/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7347,7 +7329,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/number/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/tealium-tools/optimizely-helper/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -7359,10 +7341,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/pathname-tokenizer-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/persist-data-value-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-pii/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7411,7 +7393,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/previous-page-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/privacy-manager-extension/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -7504,55 +7486,52 @@
     <lastmod>2023-01-05T01:40:53+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-server-side-tracking/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-session/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/set-data-values-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/set-of-strings/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
-  </url><url>
-    <loc>https://docs-preview.tealium.com/glossary/gloss-site-scan/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-sku/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/split-segmentation-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_attributes/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_data_sources/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_data_supply_chain/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_functions_overview/</loc>
-    <lastmod>2023-01-05T12:46:23-08:00</lastmod>
+    <lastmod>2023-01-06T14:47:30-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_manage_users/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T17:21:41-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_omnichannel/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_rules/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T13:10:47-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_usage_reports/</loc>
-    <lastmod>2023-01-05T12:46:23-08:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_versions/</loc>
     <lastmod>2023-01-03T17:25:18+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_visitor_lookup/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-06T13:10:47-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_visitor_profile_sampler/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
@@ -7570,7 +7549,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/string/</loc>
-    <lastmod>2023-01-03T17:25:18+00:00</lastmod>
+    <lastmod>2023-01-05T16:25:06-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-structured-data/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7597,7 +7576,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/tally/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-05T15:30:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-target-attribute/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7606,19 +7585,19 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-clicktale-carmel-integration-guide/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-contentsquare-integration-guide/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-digioh-integration-guide/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-google-enhanced-conversions-integration-guide/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-invoca-integration-guide/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-leanplum-integration-guide/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7627,13 +7606,13 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-optimizely-integration-guide/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-quantum-metric-integration-guide/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/tealium-events-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/industries/tealium-for-pharma/</loc>
     <lastmod>2022-12-14T12:51:59-08:00</lastmod>
@@ -7663,10 +7642,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-top-level-domain/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/tracking-opt-out-extension/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-trained-version/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7684,10 +7663,10 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/usercentrics-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T16:10:33-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/industries/tealium-identity-partners/acxiom-identity-resolution/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:11:27-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-utag-footer-js/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7708,7 +7687,7 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/extensions-list/view-through-tracking-extension/</loc>
-    <lastmod>2023-01-04T01:00:54+00:00</lastmod>
+    <lastmod>2023-01-06T17:08:55-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-visit/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7738,7 +7717,7 @@
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-keenio-api/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-kony-api/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
@@ -7747,13 +7726,13 @@
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-facebook-app-events-api/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-krux-deprecated/</loc>
     <lastmod>2023-01-04T01:00:54+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-salesforce-predictive-intelligence-api/</loc>
-    <lastmod>2022-12-21T17:24:45-08:00</lastmod>
+    <lastmod>2023-01-06T12:23:08-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-xml/</loc>
     <lastmod>2022-12-21T17:24:45-08:00</lastmod>

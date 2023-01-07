@@ -791,14 +791,14 @@ An orange text field displays your mapping.</li>
 </ol>
 <h3 id="the-purchase-event">The Purchase Event</h3>
 <p>You do not have to set up a mapping for the Purchase event if you already have the E-Commerce extension set up with the order ID mapped. If you have the e-commerce extension configured, the purchase event will automatically fire when an order ID is populated. (<a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">Learn more</a>).</p>
-<p>If you do not have the E-Commerce extension, set up the Purchase event using theViewContent event setup steps as a guideline. Use a mapping based off of <code>page_type</code> equaling “order confirmation” as an example.</p>
+<p>If you do not have the E-Commerce extension, set up the Purchase event using theViewContent event setup steps as a guideline. Use a mapping based off of <code>page_type</code> equaling &ldquo;order confirmation&rdquo; as an example.</p>
 <h2 id="set-up-required-parameters-to-send-with-events">Set up Required Parameters to Send with Events</h2>
 <p>Each of these events requires that you send certain parameters, namely <code>content_ids</code> and <code>content_type</code>. Setting up additional parameters such as <code>value</code>, <code>content_name</code>, and <code>currency</code> can help inform your analytics with more meaningful data. If you have the E-Commerce extension set up, these data sources will be automatically mapped for you.</p>
 <h3 id="the-content_ids-parameter">The content_ids Parameter</h3>
 <p>The <code>content_ids</code> parameter contains the IDs or SKUs of the products viewed by your visitor. If you have the e-commerce extension configured, these parameters are mapped and populated by the data source you selected for the List of Product IDs field in the extension.  (<a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">Learn more</a>).</p>
 <p>If you do not have the E-Commerce extension or you want to use another data source, map a data source to the <code>content_ids</code> parameter for each of the three (3) events.</p>
 <h3 id="the-content_type-parameter">The content_type Parameter</h3>
-<p>The <code>content_type</code> parameter indicates to Facebook whether the content/product IDs signify a single product or a group of products. You must set this parameter to either “ <code>product</code>” or “ <code>product_group</code>”, respectively. To accomplish this, use the Set Data Value extension..</p>
+<p>The <code>content_type</code> parameter indicates to Facebook whether the content/product IDs signify a single product or a group of products. You must set this parameter to either &quot; <code>product</code>&quot; or &quot; <code>product_group</code>&quot;, respectively. To accomplish this, use the Set Data Value extension..</p>
 <p class="note"><i class="fas fa-info-circle"></i>This requirement is specific to Facebook. It is unlikely you already have a data source that is doing this for you.</p>
 <p>Use the following steps to set <code>content_type</code> with a Set Data Value extension:</p>
 <ol>
@@ -831,16 +831,6 @@ A blue text field appears in the <strong>Mappings</strong> dialog indicating tha
 <ul>
 <li>[Facebook Dynamic Product Ads](https //developers.facebook.com/docs/facebook-pixel/pixel-with-ads/dynamic-product-ads)</li>
 </ul>
-
-</div>
-
-<div id="related">
-  
-
-
-
-
-
 
 </div>
 

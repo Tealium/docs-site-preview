@@ -259,7 +259,7 @@ var utag_data = {
         <ul class=" data-layer desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/data-layer/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-about-the-data-layer">About the data layer</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Data layer variable types</a>
+        <a href="/iq-tag-management/data-layer/data-layer-variables/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-data-layer-variable-types">Variable types</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".manage-variables">Manage variables</a>
         <ul class=" manage-variables desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -318,8 +318,6 @@ var utag_data = {
         <a href="/iq-tag-management/tags/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-tags">About tags</a>
       </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/manage-tags/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".manage-tags">Manage tags</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Avanced settings</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".tag-marketplace">Tag Marketplace</a>
         <ul class=" tag-marketplace desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -333,6 +331,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-tag-marketplace-policy">Tag Marketplace policy</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/tags/advanced-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tag-advanced-settings">Advanced tag settings</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -656,7 +656,7 @@ var utag_data = {
 <ol>
 <li>Go to <strong>iQ Tag Management &gt; Tags</strong>.</li>
 <li>Click <strong>+ Add Tag</strong>.
-The <a href="/iq-tag-management/tags/tag-marketplace/">Tag Marketplace</a> appears.</li>
+The <a href="/iq-tag-management/tags/tag-marketplace/about/">Tag Marketplace</a> appears.</li>
 <li>Locate the tag for a vendor using one of the following methods:<br>
 If you have enabled the Tag Marketplace Policy to show or hide specific tags, the Tag Marketplace appearance will vary accordingly. Tags hidden by the policy do not appear in the Marketplace.
 <ul>
@@ -670,7 +670,7 @@ In the sidebar, browse a vendor category, locate your tag in the listing, and cl
 <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8054i6677FFA05C304B93/image-size/large?v=v2&amp;amp;px=999" 
          alt="Browse Vendor Category"
          title="Browse Vendor Category"/></li>
-<li><strong><a href="/iq-tag-management/tags/tag-marketplace/">Detect Tag From Code</a></strong><br>
+<li><strong><a href="/iq-tag-management/tags/tag-marketplace/detect-a-tag-from-code/">Detect Tag From Code</a></strong><br>
 Click <strong>Detect Tag from Code</strong> and enter the code snippet provided by your tag vendor. If the code is recognized, the matching tag will be added with the settings automatically configured.<br>
 <img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8055i5780FAB3166BB397/image-size/large?v=v2&amp;amp;px=999" 
          alt="Detect Tag From Code"
@@ -684,6 +684,7 @@ Enter a title for the tag. If you have multiple instances of the same tag, use a
 </li>
 </ol>
 <p class="note"><i class="fas fa-info-circle"></i>For accounts enabled for Tealium DataAccess, tag titles are included as column values in EventDB; characters for a Redshift database must consist of only UTF-8 printable characters; and ASCII letters are converted to lower case. For detailed information, see <a href="https://docs.aws.amazon.com/redshift/latest/dg/r_names.html">Amazon Redshift - Names and Identifiers</a>.</p>
+<p>To assign a load rule:</p>
 <ol>
 <li>
 <p>Click <strong>Next</strong>.<br>
@@ -850,7 +851,7 @@ The <strong>Delete Tag</strong> dialog appears.</p>
           
           
           <h2 id="update-tags">Update tags</h2>
-<p>Use the <a href="/iq-tag-management/tags/tag-templates/template-status-checker/">Template Status Checker</a> to see when a new version of a tag is available. Update a tag by accessing the tag template. See <a href="/iq-tag-management/tags/tag-templates/">Tag Templates</a>.</p>
+<p>Use the <a href="/iq-tag-management/tags/tag-templates/template-status-checker/">Template Status Checker</a> to see when a new version of a tag is available. Update a tag by accessing the tag template. Learn more abot <a href="/iq-tag-management/tags/tag-templates/about/">tag templates</a>.</p>
 
           
           
@@ -898,14 +899,14 @@ An expanded view of the history for the tag appears and lists the user that made
 	<div class="fr">
 
 		
-		<a href="/iq-tag-management/tags/tealium-generic-tag/"
+		<a href="/iq-tag-management/tags/advanced-settings/"
       class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
 			<section class="tl pr3">
 				<div class="f7 text-color-secondary">Next</div>
-				<div>Tealium Generic Tag</div>
+				<div>Advanced tag settings</div>
 			</section>
       <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-			  <title>"Tealium Generic Tag"</title>
+			  <title>"Advanced tag settings"</title>
 			  <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
 			</svg>
     </a>
@@ -936,7 +937,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 21, 2022 
+          <p>This page was last updated:  January 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
