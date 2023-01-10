@@ -3167,6 +3167,8 @@
     <loc>https://docs-preview.tealium.com/iq-tag-management/tealium-tools/browser-extension/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
   </url><url>
+    <loc>https://docs-preview.tealium.com/platforms/getting-started-mobile/identity-resolution/</loc>
+  </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/audiencedb-data-guide/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
   </url><url>
@@ -4861,32 +4863,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://docs-preview.tealium.com/platforms/ios-swift-v1/consent-management/"
-                />
-  </url><url>
-    <loc>https://docs-preview.tealium.com/platforms/android-kotlin/identity-resolution/</loc>
-    <lastmod>2023-01-07T08:47:11-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/android-kotlin/identity-resolution/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/android-kotlin/identity-resolution/"
-                />
-  </url><url>
-    <loc>https://docs-preview.tealium.com/platforms/ios-swift/identity-resolution/</loc>
-    <lastmod>2023-01-07T08:47:11-08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="ja"
-                href="https://docs-preview.tealium.co.jp/platforms/ios-swift/identity-resolution/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://docs-preview.tealium.com/platforms/ios-swift/identity-resolution/"
                 />
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/csharp/release-notes/</loc>
