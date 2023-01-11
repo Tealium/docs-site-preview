@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Pinterest Conversions Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
+    <title>Insider Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -408,8 +408,8 @@ var utag_data = {
         <a href="/server-side-connectors/impact-page-loads-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".impact-page-loads-connector">Impact Page Loads</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/infobip-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".infobip-connector">Infobip</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/insider-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".insider-connector">Insider</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/insider-connector/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".insider-connector">Insider</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/insightly-connector-deprecated/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".insightly-connector-deprecated">Insightly (Deprecated)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -514,8 +514,8 @@ var utag_data = {
         <a href="/server-side-connectors/persistiq-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".persistiq-connector">PersistIQ</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/pinterest-audiences-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".pinterest-audiences-connector">Pinterest Audiences</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/pinterest-conversions/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".pinterest-conversions-connector">Pinterest Conversions</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/pinterest-conversions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".pinterest-conversions-connector">Pinterest Conversions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/pipedrive-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".pipedrive-connector">Pipedrive</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -693,13 +693,13 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Pinterest Conversions Connector Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Insider Connector Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the Pinterest Conversions connector.
+      This article describes how to set up the Insider connector.
     </p>
   
 </div>
@@ -708,44 +708,11 @@ var utag_data = {
   <h2 id="api-information">API Information</h2>
 <p>This connector uses the following vendor API:</p>
 <ul>
-<li>API Name: Pinterest Marketing API</li>
-<li>API Version: v5</li>
-<li>API Endpoint: <code>https://api.pinterest.com/</code></li>
-<li>Vendor documentation: <a href="https://developers.pinterest.com/docs/conversions/conversion-management/">Pinterest Conversions Guide</a></li>
+<li>API Name: Insider API</li>
+<li>API Version: v1</li>
+<li>API Endpoint: <code>https://unification.useinsider.com/api/user/v1</code></li>
+<li>Documentation: <a href="https://academy.useinsider.com/docs/api-reference-insider-apis">Insider APIs</a></li>
 </ul>
-<h2 id="batch-limits">Batch Limits</h2>
-<p>This connector uses batched requests to support high-volume data transfers to the vendor. Requests are queued until one of the following thresholds is met:</p>
-<ul>
-<li>Max number of requests: 1000</li>
-<li>Max time since oldest request: 10 minutes</li>
-<li>Max size of requests: 2 MB</li>
-</ul>
-<h2 id="how-it-works">How it Works</h2>
-<p>The Pinterest Conversions API allows advertisers to send conversion events to Pinterest without using the Pinterest tag. By mapping conversions to Pinterest campaigns, you can improve conversion visibility and receive a more accurate picture of the effectiveness of your campaigns and actions that are driving conversions. Additional benefits from Conversion API tracking include enhanced optimization and targeting, greater transparency, and enhancing reporting and analysis.</p>
-<p>The Pinterest Conversions API can receive web, in-app, or offline conversions. Events received within an hour of the event occurring are reported as web or app events. Events received outside of that window are categorized as offline events.</p>
-<p>We recommended using both the Pinterest Conversion connector and the Pinterest Tag together to maximize visibility and track conversions. You can use the Pinterest Conversion connector as a standalone solution, but using both tools together provides the best results.</p>
-<p>Events that can be tracked include:</p>
-<ul>
-<li><strong>Add to Cart</strong> - Items are added to shopping carts.</li>
-<li><strong>Checkout</strong> - Completed transactions.</li>
-<li><strong>Custom</strong> - Track a custom event. Use this event name to track a special event that you want to include in your conversion reporting.</li>
-<li><strong>Lead</strong> - Interest in product or service.</li>
-<li><strong>Page Visit</strong> - Views of primary pages, such as product pages and article pages.</li>
-<li><strong>Search</strong> - Searches on your website.</li>
-<li><strong>Signup</strong> - Sign ups for your products or services.</li>
-<li><strong>View Category</strong> - Views of category pages.</li>
-<li><strong>Watch Video</strong> - Video views.</li>
-<li><strong>User-Defined Event</strong> - Add any additional events that you’ve defined for the purpose of audience targeting. Unique events are not available for conversion reporting.</li>
-</ul>
-<h2 id="deduplication">Deduplication</h2>
-<p>When redundant implementations are put into place, (for example, the Pinterest Conversion API and <a href="/client-side-tags/pinterest-tag/">Pinterest Tag</a> ), deduplication is required to avoid double-counting of a single event when it is sent through both solutions. By using deduplication, advertisers can expect more conversions being attributed than if the connector or tag solution are used independently.</p>
-<p>The Pinterest Tag and Pinterest Conversion API use the Event ID for deduplication. Ensure this value is included when multiple sources are used to track conversion data. To find your Event IDs, complete the following steps:</p>
-<ol>
-<li>Log into your <a href="http://pinterest.com/business/create/">Pinterest business account</a>.</li>
-<li>Navigate to  <strong>Ads &gt; Reporting</strong>.</li>
-<li>Click the menu icon in the top-right above the table and select <strong>Performance</strong>.</li>
-</ol>
-<p>Depending on what event codes you’ve added to your site, they will be listed throughout the table along with the number of times they’ve happened during the selected timeframe.</p>
 <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
@@ -757,25 +724,51 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td>Send Conversion Event</td>
-<td>✗</td>
+<td>Upsert and Subscribe (Batched)</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Upsert and Subscribe (Real-Time)</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Delete Attribution (Batched)</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Delete Attribution (Real-Time)</td>
+<td>✓</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Delete User</td>
+<td>✓</td>
 <td>✓</td>
 </tr>
 </tbody>
 </table>
+<h3 id="batch-limits">Batch Limits</h3>
+<p>The Upsert and Subscribe (Batched) and Delete Attribution (Batched) actions use batched requests for high-volume data transfers to the vendor. Batch requests are queued and are sent when one of the following thresholds is met:</p>
+<ul>
+<li>Max number of requests: 1000</li>
+<li>Max time since oldest request: 10 minutes</li>
+<li>Max size of requests: 5 MB</li>
+</ul>
 <h2 id="configure-settings">Configure Settings</h2>
-<p>Navigate to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see the <a href="/server-side/connectors/about/">About Connectors</a> article.</p>
-<p class="note"><i class="fas fa-info-circle"></i>When you add this connector you are prompted to accept the vendor&rsquo;s data platform policy.</p>
+<p>Navigate to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">About Connectors</a>.</p>
 <p>After adding the connector, configure the following settings:</p>
 <ul>
-<li><strong>Access Token</strong><br><strong>Required.</strong> Access Token generated through the Pinterest Ads Manager.<br>For more information, see the Pinterest <a href="https://developers.pinterest.com/docs/conversions/conversion-management/#Authenticating%20for%20the%20Conversion%20Tracking%20endpoint">Conversions Guide</a>.</li>
-<li><strong>Ad Account ID</strong><br><strong>Required.</strong> Unique identifier of an ad account. To locate your <strong>Ad Account ID</strong> in Pinterest, log into the Pinterest account that owns your advertiser account and navigate to <strong>Ads &gt; Overview</strong>. The <strong>Ad Account ID</strong> is visible in the URL path. For example, <code>ads.pinterest.com/advertiser/{ad_account_id}/...</code> .</li>
+<li><strong>Partner Name</strong><br>Navigate to <strong>Inone &gt; Inone Settings &gt; <a href="https://academy.useinsider.com/docs/account-preferences">Account Preferences</a></strong> to copy and paste your partner name.</li>
+<li><strong>API Key</strong><br>An API key is required to authorize your request. For information on generating a token, see <a href="https://academy.useinsider.com/docs/api-authentication-tokens">API Authentication Tokens</a>.</li>
 </ul>
-<p>Click <strong>Done</strong> when you are finished configuring the connector.</p>
+<p>When you are finished configuring the connector, click <strong>Done</strong>.</p>
 <h2 id="action-settings--parameters-and-options">Action Settings — Parameters and Options</h2>
-<p>Click <strong>Continue</strong> to configure the connector actions. Enter in a name for the action and then select the action type from the drop-down menu.</p>
-<p>The following section describes how to set up parameters and options for each action.</p>
-<h3 id="action--send-conversion-event">Action — Send Conversion Event</h3>
+<p>Click <strong>Continue</strong> to configure the connector actions. Enter a name for the action and then select the action type.</p>
+<p>This section describes how to set up parameters and options for each action.</p>
+<h3 id="action--upsert-and-subscribe-batched-or-real-time">Action — Upsert and Subscribe (Batched or Real-Time)</h3>
 <h4 id="parameters">Parameters</h4>
 <table>
 <thead>
@@ -786,224 +779,244 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td>Event Name</td>
-<td>The type of the user event to record. <br>Note: Events with custom event types will not be available to use in reporting.<br><strong>Add to Cart</strong> - Items are added to shopping carts.<br><strong>Checkout</strong> - Completed transactions.<br><strong>Custom</strong> - Use this event name to track a special event that you want to include in your conversion reporting.<br><strong>Lead</strong> - Interest in product or service.<br><strong>Page Visit</strong> - Views of primary pages, such as product pages and article pages.<br><strong>Search</strong> - Searches on your website.<br><strong>Signup</strong> - Sign ups for your products or services.<br><strong>View Category</strong> - Views of category pages.<br><strong>Watch Video</strong> - Video views.</td>
+<td></td>
+<td><strong>User Identifiers</strong></td>
 </tr>
 <tr>
-<td>Event Action Source</td>
-<td>Source indicating where the conversion event occurred. <br><strong>App Android</strong> - Via mobile in-app events from an Android device.<br><strong>App iOS</strong> - Via mobile in-app events from an iOS device.<br><strong>Offline</strong> - Event is from offline.<br><strong>Web</strong> - Via desktop web browsers as well as mobile web browsers.</td>
+<td>Email</td>
+<td>User&rsquo;s email address.</td>
 </tr>
 <tr>
-<td>Event ID</td>
-<td>(Required) A unique ID string that identifies this event and can be used for deduplicating between events ingested via both the Pinterest API for Conversions and the Pinterest Tag.</td>
+<td>Phone Number</td>
+<td>User&rsquo;s phone number in E.164 format. For example: +6598765432.</td>
 </tr>
 <tr>
-<td>Ad Account ID Override</td>
-<td>This setting overrides Pinterest <strong>Ad Account ID</strong> used in the connector configuration section. Either <strong>Ad Account ID Override</strong> or <strong>Ad Account ID</strong> in the connector configuration section must be provided.</td>
+<td>UUID</td>
+<td>User&rsquo;s UUID parameter.</td>
 </tr>
 <tr>
-<td>Event Time</td>
-<td>Unix timestamp (in UTC) in seconds indicating when the user conversion event occurred. The event time cannot be in the future of when Pinterest receives the request. If this field is not mapped, it will be initialized with the current timestamp.</td>
+<td>User Custom Identifiers</td>
+<td>User&rsquo;s custom identifier information. At least one default or custom user identifier must be provided.</td>
 </tr>
 <tr>
-<td>Event Source URL</td>
-<td>URL of the web conversion event.</td>
+<td></td>
+<td><strong>User Attributes</strong></td>
 </tr>
 <tr>
-<td>Opt Out</td>
-<td>When <strong>Event Action Source</strong> is <strong>Web</strong> or <strong>Offline</strong>, it defines whether the user has opted out of tracking for web conversion events. While when <strong>Event Action Source</strong> is <em>A</em><strong>pp Android</strong> or <strong>App iOS</strong>, it defines whether the user has enabled Limit Ad Tracking on their iOS device, or opted out of Ads Personalization on their Android device.</td>
+<td>Email Opt In</td>
+<td>User&rsquo;s permission for marketing emails. When true, emails allowed. When false, email not allowed.</td>
 </tr>
 <tr>
-<td>Email (already SHA256 hashed)</td>
-<td>Provide an email address which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
+<td>GDPR Opt In</td>
+<td>User&rsquo;s permission for Insider campaigns, data collection and processing. When true or empty, Insider may interact with the user through personalization campaigns. When false, user will not see any Insider campaign or receive any message from any channel.</td>
 </tr>
 <tr>
-<td>Email (apply SHA256 hash)</td>
-<td>Provide a plain text email address and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.<br></td>
+<td>SMS Opt In</td>
+<td>User&rsquo;s permission for SMS messages. When true, SMS allowed. When false, SMS not allowed.</td>
 </tr>
 <tr>
-<td>Apple&rsquo;s Identifier for Advertisers (already SHA256 hashed)</td>
-<td>Provide an Apple&rsquo;s Identifier for Advertisers which has already been whitespace trimmed and SHA256 hashed.</td>
+<td>WhatsApp Opt In</td>
+<td>User&rsquo;s permission for WhatsApp Message. When true, WhatsApp Message allowed. When false, WhatsApp Message not allowed.</td>
 </tr>
 <tr>
-<td>Apple&rsquo;s Identifier for Advertisers (apply SHA256 hash)</td>
-<td>Provide a plain text Apple&rsquo;s Identifier for Advertisers and the connector will whitespace trim and hash this value using SHA256 hash.</td>
+<td>Name</td>
+<td>User&rsquo;s name.</td>
 </tr>
 <tr>
-<td>Google Advertising ID (already SHA256 hashed)</td>
-<td>Provide a Google Advertising ID which has already been whitespace trimmed and SHA256 hashed.</td>
+<td>Surname</td>
+<td>User&rsquo;s surname.</td>
 </tr>
 <tr>
-<td>Google Advertising ID (apply SHA256 hash)</td>
-<td>Provide a plain text Google Advertising ID and the connector will whitespace trim and hash this value using SHA256 hash.</td>
+<td>Birthday</td>
+<td>User&rsquo;s birthday in RFC 3339 format. For example: 1993-03-12T00:00:00Z.</td>
 </tr>
 <tr>
-<td>Client IP Address</td>
-<td>The user&rsquo;s IP address, which can be either in IPv4 or IPv6 format.</td>
+<td>Gender</td>
+<td>User&rsquo;s gender.</td>
 </tr>
 <tr>
-<td>Client User Agent</td>
-<td>The user agent string of the user&rsquo;s web browser.</td>
-</tr>
-<tr>
-<td>Phone Number (already SHA256 hashed)</td>
-<td>Provide a phone number which contains only numeric characters, has already been whitespace trimmed and SHA256 hashed. Remove leading zeros before hashing.</td>
-</tr>
-<tr>
-<td>Phone Number (apply SHA256 hash)</td>
-<td>Provide a plain text phone number and the connector will remove all non-numeric characters and leading zeroes, whitespace trim, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Gender (already SHA256 hashed)</td>
-<td>Provide a gender which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>Gender (apply SHA256 hash)</td>
-<td>Provide a plain text gender and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Birthdate (already SHA256 hashed)</td>
-<td>Provide a birthdate which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>Birthdate (apply SHA256 hash)</td>
-<td>Provide a plain text birthdate and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>First Name (already SHA256 hashed)</td>
-<td>Provide a first name which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>First Name (apply SHA256 hash)</td>
-<td>Provide a plain text first name and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Last Name (already SHA256 hashed)</td>
-<td>Provide a last name which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>Last Name (apply SHA256 hash)</td>
-<td>Provide a plain text last name and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>City (already SHA256 hashed)</td>
-<td>Provide a city which has already been whitespace trimmed, lowercased, and SHA256 hashed. Remove spaces and punctuation before hashing.</td>
-</tr>
-<tr>
-<td>City (apply SHA256 hash)</td>
-<td>Provide a plain text city and the connector will remove spaces and punctuation, whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>State (already SHA256 hashed)</td>
-<td>Provide a state which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>State (apply SHA256 hash)</td>
-<td>Provide a plain text state and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Zip Code (already SHA256 hashed)</td>
-<td>Provide a zip code which contains only numeric characters, has already been whitespace trimmed and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>Zip Code (apply SHA256 hash)</td>
-<td>Provide a plain text zip code and the connector will remove all non-numeric characters, whitespace trim and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Country Code (already SHA256 hashed)</td>
-<td>Provide a country code which has already been whitespace trimmed, lowercased, and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>Country Code (apply SHA256 hash)</td>
-<td>Provide a plain text country code and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>External ID (already SHA256 hashed)</td>
-<td>Provide an external ID which has already been whitespace trimmed and SHA256 hashed.</td>
-</tr>
-<tr>
-<td>External ID (apply SHA256 hash)</td>
-<td>Provide a plain text external ID and the connector will whitespace trim and hash this value using SHA256 hash.</td>
-</tr>
-<tr>
-<td>Currency</td>
-<td>The ISO-4217 currency code. If not provided, Pinterest will default to the advertiser&rsquo;s currency set during account creation.</td>
-</tr>
-<tr>
-<td>Value</td>
-<td>Total value of the event. Accepted as a string in the request, it will be parsed into a double. For example, if there are two items in a checkout event, the value should be the total price.</td>
-</tr>
-<tr>
-<td>Content IDs</td>
-<td> List of products IDs.</td>
-</tr>
-<tr>
-<td>Number of Items</td>
-<td>Total number of products of the event. For example, the total number of items purchased in a checkout event.</td>
-</tr>
-<tr>
-<td>Order ID</td>
-<td>The order ID.</td>
-</tr>
-<tr>
-<td>Search String</td>
-<td>The search string related to the user conversion event.</td>
-</tr>
-<tr>
-<td>Opt Out Type</td>
-<td>Flags for different privacy rights laws to opt out users of sharing personal information. Values should be comma separated. Array type attributes can be mapped and will be converted to a comma separated string.</td>
-</tr>
-<tr>
-<td>Item Price</td>
-<td>The price of a product. Accepted as a string in the request, it will be parsed into a double. For example, if there are two products in a checkout event, the value should be the total price.</td>
-</tr>
-<tr>
-<td>Quantity</td>
-<td>The amount of a product.</td>
-</tr>
-<tr>
-<td>App ID</td>
-<td>The app store app ID.</td>
-</tr>
-<tr>
-<td>App Name</td>
-<td>Name of the app.</td>
-</tr>
-<tr>
-<td>App Version</td>
-<td>Version of the app.</td>
-</tr>
-<tr>
-<td>Device Brand</td>
-<td>Brand of the user device.</td>
-</tr>
-<tr>
-<td>Device Carrier</td>
-<td>User device&rsquo;s mobile carrier.</td>
-</tr>
-<tr>
-<td>Device Model</td>
-<td>Model of the user device.</td>
-</tr>
-<tr>
-<td>Device Type</td>
-<td>Type of the user device.</td>
-</tr>
-<tr>
-<td>OS Version</td>
-<td>Version of the device operating system.</td>
-</tr>
-<tr>
-<td>WiFi</td>
-<td>Whether the event occurred when the user device was connected to wifi.</td>
+<td>Age</td>
+<td>User&rsquo;s age.</td>
 </tr>
 <tr>
 <td>Language</td>
-<td>Two-character ISO-639-1 language code indicating the user&rsquo;s language.</td>
+<td>Language information for the user.</td>
 </tr>
 <tr>
-<td>Testing Mode</td>
-<td>Check if you want to mark the request as a test request. The events will not be recorded but the API will still return the same response messages. Use this mode to verify your requests are working and your events are constructed correctly.</td>
+<td>Country</td>
+<td>Country information of the user in ISO 3166-1 alpha-2 format.</td>
+</tr>
+<tr>
+<td>City</td>
+<td>User&rsquo;s city.</td>
+</tr>
+<tr>
+<td>List ID</td>
+<td>Newsletter contact list IDs (users are added directly).</td>
+</tr>
+<tr>
+<td>User Custom Attributes</td>
+<td>Select custom attributes. At least one default or custom user attribute or one event must be provided.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Events Parameters</strong></td>
+</tr>
+<tr>
+<td>Event Name</td>
+<td>Required. Name of the event.</td>
+</tr>
+<tr>
+<td>Event Time</td>
+<td>Required. The purchase date for the purchase event in RFC 3339 format. For example: 2021-01-10T21:35:20Z.</td>
+</tr>
+<tr>
+<td>Event Group ID</td>
+<td>Event group ID.</td>
+</tr>
+<tr>
+<td>Product ID</td>
+<td>Unique product ID.</td>
+</tr>
+<tr>
+<td>Name</td>
+<td>Name of the product.</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>Currency used for product pricing, in ISO 4217 format. For example: USD.</td>
+</tr>
+<tr>
+<td>Unit Price</td>
+<td>Price of the product without any discounts.</td>
+</tr>
+<tr>
+<td>Unit Sale Price</td>
+<td>Unit price of the product.</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Color of the product (selected by user).</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Size of the product (selected by user).</td>
+</tr>
+<tr>
+<td>Shipping Cost</td>
+<td>Shipping cost of the items in basket.</td>
+</tr>
+<tr>
+<td>Promotion Name</td>
+<td>Name of the promotion.</td>
+</tr>
+<tr>
+<td>Promotion Discount</td>
+<td>Total amount of discount applied by promotions.</td>
+</tr>
+<tr>
+<td>Events Custom Parameters</td>
+<td>Select custom event parameters</td>
+</tr>
+<tr>
+<td></td>
+<td>To add multiple events, provide array attributes. Array type attributes must be of equal length. Events Parameters arrays and Events Custom Parameters arrays must be of equal length. Single value attributes can be used and apply to each event.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Templates and Template Variables</strong></td>
+</tr>
+<tr>
+<td>Events Template Variables</td>
+<td>Provide template variables as data input for <strong>Events Template</strong>. See the <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a> for usage examples. Name nested template variables with the dot notation. For example: <code>items.name</code>. Nested template variables are typically built from data layer list attributes.</td>
+</tr>
+<tr>
+<td>Events Template</td>
+<td>To support nested objects, define a template, which is a JSON array of variables. Template variables mapped in the <strong>Events Template Variables</strong> section can be used in the template. When a template is defined, configuration in the <strong>Events Parameters</strong> and <strong>Events Custom Parameters</strong> sections is ignored. For more information on templates, see the <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Templates Guide</a>.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="action--delete-attribution-batched-or-real-time">Action — Delete Attribution (Batched or Real-Time)</h3>
+<h4 id="parameters-1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td><strong>User Identifiers</strong></td>
+</tr>
+<tr>
+<td>Email</td>
+<td>User&rsquo;s email address.</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>User&rsquo;s phone number in E.164 format. For example: +6598765432.</td>
+</tr>
+<tr>
+<td>UUID</td>
+<td>User&rsquo;s UUID parameter.</td>
+</tr>
+<tr>
+<td>User Custom Identifiers</td>
+<td>Provide user&rsquo;s custom identifier information. At least one default or custom user identifier must be provided.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>User Attributes</strong></td>
+</tr>
+<tr>
+<td>Whole Delete Default User Attributes</td>
+<td>Select default user attributes that are going to be deleted fully from the corresponding user.</td>
+</tr>
+<tr>
+<td>Whole Delete Custom User Attributes</td>
+<td>Select custom user attributes that are going to be deleted fully from the corresponding user.</td>
+</tr>
+<tr>
+<td>Partial Delete Default User Attributes</td>
+<td>Select default user attributes that are going to be deleted partially. For example, removing one of the values from an array attribute. Only array type attributes can be partially deleted. Use array type attributes to delete multiple values. Single value attributes are converted to an array containing a single value.</td>
+</tr>
+<tr>
+<td>Partial Delete Custom User Attributes</td>
+<td>Select custom user attributes that are going to be deleted partially. For example, removing one of the values from an array attribute. Only array type attributes can be partially deleted. Map array type attributes to delete multiple values. Single value attributes are converted to an array containing single value.</td>
+</tr>
+<tr>
+<td>List ID</td>
+<td>(Optional) For partial delete only. Newsletter contact list IDs (users are added directly).</td>
+</tr>
+</tbody>
+</table>
+<h3 id="action--delete-user">Action — Delete User</h3>
+<h4 id="parameters-2">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email</td>
+<td>User&rsquo;s email address.</td>
+</tr>
+<tr>
+<td>Phone Number</td>
+<td>User&rsquo;s phone number in E.164 format. For example: +6598765432.</td>
+</tr>
+<tr>
+<td>UUID</td>
+<td>User&rsquo;s UUID parameter.</td>
+</tr>
+<tr>
+<td>User Custom Identifiers</td>
+<td>Provide user&rsquo;s custom identifier information. At least one default or custom user identifier must be provided.</td>
 </tr>
 </tbody>
 </table>
@@ -1013,14 +1026,14 @@ var utag_data = {
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/server-side-connectors/pipedrive-connector/"
+  <a href="/server-side-connectors/insightly-connector-deprecated/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Pipedrive</div>
+      <div>Insightly (Deprecated)</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Pipedrive"</title>
+      <title>"Insightly (Deprecated)"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1029,15 +1042,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/server-side-connectors/pinterest-audiences-connector/"
+  <a href="/server-side-connectors/infobip-connector/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Pinterest Audiences "</title>
+      <title>"Infobip "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Pinterest Audiences</div>
+      <div>Infobip</div>
     </section>
   </a>
   
@@ -1082,13 +1095,13 @@ No</button>
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#api-information">API Information</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#batch-limits">Batch Limits</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it Works</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#deduplication">Deduplication</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#batch-limits">Batch Limits</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings--parameters-and-options">Action Settings — Parameters and Options</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action--send-conversion-event">Action — Send Conversion Event</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action--upsert-and-subscribe-batched-or-real-time">Action — Upsert and Subscribe (Batched or Real-Time)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action--delete-attribution-batched-or-real-time">Action — Delete Attribution (Batched or Real-Time)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action--delete-user">Action — Delete User</a></li>
               </nav>
   </aside></nav>
 
