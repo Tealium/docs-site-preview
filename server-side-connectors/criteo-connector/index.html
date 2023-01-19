@@ -705,7 +705,7 @@ var utag_data = {
 </div>
 
 <div class="prose" id="prose">
-  <h3 id="connector-actions">Connector Actions</h3>
+  <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
 <tr>
@@ -722,18 +722,18 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<h3 id="configure-settings">Configure Settings</h3>
+<h2 id="configure-settings">Configure Settings</h2>
 <p>Go to the Connector Marketplace and add a new connector. Read the <a href="/server-side/connectors/about/">Connector Overview</a> article for general instructions on how to add a connector.</p>
 <p>After adding the connector, configure the following settings:</p>
 <ul>
 <li><strong>Client Account ID</strong><br>
 <strong>Required:</strong> This is the <strong>Client ID</strong> in Criteo.</li>
 </ul>
-<h3 id="action-settings---parameters-and-options">Action Settings - Parameters and Options</h3>
+<h2 id="action-settings---parameters-and-options">Action Settings - Parameters and Options</h2>
 <p>Click <strong>Next</strong> or go to the <strong>Actions</strong> tab. This is where you configure connector actions.</p>
 <p>This section describes how to set up parameters and options for each action.</p>
-<h4 id="action---send-event">Action - Send Event</h4>
-<h5 id="parameters">Parameters</h5>
+<h3 id="action---send-event">Action - Send Event</h3>
+<h4 id="event-type">Event Type</h4>
 <table>
 <thead>
 <tr>
@@ -746,9 +746,65 @@ var utag_data = {
 <td>Event Type</td>
 <td>The standard web, travel, or store event to send.<br> For more information, see <a href="https://guides.criteotilt.com/onetag/s2s/#event-payloads">Criteo Server to Server - Event Payloads</a>.</td>
 </tr>
+</tbody>
+</table>
+<h4 id="standard-parameters">Standard Parameters</h4>
+<p>Criteo highly recommends mapping IP Address, Full URL, and User Agent for most accurate data collection.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>Account</td>
 <td>The partner ID of the account you are sending the data to. It can be filled on the connector configuration screen or on the action screen. The value on the action screen has higher priority than on the connector configuration screen.</td>
+</tr>
+<tr>
+<td>Site Type</td>
+<td>The device type (or site version) used for browsing. Default option is <code>desktop</code>. Available values are <code>d</code> (for Desktop), <code>t</code> (for Tablet), <code>m</code> (for Mobile).</td>
+</tr>
+<tr>
+<td>Full URL</td>
+<td>The full url where the event is triggered.</td>
+</tr>
+<tr>
+<td>Previous URL</td>
+<td>The previous url where the event is triggered.</td>
+</tr>
+<tr>
+<td>IP</td>
+<td>The IP address of the user.</td>
+</tr>
+<tr>
+<td>User Agent</td>
+<td>The user agent string from the users browser.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="user-identifiers">User Identifiers</h4>
+<p>Criteo recommends mapping both a Mapped User ID and email where possible. Providing an email address allows for cross-device attribution when available and may enable addressing events without a Mapped User ID.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mapped User Id</td>
+<td>The Criteo salted user ID (GUM ID) returned by the GUM call. See: <a href="https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call">Criteo Server to Server - Criteo GUM Call</a>.</td>
+</tr>
+<tr>
+<td>GAID</td>
+<td>Google&rsquo;s advertising identifier.</td>
+</tr>
+<tr>
+<td>IDFA</td>
+<td>Apple&rsquo;s identifier for Advertisers unique identifier.</td>
 </tr>
 <tr>
 <td>Email Raw</td>
@@ -777,34 +833,6 @@ var utag_data = {
 <tr>
 <td>Email SHA256 MD5 (already SHA256 MD5 hashed)</td>
 <td>The user&rsquo;s email address hashed with MD5 and SHA256.</td>
-</tr>
-<tr>
-<td>GAID</td>
-<td>Google&rsquo;s advertising identifier.</td>
-</tr>
-<tr>
-<td>IDFA</td>
-<td>Apple&rsquo;s identifier for Advertisers unique identifier.</td>
-</tr>
-<tr>
-<td>IP</td>
-<td>IP address</td>
-</tr>
-<tr>
-<td>Mapped User Id</td>
-<td>(Required) The Criteo salted user ID (GUM ID) returned by the GUM call. See: <a href="https://guides.criteotilt.com/onetag/s2s/#criteo-gum-call">Criteo Server to Server - Criteo GUM Call</a>.</td>
-</tr>
-<tr>
-<td>Mapping Key</td>
-<td>The unique Criteo S2S key for the partner.</td>
-</tr>
-<tr>
-<td>Site Type</td>
-<td>The device type (or site version) used for browsing. Default option is <code>desktop</code>. Available values are <code>d</code> (for Desktop), <code>t</code> (for Tablet), <code>m</code> (for Mobile).</td>
-</tr>
-<tr>
-<td>Useragent</td>
-<td>The user-agent of the browser or device.</td>
 </tr>
 </tbody>
 </table>
@@ -882,9 +910,10 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings---parameters-and-options">Action Settings - Parameters and Options</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-event">Action - Send Event</a></li>
               </nav>
   </aside></nav>
 
