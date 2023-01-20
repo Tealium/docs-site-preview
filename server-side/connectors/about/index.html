@@ -811,6 +811,21 @@ Source indicates the origin of the data being acted upon. A source can be an aud
          title="EventStream Connector Consent Categories"/>
 </figure>
 <p>AudienceStream is categorized in the <strong>CDP</strong> consent category and DataAccess is categorized in the <strong>Big Data</strong> consent category. For additional information about server-side consent, see <a href="/iq-tag-management/consent-management/consent-preferences-dialog/manage/">Consent Preferences Manager</a>.</p>
+<h3 id="retries">Retries</h3>
+<p>If a connector action fails, it is retried three times at 1 minute, 5 minute, and 30 minute intervals. If the request is successful on any of the subsequent retry attempts, the request is reported as a success in the UI. If all three retries fail, the request is dropped and reported as an error in the UI.</p>
+<p>A retry is attempted when any of the following error codes occur:</p>
+<ul>
+<li>403 – Forbidden</li>
+<li>409 – Conflict</li>
+<li>429 – Too Many Requests</li>
+<li>500 – Internal Server Error</li>
+<li>503 – Service Unavailable</li>
+</ul>
+<p>A retry is not attempted when a <strong>Response Timeout - Vendor API did not respond within 5000 milliseconds</strong> response is received. The request payload was sent, but the vendor did not send a response within our allowed time of 5 seconds. The request may have succeeded on the vendor&rsquo;s side but because it took longer than 5 seconds to get a response, we treat it as a failure.</p>
+<h3 id="restricted-data">Restricted data</h3>
+<p>Connectors do not honor restricted data. This means that attributes marked as restricted data are always included, whether you are sending them through mappings or as part of the visitor profile. This cannot be changed. Learn more about <a href="/server-side/attributes/restricted-data/">Restricted Data</a>.</p>
+<h3 id="ip-whitelists">IP whitelists</h3>
+<p>If a connector you use has strict rules about which systems it accepts requests from, you can whitelist the IP addresses of the Customer Data Hub. The IP addresses that make connector requests can be found in the <a href="/server-side/administration/ip-allow-list/">IP Addresses for Customer Data Hub</a>.</p>
 <h2 id="screen-navigation">Screen navigation</h2>
 <h3 id="overview-screen">Overview screen</h3>
 <p>The connector overview screen summary displays the following metrics as columns:</p>
@@ -873,23 +888,6 @@ The detailed view includes a sample of the affected code with a timestamp contai
 A CSV file is saved to your default download location.</li>
 <li>Open the CSV file to examine the details or share the file with others for further collaboration.</li>
 </ol>
-<h2 id="restricted-data">Restricted data</h2>
-<p>Connectors do not honor restricted data. This means that attributes marked as restricted data are always included, whether you are sending them through mappings or as part of the visitor profile. This cannot be changed. Learn more about <a href="/server-side/attributes/restricted-data/">Restricted Data</a>.</p>
-<h2 id="ip-whitelists">IP whitelists</h2>
-<p>If a connector you use has strict rules about which systems it accepts requests from, you can whitelist the IP addresses of the Customer Data Hub. The IP addresses that make connector requests can be found in the <a href="/server-side/administration/ip-allow-list/">IP Addresses for Customer Data Hub</a>.</p>
-<h2 id="retries">Retries</h2>
-<p>When a connector action fails, it makes up to 2 additional attempts to trigger the action, which occur immediately.</p>
-<p>A retry is attempted when the following responses are received:</p>
-<ul>
-<li><code>Connection reset</code></li>
-<li><code>Connection closed</code></li>
-<li><code>Connection reset by peer</code></li>
-</ul>
-<p>A retry is not attempted when the following responses are received:</p>
-<ul>
-<li><strong>Response Timeout - Vendor API did not respond within 5000 milliseconds</strong> - The request payload was sent, but the vendor did not send a response within our allowed time of 5 seconds. It&rsquo;s possible that the request succeeded on the vendor&rsquo;s side but since it took longer than 5 seconds to get a response we treat it as a failure.</li>
-</ul>
-<p class="note"><i class="fas fa-info-circle"></i>If the initial action fails, but a retry succeeds, it is logged as a success in the reporting chart.</p>
 
 </div>
 
@@ -934,7 +932,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  January 20, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -951,13 +949,13 @@ No</button>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#terminology">Terminology</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#consent-categories">Consent categories</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#retries">Retries</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#restricted-data">Restricted data</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#ip-whitelists">IP whitelists</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#screen-navigation">Screen navigation</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#overview-screen">Overview screen</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#deprecated-connectors-and-actions">Deprecated connectors and actions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#reporting-chart-for-actions">Reporting chart for actions</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#restricted-data">Restricted data</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#ip-whitelists">IP whitelists</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#retries">Retries</a></li>
               </nav>
   </aside></nav>
 
