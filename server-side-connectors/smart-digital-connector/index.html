@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Microsoft Azure Service Bus Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
+    <title>Smart Digital Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -470,8 +470,8 @@ var utag_data = {
         <a href="/server-side-connectors/mediamath-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mediamath-connector">MediaMath</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/microsoft-azure-event-hubs-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".microsoft-azure-event-hubs-connector">Microsoft Azure Event Hubs</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/microsoft-azure-service-bus-connector/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".microsoft-azure-service-bus-connector">Microsoft Azure Service Bus</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/microsoft-azure-service-bus-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".microsoft-azure-service-bus-connector">Microsoft Azure Service Bus</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/microsoft-dynamics-365-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".microsoft-dynamics-365-connector-setup-guide-for-audiencestream">Microsoft Dynamics 365</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -586,8 +586,8 @@ var utag_data = {
         <a href="/server-side-connectors/sizmek-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sizmek-connector">Sizmek</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/slack-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".slack-connector">Slack</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/smart-digital-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smart-digital-connector">Smart Digital</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/smart-digital-connector/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".smart-digital-connector">Smart Digital</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/smartfocus-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smartfocus-connector">SmartFocus</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -695,241 +695,105 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Microsoft Azure Service Bus Connector Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Smart Digital Connector Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      Microsoft Azure Service Bus is a cloud messaging service between applications and services. This article describes how to configure the service in the Customer Data Hub.
+      This article describes how to set up the Smart Digital connector.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="connector-actions">Connector actions</h2>
+  <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Action Name</strong></th>
-<th><strong>AudienceStream</strong></th>
-<th><strong>EventStream</strong></th>
+<th>Action Name</th>
+<th>AudienceStream</th>
+<th>EventStream</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Send Event Data to Queue or Topic</td>
+<td>Track Event</td>
 <td>✗</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>Send Visitor Data to Queue or Topic</td>
-<td>✓</td>
-<td>✗</td>
-</tr>
-<tr>
-<td>Send Customized Data to Queue or Topic</td>
-<td>✓</td>
 <td>✓</td>
 </tr>
 </tbody>
 </table>
-<h2 id="requirements">Requirements</h2>
+<h2 id="configure-settings">Configure Settings</h2>
+<p>Navigate to the Connector Marketplace and add a new  connector. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">About Connectors</a>.</p>
+<p>After adding the connector, configure the following settings:</p>
 <ul>
-<li>Microsoft Azure Account</li>
-<li>Service Bus Shared Access Policy Credentials</li>
-<li>Queue or Topic to send data to</li>
+<li><strong>Script ID</strong> – <strong>Required.</strong> Identifier of the tracked application.</li>
+<li><strong>Partner ID</strong>  – <strong>Required.</strong> Identifier of the tracking system.</li>
+<li><strong>Partner System</strong>  – <strong>Required.</strong> Friendly name of the tracking system.</li>
+<li><strong>Engine Base URL</strong>  – <strong>Required.</strong> Select engine base URL or provide Tracking API URL as a custom text.</li>
 </ul>
-<h2 id="configure-settings">Configure settings</h2>
-<p>Navigate to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see the <a href="/server-side/connectors/about/">About Connectors</a> article.</p>
-<p>To configure your vendor, follow these steps:</p>
-<ol>
-<li>
-<p>In the Configure tab, provide a title for the Connector instance.</p>
-</li>
-<li>
-<p>Enter Service Bus Namespace, Shared Access Policy Name and Key. For more information, see <a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-create-namespace-portal">Namespace &amp; Shared Access Policies</a>.</p>
-</li>
-<li>
-<p>Click <strong>Test Connection</strong> to verify API connectivity with the provided credentials.</p>
-</li>
-</ol>
-<p class="note"><i class="fas fa-info-circle"></i>Shared Access Policies can claim three type of permissions: <code>Send</code>, <code>Listen</code> and <code>Manage</code>. Provided policy must claim at least <code>Send</code> permission.</p>
-<h2 id="action-settings---parameters-and-options">Action settings - parameters and options</h2>
-<p>Click <strong>Next</strong> or go to the <strong>Actions</strong> tab. It&rsquo;s where you&rsquo;ll set up Actions to trigger.</p>
-<p>This section describes how to set up Parameters and Options for each Action.</p>
-<h3 id="action---send-event-data-to-queue-or-topic">Action - Send Event Data to Queue or Topic</h3>
+<h2 id="actions">Actions</h2>
+<p>Enter a name for the action and select the action type from the drop-down menu.</p>
+<p>The following section describes how to set up parameters and options for each action.</p>
+<h3 id="track-event">Track Event</h3>
 <h4 id="parameters">Parameters</h4>
 <table>
 <thead>
 <tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Queue or Topic</td>
-<td>(REQUIRED): Select a queue or topic option from this list. These options are available only if your configured policy is granted the <strong>Manage</strong> permission. If the permission is not granted, you must manually enter a queue/topic as a Custom Value.</td>
-</tr>
-<tr>
-<td>User Properties</td>
-<td>Map Attribute(s) to a message user property in the <strong>To</strong> dropdown (entered as a Custom Value).</td>
-</tr>
-<tr>
-<td>Broker Properties</td>
-<td>Map Attribute(s) to the message broker property of choice in the <strong>To</strong> dropdown. See available options below.</td>
-</tr>
-<tr>
-<td>Print Attribute Names</td>
-<td>Checking this box will display names for each event data Attribute in the message payload.</td>
-</tr>
-</tbody>
-</table>
-<p class="tip"><i class="fas fa-star"></i>All Actions support Message User and Broker properties. They provide useful and convenient information about a message using key-value pairs. But they are set as HTTP headers and do not reside within the message body. For more information see <a href="https://docs.microsoft.com/en-us/rest/api/servicebus/message-headers-and-properties">Message User &amp; Broker Properties</a></p>
-<h4 id="options---broker-properties">Options - Broker Properties</h4>
-<table>
-<thead>
-<tr>
-<th><strong>Option</strong></th>
+<th><strong>Parameter</strong></th>
 <th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Content Type</td>
-<td>Sets HTTP header <code>Content-Type</code> for message consumers</td>
+<td>Event Name</td>
+<td>(<strong>Required</strong>) Event name.</td>
 </tr>
 <tr>
-<td>Correlation ID</td>
-<td>Unique identifier of the correlation</td>
+<td>Page Name</td>
+<td>(<strong>Required</strong>) Page name.</td>
 </tr>
 <tr>
-<td>Session ID</td>
-<td>Can be used to partition and route messages to particular consumers</td>
+<td>Visitor ID</td>
+<td>Unique identifier of the visitor. If this field is not mapped, it is automatically mapped to the <strong>tealium_visitor_id</strong>.</td>
 </tr>
 <tr>
-<td>Message ID</td>
-<td>Overrides default auto-generated Message ID</td>
+<td>Page URL</td>
+<td>The URL of the current page. If this field is not mapped, it is automatically mapped to the <strong>Current URL</strong>.</td>
 </tr>
 <tr>
-<td>Label</td>
-<td>Application label</td>
+<td>URL Referrer</td>
+<td>The previous URL visited by the user. If this field is not mapped, it is automatically mapped to the <strong>Referring URL</strong>.</td>
 </tr>
 <tr>
-<td>Reply To</td>
-<td>Can be used to specify where to send a response for message consumers</td>
-</tr>
-<tr>
-<td>Time to Live in Seconds</td>
-<td>Expire message after X number of seconds (overrides queue/topic level)</td>
-</tr>
-<tr>
-<td>To</td>
-<td>Send to address</td>
-</tr>
-<tr>
-<td>Scheduled Enqueued Time</td>
-<td>Scheduled date and time at which the message is enqueued</td>
-</tr>
-<tr>
-<td>Reply to Session ID</td>
-<td>Similar to Reply To but targets a session for a response</td>
-</tr>
-<tr>
-<td>Partition Key</td>
-<td>Unique identifier of the partitioned queue or topic</td>
-</tr>
-</tbody>
-</table>
-<h3 id="action---send-visitor-data-to-queue-or-topic">Action - Send Visitor Data to Queue or Topic</h3>
-<h4 id="parameters-1">Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Queue or Topic</td>
-<td>Required. Select a queue or topic option from this list. These options are available only if your configured policy is granted the <strong>Manage</strong> permission. If the permission is not granted, you must manually enter a queue/topic as a Custom Value.</td>
-</tr>
-<tr>
-<td>User Properties</td>
-<td>Map Attribute(s) to a message user property in the <strong>To</strong> dropdown (entered as a Custom Value).</td>
-</tr>
-<tr>
-<td>Broker Properties</td>
-<td>Map Attribute(s) to the message broker property of choice in the <strong>To</strong> dropdown. See available <a href="#options---broker-properties">Broker Properties</a> options.</td>
-</tr>
-<tr>
-<td>Include Current Visit Data</td>
-<td>Checking this box will include current visit data in the message payload.</td>
-</tr>
-<tr>
-<td>Print Attribute Names</td>
-<td>Checking this box will display names for each visitor data Attribute in the message payload.</td>
-</tr>
-</tbody>
-</table>
-<h3 id="action---send-customized-data-to-queue-or-topic-advanced">Action - Send Customized Data to Queue or Topic (Advanced)</h3>
-<h4 id="parameters-2">Parameters</h4>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Queue or Topic</td>
-<td>(REQUIRED): Select a queue or topic option from this list. These options are available only if your configured policy is granted the <strong>Manage</strong> permission. If the permission is not granted, you must manually enter a queue/topic as a Custom Value.</td>
-</tr>
-<tr>
-<td>User Properties</td>
-<td>Map Attribute(s) to a message user property in the <strong>To</strong> dropdown (entered as a Custom Value).</td>
-</tr>
-<tr>
-<td>Broker Properties</td>
-<td>Map Attribute(s) to the message broker property of choice in the <strong>To</strong> dropdown. See available <a href="#options---broker-properties">Broker Properties</a> options.</td>
-</tr>
-<tr>
-<td>Message Data</td>
-<td>(REQUIRED): Construct a custom message body. Map Attribute(s) to names for simple one level JSON format, or reference a template name (surrounded in double curly braces) and select the <strong>Custom Message Definition</strong> option.</td>
+<td>User Agent</td>
+<td>User agent of the client. If this field is not mapped, it is automatically mapped to the <strong>User Agent</strong>.</td>
 </tr>
 <tr>
 <td>Template Variables</td>
-<td>Map Attribute(s) to template variable names. Template variables are available for substitution and rendering of all templates. Refer to our <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a> for details.</td>
+<td>Provide template variables as data input for <strong>Templates</strong>. For usage examples, see <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a>. Name nested template variables with the dot notation. For example: <strong>items.name</strong>. Nested template variables are typically built from data layer list attributes.</td>
 </tr>
 <tr>
 <td>Templates</td>
-<td>Provide one or more template to render. Typically, a single template is used to construct a message data. Refer to our <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Templates Guide</a> for common syntax and extensions.</td>
+<td>Provide templates to be referenced in Tracking Data Parameters. For more information, see <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Trimou Templating Engine Guide</a>. Templates are injected into supported fields by name, with double curly braces. For example: <strong>{{TemplateName}}</strong>.</td>
 </tr>
 </tbody>
 </table>
-<p class="tip"><i class="fas fa-star"></i>If necessary, templates can also be referenced and injected in user and broker properties.</p>
-<h2 id="vendor-documentation">Vendor Documentation</h2>
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/azure/service-bus-messaging/service-bus-create-namespace-portal">Namespace &amp; Shared Access Policies</a></li>
-<li><a href="https://docs.microsoft.com/en-us/rest/api/servicebus/message-headers-and-properties">Message User &amp; Broker Properties</a></li>
-</ul>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/server-side-connectors/microsoft-dynamics-365-connector/"
+  <a href="/server-side-connectors/smartfocus-connector/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Microsoft Dynamics 365</div>
+      <div>SmartFocus</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Microsoft Dynamics 365"</title>
+      <title>"SmartFocus"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -938,15 +802,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/server-side-connectors/microsoft-azure-event-hubs-connector/"
+  <a href="/server-side-connectors/slack-connector/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Microsoft Azure Event Hubs "</title>
+      <title>"Slack "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Microsoft Azure Event Hubs</div>
+      <div>Slack</div>
     </section>
   </a>
   
@@ -976,7 +840,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 23, 2020 
+          <p>This page was last updated:  January 24, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -990,14 +854,10 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector actions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#requirements">Requirements</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure settings</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings---parameters-and-options">Action settings - parameters and options</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-event-data-to-queue-or-topic">Action - Send Event Data to Queue or Topic</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-visitor-data-to-queue-or-topic">Action - Send Visitor Data to Queue or Topic</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-customized-data-to-queue-or-topic-advanced">Action - Send Customized Data to Queue or Topic (Advanced)</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor Documentation</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#actions">Actions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#track-event">Track Event</a></li>
               </nav>
   </aside></nav>
 
