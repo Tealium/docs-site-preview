@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>AWS Kinesis Streams Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
+    <title>Smart Digital Connector Setup Guide | Server-Side Connectors |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -270,8 +270,8 @@ var utag_data = {
         <a href="/server-side-connectors/audiencestore-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestore-connector">AudienceStore</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/awin-conversions-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".awin-conversions-connector">Awin Conversions</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/aws-kinesis-streams-connector/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".aws-kinesis-streams-connector">AWS Kinesis Streams</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/aws-kinesis-streams-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".aws-kinesis-streams-connector">AWS Kinesis Streams</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".aws-kinesis-streams-tealium-provided-credentials-connector">AWS Kinesis Streams (Tealium-Provided Credentials)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -586,8 +586,8 @@ var utag_data = {
         <a href="/server-side-connectors/sizmek-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sizmek-connector">Sizmek</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/slack-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".slack-connector">Slack</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/smart-digital/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smart-digital-connector">Smart Digital</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/smart-digital/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".smart-digital-connector">Smart Digital</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/smartfocus-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smartfocus-connector">SmartFocus</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -695,152 +695,105 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">AWS Kinesis Streams Connector Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Smart Digital Connector Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the AWS Kinesis Streams connector.
+      This article describes how to set up the Smart Digital connector.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
-<ul>
-<li>Amazon Web Services Account</li>
-<li>Identity and Access Management (IAM) User Credentials</li>
-<li>Kinesis Streams</li>
-</ul>
-<h2 id="supported-actions">Supported Actions</h2>
+  <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Action Name</strong></th>
-<th><strong>Trigger on Audience</strong></th>
-<th><strong>Trigger on Streams</strong></th>
+<th>Action Name</th>
+<th>AudienceStream</th>
+<th>EventStream</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Send Event Data to Kinesis Stream</td>
+<td>Track Event</td>
 <td>✗</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>Send Visitor Data to Kinesis Stream</td>
-<td>✓</td>
-<td>✗</td>
-</tr>
-<tr>
-<td>Send Customized Data to Kinesis Stream (Advanced)</td>
-<td>✓</td>
 <td>✓</td>
 </tr>
 </tbody>
 </table>
 <h2 id="configure-settings">Configure Settings</h2>
-<p>Go to the Connector Marketplace and add a new Amazon Kinesis Streams Connector. Read the <a href="/server-side/connectors/about/">Connector Overview</a> article for general instructions on how to add a Connector.</p>
-<p>To configure your vendor, follow these steps:</p>
-<ol>
-<li>
-<p>In the <strong>Configure</strong> tab, provide a title for the <strong>Connector instance</strong>.</p>
-</li>
-<li>
-<p>Provide your IAM user access and secret key.</p>
-</li>
-</ol>
-<p class="note"><i class="fas fa-info-circle"></i>The policy statement attached to your IAM user instance must include the <strong>kinesis:PutRecord</strong> permission. For more details on policies for Kinesis Streams, see <a href="http://docs.aws.amazon.com/streams/latest/dev/controlling-access.html">Kinesis Streams Resources Access</a>).</p>
-<ol>
-<li>
-<p>Select the region where you want to make the API calls.</p>
-</li>
-<li>
-<p><strong>Assume Role Parameters</strong>: Required only if your IAM User is not setup with all necessary permissions (see: <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-api.html">Switching to an IAM Role</a>).</p>
-</li>
-</ol>
+<p>Navigate to the Connector Marketplace and add a new  connector. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">About Connectors</a>.</p>
+<p>After adding the connector, configure the following settings:</p>
 <ul>
-<li>ARN (required): Amazon Resource Name assigned to the role to assume.</li>
-<li>Session Name (required): Unique identifier of the assumed role session.</li>
-<li>External ID (optional): Unique identifier used by third parties when assuming roles in their customers&rsquo; accounts (see: <a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html">How to Use an External ID</a>).</li>
+<li><strong>Script ID</strong> – <strong>Required.</strong> Identifier of the tracked application.</li>
+<li><strong>Partner ID</strong>  – <strong>Required.</strong> Identifier of the tracking system.</li>
+<li><strong>Partner System</strong>  – <strong>Required.</strong> Friendly name of the tracking system.</li>
+<li><strong>Engine Base URL</strong>  – <strong>Required.</strong> Select engine base URL or provide Tracking API URL as a custom text.</li>
 </ul>
-<ol>
-<li>Click <strong>Test Connection</strong> to verify API connectivity with the provided credentials.</li>
-</ol>
-<h2 id="action-settings---parameters-and-options">Action Settings - Parameters and Options</h2>
-<p>Click <strong>Next</strong> or go to the <strong>Actions</strong> tab. It&rsquo;s where you&rsquo;ll set up actions to trigger.</p>
-<p>This section describes how to set up parameters and options for each action.</p>
-<h3 id="action---send-event-data-to-kinesis-stream">Action - Send Event Data to Kinesis Stream</h3>
+<h2 id="actions">Actions</h2>
+<p>Enter a name for the action and select the action type from the drop-down menu.</p>
+<p>The following section describes how to set up parameters and options for each action.</p>
+<h3 id="track-event">Track Event</h3>
 <h4 id="parameters">Parameters</h4>
-<ol>
-<li><strong>Stream Name</strong> (Required): Select the stream to send data to. These options are available only if your configured policy is granted the <strong>kinesis:ListStreams</strong> permission. If the permission is not granted, you must manually enter the stream name as a <strong>Custom Value</strong>.</li>
-<li><strong>Message Options</strong> (Required): Map Attribute(s) to a message option in the <strong>To</strong> drop-down list. See available options below.</li>
-<li><strong>Print Attribute Names</strong>: Checking this box will display names for each event data Attribute in the message payload. And if the Attribute names change in Customer Data Hub, they are automatically reflected in the payload.</li>
-</ol>
-<h4 id="options---message-options">Options - Message Options</h4>
 <table>
 <thead>
 <tr>
-<th><strong>Option</strong></th>
+<th><strong>Parameter</strong></th>
 <th><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Partition Key</td>
-<td>Required: Determines which shard in the stream the message is sent to</td>
+<td>Event Name</td>
+<td>(<strong>Required</strong>) Event name.</td>
 </tr>
 <tr>
-<td>Explicit Hash Key</td>
-<td>A specific hash value that helps determine the shard in the stream the message is sent to. Overrides hashing the partition key.</td>
+<td>Page Name</td>
+<td>(<strong>Required</strong>) Page name.</td>
 </tr>
 <tr>
-<td>Sequence Number for Ordering</td>
-<td>Guarantees strictly increasing sequence numbers for messages from the same client and to the same partition key</td>
+<td>Visitor ID</td>
+<td>Unique identifier of the visitor. If this field is not mapped, it is automatically mapped to the <strong>tealium_visitor_id</strong>.</td>
+</tr>
+<tr>
+<td>Page URL</td>
+<td>The URL of the current page. If this field is not mapped, it is automatically mapped to the <strong>Current URL</strong>.</td>
+</tr>
+<tr>
+<td>URL Referrer</td>
+<td>The previous URL visited by the user. If this field is not mapped, it is automatically mapped to the <strong>Referring URL</strong>.</td>
+</tr>
+<tr>
+<td>User Agent</td>
+<td>User agent of the client. If this field is not mapped, it is automatically mapped to the <strong>User Agent</strong>.</td>
+</tr>
+<tr>
+<td>Template Variables</td>
+<td>Provide template variables as data input for <strong>Templates</strong>. For usage examples, see <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a>. Name nested template variables with the dot notation. For example: <strong>items.name</strong>. Nested template variables are typically built from data layer list attributes.</td>
+</tr>
+<tr>
+<td>Templates</td>
+<td>Provide templates to be referenced in Tracking Data Parameters. For more information, see <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Trimou Templating Engine Guide</a>. Templates are injected into supported fields by name, with double curly braces. For example: <strong>{{TemplateName}}</strong>.</td>
 </tr>
 </tbody>
 </table>
-<p class="tip"><i class="fas fa-star"></i>For more information, see: <a href="http://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html#API_PutRecord_RequestSyntax">Put Record Request Parameters</a></p>
-<h3 id="action---send-visitor-data-to-kinesis-stream">Action - Send Visitor Data to Kinesis Stream</h3>
-<h4 id="parameters-1">Parameters</h4>
-<ol>
-<li><strong>Stream Name</strong> (Required): Select the stream to send data to. These options are available only if your configured policy is granted the <strong>kinesis:ListStreams</strong> permission. If the permission is not granted, you must manually enter the stream name as a Custom Value.</li>
-<li><strong>Message Options</strong> (Required): Map Attribute(s) to a message option in the <strong>To</strong> drop-down list.</li>
-<li><strong>Include Current Visit Data</strong>: Checking this box will include current visit data in the message payload.</li>
-<li><strong>Print Attribute Names</strong>: Checking this box will display names for each visitor data Attribute in the message payload. And if the Attribute names change in Customer Data Hub, they are automatically reflected in the payload.</li>
-</ol>
-<h3 id="action---send-customized-data-to-kinesis-streams-advanced">Action - Send Customized Data to Kinesis Streams (Advanced)</h3>
-<h4 id="parameters-2">Parameters</h4>
-<ol>
-<li><strong>Stream Name</strong> (Required): Select the stream to send data to. These options are available only if your configured policy is granted the <strong>kinesis:ListStreams</strong> permission. If the permission is not granted, you must manually enter the stream name as a Custom Value.</li>
-<li><strong>Message Options</strong> (Required): Map Attribute(s) to a message option in the <strong>To</strong> drop-down list.</li>
-<li><strong>Message Data</strong> (Required): Construct a custom message body. Map Attribute(s) to names for a simple, one-level JSON format, or reference a template name (surrounded in double curly braces) and select the <strong>Custom Message Definition</strong> option.</li>
-<li><strong>Template Variables</strong>: Map Attribute(s) to template variable names. Template variables are available for substitution and rendering of all templates. Refer to our <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a> for details.</li>
-<li><strong>Templates</strong>: Provide one or more templates to render. Typically, a single template is used to construct a message data. Refer to our <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Templates Guide</a> for common syntax and extensions.</li>
-</ol>
-<h2 id="vendor-documentation">Vendor Documentation</h2>
-<ul>
-<li><a href="http://docs.aws.amazon.com/streams/latest/dev/introduction.html">What Is Amazon Kinesis Streams</a></li>
-<li><a href="http://docs.aws.amazon.com/streams/latest/dev/controlling-access.html">Kinesis Streams Resources Access</a></li>
-<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-api.html">Switching to an IAM Role</a></li>
-<li><a href="http://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-user_externalid.html">How to Use an External ID</a></li>
-<li><a href="http://docs.aws.amazon.com/kinesis/latest/APIReference/API_PutRecord.html#API_PutRecord_RequestSyntax">Put Record Request Parameters</a></li>
-</ul>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/server-side-connectors/basis-technologies-dsp-connector/"
+  <a href="/server-side-connectors/smartfocus-connector/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Basis Technologies DSP</div>
+      <div>SmartFocus</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Basis Technologies DSP"</title>
+      <title>"SmartFocus"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -849,15 +802,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/server-side-connectors/aws-kinesis-streams-tealium-provided-credentials-connector/"
+  <a href="/server-side-connectors/slack-connector/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"AWS Kinesis Streams (Tealium-Provided Credentials) "</title>
+      <title>"Slack "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>AWS Kinesis Streams (Tealium-Provided Credentials)</div>
+      <div>Slack</div>
     </section>
   </a>
   
@@ -887,7 +840,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  May 5, 2020 
+          <p>This page was last updated:  January 26, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -901,14 +854,10 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#requirements">Requirements</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#supported-actions">Supported Actions</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings---parameters-and-options">Action Settings - Parameters and Options</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-event-data-to-kinesis-stream">Action - Send Event Data to Kinesis Stream</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-visitor-data-to-kinesis-stream">Action - Send Visitor Data to Kinesis Stream</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-customized-data-to-kinesis-streams-advanced">Action - Send Customized Data to Kinesis Streams (Advanced)</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor Documentation</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#actions">Actions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#track-event">Track Event</a></li>
               </nav>
   </aside></nav>
 
