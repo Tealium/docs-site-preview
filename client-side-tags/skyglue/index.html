@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>iAdvize Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>SkyGlue tag setup guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -456,8 +456,8 @@ var utag_data = {
         <a href="/client-side-tags/hotjar-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".hotjar-tag">Hotjar</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/hybris-integration/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".hybris-integration">Hybris Integration</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/iadvize-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".iadvize-tag">iAdvize</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/iadvize-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iadvize-tag">iAdvize</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/ibm-ubx-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".ibm-ubx-cookie-matching-service-tag">IBM UBX Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -622,8 +622,8 @@ var utag_data = {
         <a href="/client-side-tags/sizmek-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sizmek-cookie-matching-service-tag">Sizmek Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/sizmek-versatag-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sizmek-versatag-tag">Sizmek Versatag</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/skyglue/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".skyglue-tag-setup-guide">SkyGlue tag</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/skyglue/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".skyglue-tag-setup-guide">SkyGlue tag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/smartassistant-11-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smartassistant-11-tag-setup-guide">SMARTASSISTANT 1.1</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -733,94 +733,41 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">iAdvize Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">SkyGlue tag setup guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the iAdvize tag in your Tealium iQ Tag Management account.
+      This article describes how to set up the SkyGlue tag in your Tealium iQ Tag Management account.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="tag-tips">Tag tips</h2>
-<ul>
-<li>Transaction tracking occurs automatically when order ID and cart amount are populated.</li>
-<li>Supports the following e-commerce extension parameters:
-<ul>
-<li>Order ID (<code>_corder</code>)</li>
-<li>Order Sub Total (<code>_csubtotal</code>)</li>
-</ul>
-</li>
-<li>If you want to pass additional parameters in the CustomData tag, add a custom destination in the mappings toolbox.</li>
-</ul>
+  <p>SkyGlue is the simplest and most powerful online visitor behavior tracking tool that complements Google Analytics. You can receive immediate visitor insights and and understand which changes increase conversion rates.</p>
 <h2 id="tag-configuration">Tag configuration</h2>
-<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
+<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag overview</a> article for general instructions on how to add a tag.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
-<li><strong>Site ID</strong>
-<ul>
-<li>Your iAdvize Site ID.</li>
+<li><strong>SG Account</strong>: Your SkyGlue account ID, which is a sequence of letters.</li>
 </ul>
-</li>
-</ul>
-<h2 id="data-mappings">Data mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
-<p>The available categories are:</p>
-<h3 id="standard">Standard</h3>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>sid</code></td>
-<td><ul><li>Site ID</li></ul></td>
-</tr>
-<tr>
-<td><code>lang</code></td>
-<td><ul><li>Language</li></ul></td>
-</tr>
-</tbody>
-</table>
-<h3 id="e-commerce">E-Commerce</h3>
-<table>
-<thead>
-<tr>
-<th>Variable</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>order_id</code></td>
-<td><ul><li>Order/Transaction ID.</li><li>Overrides <code>_corder</code>.</li></ul></td>
-</tr>
-<tr>
-<td><code>order_subtotal</code></td>
-<td><ul><li>Sub Total/Cart Amount.</li><li>Overrides <code>_csubtotal</code>.</li></ul></td>
-</tr>
-</tbody>
-</table>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information about load rules, see the <a href="/iq-tag-management/load-rules/about/">Load rules</a> documentation.</p>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/ibm-ubx-cookie-matching-service-tag/"
+  <a href="/client-side-tags/smartassistant-11-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>IBM UBX Cookie Matching Service</div>
+      <div>SMARTASSISTANT 1.1</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"IBM UBX Cookie Matching Service"</title>
+      <title>"SMARTASSISTANT 1.1"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -829,15 +776,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/hybris-integration/"
+  <a href="/client-side-tags/sizmek-versatag-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Hybris Integration "</title>
+      <title>"Sizmek Versatag "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Hybris Integration</div>
+      <div>Sizmek Versatag</div>
     </section>
   </a>
   
@@ -867,7 +814,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  October 22, 2020 
+          <p>This page was last updated:  December 16, 2022 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -881,11 +828,8 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               </nav>
   </aside></nav>
 
