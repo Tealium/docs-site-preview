@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>MediaMath Cookie Matching Service Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>SAS Customer Intelligence 360 Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -506,8 +506,8 @@ var utag_data = {
         <a href="/client-side-tags/maropost-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".maropost-tag">Maropost</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/maxymiser-async-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".maxymiser-async-tag">Maxymiser (Async)</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/mediamath-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".mediamath-cookie-matching-service-tag">MediaMath Cookie Matching Service</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/mediamath-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mediamath-cookie-matching-service-tag">MediaMath Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/mediamath-tag-basic-configuration/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mediamath-tag-basic-configuration">MediaMath Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -604,8 +604,8 @@ var utag_data = {
         <a href="/client-side-tags/sailthru-personalization-engine-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sailthru-personalization-engine-tag">Sailthru Personalization Engine</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/salsify-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".salsify-tag">Salsify</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/sas-ci-360/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sas-customer-intelligenge-360-tag">SAS Customer Intelligence 360</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/sas-ci-360/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".sas-customer-intelligenge-360-tag">SAS Customer Intelligence 360</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/schema-app-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".schema-app-tag">Schema App</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -735,64 +735,637 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">MediaMath Cookie Matching Service Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">SAS Customer Intelligence 360 Tag Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the MediaMath Cookie Matching Service tag.
+      This article describes how to set up the SAS Customer Intelligence 360 tag.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="tag-tips">Tag Tips</h2>
+  <p>SAS Customer Intelligence 360 provides marketing analytics and dynamic content personalization through its digital intelligence capabilities.</p>
+<h2 id="tag-tips">Tag tips</h2>
+<p>Use mappings to:</p>
 <ul>
-<li>Sends the following server-side attribute back to Tealium:
+<li>Set up event triggers</li>
+<li>Map event-specific parameters to Event Names</li>
+<li>Dynamically override standard config values</li>
+<li>Dynamically override E-Commerce extension values</li>
+</ul>
+<p>Supports the following E-Commerce extension parameters:</p>
 <ul>
-<li><code>mediamathid</code></li>
+<li>Order ID</li>
+<li>Order Total</li>
+<li>Shipping Amount</li>
+<li>Tax Amount</li>
+<li>Customer City</li>
+<li>Customer Country</li>
+<li>Customer Zip</li>
+<li>List of Product IDs</li>
+<li>List of Names</li>
+<li>List of SKUs</li>
+<li>List of Quantities</li>
+<li>List of Prices</li>
+<li>List of Categories</li>
 </ul>
-</li>
-</ul>
-<h2 id="tag-configuration">Tag Configuration</h2>
-<p>First, go to Tealium&rsquo;s tag marketplace and add the MediaMath Cookie Matching Service tag (Learn more about <a href="/iq-tag-management/tags/manage-tags/">how to add a tag</a>).</p>
-<p>After adding the tag, configure the following settings:</p>
+<h2 id="tag-configuration">Tag configuration</h2>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
+<p>When adding the tag, configure the following settings:</p>
 <ul>
-<li>
-<p><strong>Tealium Account</strong></p>
-<ul>
-<li>Optional.</li>
-<li>Your Tealium account</li>
+<li><strong>Server</strong>: Required. This variable is populated with the server address for your region or is based on your CNAME configuration. Typically, this is your domain name. (for example, <code>https://www.[Domain].com</code>).</li>
+<li><strong>Tenant ID</strong>: Required. An alphanumeric value (for example, <code>111aaaaa1111111111111aaa</code>).</li>
+<li><strong>Identity</strong>: Optional. An alphanumeric value (for example, <code>111aaaaa1111111111111aaa</code>).</li>
+<li><strong>Name</strong>: The location of the identity information. Required if Identity tracking is enabled.</li>
+<li><strong>Type</strong>: The type of known identity. Required if Identity tracking is enabled.</li>
+<li><strong>Source</strong>: The source of the identity information. Default value is <code>cookie</code>.</li>
+<li><strong>Obscure</strong>: Obscure the value of the identity name.</li>
 </ul>
-</li>
-<li>
-<p><strong>Tealium Profile</strong></p>
-<ul>
-<li>Optional.</li>
-<li>Your Tealium profile.</li>
-</ul>
-</li>
-</ul>
-<h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
+<h2 id="data-mappings">Data mappings</h2>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
 <p>The available categories are:</p>
 <h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>tealium_account</code></td>
-<td>Tealium Account</td>
+<td style="text-align:left">Server <code>server</code></td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td><code>tealium_profile</code></td>
-<td>Tealium Profile</td>
+<td style="text-align:left">Tenant ID <code>tenantID</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Identity <code>identity</code></td>
+<td style="text-align:left">Boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">Name <code>name</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Type <code>type</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Source <code>source</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Obscure <code>obscure</code></td>
+<td style="text-align:left">Boolean</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-commerce">E-Commerce</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Order ID <code>orderId</code> (Overrides <code>_corder</code>)</td>
+<td style="text-align:left">Number, String</td>
+</tr>
+<tr>
+<td style="text-align:left">Order Total <code>totalCartValue</code> (Overrides <code>_ctotal</code>)</td>
+<td style="text-align:left">Number, String</td>
+</tr>
+<tr>
+<td style="text-align:left">Customer City <code>billingCity</code> (Overrides <code>_ccity</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Customer Country <code>billingCountry</code> (Overrides <code>_ccountry</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Customer Zip <code>billingPostcode</code> (Overrides <code>_czip</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Customer Region <code>billingRegion</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Delivery Type <code>deliveryType</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Payment Type <code>paymentType</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping City <code>shippingCity</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping Amount <code>shippingCost</code> (Overrides <code>_cship</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping Country <code>shippingCountry</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping Zip <code>shippingPostcode</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping Region <code>shippingRegion</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Tax Amount <code>tax</code> (Overrides <code>_ctax</code>)</td>
+<td style="text-align:left">Number, String</td>
+</tr>
+<tr>
+<td style="text-align:left">ID <code>id</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Product IDs <code>productId</code> (Overrides <code>_cprod</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Product SKUs <code>productSKU</code> (Overrides <code>_csku</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Product Names <code>productName</code> (Overrides <code>_cprodname</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Product Quantities <code>quantity</code> (Overrides <code>_cquan</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Product Prices <code>unitPrice</code> (Overrides <code>_cprice</code>)</td>
+<td style="text-align:left">[Array]</td>
+</tr>
+<tr>
+<td style="text-align:left">Group <code>group</code> (Overrides <code>_ccat</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Cart ID <code>cartId</code></td>
+<td style="text-align:left">[Number, String]</td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Name <code>cartName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Type <code>cartType</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Savings Message <code>savingsMessage</code></td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Shipping Message <code>shippingMessage</code></td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Availability Message <code>availabilityMessage</code></td>
+<td style="text-align:left">Array</td>
+</tr>
+<tr>
+<td style="text-align:left">Spot Name <code>spotName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="click">Click</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Alt Text <code>altText</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Anchor Id <code>anchorId</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Anchor Name <code>anchorName</code></td>
+<td style="text-align:left">Boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">Element Tag Name <code>elementTagName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">onClick <code>onClick</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Target Inner Text <code>targetInnerText</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Target Selector Path <code>targetSelectorPath</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Uri <code>uri</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="media">Media</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Duration <code>duration</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Player <code>player</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Position <code>position</code></td>
+<td style="text-align:left">Boolean</td>
+</tr>
+<tr>
+<td style="text-align:left">Url <code>url</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Uri <code>uri</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="promotion">Promotion</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Record Type <code>recordType</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Creative Name <code>creativeName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Placement Id <code>placementId</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Tracking Code <code>trackingCode</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="load">Load</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Page Title <code>pageTitle</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Referrer <code>referrer</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Uri <code>uri</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="identity">Identity</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Login Id <code>loginId</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Login Event Type <code>loginEventType</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Obfuscate Fields <code>obfuscateFields</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="custom">Custom</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">customName <code>customName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">customGroupName <code>customGroupName</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">customRevenue <code>customRevenue</code></td>
+<td style="text-align:left">String</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-triggers">Event Triggers</h3>
+<p>To map events, refer to <a href="/iq-tag-management/data-mappings/manage/#add-an-event-mapping">Create an Event Mapping</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Cart, Cart View Action (<code>cart-cartview</code>)</td>
+<td style="text-align:left"><code>cart-cartview</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart, Checkout Action (<code>cart-checkout</code>)</td>
+<td style="text-align:left"><code>cart-checkout</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart, Purchase Action (<code>cart-purchase</code>)</td>
+<td style="text-align:left"><code>cart-purchase</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Add Action (<code>cartaction-add</code>)</td>
+<td style="text-align:left"><code>cartaction-add</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Update Action (<code>cartaction-update</code>)</td>
+<td style="text-align:left"><code>cartaction-update</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Remove Action (<code>cartaction-remove</code>)</td>
+<td style="text-align:left"><code>cartaction-remove</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, End Action (<code>media-end</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, Start Action (<code>media-start</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, Stop Action (<code>media-stop</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Change (<code>change</code>)</td>
+<td style="text-align:left"><code>change</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Click (<code>click</code>)</td>
+<td style="text-align:left"><code>click</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Clickthrough (<code>clickthrough</code>)</td>
+<td style="text-align:left"><code>clickthrough</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Content Change (<code>contentchange</code>)</td>
+<td style="text-align:left"><code>contentchange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Attach Identity Blocking (<code>attachIdentityBlocking</code>)</td>
+<td style="text-align:left"><code>attachIdentityBlocking</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Attach Identity (<code>attachIdentity</code>)</td>
+<td style="text-align:left"><code>attachIdentity</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Detach Identity Cross Channel (<code>detachIdentityCrossChannel</code>)</td>
+<td style="text-align:left"><code>detachIdentityCrossChannel</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Detach Identity (<code>detachIdentity</code>)</td>
+<td style="text-align:left"><code>detachIdentity</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Document (<code>document</code>)</td>
+<td style="text-align:left"><code>document</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Impression (<code>impression</code>)</td>
+<td style="text-align:left"><code>impression</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Impression Viewable (<code>impressionViewable</code>)</td>
+<td style="text-align:left"><code>impressionViewable</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Internal Search (<code>internalSearch</code>)</td>
+<td style="text-align:left"><code>internalSearch</code></td>
+</tr>
+<tr>
+<td style="text-align:left">JS Var Change (<code>jsvarchange</code>)</td>
+<td style="text-align:left"><code>jsvarchange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Load (<code>load</code>)</td>
+<td style="text-align:left"><code>load</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Product View (<code>productView</code>)</td>
+<td style="text-align:left"><code>productView</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Promotion (<code>promotion</code>)</td>
+<td style="text-align:left"><code>promotion</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Submit (<code>submit</code>)</td>
+<td style="text-align:left"><code>submit</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Visibility Change (<code>visibilityChange</code>)</td>
+<td style="text-align:left"><code>visibilityChange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Custom (<code>custom</code>)</td>
+<td style="text-align:left"><code>custom</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-specific-parameters">Event-specific Parameters</h3>
+<p>To map events, refer to <a href="/iq-tag-management/data-mappings/manage/#add-an-event-mapping">Create an Event Mapping</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Cart, Cart View Action (<code>cart-cartview</code>)</td>
+<td style="text-align:left"><code>cart-cartview</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart, Checkout Action (<code>cart-checkout</code>)</td>
+<td style="text-align:left"><code>cart-checkout</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart, Purchase Action (<code>cart-purchase</code>)</td>
+<td style="text-align:left"><code>cart-purchase</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Add Action (<code>cartaction-add</code>)</td>
+<td style="text-align:left"><code>cartaction-add</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Update Action (<code>cartaction-update</code>)</td>
+<td style="text-align:left"><code>cartaction-update</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Cart Action, Remove Action (<code>cartaction-remove</code>)</td>
+<td style="text-align:left"><code>cartaction-remove</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, End Action (<code>media-end</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, Start Action (<code>media-start</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Media, Stop Action (<code>media-stop</code>)</td>
+<td style="text-align:left"><code>media</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Change (<code>change</code>)</td>
+<td style="text-align:left"><code>change</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Click (<code>click</code>)</td>
+<td style="text-align:left"><code>click</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Clickthrough (<code>clickthrough</code>)</td>
+<td style="text-align:left"><code>clickthrough</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Content Change (<code>contentchange</code>)</td>
+<td style="text-align:left"><code>contentchange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Attach Identity Blocking (<code>attachIdentityBlocking</code>)</td>
+<td style="text-align:left"><code>attachIdentityBlocking</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Attach Identity (attachIdentity)</td>
+<td style="text-align:left"><code>attachIdentity</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Detach Identity Cross Channel (<code>detachIdentityCrossChannel</code>)</td>
+<td style="text-align:left"><code>detachIdentityCrossChannel</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Detach Identity (<code>detachIdentity</code>)</td>
+<td style="text-align:left"><code>detachIdentity</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Document (<code>document</code>)</td>
+<td style="text-align:left"><code>document</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Impression (<code>impression</code>)</td>
+<td style="text-align:left"><code>impression</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Impression Viewable (<code>impressionViewable</code>)</td>
+<td style="text-align:left"><code>impressionViewable</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Internal Search (<code>internalSearch</code>)</td>
+<td style="text-align:left"><code>internalSearch</code></td>
+</tr>
+<tr>
+<td style="text-align:left">JS Var Change (<code>jsvarchange</code>)</td>
+<td style="text-align:left"><code>jsvarchange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Load (<code>load</code>)</td>
+<td style="text-align:left"><code>load</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Product View (<code>productView</code>)</td>
+<td style="text-align:left"><code>productView</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Promotion (<code>promotion</code>)</td>
+<td style="text-align:left"><code>promotion</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Submit (<code>submit</code>)</td>
+<td style="text-align:left"><code>submit</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Visibility Change (<code>visibilityChange</code>)</td>
+<td style="text-align:left"><code>visibilityChange</code></td>
+</tr>
+<tr>
+<td style="text-align:left">Custom (<code>custom</code>)</td>
+<td style="text-align:left"><code>custom</code></td>
 </tr>
 </tbody>
 </table>
@@ -802,14 +1375,14 @@ var utag_data = {
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/mediamath-tag-basic-configuration/"
+  <a href="/client-side-tags/schema-app-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>MediaMath Tag Setup Guide</div>
+      <div>Schema App</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"MediaMath Tag Setup Guide"</title>
+      <title>"Schema App"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -818,15 +1391,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/maxymiser-async-tag/"
+  <a href="/client-side-tags/salsify-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Maxymiser (Async) "</title>
+      <title>"Salsify "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Maxymiser (Async)</div>
+      <div>Salsify</div>
     </section>
   </a>
   
@@ -856,7 +1429,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  April 1, 2020 
+          <p>This page was last updated:  February 9, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -870,10 +1443,20 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag Tips</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag Configuration</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data Mappings</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#click">Click</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#media">Media</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#promotion">Promotion</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load">Load</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#identity">Identity</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#custom">Custom</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-triggers">Event Triggers</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-specific-parameters">Event-specific Parameters</a></li>
               </nav>
   </aside></nav>
 
