@@ -802,7 +802,8 @@ var utag_data = {
 <p><strong>Visitor Delete</strong></p>
 <p>Visitor profiles are deleted if they haven&rsquo;t been updated during the profile retention period. For example, for a profile retention period of 90 days, all visitor profiles that have not been updated in the previous 90 days will be deleted.</p>
 <h4 id="eventdbaudiencedb">EventDB/AudienceDB</h4>
-<p>New data is stored in EventDB and AudienceDB up to 1 hour after it reaches EventStore/AudienceStore.</p>
+<p>If you configure an Event Feed to send data to EventDB, the data will arrive in EventDB up to 1 hour after it reaches EventStore.</p>
+<p>Audience data will arrive in AudienceDB 1 hour after it reaches AudienceStore, regardless of how the AudienceStore connector is configured.</p>
 
 </div>
 
@@ -863,7 +864,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  February 10, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
