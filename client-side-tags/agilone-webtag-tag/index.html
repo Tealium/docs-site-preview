@@ -803,7 +803,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p class="note"><i class="fas fa-info-circle"></i>The Event Entity Custom Data is not the same as the Event Custom Data category.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>The Event Entity Custom Data is not the same as the Event Custom Data category.</p>
 <h3 id="e-commerce">E-Commerce</h3>
 <p>Since the AgilOne Web Tag Tag is e-commerce enabled, it will automatically use the default E-Commerce Extension mappings. Manually mapping in this category is generally not needed unless:</p>
 <ul>
@@ -1010,7 +1010,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p class="note"><i class="fas fa-info-circle"></i>To send data for cart updates (addition or removal), use the <code>_cprod</code> E-Commerce mapping. Refer to the <a href="#sending-cart-updates">Sending Cart Updates section</a> for more.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>To send data for cart updates (addition or removal), use the <code>_cprod</code> E-Commerce mapping. Refer to the <a href="#sending-cart-updates">Sending Cart Updates section</a> for more.</p>
 <h3 id="event-custom-data">Event Custom Data</h3>
 <p>Use these mappings to send additional data for <a href="#triggering-standard-events">standard events</a> only.</p>
 <table>
@@ -1111,7 +1111,7 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
-<p class="note"><i class="fas fa-info-circle"></i>To send additional custom data with a standard event, map in the <a href="#event-custom-data">Event Custom Data mappings under Standard Category</a>.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>To send additional custom data with a standard event, map in the <a href="#event-custom-data">Event Custom Data mappings under Standard Category</a>.</p>
 <h3 id="triggering-non-standard-events">Triggering Non-standard Events</h3>
 <p>If the event you want to trigger is not offered in the Tealium Events Extension, there is an alternative. You may use the Set Data Value Extension instead to set the event trigger and event condition. Then, map the trigger variable to the Event Name destination (under Standard Category).</p>
 <p>The Brand View event is an example of a non-standard event. Follow these steps to trigger the event:</p>
@@ -1129,7 +1129,7 @@ var utag_data = {
 <p>Add an event condition to evaluate the customer&rsquo;s brand view action. For example, <code>event_type</code> equals <code>brand_view</code>.</p>
 </li>
 </ol>
-<p class="tip"><i class="fas fa-star"></i>If you don&rsquo;t find the Variable you are looking, you may add it on the fly.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>If you don&rsquo;t find the Variable you are looking, you may add it on the fly.</p>
 <ol>
 <li>Go to the Tag&rsquo;s Data Mappings tab and map the <code>event_name</code> Variable to the Event Name destination (Standard category).</li>
 </ol>
@@ -1141,7 +1141,7 @@ var utag_data = {
 <li>Go to the E-Commerce Extension and map the newly added or removed cart item to <code>_cprod</code>. This will capture the updated cart items separately.</li>
 </ol>
 <p>When the add-to-cart/remove-from-cart event fires on a page, our Tag template will automatically piece together the added/removed item(s) with the current cart data and send the complete cart list.</p>
-<p class="note"><i class="fas fa-info-circle"></i>To correctly identify a removed cart item, you must map it to both E-Commerce <code>cprod</code> and Current Cart.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>To correctly identify a removed cart item, you must map it to both E-Commerce <code>cprod</code> and Current Cart.</p>
 <h3 id="vendor-documentation">Vendor Documentation</h3>
 <ul>
 <li><a href="http://www.agilone.com/academy/">AgilOne Resource</a></li>

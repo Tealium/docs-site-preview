@@ -805,7 +805,7 @@ var utag_data = {
 <h2 id="prioritization">Prioritization</h2>
 <p>AudienceStream separately provides an option to set delays to prevent individual actions from triggering immediately. You can optionally configure delays in combination with a cooldown.</p>
 <p>The highest priority number specified becomes the highest priority. For example, a priority of <code>2</code> is higher than a priority of <code>1</code>. All non-capped actions trigger independently without delay and are not affected by the cooldown.</p>
-<p class="note"><i class="fas fa-info-circle"></i>If two actions in the same cooldown group have the same priority, only one of them will trigger. If you need both actions to trigger, use separate cooldown groups.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>If two actions in the same cooldown group have the same priority, only one of them will trigger. If you need both actions to trigger, use separate cooldown groups.</p>
 <h2 id="cooldown-with-frequency-capping">Cooldown with Frequency Capping</h2>
 <p>When visitors qualify for numerous actions, such as emails, you can control the triggering by restricting the frequency of actions within a specific time period and then decide which actions to trigger and which to ignore. This will avoid spamming.</p>
 <p>Cooldown only applies when an action is enabled for <strong>Frequency Cap</strong> and the connector configuration is assigned an action priority number. The action priority number dictates which actions to trigger in the event that several actions in the same cooldown are fulfilled simultaneously.</p>

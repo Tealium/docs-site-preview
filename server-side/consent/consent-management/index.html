@@ -854,7 +854,7 @@ To allow visitor profiles to be stored in AudienceDB, the visitor must opt in to
 <li>Remove the <code>consent_categories</code> array to allow server-side products to operate unrestricted.</li>
 <li>Manually add conditions based on <code>consent_categories_granted</code> to each event feed and audience.</li>
 </ol>
-<p class="note"><i class="fas fa-info-circle"></i>This will disable all automatic enforcement and consent-based blocking. To avoid tracking without end-user permission, ensure you are extremely cautious with your configuration when using this workaround.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This will disable all automatic enforcement and consent-based blocking. To avoid tracking without end-user permission, ensure you are extremely cautious with your configuration when using this workaround.</p>
 <h2 id="manual-enforcement-instructions">Manual enforcement instructions</h2>
 <p>This section describes server-side consent management after disabling automatic enforcement.</p>
 <h3 id="step-1-eventstream-connectors-functions-and-eventstore">Step 1: EventStream Connectors, Functions, and EventStore</h3>

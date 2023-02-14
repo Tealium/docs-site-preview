@@ -766,19 +766,19 @@ var utag_data = {
 <li><strong>Merchant ID</strong> (Optional): Enter the numeric merchant identifier provided to you by Shopzilla. This can be found in your Shopzilla Merchant account. For example, <code>170739</code>.</li>
 <li><strong>Tracker Domain</strong>: Choose the domain that your code snippet is pointing to. The default selection is <code>shopzilla.com</code>.</li>
 </ol>
-<p class="note"><i class="fas fa-info-circle"></i>You have the option to dynamically set the Merchant ID and Tracker Domain values via the <strong>Data Mappings</strong> toobox. Refer to the <a href="#mappings">Setting up Mappings</a> section below.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>You have the option to dynamically set the Merchant ID and Tracker Domain values via the <strong>Data Mappings</strong> toobox. Refer to the <a href="#mappings">Setting up Mappings</a> section below.</p>
 <h2 id="apply-load-rules">Apply Load Rules</h2>
 <p><a href="https://community.tealiumiq.com/t5/1-Getting-Started-Documentation/Load-Rules-Creation/ta-p/9422">Load Rules</a> determine when and where to load an instance of this tag. The &lsquo;Load on All Pages&rsquo; rule is the default Load Rule. To load this tag on a specific page, create a new load rule with the relevant conditions.</p>
 <h3 id="best-practice">Best Practice</h3>
 <p>Set up load rule conditions to load this tag on the order confirmation page, one that appears post conversion (Thank You/Receipt page).</p>
 <h2 id="set-up-mappings">Set up Mappings</h2>
 <p>Mapping is the simple process of sending data from a data source, in your Data Layer, to the matching destination variable of the vendor tag. The destination variables for this tag are available in the Mapping toolkit.</p>
-<p class="note"><i class="fas fa-info-circle"></i>For instructions on how to map a Data Source to a tag destination, see <a href="https://community.tealiumiq.com/t5/2-Tealium-iQ-Documentation/Data-Source-Types/ta-p/10645#mapping_data_sources">Mapping Data Sourc</a>es.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>For instructions on how to map a Data Source to a tag destination, see <a href="https://community.tealiumiq.com/t5/2-Tealium-iQ-Documentation/Data-Source-Types/ta-p/10645#mapping_data_sources">Mapping Data Sourc</a>es.</p>
 <ul>
 <li><strong>Merchant ID</strong>: This is the <code>mid</code> parameter in the tracking code. Map to this variable to send your Shopzilla merchant identifier.</li>
 <li><strong>Tracker Domain</strong>: This is the domain specified in your code snippet.</li>
 </ul>
-<p class="note"><i class="fas fa-info-circle"></i>We recommend the use of <a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">E-Commerce Extension</a> for mapping Order Value, Order ID and Units Ordered destinations. When the Extension is properly configured and your site is utilizing E-commerce parameters in the utag data object, the Extension will automatically map those variables to the appropriate destinations. The following mappings, however, are available to this tag should you need to override the equivalent Extension variables.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>We recommend the use of <a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">E-Commerce Extension</a> for mapping Order Value, Order ID and Units Ordered destinations. When the Extension is properly configured and your site is utilizing E-commerce parameters in the utag data object, the Extension will automatically map those variables to the appropriate destinations. The following mappings, however, are available to this tag should you need to override the equivalent Extension variables.</p>
 <ul>
 <li>
 <p><strong>Customer Type</strong> (1=new 0=returning): This indicates the <code>cust_type</code> parameter with two possible values:</p>

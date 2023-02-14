@@ -779,12 +779,12 @@ Add a data mapping for each variable to the corresponding GUA field. (<a href="/
 <li><strong>Add a Set Data Values Extension</strong><br>
 For each event to be tracked in GUA, you will add a <a href="/iq-tag-management/extensions/extensions-list/set-data-values-extension/">Set Data Values extension</a> to set the GUA event variables to the expected values and uses a condition that identifies the event.</li>
 </ol>
-<p class="tip"><i class="fas fa-star"></i>These extensions only set GUA variables, so scope them to the GUA tag.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>These extensions only set GUA variables, so scope them to the GUA tag.</p>
 <p>In this example, the condition identifies when the <code>video_play</code> event occurs on the <code>Fall Promo</code> video.</p>
 <p>Save and publish to test your changes.</p>
 <h2 id="tracking-events-with-ga-events-array">Tracking events with GA events array</h2>
 <p>This method uses a special array variable from the GUA tag template called <code>ga_events</code> that lets you trigger multiple events in one call or bypass mapping. This method uses just one mapping for <code>ga_events</code> then relies on JavaScript code to push GUA event objects. This method is convenient if your implementation tracks a lot of custom events in GUA because it allows you to set the GUA variables and events directly rather than configuring them as extensions and mappings.</p>
-<p class="note"><i class="fas fa-info-circle"></i>This method is only supported in Google Universal Analytics.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This method is only supported in Google Universal Analytics.</p>
 <p>Follow these steps to use the <code>ga_events</code> array for GUA event tracking:</p>
 <ol>
 <li>Create a new data layer variable named <code>ga_events_array</code>.</li>

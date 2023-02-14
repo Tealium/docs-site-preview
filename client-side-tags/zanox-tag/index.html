@@ -766,7 +766,7 @@ var utag_data = {
 <li><strong>PPS/PPL ID</strong> (Optional): Enter the Tag identifier in this field if you select the PPS/PPL Tag Type. The id appears at the end of the tracking pixel provided by Zanox. If you select the MasterTag Type, leave this field blank. Example: The alphanumeric value at the end of this URL, //ad.zanox.com/ppl/?2173D3211067525 is your PPL ID.</li>
 <li><strong>Default zx_class</strong> (Optional): Enter the value of the class attribute (excluding the &lsquo;zx&rsquo; prefix&rsquo;) in this field if you select the MasterTag Type. If you prefer to populate this field dynamically, you must map to the div container class id in the Mapping toolbox (see <a href="#mappings">Setting up Mappings</a>) Example: 48EFE82D8GE72DE1BBE2</li>
 </ul>
-<p class="tip"><i class="fas fa-star"></i>Zanox recommends loading only one instance of MasterTag on a page. Do not use an iFrame to load MasterTag unless it renders all the parameters properly.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>Zanox recommends loading only one instance of MasterTag on a page. Do not use an iFrame to load MasterTag unless it renders all the parameters properly.</p>
 <h2 id="load-rules">Load rules</h2>
 <p>Load the tag on all pages or set conditions for when your tag will load. For more information about load rules, see the <a href="/iq-tag-management/load-rules/about/">Load Rules</a> documentation.</p>
 <p><strong>Best Practices</strong>:</p>
@@ -777,7 +777,7 @@ var utag_data = {
 </ul>
 <h2 id="data-mappings">Data mappings</h2>
 <p><a href="https://community.tealiumiq.com/posts/762144#mapping">Mapping</a> is the simple process of sending data from a data source, in your Data Layer, to the matching destination variable of the vendor Tag. The destination variables for this Tag are available in the Mapping toolbox. For ease of use, the variables are grouped into different categories: Standard and MasterTag.</p>
-<p class="note"><i class="fas fa-info-circle"></i>This tag requires that the <a href="https://community.tealiumiq.com/posts/550011">E-Commerce Extension</a> be configured beforehand. Setting up the appropriate Order and Product Variables (<code>_corder</code>, <code>_ccurrency</code>, <code>_cprod</code>, <code>_cprice</code>, and <code>_cquan</code>) makes it possible for the Extension to automatically map their values to the corresponding destinations.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This tag requires that the <a href="https://community.tealiumiq.com/posts/550011">E-Commerce Extension</a> be configured beforehand. Setting up the appropriate Order and Product Variables (<code>_corder</code>, <code>_ccurrency</code>, <code>_cprod</code>, <code>_cprice</code>, and <code>_cquan</code>) makes it possible for the Extension to automatically map their values to the corresponding destinations.</p>
 <h3 id="standard-tab">Standard Tab</h3>
 <p>Map to the destination variable(s) in this tab if using the PPS or the PPL Tag.</p>
 <table>
