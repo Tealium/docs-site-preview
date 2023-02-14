@@ -3029,14 +3029,20 @@
     <loc>https://docs-preview.tealium.com/predict/strategy/start-training/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
   </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/global-privacy-control/about/</loc>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
+  </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
   </url><url>
-    <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/global-privacy-control/</loc>
-    <lastmod>2023-01-07T08:47:11-08:00</lastmod>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/global-privacy-control/client-side-support-gpc/</loc>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/consent-management/global-privacy-control/</loc>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/audiencestore-data-guide/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
@@ -3359,6 +3365,9 @@
   </url><url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/troubleshooting/nav-timing-data/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/server-side/consent/server-side-support-gpc/</loc>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/settings/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
@@ -7003,7 +7012,7 @@
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/early-access/consent/custom-cmp/</loc>
-    <lastmod>2023-01-30T17:34:25+00:00</lastmod>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/glossary/gloss-cdh/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
@@ -7202,6 +7211,9 @@
   </url><url>
     <loc>https://docs-preview.tealium.com/client-side-tags/google-cookie-matching-service/</loc>
     <lastmod>2023-01-09T17:35:32-08:00</lastmod>
+  </url><url>
+    <loc>https://docs-preview.tealium.com/glossary/gloss-gpc/</loc>
+    <lastmod>2023-02-14T15:59:40+00:00</lastmod>
   </url><url>
     <loc>https://docs-preview.tealium.com/</loc>
     <lastmod>2023-02-01T17:51:28-08:00</lastmod>
