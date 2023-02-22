@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Clicktale Carmel Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>AcuityAds Universal Pixel Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -208,8 +208,8 @@ var utag_data = {
         <a href="/client-side-tags/acoustic-digital-analytics-cheatsheet/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-digital-analytics-pixel-parameter-cheatsheet">Acoustic Digital Analytics Cheatsheet</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/acton-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acton-tag">ActOn</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/acuityads-universal-pixel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acuityads-universal-pixel-tag">AcuityAds Universal Pixel</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/acuityads-universal-pixel-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".acuityads-universal-pixel-tag">AcuityAds Universal Pixel</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/acxiom-real-identity-rtag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acxiom-real-identity-rtag-setup-guide">Acxiom Real Identity rTag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -320,8 +320,8 @@ var utag_data = {
         <a href="/client-side-tags/cj-affiliate-formerly-commission-junction-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".cj-affiliate-formerly-commission-junction-tag">CJ Affiliate (formerly Commission Junction)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/cj-affiliate-mobile-application-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".cj-affiliate-mobile-application-tag">CJ Affiliate Mobile Application</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/clicktale-carmel-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".clicktale-carmel-tag">Clicktale Carmel</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/clicktale-carmel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".clicktale-carmel-tag">Clicktale Carmel</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/coherent-path-signal-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".coherent-path-signal-tag">Coherent Path Signal</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -739,144 +739,99 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Clicktale Carmel Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">AcuityAds Universal Pixel Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the Clicktale Carmel tag in your Tealium iQ Tag Management account.
+      This article describes how to set up the AcuityAds Universal Pixel Tag in your Tealium iQ Tag Management account.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="tag-tips">Tag tips</h2>
+  <p>With the Acuity tag, you can systematically and mathematically take the risk, mystery and waste out of the media buying process to ensure – and even prove – that every advertising dollar can be spent wisely and well.</p>
+<h2 id="tag-tips">Tag tips</h2>
 <ul>
-<li>Override the standard config values using mappings.</li>
-<li>To pass audiences and badges to Clicktale:
+<li>
+<p>Use mappings to override the value for Pixel Key or E-commerce variables and set <strong>Page Group Number</strong>.</p>
+</li>
+<li>
+<p>Supports these E-Commerce extension parameters:</p>
 <ul>
-<li>Contact your Clicktale representative to enable the receiving of this data.</li>
-<li>When mapping a badge, enter the name as it should appear in Clicktale.</li>
-<li>Set <strong>Send All Audiences</strong> to <code>True</code> to send all audiences to Clicktale in the following format:<br>
-<code>window.ClicktaleEventHandler([&quot;Tealium Audience: AUDIENCE NAME&quot;, ...]);</code></li>
+<li>Order ID (<code>_corder</code>)</li>
+<li>Order Total (<code>_ctotal</code>) Product ID (<code>_cprod</code>)</li>
 </ul>
 </li>
-<li>Set <strong>Send Replay Link</strong> to <code>True</code> to make your Clicktale replay link available as the server-side attribute <code>clicktale_replay_link</code>.</li>
-<li>Contact your Clicktale representative to enable the generation of the replay link.</li>
-<li>Server-side attributes will appear in the current account and profile.</li>
-<li>Use a mapping to override <code>tealium_profile</code> .</li>
 </ul>
 <h2 id="tag-configuration">Tag configuration</h2>
-<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
-<li><strong>Title</strong>
-<ul>
-<li>Required.</li>
-<li>Identifies the tag instance.</li>
-<li>Clicktale Carmel is the default name.</li>
-<li>When using multiple tags by the same vendor, assign a unique name</li>
+<li><strong>Pixel Key</strong>: The pixel&rsquo;s unique key value.</li>
 </ul>
-</li>
-<li><strong>Partition</strong>
-<ul>
-<li>The partition where data is sent.</li>
-<li>Example: <strong>www07</strong></li>
-</ul>
-</li>
-<li><strong>Project GUID / PTC ID</strong>
-<ul>
-<li>Clicktale Project GUID</li>
-<li>Example: <strong>11111111-1111-1111-1111-11111111111</strong></li>
-</ul>
-</li>
-<li><strong>Send Replay Link</strong>
-<ul>
-<li>Select <strong>True</strong> to make your Clicktale Replay Link available as a server-side attribute.</li>
-</ul>
-</li>
-<li><strong>Send All Audiences</strong>
-<ul>
-<li>Select <strong>True</strong> to send each audience to Clicktale in the format window.</li>
-<li>Example: <code>ClicktaleEventHandler([&quot;Tealium Audience: AUDIENCE NAME&quot;, ...]);.</code></li>
-</ul>
-</li>
-<li><strong>Send Events to ClickTale</strong>
-<ul>
-<li>Select <strong>True</strong> to send Event Data to Clicktale.</li>
-</ul>
-</li>
-</ul>
-<h2 id="applying-load-rules">Applying load rules</h2>
-<p><a href="https://community.tealiumiq.com/posts/572034">Load Rules</a> determine when and where to load an instance of this tag. The &lsquo;Load on All Pages&rsquo; rule is the default load rule. To load this tag on a specific page, create a new load rule with the relevant conditions.</p>
-<ul>
-<li>Load this Tag on the page where you want to track the visitor&rsquo;s mouse movements.</li>
-<li>Tealium recommends that this tag loads after the page has rendered completely.</li>
-</ul>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
 <h2 id="data-mappings">Data mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
 <p>The available categories are:</p>
 <h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>partition</code></td>
-<td><ul><li>String</li><li>Partition.</li><li>The partition where data is sent.</li><li>Map to this variable to dynamically configure the server partition value.</li></ul></td>
+<td style="text-align:left">Pixel Key <code>pixel_key</code></td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td><code>project_guid</code></td>
-<td><ul><li>String</li><li>Project GUID.</li><li>Map to this variable to set the project guide field.</li></ul></td>
-</tr>
-<tr>
-<td><code>send_replay_link</code></td>
-<td><ul><li>String, Boolean</li><li>Send Clicktale Replay Link</li><li>Values are <strong>true</strong> or <strong>false</strong>.</li></ul></td>
-</tr>
-<tr>
-<td><code>send_audiences</code></td>
-<td><ul><li>String, Boolean</li><li>Send all audiences.</li><li>Values are <strong>true</strong> or <strong>false</strong>.</li></ul></td>
-</tr>
-<tr>
-<td><code>tealium_account</code></td>
-<td><ul><li>String</li><li>Tealium Account.</li></ul></td>
-</tr>
-<tr>
-<td><code>tealium_profile</code></td>
-<td><ul><li>String</li><li>Tealium Profile.</li></ul></td>
-</tr>
-<tr>
-<td><code>SendEventsToClicktale</code></td>
-<td><ul><li>String</li><li>Toggle on to Send Events to Clicktale</li></ul></td>
+<td style="text-align:left">Page Group Number <code>page_group_number</code></td>
+<td style="text-align:left">Number</td>
 </tr>
 </tbody>
 </table>
-<h2 id="vendor-documentation">Vendor Documentation</h2>
-<ul>
-<li><a href="https://uxanalyser.zendesk.com/hc/en-gb/articles/4405613239186" title="https://uxanalyser.zendesk.com/hc/en-gb/articles/4405613239186">How to request an integration</a></li>
-<li><a href="https://uxanalyser.zendesk.com/hc/en-gb/articles/4409749139346-Live-Signals" title="https://uxanalyser.zendesk.com/hc/en-gb/articles/4409749139346-Live-Signals">Live Signals Implementation</a></li>
-<li><a href="http://wiki.clicktale.com/Article/Tealium_Integration">Tealium Integration</a></li>
-<li><a href="http://wiki.clicktale.com/Article/Frequently_asked_questions">Frequently Asked Questions</a></li>
-</ul>
+<h3 id="e-commerce">E-Commerce</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Order ID</td>
+<td style="text-align:left"><code>order_id</code> (Overrides <code>_corder</code>) Number</td>
+</tr>
+<tr>
+<td style="text-align:left">Order Total/Cart Revenue</td>
+<td style="text-align:left"><code>order_total</code> (Overrides <code>_ctotal</code>) Number</td>
+</tr>
+<tr>
+<td style="text-align:left">List of Product IDs <code>product_id</code> (Overrides <code>_cprod</code>)</td>
+<td style="text-align:left">Array</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/coherent-path-signal-tag/"
+  <a href="/client-side-tags/acxiom-real-identity-rtag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Coherent Path Signal</div>
+      <div>Acxiom Real Identity rTag</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Coherent Path Signal"</title>
+      <title>"Acxiom Real Identity rTag"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -885,15 +840,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/cj-affiliate-mobile-application-tag/"
+  <a href="/client-side-tags/acton-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"CJ Affiliate Mobile Application "</title>
+      <title>"ActOn "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>CJ Affiliate Mobile Application</div>
+      <div>ActOn</div>
     </section>
   </a>
   
@@ -923,7 +878,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  September 8, 2022 
+          <p>This page was last updated:  February 9, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -939,10 +894,10 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#applying-load-rules">Applying load rules</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor Documentation</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
               </nav>
   </aside></nav>
 
