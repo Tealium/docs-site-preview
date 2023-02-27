@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Piano Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>Simpli.fi Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -558,8 +558,8 @@ var utag_data = {
         <a href="/client-side-tags/pepperjam-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".pepperjam-tag">Pepperjam</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/perimeterx-bot-defender-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".perimeterx-bot-defender-tag">PerimeterX Bot Defender</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/piano-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".piano-tag">Piano</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/piano-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".piano-tag">Piano</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/pinterest-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".pinterest-tag">Pinterest</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -620,8 +620,8 @@ var utag_data = {
         <a href="/client-side-tags/shopzilla-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".shopzilla-tag">Shopzilla Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/simility-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".simility-tag">Simility</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/simpli-fi/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".simpli-fi-tag">Simpli.fi</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/simpli-fi/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".simpli-fi-tag">Simpli.fi</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/sitecatalyst-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sitecatalyst-tag">SiteCatalyst</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -741,115 +741,111 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Piano Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Simpli.fi Tag Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to configure Piano in your Tealium iQ Tag Management account.
+      This article describes how to set up the Simpli.fi tag.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <p>Piano (formerly Tinypass) is a SaaS company specializing in advanced media business processes and online commerce optimization software.</p>
+  <p>Simpli.fi performs keyword-targeted display advertising, targeting, bidding, reporting, and optimizing on every keyword.</p>
 <h2 id="tag-configuration">Tag configuration</h2>
-<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
-<li>Application ID (Required): Your unique ID provided by Piano.</li>
-<li>Use Sandbox: Set to true if you are using a Piano Sandbox. The default is false.</li>
-<li>Track Pages: Set to false to disable page tracking. The default is true.</li>
+<li><strong>Client ID</strong>: The ID of the client.</li>
 </ul>
 <h2 id="load-rules">Load rules</h2>
-<p>Load the tag on all pages or set conditions for when your tag will load. For more information about load rules, see the <a href="/iq-tag-management/load-rules/about/">Load Rules</a> documentation.</p>
-<p>Recommended Load Rule: All Pages</p>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
 <h2 id="data-mappings">Data mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-mappings/manage/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
-<p>The destination variables for the Piano tag are built into its <strong>Data Mapping</strong> tab. Available categories are:</p>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
+<p>The available categories are:</p>
 <h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
-<th><strong>Destination Name</strong></th>
-<th><strong>Description</strong></th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Application ID (AID)</td>
-<td>Your unique ID provided by Piano. Use this to override the configuration value.</td>
+<td style="text-align:left">action</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Use Sandbox (isSandbox)</td>
-<td>Set to true if you are using a Piano Sandbox. Use this to override the configuration value. Options: true, false.</td>
+<td style="text-align:left">c</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Track Pages (trackPages)</td>
-<td>Set to false to disable page tracking. Use this to override the configuration value. Options: true, false.</td>
+<td style="text-align:left">campaign</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Native Content (contentNative)</td>
-<td>Set to true to indicate sponsored content. Options: true, false.</td>
+<td style="text-align:left">campaign_id</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Published Date (contentCreated)</td>
-<td>An ISO 8601 formatted string local to website timezone representing the publish date and time of the content.</td>
+<td style="text-align:left">cbri</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Author (contentAuthor)</td>
-<td>A string representing the author for the published content.</td>
+<td style="text-align:left">conversion</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Section (contentSection)</td>
-<td>A string representing the section in which the content currently viewed belongs.</td>
+<td style="text-align:left">ctype</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Page Tags (tags)</td>
-<td>An array of tags related to the page content.</td>
+<td style="text-align:left">m</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>AAM Reporting Zone (zone)</td>
-<td>Used to indicate the AAM platform or subsection of your site.</td>
+<td style="text-align:left">pid</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Custom Variable (variable.custom)</td>
-<td>Additional variable data that can be used for segmentation. Replace &ldquo;custom&rdquo; with the name of the variable.</td>
+<td style="text-align:left">q</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Custom User Parameter (param.user.custom)</td>
-<td>Additional parameter describing the current user. Replace &ldquo;custom&rdquo; with the name of the parameter.</td>
+<td style="text-align:left">ref</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Custom Content Parameter (param.content.custom)</td>
-<td>Additional parameter describing the content consumed. Replace &ldquo;custom&rdquo; with the name of the parameter.</td>
+<td style="text-align:left">segment</td>
+<td style="text-align:left"></td>
 </tr>
 <tr>
-<td>Custom Request Parameter (param.request.custom)</td>
-<td>Additional parameter describing the page request. Replace &ldquo;custom&rdquo; with the name of the parameter.</td>
+<td style="text-align:left">sub</td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left">tag</td>
+<td style="text-align:left"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="vendor-documentation">Vendor documentation</h2>
-<ul>
-<li><a href="http://vx.piano.io/javascript">PianoVX JavaScript Sections</a></li>
-<li><a href="http://vx.piano.io/javascript-overview">PianoVX JavaScript Overview</a></li>
-</ul>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/pinterest-tag/"
+  <a href="/client-side-tags/sitecatalyst-firing-multiple-events-and-event-serialization/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Pinterest</div>
+      <div>SiteCatalyst Firing multiple events and Event Serialization</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Pinterest"</title>
+      <title>"SiteCatalyst Firing multiple events and Event Serialization"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -858,15 +854,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/perimeterx-bot-defender-tag/"
+  <a href="/client-side-tags/simility-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"PerimeterX Bot Defender "</title>
+      <title>"Simility "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>PerimeterX Bot Defender</div>
+      <div>Simility</div>
     </section>
   </a>
   
@@ -896,7 +892,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  July 12, 2018 
+          <p>This page was last updated:  February 22, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -914,7 +910,6 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor documentation</a></li>
               </nav>
   </aside></nav>
 
