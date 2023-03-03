@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Kenshoo Conversion Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>Yahoo ID Cookie Sync Tag | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -476,8 +476,8 @@ var utag_data = {
         <a href="/client-side-tags/ispot-tv-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".ispot-tv-cookie-matching-service-tag">iSpot TV Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/kayak-tag-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".kayak-tag-connector">Kayak Tag Connector Setup Guide</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/kenshoo-conversion-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".kenshoo-conversion-tag">Kenshoo Conversion</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/kenshoo-conversion-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".kenshoo-conversion-tag">Kenshoo Conversion</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/knotch-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".knotch-tag">Knotch</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -698,8 +698,8 @@ var utag_data = {
         <a href="/client-side-tags/xandr-formerly-appnexus-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".xandr-formerly-appnexus-tag">Xandr (formerly AppNexus) Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/xandr-universal-pixel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".xandr-universal-pixel-tag">Xandr Universal Pixel</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/yahoo-id-cookie-sync-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".yahoo-id-cookie-sync-tag">Yahoo ID Cookie Sync</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/yahoo-id-cookie-sync-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".yahoo-id-cookie-sync-tag">Yahoo ID Cookie Sync</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/yahoo-dot-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".yahoo-dot-tag">Yahoo! Dot</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -743,99 +743,98 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Kenshoo Conversion Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Yahoo ID Cookie Sync Tag</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the Kenshoo Conversion tag in your Tealium iQ Tag Management (TiQ) account.
+      This article describes how to set up the Yahoo User ID Cookie Sync tag.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="tag-tips">Tag tips</h2>
+  <p>The Yahoo Cookie Sync tag enables data partners to initiate a cookie sync and receive a unique encrypted Yahoo Cookie ID (AXID) for each partner. This encrypted ID can be used to post cookie data via the Yahoo DataX Connector. This Tag sends the AXID to the server-side for ingestion.</p>
+<h2 id="tag-tips">Tag tips</h2>
 <ul>
-<li>Uses E-commerce extension (<code>_corder</code>, <code>_csubtotal</code>, <code>_cpromo</code>, <code>_ccurrency</code>)</li>
-<li>Order ID, Amount, Promotion Code, and Currency are automatically set. These values can be over-written by creating mappings.</li>
-<li>Map a value to &rsquo;type&rsquo; to set a dynamic Conversion Type</li>
+<li>This tag only triggers once per session.</li>
+<li>This Tag sends the <code>visitor_id</code> to Yahoo to receive a response to our Server-Side with the matching <code>yahoo_id</code> to the <code>visitor_id</code>.</li>
 </ul>
 <h2 id="tag-configuration">Tag configuration</h2>
-<p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
-<li><strong>Kenshoo ID</strong>
-<ul>
-<li>Refers to the subdomain of the URL.</li>
-<li>Value is 00 for the following example: <code>//00.xg4ken.com/</code></li>
+<li><strong>Pixel ID</strong>: Numeric ID that denotes the Pixel ID.</li>
+<li><strong>Partner ID</strong>: Yahoo identity of the respective data provided.</li>
+<li><strong>GDPR</strong>: Indicates if the user is from a GDPR regulated region or not.</li>
+<li><strong>GDPR Consent</strong>: GDPR user consent string. Required if GDPR parameter is set to <code>True</code>.</li>
+<li><strong>Tealium Account</strong>: Your current Tealium account by default.</li>
+<li><strong>Tealium Profile</strong>: Your current Tealium profile by default.</li>
+<li><strong>Tealium Event</strong>: <code>yahoo_cookie_sync</code> by default.</li>
 </ul>
-</li>
-<li><strong>Profile Token</strong>
-<ul>
-<li>Refers to the long alphanumberic value applied to the cid querystring parameter of the URL.</li>
-</ul>
-</li>
-<li><strong>Conversion Type</strong>
-<ul>
-<li>This value details the conversion type, which by default should be set to &lsquo;conv&rsquo;.</li>
-<li>You can change this to any other relevant conversion type in your site.</li>
-<li>For example, if you want to track Registrations simply change it to &lsquo;reg&rsquo; or for lead to &rsquo;lead&rsquo;.</li>
-</ul>
-</li>
-</ul>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag loads. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
 <h2 id="data-mappings">Data mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
 <p>The available categories are:</p>
 <h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Conversion Type</td>
-<td>(type)</td>
+<td style="text-align:left">Visitor ID <code>visitor_id</code></td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Order Amount</td>
-<td>(val)</td>
+<td style="text-align:left">Pixel ID <code>pixel_id</code></td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Order ID</td>
-<td>(orderId)</td>
+<td style="text-align:left">Partner ID <code>partner_id</code></td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Order Promo Code</td>
-<td>(promoCode)</td>
+<td style="text-align:left">GDPR <code>gdpr</code></td>
+<td style="text-align:left">Boolean</td>
 </tr>
 <tr>
-<td>Order Currency</td>
-<td>(valueCurrency)</td>
+<td style="text-align:left">GDPR Consent <code>gdpr_consent</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Tealium Account <code>tealium_account</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Tealium Profile <code>tealium_profile</code></td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Tealium Event <code>tealium_event</code></td>
+<td style="text-align:left">String</td>
 </tr>
 </tbody>
 </table>
-<h3 id="vendor-documentation">Vendor Documentation</h3>
-<ul>
-<li><a href="http://www.kenshoo.com/guide-series/">Kenshoo Guide Series</a></li>
-</ul>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/knotch-tag/"
+  <a href="/client-side-tags/yahoo-dot-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Knotch</div>
+      <div>Yahoo! Dot</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Knotch"</title>
+      <title>"Yahoo! Dot"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -844,15 +843,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/kayak-tag-connector/"
+  <a href="/client-side-tags/xandr-universal-pixel-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Kayak Tag Connector Setup Guide "</title>
+      <title>"Xandr Universal Pixel "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Kayak Tag Connector Setup Guide</div>
+      <div>Xandr Universal Pixel</div>
     </section>
   </a>
   
@@ -882,7 +881,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  December 13, 2019 
+          <p>This page was last updated:  March 3, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -898,9 +897,9 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor Documentation</a></li>
               </nav>
   </aside></nav>
 
