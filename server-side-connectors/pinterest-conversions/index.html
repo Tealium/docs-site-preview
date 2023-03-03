@@ -742,14 +742,38 @@ var utag_data = {
 <li><strong>User-Defined Event</strong> - Add any additional events that you’ve defined for the purpose of audience targeting. Unique events are not available for conversion reporting.</li>
 </ul>
 <h2 id="deduplication">Deduplication</h2>
-<p>When redundant implementations are put into place, (for example, the Pinterest Conversion API and <a href="/client-side-tags/pinterest-tag/">Pinterest Tag</a> ), deduplication is required to avoid double-counting of a single event when it is sent through both solutions. By using deduplication, advertisers can expect more conversions being attributed than if the connector or tag solution are used independently.</p>
-<p>The Pinterest Tag and Pinterest Conversion API use the Event ID for deduplication. Ensure this value is included when multiple sources are used to track conversion data. To find your Event IDs, complete the following steps:</p>
+<p>When redundant implementations are put into place, (for example, the Pinterest Conversion API and <a href="/client-side-tags/pinterest-tag/">Pinterest Tag</a>, deduplication is required to avoid double-counting of a single event when it is sent through both solutions. By using deduplication, advertisers can expect more conversions being attributed than if the connector or tag solution are used independently.</p>
+<h3 id="deduplication-for-pinterest-tag-and-pinterest-conversions-api">Deduplication for Pinterest Tag and Pinterest Conversions API</h3>
+<p>The <a href="/client-side-tags/pinterest-tag/">Pinterest Tag</a> and Pinterest Conversion API use the Event ID for deduplication. Ensure this value is included when multiple sources are used to track conversion data. To find your Event IDs, complete the following steps:</p>
 <ol>
 <li>Log into your <a href="http://pinterest.com/business/create/">Pinterest business account</a>.</li>
 <li>Navigate to  <strong>Ads &gt; Reporting</strong>.</li>
 <li>Click the menu icon in the top-right above the table and select <strong>Performance</strong>.</li>
 </ol>
 <p>Depending on what event codes you’ve added to your site, they will be listed throughout the table along with the number of times they’ve happened during the selected timeframe.</p>
+<p>Look for event attributes using the following naming convention:</p>
+<pre tabindex="0"><code>pinterest_event_id_&lt;Pinterest Event&gt;_&lt;Tag UID&gt;
+</code></pre><p>For example: <code>pinterest_event_id_Checkout_32</code></p>
+<p>Use a separate action for each type of event ID. Map the event-specific event ID attribute to Event ID with the matching event name mapped to Event Name. For example:</p>
+<table>
+<thead>
+<tr>
+<th><strong>Tealium Attribute/Value</strong></th>
+<th>Pinterest Parameter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>pinterest_event_id_Checkout_32</code></td>
+<td>Event ID</td>
+</tr>
+<tr>
+<td>Checkout (dropdown selection)</td>
+<td>Event Name</td>
+</tr>
+</tbody>
+</table>
+<p>For more information, see the <a href="/client-side-tags/pinterest-tag/">Pinterest Tag Setup Guide</a>.</p>
 <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
@@ -1071,7 +1095,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 11, 2023 
+          <p>This page was last updated:  February 24, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1089,7 +1113,8 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#batch-limits">Batch Limits</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it Works</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#deduplication">Deduplication</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#deduplication-for-pinterest-tag-and-pinterest-conversions-api">Deduplication for Pinterest Tag and Pinterest Conversions API</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings--parameters-and-options">Action Settings — Parameters and Options</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action--send-conversion-event">Action — Send Conversion Event</a></li>

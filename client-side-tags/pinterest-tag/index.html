@@ -753,7 +753,8 @@ var utag_data = {
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="requirements">Requirements</h2>
+  <p>The Pinterest tag allows advertisers to track specific actions, or events, on any pages on their websites. With the Pinterest tag, the advertisers can also attach customized event data on those events to gather detailed information on visitors’ behaviors on the websites. Then the advertisers can later use the information to refine their audiences for ad campaigns on Pinterest.</p>
+<h2 id="requirements">Requirements</h2>
 <ul>
 <li>Pinterest Business Account</li>
 <li>Pinterest Tag and Tag identifier</li>
@@ -781,10 +782,17 @@ var utag_data = {
 <p>Navigate to the Tag Marketplace to add a new tag. Read the <a href="/iq-tag-management/tags/about/">Tag Overview</a> article for general instructions on how to add a tag.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
-<li><strong>Pinterest Tag ID</strong>
+<li>
+<p><strong>Pinterest Tag ID</strong></p>
 <ul>
 <li>Your Pinterest Tag ID.</li>
 <li>Your Pinterest Tag ID is different from any existing or previous conversion tag IDs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Generate Event ID</strong></p>
+<ul>
+<li>Automatically generate an Event ID for every Pinterest tracking event. The default is <code>True</code></li>
 </ul>
 </li>
 </ul>
@@ -846,6 +854,10 @@ var utag_data = {
 <tr>
 <td><code>lead_type</code></td>
 <td><ul><li>Lead Type.</li><li>Type of product or service the user is interested in.</li></ul></td>
+</tr>
+<tr>
+<td><code>generate_event_id</code></td>
+<td><ul><li>Generate Event ID.</li><li>Automatically generate an Event ID for every Pinterest tracking event.</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -962,6 +974,33 @@ When the value is found, the event triggers on the page.</li>
 <li>Click <strong>Apply</strong>.</li>
 </ol>
 <p>When you are done mapping, perform a save and publish. That&rsquo;s it! You have successfully set up the Tag in your profile.</p>
+<h3 id="limited-data-processing-ldp">Limited Data Processing (LDP)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>opt_out_type</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Opt out type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>st</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Opt out state</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>country</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Opt out country</td>
+</tr>
+</tbody>
+</table>
 <h2 id="vendor-documentation">Vendor documentation</h2>
 <ul>
 <li><a href="https://help.pinterest.com/en/articles/website-conversion-tracking">About Pinterest Tag</a></li>
@@ -1050,6 +1089,7 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#events">Events</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#limited-data-processing-ldp">Limited Data Processing (LDP)</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor documentation</a></li>
               </nav>
   </aside></nav>
