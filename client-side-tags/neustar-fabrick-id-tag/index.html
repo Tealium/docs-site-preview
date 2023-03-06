@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>TradeDoubler Conversion Tracking Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>Neustar Fabrick ID Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -530,8 +530,8 @@ var utag_data = {
         <a href="/client-side-tags/mybuys-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mybuys-tag">MyBuys</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-platformone-conversion-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-platformone-conversion-tag-setup-guide">Neustar</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/neustar-fabrick-id-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-fabrick-id-tag">Neustar Fabrick ID</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-fabrick-id-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".neustar-fabrick-id-tag">Neustar Fabrick ID</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/nextag-roi-tracker-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nextag-roi-tracker-tag">Nextag ROI Tracker</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -668,8 +668,8 @@ var utag_data = {
         <a href="/client-side-tags/tiktok-pixel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-pixel-tag">TikTok Pixel</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/topmailru-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".topmailru-tag">Top.Mail.ru</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/tradedoubler-conversion-tracking-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".tradedoubler-conversion-tracking-tag">TradeDoubler Conversion Tracking</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/tradedoubler-conversion-tracking-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tradedoubler-conversion-tracking-tag">TradeDoubler Conversion Tracking</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/google-analytics-ga-to-google-universal-analytics-gua/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".transitioning-from-google-analytics-ga-to-google-universal-analytics-gua">Transitioning from Google Analytics (GA) to Google Universal Analytics (GUA)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -745,176 +745,133 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">TradeDoubler Conversion Tracking Tag Setup Guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Neustar Fabrick ID Tag Setup Guide</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the TradeDoubler Conversion Tracking tag in your Tealium iQ Tag Management account.
+      This article describes how to configure the Neustar Fabrick ID tag in your iQ Tag Management (TiQ) account.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="migrating-from-the-legacy-trackback-tag">Migrating from the legacy Trackback Tag</h2>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>The Trackback Tag is now deprecated in favor of the new Conversion Tracking version and no longer offered in the Tag Marketplace. Be sure to deactivate any Trackback Tag instances before adding the new Conversion Tracking Tag.</p>
-<h2 id="tag-configuration">Tag Configuration</h2>
-<p>First, go to Tealium&rsquo;s Tag Marketplace and add the Tradedoubler Conversion Tracking Tag to your profile (<a href="/iq-tag-management/tags/tag-templates/manage/">how to add a Tag?</a>).</p>
-<p>After adding the Tag, configure the below settings:</p>
+  <h2 id="tag-tips">Tag tips</h2>
 <ul>
-<li>
-<p><strong>Title</strong>: The default is <code>Tradedoubler Conversion Tracking</code>. You may replace it with a custom name of choice.</p>
-</li>
-<li>
-<p><strong>Tag Type</strong> (Required): Choose the type of Tag you want to load.</p>
+<li>If left blank, the Tealium Account and Profile are automatically populated</li>
+<li>The following attributes are sent to Tealium server-side through <code>neustar_fabrickId_sync</code>:
 <ul>
-<li>Sale: Loads the Sales tracking pixel hosted on <code>tbs.tradedoubler.com</code>.</li>
-<li>Lead: Loads the Leads tracking pixel hosted on <code>tbl.tradedoubler.com</code>.</li>
-<li>Product: Loads the product level tracking pixel</li>
+<li><code>fabrickId</code></li>
+<li><code>visitor_id</code></li>
+<li><code>element_one</code> (Optional)</li>
 </ul>
 </li>
-<li>
-<p><strong>Organization ID</strong> (Required): The numeric organization id provided by TradeDoubler. This field applies only if the Tag Type is set to Sales or Lead.</p>
-</li>
-<li>
-<p><strong>Event ID</strong> (Required): The numeric identifier assigned to the sale/lead event you want to track. This field applies only if the Tag Type is set to Sales or Lead. If you prefer to set this value via Data Mappings, you must leave this field blank.</p>
-</li>
 </ul>
-<h2 id="load-rules">Load Rules</h2>
-<p><a href="https://community.tealiumiq.com/posts/572034">Load Rules</a> determine when and where to load an instance of this Tag. The <strong>Load on All Pages</strong> rule is the default Rule. If you prefer to load this Tag on a specific page, create a new rule with the relevant conditions.</p>
-<h3 id="best-practices">Best Practices</h3>
+<h2 id="tag-configuration">Tag configuration</h2>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
+<p>When adding the tag, configure the following settings:</p>
 <ul>
-<li>The Sales Tag should be placed on the confirmation page, one that appears post completion of a sale.</li>
-<li>The Lead Tag should be placed on pages that allow site visitors to sign-up or register.</li>
-<li>The Product Tag should be placed on a page where you want to track visitor interactions with products and product categories.</li>
+<li><strong>API Key</strong>: Required. Neustar-provided API key.</li>
+<li><strong>FabrickId Timespan Days</strong>: How often the <code>fabrickId</code> will change. Default is seven days.</li>
+<li><strong>Tealium Account</strong>: Your Tealium Account.</li>
+<li><strong>Tealium Profile</strong>: Your Tealium Profile.</li>
+<li><strong>Data Source Key</strong>: Required. The data source key from Tealium server-side.</li>
 </ul>
-<h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">Data Layer Variable</a> to the corresponding destination variable of the vendor Tag. For instructions on how to map a Variable to a Tag destination, see <a href="/iq-tag-management/data-mappings/manage/">Data Mappings</a>.</p>
-<p>The destination variables for the Tradedoubler Conversion Tracking Tag are built into its Data Mapping tab.</p>
-<h3 id="standard-tab">Standard Tab</h3>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
+<h2 id="data-mappings">Data mappings</h2>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
+<p>The available categories are:</p>
+<h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
-<th>Tag Destination</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Organization ID</td>
-<td>Organization identifier provided by Tradedoubler</td>
+<td style="text-align:left">Base Url (<code>base_url</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Event ID</td>
-<td>The numeric identifier assigned to the lead/sale event you want to track. This is provided by Tradedoubler</td>
+<td style="text-align:left">Event Url (<code>event_url</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Tag Type</td>
-<td>The type of Tradedoubler pixel you are loading on the page. Mapped variable must contain one of the following values: <code>lead</code>, <code>sale</code> or <code>product</code></td>
+<td style="text-align:left">Api Key (<code>apiKey</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Tradedoubler Unique Tracking ID</td>
-<td>The <code>tduid</code> parameter value that was set in a cookie and session variable on the redirect page</td>
+<td style="text-align:left">FabrickId Timespan Days (<code>daysSyncPeriod</code>)</td>
+<td style="text-align:left">Number</td>
 </tr>
 <tr>
-<td>Checksum</td>
-<td>The checksum value to help detect fraud</td>
+<td style="text-align:left">Tealium Account (<code>tealium_account</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Hashed Email Address</td>
-<td>Hash of the customer&rsquo;s email address</td>
+<td style="text-align:left">Tealium Profile (<code>tealium_profile</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>ID Type</td>
-<td>Boolean value representing the user ID type. Mapped variable must contain: <ul><li><code>0</code> if using user&rsquo;s email address</li><li><code>1</code> if using an internal user id </li></ul></td>
+<td style="text-align:left">Data Source Key (<code>tealium_datasource</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Voucher Code</td>
-<td>Voucher code of the transaction</td>
+<td style="text-align:left">Hashed email address (<code>e</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 <tr>
-<td>Valid On [YYYY-MM-DD]</td>
-<td>The date by which a transaction will be automatically approved and can no longer be modified or declined.</td>
+<td style="text-align:left">E.164 standard hashed phone number (<code>p</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">IPv4 Address (<code>raw</code> i4)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">IPv6 Address (<code>raw</code> i6)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Mobile Advertising ID (<code>m</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Identifier for Advertising (<code>ia</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Denotes the source for the IFA (<code>ifa_type</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Indicates whether the user can be tracked or not (<code>lmt</code>)</td>
+<td style="text-align:left">String</td>
+</tr>
+<tr>
+<td style="text-align:left">Partner or advertiser&rsquo;s 1st party user ID (<code>1pd</code>)</td>
+<td style="text-align:left">String</td>
 </tr>
 </tbody>
 </table>
-<h3 id="e-commerce">E-commerce</h3>
-<p>Because the Tradedoubler Conversion Tracking Tag is e-commerce enabled, it will automatically use the default <a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">E-Commerce Extension</a> mappings. Manually mapping in this category is generally not needed unless:</p>
-<ul>
-<li>you want to override any Extension mappings</li>
-<li>your desired e-commerce variable is not offered in the Extension</li>
-</ul>
-<table>
-<thead>
-<tr>
-<th>Destination</th>
-<th>Description</th>
-<th>E-Commerce Extension Variable</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Order ID</td>
-<td>Unique identifier assigned to the final order</td>
-<td><code>_corder</code></td>
-</tr>
-<tr>
-<td>Sub Total</td>
-<td>Sub total amount of the final order</td>
-<td><code>_csubtotal</code></td>
-</tr>
-<tr>
-<td>Currency</td>
-<td>Currency used in the payment</td>
-<td><code>_ccurrency</code></td>
-</tr>
-<tr>
-<td>List of Product IDs</td>
-<td>Unique identifier of each product in the product array</td>
-<td><code>_cprod</code></td>
-</tr>
-<tr>
-<td>List of Product SKUs</td>
-<td>Name of each product in the product array</td>
-<td><code>_csku</code></td>
-</tr>
-<tr>
-<td>List of Quantities</td>
-<td>Quantity of each product in the product array</td>
-<td><code>_cquan</code></td>
-</tr>
-<tr>
-<td>List of Prices</td>
-<td>Unit price of each product in the product array</td>
-<td><code>_cprice</code></td>
-</tr>
-<tr>
-<td>List of Product Group IDs</td>
-<td>Array of product category identifiers</td>
-<td>NA</td>
-</tr>
-</tbody>
-</table>
-<h2 id="vendor-documentation">Vendor Documentation</h2>
-<ul>
-<li><a href="http://dev.tradedoubler.com/tracking/advertiser/">Conversion Tracking</a></li>
-<li><a href="http://dev.tradedoubler.com/">Developer Resources</a></li>
-</ul>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/client-side-tags/google-analytics-ga-to-google-universal-analytics-gua/"
+  <a href="/client-side-tags/neustar-platformone-conversion-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Transitioning from Google Analytics (GA) to Google Universal Analytics (GUA)</div>
+      <div>Neustar</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Transitioning from Google Analytics (GA) to Google Universal Analytics (GUA)"</title>
+      <title>"Neustar"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -923,15 +880,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/topmailru-tag/"
+  <a href="/client-side-tags/mybuys-tag/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Top.Mail.ru "</title>
+      <title>"MyBuys "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Top.Mail.ru</div>
+      <div>MyBuys</div>
     </section>
   </a>
   
@@ -961,7 +918,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  September 27, 2017 
+          <p>This page was last updated:  March 2, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -975,14 +932,11 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#migrating-from-the-legacy-trackback-tag">Migrating from the legacy Trackback Tag</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag Configuration</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load Rules</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#best-practices">Best Practices</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data Mappings</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard-tab">Standard Tab</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-commerce</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor Documentation</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
               </nav>
   </aside></nav>
 
