@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Insider data source setup guide | Incoming Webhooks |Preview of Tealium Developer Docs</title>
+    <title>Prepare a CSV file for import | File Import |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -42,7 +42,7 @@ var utag_data = {
       
 
     
-<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray " role="navigation">
+<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray dpn" role="navigation">
 
   <div class="flex-ns flex-wrap items-center justify-start mw9">
 
@@ -76,7 +76,7 @@ var utag_data = {
   </div>
 
 
-<div id="mainAppInner" class="padd-54">
+<div id="mainAppInner" class="padd-54 dpn">
     <div id="leftFrame">
         <div class="main-nav-container">
             <div class="flex-1">
@@ -94,13 +94,13 @@ var utag_data = {
                     </li>
                     <li class="menu-divider"></li>
                     <li class="js-main-nav-section">
-                        <a href="https://community.tealiumiq.com/t5/Forums/ct-p/tealiumlearningcommunity" class="menu-list-item top-level tooltip-right" title="Discussions">
+                        <a href="https://community.tealiumiq.com/t5/Forums/ct-p/tealiumlearningcommunity" class="menu-list-item top-level tooltip-right" title="Discussions & Ideas">
                             <span class="menu-large-icon">
                                 <i class="fal fa-comments"></i>
                             </span>
-                            <span class="menu-context supportLinks_buttonTitle">Discussions</span>
+                            <span class="menu-context supportLinks_buttonTitle">Discussions & Ideas</span>
                         </a>
-                          <span class="tooltiptext">Discussions</span>
+                          <span class="tooltiptext">Dicussions & Ideas</span>
                     </li>
                     <li class="menu-divider"></li>
                     <li class="js-main-nav-section active">
@@ -114,7 +114,7 @@ var utag_data = {
                     </li>
                     <li class="menu-divider"></li>
                     <li class="js-main-nav-section" data-section="kb">
-                        <a href="https://support.tealiumiq.com/en/support/solutions" class="menu-list-item top-level tooltip-right" title="Knowledge Base">
+                        <a href="https://support.tealiumiq.com/en/support/solutions" class="menu-list-item top-level tooltip-right">
                             <span class="menu-large-icon">
                                 <i class="fal fa-head-side-brain"></i>
                             </span>
@@ -124,13 +124,13 @@ var utag_data = {
                     </li>
                     <li class="menu-divider"></li>
                     <li class="js-main-nav-section">
-                        <a href="https://university.tealium.com/" class="menu-list-item top-level tooltip-right" title="Tealium Education">
+                        <a href="https://education.tealium.com/" class="menu-list-item top-level tooltip-right" title="Education">
                             <span class="menu-large-icon">
                                 <i class="fal fa-graduation-cap"></i>
                             </span>
                             <span class="menu-context supportLinks_buttonTitle">Education</span>
                         </a>
-                          <span class="tooltiptext">Tealium Education</span>
+                          <span class="tooltiptext">Education</span>
                     </li>
                     <li class="menu-divider"></li>
                     <li class="js-main-nav-section">
@@ -157,7 +157,7 @@ var utag_data = {
             <ul class="menu-group as-main-navigation flex-0 bottom-align">
               <li class="menu-divider"></li>
               <li class="js-main-nav-section">
-                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Tealium Customer Data Hub">
+                <a href="https://my.tealiumiq.com/" class="menu-list-item top-level tooltip-right" title="Customer Data Hub">
                     <span class="menu-large-icon">
                         <span class="as-platform-image square-xxxs is-rounded bg-transparent">
                             <span class="inner-image UDH-icon">CDH</span>
@@ -294,33 +294,35 @@ var utag_data = {
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".data-sources">Data sources</a>
         <ul class=" data-sources desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/about-data-sources/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-data-sources">About data sources</a>
-      </li><li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".file-import">File Import</a>
-        <ul class=" file-import desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/about-file-import/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import">About file import</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-import-process/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-file-import-process">File import process</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/prepare-a-csv-file-for-import/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-prepare-csv-file-for-import">Prepare a CSV file for import</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/configure-file-import/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-configure-file-import">Configure file import</a>
-      </li><li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".file-transfer-service">Configure file transfer service</a>
-        <ul class=" file-transfer-service desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-transfer-service/cyberduck/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-configure-cyberduck">Configure Cyberduck</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-transfer-service/aws-cli/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-amazon-command-line-interface">Manage files with the AWS Command Line Interface</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-transfer-service/s3-bucket/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-s3-bucket">Upload files to S3 bucket</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-transfer-service/check-import-status/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-check-import-status">Check import status</a>
-      </li></ul>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/file-import/file-import-visitor-identification/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import-visitor-identification">File import visitor identification</a>
-      </li></ul>
       </li><li class="relative w-100 fw8 f5  active">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2 primary-color expanded " data-target=".webhooks">Incoming Webhooks</a>
-        <ul class="bl b--primary bw1 pl2 webhooks desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2 primary-color expanded " data-target=".file-import">File Import</a>
+        <ul class="bl b--primary bw1 pl2 file-import desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import">About file import</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/prepare-a-csv-file/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".server-side-about-prepare-csv-file-for-import">Prepare a CSV file for import</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/visitor-identification/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-about-file-import-visitor-identification">Visitor identification using File Import data source</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/encryption-and-compression/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-encryption-and-compression-file-import">Encryption and compression</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/configuration/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-configure-file-import">File import configuration</a>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".file-transfer-service">File transfer service configuration</a>
+        <ul class=" file-transfer-service desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/upload-files/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-upload-files">Upload files to a service</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/cyberduck/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-configure-cyberduck">Cyberduck</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/aws-cli/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-amazon-command-line-interface">Amazon CLI</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/s3-bucket/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-s3-bucket">S3 Bucket</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/file-import/file-transfer-service/view-import-status/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".file-transfer-service-view-import-status">View import status</a>
+      </li></ul>
+      </li></ul>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".webhooks">Incoming Webhooks</a>
+        <ul class=" webhooks desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/webhooks/affirm/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-affirm-incoming-webhook-setup-guide">Affirm</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/webhooks/airship/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-airship-incoming-webhook-setup-guide">Airship</a>
@@ -332,8 +334,6 @@ var utag_data = {
         <a href="/server-side/data-sources/webhooks/http-api-advanced/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-http-api-advanced-incoming-webhook-setup-guide">HTTP API Advanced</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/webhooks/hubspot/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-hubspot-workflow-incoming-webhook-setup-guide">Hubspot</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/webhooks/insider/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".server-side-insider-data-source-setup-guide">Insider</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/webhooks/intercom/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-intercom-incoming-webhook-setup-guide">Intercom</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -351,8 +351,6 @@ var utag_data = {
         <a href="/server-side/data-sources/connect-to-data-source/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-connect-cdh-data-source">Connect to a data source</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/edit-data-source-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-edit-data-sources-settings">Edit data source settings</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-sources/importing-offline-data-omnichannel/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-importing-offline-data-omnichannel">Importing offline data (Omnichannel)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/data-sources-for-iq-tag-management/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Data sources for iQ Tag Management</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -778,7 +776,7 @@ var utag_data = {
 
   
   
-  <li class="primary-color f7 lvl3"><a class="f6 mb0 link mid-gray dim" href="/server-side/data-sources/webhooks/">Incoming Webhooks</a></li>
+  <li class="primary-color f7 lvl3"><a class="f6 mb0 link mid-gray dim" href="/server-side/data-sources/file-import/">File Import</a></li>
   
 
   
@@ -787,268 +785,179 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">Insider data source setup guide</h1>
+<h1 class="lh-title mb3 mv0 pt3">Prepare a CSV file for import</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to use Insider as a data source to send actionable events to Tealium.
+      This article helps you prepare your files for a successful import using the file import data source.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="prerequisites">Prerequisites</h2>
+  <h2 id="prepare-data-to-import">Prepare data to import</h2>
+<p>We recommend using File Import data source with the following types of data sets:</p>
 <ul>
-<li>Tealium EventStream API Hub and/or Tealium AudienceStream CDP</li>
-<li>Insider account</li>
+<li>Demographic data</li>
+<li>Prospect and lead data</li>
+<li>Historical purchases and refunds</li>
+<li>Offline interactions (support, direct marketing, event attendance, etc.)</li>
 </ul>
-<h2 id="how-it-works">How it works</h2>
-<p>To connect Insider with Tealium EventStream or Tealium AudienceStream, use the <a href="https://academy.useinsider.com/docs/webhooks-vs-apis">Insider Webhook API</a> to send outgoing requests to the custom Insider data source endpoint in your Tealium account.</p>
-<p>After you configure the webhook, you can receive automatic event updates for channel interactions and lead collection events.</p>
-<h2 id="insider-data-source">Insider data source</h2>
-<p>Adding the Insider data source to your Tealium Customer Data Hub profile generates a unique URL to use in your webhook configuration in following format:</p>
-<pre tabindex="0"><code>https://collect.tealiumiq.com/integration/event/ACCOUNT/PROFILE/DATA_SOURCE_KEY
-</code></pre><p>To add the Insider data source to your Tealium Customer Data Hub profile, see <a href="/server-side/data-sources/about-data-sources/">Data Sources</a>. After adding and connecting the data source, save and publish your profile.</p>
-<h2 id="insider-setup">Insider setup</h2>
-<p>After you connect Insider to your Tealium Customer Data Hub profile, configure the webhook using the following steps:</p>
-<ol>
-<li>Notify your Insider account manager that you want to configure the <a href="/platforms/http-api/endpoint/">Tealium Collect API</a> to collect Insider channel events.</li>
-<li>The Insider team will configure your Tealium data source within Insider.</li>
-<li>In Tealium, enter the custom endpoint URL created when you added the Insider data source to your Tealium profile. For example,</li>
-</ol>
-<pre tabindex="0"><code>https://collect-us-east-1.tealiumiq.com/integration/event/{account}/{profile}/{data_source_key}
-</code></pre><h2 id="events-and-attributes">Events and attributes</h2>
-<p>Insider event parameters are pre-defined based on the engagement behavior or the customer behavior events. All incoming Insider event attributes are prefixed with <code>insider_</code>. For example, Insider will send the the <code>campaign_id</code> attribute to Tealium and it will be converted to <code>insider_campaign_id</code> (all lowercase).</p>
-<h3 id="channel-events">Channel events</h3>
-<p>The following table describes common Insider event attributes and examples of what Tealium receives for certain channel-specific events. This list is not exhaustive. For a list of all Insider default events, see <a href="https://academy.useinsider.com/docs/default-events#mobile-app-%20events">Default Events</a> in the Insider documentation.</p>
+<p>To ensure efficient processing of your files, we strongly recommend breaking up large files into smaller files of 100,000 rows each. While larger file sizes are supported, we don’t recommend exceeding file sizes of 50MB as it may increase the likelihood of errors.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>To get the most out of your imported data, ensure that every row in your CSV file has a column with a unique visitor ID that associates the data to a customer. For more information, see <a href="/server-side/data-sources/file-import/visitor-identification/">Visitor Identification using File Import Data Source</a>.</p>
+<h2 id="file-names">File names</h2>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Multiple files uploaded through SFTP or S3 are processed alphabetically by their file names.</p>
+<h3 id="file-name-prefix">File name prefix</h3>
+<p>CSV files must be named using the following format: <code>{prefix}_{version}.csv</code>. This format consists of the following parts:</p>
 <table>
 <thead>
 <tr>
-<th>Event Attribute</th>
-<th>Type</th>
-<th>Example</th>
+<th>Format</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>insider_event_group_id</code></td>
-<td>String</td>
-<td><code>ORDER123</code></td>
+<td><code>prefix</code></td>
+<td>A unique identifier for groups of files that share the same CSV column names.</td>
 </tr>
 <tr>
-<td><code>insider_product_id</code></td>
-<td>String</td>
-<td><code>AGH210070 </code></td>
-</tr>
-<tr>
-<td><code>insider_name</code></td>
-<td>String</td>
-<td><code>iPhone 11+</code></td>
-</tr>
-<tr>
-<td><code>insider_taxonomy</code></td>
-<td>Strings</td>
-<td><code>[&quot;Electronic&quot;,&quot;Phone&quot;]</code></td>
-</tr>
-<tr>
-<td><code>insider_currency</code></td>
-<td>String</td>
-<td><code>USD</code></td>
-</tr>
-<tr>
-<td><code>insider_unit_price</code></td>
-<td>Number</td>
-<td><code>990.9</code></td>
-</tr>
-<tr>
-<td><code>insider_unit_sale_price</code></td>
-<td>Number</td>
-<td><code>890.8</code></td>
-</tr>
-<tr>
-<td><code>insider_color</code></td>
-<td>String</td>
-<td><code>black</code></td>
-</tr>
-<tr>
-<td><code>insider_size</code></td>
-<td>String</td>
-<td><code>one-size</code></td>
-</tr>
-<tr>
-<td><code>insider_shipping_cost</code></td>
-<td>Number</td>
-<td><code>52.09</code></td>
-</tr>
-<tr>
-<td><code>insider_promotion_name</code></td>
-<td>String</td>
-<td><code>Test20</code></td>
-</tr>
-<tr>
-<td><code>insider_promotion_discount</code></td>
-<td>Number</td>
-<td><code>18.8</code></td>
-</tr>
-<tr>
-<td><code>insider_qu </code></td>
-<td>Number</td>
-<td><code>1</code></td>
-</tr>
-<tr>
-<td><code>insider_piu</code></td>
-<td>String</td>
-<td><code>https://test.com/producturl</code></td>
-</tr>
-<tr>
-<td><code>insider_sid </code></td>
-<td>String</td>
-<td></td>
-</tr>
-<tr>
-<td><code>insider_sc</code></td>
-<td>Number</td>
-<td><code>52.09</code></td>
-</tr>
-<tr>
-<td><code>insider_vn</code></td>
-<td>String</td>
-<td><code>VoucherPromotion</code></td>
-</tr>
-<tr>
-<td><code>insider_vd</code></td>
-<td>Number</td>
-<td><code>12.01</code></td>
-</tr>
-<tr>
-<td><code>insider_si</code></td>
-<td>String</td>
-<td><code>one-size</code></td>
-</tr>
-<tr>
-<td><code>insider_co</code></td>
-<td>String</td>
-<td><code>black</code></td>
-</tr>
-<tr>
-<td><code>insider_url</code></td>
-<td>String</td>
-<td><code>https://test.com/producturl</code></td>
-</tr>
-<tr>
-<td><code>insider_referrer</code></td>
-<td>String</td>
-<td><code>https://google.com</code></td>
-</tr>
-<tr>
-<td><code>insider_device_type</code></td>
-<td>String</td>
-<td><code>web</code></td>
-</tr>
-<tr>
-<td><code>insider_ip_address</code></td>
-<td>String</td>
-<td><code>192.158.1.38 </code></td>
-</tr>
-<tr>
-<td><code>insider_campaign_id</code></td>
-<td>Number</td>
-<td><code>105901959</code></td>
-</tr>
-<tr>
-<td><code>insider_user_agent</code></td>
-<td>String</td>
-<td><code>Mozilla/5.0 (iPad; U; CPU OS 3_2_1 like Mac OS X; en-us)</code></td>
-</tr>
-<tr>
-<td><code>insider_url_offset_index </code></td>
-<td>Number</td>
-<td><code>0</code></td>
-</tr>
-<tr>
-<td><code>insider_url_offset_type</code></td>
-<td>String</td>
-<td><code>html</code></td>
-</tr>
-<tr>
-<td><code>insider_type</code></td>
-<td>String</td>
-<td><code>html</code></td>
-</tr>
-<tr>
-<td><code>insider_reason</code></td>
-<td>String</td>
-<td><code>Unsubscribed Address</code></td>
-</tr>
-<tr>
-<td><code>insider_deep_links</code></td>
-<td>String</td>
-<td><code>value1 </code></td>
-</tr>
-<tr>
-<td><code>insider_dry_run</code></td>
-<td>String</td>
-<td></td>
-</tr>
-<tr>
-<td><code>insider_image_url</code></td>
-<td>String</td>
-<td><code>https://your_image_url.jpg </code></td>
-</tr>
-<tr>
-<td><code>insider_message</code></td>
-<td>String</td>
-<td><code>Your push content goes here </code></td>
-</tr>
-<tr>
-<td><code>insider_title</code></td>
-<td>String</td>
-<td><code>Your push notification title goes here </code></td>
-</tr>
-<tr>
-<td><code>insider_attr_email</code></td>
-<td>String</td>
-<td><code>test@test.com </code></td>
-</tr>
-<tr>
-<td><code>insider_attr_phone</code></td>
-<td>String</td>
-<td><code>+14401231234</code></td>
-</tr>
-<tr>
-<td><code>insider_hook_id</code></td>
-<td>String</td>
-<td><code>442811</code></td>
-</tr>
-<tr>
-<td><code>insider_insider_id</code></td>
-<td>String</td>
-<td><code>a00d8092-0ba7-41f5-b07d-7ae64231dac3d</code></td>
+<td><code>version</code></td>
+<td>(Optional) A unique identifier for a file within a prefix, usually a timestamp and a version number.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="vendor-documentation">Vendor documentation</h2>
+<p class="tip"><i class="fa fa-info-circle"></i>We strongly recommend using a version number to differentiate CSV file versions.</p>
+<p>The file name prefix you use must be unique. For example, using the prefixes <code>store-transactions</code> and <code>store-transactions-returns</code> will cause unexpected results because they share the same initial prefix: <code>store-transactions</code>.</p>
+<p>File names are case-sensitive and may not contain special characters other than hyphen &lsquo;-&rsquo; and underscore &lsquo;_&rsquo;.</p>
+<h3 id="file-naming-examples">File naming examples</h3>
+<p><strong>Multiple files</strong><br>
+The following example is for in-store purchases dated March 19, 2017 and separated into two files, <code>a</code> and <code>b</code>.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Version</th>
+<th>File Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storepurchases</code></td>
+<td><code>20170319-a</code></td>
+<td><code>storepurchases_20170319-a.csv</code></td>
+</tr>
+<tr>
+<td><code>storepurchases</code></td>
+<td><code>20170319-b</code></td>
+<td><code>storepurchases_20170319-b.csv</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Multiple versions</strong><br>
+This example is a file named for in-store returns from March 14, 2017 and March 15, 2017.</p>
+<table>
+<thead>
+<tr>
+<th>Prefix</th>
+<th>Version</th>
+<th>File Name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>storereturns</code></td>
+<td><code>20170314</code></td>
+<td><code>storereturns_20170314.csv</code></td>
+</tr>
+<tr>
+<td><code>storereturns</code></td>
+<td><code>20170315</code></td>
+<td><code>storereturns_20170315.csv</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="file-data-format">File data format</h2>
+<h3 id="file-organization">File organization</h3>
 <ul>
-<li><a href="https://academy.useinsider.com/docs/webhooks-vs-apis">Webhooks vs APIs </a></li>
-<li><a href="https://academy.useinsider.com/docs/api-reference-email-webhooks-for-email-events">Webhooks for email events</a></li>
-<li><a href="https://academy.useinsider.com/docs/webhooks-for-transactional-sms">Webhooks for transactional SMS</a></li>
+<li><strong>File encoding</strong><br>
+We suggest UTF-8 <a href="https://en.wikipedia.org/wiki/Byte_order_mark#UTF-8">(without BOM encoding)</a>.</li>
+<li><strong>Column names</strong>
+<ul>
+<li>The first line of the CSV file must contain the file column names. Each line after that represents an event or a visitor record and must contain at least one <a href="/server-side/visitor-stitching/visitor-id-attribute/">visitor identifier attribute</a>.</li>
+<li>Column names may not contain &ldquo;#&rdquo;, &ldquo;^&rdquo;, or whitespace characters.</li>
+<li>Column names are case-sensitive and must match the attribute names exactly.</li>
 </ul>
+</li>
+<li><strong>Column Values</strong><br>
+Column values should not exceed 1,000 characters. Any characters over this limit are trimmed.</li>
+<li><strong>Column Order</strong><br>
+The order of the columns does not matter, but we recommend placing the visitor ID column first.</li>
+<li><strong>Extra Columns</strong><br>
+Extra columns that are not configured as AudienceStream attributes will be ignored.</li>
+<li><strong>Group Rows by Visitor ID</strong><br>
+Each row has a <a href="/server-side/visitor-stitching/visitor-id-attribute/">visitor ID</a> column and file may contain multiple rows for the same visitor. Rows that contain the same visitor ID should be grouped together to optimize the import process.</li>
+</ul>
+<h3 id="data-type-formats">Data type formats</h3>
+<ul>
+<li><strong>Double-Quote Values with Commas</strong><br>
+If a value contains a comma (,) it must be surrounded by double-quotes to ensure the integrity of the CSV columns. We recommend putting all values in double-quotes. Use a doubled double quote (&quot;&quot;) to indicate a double quote character in the data.</li>
+<li><strong>Array of strings format</strong><br>
+Use the following example format for file attributes that are to be mapped to an array of strings: <code>&quot;[&quot;&quot;one&quot;&quot;,&quot;&quot;two&quot;&quot;,&quot;&quot;three&quot;&quot;]&quot;</code>.</li>
+<li><strong>Array of numbers format</strong><br>
+Use the following example format for file attributes that are to be mapped to an array of numbers:
+<code>&quot;[1.99,20.99]&quot;</code>.</li>
+<li><strong>Normalize Dates</strong>
+<ul>
+<li>Date values must be consistent throughout a file for a given field.</li>
+<li>Each date value must match the format specified for that column. For example, if the expected format is &ldquo;yyyy-MM-dd&rdquo;, the values must contain 4-digit years and 2-digit month and day values, for example, &ldquo;2021-02-09&rdquo;.</li>
+<li>The following date components are supported: Year, Month, Day, Hour, Minutes, Seconds, Milliseconds, AM/PM, ISO, RFC, Era. For more information about supported date components, see <a href="https://docs.oracle.com/javase/7/docs/api/java/text/SimpleDateFormat.html">Java SimpleDateFormat Patterns</a>.</li>
+<li>Dates are stored in Tealium as epoch timestamps in milliseconds.</li>
+</ul>
+</li>
+<li><strong>Normalize Empty Values</strong><br>
+Some rows might not contain a value for each column. Ensure that these columns are empty and do not contain placeholder values such as &ldquo;null&rdquo;, &ldquo;empty&rdquo;, &ldquo;blank&rdquo;, etc.</li>
+<li><strong>Omit Special Characters from Currency Amounts</strong><br>
+Columns that represent currency amounts, such as &ldquo;OrderTotal&rdquo; or &ldquo;ProductPrice&rdquo;, must not contain symbols or commas.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Valid Values</th>
+<th>Invalid Values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>39.75</td>
+<td>$39.75</td>
+</tr>
+<tr>
+<td>0</td>
+<td>zero</td>
+</tr>
+<tr>
+<td>1399.00</td>
+<td>€1.399,00</td>
+</tr>
+</tbody>
+</table>
 
 </div>
 
-<div class="pv3 overflow-hidden"><div class="fr">
+<div class="pv3 overflow-hidden dpn"><div class="fr">
 
   
-  <a href="/server-side/data-sources/webhooks/intercom/"
+  <a href="/server-side/data-sources/file-import/visitor-identification/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Intercom</div>
+      <div>Visitor identification using File Import data source</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Intercom"</title>
+      <title>"Visitor identification using File Import data source"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1057,15 +966,15 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/server-side/data-sources/webhooks/hubspot/"
+  <a href="/server-side/data-sources/file-import/about/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Hubspot "</title>
+      <title>"About file import "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
       <div class="text-color-secondary f7">Previous </div>
-      <div>Hubspot</div>
+      <div>About file import</div>
     </section>
   </a>
   
@@ -1075,7 +984,7 @@ var utag_data = {
 
 
         <div class="nested-lh-copy lh-copy bt-l b--moon-gray  mt3 cb">
-          <div id="feedback_form">
+          <div id="feedback_form" class="dpn">
   <div id="feedback_buttons">
 	  <p class="di f5 pr2">Was this page helpful?</p>
 		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -1095,7 +1004,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  February 27, 2023 
+          <p>This page was last updated:  March 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1109,13 +1018,13 @@ No</button>
 
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#prerequisites">Prerequisites</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#insider-data-source">Insider data source</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#insider-setup">Insider setup</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#events-and-attributes">Events and attributes</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#channel-events">Channel events</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#vendor-documentation">Vendor documentation</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#prepare-data-to-import">Prepare data to import</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#file-names">File names</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#file-name-prefix">File name prefix</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#file-naming-examples">File naming examples</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#file-data-format">File data format</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#file-organization">File organization</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-type-formats">Data type formats</a></li>
               </nav>
   </aside></nav>
 
