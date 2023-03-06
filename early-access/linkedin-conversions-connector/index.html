@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Tealium API v3 | Preview of Tealium Developer Docs</title>
+    <title>LinkedIn Conversions Connector Setup Guide | Early Access |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -20,7 +20,7 @@
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
 
   </head>
-  <body class="sidebar ma0 sans-serif text-color-primary  hg-section">
+  <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
       
         
 <script>
@@ -190,13 +190,12 @@ var utag_data = {
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
-  
-  
 
 <div class="w-100 ph0-l ph4 pr4">
 <div class="flex">
 
-  <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-l sticky-l pt3 pl125" style="width:280px;">
+    
+      <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-l sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -241,9 +240,9 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/platform-permissions/pii-account-roles/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">PII and Account Level Roles</a>
       </li></ul>
-      </li><li class="relative w-100 fw8 f5  active">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".api-v3">Tealium API v3</a>
-        <ul class=" api-v3 desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".api-v3">Tealium API v3</a>
+        <ul class=" api-v3 desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/api-v3/tealium-api-v3-getting-started-early-access/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-getting-started-early-access">Authentication and Request Format</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".iq-profiles-api">iQ Profiles</a>
@@ -267,132 +266,404 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/visitor-deletion-jobs/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-deletion-jobs">Visitor Deletion Jobs</a>
-      </li></ul></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/early-access/linkedin-conversions-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".linkedin-conversions-connector">LinkedIn Conversions</a>
+      </li></ul></li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/early-access/linkedin-conversions-connector/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".linkedin-conversions-connector">LinkedIn Conversions</a>
       </li></ul>
 </nav>
-</div> 
+</div>
+    
 
-  <div class="order-1 w-100 flex-ns flex-wrap">
-  <div class="w-100 max-vh-100 ph0 overflow-auto" style="flex:1;">
-    <header class="bb b--light-gray bg-subtle db-ns dn" role="banner">
-    <section class="w-100 ph4 ph5-ns pv3 flex">
-      <div class="pr4 w-70">
-          <div class="f2 f2-l fw8 primary-color m0 lh-title pt2 pb3">Tealium API v3</div>
-          <div class="lh-copy f4 fw2 silver"></div>
-      </div>
-      <div class="w-30 flex justify-center">
-      
-      </div>
+    <article id="main-content" class="order-1 overflow-auto max-vh-100 pt3 ph4-l mid-gray nested-copy-line-height no-underline nested-links nested-copy-seperator nested-blockquote mt0-ns w-100" style="flex:1;">
+      <div class="documentation-copy ml3">
+        <header class="flex-none w-100"><nav id="breadcrumb">
+<ul class="nav">
+
+    
+    
+  
+  <li class="primary-color f7 lvl0"><a class="f6 mb0 link mid-gray dim" href="/">Home</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="primary-color f7 lvl1"><a class="f6 mb0 link mid-gray dim" href="/early-access/">Early Access</a></li>
+  
+
+  
+  
+
+</ul>
+</nav>
+
+<h1 class="lh-title mb3 mv0 pt3">LinkedIn Conversions Connector Setup Guide</h1>
+</header>
+
+<div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
+  
+    <p class="f4 fw3 lh-copy">
+      This article describes how to set up the LinkedIn Conversions  connector.
+    </p>
+  
+</div>
+
+<div class="prose" id="prose">
+  <p class="note"><i class="fa fa-exclamation-triangle"></i>The LinkedIn Conversions Connector is in Early Access and is only available to select customers. If you are interested in trying this feature, contact your Tealium Support representative. Some of this connector&rsquo;s features, such as Deduplication, may not be available or ready for use.</p>
+<p>The LinkedIn Conversions API (CAPI) is a conversion tracking tool that creates a direct connect between marketing data from an advertiser’s server and LinkedIn. This integration enables advertisers to measure the performance of their LinkedIn marketing campaigns no matter where the conversion happens and use this data to power campaign optimization. The Conversions API can help strengthen performance and decreate cost per action with more complete attribution, improved reliability, and better-optimized delivery.</p>
+<h2 id="api-information">API Information</h2>
+<p>This connector uses the following vendor API:</p>
+<ul>
+<li>API Name: LinkedIn API</li>
+<li>API Version: 202302</li>
+<li>API Endpoint: <code>https://api.linkedin.com/rest</code></li>
+<li>Documentation: <a href="https://learn.microsoft.com/en-us/linkedin/marketing/integrations/ads-reporting/conversion-tracking">Conversion Tracking</a></li>
+</ul>
+<h2 id="connector-actions">Connector Actions</h2>
+<table>
+<thead>
+<tr>
+<th>Action Name</th>
+<th>AudienceStream</th>
+<th>EventStream</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stream Conversion Event</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>Batch Conversion Events</td>
+<td>✗</td>
+<td>✓</td>
+</tr>
+</tbody>
+</table>
+<h2 id="configure-settings">Configure Settings</h2>
+<p>Navigate to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">About Connectors</a>.</p>
+<p>After adding the connector, configure the following settings:</p>
+<ul>
+<li><strong>Ad Account</strong>
+<strong>Required.</strong> Select ad account ID that aligns with your sponsored account.</li>
+</ul>
+<h2 id="deduplication">Deduplication</h2>
+<p>Deduplication is the ability for the system to identify the same event being sent from both the Insight Tag and CAPI, and then discard one to ensure proper counting. Deduplication enables you to send the same events through both sources, allowing CAPI to work in tandem with your LinkedIn Insight Tag to provide maximum visibility into the conversions your campaigns are driving.</p>
+<p>To configure this connector action to receive event IDs from the LinkedIn Insights tag in your iQ Tag Management account, look for event attributes using the following naming convention:</p>
+<pre tabindex="0"><code>linkedin_event_id_&lt;Conversion ID&gt;_&lt;TAG UID&gt;
+</code></pre><p>For example <code>linkedin_event_id_11563522_123</code></p>
+<p>Your <strong>Conversion ID</strong> can be found in your LinkedIn <strong>Campaign Manager</strong> account while configuring your LinkedIn Insights tag to track a specific event:</p>
+<ol>
+<li>Navigate to <strong>Analyze</strong> &gt; <strong>Conversion Tracking</strong>.</li>
+<li>Select <strong>Create Conversion</strong> &gt; <strong>Online Conversion</strong> or <strong>Offline Conversion,</strong> depending upon your use case. For more information, see <a href="#createaconversion">Create a Conversion</a>.</li>
+<li>Enter the required <strong>Settings values</strong>, including the <strong>Key Conversion Behavior</strong> that you want to track.</li>
+<li>Select <strong>Next Step</strong>.</li>
+<li>Select any campaigns to be tracked.</li>
+<li>Under <strong>Define your Conversion Tracking Method</strong>, select <strong>Event-Specific</strong> or use the <strong>Image Pixel</strong> code to view the Conversion ID.
+<ul>
+<li>Select the value of your <code>conversion_id</code> parameter when viewed.</li>
+</ul>
+</li>
+<li>Click <strong>Create</strong> after all required forms are created and you have copied your <strong>Conversion ID</strong> value.</li>
+</ol>
+<h3 id="automatic-deduplication">Automatic Deduplication</h3>
+<p>When the <strong>Automatic Deduplication</strong> value is populated, the connector will look for the corresponding variable within the UDO object. You are no longer required to add an Event ID if this section is populated and you are using Tealium iQ. However, the following approach may still be needed when using EventStream without TealiumiQ.</p>
+<p>The connector uses the following order of operations:</p>
+<ol>
+<li>If <strong>Automatic Deduplication</strong> is populated, and the value is found in the data layer, (for example, <code>linkedin_event_id_10501014_30</code>) this value supersedes anything mapped in Event ID.</li>
+<li>If <strong>Automatic Deduplication</strong> is populated, but the value isn’t found, the mapped Event ID is used, if it is populated.</li>
+</ol>
+<h2 id="create-a-conversion">Create a Conversion</h2>
+<p>You can use Tealium’s platform to create a Conversion Event to be tracked within your <strong>Campaign Manager</strong> interface. Creating a conversion within Tealium&rsquo;s platform negates the need to configure a conversion event for tracking within the LinkedIn Campaign Manager. These values will be used to track the conversion events and be used to assosiate the conversion event values with campaigns being run. These will appear in the <strong>Analyze</strong> &gt; <strong>Conversion Tracking</strong> section. The events will appear with a Data Source value of Conversions API when viewing within the LinkedIn Campaign Manager platform.</p>
+<table>
+<thead>
+<tr>
+<th>Field / parameter</th>
+<th>Description</th>
+<th>Example and/or Type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account (<code>account</code>)</td>
+<td>The Sponsored Ad Account URN that this conversion resides under. This can be either specified in URL query parameter or in the request JSON body.</td>
+<td><code>urn:li:sponsoredAccount:1234567</code><br>URN</td>
+</tr>
+<tr>
+<td>Name (<code>name</code>)</td>
+<td>Short name for this rule, which will be shown in the UI and in reports.</td>
+<td><code>Summer_Sale CRM Conversions</code> / string</td>
+</tr>
+<tr>
+<td>Enabled (<code>enabled</code>)</td>
+<td>Set to <code>true</code> or <code>false</code> to enable or disable this rule from matching conversions. The initial state can be either, but only rules that are enabled will trigger conversion events. Default is <code>true</code>.</td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>Post Click attribution window size (<code>postClickAttributionWindowSize</code>)</td>
+<td>Conversion window timeframe (in days) of a member clicking on a LinkedIn Ad (a post-click conversion) within which conversions will be attributed to a LinkedIn ad. Allowed values are <code>1</code>, <code>7</code>, <code>30</code>, or <code>90</code>. Default is <code>30</code></td>
+<td><code>90</code> (integer)</td>
+</tr>
+<tr>
+<td>Attribution Type (<code>attributionType</code>)<br>Parameter values:<ul><li><code>LAST_TOUCH_BY_CAMPAIGN</code></li><li><code>LAST_TOUCH_BY_CONVERSION</code></li></ul></td>
+<td>The model that describes how conversion actions are to be counted:<ul><li>Each Campaign: conversion actions are counted once for each campaign to which they can be attributed (Default)</li><li>Last Campaign: (single campaign) Conversion actions are counted once for each Conversion with at least one associated campaign.</li></ul></td>
+<td>Dropdown supporting both of the values in the left section:<ul><li>Each campaign: For a conversion action associated with multiple campaigns, every campaign that has had an interaction in the conversion window will get credited with a conversion.</li><li>Last campaign: For a conversion action associated with a campaign, the most recent campaign that has had an ad interaction in the conversion window will get credited with a conversion.</li></ul></td>
+</tr>
+<tr>
+<td>Type (<code>type</code>)</td>
+<td>Type of conversion to track for this conversion rule:<ul><li><code>ADD_TO_CART</code>: The user added one or more things to their shoppping cart.</li><li><code>DOWNLOAD</code>: The user downloaded a file.</li><li><code>INSTALL</code>: The user installed a plugin or an app.</li><li><code>KEY_PAGE_VIEW</code>: The user viewed an important web page/app screen.</li><li><code>LEAD</code>: The user filled out a lead generation form.</li><li><code>PURCHASE</code>: The user made a purchase.</li><li><code>SIGN_UP</code>: The user signed up for a web site / app service.</li><li><code>OTHER</code>: Something that’s not listed.</li><li><code>TALENT_LEAD</code>: User submitted their information as a lead on LInkedIn Talent Media’s Pipeline Builder page.</li><li><code>JOB_APPLY</code>: User clicked apply to a job on LinkedIn.</li><li><code>SAVE</code>: Saves a form or state in the flow.</li><li><code>START_CHECKOUT</code>: Begins the checkout process.</li><li><code>SCHEDULE</code>: Schedule a service or appointment.</li><li><code>VIEW_CONTENT</code>: The user viewed a section of the page or app screen (webview).</li><li><code>VIEW_VIDEO</code>: The user played a video.</li><li><code>ADD_BILLING_INFO</code>: The user added credit card or purchase details.</li><li><code>BOOK_APPOINTMENT</code>: The user reserved an appointment.</li><li><code>REQUEST_QUOTE</code>: The user requested a quote.</li><li><code>SEARCH</code>: The user searched within the app.</li><li><code>SUBSCRIBE</code>: The user subscribed to a service.</li><li><code>AD_CLICK</code>: The user clicked a 3rd party ad.</li><li><code>AD_VIEW</code>: The user viewed an ad.</li><li><code>COMPLETE_SIGNUP</code>: The user completed registration process.</li><li><code>SUBMIT_APPLICATION</code>: The user submitted an application (same as complete_singup).</li><li><code>PHONE_CALL</code>: The user started a call, or performed phone-call specific event or submission.</li><li><code>INVITE</code>: The user sent/shared an invite.</li><li><code>LOGIN</code>: The user logged in to advertiser’s service account.</li><li><code>SHARE</code>: The user shared content.</li><li><code>DONATE</code>: The user performed a donation.</li><li><code>ADD_TO_LIST</code>: The user added a product to a wishlist.</li><li><code>RATE</code>: The user rated a service or a product.</li><li><code>START_TRIAL</code>: The user started a trial subscription.</li><li><code>OUTBOUND_CLICK</code>: The user left the app or page by clicking a link.</li><li><code>CONTACT</code>: The user attempted to contact, by filling a form.</li></ul></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="associate-campaigns-to-conversions">Associate campaigns to conversions</h2>
+<p>It is important to associate the conversion events that are generated to the required campaign values. These conversion events can have a one-to-many relationship with LinkedIn campaigns that are running. Tealium will also retrieve conversion events for population into the actions that are to be mapped. Use the <strong>Associate Campaigns to Conversions</strong> overlay to map your Conversions to Campaigns. After you select your Conversion and Campaign values, select <strong>Create Association</strong> and wait for the <strong>Success</strong> message to appear.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion</td>
+<td><strong>Required</strong>. Select the conversion or provide conversion ID as a custom text.</td>
+</tr>
+<tr>
+<td>Campaign</td>
+<td><strong>Required</strong>. Select the campaign or provide campaign ID as a custom text.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="actions">Actions</h2>
+<p>The connector&rsquo;s actions are used to send the contact information from the conversion to LinkedIn.</p>
+<p>Enter a name for the action and select the action type from the drop-down menu.</p>
+<p>The following section describes how to set up parameters and options for each action.</p>
+<h3 id="stream-conversion-event">Stream Conversion Event</h3>
+<h4 id="parameters">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion</td>
+<td>Select the conversion rule created through the API. Conversion ID can be provided as a custom text.</td>
+</tr>
+<tr>
+<td>Email Address (already SHA256 hashed)</td>
+<td>Provide an email address which is a cleartext and has been already SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Email Address (apply SHA256 hash)</td>
+<td>Provide a plain text email address and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>LinkedIn First Party Ads Tracking UUID</td>
+<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> in order to activate first party cookies that appends a <strong>Click ID</strong> parameter <strong>li_fat_id</strong> to the click URLs.</td>
+</tr>
+<tr>
+<td>Axciom ID</td>
+<td>User identifier for matching with LiveRamp identity graph</td>
+</tr>
+<tr>
+<td>Oracle Moat ID</td>
+<td>User identifier for matching with Oracle Moat Identity</td>
+</tr>
+<tr>
+<td>First Name</td>
+<td>The first name of the contact to match the conversion</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>The last name of the contact to match the conversion</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>Represents the company of the contact to match</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title name of the contact to match</td>
+</tr>
+<tr>
+<td>Country Code</td>
+<td>ISO standardized two letter country code representing the country of the contact</td>
+</tr>
+<tr>
+<td>Conversion Time</td>
+<td>Epoch timestamp in milliseconds at which the conversion event happened. If not mapped, it will be initialized with the current timestamp.</td>
+</tr>
+<tr>
+<td>Conversion Amount</td>
+<td>The monetary value for this conversion. Required to send <strong>conversionValue</strong> object.</td>
+</tr>
+<tr>
+<td>Currency Code</td>
+<td>Currency code in ISO format. Required to send <strong>conversionValue</strong> object</td>
+</tr>
+<tr>
+<td>Event ID</td>
+<td>The unique ID generated by advertisers to indicate each event. This field will be used for deduplication.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="batch-conversion-events">Batch Conversion Events</h3>
+<h4 id="batch-limits">Batch Limits</h4>
+<p>This action uses batched requests to support high-volume data transfers to the vendor. Requests are queued until one of the following thresholds is met:</p>
+<ul>
+<li>Max number of requests: 1000</li>
+<li>Max time since oldest request: 10 minutes</li>
+<li>Max size of requests: 1 MB</li>
+</ul>
+<h4 id="parameters-1">Parameters</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion</td>
+<td>Select the conversion rule created through the API. Conversion ID can be provided as a custom text.<br></td>
+</tr>
+<tr>
+<td>Email Address (already SHA256 hashed)</td>
+<td>Provide an email address which is a cleartext and has been already SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Email Address (apply SHA256 hash)</td>
+<td>Provide a plain text email address and the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>LinkedIn First Party Ads Tracking UUID</td>
+<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> in order to activate first party cookies that appends a <strong>Click ID</strong> parameter <strong>li_fat_id</strong> to the click URLs.</td>
+</tr>
+<tr>
+<td>Axciom ID</td>
+<td>User identifier for matching with LiveRamp identity graph.</td>
+</tr>
+<tr>
+<td>Oracle Moat ID</td>
+<td>User identifier for matching with Oracle Moat Identity.</td>
+</tr>
+<tr>
+<td>First Name</td>
+<td>The first name of the contact to match the conversion.</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>The last name of the contact to match the conversion.</td>
+</tr>
+<tr>
+<td>Company</td>
+<td>Representing the company of the contact to match.</td>
+</tr>
+<tr>
+<td>Title</td>
+<td>Title name of the contact to match.</td>
+</tr>
+<tr>
+<td>Country Code</td>
+<td>ISO standardized two letter country code representing the country of the contact.</td>
+</tr>
+<tr>
+<td>Conversion Time</td>
+<td>Epoch timestamp in milliseconds at which the conversion event happened. If not mapped, it will be initialized with the current timestamp.</td>
+</tr>
+<tr>
+<td>Conversion Amount</td>
+<td>The monetary value for this conversion. Required to send <strong>conversionValue</strong> object.</td>
+</tr>
+<tr>
+<td>Currency Code</td>
+<td>Currency code in ISO format. Required to send <strong>conversionValue</strong> object.</td>
+</tr>
+<tr>
+<td>Event ID</td>
+<td>The unique ID generated by advertisers to indicate each event. This field will be used for deduplication.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="pv3 overflow-hidden"><div class="fr">
+
+  
+  <a href="/early-access/about/"
+    class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
+    <section class="tl pr3">
+      <div class="f7 text-color-secondary">Next</div>
+      <div>About Early Access</div>
     </section>
-    </header>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"About Early Access"</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+  
+  
+</div></div>
 
-    <div class="flex flex-wrap mt2 pl4">
-      <section class="flex-ns flex-wrap w-80 prose nested-links mb3">
-        
-      </section>
-      <section class="flex-ns flex-wrap w-100">
-        
-          
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-0">
 
-  <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/early-access/api-v3/tealium-api-v3-getting-started-early-access/" class="link primary-color dim">
+
+        <div class="nested-lh-copy lh-copy bt-l b--moon-gray  mt3 cb">
+          <div id="feedback_form">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">Was this page helpful?</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+Yes</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+No</button>
+  </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea><button id="feedback_submit" class="ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">Send Feedback</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">Thank you for your feedback!</p>
+  </div>
+</div>
+
+          <p>This page was last updated:  February 23, 2022 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-100 w-20-l pl4 ph4-m mb4 sticky-r dn db-l">
+      
+
+
+
+  <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#api-information">API Information</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#deduplication">Deduplication</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#automatic-deduplication">Automatic Deduplication</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-conversion">Create a Conversion</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#associate-campaigns-to-conversions">Associate campaigns to conversions</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#actions">Actions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#stream-conversion-event">Stream Conversion Event</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#batch-conversion-events">Batch Conversion Events</a></li>
+              </nav>
+  </aside></nav>
+
+</div>
+</div>
     
-
-
-
-    <div class="f3">Tealium API v3 - Authentication and Request Format (Early Access)</div>
-
-    <div class="lh-copy mid-gray links">
-      
-          This article provides information needed to begin using the Tealium v3 API.
-        
-    </div>
-    </a>
-
-  </div>
-</div>
-
-          
-        
-          
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-0">
-
-  <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/early-access/api-v3/iq-profiles/" class="link primary-color dim">
-    
-
-
-
-    <div class="f3">iQ Profiles</div>
-
-    <div class="lh-copy mid-gray links">
-      
-      
-    </div>
-    </a>
-
-  </div>
-</div>
-
-          
-        
-          
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-0">
-
-  <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/early-access/api-v3/tealium-collect-http-api-v3-early-access/" class="link primary-color dim">
-    
-
-
-
-    <div class="f3">Tealium Collect HTTP API — V3 Early Access</div>
-
-    <div class="lh-copy mid-gray links">
-      
-          This document describes how to send data to the Customer Data Hub using the HTTP API for events. This article provides the specification for the direct HTTP endpoint, which can be used in any application that can send HTTP requests.
-        
-    </div>
-    </a>
-
-  </div>
-</div>
-
-          
-        
-          
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-0">
-
-  <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/early-access/api-v3/tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api/" class="link primary-color dim">
-    
-
-
-
-    <div class="f3">Tealium API v3 - Visitor Privacy API (formerly Visitor Lookup API)</div>
-
-    <div class="lh-copy mid-gray links">
-      
-          The Visitor Privacy API (formerly Visitor Lookup API) is used to query visitor profile records from the Customer Data Hub in support of General Data Protection Regulation (GDPR) compliance to satisfy the requirement of responding to data subject access requests.
-        
-    </div>
-    </a>
-
-  </div>
-</div>
-
-          
-        
-      </section>
-    </div>
-
-  </div>
-  </div>
-
-</div>
-</div>
-
 
     </main>
 
@@ -612,7 +883,7 @@ var utag_data = {
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/early-access/api-v3/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4 bg-primary-color">
+      <a href="https://docs-preview.tealium.com/early-access/api-v3/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Tealium API v3
       </a>
       </li>
