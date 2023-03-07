@@ -42,7 +42,7 @@ var utag_data = {
       
 
     
-<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray dpn" role="navigation">
+<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray " role="navigation">
 
   <div class="flex-ns flex-wrap items-center justify-start mw9">
 
@@ -76,7 +76,7 @@ var utag_data = {
   </div>
 
 
-<div id="mainAppInner" class="padd-54 dpn">
+<div id="mainAppInner" class="padd-54">
     <div id="leftFrame">
         <div class="main-nav-container">
             <div class="flex-1">
@@ -346,7 +346,7 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".events">Events</a>
         <ul class=" events desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/events/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-events">About Events</a>
+        <a href="/iq-tag-management/events/about-events/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-events">About Events</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/events/event-scope/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-scope">Scope</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -603,13 +603,8 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/global-parameters/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".global-consent-parameters">Global consent parameters</a>
-      </li><li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".global-privacy-control">Global Privacy Control</a>
-        <ul class=" global-privacy-control desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/global-privacy-control/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-global-privacy-control">About Global Privacy Control (GPC)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/global-privacy-control/client-side-support-gpc/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".client-side-global-privacy-control">Client-side Global Privacy Control (GPC)</a>
-      </li></ul>
+        <a href="/iq-tag-management/consent-management/global-privacy-control/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".global-privacy-control">Global Privacy Control</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/event-logging/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-logging-for-consent-management">Event logging</a>
       </li></ul>
@@ -697,47 +692,29 @@ var utag_data = {
 <div class="prose" id="prose">
   <p>The data layer screen organizes variables by type. The types are based on where the data for the variables comes from. The supported types are:</p>
 <ul>
-<li><strong>UDO Variables</strong> – variables from the Universal Data Object (<code>utag_data</code>).</li>
-<li><strong>Querystring Parameters</strong> – variables from the URL query string.</li>
-<li><strong>First-Party Cookies</strong> – variables stored as cookies.</li>
-<li><strong>JavaScript Variables</strong> – variables that already exist in your site code.</li>
-<li><strong>Meta Data Elements</strong> – variables from <code>&lt;meta&gt;</code> tags in the page&rsquo;s HTML.</li>
-<li><strong>DOM Variable</strong> – built-in DOM variables.</li>
-<li><strong>AudienceStream Attributes</strong> – variables imported via data layer enrichment from your AudienceStream account.<br>
-<figure><img src="/images/iq-tag-management/whiteui-tiq-datalayervariables-filter.png"
+<li><strong>UDO Variables</strong>: variables from the Universal Data Object (<code>utag_data</code>).</li>
+<li><strong>Querystring Parameters</strong>: variables from the URL query string.</li>
+<li><strong>First-Party Cookies</strong>: variables stored as cookies.</li>
+<li><strong>JavaScript Variables</strong>: variables that already exist in your site code.</li>
+<li><strong>Meta Data Elements</strong>: variables from <code>&lt;meta&gt;</code> tags in the page&rsquo;s HTML.</li>
+<li><strong>DOM Variable</strong>: built-in DOM variables.</li>
+<li><strong>AudienceStream Attributes</strong>: variables imported via data layer enrichment from your AudienceStream account.</li>
+<li><strong>Local Storage</strong>: locally-stored variables that persist between browsing sessions</li>
+<li><strong>Session Storage</strong>: locally-stored variables that only exist during a browser session.
+<figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/8041iD6959DBD85DE901B/image-size/large?v=v2&amp;amp;px=999"
          alt="TiQ_DataLayerVariables_Filter.png"
          title="TiQ_DataLayerVariables_Filter.png"/>
 </figure></li>
 </ul>
 <h2 id="udo-variable">UDO variable</h2>
-<p>This type is for variables defined in your [Universal Data Object]/platforms/javascript/about-utag-data/), also referred to as <code>utag_data</code>, which you can find in the code for your webpage. Most of your variables will be this type.</p>
+<p>This type is for variables defined in your <a href="/platforms/javascript/about-utag-data/">Universal Data Object</a>, also referred to as <code>utag_data</code>, which you can find in the code for your webpage. Most of your variables will be this type.</p>
 <h4 id="example">Example</h4>
 <p>In the page: <code>var utag_data = { language : &quot;en&quot;, currency : &quot;usd&quot; };</code></p>
 <p>Name in iQ: <code>language</code> and <code>currency</code></p>
 <p>Reference this variable with JavaScript in an extension: <code>b[&quot;language&quot;]</code></p>
-<h2 id="local-and-session-storage">Local and session storage</h2>
-<p>Local and session storage keys appear automatically in the data layer using <code>localStorage</code> and <code>sessionStorage</code> variables. For more information about the differences between storage types and uses, see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Window.localStorage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">Window.sessionStorage</a> articles in the MDN Web Docs.</p>
-<p>Session and local storage are sub-domain based. For example, your data will not persist if you move between <code>www.example.com</code> to <code>secure.example.com</code>. For more information, see <a href="/server-side/attributes/data-layer-enrichment/about/#same-origin-policy">Same Origin Policy</a>.</p>
-<p>To use these storage variables, navigate to <strong>iQ Tag Management &gt; Data Layer &gt; +Add Variable</strong>. Select <strong>UDO Variable</strong> and type in a source variable name.</p>
-<p>Variable name in iQ:</p>
-<ul>
-<li><code>ls.variable_name</code></li>
-<li><code>ss.variable_name</code></li>
-</ul>
-<p>Reference these variables with JavaScript in an extension:</p>
-<ul>
-<li><code>b[&quot;ls.my_local_storage_var&quot;]</code></li>
-<li><code>b[&quot;ss.my_session_storage_var&quot;]</code></li>
-</ul>
-<h2 id="javascript-variables">JavaScript variables</h2>
-<p>Select this type to reference a JavaScript variable on your web page (other than the <code>utag_data</code> object). Normal syntax rules apply to the JavaScript variable type.</p>
+<h2 id="query-string-parameters">Query string parameters</h2>
+<p>Select this type to capture parameters from the URL. The query string consists of everything after the <code>?</code> character in the URL.</p>
 <h4 id="example-1">Example</h4>
-<p>In the page: <code>var myApp = { page : { name : &quot;Home Page&quot; } };</code></p>
-<p>Variable name in iQ: <code>myApp.page.name</code></p>
-<p>Reference this variable with JavaScript in an extension: <code>b[&quot;js_page.myApp.page.name&quot;]</code></p>
-<h2 id="querystring-parameters">Querystring parameters</h2>
-<p>Select this type to capture parameters from the URL. The query string consists of everything after the &ldquo;?&rdquo; character in the URL.</p>
-<h4 id="example-2">Example</h4>
 <p>In the URL: <code>http://example.com/path/file.html?sortOrder=price</code></p>
 <p>Variable name in iQ: <code>sortOrder</code></p>
 <p>Reference this variable with JavaScript in an extension: <code>b[&quot;qp.sortOrder&quot;]</code></p>
@@ -793,6 +770,12 @@ var utag_data = {
 <p>Reference this variable with JavaScript in an extension: <code>b[&quot;cp.aff&quot;]</code></p>
 <p>Understanding when to use each type of cookie is important when trying to save cookie space. We recommend that you use the Tealium cookie as much as possible. However, if you&rsquo;re using the <a href="/iq-tag-management/extensions/extensions-list/split-segmentation-extension/">Split Segmentation</a> extension, then you must use a non-Tealium cookie.</p>
 <p>For more information on how to use cookies with Tealium, please see the <a href="/iq-tag-management/data-layer/cookies/">Tealium Cookies</a> article.</p>
+<h2 id="javascript-variables">JavaScript variables</h2>
+<p>Select this type to reference a JavaScript variable on your web page (other than the <code>utag_data</code> object). Normal syntax rules apply to the JavaScript variable type.</p>
+<h4 id="example-2">Example</h4>
+<p>In the page: <code>var myApp = { page : { name : &quot;Home Page&quot; } };</code></p>
+<p>Variable name in iQ: <code>myApp.page.name</code></p>
+<p>Reference this variable with JavaScript in an extension: <code>b[&quot;js_page.myApp.page.name&quot;]</code></p>
 <h2 id="meta-data-elements">Meta data elements</h2>
 <p>Select this type to reference the content of a meta tag in the page.</p>
 <h4 id="example-3">Example</h4>
@@ -802,10 +785,20 @@ var utag_data = {
 <h2 id="dom-variable">DOM variable</h2>
 <p>These are built-in DOM variables that cannot be modified. They are set automatically in the page.</p>
 <p><a href="/platforms/javascript/built-in-variables/">Learn more about built-in utag.js variables</a>.</p>
+<h2 id="local-and-session-storage">Local and session storage</h2>
+<p>Select this type to reference an object from local storage or session storage.</p>
+<p>For more information about the differences between storage types and uses, see <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">Window.localStorage</a> and <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/sessionStorage">Window.sessionStorage</a> from  MDN Web Docs.</p>
+<p>Session and local storage are sub-domain based. For example, your data will not persist if you move between <code>www.example.com</code> to <code>secure.example.com</code>. For more information, see <a href="/server-side/attributes/data-layer-enrichment/about/#same-origin-policy">Same Origin Policy</a>.</p>
+<p>Reference these variables with JavaScript in an extension:</p>
+<ul>
+<li>Local storage: <code>b[&quot;ls.my_local_storage_var&quot;]</code></li>
+<li>Session storage: <code>b[&quot;ss.my_session_storage_var&quot;]</code></li>
+</ul>
+<p class="note"><i class="fas fa-info-circle"></i>If you added local storage or session storage variables as the UDO type with the <code>ls.</code> or <code>ss.</code> prefix before March 1, 2023, they will not be converted to the new local storage and session storage variable types.</p>
 
 </div>
 
-<div class="pv3 overflow-hidden dpn"><div class="fr">
+<div class="pv3 overflow-hidden"><div class="fr">
 
   
   <a href="/iq-tag-management/data-layer/cookies/"
@@ -842,7 +835,7 @@ var utag_data = {
 
 
         <div class="nested-lh-copy lh-copy bt-l b--moon-gray  mt3 cb">
-          <div id="feedback_form" class="dpn">
+          <div id="feedback_form">
   <div id="feedback_buttons">
 	  <p class="di f5 pr2">Was this page helpful?</p>
 		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -862,7 +855,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  February 21, 2023 
+          <p>This page was last updated:  March 2, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -877,14 +870,14 @@ No</button>
   <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#udo-variable">UDO variable</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#local-and-session-storage">Local and session storage</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#javascript-variables">JavaScript variables</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#querystring-parameters">Querystring parameters</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#query-string-parameters">Query string parameters</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#first-party-cookies">First-party cookies</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium-cookie">Tealium cookie</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#non-tealium-cookie">Non-Tealium cookie</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#meta-data-elements">Meta data elements</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#javascript-variables">JavaScript variables</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#meta-data-elements">Meta data elements</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#dom-variable">DOM variable</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#local-and-session-storage">Local and session storage</a></li>
               </nav>
   </aside></nav>
 

@@ -42,7 +42,7 @@ var utag_data = {
       
 
     
-<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray dpn" role="navigation">
+<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray " role="navigation">
 
   <div class="flex-ns flex-wrap items-center justify-start mw9">
 
@@ -76,7 +76,7 @@ var utag_data = {
   </div>
 
 
-<div id="mainAppInner" class="padd-54 dpn">
+<div id="mainAppInner" class="padd-54">
     <div id="leftFrame">
         <div class="main-nav-container">
             <div class="flex-1">
@@ -346,7 +346,7 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".events">Events</a>
         <ul class=" events desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/events/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-events">About Events</a>
+        <a href="/iq-tag-management/events/about-events/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-events">About Events</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/events/event-scope/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-scope">Scope</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -603,13 +603,8 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/global-parameters/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".global-consent-parameters">Global consent parameters</a>
-      </li><li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".global-privacy-control">Global Privacy Control</a>
-        <ul class=" global-privacy-control desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/global-privacy-control/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-global-privacy-control">About Global Privacy Control (GPC)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/global-privacy-control/client-side-support-gpc/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".client-side-global-privacy-control">Client-side Global Privacy Control (GPC)</a>
-      </li></ul>
+        <a href="/iq-tag-management/consent-management/global-privacy-control/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".global-privacy-control">Global Privacy Control</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/event-logging/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-logging-for-consent-management">Event logging</a>
       </li></ul>
@@ -711,7 +706,7 @@ var utag_data = {
 The Universal Data Object (UDO) is the JavaScript object that represents the data layer on your site. You populate this object across all the pages of your site with dynamic values that describe the page and visitor interactions.<br>
 Learn more about <a href="/platforms/javascript/about-utag-data/">how the UDO works</a>.</li>
 <li><strong>Variable types</strong><br>
-Data available directly from your web page (other than your customized UDO) via DOM data, query strings, meta data tags, cookies, and JavaScript variables.<br>
+Data available directly from your web page (other than your customized UDO) via DOM data, query strings, meta data tags, cookies, JavaScript variables, local storage variables, and session storage variables.<br>
 Learn more about the <a href="/iq-tag-management/data-layer/manage-variables/manage-data-bundles/">data layer variable types</a>.</li>
 <li><strong><code>utag.data</code></strong><br>
 The final data object that combines variables from the UDO with all other variable types from the page. This data is used to evaluate load rules.<br>
@@ -721,7 +716,7 @@ A JavaScript object used by functions within <code>utag.js</code>. The <code>b</
 Learn more about <a href="/platforms/javascript/the-b-object/">the <code>b</code> object and how it&rsquo;s used</a>.</li>
 </ul>
 <p>The following graphic shows how individual variables come together to create your Data Layer and how that data flows out to your vendor tags.</p>
-<figure><img src="/images/iq-tag-management/dataflow-b&amp;w.jpeg"
+<figure><img src="https://community.tealiumiq.com/t5/image/serverpage/image-id/3263i63773B6C011BEF44/strip-exif-data/true/image-size/large?v=1.0&amp;px=-1"
          alt="Data Layer Flow"
          title="Data Layer Flow"/>
 </figure>
@@ -741,7 +736,7 @@ Learn more about <a href="/platforms/javascript/the-b-object/">the <code>b</code
 
 </div>
 
-<div class="pv3 overflow-hidden dpn"><div class="fr">
+<div class="pv3 overflow-hidden"><div class="fr">
 
   
   <a href="/iq-tag-management/getting-started/data-layer/data-layer-best-practices/"
@@ -778,7 +773,7 @@ Learn more about <a href="/platforms/javascript/the-b-object/">the <code>b</code
 
 
         <div class="nested-lh-copy lh-copy bt-l b--moon-gray  mt3 cb">
-          <div id="feedback_form" class="dpn">
+          <div id="feedback_form">
   <div id="feedback_buttons">
 	  <p class="di f5 pr2">Was this page helpful?</p>
 		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -798,7 +793,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  February 21, 2023 
+          <p>This page was last updated:  February 13, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

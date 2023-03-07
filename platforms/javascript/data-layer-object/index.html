@@ -42,7 +42,7 @@ var utag_data = {
       
 
     
-<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray dpn" role="navigation">
+<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray " role="navigation">
 
   <div class="flex-ns flex-wrap items-center justify-start mw9">
 
@@ -76,7 +76,7 @@ var utag_data = {
   </div>
 
 
-<div id="mainAppInner" class="padd-54 dpn">
+<div id="mainAppInner" class="padd-54">
     <div id="leftFrame">
         <div class="main-nav-container">
             <div class="flex-1">
@@ -285,6 +285,7 @@ var utag_data = {
 <li>Meta Tags</li>
 <li>DOM Attributes</li>
 <li>Cookies</li>
+<li>Local Storage and Session Storage Variables</li>
 </ul>
 <p>So, in essence, the <code>b</code> object is a copy of your page&rsquo;s data layer.</p>
 <h2 id="why-do-we-have-a-b-object">Why Do We Have a <code>b</code> Object?</h2>
@@ -331,11 +332,11 @@ By creating a local copy of <code>utag.data</code>, the values needed for each t
 <li>During a standard page load, the <code>b</code> object becomes a copy of the <code>utag_data</code> object. However, on manual tracking calls, the <code>b</code> object is a copy of the object passed to <code>utag.view()</code> or <code>utag.link()</code> and does not contain variables from the original <code>utag_data</code> object.</li>
 <li>To preserve data from <code>utag_data</code> in tracking calls (per page load) use the <a href="/iq-tag-management/save-publish/publish-configuration/">Base Variables setting in the publish settings</a>.</li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>For profiles loading version 4.39 or older, the content of the <code>b</code> object during tracking calls is a complete copy of <code>utag.data</code>. <a href="/platforms/javascript/release-notes/">Learn more</a> about this update in release history <code>utag.js</code> 4.40.</p>
+<p class="note"><i class="fas fa-info-circle"></i>For profiles loading version 4.39 or older, the content of the <code>b</code> object during tracking calls is a complete copy of <code>utag.data</code>. <a href="/platforms/javascript/release-notes/">Learn more</a> about this update in release history <code>utag.js</code> 4.40.</p>
 
 </div>
 
-<div class="pv3 overflow-hidden dpn"><div class="fr">
+<div class="pv3 overflow-hidden"><div class="fr">
 
   
   <a href="/platforms/javascript/single-page-applications/"
@@ -372,7 +373,7 @@ By creating a local copy of <code>utag.data</code>, the values needed for each t
 
 
         <div class="nested-lh-copy lh-copy bt-l b--moon-gray  mt3 cb">
-          <div id="feedback_form" class="dpn">
+          <div id="feedback_form">
   <div id="feedback_buttons">
 	  <p class="di f5 pr2">Was this page helpful?</p>
 		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -392,7 +393,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  February 13, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
