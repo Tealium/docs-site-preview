@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>About first-party domains | First-party domains |Preview of Tealium Developer Docs</title>
+    <title>Configure server-side data collection | First-party domains |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -555,10 +555,10 @@ var utag_data = {
         <a href="/iq-tag-management/administration/user-settings/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".user-settings">User settings</a>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2 primary-color expanded " data-target=".first-party-domains">First-party domains</a>
-        <ul class="bl b--primary bw1 pl2 first-party-domains desktopmenu animated fadeIn list "><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/about/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".about-first-party-domains">About first-party domains</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-server-side-data-collection/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-server-side-data-collection">Configure server-side data collection</a>
+        <ul class="bl b--primary bw1 pl2 first-party-domains desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/administration/first-party-domains/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-first-party-domains">About first-party domains</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/administration/first-party-domains/configure-server-side-data-collection/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".configure-server-side-data-collection">Configure server-side data collection</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/first-party-domains/configure-client-side-delivery/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-client-side-delivery">Configure client-side delivery</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -695,85 +695,122 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mb3 mv0 pt3">About first-party domains</h1>
+<h1 class="lh-title mb3 mv0 pt3">Configure server-side data collection</h1>
 </header>
 
 <div class="bt bw1 mv2 mid-gray b--mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      Learn about first-party domains and how to configure your own domains and SSL/TLS certificates for data collection and delivery solutions in the Tealium Customer Data Hub.
+      Instructions on how to configure first-party domains for Tealium server-side data collection.
     </p>
   
 </div>
 
 <div class="prose" id="prose">
-  <h2 id="about-first-party-domains">About first-party domains</h2>
-<p>By default, the services offered in the Tealium Customer Data Hub are hosted on Tealium domains. When domain names don&rsquo;t match the domain of your brand&rsquo;s website, they are considered third-party domains. The JavaScript files for Tealium iQ Tag Management are served from the domain <code>tags.tiqcdn.com</code> and the data collection endpoint for Tealium EventStream API Hub uses the domain <code>collect.tealiumiq.com</code>. To use first-party domains with other services, such as the View-Through Extension, contact the Tealium Support Desk.</p>
-<p>As new privacy regulations come out and as browsers begin limiting third-party capabilities, you might want to use your own domain to ensure that Tealium services are treated as first-party. First-party domains benefit from improved tracking and better compliance with browser privacy and cookie settings. Currently, only one first-party domain can be configured for an account.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Contact the Tealium Support Desk to enable first-party domains for your account.</p>
-<h2 id="how-it-works">How it works</h2>
-<p>To use your own domain name for <code>tags.tiqcdn.com</code>, you need a CNAME entry in your DNS database. A CNAME record is an alias that maps one domain name to another. For example, for the website <code>www.example.com</code>, you would create a CNAME for <code>tags.example.com</code> that points to Tealium&rsquo;s CDN to serve the files for iQ Tag Management.</p>
-<p>For <code>collect.tealiumiq.com</code>, you add A records to your DNS configuration. An A record maps a domain name to the IP address for the domain.</p>
-<p>A critical part of this configuration is the management of the SSL/TLS certificates for your domain, which are the public key certificates that verify the encryption of your website over HTTPS. The Tealium first-party domain feature helps you manage the domains you want to use with Tealium services and validates the SSL/TLS certificates for those domains.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>When using first-party domains, make sure you are using the latest version of the Tealium Collect tag.</p>
-<h3 id="managed-and-imported-certificates">Managed and imported certificates</h3>
-<p>You configure first-party domains either by importing your own certificates or by requesting certificates to be managed by Tealium. Imported certificates work the same as managed certificates, but with one important exception: imported certificates are not automatically renewed.</p>
-<p>To use your own certificates, you must have access to the following SSL/TLS certificate files:</p>
+  <p class="note"><i class="fa fa-exclamation-triangle"></i>For server-side data collection, the domain certificates are stored and configured on the Tealium endpoint in the region you select during configuration. If the selected region is different than the region for the profile, the event and visitor data is collected in the first-party domain region and forwarded to the region configured for the profile.</p>
+<ol>
+<li>
+<p>Navigate to <strong>iQ Tag Management &gt; User Menu &gt; First-Party Domains</strong>.</p>
+</li>
+<li>
+<p>Under <strong>Server-Side Data Collection/DLE</strong>, click <strong>Configure Certificate</strong>.</p>
+</li>
+<li>
+<p>Select the region in which your primary account operates:</p>
 <ul>
-<li>PEM-encoded certificate</li>
-<li>PEM-encoded, unencrypted private key</li>
-<li>PEM-encoded certificate chain</li>
+<li><strong>Germany</strong></li>
+<li><strong>Hong Kong</strong></li>
+<li><strong>Ireland</strong></li>
+<li><strong>Sydney</strong></li>
+<li><strong>Tokyo</strong></li>
+<li><strong>US East</strong></li>
 </ul>
-<p>These files must meet the following conditions:</p>
+</li>
+<li>
+<p>Select one of the following:</p>
 <ul>
-<li>Encryption format of 2048 bits or smaller</li>
-<li>Must not be password protected</li>
+<li><strong>Generate Certificate</strong> – Tealium generates and manages the certificates.</li>
+<li><strong>Provide Certificate</strong> – Provide your own certificate files. For information on the requirements and format for certificate files, see <a href="/iq-tag-management/administration/first-party-domains/about/#provide-your-own-domain-certificates">Provide your own domain certificates</a>.</li>
 </ul>
-<p>To request certificates managed by Tealium, you must have access to edit your DNS entries or have access to receive email messages sent to the domain administrator.</p>
-<h4 id="limits-on-domains-per-certificate">Limits on domains per certificate</h4>
-<p>The maximum number of domains per certificate is determined when you sign up for first-party domains. The first-party domains overview screen shows the maximum number of domains per certificate. In the following example, no domains have been mapped and the maximum number of domains is 10.</p>
-<figure><img src="/images/iq-tag-management/platperms-landing-page.png"
-         alt="Platform permissions landing page"
-         title="Platform permissions landing page"/>
-</figure>
-<h3 id="validate-domain-ownership">Validate domain ownership</h3>
-<p>Before Tealium can issue a certificate for your site, you must prove that you own or control all the domains in your request. You can prove ownership using either DNS validation or email validation.</p>
-<p>We recommend DNS validation because it is usually a quicker process and because sometimes it can be difficult to track down who in your organization has access to the administrative emails. However, if you don&rsquo;t have access to edit your domain&rsquo;s DNS database, then you must use email validation.</p>
-<h4 id="dns-validation">DNS validation</h4>
-<p>To use the DNS validation method, you must have access to edit your DNS configuration. You will need to work with your Production Operations team or the person responsible for your domain registration and SSL/TLS certificates.</p>
-<p>After you enter your domains, you are provided with validation records for each domain requested, which you must add to your DNS configuration.</p>
-<p>Validation can take up to 24 hours, but often happens much more quickly. When the validation is completed, permanent DNS records (CNAME records for <code>tags.tiqcdn.com</code>  or A records for <code>collect.tealiumiq.com</code>) are provided, which you must to your DNS configuration.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Your DNS configuration must include the validation records and the permanent records. The validation records are used when you add domains to a certificate and for auto-renewal of the certificate.</p>
-<h4 id="email-validation">Email validation</h4>
-<p>To use email validation, you must be able to receive email messages at one of the contact addresses listed in the WHOIS database for each of your requested domains. The email addresses that will receive a message include the following:</p>
+</li>
+<li>
+<p>If you chose Provide Certificate, upload the following files:</p>
 <ul>
-<li><code>administrator@your_domain</code></li>
-<li><code>hostmaster@your_domain</code></li>
-<li><code>hostmaster@your_domain</code></li>
-<li><code>postmaster@your_domain</code></li>
-<li><code>webmaster@your_domain</code></li>
-<li><code>admin@your_domain</code></li>
+<li>Certificate (required)</li>
+<li>Private Key (required)</li>
+<li>Certificate Chain (optional)</li>
 </ul>
-<p>You will receive email from Amazon Web Services (one message for each domain) containing a validation token that expires in 72 hours. If you do not receive the email or the token has expired, return to the main screen and click <strong>Resend Email</strong>. You must respond to an email message for each domain to complete the validation process.</p>
+</li>
+<li>
+<p>Select one of the following methods to validate domain ownership:</p>
+<ul>
+<li><strong>DNS Validation</strong></li>
+<li><strong>Email Validation</strong></li>
+</ul>
+</li>
+<li>
+<p>In the <strong>Add Domains</strong> section, enter a domain name.<br>For example, <code>tags.acmecorp.com</code>.</p>
+</li>
+<li>
+<p>To add another domain, click <strong>+ Add Domain</strong>.<br>If you selected DNS validation, validation A records are displayed for each domain requested, which you must add to your DNS configuration before proceeding to the next step.</p>
+</li>
+<li>
+<p>Click <strong>I Agree</strong> to give Tealium permission to manage certificates for the provided domains and certify you own and manage these domains.</p>
+<ul>
+<li>[DNS validation] the following message is displayed:<br>
+<figure><img src="/images/iq-tag-management/plat-perms-cert-generated.png"
+         alt="plat-perms-cert-generated"
+         title="plat-perms-cert-generated"/>
+</figure></li>
+<li>[Email validation] The following message is displayed:
+<figure><img src="/images/iq-tag-management/generated-email-confirm.png"
+         alt="generated-email-confirm"
+         title="generated-email-confirm"/>
+</figure></li>
+</ul>
+</li>
+<li>
+<p>[DNS validation] After your DNS update of the validation A records propagates and the validation process is completed, the permanent A records are displayed. Add the A records records to your DNS configuration. <p class="note"><i class="fa fa-exclamation-triangle"></i>Your DNS configuration must include the validation records and the permanent records. The validation records are used when you add domains to a certificate and for auto-renewal of the certificate.</p></p>
+</li>
+<li>
+<p>[Email validation] You will receive email from Amazon Web Services (one message for each domain) containing a validation token that expires in 72 hours. To complete the validation process, you must respond to the email message for each domain.</p>
+</li>
+</ol>
 
 </div>
 
 <div class="pv3 overflow-hidden"><div class="fr">
 
   
-  <a href="/iq-tag-management/administration/first-party-domains/configure-server-side-data-collection/"
+  <a href="/iq-tag-management/administration/first-party-domains/configure-client-side-delivery/"
     class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
     <section class="tl pr3">
       <div class="f7 text-color-secondary">Next</div>
-      <div>Configure server-side data collection</div>
+      <div>Configure client-side delivery</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Configure server-side data collection"</title>
+      <title>"Configure client-side delivery"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
   
   
+</div><div class="di">
+  
+  
+  <a href="/iq-tag-management/administration/first-party-domains/about/"
+    class="inline-flex justify-between ba ba-link b--black-20 br2 pa2">
+    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"About first-party domains "</title>
+      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+    </svg>
+   <section class="tr pl3">
+      <div class="text-color-secondary f7">Previous </div>
+      <div>About first-party domains</div>
+    </section>
+  </a>
+  
+
 </div></div>
 
 
@@ -811,14 +848,7 @@ No</button>
 
 
 
-  <aside class="fixed-lTK mw5-l right-0 f6 bl-l b--light-gray pv4 pv0-ns ph3-l nested-copy-line-height">
-      <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#about-first-party-domains">About first-party domains</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#managed-and-imported-certificates">Managed and imported certificates</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#validate-domain-ownership">Validate domain ownership</a></li>
-              </nav>
-  </aside></nav>
+  </nav>
 
 </div>
 </div>

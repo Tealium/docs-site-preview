@@ -42,7 +42,7 @@ var utag_data = {
       
 
     
-<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray dpn" role="navigation">
+<nav class="w-100 sticky-t nested-links pv3 bg-primary-color-light bb b--light-gray " role="navigation">
 
   <div class="flex-ns flex-wrap items-center justify-start mw9">
 
@@ -76,7 +76,7 @@ var utag_data = {
   </div>
 
 
-<div id="mainAppInner" class="padd-54 dpn">
+<div id="mainAppInner" class="padd-54">
     <div id="leftFrame">
         <div class="main-nav-container">
             <div class="flex-1">
@@ -559,11 +559,13 @@ var utag_data = {
         <ul class=" first-party-domains desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/first-party-domains/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-first-party-domains">About first-party domains</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-domains-and-certificates/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-first-party-domains">Configure domains and certificates</a>
+        <a href="/iq-tag-management/administration/first-party-domains/configure-server-side-data-collection/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-server-side-data-collection">Configure server-side data collection</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Managing first-party-domains</a>
+        <a href="/iq-tag-management/administration/first-party-domains/configure-client-side-delivery/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-client-side-delivery">Configure client-side delivery</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/using/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".using-first-party-domains">Using first-party domains</a>
+        <a href="/iq-tag-management/administration/first-party-domains/update-domains/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".fpd-update-domains">Update your domains</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/administration/first-party-domains/manage-first-party-domains/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Manage first-party-domains</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".linking-to-github">Linking to GitHub</a>
@@ -703,19 +705,19 @@ var utag_data = {
           
         
           
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-200">
+          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-110">
 
   <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/iq-tag-management/administration/first-party-domains/configure-domains-and-certificates/" class="link primary-color dim">
+      <a href="/iq-tag-management/administration/first-party-domains/configure-server-side-data-collection/" class="link primary-color dim">
     
 
 
 
-    <div class="f3">Configure domains and certificates</div>
+    <div class="f3">Configure server-side data collection</div>
 
     <div class="lh-copy mid-gray links">
       
-          This article explains how to configure domains and certificates for first-party domains
+          Instructions on how to configure first-party domains for Tealium server-side data collection.
         
     </div>
     </a>
@@ -726,19 +728,19 @@ var utag_data = {
           
         
           
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-300">
+          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-120">
 
   <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/iq-tag-management/administration/first-party-domains/manage/" class="link primary-color dim">
+      <a href="/iq-tag-management/administration/first-party-domains/configure-client-side-delivery/" class="link primary-color dim">
     
 
 
 
-    <div class="f3">Managing first-party-domains</div>
+    <div class="f3">Configure client-side delivery</div>
 
     <div class="lh-copy mid-gray links">
       
-          This article explains how to manage first-party domains
+          Instructions on how to configure first-party domains for Tealium iQ Tag Management delivery.
         
     </div>
     </a>
@@ -749,19 +751,42 @@ var utag_data = {
           
         
           
-          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-400">
+          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-140">
 
   <div class="mb2 pa3 pa4-l mid-gray">
-      <a href="/iq-tag-management/administration/first-party-domains/using/" class="link primary-color dim">
+      <a href="/iq-tag-management/administration/first-party-domains/update-domains/" class="link primary-color dim">
     
 
 
 
-    <div class="f3">Using first-party domains</div>
+    <div class="f3">Update your domains</div>
 
     <div class="lh-copy mid-gray links">
       
-          This article explains how to use first-party-domains
+          This article explains the domain updates that are needed after you have finished configuring first-party domains.
+        
+    </div>
+    </a>
+
+  </div>
+</div>
+
+          
+        
+          
+          <div class="w-30-ns mr3 mb3 bg-white ba ba-link b--light-gray nested-copy-line-height weight-150">
+
+  <div class="mb2 pa3 pa4-l mid-gray">
+      <a href="/iq-tag-management/administration/first-party-domains/manage-first-party-domains/" class="link primary-color dim">
+    
+
+
+
+    <div class="f3">Manage first-party-domains</div>
+
+    <div class="lh-copy mid-gray links">
+      
+          This article explains how to manage first-party domains.
         
     </div>
     </a>
