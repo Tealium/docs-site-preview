@@ -2,7 +2,7 @@
 {
     "kind": "taxonomy",
     "name": "rc-tags",
-    "count": 37,
+    "count": 38,
     "items": [
 
     
@@ -157,6 +157,13 @@
             "weight": "0",
             "url": "https://docs-preview.tealium.com/rc-tags/iq_load_rules/index.json",
             "name": "iq_load_rules"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/iq_tabs_consent_integrations/index.json",
+            "name": "iq_tabs_consent_integrations"
         }  
 
     , 
