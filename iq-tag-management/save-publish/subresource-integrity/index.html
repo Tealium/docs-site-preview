@@ -702,19 +702,18 @@ var utag_data = {
 
 <div class="prose" id="prose">
   <h2 id="how-it-works">How it works</h2>
-<p>When SRI (Subresource Integrity) is enabled on a Tealium profile, the user can generate a hash code and validate it against the <code>utag.js</code> file that the Tealium CDN delivers.
-The following example demonstrates the new <code>integrity</code> parameter:</p>
-<pre tabindex="0"><code>&lt;script src=&#34;https://tags.tiqcdn.com/utag/examplecompany/examplecompany-public/prod/utag.v202012030630.js&#34; integrity=&#34;sha256-9/abcdefghijklmnopqrstuvwx/abcdefghijklmnopq0=&#34; crossorigin=&#34;anonymous&#34; async&gt;&lt;/script&gt;
+<p>When SRI (Subresource Integrity) is enabled on a Tealium profile, the user can generate a hash code and validate it against the <code>utag.js</code> file that the Tealium CDN delivers.</p>
+<p>The following example demonstrates the new <code>integrity</code> parameter:</p>
+<pre tabindex="0"><code>&lt;script src=&#34;https://tags.tiqcdn.com/utag/account/profile/PROD-A/utag.v202012030630.js&#34; integrity=&#34;sha256-9/abcdefghijklmnopqrstuvwx/abcdefghijklmnopq0=&#34; crossorigin=&#34;anonymous&#34; async&gt;&lt;/script&gt;
 </code></pre><p>When a visitor loads the <code>utag.js</code> file through their browser, the hash is used to validate the the file. If the hash matches the file&rsquo;s contents, then the <code>utag.js</code> file is valid.</p>
 <p>For more information about SRI, see <a href="https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity">Mozilla’s developer documentation on Subresource Integrity</a>.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <ul>
 <li>All tags must be bundled.</li>
 <li>Grant <strong>Publish to Dev</strong> permissions to all users with publishing rights so they can publish to the custom environments.</li>
-<li>The Time To Live (TTL) for all default and custom environments is 5 minutes.</li>
+<li>Update the source code of all affected pages to include the new <code>integrity</code> parameter and correct profile name. For example, <strong>DEV-A</strong>, <strong>QA-2</strong>, <strong>PROD-BETA1</strong>. For more information, see <a href="#naming-convention">Naming convention</a> below.</li>
+<li>Develop a process to change the publish environment (for example, <strong>PROD-A</strong> to <strong>PROD-B</strong>) and update the <code>integrity</code> parameter at the same time to avoid gaps in tracking. For more information, see <a href="#hash-coordination">Hash coordination</a> below.</li>
 </ul>
-<h3 id="hash-coordination">Hash coordination</h3>
-<p>When you publish profiles and update your live site, you must update the <code>utag</code> path AND the SRI hash at the same time to use the correct custom environment. If you do not, the path and SRI hash will conflict and the browser will not load <code>utag</code>. As a best practice, we recommend working with development teams to implement this into a CMS workflow where this can be updated together.</p>
 <h3 id="naming-convention">Naming convention</h3>
 <p>To implement SRI on your profiles, you will need to follow a specific naming convention in the publish URL for each profile. You will also need to create custom environments in each profile that follow this naming convention.</p>
 <p>The custom publish environments that you create for SRI must use the following naming convention:</p>
@@ -732,6 +731,8 @@ The following example demonstrates the new <code>integrity</code> parameter:</p>
 <p>A valid publish URL will resemble the following, where <code>PROD-C</code> represents the custom publish environment name:</p>
 <pre tabindex="0"><code>https://tags.tiqcdn.com/utag/account/profile/PROD-C/utag.js
 </code></pre><p>Best practice is to create as many SRI environments for each environment category as you need, and rotate through them when publishing. For example, if you have published a profile to <strong>DEV-A</strong>, <strong>QA-A</strong> and <strong>PROD-A</strong>, on the next publish you would publish to <strong>DEV-B</strong>, <strong>QA-B</strong>, <strong>PROD-B</strong> so you do not manipulate the active profile and invalidate the SRI check.</p>
+<h3 id="hash-coordination">Hash coordination</h3>
+<p>When you publish profiles and update your live site, you must update the <code>utag</code> path AND the SRI hash in the <code>integrity</code> parameter at the same time to use the correct custom environment. If you do not, the path and SRI hash will conflict and the browser will not load <code>utag</code>. As a best practice, we recommend working with development teams to implement this into a CMS workflow where this can be updated together.</p>
 <h2 id="configure-profiles-for-sri">Configure profiles for SRI</h2>
 <p>To configure profiles for SRI, perform the following steps:</p>
 <h3 id="step-1---enable-custom-environments">Step 1 - Enable custom environments</h3>
@@ -818,7 +819,7 @@ No</button>
   </div>
 </div>
 
-          <p>This page was last updated:  March 27, 2023 
+          <p>This page was last updated:  March 31, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -834,8 +835,8 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#prerequisites">Prerequisites</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#hash-coordination">Hash coordination</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#naming-convention">Naming convention</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#naming-convention">Naming convention</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#hash-coordination">Hash coordination</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-profiles-for-sri">Configure profiles for SRI</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#step-1---enable-custom-environments">Step 1 - Enable custom environments</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#step-2---create-custom-environments">Step 2 - Create custom environments</a></li>
