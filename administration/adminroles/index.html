@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Adobe Visitor Service Module | Tealium for React Native |Preview of Tealium Developer Docs</title>
+    <title>Admin roles | Platform Administration |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -25,7 +25,7 @@
         
 <script>
 var utag_data = {
-    site_section  : "platforms",
+    site_section  : "administration",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -198,22 +198,20 @@ var utag_data = {
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
-    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/platforms/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Platforms</a></li>
+    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">React Native 2.x</span>
-        <ul class="react-native desktopmenu animated fadeIn list pl0 mt2"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/install/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-install">Install</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/track/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-track">Track</a>
+  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/administration/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Administration</span></a>
+        <ul class="administration desktopmenu animated fadeIn list pl0 mt2"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/administration/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-platform-permissions">About Platform Permissions</a>
       </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/adobe-visitor-service/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".react-native-adobe-install">Adobe Visitor Service Module</a>
+        <a href="/administration/adminroles/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".admin-roles">Admin Roles</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/location/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-location-install">Location Module</a>
+        <a href="/administration/users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-users">Manage Users</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-api">API Reference</a>
+        <a href="/administration/groups/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permission-groups">Permission Groups</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/react-native/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-release-notes">Release Notes</a>
+        <a href="/administration/migration-guide/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide">Permissions Migration Guide</a>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -226,19 +224,13 @@ var utag_data = {
 
     
     
-    
   
   <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
   
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/">Platforms</a>&nbsp;>&nbsp;</li>
-  
-
-  
-  
-  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/react-native/">Tealium for React Native</a></li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/administration/">Administration</a></li>
   
 
   
@@ -247,97 +239,274 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Adobe Visitor Service Module</h1>
+<h1 class="lh-title mt30 mb3">Admin roles</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      Learn to install Tealium Adobe Visitor Service Module for React Native.
+      This article describes admin roles in the platform permissions system.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>Tealium for React Native allows you to use the Tealium mobile libraries (iOS, Android) in your React Native application.</p>
-<h2 id="how-it-works">How It Works</h2>
-<p>Tealium mobile libraries are integrated into your React Native application using one of the following two methods:</p>
+  <h2 id="how-it-works">How it works</h2>
+<p>An admin role defines a set of account access levels for the users in your account for the client side and server side products, features, and profiles. This makes it easier for you to delegate management of your account and the product features to a team of users.</p>
+<p>Users without admin roles receive a basic user role.</p>
+<h3 id="default-admin-roles">Default admin roles</h3>
+<p>When account administrators turn on Permissions Enforcement, the system will automatically assign the Account Admin role to all users who previously had the Manage Account permission on the legacy system.</p>
+<p>This automatic permissions assignment is meant to reduce your chances of locking yourself out of the account</p>
+<h2 id="admin-roles">Admin roles</h2>
+<p>You can grant the following admin roles to users in your account:</p>
+<h3 id="account-admin">Account Admin</h3>
+<p>Users with this admin role have full access to the account. The account admin role includes all of the abilities of the other admin roles.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>At least one user in your account must have the Account Admin role. If you are the only Account Admin on your account, you cannot remove this role from yourself.</p>
+<h3 id="user-admin">User Admin</h3>
+<p>This admin role manages user, user settings, and permission groups.</p>
 <ul>
-<li>NPM package (recommended)</li>
-<li>Manual via <a href="https://github.com/Tealium/tealium-react-native">GitHub</a></li>
+<li><strong>Manage Permissions</strong> - Create, edit, and delete permission groups. Also can add and remove users from groups, and assign profiles to groups.</li>
+<li><strong>Manage Users</strong> - Add, edit, and remove users from the account.</li>
+<li><strong>Multi-Factor Authentication</strong> - Enable and disable <a href="/iq-tag-management/administration/security/mfa/">multi-factor authentication</a> on the account.</li>
+<li><strong>Reset MFA for other users</strong> - Reset multi-factor authentication tokens for other users on the account.</li>
+<li><strong>Set Password Policy</strong> - Manage the <a href="/iq-tag-management/administration/security/password-policy/">password policy</a> for the account.</li>
+<li><strong>SSO Management</strong> - Enable, disable, and manage Single-Sign On (SSO).</li>
 </ul>
-<h2 id="requirements">Requirements</h2>
+<h3 id="technical-admin">Technical Admin</h3>
+<p>This admin role manages the account&rsquo;s technical settings.</p>
 <ul>
-<li>Access to your native build environments</li>
-<li><a href="/platforms/react-native/">Tealium for React Native 2.2.0+</a></li>
-<li><a href="https://github.com/Tealium/tealium-react-native">React Native 0.63+</a> and tools installed</li>
-<li><a href="/iq-tag-management/profiles/creating-a-mobile-profile/">Tealium iQ Mobile Profile</a></li>
-<li><a href="https://developer.android.com/studio/">Android Studio</a> or <a href="https://developer.apple.com/xcode/">Xcode</a></li>
-<li><a href="/platforms/android-kotlin/">Tealium for Android</a> or <a href="/platforms/ios-swift/">Tealium for iOS</a></li>
+<li><strong>First Party Domains</strong> - Manage <a href="/iq-tag-management/administration/first-party-domains/">first-party domains</a>, including entering domain names and updating certificates.</li>
+<li><strong>Github Account</strong> - Link this account to a GitHub account for use with the Advanced JavaScript Code extension.</li>
 </ul>
-<h2 id="install-npmyarn">Install (NPM/YARN)</h2>
-<p>To install the Tealium Adobe Visitor module for React Native with NPM:</p>
+<h3 id="privacy-admin">Privacy Admin</h3>
+<p>This admin role manages the account’s privacy settings (This role requires the User Admin role).</p>
+<ul>
+<li><strong>Consent Management</strong> - Manage <a href="/iq-tag-management/consent-management/about/">consent parameters and languages</a>, which apply to all profiles that use consent management.</li>
+<li><strong>PII View &amp; Manage</strong> - Manage Personally Identifiable Information (PII) user permissions and view and edit attributes with restricted data.</li>
+<li><strong>Tag Marketplace Policy</strong> - Enable, disable, and configure the <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/">tag marketplace policy</a> to control which tags are available for use on this account.</li>
+</ul>
+<h3 id="profile-admin">Profile Admin</h3>
+<p>This admin role manages profiles and profile settings. Profile admins must be a member of a permission group that can access any profile they want to manage. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group.</p>
+<ul>
+<li><strong>Create New Profile</strong> - Create new profiles and assign permissions groups to them.</li>
+<li><strong>Manage Profile Libraries</strong> - <a href="/iq-tag-management/profiles/profile-libraries/">Manage profile libraries</a>.</li>
+<li><strong>Manage Profiles</strong> - <a href="/iq-tag-management/profiles/manage/">Manage an existing profile.</a></li>
+</ul>
+<h3 id="account-viewer">Account Viewer</h3>
+<p>This admin role can view everything in the account with read-only access. It is intended for auditing or legal review purposes.</p>
+<h2 id="permissions-matrix">Permissions matrix</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Account Admin</th>
+<th>Privacy Admin</th>
+<th>Profile Admin</th>
+<th>Technical Admin</th>
+<th>User Admin</th>
+<th>Account viewer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Accounts</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>First-Party Domains</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>GitHub Account</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Global Consent Management</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Initiate CDN Purge Request</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>MFA Reset For Others</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View, Edit</td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>MFA Toggle</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View, Edit</td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Password Policy</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Permission Groups</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View, Create, Edit</td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>PII and Restricted Data</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Permissions Enforcement</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Profile Libraries</strong></td>
+<td>View, Create, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Profiles</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td>View, Create, Edit</td>
+<td></td>
+<td>View</td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>SSO</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Tag Marketplace Policy</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>TiQ Profile Publish Dev</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td>Edit</td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>TiQ Profile Publish Prod</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td>Edit</td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>TiQ Profile Publish QA</strong></td>
+<td>View, Edit</td>
+<td></td>
+<td>Edit</td>
+<td></td>
+<td></td>
+<td>View</td>
+</tr>
+<tr>
+<td><strong>Users</strong></td>
+<td>View, Create, Edit, Delete</td>
+<td></td>
+<td></td>
+<td></td>
+<td>View, Create, Edit</td>
+<td>View</td>
+</tr>
+</tbody>
+</table>
+<h2 id="manage-a-users-admin-roles">Manage a user’s admin roles</h2>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Before you change the admin roles for any user, make sure that the users on the account have sufficient permissions.</p>
+<p>To edit a user’s admin roles:</p>
 <ol>
-<li>
-<p>Follow the installation instructions for the main <code>tealium-react-native</code> library installation <a href="/platforms/react-native/install/">here</a>. Ensure you have installed at least version 2.2.0 or above.</p>
-</li>
-<li>
-<p>Navigate to the root of your React Native project.</p>
-</li>
-<li>
-<p>Download and install the <code>tealium-react-native-adobe-visitor</code> package with the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>yarn install tealium-react-native-adobe-visitor
-</span></span></code></pre></div></li>
+<li>On the user admin menu, select <strong>Manage Permissions</strong>. The <strong>Manage Permissions</strong> screen appears.</li>
+<li>Click the <strong>Users</strong> tab.</li>
+<li>Click the user you want to edit. The <strong>User Details</strong> dialog will appear.</li>
+<li>Click the <strong>Basic Info</strong> tab and click <strong>Edit</strong>. The user’s <strong>Edit</strong> dialog will appear.</li>
+<li>Add or remove the necessary admin roles for the user.</li>
+<li>When you are finished making the changes you want, click <strong>Finish</strong>.</li>
 </ol>
-<h2 id="javascript">JavaScript</h2>
-<p>To import the relevant classes into your app, do the following:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">TealiumAdobeVisitor</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;tealium-react-native-adobe-visitor&#39;</span>;
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">import</span> { <span style="color:#a6e22e">TealiumAdobeVisitorConfig</span> } <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;tealium-react-native-adobe-visitor/common&#39;</span>;
-</span></span></code></pre></div><h2 id="initialize">Initialize</h2>
-<p>Configure the Adobe Visitor module prior to initializing the main Tealium React Native integration.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#a6e22e">adobeVisitorConfig</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">TealiumAdobeVisitorConfig</span> <span style="color:#f92672">=</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorOrgId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;ADOBE-ORG-ID&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorExistingEcid</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorRetries</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorAuthState</span><span style="color:#f92672">:</span> <span style="color:#a6e22e">AuthState</span>.<span style="color:#a6e22e">authenticated</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorDataProviderId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">adobeVisitorCustomVisitorId</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;&#34;</span>
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">configure</span>(<span style="color:#a6e22e">adobeVisitorConfig</span>);
-</span></span></code></pre></div><h2 id="api-reference">API Reference</h2>
-<p>After the Adobe Visitor Module and the main Tealium React Native integration have both been initialized, you can link an existing Adobe visitor.</p>
-<h3 id="linkecidtoknownidentifierid-providerid-authstate-callback"><code>linkEcidToKnownIdentifier(id, providerId, authState, callback)</code></h3>
-<p>Links existing ECID to known Identifier.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">linkEcidToKnownIdentifier</span>(<span style="color:#a6e22e">id</span>, <span style="color:#a6e22e">providerId</span>, <span style="color:#a6e22e">authState</span>, <span style="color:#a6e22e">value</span> =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;AdobeVisitor Data: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">value</span>))
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="getadobevisitorcallback"><code>getAdobeVisitor(callback)</code></h3>
-<p>Get the current Adobe visitor information</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">getAdobeVisitor</span>(<span style="color:#a6e22e">value</span> =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Current Adobe Visitor: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">JSON</span>.<span style="color:#a6e22e">stringify</span>(<span style="color:#a6e22e">value</span>))
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="decorateurlurl-callback"><code>decorateUrl(url, callback)</code></h3>
-<p>Decorates the URL with ECID visitor data.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">decorateUrl</span>((<span style="color:#e6db74">&#34;https://tealium.com&#34;</span>, <span style="color:#a6e22e">value</span> =&gt; {
-</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Decorated URL: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>);
-</span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="resetvisitor"><code>resetVisitor()</code></h3>
-<p>Reset current visitor.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">resetVisitor</span>();
-</span></span></code></pre></div>
+<p>The <strong>Manage Permissions</strong> screen will appear.</p>
+<p>You can also use the checkboxes and <strong>Bulk Actions</strong> to assign or unassign roles to multiple users at once.</p>
+
 </div>
 
 <div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
 
   
-  <a href="/platforms/react-native/location/"
+  <a href="/administration/users/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Location Module</div>
+      <div>Manage Users</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Location Module"</title>
+      <title>"Manage Users"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -346,14 +515,14 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/platforms/react-native/track/"
+  <a href="/administration/about/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Track "</title>
+      <title>"About Platform Permissions "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Track</div>
+      <div>About Platform Permissions</div>
     </section>
   </a>
   
@@ -385,7 +554,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 17, 2023 
+          <p>This page was last updated:  March 15, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -399,16 +568,17 @@ No</button>
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How It Works</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#requirements">Requirements</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#install-npmyarn">Install (NPM/YARN)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#javascript">JavaScript</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#initialize">Initialize</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#api-reference">API Reference</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#linkecidtoknownidentifierid-providerid-authstate-callback">linkEcidToKnownIdentifier(id, providerId, authState, callback)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#getadobevisitorcallback">getAdobeVisitor(callback)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#decorateurlurl-callback">decorateUrl(url, callback)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#resetvisitor">resetVisitor()</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#default-admin-roles">Default admin roles</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#admin-roles">Admin roles</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#account-admin">Account Admin</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#user-admin">User Admin</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#technical-admin">Technical Admin</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#privacy-admin">Privacy Admin</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#profile-admin">Profile Admin</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#account-viewer">Account Viewer</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#permissions-matrix">Permissions matrix</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manage-a-users-admin-roles">Manage a user’s admin roles</a></li>
               </nav>
   </aside></nav>
 
@@ -526,6 +696,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Administration
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium for Pharma
         </a>
@@ -598,38 +776,32 @@ No</button>
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/install/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Install
+      <a href="https://docs-preview.tealium.com/administration/about/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          About Platform Permissions
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/track/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Track
+      <a href="https://docs-preview.tealium.com/administration/adminroles/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Admin Roles
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/adobe-visitor-service/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Adobe Visitor Service Module
+      <a href="https://docs-preview.tealium.com/administration/users/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Manage Users
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/location/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Location Module
+      <a href="https://docs-preview.tealium.com/administration/groups/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Permission Groups
       </a>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/api/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          API Reference
-      </a>
-      </li>
-      
-      <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/platforms/react-native/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Release Notes
+      <a href="https://docs-preview.tealium.com/administration/migration-guide/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Permissions Migration Guide
       </a>
       </li>
       
