@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Video Event Tracking with Google Universal Analytics | Client-Side Tags |Preview of Tealium Developer Docs</title>
+    <title>Amperity Tag Setup Guide | Client-Side Tags |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -265,6 +265,8 @@ var utag_data = {
         <a href="/client-side-tags/amobee-cooking-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amobee-cooking-matching-service-tag">Amobee Cooking Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amobee-pixel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amobee-pixel-tag">Amobee Pixel</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/amperity-tag/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".amperity-tag">Amperity</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amplitude-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amplitude-tag">Amplitude</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -612,6 +614,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/rokt-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".rokt-tag">Rokt</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/rtb-house-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".rtb-house-tarargeting-tag-setup-guide">RTB House Retargeting</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/rtoaster-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".rtoaster-tag">RToaster</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/rubicon-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".rubicon-cookie-matching-service-tag">Rubicon Cookie Matching Service</a>
@@ -688,11 +692,11 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/twitter-universal-website-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".twitter-universal-website-tag">Twitter Universal Website Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/uim-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".uim-tag">UIM Retargeting</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/uplift-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".uplift-tag">Uplift</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/userway-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".userway-tag">UserWay Tag Setup</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/video-event-tracking-with-google-universal-analytics/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".video-event-tracking-with-google-universal-analytics">Video Event Tracking with Google Universal Analytics</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/webtrekk-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".webtrekk-tag">Webtrekk</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -754,27 +758,431 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Video Event Tracking with Google Universal Analytics</h1>
+<h1 class="lh-title mt30 mb3">Amperity Tag Setup Guide</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
   
+    <p class="f4 fw3 lh-copy">
+      This article describes how to set up the Amperity tag in your Tealium iQ Tag Management account.
+    </p>
+  
 </div>
 
 <div class="prose nested-links" id="prose">
-  
+  <h2 id="tag-tips">Tag tips</h2>
+<ul>
+<li>Use mapping to override the standard config values dynamically.</li>
+<li>This tag supports the following <a href="/iq-tag-management/extensions/extensions-list/e-commerce-extension/">E-Commerce extension</a> parameters:
+<ul>
+<li>Order ID</li>
+<li>Product ID</li>
+</ul>
+</li>
+</ul>
+<h2 id="tag-configuration">Tag configuration</h2>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
+<p>When adding the tag, configure the following settings:</p>
+<ul>
+<li><strong>Write Token</strong>: Non-expiring public write token</li>
+<li><strong>Stream ID</strong>: Identifies which stream is being written to</li>
+<li><strong>Tenant Name</strong>: Name of the Amperity tenant being written to</li>
+<li><strong>Hosted JavaScript Endpoint</strong>: URL that hosts the JavaScript embedded</li>
+</ul>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
+<h2 id="data-mappings">Data mappings</h2>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
+<p>The available categories are:</p>
+<h3 id="standard">Standard</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>writeToken</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Write Token</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>streamID</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Stream ID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>tenantName</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Tenant Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>hostedJavaScriptEndpoint</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Hosted JavaScript Endpoint</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>tenantUrl</code></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">Tenant URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>is-mobile</code></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">Whether the user accesses the site with a mobile device or a browser.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>session-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The ID of the web session in which the event took place.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>property</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">For multi-brand or multisite, the specific property.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>brand</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">For multi-brand, the brand associated with the page.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>page-url</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The URL where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>page-name</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The page name where the event occurred.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>referral-url</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The URL that referred the user to the site.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>referral-source</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The referring medium/source to the site (direct, organic search, etc.).</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>search-value</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The entered search value when a site query is run.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="identifiers">Identifiers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>first-party-web-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The first party customer identifier stored with the session.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>first-party-cookie</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The first party cookie/hashed ID passed from a source.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>visitor-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The assigned visitor ID by the provider. This field can be used to store sessions but may not be unique or identifiable.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>device-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The device ID associated with the event. This may be hidden depending on the privacy restrictions for the data source.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>mobile-ad-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The mobile ad ID or MAID associated with the event. This is an unreliable customer identifier, but is worth capturing.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>captured-email</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The entered email for an order status, restock alert, subscription signup, credit card signup, or loyalty signup.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>identifiers.custom</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Any other capturable customer identifier.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="campaignad-info">Campaign/Ad Info</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>campaign-id</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The referring/tracked campaign ID from an email, digital ad, or other form of campaign.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>campaign-name</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The referring/tracked campaign name from an email, digital ad, or other form of campaign.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>adword-group</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The adword group that referred the user.</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>adword-keyword</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The ad/search keyword list that referred the user.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="e-commerce">E-Commerce</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>order-id</code> (Overrides <code>_corder</code>)</td>
+<td style="text-align:left">[Number, String]</td>
+<td style="text-align:left">Order ID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>product-id</code> (Overrides <code>_cprod</code>)</td>
+<td style="text-align:left">Array</td>
+<td style="text-align:left">Product ID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-parameters">Event Parameters</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>event-datetime</code></td>
+<td style="text-align:left">DATETIME</td>
+<td style="text-align:left">The time and day the event occurred</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-triggers">Event Triggers</h3>
+<p>To map events, refer to <a href="/iq-tag-management/data-mappings/manage/#add-an-event-mapping">Create an Event Mapping</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>purchase</code></td>
+<td style="text-align:left">Purchase</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productDetailPageBrowse</code></td>
+<td style="text-align:left">Product Detail Page Browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>viewProduct</code></td>
+<td style="text-align:left">View Product</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>categoryPageBrowse</code></td>
+<td style="text-align:left">Category Page browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>viewCartAbandon</code></td>
+<td style="text-align:left">View Cart Abandon</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>storeLocatorSearch</code></td>
+<td style="text-align:left">Store Locator Search</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>highValuePageView</code></td>
+<td style="text-align:left">High-Value Page View</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productFilterSelections</code></td>
+<td style="text-align:left">Product Filter selections</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>accountCreation</code></td>
+<td style="text-align:left">Account Creation</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>emailListServ</code></td>
+<td style="text-align:left">Email List Serv</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>promoCodeSignup</code></td>
+<td style="text-align:left">Promo Code Signup</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>creditCardBrowse</code></td>
+<td style="text-align:left">Credit Card Browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>creditCardSignup</code></td>
+<td style="text-align:left">Credit Card Signup</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>checkOrderStatus</code></td>
+<td style="text-align:left">Check Order Status</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leaveReview</code></td>
+<td style="text-align:left">Leave a Review</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>siteSearch</code></td>
+<td style="text-align:left">Site Search</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>supportContact</code></td>
+<td style="text-align:left">Support/Contact</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productRestockAlert</code></td>
+<td style="text-align:left">Product Restock Alert</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>addToWishlist</code></td>
+<td style="text-align:left">Add To Wishlist</td>
+</tr>
+</tbody>
+</table>
+<h3 id="event-specific-parameters">Event-specific Parameters</h3>
+<p>To map events, refer to <a href="/iq-tag-management/data-mappings/manage/#add-an-event-mapping">Create an Event Mapping</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>purchase</code></td>
+<td style="text-align:left">Purchase</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productDetailPageBrowse</code></td>
+<td style="text-align:left">Product Detail Page Browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>viewProduct</code></td>
+<td style="text-align:left">View Product</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>categoryPageBrowse</code></td>
+<td style="text-align:left">Category Page browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>viewCartAbandon</code></td>
+<td style="text-align:left">View Cart Abandon</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>storeLocatorSearch</code></td>
+<td style="text-align:left">Store Locator Search</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>highValuePageView</code></td>
+<td style="text-align:left">High-Value Page View</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productFilterSelections</code></td>
+<td style="text-align:left">Product Filter selections</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>accountCreation</code></td>
+<td style="text-align:left">Account Creation</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>emailListServ</code></td>
+<td style="text-align:left">Email List Serv</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>promoCodeSignup</code></td>
+<td style="text-align:left">Promo Code Signup</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>creditCardBrowse</code></td>
+<td style="text-align:left">Credit Card Browse</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>creditCardSignup</code></td>
+<td style="text-align:left">Credit Card Signup</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>checkOrderStatus</code></td>
+<td style="text-align:left">Check Order Status</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leaveReview</code></td>
+<td style="text-align:left">Leave a Review</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>siteSearch</code></td>
+<td style="text-align:left">Site Search</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>supportContact</code></td>
+<td style="text-align:left"></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>productRestockAlert</code></td>
+<td style="text-align:left">Product Restock Alert</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>addToWishlist</code></td>
+<td style="text-align:left">Add To Wishlist</td>
+</tr>
+</tbody>
+</table>
+
 </div>
 
 <div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
 
   
-  <a href="/client-side-tags/webtrekk-tag/"
+  <a href="/client-side-tags/amplitude-tag/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Webtrekk</div>
+      <div>Amplitude</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Webtrekk"</title>
+      <title>"Amplitude"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -783,14 +1191,14 @@ var utag_data = {
 </div><div class="di">
   
   
-  <a href="/client-side-tags/userway-tag/"
+  <a href="/client-side-tags/amobee-pixel-tag/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"UserWay Tag Setup "</title>
+      <title>"Amobee Pixel "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>UserWay Tag Setup</div>
+      <div>Amobee Pixel</div>
     </section>
   </a>
   
@@ -822,7 +1230,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  July 13, 2016 
+          <p>This page was last updated:  April 6, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -834,7 +1242,21 @@ No</button>
 
 
 
-  </nav>
+  <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#identifiers">Identifiers</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#campaignad-info">Campaign/Ad Info</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-parameters">Event Parameters</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-triggers">Event Triggers</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-specific-parameters">Event-specific Parameters</a></li>
+              </nav>
+  </aside></nav>
 
 </div>
 </div>
@@ -898,6 +1320,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Data Connect
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/predict/getting-started/about-predict/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Predict ML
         </a>
@@ -944,14 +1374,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/api/getting-started/auth/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           API
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Administration
         </a>
     </li>
   
@@ -1029,6 +1451,8 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
   
   
   

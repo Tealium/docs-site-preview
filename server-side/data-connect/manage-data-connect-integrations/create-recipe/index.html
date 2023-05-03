@@ -841,7 +841,11 @@ var utag_data = {
 <p>In the <strong>My new recipe</strong> slideout, enter a name for the recipe and select the profile associated with the recipe.</p>
 </li>
 <li>
-<p>Under <strong>Pick a starting point</strong>, select how you want to trigger your app in Workato. Select <strong>Run on a schedule</strong> to build a recipe that runs on a schedule for your business case.<p class="tip"><i class="fa fa-info-circle"></i>For more information about Workato triggers, see the <a href="https://docs.workato.com/recipes/triggers.html">Triggers</a> article in the Workato Recipe Components documentation. To see which triggers are available for your app, read the app-specific document in the <a href="https://docs.workato.com/connectors/prebuilt-connectors.html">Pre-built Connectors</a> documentation.</p></p>
+<p>Under <strong>Pick a starting point</strong>, select how you want to trigger your app in Workato.</p>
+<ul>
+<li>Select <strong>Run on a schedule</strong> to build a recipe that runs on a schedule for your business case.</li>
+<li>Select <strong>Trigger from an App</strong> to build a recipe that periodically polls the source system for new data.<p class="tip"><i class="fa fa-info-circle"></i>For more information about Workato triggers, see the <a href="https://docs.workato.com/recipes/triggers.html">Triggers</a> article in the Workato Recipe Components documentation. To see which triggers are available for your app, read the app-specific document in the <a href="https://docs.workato.com/connectors/prebuilt-connectors.html">Pre-built Connectors</a> documentation.</p></li>
+</ul>
 </li>
 <li>
 <p>Click <strong>Start building</strong>.</p>
@@ -855,9 +859,8 @@ var utag_data = {
 <li><a href="#step-3-configure-error-handling">Configure error handling</a>.</li>
 </ol>
 <h3 id="step-1-select-a-trigger">Step 1: Select a trigger</h3>
-<ul>
-<li><strong>App-based triggers</strong><br>
-Search for the <strong>app</strong> you want to integrate into Tealium. For schedule-based recipes, the trigger is the schedule that you configure.
+<p><strong>App-based triggers</strong><br>
+Search for the <strong>app</strong> you want to integrate into Tealium. For schedule-based recipes, the trigger is the schedule that you configure.</p>
 <ol>
 <li>
 <p>In the <strong>Trigger</strong> step, choose the trigger for your business case.<p class="tip"><i class="fa fa-info-circle"></i>Use batch processing when available to reduce the number of tasks per recipe.</p></p>
@@ -869,21 +872,13 @@ Search for the <strong>app</strong> you want to integrate into Tealium. For sche
 <p>In the <strong>Setup</strong> step, add any additional configurations for this app trigger. Set a trigger condition if you want to set a more specific trigger.</p>
 </li>
 </ol>
-</li>
-<li><strong>Webhook triggers</strong><br>
-Use the guided setup to configure your webhook.
-<ol>
-<li>In the <strong>Setup</strong> step, add any additional configurations for this app trigger. Set a trigger condition if you want to set a more specific trigger.</li>
-</ol>
-</li>
-</ul>
 <h3 id="step-2-configure-an-action">Step 2: Configure an action</h3>
 <ol>
 <li>Under <strong>Actions</strong> click <strong>+</strong>.</li>
 <li>Under <strong>What happens next?</strong> select <strong>Handle errors</strong>.<br>
 We recommend wrapping the Tealium Events app and related actions in an error monitoring step.</li>
 <li>Select any apps you need to prepare the data to be imported to Tealium. For example, use the <strong>Download file contents in Amazon S3</strong>, <strong>Decrypt and verify data</strong>, and <strong>Parse CSV</strong> apps together to prepare encrypted CSV data stored in an Amazon S3 bucket.</li>
-<li>(Optional) If you are sending batched events to Tealium, you must use the <strong>Repeat action</strong> loop with the Tealium Events app.
+<li>You must use the <strong>Repeat action</strong> loop with the Tealium Events app.
 <ol>
 <li>Click the <strong>+</strong> to see a list of actions.</li>
 <li>Click <strong>Repeat action</strong>.</li>
@@ -902,7 +897,7 @@ Configure each field as needed for your use case.
 <p><strong>Source Attribute Name</strong> - Use the <strong>Text</strong> option and enter the API names of the data points you want to rename.</p>
 </li>
 <li>
-<p><strong>Tealium Attribute Name</strong> - Use the <strong>Text</strong> option and enter the desired event attribute name.<p class="note"><i class="fa fa-exclamation-triangle"></i>Event attribute names can contain only letters, numbers, underscores, dollar signs, array brackets, and periods. Spaces are not allowed.</p></p>
+<p><strong>Tealium Attribute Name</strong> - Use the <strong>Text</strong> option and enter the desired event attribute name.<p class="note"><i class="fa fa-exclamation-triangle"></i>Event attribute names can contain only letters, numbers, underscores, dollar signs, square brackets, and periods. Spaces are not allowed.</p></p>
 </li>
 <li>
 <p><strong>Encode Visitor ID</strong> - Determines whether the visitor ID is encoded with SHA-256. The default value is <strong>No</strong>. <p class="note"><i class="fa fa-exclamation-triangle"></i><strong>Encode Visitor ID</strong> is applied only if <strong>Visitor Attribute ID</strong> is defined.</p></p>
@@ -948,12 +943,12 @@ Navigate to <strong>AudienceStream &gt; Visitor/Visit Attributes</strong>, selec
 <h3 id="step-3-configure-error-handling">Step 3: Configure error handling</h3>
 <ol>
 <li>Click the <strong>On Error</strong> step.</li>
-<li>Under <strong>Retry actions in Monitor block?</strong> choose whether to retry actions.</li>
+<li>Under <strong>Retry actions in Monitor block?</strong>, choose whether to retry actions.</li>
 <li>Create an email notification.
 <ol>
 <li>Select an app to trigger when an error occurs. For example, you can send an email with error information using the <strong>Email by Workato</strong> app.</li>
 <li>Configure the app with your contact information.</li>
-<li>Select datapills with information about the error monitoring from the <strong>Recipe data</strong> slideout to include in your email message.</li>
+<li>From the <strong>Recipe data</strong> slideout, select datapills with information about the error monitoring to include in your email message.</li>
 </ol>
 </li>
 <li>Add a log message to the job report.
@@ -968,10 +963,10 @@ Navigate to <strong>AudienceStream &gt; Visitor/Visit Attributes</strong>, selec
 <li>Click the <strong>+</strong> to add an additional action when an error occurs.</li>
 <li>Click <strong>Action in an app</strong> and select the <strong>ReceipeOps by Workato</strong> app.</li>
 <li>Select the <strong>Stop a recipe</strong> action.</li>
-<li>Under <strong>Whose account are you managing?</strong> select <strong>My account</strong>.</li>
+<li>Under <strong>Whose account are you managing?</strong>, select <strong>My account</strong>.</li>
 <li>Click <strong>Connect</strong>.</li>
 <li>In the <strong>Setup</strong> step, select the current recipe name from the <strong>Recipe</strong> drop down list.</li>
-<li>Select <strong>Yes</strong> from the <strong>Force stop</strong> drop down list.</li>
+<li>Select <strong>Yes</strong> from the <strong>Force stop</strong> drop-down list.</li>
 </ol>
 </li>
 <li>Stop the current job.
@@ -1045,7 +1040,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  April 5, 2023 
+          <p>This page was last updated:  April 24, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
