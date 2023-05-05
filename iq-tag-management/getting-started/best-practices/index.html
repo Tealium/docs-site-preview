@@ -525,6 +525,8 @@ var utag_data = {
         <a href="/iq-tag-management/save-publish/concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".save-publish-concurrent-users">Concurrent users</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".merging-changes-between-concurrent-users">Merging changes between concurrent users</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/save-publish/subresource-integrity/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".subresource-integrity">Subresource Integrity</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".iq-administration">Administration</a>
@@ -652,6 +654,8 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".frequently-asked-questions">Frequently Asked Questions</a>
         <ul class=" frequently-asked-questions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/frequently-asked-questions/faq-login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-log-in-to-tealium">How do I log in?</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-remove-a-user/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-remove-a-user">How do I remove a user?</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-reset-my-password/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-reset-my-password">How do I reset my password?</a>
@@ -770,7 +774,7 @@ var utag_data = {
 <p>This content has been moved: <a href="/iq-tag-management/getting-started/data-layer/data-layer-best-practices/">Data layer best practices</a></p>
 <h2 id="event-tracking">Event tracking</h2>
 <h3 id="replace-hard-coded-vendor-tags">Replace hard-coded vendor tags</h3>
-<p>When adding event tracking code to your site, we recommend replacing all existing hard-coded vendor tags with Universal Tag tracking code. The behavior of individual tags can be controlled within the iQ console.</p>
+<p>When adding event tracking code to your site, we recommend replacing all existing hard-coded vendor tags with Universal Tag tracking code. The behavior of individual tags can be controlled within the Tealium iQ Tag Management console.</p>
 <table>
 <thead>
 <tr>
@@ -780,7 +784,7 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td>Centralizes the management of event tracking to the iQ console.</td>
+<td>Centralizes the management of event tracking to the Tealium iQ console.</td>
 <td>Developers might be more familiar with the vendor&rsquo;s code.</td>
 </tr>
 <tr>
@@ -842,7 +846,7 @@ var utag_data = {
 <ul>
 <li>Implementation is clearer due to consistent variable names and values.</li>
 <li>Data mapping is easier because there is a single identifier for event types.</li>
-<li>Event are grouped into categories by the prefix of the name (<code>product_</code>, <code>cart_</code>, <code>user_</code>)</li>
+<li>Event are grouped into categories by the prefix of the name (<code>product_</code>, <code>cart_</code>, <code>user_</code>).</li>
 </ul>
 <h4 id="sample-event-tracking-script">Sample event tracking script</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">link</span>({
@@ -851,13 +855,24 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">product_price</span>    <span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;12.50&#34;</span>],
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">product_quantity</span> <span style="color:#f92672">:</span> [<span style="color:#e6db74">&#34;2&#34;</span>]
 </span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h3 id="event-listeners-vs-utaglink">Event listeners vs. utag.link()</h3>
+</span></span></code></pre></div><h3 id="event-listeners-versus-utaglink">Event listeners versus utag.link()</h3>
 <p>Tealium has two options for tracking clicks and other events on a site:</p>
 <ul>
-<li>Configuring <a href="/iq-tag-management/events/about/">Event listeners</a> in the iQ console.</li>
+<li>Configuring <a href="/iq-tag-management/events/about/">event listeners</a> in the Tealium iQ interface.</li>
 <li>Coding <code>utag.link()</code> directly in the page.</li>
 </ul>
-<p>We recommend that you hard-code <code>utag.link()</code> on pages that have business-critical need for tracking and Event listeners to track all other necessary events.</p>
+<p>Consider using event listeners in the following situations:</p>
+<ul>
+<li>The website, development team, or release cycles do not allow for hardcoded tracking calls.</li>
+<li>Scroll tracking and video tracking are much easier to implement with event listeners.</li>
+<li>Strong selectors and tracking data elements are available.</li>
+</ul>
+<p>Consider using hardcoded <code>utag.link()</code> calls in the following situations:</p>
+<ul>
+<li>The event requires data not available in the DOM.</li>
+<li>Business-critical KPIs (Key Performance Indicators).</li>
+<li>When easier to integrate with site functionality, such as modals and form validation.</li>
+</ul>
 <h2 id="performance">Performance</h2>
 <h3 id="load-utagjs-asynchronously">Load utag.js asynchronously</h3>
 <p>The best practice is to loading all tags and vendor code asynchronously. In this method, tags are loaded in parallel to the rest of the page content. This means that even if the tag is slow to respond or to load, it will not slow down the rest of the site.</p>
@@ -945,6 +960,9 @@ var utag_data = {
 </tr>
 </tbody>
 </table>
+<h3 id="only-load-event-listeners-when-necessary">Only load event listeners when necessary</h3>
+<p>If you do not set any event rules for an event listener, it will load on every page. Loading a levent listeners on every page will slow down delivery of pages on the site and collect unnecessary data. We recommend that you use rules to load event listeners only on pages where you expect the trigger&rsquo;s actions to happen or where you require visitor action data.</p>
+<p>For more information, see <a href="/iq-tag-management/events/rules/">Event Rules</a>.</p>
 <h2 id="extensions">Extensions</h2>
 <h3 id="use-built-in-extensions">Use built-in extensions</h3>
 <p>Tealium is designed for both non-technical users with limited coding experience and for developers who are comfortable writing their own JavaScript. While many of the built-in extensions could easily be re-written as custom JavaScript Code extensions, we recommend using the built-in extensions whenever possible and only writing custom JavaScript when you require additional functionality not offered by the existing options.</p>
@@ -1048,7 +1066,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 30, 2023 
+          <p>This page was last updated:  May 4, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1069,12 +1087,13 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-tracking">Event tracking</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#replace-hard-coded-vendor-tags">Replace hard-coded vendor tags</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-names">Event names</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-listeners-vs-utaglink">Event listeners vs. utag.link()</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-listeners-versus-utaglink">Event listeners versus utag.link()</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#performance">Performance</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-utagjs-asynchronously">Load utag.js asynchronously</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#bundle-tags">Bundle tags</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#page-code-placement">Page code placement</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-timing">Tag timing</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#only-load-event-listeners-when-necessary">Only load event listeners when necessary</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#extensions">Extensions</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#use-built-in-extensions">Use built-in extensions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#global-vs-local-javascript-variables">Global vs. local JavaScript variables</a></li>
@@ -1137,6 +1156,14 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Data Connect
         </a>
     </li>
   
