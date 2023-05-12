@@ -272,6 +272,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/anura-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".anura-tag">Anura Tag Setup Guide Tag Management</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/appdynamics-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".appdynamics-tag">AppDynamics</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/apprl-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".apprl-tag">APPRL</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/appsflyer-mobile-remote-command-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".appsflyer-mobile-remote-command-tag">AppsFlyer Mobile Remote Command</a>
@@ -422,6 +424,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/foresee-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".foresee-tag">Foresee</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/fullcontact-customer-recognition/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".fullcontact-customer-recognition-tag">FullContact Customer Recognition</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/fullstory-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".fullstory-tag">Fullstory</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/genesys-chat-widget-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".genesys-chat-widget-tag">Genesys Chat Widget Tag Guide</a>
@@ -471,8 +475,6 @@ var utag_data = {
         <a href="/client-side-tags/iadvize-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iadvize-tag">iAdvize</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/ibm-ubx-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".ibm-ubx-cookie-matching-service-tag">IBM UBX Cookie Matching Service</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/ibm-websphere-commerce-integration-guide/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".ibm-websphere-commerce-integration-guide">IBM WebSphere Commerce Integration Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/intelliad-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".intelliad-cookie-matching-service-tag">intelliAd Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -539,6 +541,8 @@ var utag_data = {
         <a href="/client-side-tags/monetate-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".monetate-tag">Monetate</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/mybuys-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mybuys-tag">MyBuys</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/nano-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nano-tag">Nano</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-platformone-conversion-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-platformone-conversion-tag-setup-guide">Neustar</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -764,138 +768,174 @@ var utag_data = {
 <div class="mv2 mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to set up the Adobe Experience Platform Web SDK tag in your Tealium iQ Tag Management account.
+      This article describes how to set up the Adobe Experience Platform Web SDK tag.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="tag-tips">Tag Tips</h2>
+  <p>Adobe Experience Platform Web SDK is a client-side JavaScript library that allows customers of the Adobe Experience Cloud to interact with the various services in the Experience Cloud through the Adobe Experience Platform Edge Network. Also referred to as Adobe Alloy.</p>
+<h2 id="tag-tips">Tag tips</h2>
 <ul>
-<li>Use mappings to override standard configuration values and set custom parameters.</li>
-<li>If you are configuring multiple instances, you must provide a unique Config ID and Org ID for each instance.</li>
-<li>Provide multiple values in a comma-separated list.</li>
+<li>Use mappings to override standard config values and set custom parameters.</li>
+<li>If you are configuring multiple instances, you must provide a unique <strong>Datastream ID</strong> and <strong>Org ID</strong> for each instance. Provide multiple values in a comma-separated list.</li>
 </ul>
-<h2 id="tag-configuration">Tag Configuration</h2>
-<p>First, go to the tag marketplace and add the Adobe Experience Platform Web SDK tag (Learn more about <a href="/iq-tag-management/tags/manage-tags/">how to add a tag</a>).</p>
-<p>After adding the tag, configure the following settings:</p>
+<h2 id="tag-configuration">Tag configuration</h2>
+<p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
+<p>When adding the tag, configure the following settings:</p>
 <ul>
-<li>
-<p><strong>Instance Name</strong></p>
-<ul>
-<li>The namespace for your SDK.</li>
-<li>The default value is <code>alloy</code>.</li>
+<li><strong>Tag Version</strong>: Select the appropriate tag version. The default is version 2.16.0.</li>
+<li><strong>Instance Name</strong>: The namespace for your SDK. The default is <code>alloy</code>.</li>
+<li><strong>Org ID</strong>: Your Adobe-assigned Experience Cloud organization ID. For example, <code>XXX@AdobeOrg</code>.</li>
+<li><strong>Edge Domain</strong>: The domain that will be used to interact with Adobe services. Update the default setting if you mapped one of your first-party domains (using CNAME) to an Adobe-provisioned domain.</li>
+<li><strong>Datastream ID</strong>: Your Adobe-assigned datastream ID, which links the SDK to the appropriate accounts and configuration. Also referred to as the <code>edgeConfigId</code>.</li>
+<li><strong>Debug Enabled</strong>: Enables debugging messages to be displayed in the browser’s JavaScript console.</li>
+<li><strong>Edge Base Path</strong>: Configured in your Adobe account. The default is <code>ee</code>.</li>
+<li><strong>Auto Pageview Tracking</strong>: Fires the <code>web.webpagedetails.pageViews</code> event automatically for every page view.</li>
+<li><strong>Auto Purchase Tracking</strong>: Fires the <code>commerce.purchases</code> event automatically whenever an order ID is present.</li>
+<li><strong>Adobe Target Pre-Hiding Snippet</strong>: Enables the pre-hiding snippet code that hides the HTML body while the Adobe Target library is fully loaded and performed any content swaps. For more information, see <a href="https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/target/overview.html?lang=en#adobe-target-extension-with-an-asynchronous-deployment">Adobe Target extension with an asynchronous deployment</a> in the Adobe Experience Platform documentation.</li>
 </ul>
-</li>
-<li>
-<p><strong>Config ID</strong></p>
-<ul>
-<li>Your Adobe-assigned configuration ID.</li>
-<li>This ID links the SDK to the appropriate accounts and configuration.</li>
-</ul>
-</li>
-<li>
-<p><strong>Org ID</strong></p>
-<ul>
-<li>Your Adobe-assigned Experience Cloud organization ID.</li>
-</ul>
-</li>
-</ul>
-<h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-layer/data-layer-variables/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
+<h2 id="load-rules">Load rules</h2>
+<p>Load the tag on all pages or set conditions for when your tag will load. For more information, see <a href="/iq-tag-management/load-rules/about/">About load rules</a>.</p>
+<h2 id="data-mappings">Data mappings</h2>
+<p>Mapping is the process of sending data from a data layer variable to the corresponding destination variable of the vendor tag. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.</p>
 <p>The available categories are:</p>
 <h3 id="standard">Standard</h3>
 <table>
 <thead>
 <tr>
 <th>Variable</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>library_version</code></td>
+<td>String</td>
+<td>Tag Version</td>
+</tr>
+<tr>
+<td><code>context</code></td>
+<td>Array</td>
+<td>Context</td>
+</tr>
+<tr>
+<td><code>debugEnabled</code></td>
+<td>Boolean</td>
+<td>Debug Enabled</td>
+</tr>
+<tr>
+<td><code>decisionScopes</code></td>
+<td>Array</td>
+<td>Decision Scopes</td>
+</tr>
+<tr>
+<td><code>defaultConsent</code></td>
+<td>String</td>
+<td>Default Consent</td>
+</tr>
+<tr>
+<td><code>downloadLinkQualifier</code></td>
+<td>String</td>
+<td>Download Link Qualifier</td>
+</tr>
+<tr>
+<td><code>edgeConfigId</code></td>
+<td>String</td>
+<td>Datastream ID</td>
+</tr>
+<tr>
+<td><code>edgeDomain</code></td>
+<td>String</td>
+<td>Edge Domain</td>
+</tr>
+<tr>
+<td><code>edgeBasePath</code></td>
+<td>String</td>
+<td>Edge Base Path</td>
+</tr>
+<tr>
+<td><code>auto_page_tracking</code></td>
+<td>Boolean</td>
+<td>Auto Page Tracking</td>
+</tr>
+<tr>
+<td><code>auto_purchase_tracking</code></td>
+<td>Boolean</td>
+<td>Auto Purchase Tracking</td>
+</tr>
+<tr>
+<td><code>event_type</code></td>
+<td>String</td>
+<td>Event Type</td>
+</tr>
+<tr>
+<td><code>errorsEnabled</code></td>
+<td>Boolean</td>
+<td>Errors Enabled</td>
+</tr>
+<tr>
+<td><code>hasHidingSnippet</code></td>
+<td>Boolean</td>
+<td>Adobe Target Pre-Hiding Snippet</td>
+</tr>
+<tr>
+<td><code>instanceName</code></td>
+<td>String</td>
+<td>Instance Name</td>
+</tr>
+<tr>
+<td><code>orgId</code></td>
+<td>String</td>
+<td>Org ID</td>
+</tr>
+<tr>
+<td><code>renderDecisions</code></td>
+<td>Boolean</td>
+<td>Render Decisions</td>
+</tr>
+<tr>
+<td><code>documentUnloading</code></td>
+<td>Boolean</td>
+<td>Document Unloading</td>
+</tr>
+<tr>
+<td><code>custom.##</code></td>
+<td>-</td>
+<td>Custom Data</td>
+</tr>
+<tr>
+<td><code>commandCallback</code></td>
+<td>Function</td>
+<td>commandCallback Function</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-collection">Data Collection</h3>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Type</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><code>clickCollectionEnabled</code></td>
-<td><ul><li>Boolean</li><li>Click Collection Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>context</code></td>
-<td><ul><li>Array</li><li>Context</li></ul></td>
-</tr>
-<tr>
-<td><code>cookieDestinationsEnabled</code></td>
-<td><ul><li>Boolean</li><li>Cookie Destinations Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>debugEnabled</code></td>
-<td><ul><li>Boolean</li><li>Debug Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>decisionScopes</code></td>
-<td><ul><li>Array</li><li>Decision Scopes</li></ul></td>
-</tr>
-<tr>
-<td><code>defaultConsent</code></td>
-<td><ul><li>String</li><li>Default Consent</li></ul></td>
-</tr>
-<tr>
-<td><code>downloadLinkQualifier</code></td>
-<td><ul><li>String</li><li>Download Link Qualifier</li></ul></td>
-</tr>
-<tr>
-<td><code>edgeConfigId</code></td>
-<td><ul><li>String</li><li>Config ID</li></ul></td>
-</tr>
-<tr>
-<td><code>edgeDomain</code></td>
-<td><ul><li>String</li><li>Edge Domain</li></ul></td>
-</tr>
-<tr>
-<td><code>event_type</code></td>
-<td><ul><li>String</li><li>Event Type</li></ul></td>
-</tr>
-<tr>
-<td><code>errorsEnabled</code></td>
-<td><ul><li>Boolean</li><li>Errors Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>idMigrationEnabled</code></td>
-<td><ul><li>Array</li><li>ID Migration Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>instanceName</code></td>
-<td><ul><li>String</li><li>Instance Name</li></ul></td>
+<td>Boolean</td>
+<td>Click Collection Enabled</td>
 </tr>
 <tr>
 <td><code>onBeforeEventSend</code></td>
-<td><ul><li>Function</li><li><code>onBeforeEventSend</code> function</li></ul></td>
+<td>Function</td>
+<td>onBeforeEventSend</td>
 </tr>
 <tr>
-<td><code>orgId</code></td>
-<td><ul><li>String</li><li>Org ID</li></ul></td>
-</tr>
-<tr>
-<td><code>prehidingStyle</code></td>
-<td><ul><li>String</li><li>Prehiding Style</li></ul></td>
-</tr>
-<tr>
-<td><code>renderDecisions</code></td>
-<td><ul><li>Boolean</li><li>Render Decisions</li></ul></td>
-</tr>
-<tr>
-<td><code>thirdPartyCookiesEnabled</code></td>
-<td><ul><li>Boolean</li><li>Third Party Cookies Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>urlDestinationsEnabled</code></td>
-<td><ul><li>Boolean</li><li>URL Destinations Enabled</li></ul></td>
-</tr>
-<tr>
-<td><code>custom.##</code></td>
-<td><ul><li>Custom Data</li></ul></td>
-</tr>
-<tr>
-<td><code>commandCallback</code></td>
-<td><ul><li>Function</li><li><code>commandCallback</code> Function</li></ul></td>
+<td><code>onBeforeLinkClickSend</code></td>
+<td>Function</td>
+<td>onBeforeLinkClickSend</td>
 </tr>
 </tbody>
 </table>
@@ -903,161 +943,159 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>purchaseID</code></td>
-<td><ul><li>Order ID</li><li>Overrides <code>_corder</code>.</li></ul></td>
+<td style="text-align:left"><code>purchaseID</code> (Overrides <code>_corder</code>)</td>
+<td>String</td>
+<td style="text-align:left">Order ID</td>
 </tr>
 <tr>
-<td><code>priceTotal</code></td>
-<td><ul><li>Order Total</li><li>Overrides <code>_ctotal</code>.</li></ul></td>
+<td style="text-align:left"><code>priceTotal</code> (Overrides <code>_ctotal</code>)</td>
+<td>String</td>
+<td style="text-align:left">Order Total</td>
 </tr>
 <tr>
-<td><code>currencyCode</code></td>
-<td><ul><li>Currency</li><li>Overrides <code>_ccurrency</code>.</li></ul></td>
+<td style="text-align:left"><code>currencyCode</code> (Overrides <code>_ccurrency</code>)</td>
+<td>String</td>
+<td style="text-align:left">Currency</td>
 </tr>
 <tr>
-<td><code>product.name</code></td>
-<td><ul><li>Array</li><li>List of Names</li><li>Overrides <code>_cprodname</code>.</li></ul></td>
+<td style="text-align:left"><code>product.name</code> (Overrides <code>_cprodname</code>)</td>
+<td>Array</td>
+<td style="text-align:left">List of Names</td>
 </tr>
 <tr>
-<td><code>product.SKU</code></td>
-<td><ul><li>Array</li><li>List of SKUs</li><li>Overrides <code>_csku</code>.</li></ul></td>
+<td style="text-align:left"><code>product.SKU</code> (Overrides <code>_csku</code>)</td>
+<td>Array</td>
+<td style="text-align:left">List of SKUs</td>
 </tr>
 <tr>
-<td><code>product.quantity</code></td>
-<td><ul><li>Array</li><li>List of Quantities</li><li>Overrides <code>_cquan</code>.</li></ul></td>
+<td style="text-align:left"><code>product.quantity</code> (Overrides <code>_cquan</code>)</td>
+<td>Array</td>
+<td style="text-align:left">List of Quantities</td>
 </tr>
 <tr>
-<td><code>product.priceTotal</code></td>
-<td><ul><li>Array</li><li>List of Prices</li><li>Overrides <code>_cprice</code>.</li></ul></td>
+<td style="text-align:left"><code>product.priceTotal</code> (Overrides <code>_cprice</code>)</td>
+<td>Array</td>
+<td style="text-align:left">List of Prices</td>
 </tr>
 <tr>
-<td><code>payment.transactionID</code></td>
-<td><ul><li>Array</li><li>Payment Transaction ID</li></ul></td>
+<td style="text-align:left"><code>product.lineItemId</code> (Overrides <code>_ccat</code>)</td>
+<td>Array</td>
+<td style="text-align:left">List of Line Item Ids</td>
 </tr>
 <tr>
-<td><code>payment.paymentAmount</code></td>
-<td><ul><li>Array</li><li>Payment Amount</li></ul></td>
+<td style="text-align:left"><code>payment.transactionID</code></td>
+<td>Array</td>
+<td style="text-align:left">Payment Transaction ID</td>
 </tr>
 <tr>
-<td><code>payment.paymentType</code></td>
-<td><ul><li>Array</li><li>Payment Type</li></ul></td>
+<td style="text-align:left"><code>payment.paymentAmount</code></td>
+<td>Array</td>
+<td style="text-align:left">Payment Amount</td>
 </tr>
 <tr>
-<td><code>payment.currencyCode</code></td>
-<td><ul><li>Array</li><li>Payment Currency Code</li></ul></td>
+<td style="text-align:left"><code>payment.paymentType</code></td>
+<td>Array</td>
+<td style="text-align:left">Payment Type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>payment.currencyCode</code></td>
+<td>Array</td>
+<td style="text-align:left">Payment Currency Code</td>
 </tr>
 </tbody>
 </table>
-<h3 id="commandsevents">Commands/Events</h3>
+<h3 id="privacy-options">Privacy Options</h3>
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>advertising.clicks</code></td>
-<td><ul><li>Clicks</li></ul></td>
+<td style="text-align:left"><code>defaultConsent</code></td>
+<td>String</td>
+<td style="text-align:left">Default Consent</td>
+</tr>
+</tbody>
+</table>
+<h3 id="personalization-options">Personalization Options</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>prehidingStyle</code></td>
+<td>String</td>
+<td style="text-align:left">Prehiding Style</td>
 </tr>
 <tr>
-<td><code>advertising.completes</code></td>
-<td><ul><li>Completes</li></ul></td>
+<td style="text-align:left"><code>targetMigrationEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">Target Migration Enabled</td>
+</tr>
+</tbody>
+</table>
+<h3 id="audiences-options">Audiences Options</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>cookieDestinationsEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">Cookie Destinations Enabled</td>
 </tr>
 <tr>
-<td><code>advertising.conversions</code></td>
-<td><ul><li>Conversions</li></ul></td>
+<td style="text-align:left"><code>urlDestinationsEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">Url Destinations Enabled</td>
+</tr>
+</tbody>
+</table>
+<h3 id="identity-options">Identity Options</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>idMigrationEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">ID Migration Enabled</td>
 </tr>
 <tr>
-<td><code>advertising.federated</code></td>
-<td><ul><li>Federated</li></ul></td>
+<td style="text-align:left"><code>thirdPartyCookiesEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">Third Party Cookies Enabled</td>
 </tr>
 <tr>
-<td><code>advertising.firstQuartiles</code></td>
-<td><ul><li>First Quartiles</li></ul></td>
-</tr>
-<tr>
-<td><code>advertising.impressions</code></td>
-<td><ul><li>Impressions</li></ul></td>
-</tr>
-<tr>
-<td><code>advertising.midpoints</code></td>
-<td><ul><li>Midpoints</li></ul></td>
-</tr>
-<tr>
-<td><code>advertising.starts</code></td>
-<td><ul><li>Starts</li></ul></td>
-</tr>
-<tr>
-<td><code>advertising.thirdQuartiles</code></td>
-<td><ul><li>Third Quartiles</li></ul></td>
-</tr>
-<tr>
-<td><code>advertising.timePlayed</code></td>
-<td><ul><li>Time Played</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.checkouts</code></td>
-<td><ul><li>Checkouts</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productListAdds</code></td>
-<td><ul><li>Product List Adds</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productListOpens</code></td>
-<td><ul><li>Product List Opens</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productListRemovals</code></td>
-<td><ul><li>Product List Removals</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productListReopens</code></td>
-<td><ul><li>Product List Reopens</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productListViews</code></td>
-<td><ul><li>Product List Views</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.productViews</code></td>
-<td><ul><li>Product Views</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.purchases</code></td>
-<td><ul><li>Purchases</li></ul></td>
-</tr>
-<tr>
-<td><code>commerce.saveForLaters</code></td>
-<td><ul><li>Save For Laters</li></ul></td>
-</tr>
-<tr>
-<td><code>delivery.feedback</code></td>
-<td><ul><li>Feedback</li></ul></td>
-</tr>
-<tr>
-<td><code>web.webinteraction.linkClicks</code></td>
-<td><ul><li>Link Clicks</li></ul></td>
-</tr>
-<tr>
-<td><code>web.webpagedetails.pageView</code>s</td>
-<td><ul><li>Page Views</li></ul></td>
-</tr>
-<tr>
-<td><code>identityMap</code></td>
-<td><ul><li>Identity Map</li></ul></td>
-</tr>
-<tr>
-<td><code>custom</code></td>
-<td><ul><li>Custom</li></ul></td>
+<td style="text-align:left"><code>identityMap</code></td>
+<td>String</td>
+<td style="text-align:left">identity Map</td>
 </tr>
 </tbody>
 </table>
@@ -1065,26 +1103,3211 @@ var utag_data = {
 <table>
 <thead>
 <tr>
-<th>Variable</th>
-<th>Description</th>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>id_namespace</code></td>
-<td><ul><li>Array, String</li><li>ID Namespace</li></ul></td>
+<td style="text-align:left">ID Namespace <code>id_namespace</code></td>
+<td style="text-align:left">[Array, String]</td>
 </tr>
 <tr>
-<td><code>id</code></td>
-<td><ul><li>Array, String</li><li>ID</li></ul></td>
+<td style="text-align:left">ID <code>id</code></td>
+<td style="text-align:left">[Array, String]</td>
 </tr>
 <tr>
-<td><code>authenticatedState</code></td>
-<td><ul><li>Array, String</li><li>Authenticated State</li></ul></td>
+<td style="text-align:left">Authenticated State <code>authenticatedState</code></td>
+<td style="text-align:left">[Array, String]</td>
 </tr>
 <tr>
-<td><code>primary</code></td>
-<td><ul><li>Array, String</li><li>Primary</li></ul></td>
+<td style="text-align:left">Primary <code>primary</code></td>
+<td style="text-align:left">[Array, String]</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xdm-event-triggers">XDM Event Triggers</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>advertising.clicks</code></td>
+<td style="text-align:left">Clicks</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.completes</code></td>
+<td style="text-align:left">Completes</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.conversions</code></td>
+<td style="text-align:left">Conversions</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.federated</code></td>
+<td style="text-align:left">Federated</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.firstQuartiles</code></td>
+<td style="text-align:left">First Quartiles</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.impressions</code></td>
+<td style="text-align:left">Impressions</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.midpoints</code></td>
+<td style="text-align:left">Midpoints</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.starts</code></td>
+<td style="text-align:left">Starts</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.thirdQuartiles</code></td>
+<td style="text-align:left">Third Quartiles</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.timePlayed</code></td>
+<td style="text-align:left">Time Played</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>application.close</code></td>
+<td style="text-align:left">Close</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>application.launch</code></td>
+<td style="text-align:left">Launch</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.checkouts</code></td>
+<td style="text-align:left">Checkouts</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListAdds</code></td>
+<td style="text-align:left">Product List Adds</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListOpens</code></td>
+<td style="text-align:left">Product List Opens</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListRemovals</code></td>
+<td style="text-align:left">Product List Removals</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListReopens</code></td>
+<td style="text-align:left">Product List Reopens</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListViews</code></td>
+<td style="text-align:left">Product List Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productViews</code></td>
+<td style="text-align:left">Product Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.purchases</code></td>
+<td style="text-align:left">Purchases</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.saveForLaters</code></td>
+<td style="text-align:left">Save For Laters</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>decisioning.propositionDisplay</code></td>
+<td style="text-align:left">Proposition Display</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>decisioning.propositionInteract</code></td>
+<td style="text-align:left">Proposition Interact</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>delivery.feedback</code></td>
+<td style="text-align:left">Feedback</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailBounced</code></td>
+<td style="text-align:left">Email Bounced</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailBouncedSoft</code></td>
+<td style="text-align:left">Email BouncedSoft</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailClicked</code></td>
+<td style="text-align:left">Email Clicked</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailDelivered</code></td>
+<td style="text-align:left">Email Delivered</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailOpened</code></td>
+<td style="text-align:left">Email Opened</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailUnsubscribed</code></td>
+<td style="text-align:left">Email Unsubscribed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.dismiss</code></td>
+<td style="text-align:left">Dismiss</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.display</code></td>
+<td style="text-align:left">Display</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.interact</code></td>
+<td style="text-align:left">Interact</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.callWebhook</code></td>
+<td style="text-align:left">Call Webhook</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.convertLead</code></td>
+<td style="text-align:left">Convert Lead</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.interestingMoment</code></td>
+<td style="text-align:left">Interesting Moment</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.newLead</code></td>
+<td style="text-align:left">New Lead</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.scoreChanged</code></td>
+<td style="text-align:left">Score Changed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.statusInCampaignProgressionChanged </code></td>
+<td style="text-align:left">Status In Campaign Progression Changed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>listOperation.addToList</code></td>
+<td style="text-align:left">Add To List</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>listOperation.removeFromList</code></td>
+<td style="text-align:left">Remove From List</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>message.feedback</code></td>
+<td style="text-align:left">Feedback</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>message.tracking</code></td>
+<td style="text-align:left">Tracking</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.addToOpportunity</code></td>
+<td style="text-align:left">Add To Opportunity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.opportunityUpdated</code></td>
+<td style="text-align:left">Opportunity Updated</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.removeFromOpportunity</code></td>
+<td style="text-align:left">Remove From Opportunity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pushTracking.applicationOpened</code></td>
+<td style="text-align:left">Application Opened</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pushTracking.customAction</code></td>
+<td style="text-align:left">Custom Action</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.webinteraction.linkClicks</code></td>
+<td style="text-align:left">Link Clicks</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.webpagedetails.pageViews</code></td>
+<td style="text-align:left">Page Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.formFilledOut</code></td>
+<td style="text-align:left">Form Filled Out</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>identityMap</code></td>
+<td style="text-align:left">identityMap</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event1to100 </code></td>
+<td style="text-align:left">Experience Analytics Events 1-100</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event101to200</code></td>
+<td style="text-align:left">Experience Analytics Events 101-200</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event201to300</code></td>
+<td style="text-align:left">Experience Analytics Events 201-300</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event301to400</code></td>
+<td style="text-align:left">Experience Analytics Events 301-400</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event401to500</code></td>
+<td style="text-align:left">Experience Analytics Events 401-500</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event501to600</code></td>
+<td style="text-align:left">Experience Analytics Events 501-600</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event601to700</code></td>
+<td style="text-align:left">Experience Analytics Events 601-700</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event701to800</code></td>
+<td style="text-align:left">Experience Analytics Events 701-800</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event801to900</code></td>
+<td style="text-align:left">Experience Analytics Events 801-900</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom._experience.analytics.event901to1000</code></td>
+<td style="text-align:left">Experience Analytics Events 901-1000</td>
+</tr>
+<tr>
+<td style="text-align:left">Custom</td>
+<td style="text-align:left">Custom</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytics-xdm-data">Analytics XDM Data</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>xdm.timestamp</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.timestamp</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isClose</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isClose</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isInstall</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isInstall</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isLaunch</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isLaunch</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.closeType</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.closeType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.name</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isUpgrade</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isUpgrade</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.version</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.version</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.sessionLength</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.sessionLength</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.name</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.type</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.name</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.isErrorPage</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.isErrorPage</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.server</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.server</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.siteSection</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.siteSection</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.viewName</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.viewName</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webReferrer.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webReferrer.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.checkouts.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.checkouts.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.checkouts.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.checkouts.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.currencyCode</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.currencyCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.purchaseID</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.purchaseID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.transactionID</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.transactionID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListAdds.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListAdds.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListAdds.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListAdds.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListOpens.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListOpens.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListOpens.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListOpens.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListRemovals.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListRemovals.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListRemovals.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListRemovals.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListViews.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListViews.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListViews.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListViews.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productViews.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productViews.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productViews.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productViews.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.purchases.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.purchases.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.model</code></td>
+<td>String</td>
+<td style="text-align:left">device.model</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.colorDepth</code></td>
+<td>String</td>
+<td style="text-align:left">device.colorDepth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.screenHeight</code></td>
+<td>String</td>
+<td style="text-align:left">device.screenHeight</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.screenWidth</code></td>
+<td>String</td>
+<td style="text-align:left">device.screenWidth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.type</code></td>
+<td>String</td>
+<td style="text-align:left">device.type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.acceptLanguage</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.acceptLanguage</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.cookiesEnabled</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.cookiesEnabled</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.javaEnabled</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.javaEnabled</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.userAgent</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.userAgent</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.viewportHeight</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.viewportHeight</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.viewportWidth</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.viewportWidth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.carrier</code></td>
+<td>String</td>
+<td style="text-align:left">environment.carrier</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.connectionType</code></td>
+<td>String</td>
+<td style="text-align:left">environment.connectionType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.ipV4</code></td>
+<td>String</td>
+<td style="text-align:left">environment.ipV4</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.language</code></td>
+<td>String</td>
+<td style="text-align:left">environment.language</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.operatingSystem</code></td>
+<td>String</td>
+<td style="text-align:left">environment.operatingSystem</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.operatingSystemVersion</code></td>
+<td>String</td>
+<td style="text-align:left">environment.operatingSystemVersion</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.xdm.identityMap.ECID</code></td>
+<td>Array</td>
+<td style="text-align:left">identityMap.ECID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>marketing.trackingCode</code></td>
+<td>String</td>
+<td style="text-align:left">marketing.trackingCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.completes.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.completes.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.dropBeforeStart.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.dropBeforeStart.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.federated.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.federated.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.firstQuartiles.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.firstQuartiles.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.mediaSegmentView.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.mediaSegmentView.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.midpoints.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.midpoints.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.pauseTime.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.pauseTime.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.pauses.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.pauses.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.@id</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.@id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.dc:title</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.dc:title</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Creator[N].iptc4xmpExt:Name</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Creator[N].iptc4xmpExt:Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Episode.iptc4xmpExt:Number</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Episode.iptc4xmpExt:Number</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Genre</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Genre</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Rating</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Season.iptc4xmpExt:Number</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Season.iptc4xmpExt:Number</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Identifier</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Identifier</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Name</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.showType</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.showType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.xmpDM:duration</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.xmpDM:duration</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.@id</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.@id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastChannel</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastChannel</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastContentType</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastContentType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastNetwork</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastNetwork</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.mediaSegmentView.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.mediaSegmentView.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.playerName</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.playerName</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.playerSDKVersion.version</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.playerSDKVersion.version</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.sourceFeed</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.sourceFeed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.streamFormat</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.streamFormat</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimedxdm..progress10.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.progress10.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.progress95.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.progress95.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.resumes.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.resumes.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.starts.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.starts.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.thirdQuartiles.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.thirdQuartiles.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.timePlayed.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.timePlayed.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.totalTimePlayed.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.totalTimePlayed.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.latitude</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.latitude</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.longitude</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.longitude</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.postalCode</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.postalCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.stateProvince</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.stateProvince</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.localTime</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.localTime</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.lineItemId</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.lineItemId</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.name</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.priceTotal</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.priceTotal</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.quantity</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.quantity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.SKU</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.SKU</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier1</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier1</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier2</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier2</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier3</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier3</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier4</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier4</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier5</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier5</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.listProps.prop1.delimiter</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.listProps.prop1.delimiter</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.listProps.prop1.values</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.listProps.prop1.values</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list1.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list1.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list2.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list2.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list3.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list3.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.event1to100.event1.id</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.event1to100.event1.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.event1to100.event1.value</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.event1to100.event1.value</td>
+</tr>
+</tbody>
+</table>
+<h3 id="target-data-non-xdm-data-object">Target Data (non-XDM, data object)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.id</code></td>
+<td>String</td>
+<td style="text-align:left">entity.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.name</code></td>
+<td>String</td>
+<td style="text-align:left">entity.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.categoryId</code></td>
+<td>String</td>
+<td style="text-align:left">entity.categoryId</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.pageUrl</code></td>
+<td>String</td>
+<td style="text-align:left">entity.pageUrl</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.thumbnailUrl</code></td>
+<td>String</td>
+<td style="text-align:left">entity.thumbnailUrl</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.message</code></td>
+<td>String</td>
+<td style="text-align:left">entity.message</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.value</code></td>
+<td>String</td>
+<td style="text-align:left">entity.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.inventory</code></td>
+<td>String</td>
+<td style="text-align:left">entity.inventory</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.brand</code></td>
+<td>String</td>
+<td style="text-align:left">entity.brand</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.margin</code></td>
+<td>String</td>
+<td style="text-align:left">entity.margin</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.event.detailsOnly</code></td>
+<td>String</td>
+<td style="text-align:left">entity.event.detailsOnly</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.entity.yourCustomAttributeName</code></td>
+<td>String</td>
+<td style="text-align:left">entity.yourCustomAttributeName</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.excludedIds</code></td>
+<td>String</td>
+<td style="text-align:left">entity.excludedIds</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.cartIds</code></td>
+<td>String</td>
+<td style="text-align:left">entity.cartIds</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.productPurchasedId</code></td>
+<td>String</td>
+<td style="text-align:left">entity.productPurchasedId</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.user.categoryId</code></td>
+<td>String</td>
+<td style="text-align:left">entity.user.categoryId</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.profile.age</code></td>
+<td>String</td>
+<td style="text-align:left">entity.profile.age</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>data.__adobe.target.profile.gender</code></td>
+<td>String</td>
+<td style="text-align:left">entity.profile.gender</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytics-xdm-data-1">Analytics XDM Data</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>xdm.application.isClose</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isClose</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isInstall</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isInstall</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isLaunch </code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isLaunch</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.closeType</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.closeType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.name </code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.isUpgrade </code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.isUpgrade</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.version</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.version</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.application.sessionLength</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.application.sessionLength</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.checkouts.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.checkouts.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.checkouts.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.checkouts.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.currencyCode</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.currencyCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.purchaseID</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.purchaseID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.order.transactionID</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.order.transactionID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListAdds.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListAdds.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListAdds.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListAdds.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListOpens.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListOpens.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListOpens.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListOpens.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListRemovals.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListRemovals.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListRemovals.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListRemovals.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListViews.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListViews.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productListViews.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productListViews.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productViews.id</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productViews.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.productViews.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.productViews.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.commerce.purchases.value</code></td>
+<td>String</td>
+<td style="text-align:left">xdm.commerce.purchases.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.name</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webInteraction.type</code></td>
+<td>String</td>
+<td style="text-align:left">web.webInteraction.type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.name</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.isErrorPage</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.isErrorPage</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.server</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.server</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.siteSection</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.siteSection</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webPageDetails.viewName</code></td>
+<td>String</td>
+<td style="text-align:left">web.webPageDetails.viewName</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.web.webReferrer.URL</code></td>
+<td>String</td>
+<td style="text-align:left">web.webReferrer.URL</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.model </code></td>
+<td>String</td>
+<td style="text-align:left">device.model</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.colorDepth</code></td>
+<td>String</td>
+<td style="text-align:left">device.colorDepth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.screenHeight</code></td>
+<td>String</td>
+<td style="text-align:left">device.screenHeight</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.screenWidth</code></td>
+<td>String</td>
+<td style="text-align:left">device.screenWidth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.device.type</code></td>
+<td>String</td>
+<td style="text-align:left">device.type</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.acceptLanguage</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.acceptLanguage</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.cookiesEnabled </code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.cookiesEnabled</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.javaEnabled</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.javaEnabled</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.userAgent</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.userAgent</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.viewportHeight</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.viewportHeight</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.browserDetails.viewportWidth</code></td>
+<td>String</td>
+<td style="text-align:left">environment.browserDetails.viewportWidth</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.carrier</code></td>
+<td>String</td>
+<td style="text-align:left">environment.carrier</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.connectionType</code></td>
+<td>String</td>
+<td style="text-align:left">environment.connectionType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.ipV4 </code></td>
+<td>String</td>
+<td style="text-align:left">environment.ipV4</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.language</code></td>
+<td>String</td>
+<td style="text-align:left">environment.language</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.operatingSystem</code></td>
+<td>String</td>
+<td style="text-align:left">environment.operatingSystem</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.environment.operatingSystemVersion</code></td>
+<td>String</td>
+<td style="text-align:left">environment.operatingSystemVersion</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.identityMap.ECID</code></td>
+<td>Array</td>
+<td style="text-align:left">identityMap.ECID</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.marketing.trackingCode</code></td>
+<td>String</td>
+<td style="text-align:left">marketing.trackingCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.completes.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.completes.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.dropBeforeStart.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.dropBeforeStart.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.federated.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.federated.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.firstQuartiles.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.firstQuartiles.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.mediaSegmentView.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.mediaSegmentView.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.midpoints.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.midpoints.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.pauseTime.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.pauseTime.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.pauses.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.pauses.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.@id</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.@id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.dc:title</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.dc:title</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Creator[N].iptc4xmpExt:Name</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Creator[N].iptc4xmpExt:Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Episode.iptc4xmpExt:Number</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Episode.iptc4xmpExt:Number</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Genre</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Genre</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Rating[N].iptc4xmpExt:RatingValue</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Season.iptc4xmpExt:Number</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Season.iptc4xmpExt:Number</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Identifier</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Identifier</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Name</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.iptc4xmpExt:Series.iptc4xmpExt:Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.showType</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.showType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetReference.xmpDM:duration</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetReference.xmpDM:duration</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.@id</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.@id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastChannel</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastChannel</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastContentType</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastContentType</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.broadcastNetwork</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.broadcastNetwork</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.mediaSegmentView.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.mediaSegmentView.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.playerName</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.playerName</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.playerSDKVersion.version</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.playerSDKVersion.version</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.sourceFeed</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.sourceFeed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.primaryAssetViewDetails.streamFormat</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.primaryAssetViewDetails.streamFormat</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.progress10.value </code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.progress10.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.progress95.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.progress95.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.resumes.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.resumes.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.starts.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.starts.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.thirdQuartiles.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.thirdQuartiles.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.timePlayed.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.timePlayed.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.media.mediaTimed.totalTimePlayed.value</code></td>
+<td>String</td>
+<td style="text-align:left">media.mediaTimed.totalTimePlayed.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.latitude</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.latitude</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.longitude</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.longitude</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.postalCode</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.postalCode</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.geo.stateProvince</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.geo.stateProvince</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.placeContext.localTime</code></td>
+<td>String</td>
+<td style="text-align:left">placeContext.localTime</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.lineItemId</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.lineItemId</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.name</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.priceTotal</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.priceTotal</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.quantity</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.quantity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm.productListItems.SKU</code></td>
+<td>Array</td>
+<td style="text-align:left">productListItems.SKU</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier1</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier1</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier2</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier2</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier3</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier3</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier4</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier4</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.hierarchies.hier5</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.hierarchies.hier5</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.listProps.prop1.delimiter</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.customDimensions.listProps.prop1.delimiter</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.listProps.prop1.values</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.listProps.prop1.values</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list1.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list1.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list2.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list2.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.customDimensions.lists.list3.list</code></td>
+<td>Array</td>
+<td style="text-align:left">_experience.analytics.customDimensions.lists.list3.list</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.event1to100.event1.id</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.event1to100.event1.id</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>xdm._experience.analytics.event1to100.event1.value</code></td>
+<td>String</td>
+<td style="text-align:left">_experience.analytics.event1to100.event1.value</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Parameter</code></td>
+<td></td>
+<td style="text-align:left">Custom Parameter</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.clicks</code></td>
+<td></td>
+<td style="text-align:left">Clicks</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.completes</code></td>
+<td></td>
+<td style="text-align:left">Completes</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.conversions</code></td>
+<td></td>
+<td style="text-align:left">Conversions</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.federated</code></td>
+<td></td>
+<td style="text-align:left">Federated</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.firstQuartiles</code></td>
+<td></td>
+<td style="text-align:left">First Quartiles</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.impressions </code></td>
+<td></td>
+<td style="text-align:left">Impressions</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.midpoints</code></td>
+<td></td>
+<td style="text-align:left">Midpoints</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.starts</code></td>
+<td></td>
+<td style="text-align:left">Starts</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.thirdQuartiles</code></td>
+<td></td>
+<td style="text-align:left">Third Quartiles</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>advertising.timePlayed</code></td>
+<td></td>
+<td style="text-align:left">Time Played</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>application.close</code></td>
+<td></td>
+<td style="text-align:left">Close</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>application.launch</code></td>
+<td></td>
+<td style="text-align:left">Launch</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.checkouts</code></td>
+<td></td>
+<td style="text-align:left">Checkouts</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListAdds</code></td>
+<td></td>
+<td style="text-align:left">Product List Adds</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListOpens</code></td>
+<td></td>
+<td style="text-align:left">Product List Opens</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListRemovals</code></td>
+<td></td>
+<td style="text-align:left">Product List Removals</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListReopens</code></td>
+<td></td>
+<td style="text-align:left">Product List Reopens</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productListViews</code></td>
+<td></td>
+<td style="text-align:left">Product List Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.productViews</code></td>
+<td></td>
+<td style="text-align:left">Product Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.purchases</code></td>
+<td></td>
+<td style="text-align:left">Purchases</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>commerce.saveForLaters</code></td>
+<td></td>
+<td style="text-align:left">Save For Laters</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>decisioning.propositionDisplay</code></td>
+<td></td>
+<td style="text-align:left">Proposition Display</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>decisioning.propositionInteract</code></td>
+<td></td>
+<td style="text-align:left">Proposition Interact</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>delivery.feedback</code></td>
+<td></td>
+<td style="text-align:left">Feedback</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailBounced</code></td>
+<td></td>
+<td style="text-align:left">Email Bounced</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailBouncedSoft</code></td>
+<td></td>
+<td style="text-align:left">Email BouncedSoft</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailClicked</code></td>
+<td></td>
+<td style="text-align:left">Email Clicked</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailDelivered</code></td>
+<td></td>
+<td style="text-align:left">Email Delivered</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailOpened</code></td>
+<td></td>
+<td style="text-align:left">Email Opened</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>directMarketing.emailUnsubscribed</code></td>
+<td></td>
+<td style="text-align:left">Email Unsubscribed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.dismiss</code></td>
+<td></td>
+<td style="text-align:left">Dismiss</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.display</code></td>
+<td></td>
+<td style="text-align:left">Display</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>inappmessageTracking.interact</code></td>
+<td></td>
+<td style="text-align:left">Interact</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.callWebhook</code></td>
+<td></td>
+<td style="text-align:left">Call Webhook</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.convertLead</code></td>
+<td></td>
+<td style="text-align:left">Convert Lead</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.interestingMoment</code></td>
+<td></td>
+<td style="text-align:left">Interesting Moment</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.newLead</code></td>
+<td></td>
+<td style="text-align:left">New Lead</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.scoreChanged</code></td>
+<td></td>
+<td style="text-align:left">Score Changed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>leadOperation.statusInCampaignProgressionChanged</code></td>
+<td></td>
+<td style="text-align:left">Status In Campaign Progression Changed</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>listOperation.addToList</code></td>
+<td></td>
+<td style="text-align:left">Add To List</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>listOperation.removeFromList</code></td>
+<td></td>
+<td style="text-align:left">Remove From List</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>message.feedback</code></td>
+<td></td>
+<td style="text-align:left">Feedback</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>message.tracking</code></td>
+<td></td>
+<td style="text-align:left">Tracking</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.addToOpportunity</code></td>
+<td></td>
+<td style="text-align:left">Add To Opportunity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.opportunityUpdated</code></td>
+<td></td>
+<td style="text-align:left">Opportunity Updated</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>opportunityEvent.removeFromOpportunity</code></td>
+<td></td>
+<td style="text-align:left">Remove From Opportunity</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pushTracking.applicationOpened</code></td>
+<td></td>
+<td style="text-align:left">Application Opened</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pushTracking.customAction</code></td>
+<td></td>
+<td style="text-align:left">Custom Action</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.webinteraction.linkClicks</code></td>
+<td></td>
+<td style="text-align:left">Link Clicks</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.webpagedetails.pageViews</code></td>
+<td></td>
+<td style="text-align:left">Page Views</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>web.formFilledOut</code></td>
+<td></td>
+<td style="text-align:left">Form Filled Out</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>identityMap</code></td>
+<td></td>
+<td style="text-align:left">identityMap</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event1to100</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 1-100</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event101to200</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 101-200</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event201to300</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 201-300</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event301to400</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 301-400</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event401to500</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 401-500</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event501to600</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 501-600</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event601to700</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 601-700</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event701to800</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 701-800</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event801to900</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 801-900</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event._experience.analytics.event901to1000</code></td>
+<td></td>
+<td style="text-align:left">Experience Analytics Events 901-1000</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Custom_Event</code></td>
+<td></td>
+<td style="text-align:left">Custom</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytics-evars">Analytics eVars</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">evar1</td>
+<td style="text-align:left">evar1</td>
+</tr>
+<tr>
+<td style="text-align:left">evar2</td>
+<td style="text-align:left">evar2</td>
+</tr>
+<tr>
+<td style="text-align:left">evar3</td>
+<td style="text-align:left">evar3</td>
+</tr>
+<tr>
+<td style="text-align:left">evar4</td>
+<td style="text-align:left">evar4</td>
+</tr>
+<tr>
+<td style="text-align:left">evar5</td>
+<td style="text-align:left">evar5</td>
+</tr>
+<tr>
+<td style="text-align:left">evar6</td>
+<td style="text-align:left">evar6</td>
+</tr>
+<tr>
+<td style="text-align:left">evar7</td>
+<td style="text-align:left">evar7</td>
+</tr>
+<tr>
+<td style="text-align:left">evar8</td>
+<td style="text-align:left">evar8</td>
+</tr>
+<tr>
+<td style="text-align:left">evar9</td>
+<td style="text-align:left">evar9</td>
+</tr>
+<tr>
+<td style="text-align:left">evar10</td>
+<td style="text-align:left">evar10</td>
+</tr>
+<tr>
+<td style="text-align:left">evar11</td>
+<td style="text-align:left">evar11</td>
+</tr>
+<tr>
+<td style="text-align:left">evar12</td>
+<td style="text-align:left">evar12</td>
+</tr>
+<tr>
+<td style="text-align:left">evar13</td>
+<td style="text-align:left">evar13</td>
+</tr>
+<tr>
+<td style="text-align:left">evar14</td>
+<td style="text-align:left">evar14</td>
+</tr>
+<tr>
+<td style="text-align:left">evar15</td>
+<td style="text-align:left">evar15</td>
+</tr>
+<tr>
+<td style="text-align:left">evar16</td>
+<td style="text-align:left">evar16</td>
+</tr>
+<tr>
+<td style="text-align:left">evar17</td>
+<td style="text-align:left">evar17</td>
+</tr>
+<tr>
+<td style="text-align:left">evar18</td>
+<td style="text-align:left">evar18</td>
+</tr>
+<tr>
+<td style="text-align:left">evar19</td>
+<td style="text-align:left">evar19</td>
+</tr>
+<tr>
+<td style="text-align:left">evar20</td>
+<td style="text-align:left">evar20</td>
+</tr>
+<tr>
+<td style="text-align:left">evar21</td>
+<td style="text-align:left">evar21</td>
+</tr>
+<tr>
+<td style="text-align:left">evar22</td>
+<td style="text-align:left">evar22</td>
+</tr>
+<tr>
+<td style="text-align:left">evar23</td>
+<td style="text-align:left">evar23</td>
+</tr>
+<tr>
+<td style="text-align:left">evar24</td>
+<td style="text-align:left">evar24</td>
+</tr>
+<tr>
+<td style="text-align:left">evar25</td>
+<td style="text-align:left">evar25</td>
+</tr>
+<tr>
+<td style="text-align:left">evar26</td>
+<td style="text-align:left">evar26</td>
+</tr>
+<tr>
+<td style="text-align:left">evar27</td>
+<td style="text-align:left">evar27</td>
+</tr>
+<tr>
+<td style="text-align:left">evar28</td>
+<td style="text-align:left">evar28</td>
+</tr>
+<tr>
+<td style="text-align:left">evar29</td>
+<td style="text-align:left">evar29</td>
+</tr>
+<tr>
+<td style="text-align:left">evar30</td>
+<td style="text-align:left">evar30</td>
+</tr>
+<tr>
+<td style="text-align:left">evar31</td>
+<td style="text-align:left">evar31</td>
+</tr>
+<tr>
+<td style="text-align:left">evar32</td>
+<td style="text-align:left">evar32</td>
+</tr>
+<tr>
+<td style="text-align:left">evar33</td>
+<td style="text-align:left">evar33</td>
+</tr>
+<tr>
+<td style="text-align:left">evar34</td>
+<td style="text-align:left">evar34</td>
+</tr>
+<tr>
+<td style="text-align:left">evar35</td>
+<td style="text-align:left">evar35</td>
+</tr>
+<tr>
+<td style="text-align:left">evar36</td>
+<td style="text-align:left">evar36</td>
+</tr>
+<tr>
+<td style="text-align:left">evar37</td>
+<td style="text-align:left">evar37</td>
+</tr>
+<tr>
+<td style="text-align:left">evar38</td>
+<td style="text-align:left">evar38</td>
+</tr>
+<tr>
+<td style="text-align:left">evar39</td>
+<td style="text-align:left">evar39</td>
+</tr>
+<tr>
+<td style="text-align:left">evar40</td>
+<td style="text-align:left">evar40</td>
+</tr>
+<tr>
+<td style="text-align:left">evar41</td>
+<td style="text-align:left">evar41</td>
+</tr>
+<tr>
+<td style="text-align:left">evar42</td>
+<td style="text-align:left">evar42</td>
+</tr>
+<tr>
+<td style="text-align:left">evar43</td>
+<td style="text-align:left">evar43</td>
+</tr>
+<tr>
+<td style="text-align:left">evar44</td>
+<td style="text-align:left">evar44</td>
+</tr>
+<tr>
+<td style="text-align:left">evar45</td>
+<td style="text-align:left">evar45</td>
+</tr>
+<tr>
+<td style="text-align:left">evar46</td>
+<td style="text-align:left">evar46</td>
+</tr>
+<tr>
+<td style="text-align:left">evar47</td>
+<td style="text-align:left">evar47</td>
+</tr>
+<tr>
+<td style="text-align:left">evar48</td>
+<td style="text-align:left">evar48</td>
+</tr>
+<tr>
+<td style="text-align:left">evar49</td>
+<td style="text-align:left">evar49</td>
+</tr>
+<tr>
+<td style="text-align:left">evar50</td>
+<td style="text-align:left">evar50</td>
+</tr>
+<tr>
+<td style="text-align:left">evar51</td>
+<td style="text-align:left">evar51</td>
+</tr>
+<tr>
+<td style="text-align:left">evar52</td>
+<td style="text-align:left">evar52</td>
+</tr>
+<tr>
+<td style="text-align:left">evar53</td>
+<td style="text-align:left">evar53</td>
+</tr>
+<tr>
+<td style="text-align:left">evar54</td>
+<td style="text-align:left">evar54</td>
+</tr>
+<tr>
+<td style="text-align:left">evar55</td>
+<td style="text-align:left">evar55</td>
+</tr>
+<tr>
+<td style="text-align:left">evar56</td>
+<td style="text-align:left">evar56</td>
+</tr>
+<tr>
+<td style="text-align:left">evar57</td>
+<td style="text-align:left">evar57</td>
+</tr>
+<tr>
+<td style="text-align:left">evar58</td>
+<td style="text-align:left">evar58</td>
+</tr>
+<tr>
+<td style="text-align:left">evar59</td>
+<td style="text-align:left">evar59</td>
+</tr>
+<tr>
+<td style="text-align:left">evar60</td>
+<td style="text-align:left">evar60</td>
+</tr>
+<tr>
+<td style="text-align:left">evar61</td>
+<td style="text-align:left">evar61</td>
+</tr>
+<tr>
+<td style="text-align:left">evar62</td>
+<td style="text-align:left">evar62</td>
+</tr>
+<tr>
+<td style="text-align:left">evar63</td>
+<td style="text-align:left">evar63</td>
+</tr>
+<tr>
+<td style="text-align:left">evar64</td>
+<td style="text-align:left">evar64</td>
+</tr>
+<tr>
+<td style="text-align:left">evar65</td>
+<td style="text-align:left">evar65</td>
+</tr>
+<tr>
+<td style="text-align:left">evar66</td>
+<td style="text-align:left">evar66</td>
+</tr>
+<tr>
+<td style="text-align:left">evar67</td>
+<td style="text-align:left">evar67</td>
+</tr>
+<tr>
+<td style="text-align:left">evar68</td>
+<td style="text-align:left">evar68</td>
+</tr>
+<tr>
+<td style="text-align:left">evar69</td>
+<td style="text-align:left">evar69</td>
+</tr>
+<tr>
+<td style="text-align:left">evar70</td>
+<td style="text-align:left">evar70</td>
+</tr>
+<tr>
+<td style="text-align:left">evar71</td>
+<td style="text-align:left">evar71</td>
+</tr>
+<tr>
+<td style="text-align:left">evar72</td>
+<td style="text-align:left">evar72</td>
+</tr>
+<tr>
+<td style="text-align:left">evar73</td>
+<td style="text-align:left">evar73</td>
+</tr>
+<tr>
+<td style="text-align:left">evar74</td>
+<td style="text-align:left">evar74</td>
+</tr>
+<tr>
+<td style="text-align:left">evar75</td>
+<td style="text-align:left">evar75</td>
+</tr>
+<tr>
+<td style="text-align:left">evar76</td>
+<td style="text-align:left">evar76</td>
+</tr>
+<tr>
+<td style="text-align:left">evar77</td>
+<td style="text-align:left">evar77</td>
+</tr>
+<tr>
+<td style="text-align:left">evar78</td>
+<td style="text-align:left">evar78</td>
+</tr>
+<tr>
+<td style="text-align:left">evar79</td>
+<td style="text-align:left">evar79</td>
+</tr>
+<tr>
+<td style="text-align:left">evar80</td>
+<td style="text-align:left">evar80</td>
+</tr>
+<tr>
+<td style="text-align:left">evar81</td>
+<td style="text-align:left">evar81</td>
+</tr>
+<tr>
+<td style="text-align:left">evar82</td>
+<td style="text-align:left">evar82</td>
+</tr>
+<tr>
+<td style="text-align:left">evar83</td>
+<td style="text-align:left">evar83</td>
+</tr>
+<tr>
+<td style="text-align:left">evar84</td>
+<td style="text-align:left">evar84</td>
+</tr>
+<tr>
+<td style="text-align:left">evar85</td>
+<td style="text-align:left">evar85</td>
+</tr>
+<tr>
+<td style="text-align:left">evar86</td>
+<td style="text-align:left">evar86</td>
+</tr>
+<tr>
+<td style="text-align:left">evar87</td>
+<td style="text-align:left">evar87</td>
+</tr>
+<tr>
+<td style="text-align:left">evar88</td>
+<td style="text-align:left">evar88</td>
+</tr>
+<tr>
+<td style="text-align:left">evar89</td>
+<td style="text-align:left">evar89</td>
+</tr>
+<tr>
+<td style="text-align:left">evar90</td>
+<td style="text-align:left">evar90</td>
+</tr>
+<tr>
+<td style="text-align:left">evar91</td>
+<td style="text-align:left">evar91</td>
+</tr>
+<tr>
+<td style="text-align:left">evar92</td>
+<td style="text-align:left">evar92</td>
+</tr>
+<tr>
+<td style="text-align:left">evar93</td>
+<td style="text-align:left">evar93</td>
+</tr>
+<tr>
+<td style="text-align:left">evar94</td>
+<td style="text-align:left">evar94</td>
+</tr>
+<tr>
+<td style="text-align:left">evar95</td>
+<td style="text-align:left">evar95</td>
+</tr>
+<tr>
+<td style="text-align:left">evar96</td>
+<td style="text-align:left">evar96</td>
+</tr>
+<tr>
+<td style="text-align:left">evar97</td>
+<td style="text-align:left">evar97</td>
+</tr>
+<tr>
+<td style="text-align:left">evar98</td>
+<td style="text-align:left">evar98</td>
+</tr>
+<tr>
+<td style="text-align:left">evar99</td>
+<td style="text-align:left">evar99</td>
+</tr>
+<tr>
+<td style="text-align:left">evar100</td>
+<td style="text-align:left">evar100</td>
+</tr>
+<tr>
+<td style="text-align:left">evar101</td>
+<td style="text-align:left">evar101</td>
+</tr>
+<tr>
+<td style="text-align:left">evar102</td>
+<td style="text-align:left">evar102</td>
+</tr>
+<tr>
+<td style="text-align:left">evar103</td>
+<td style="text-align:left">evar103</td>
+</tr>
+<tr>
+<td style="text-align:left">evar104</td>
+<td style="text-align:left">evar104</td>
+</tr>
+<tr>
+<td style="text-align:left">evar105</td>
+<td style="text-align:left">evar105</td>
+</tr>
+<tr>
+<td style="text-align:left">evar106</td>
+<td style="text-align:left">evar106</td>
+</tr>
+<tr>
+<td style="text-align:left">evar107</td>
+<td style="text-align:left">evar107</td>
+</tr>
+<tr>
+<td style="text-align:left">evar108</td>
+<td style="text-align:left">evar108</td>
+</tr>
+<tr>
+<td style="text-align:left">evar109</td>
+<td style="text-align:left">evar109</td>
+</tr>
+<tr>
+<td style="text-align:left">evar110</td>
+<td style="text-align:left">evar110</td>
+</tr>
+<tr>
+<td style="text-align:left">evar111</td>
+<td style="text-align:left">evar111</td>
+</tr>
+<tr>
+<td style="text-align:left">evar112</td>
+<td style="text-align:left">evar112</td>
+</tr>
+<tr>
+<td style="text-align:left">evar113</td>
+<td style="text-align:left">evar113</td>
+</tr>
+<tr>
+<td style="text-align:left">evar114</td>
+<td style="text-align:left">evar114</td>
+</tr>
+<tr>
+<td style="text-align:left">evar115</td>
+<td style="text-align:left">evar115</td>
+</tr>
+<tr>
+<td style="text-align:left">evar116</td>
+<td style="text-align:left">evar116</td>
+</tr>
+<tr>
+<td style="text-align:left">evar117</td>
+<td style="text-align:left">evar117</td>
+</tr>
+<tr>
+<td style="text-align:left">evar118</td>
+<td style="text-align:left">evar118</td>
+</tr>
+<tr>
+<td style="text-align:left">evar119</td>
+<td style="text-align:left">evar119</td>
+</tr>
+<tr>
+<td style="text-align:left">evar120</td>
+<td style="text-align:left">evar120</td>
+</tr>
+<tr>
+<td style="text-align:left">evar121</td>
+<td style="text-align:left">evar121</td>
+</tr>
+<tr>
+<td style="text-align:left">evar122</td>
+<td style="text-align:left">evar122</td>
+</tr>
+<tr>
+<td style="text-align:left">evar123</td>
+<td style="text-align:left">evar123</td>
+</tr>
+<tr>
+<td style="text-align:left">evar124</td>
+<td style="text-align:left">evar124</td>
+</tr>
+<tr>
+<td style="text-align:left">evar125</td>
+<td style="text-align:left">evar125</td>
+</tr>
+<tr>
+<td style="text-align:left">evar126</td>
+<td style="text-align:left">evar126</td>
+</tr>
+<tr>
+<td style="text-align:left">evar127</td>
+<td style="text-align:left">evar127</td>
+</tr>
+<tr>
+<td style="text-align:left">evar128</td>
+<td style="text-align:left">evar128</td>
+</tr>
+<tr>
+<td style="text-align:left">evar129</td>
+<td style="text-align:left">evar129</td>
+</tr>
+<tr>
+<td style="text-align:left">evar130</td>
+<td style="text-align:left">evar130</td>
+</tr>
+<tr>
+<td style="text-align:left">evar131</td>
+<td style="text-align:left">evar131</td>
+</tr>
+<tr>
+<td style="text-align:left">evar132</td>
+<td style="text-align:left">evar132</td>
+</tr>
+<tr>
+<td style="text-align:left">evar133</td>
+<td style="text-align:left">evar133</td>
+</tr>
+<tr>
+<td style="text-align:left">evar134</td>
+<td style="text-align:left">evar134</td>
+</tr>
+<tr>
+<td style="text-align:left">evar135</td>
+<td style="text-align:left">evar135</td>
+</tr>
+<tr>
+<td style="text-align:left">evar136</td>
+<td style="text-align:left">evar136</td>
+</tr>
+<tr>
+<td style="text-align:left">evar137</td>
+<td style="text-align:left">evar137</td>
+</tr>
+<tr>
+<td style="text-align:left">evar138</td>
+<td style="text-align:left">evar138</td>
+</tr>
+<tr>
+<td style="text-align:left">evar139</td>
+<td style="text-align:left">evar139</td>
+</tr>
+<tr>
+<td style="text-align:left">evar140</td>
+<td style="text-align:left">evar140</td>
+</tr>
+<tr>
+<td style="text-align:left">evar141</td>
+<td style="text-align:left">evar141</td>
+</tr>
+<tr>
+<td style="text-align:left">evar142</td>
+<td style="text-align:left">evar142</td>
+</tr>
+<tr>
+<td style="text-align:left">evar143</td>
+<td style="text-align:left">evar143</td>
+</tr>
+<tr>
+<td style="text-align:left">evar144</td>
+<td style="text-align:left">evar144</td>
+</tr>
+<tr>
+<td style="text-align:left">evar145</td>
+<td style="text-align:left">evar145</td>
+</tr>
+<tr>
+<td style="text-align:left">evar146</td>
+<td style="text-align:left">evar146</td>
+</tr>
+<tr>
+<td style="text-align:left">evar147</td>
+<td style="text-align:left">evar147</td>
+</tr>
+<tr>
+<td style="text-align:left">evar148</td>
+<td style="text-align:left">evar148</td>
+</tr>
+<tr>
+<td style="text-align:left">evar149</td>
+<td style="text-align:left">evar149</td>
+</tr>
+<tr>
+<td style="text-align:left">evar150</td>
+<td style="text-align:left">evar150</td>
+</tr>
+<tr>
+<td style="text-align:left">evar151</td>
+<td style="text-align:left">evar151</td>
+</tr>
+<tr>
+<td style="text-align:left">evar152</td>
+<td style="text-align:left">evar152</td>
+</tr>
+<tr>
+<td style="text-align:left">evar153</td>
+<td style="text-align:left">evar153</td>
+</tr>
+<tr>
+<td style="text-align:left">evar154</td>
+<td style="text-align:left">evar154</td>
+</tr>
+<tr>
+<td style="text-align:left">evar155</td>
+<td style="text-align:left">evar155</td>
+</tr>
+<tr>
+<td style="text-align:left">evar156</td>
+<td style="text-align:left">evar156</td>
+</tr>
+<tr>
+<td style="text-align:left">evar157</td>
+<td style="text-align:left">evar157</td>
+</tr>
+<tr>
+<td style="text-align:left">evar158</td>
+<td style="text-align:left">evar158</td>
+</tr>
+<tr>
+<td style="text-align:left">evar159</td>
+<td style="text-align:left">evar159</td>
+</tr>
+<tr>
+<td style="text-align:left">evar160</td>
+<td style="text-align:left">evar160</td>
+</tr>
+<tr>
+<td style="text-align:left">evar161</td>
+<td style="text-align:left">evar161</td>
+</tr>
+<tr>
+<td style="text-align:left">evar162</td>
+<td style="text-align:left">evar162</td>
+</tr>
+<tr>
+<td style="text-align:left">evar163</td>
+<td style="text-align:left">evar163</td>
+</tr>
+<tr>
+<td style="text-align:left">evar164</td>
+<td style="text-align:left">evar164</td>
+</tr>
+<tr>
+<td style="text-align:left">evar165</td>
+<td style="text-align:left">evar165</td>
+</tr>
+<tr>
+<td style="text-align:left">evar166</td>
+<td style="text-align:left">evar166</td>
+</tr>
+<tr>
+<td style="text-align:left">evar167</td>
+<td style="text-align:left">evar167</td>
+</tr>
+<tr>
+<td style="text-align:left">evar168</td>
+<td style="text-align:left">evar168</td>
+</tr>
+<tr>
+<td style="text-align:left">evar169</td>
+<td style="text-align:left">evar169</td>
+</tr>
+<tr>
+<td style="text-align:left">evar170</td>
+<td style="text-align:left">evar170</td>
+</tr>
+<tr>
+<td style="text-align:left">evar171</td>
+<td style="text-align:left">evar171</td>
+</tr>
+<tr>
+<td style="text-align:left">evar172</td>
+<td style="text-align:left">evar172</td>
+</tr>
+<tr>
+<td style="text-align:left">evar173</td>
+<td style="text-align:left">evar173</td>
+</tr>
+<tr>
+<td style="text-align:left">evar174</td>
+<td style="text-align:left">evar174</td>
+</tr>
+<tr>
+<td style="text-align:left">evar175</td>
+<td style="text-align:left">evar175</td>
+</tr>
+<tr>
+<td style="text-align:left">evar176</td>
+<td style="text-align:left">evar176</td>
+</tr>
+<tr>
+<td style="text-align:left">evar177</td>
+<td style="text-align:left">evar177</td>
+</tr>
+<tr>
+<td style="text-align:left">evar178</td>
+<td style="text-align:left">evar178</td>
+</tr>
+<tr>
+<td style="text-align:left">evar179</td>
+<td style="text-align:left">evar179</td>
+</tr>
+<tr>
+<td style="text-align:left">evar180</td>
+<td style="text-align:left">evar180</td>
+</tr>
+<tr>
+<td style="text-align:left">evar181</td>
+<td style="text-align:left">evar181</td>
+</tr>
+<tr>
+<td style="text-align:left">evar182</td>
+<td style="text-align:left">evar182</td>
+</tr>
+<tr>
+<td style="text-align:left">evar183</td>
+<td style="text-align:left">evar183</td>
+</tr>
+<tr>
+<td style="text-align:left">evar184</td>
+<td style="text-align:left">evar184</td>
+</tr>
+<tr>
+<td style="text-align:left">evar185</td>
+<td style="text-align:left">evar185</td>
+</tr>
+<tr>
+<td style="text-align:left">evar186</td>
+<td style="text-align:left">evar186</td>
+</tr>
+<tr>
+<td style="text-align:left">evar187</td>
+<td style="text-align:left">evar187</td>
+</tr>
+<tr>
+<td style="text-align:left">evar188</td>
+<td style="text-align:left">evar188</td>
+</tr>
+<tr>
+<td style="text-align:left">evar189</td>
+<td style="text-align:left">evar189</td>
+</tr>
+<tr>
+<td style="text-align:left">evar190</td>
+<td style="text-align:left">evar190</td>
+</tr>
+<tr>
+<td style="text-align:left">evar191</td>
+<td style="text-align:left">evar191</td>
+</tr>
+<tr>
+<td style="text-align:left">evar192</td>
+<td style="text-align:left">evar192</td>
+</tr>
+<tr>
+<td style="text-align:left">evar193</td>
+<td style="text-align:left">evar193</td>
+</tr>
+<tr>
+<td style="text-align:left">evar194</td>
+<td style="text-align:left">evar194</td>
+</tr>
+<tr>
+<td style="text-align:left">evar195</td>
+<td style="text-align:left">evar195</td>
+</tr>
+<tr>
+<td style="text-align:left">evar196</td>
+<td style="text-align:left">evar196</td>
+</tr>
+<tr>
+<td style="text-align:left">evar197</td>
+<td style="text-align:left">evar197</td>
+</tr>
+<tr>
+<td style="text-align:left">evar198</td>
+<td style="text-align:left">evar198</td>
+</tr>
+<tr>
+<td style="text-align:left">evar199</td>
+<td style="text-align:left">evar199</td>
+</tr>
+<tr>
+<td style="text-align:left">evar200</td>
+<td style="text-align:left">evar200</td>
+</tr>
+<tr>
+<td style="text-align:left">evar201</td>
+<td style="text-align:left">evar201</td>
+</tr>
+<tr>
+<td style="text-align:left">evar202</td>
+<td style="text-align:left">evar202</td>
+</tr>
+<tr>
+<td style="text-align:left">evar203</td>
+<td style="text-align:left">evar203</td>
+</tr>
+<tr>
+<td style="text-align:left">evar204</td>
+<td style="text-align:left">evar204</td>
+</tr>
+<tr>
+<td style="text-align:left">evar205</td>
+<td style="text-align:left">evar205</td>
+</tr>
+<tr>
+<td style="text-align:left">evar206</td>
+<td style="text-align:left">evar206</td>
+</tr>
+<tr>
+<td style="text-align:left">evar207</td>
+<td style="text-align:left">evar207</td>
+</tr>
+<tr>
+<td style="text-align:left">evar208</td>
+<td style="text-align:left">evar208</td>
+</tr>
+<tr>
+<td style="text-align:left">evar209</td>
+<td style="text-align:left">evar209</td>
+</tr>
+<tr>
+<td style="text-align:left">evar210</td>
+<td style="text-align:left">evar210</td>
+</tr>
+<tr>
+<td style="text-align:left">evar211</td>
+<td style="text-align:left">evar211</td>
+</tr>
+<tr>
+<td style="text-align:left">evar212</td>
+<td style="text-align:left">evar212</td>
+</tr>
+<tr>
+<td style="text-align:left">evar213</td>
+<td style="text-align:left">evar213</td>
+</tr>
+<tr>
+<td style="text-align:left">evar214</td>
+<td style="text-align:left">evar214</td>
+</tr>
+<tr>
+<td style="text-align:left">evar215</td>
+<td style="text-align:left">evar215</td>
+</tr>
+<tr>
+<td style="text-align:left">evar216</td>
+<td style="text-align:left">evar216</td>
+</tr>
+<tr>
+<td style="text-align:left">evar217</td>
+<td style="text-align:left">evar217</td>
+</tr>
+<tr>
+<td style="text-align:left">evar218</td>
+<td style="text-align:left">evar218</td>
+</tr>
+<tr>
+<td style="text-align:left">evar219</td>
+<td style="text-align:left">evar219</td>
+</tr>
+<tr>
+<td style="text-align:left">evar220</td>
+<td style="text-align:left">evar220</td>
+</tr>
+<tr>
+<td style="text-align:left">evar221</td>
+<td style="text-align:left">evar221</td>
+</tr>
+<tr>
+<td style="text-align:left">evar222</td>
+<td style="text-align:left">evar222</td>
+</tr>
+<tr>
+<td style="text-align:left">evar223</td>
+<td style="text-align:left">evar223</td>
+</tr>
+<tr>
+<td style="text-align:left">evar224</td>
+<td style="text-align:left">evar224</td>
+</tr>
+<tr>
+<td style="text-align:left">evar225</td>
+<td style="text-align:left">evar225</td>
+</tr>
+<tr>
+<td style="text-align:left">evar226</td>
+<td style="text-align:left">evar226</td>
+</tr>
+<tr>
+<td style="text-align:left">evar227</td>
+<td style="text-align:left">evar227</td>
+</tr>
+<tr>
+<td style="text-align:left">evar228</td>
+<td style="text-align:left">evar228</td>
+</tr>
+<tr>
+<td style="text-align:left">evar229</td>
+<td style="text-align:left">evar229</td>
+</tr>
+<tr>
+<td style="text-align:left">evar230</td>
+<td style="text-align:left">evar230</td>
+</tr>
+<tr>
+<td style="text-align:left">evar231</td>
+<td style="text-align:left">evar231</td>
+</tr>
+<tr>
+<td style="text-align:left">evar232</td>
+<td style="text-align:left">evar232</td>
+</tr>
+<tr>
+<td style="text-align:left">evar233</td>
+<td style="text-align:left">evar233</td>
+</tr>
+<tr>
+<td style="text-align:left">evar234</td>
+<td style="text-align:left">evar234</td>
+</tr>
+<tr>
+<td style="text-align:left">evar235</td>
+<td style="text-align:left">evar235</td>
+</tr>
+<tr>
+<td style="text-align:left">evar236</td>
+<td style="text-align:left">evar236</td>
+</tr>
+<tr>
+<td style="text-align:left">evar237</td>
+<td style="text-align:left">evar237</td>
+</tr>
+<tr>
+<td style="text-align:left">evar238</td>
+<td style="text-align:left">evar238</td>
+</tr>
+<tr>
+<td style="text-align:left">evar239</td>
+<td style="text-align:left">evar239</td>
+</tr>
+<tr>
+<td style="text-align:left">evar240</td>
+<td style="text-align:left">evar240</td>
+</tr>
+<tr>
+<td style="text-align:left">evar241</td>
+<td style="text-align:left">evar241</td>
+</tr>
+<tr>
+<td style="text-align:left">evar242</td>
+<td style="text-align:left">evar242</td>
+</tr>
+<tr>
+<td style="text-align:left">evar243</td>
+<td style="text-align:left">evar243</td>
+</tr>
+<tr>
+<td style="text-align:left">evar244</td>
+<td style="text-align:left">evar244</td>
+</tr>
+<tr>
+<td style="text-align:left">evar245</td>
+<td style="text-align:left">evar245</td>
+</tr>
+<tr>
+<td style="text-align:left">evar246</td>
+<td style="text-align:left">evar246</td>
+</tr>
+<tr>
+<td style="text-align:left">evar247</td>
+<td style="text-align:left">evar247</td>
+</tr>
+<tr>
+<td style="text-align:left">evar248</td>
+<td style="text-align:left">evar248</td>
+</tr>
+<tr>
+<td style="text-align:left">evar249</td>
+<td style="text-align:left">evar249</td>
+</tr>
+<tr>
+<td style="text-align:left">evar250</td>
+<td style="text-align:left">evar250</td>
+</tr>
+</tbody>
+</table>
+<h3 id="analytics-props">Analytics Props</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">prop1</td>
+<td style="text-align:left">prop1</td>
+</tr>
+<tr>
+<td style="text-align:left">prop2</td>
+<td style="text-align:left">prop2</td>
+</tr>
+<tr>
+<td style="text-align:left">prop3</td>
+<td style="text-align:left">prop3</td>
+</tr>
+<tr>
+<td style="text-align:left">prop4</td>
+<td style="text-align:left">prop4</td>
+</tr>
+<tr>
+<td style="text-align:left">prop5</td>
+<td style="text-align:left">prop5</td>
+</tr>
+<tr>
+<td style="text-align:left">prop6</td>
+<td style="text-align:left">prop6</td>
+</tr>
+<tr>
+<td style="text-align:left">prop7</td>
+<td style="text-align:left">prop7</td>
+</tr>
+<tr>
+<td style="text-align:left">prop8</td>
+<td style="text-align:left">prop8</td>
+</tr>
+<tr>
+<td style="text-align:left">prop9</td>
+<td style="text-align:left">prop9</td>
+</tr>
+<tr>
+<td style="text-align:left">prop10</td>
+<td style="text-align:left">prop10</td>
+</tr>
+<tr>
+<td style="text-align:left">prop11</td>
+<td style="text-align:left">prop11</td>
+</tr>
+<tr>
+<td style="text-align:left">prop12</td>
+<td style="text-align:left">prop12</td>
+</tr>
+<tr>
+<td style="text-align:left">prop13</td>
+<td style="text-align:left">prop13</td>
+</tr>
+<tr>
+<td style="text-align:left">prop14</td>
+<td style="text-align:left">prop14</td>
+</tr>
+<tr>
+<td style="text-align:left">prop15</td>
+<td style="text-align:left">prop15</td>
+</tr>
+<tr>
+<td style="text-align:left">prop16</td>
+<td style="text-align:left">prop16</td>
+</tr>
+<tr>
+<td style="text-align:left">prop17</td>
+<td style="text-align:left">prop17</td>
+</tr>
+<tr>
+<td style="text-align:left">prop18</td>
+<td style="text-align:left">prop18</td>
+</tr>
+<tr>
+<td style="text-align:left">prop19</td>
+<td style="text-align:left">prop19</td>
+</tr>
+<tr>
+<td style="text-align:left">prop20</td>
+<td style="text-align:left">prop20</td>
+</tr>
+<tr>
+<td style="text-align:left">prop21</td>
+<td style="text-align:left">prop21</td>
+</tr>
+<tr>
+<td style="text-align:left">prop22</td>
+<td style="text-align:left">prop22</td>
+</tr>
+<tr>
+<td style="text-align:left">prop23</td>
+<td style="text-align:left">prop23</td>
+</tr>
+<tr>
+<td style="text-align:left">prop24</td>
+<td style="text-align:left">prop24</td>
+</tr>
+<tr>
+<td style="text-align:left">prop25</td>
+<td style="text-align:left">prop25</td>
+</tr>
+<tr>
+<td style="text-align:left">prop26</td>
+<td style="text-align:left">prop26</td>
+</tr>
+<tr>
+<td style="text-align:left">prop27</td>
+<td style="text-align:left">prop27</td>
+</tr>
+<tr>
+<td style="text-align:left">prop28</td>
+<td style="text-align:left">prop28</td>
+</tr>
+<tr>
+<td style="text-align:left">prop29</td>
+<td style="text-align:left">prop29</td>
+</tr>
+<tr>
+<td style="text-align:left">prop30</td>
+<td style="text-align:left">prop30</td>
+</tr>
+<tr>
+<td style="text-align:left">prop31</td>
+<td style="text-align:left">prop31</td>
+</tr>
+<tr>
+<td style="text-align:left">prop32</td>
+<td style="text-align:left">prop32</td>
+</tr>
+<tr>
+<td style="text-align:left">prop33</td>
+<td style="text-align:left">prop33</td>
+</tr>
+<tr>
+<td style="text-align:left">prop34</td>
+<td style="text-align:left">prop34</td>
+</tr>
+<tr>
+<td style="text-align:left">prop35</td>
+<td style="text-align:left">prop35</td>
+</tr>
+<tr>
+<td style="text-align:left">prop36</td>
+<td style="text-align:left">prop36</td>
+</tr>
+<tr>
+<td style="text-align:left">prop37</td>
+<td style="text-align:left">prop37</td>
+</tr>
+<tr>
+<td style="text-align:left">prop38</td>
+<td style="text-align:left">prop38</td>
+</tr>
+<tr>
+<td style="text-align:left">prop39</td>
+<td style="text-align:left">prop39</td>
+</tr>
+<tr>
+<td style="text-align:left">prop40</td>
+<td style="text-align:left">prop40</td>
+</tr>
+<tr>
+<td style="text-align:left">prop41</td>
+<td style="text-align:left">prop41</td>
+</tr>
+<tr>
+<td style="text-align:left">prop42</td>
+<td style="text-align:left">prop42</td>
+</tr>
+<tr>
+<td style="text-align:left">prop43</td>
+<td style="text-align:left">prop43</td>
+</tr>
+<tr>
+<td style="text-align:left">prop44</td>
+<td style="text-align:left">prop44</td>
+</tr>
+<tr>
+<td style="text-align:left">prop45</td>
+<td style="text-align:left">prop45</td>
+</tr>
+<tr>
+<td style="text-align:left">prop46</td>
+<td style="text-align:left">prop46</td>
+</tr>
+<tr>
+<td style="text-align:left">prop47</td>
+<td style="text-align:left">prop47</td>
+</tr>
+<tr>
+<td style="text-align:left">prop48</td>
+<td style="text-align:left">prop48</td>
+</tr>
+<tr>
+<td style="text-align:left">prop49</td>
+<td style="text-align:left">prop49</td>
+</tr>
+<tr>
+<td style="text-align:left">prop50</td>
+<td style="text-align:left">prop50</td>
+</tr>
+<tr>
+<td style="text-align:left">prop51</td>
+<td style="text-align:left">prop51</td>
+</tr>
+<tr>
+<td style="text-align:left">prop52</td>
+<td style="text-align:left">prop52</td>
+</tr>
+<tr>
+<td style="text-align:left">prop53</td>
+<td style="text-align:left">prop53</td>
+</tr>
+<tr>
+<td style="text-align:left">prop54</td>
+<td style="text-align:left">prop54</td>
+</tr>
+<tr>
+<td style="text-align:left">prop55</td>
+<td style="text-align:left">prop55</td>
+</tr>
+<tr>
+<td style="text-align:left">prop56</td>
+<td style="text-align:left">prop56</td>
+</tr>
+<tr>
+<td style="text-align:left">prop57</td>
+<td style="text-align:left">prop57</td>
+</tr>
+<tr>
+<td style="text-align:left">prop58</td>
+<td style="text-align:left">prop58</td>
+</tr>
+<tr>
+<td style="text-align:left">prop59</td>
+<td style="text-align:left">prop59</td>
+</tr>
+<tr>
+<td style="text-align:left">prop60</td>
+<td style="text-align:left">prop60</td>
+</tr>
+<tr>
+<td style="text-align:left">prop61</td>
+<td style="text-align:left">prop61</td>
+</tr>
+<tr>
+<td style="text-align:left">prop62</td>
+<td style="text-align:left">prop62</td>
+</tr>
+<tr>
+<td style="text-align:left">prop63</td>
+<td style="text-align:left">prop63</td>
+</tr>
+<tr>
+<td style="text-align:left">prop64</td>
+<td style="text-align:left">prop64</td>
+</tr>
+<tr>
+<td style="text-align:left">prop65</td>
+<td style="text-align:left">prop65</td>
+</tr>
+<tr>
+<td style="text-align:left">prop66</td>
+<td style="text-align:left">prop66</td>
+</tr>
+<tr>
+<td style="text-align:left">prop67</td>
+<td style="text-align:left">prop67</td>
+</tr>
+<tr>
+<td style="text-align:left">prop68</td>
+<td style="text-align:left">prop68</td>
+</tr>
+<tr>
+<td style="text-align:left">prop69</td>
+<td style="text-align:left">prop69</td>
+</tr>
+<tr>
+<td style="text-align:left">prop70</td>
+<td style="text-align:left">prop70</td>
+</tr>
+<tr>
+<td style="text-align:left">prop71</td>
+<td style="text-align:left">prop71</td>
+</tr>
+<tr>
+<td style="text-align:left">prop72</td>
+<td style="text-align:left">prop72</td>
+</tr>
+<tr>
+<td style="text-align:left">prop73</td>
+<td style="text-align:left">prop73</td>
+</tr>
+<tr>
+<td style="text-align:left">prop74</td>
+<td style="text-align:left">prop74</td>
+</tr>
+<tr>
+<td style="text-align:left">prop75</td>
+<td style="text-align:left">prop75</td>
+</tr>
+</tbody>
+</table>
+<h3 id="xdm-legacy">XDM (Legacy)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>account_name</code></td>
+<td>String</td>
+<td style="text-align:left">Account Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>pageName</code></td>
+<td>String</td>
+<td style="text-align:left">Page Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>clientID</code></td>
+<td>String</td>
+<td style="text-align:left">Client ID</td>
+</tr>
+</tbody>
+</table>
+<h3 id="adobe-audience-manager-config-legacy">Adobe Audience Manager Config (Legacy)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th>Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>cookieDestinationsEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">Cookie Destinations Enabled</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>urlDestinationsEnabled</code></td>
+<td>Boolean</td>
+<td style="text-align:left">URL Destinations Enabled</td>
 </tr>
 </tbody>
 </table>
@@ -1162,13 +4385,26 @@ No</button>
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag Tips</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag Configuration</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data Mappings</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-collection">Data Collection</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#commandsevents">Commands/Events</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#privacy-options">Privacy Options</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#personalization-options">Personalization Options</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiences-options">Audiences Options</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#identity-options">Identity Options</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#identitymap-parameters">identityMap Parameters</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#xdm-event-triggers">XDM Event Triggers</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#analytics-xdm-data">Analytics XDM Data</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#target-data-non-xdm-data-object">Target Data (non-XDM, data object)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#analytics-xdm-data">Analytics XDM Data</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#analytics-evars">Analytics eVars</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#analytics-props">Analytics Props</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#xdm-legacy">XDM (Legacy)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-audience-manager-config-legacy">Adobe Audience Manager Config (Legacy)</a></li>
               </nav>
   </aside></nav>
 
@@ -1358,6 +4594,10 @@ No</button>
   
   
   
+  
+  
+  
+  
 </ul>
 
 </div>
@@ -1365,6 +4605,8 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
   
   
   
