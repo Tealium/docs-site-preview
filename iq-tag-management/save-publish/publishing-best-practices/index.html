@@ -724,7 +724,7 @@ var utag_data = {
 <li>Version tracking map</li>
 </ul>
 <h2 id="summary">Summary</h2>
-<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices1.png"
+<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices2.png"
          alt="Publishing Best Practices - One Developer"
          title="Publishing Best Practices - One Developer"/>
 </figure>
@@ -733,12 +733,11 @@ var utag_data = {
 <li>Load the <strong>Prod</strong> version.</li>
 <li><strong>Save As</strong> a new version and publish it to <strong>Dev</strong>.</li>
 <li>Make your changes and <strong>Save/Overwrite</strong> changes to the new version.</li>
-<li>Publish to <strong>Dev</strong> to test it.</li>
-</ol>
+<li>Publish to <strong>Dev</strong> to test it.
 <ul>
 <li>If other developers update the <strong>Prod</strong> version, merge those changes into the new version.</li>
 </ul>
-<ol>
+</li>
 <li>When ready to test, publish the new version to <strong>QA</strong>.</li>
 <li>Perform QA tests.</li>
 <li>When the version passes tests, request publish to <strong>Prod</strong>.</li>
@@ -749,32 +748,29 @@ var utag_data = {
 <p>When a developer gets a new task, the first thing they need to do is create a version as a workspace to make their changes.</p>
 <ol>
 <li>Load the <strong>Prod</strong> version of the profile.</li>
-<li><strong>Save As</strong> a new version, and give the version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field.</li>
-</ol>
+<li><strong>Save As</strong> a new version, and give the version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field.
 <ul>
 <li>As you save the new version, publish it to the <strong>Dev</strong> environment.</li>
 </ul>
+</li>
+</ol>
 <p>For more information, see <a href="/iq-tag-management/save-publish/about-saving/">About Saving</a> and <a href="/iq-tag-management/save-publish/about-publishing/">About Publishing</a>.</p>
 <p>If you need multiple development environments, create custom environments named <em>DEV1</em>, <em>DEV2</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
 <h3 id="develop-changes-and-save-them">Develop changes and save them</h3>
 <p>The developer works on their changes in the new version. As they work, they save their changes to their version.</p>
 <ol>
 <li>Make changes to the profile.</li>
-<li><strong>Save</strong> the changes to the profile.</li>
-</ol>
+<li><strong>Save</strong> the changes to the profile.
 <ul>
-<li>
-<p>If the developer wants to make changes that they can roll back, they can <strong>Save As</strong> a new version that contains their changes.</p>
+<li>If the developer wants to make changes that they can roll back, they can <strong>Save As</strong> a new version that contains their changes.</li>
+</ul>
 </li>
-<li>
-<p>Give objects meaningful and descriptive names and notes.</p>
-</li>
-<li>
-<p>Add labels to tags, variables, events, and extensions to group them by publish environment, geographic location, or campaign.</p>
-</li>
-<li>
-<p>Save changes often.</p>
-</li>
+</ol>
+<p>Some helpful tips:</p>
+<ul>
+<li>Give objects meaningful and descriptive names and notes.</li>
+<li>Add labels to tags, variables, events, and extensions to group them by publish environment, geographic location, or campaign.</li>
+<li>Save changes often.</li>
 </ul>
 <p>For more information, see <a href="/iq-tag-management/labels/about/">About labels</a> and <a href="/iq-tag-management/save-publish/about-saving/">About saving</a>.</p>
 <h4 id="informal-developer-tests">Informal developer tests</h4>
@@ -793,7 +789,8 @@ var utag_data = {
 <li>Quick bug fixes to a <strong>Prod</strong> version.</li>
 </ul>
 <p>When this happens, every version currently in development needs to merge the changes that were made to the <strong>Prod</strong> version.</p>
-<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices2.png"
+<p>The following diagram represents the development process with two developers working on separate versions.</p>
+<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices1.png"
          alt="Publishing Best Practices - Two Developers"
          title="Publishing Best Practices - Two Developers"/>
 </figure>
@@ -814,18 +811,19 @@ var utag_data = {
 <h3 id="qa-testing">QA Testing</h3>
 <p>When a developer is done with their changes, they publish their version to <strong>QA</strong> and notify their testing staff to test the version. If you do not have a dedicated testing department, other developers can peer review the version to ensure that it follows coding standards, doesn&rsquo;t impact site performance, and functions as expected.</p>
 <ol>
-<li>Developer publishes version to <strong>QA</strong>.</li>
-</ol>
+<li>Developer publishes version to <strong>QA</strong>.
 <ul>
 <li>If the version fails testing, the testing staff returns it to the developer to fix.</li>
 <li>If the version passes testing, the testing staff queues it for publishing to <strong>Prod</strong>. The platform will notify the appropriate users that a version is waiting for approval.</li>
 </ul>
+</li>
+</ol>
 <p>For more information about testing, see <a href="/iq-tag-management/troubleshooting">Troubleshooting</a>.</p>
 <p>If you need multiple environments to test concurrent development projects, create custom environments named <em>QA1</em>, <em>QA2</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
 <h3 id="approval-for-prod-publish">Approval for Prod publish</h3>
 <p>When a version is queued up for publishing to <strong>Prod</strong>, the manager or staff responsible for publishing to <strong>Prod</strong> can schedule the publish to coincide with advertising campaigns or promotions. When they do approve the publish, the version is published to <strong>Prod</strong>.</p>
 <p>Now that the <strong>Prod</strong> version has updated, developers who are working on their own versions need to <a href="#keep-your-development-version-up-to-date">merge in all of the changes in the new <strong>Prod</strong> version</a>.</p>
-<p>For more information about how to set up an approval workflow, see <a href="/iq-tag-management/save-publish/publish-workflow-management/">MPublish Workflow Management</a>.</p>
+<p>For more information about how to set up an approval workflow, see <a href="/iq-tag-management/save-publish/publish-workflow-management/">Publish Workflow Management</a>.</p>
 <p>For more information about updating the remaining development versions with the new changes to <strong>Prod</strong>, see <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/">Merging changes between concurrent users</a>.</p>
 
 </div>
