@@ -724,13 +724,21 @@ var utag_data = {
 <li>Version tracking map</li>
 </ul>
 <h2 id="summary">Summary</h2>
+<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices1.png"
+         alt="Publishing Best Practices - One Developer"
+         title="Publishing Best Practices - One Developer"/>
+</figure>
 <p>The following steps summarize how to manage updates to a Tealium IQ profile:</p>
 <ol>
 <li>Load the <strong>Prod</strong> version.</li>
 <li><strong>Save As</strong> a new version and publish it to <strong>Dev</strong>.</li>
 <li>Make your changes and <strong>Save/Overwrite</strong> changes to the new version.</li>
 <li>Publish to <strong>Dev</strong> to test it.</li>
+</ol>
+<ul>
 <li>If other developers update the <strong>Prod</strong> version, merge those changes into the new version.</li>
+</ul>
+<ol>
 <li>When ready to test, publish the new version to <strong>QA</strong>.</li>
 <li>Perform QA tests.</li>
 <li>When the version passes tests, request publish to <strong>Prod</strong>.</li>
@@ -740,7 +748,7 @@ var utag_data = {
 <h3 id="create-a-new-version-based-on-prod">Create a new version based on Prod</h3>
 <p>When a developer gets a new task, the first thing they need to do is create a version as a workspace to make their changes.</p>
 <ol>
-<li>Load the <strong>Prod</strong> version of the profile</li>
+<li>Load the <strong>Prod</strong> version of the profile.</li>
 <li><strong>Save As</strong> a new version, and give the version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field.</li>
 </ol>
 <ul>
@@ -784,7 +792,11 @@ var utag_data = {
 <li>Concurrent development efforts.</li>
 <li>Quick bug fixes to a <strong>Prod</strong> version.</li>
 </ul>
-<p>When this happens, every version currently in development needs to merge in the changes that were made to the <strong>Prod</strong> version.</p>
+<p>When this happens, every version currently in development needs to merge the changes that were made to the <strong>Prod</strong> version.</p>
+<figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices2.png"
+         alt="Publishing Best Practices - Two Developers"
+         title="Publishing Best Practices - Two Developers"/>
+</figure>
 <ol>
 <li>Navigate to <strong>Client-Side Versions</strong>.</li>
 <li>Switch to the <strong>Prod</strong> version.</li>
