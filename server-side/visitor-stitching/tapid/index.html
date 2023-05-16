@@ -829,11 +829,23 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="how-it-works">How it works</h2>
-<p>If a visitor&rsquo;s computer doesn&rsquo;t already have a TAPID cookie set on the Collect Tag target domain, their computer will generate one. The TAPID cookie&rsquo;s value is set to that user&rsquo;s Visitor ID. This value normally comes from the client device.</p>
+<p>If a visitor&rsquo;s computer doesn&rsquo;t already have a TAPID cookie set on the Collect Tag target domain, the domain will generate one based on the Collect Tag payload. The TAPID cookie&rsquo;s value is set to that user&rsquo;s Visitor ID. This value normally comes from the client device.</p>
 <p>TAPID stores the value in a concatenated list of values for the accounts and profiles that a user&rsquo;s device has visited, using the following format:</p>
 <pre tabindex="0"><code>account-1/profile-1&gt;visitor_id_value-1|account-2/profile-2&gt;visitor_id_value-2
-</code></pre><p>TAPID is usually a third-party cookie, but with first-party domains it can be a first-party cookie. When the TAPID is a third-party cookie, and the browser does not allow it to be set, Tealium&rsquo;s server-side products use the value of a first-party cookie instead, such <code>asutag_main</code>.</p>
+</code></pre><p>TAPID is usually a third-party cookie, but with first-party domains it can be a first-party cookie.</p>
 <p>Once set, the <code>visitor_id_value</code> in the cookie does not usually change.</p>
+<h3 id="account-and-profile-values-in-tapid">Account and profile values in TAPID</h3>
+<p>For most situations, to find the account and profile values for a TAPID cookie on a web page, perform the following steps:</p>
+<ol>
+<li>In your browser, open a web page with a Tealiun Collect tag.</li>
+<li>Open the browser&rsquo;s developer console.</li>
+<li>Filter <strong>Network</strong> requests for <code>teal</code>.</li>
+<li>Refresh the page.</li>
+<li>Find the collect tag reference (either <code>i.gif</code> or <code>/event</code>).</li>
+<li>Examine the request header to determine the target account and profile.</li>
+<li>Examine the response to see the TAPID cookie value.</li>
+<li>Extract the part of the TAPID cookie that relates to the account and profile.</li>
+</ol>
 <h2 id="audiencestream">AudienceStream</h2>
 <p>AudienceStream determines the visitor profile ID based on the following order:</p>
 <ul>
@@ -841,12 +853,14 @@ var utag_data = {
 <li>The <code>tealium_visitor_id</code> event attribute.</li>
 <li>The <code>utag_main v_id cookie</code>, also called <code>tealium_firstparty_visitor_id</code>.</li>
 </ul>
-<p>AudienceStream will always use the TAPID identifier as the primary identifier if it is present on an incoming request in preference to anything else.</p>
+<p>AudienceStream always uses the TAPID identifier as the primary identifier if it is present on an incoming request in preference to anything else. If a user is tracked across two domains, AudienceStream does not use the second domain&rsquo;s first party cookie to identify the user. Therefore, you cannot look up the user based on the second domain&rsquo;s first party cookie in AudienceStream.</p>
 <h3 id="visitor-stitching-issues">Visitor stitching issues</h3>
-<p>A visitor&rsquo;s profile data can be contaminated if multiple visitors use a device, such as a shared smart television or a public kiosk. If a second user logs in to that device with an anonymous cookie, AudienceStream will continue to log activity to the first user . Traffic from all the anonymous users on a device will be logged to the first user in the TAPID cookie.</p>
+<p>A visitor&rsquo;s profile data can be contaminated if multiple visitors use a device, such as a shared smart television or a public kiosk. If a second user logs in to that device with an anonymous cookie, AudienceStream continues to log activity to the first user . Traffic from all the anonymous users on a device are logged to the first user in the TAPID cookie.</p>
 <p>For more information, see <a href="/platforms/getting-started-mobile/identity-resolution/#visitor-switching">Visitor Switching</a>.</p>
+<h3 id="browser-support">Browser support</h3>
+<p>As browser support for third-party cookies continues to decline, the ability to track users anonymously across domains is becoming more difficult. With <a href="/server-side/visitor-stitching/about/">Visitor Stitching</a>, AudienceStream can resolve a user across two or more domains when that user identifies themselves in the data layer.</p>
 <h2 id="change-the-tapid-cookie-data">Change the TAPID cookie data</h2>
-<p>The API request contains three parameters that allow you to change the value of the TAPID cookie. These parameters only affect the account and profile value in TAPID related to the current incoming API request. It will not change any other account and profile values.</p>
+<p>The API request contains three parameters that allow you to change the value of the TAPID cookie. These parameters only affect the account and profile value in TAPID related to the current incoming API request. It does not change any other account and profile values.</p>
 <p>The parameters support the following endpoints:</p>
 <ul>
 <li><code>i.gif</code> - <a href="/client-side-tags/tealium-collect-tag/">Tealium Collect tag</a></li>
@@ -878,13 +892,13 @@ var utag_data = {
 <tr>
 <td><code>tealium_skip_3rd_party_vid_cookies</code></td>
 <td>Boolean</td>
-<td>AudienceStream and Server-side will ignore the TAPID values for this event.</td>
+<td>AudienceStream and Server-side ignores the TAPID values for this event.</td>
 <td></td>
 </tr>
 </tbody>
 </table>
-<p>The parameters only affect the current event. For example, if you pass the <code>skip</code> parameter on one event and not the next, the next event will not skip the TAPID cookie.</p>
-<p>However, you can set the <code>override</code> parameter once and the TAPID will change to the value you specify.</p>
+<p>The parameters only affect the current event. For example, if you pass the <code>skip</code> parameter on one event and not the next, the next event does not skip the TAPID cookie.</p>
+<p>However, you can set the <code>override</code> parameter once and the TAPID changes to the value you specify.</p>
 <h3 id="examples">Examples</h3>
 <p>The following examples demonstrate how the three parameters change TAPID data.</p>
 <h4 id="override">Override</h4>
@@ -1079,7 +1093,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  May 4, 2023 
+          <p>This page was last updated:  May 15, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1094,8 +1108,10 @@ No</button>
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiencestream">AudienceStream</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#account-and-profile-values-in-tapid">Account and profile values in TAPID</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audiencestream">AudienceStream</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#visitor-stitching-issues">Visitor stitching issues</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#browser-support">Browser support</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#change-the-tapid-cookie-data">Change the TAPID cookie data</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#examples">Examples</a></li>
               </nav>
