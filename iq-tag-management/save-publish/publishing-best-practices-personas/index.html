@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Publishing best practices | Save and publish |Preview of Tealium Developer Docs</title>
+    <title>Publishing best practices - personas | Save and publish |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -501,10 +501,10 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".save-publish">Save and publish</a>
-        <ul class="bl b--primary bw1 pl2 save-publish desktopmenu animated fadeIn list "><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/save-publish/publishing-best-practices/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".publishing-best-practices">Publishing best practices</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/save-publish/publishing-best-practices-personas/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".publishing-best-practices-personas">Publishing best practices - personas</a>
+        <ul class="bl b--primary bw1 pl2 save-publish desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/save-publish/publishing-best-practices/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".publishing-best-practices">Publishing best practices</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/save-publish/publishing-best-practices-personas/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".publishing-best-practices-personas">Publishing best practices - personas</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/save-publish/about-saving/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-saving">About saving</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -705,7 +705,7 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Publishing best practices</h1>
+<h1 class="lh-title mt30 mb3">Publishing best practices - personas</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -770,6 +770,14 @@ var utag_data = {
 <li>Project manager approves publish to <strong>Prod</strong>.</li>
 </ol>
 <h2 id="procedure-in-detail">Procedure in detail</h2>
+<h3 id="our-cast-of-characters">Our cast of characters</h3>
+<ul>
+<li><strong>Dale</strong> - Developer #1</li>
+<li><strong>Drew</strong> - Developer #2</li>
+<li><strong>Terry</strong> - QA Tester</li>
+<li><strong>Penn</strong> - Product Manager</li>
+<li><strong>Blake</strong> - Account Administrator</li>
+</ul>
 <h3 id="configure-the-account">Configure the account</h3>
 <p>Before any development begins, the Blake the account administrator should configure the account&rsquo;s publishing workflow and configuration.</p>
 <ul>
@@ -784,13 +792,13 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a></li>
 </ul>
 <h3 id="create-a-new-version-based-on-prod">Create a new version based on Prod</h3>
-<p>When a developer gets a new task, the first thing they need to do is create a version as a workspace to make their changes. Doing this ensures that they have a clean development environment with the most recent updates from production, and that it will merge back into production cleanly.</p>
+<p>Dale the developer gets a new task: configure a new tag on the profile. The first thing Dales does is create a version as a workspace to make their changes. Doing this ensures that Dale has a clean development environment with the most recent updates from production, and that it will merge back into production cleanly.</p>
 <p>By default, Tealium iQ loads the most current version of a profile, so ensure you are at the correct starting point before you begin to start development and make changes.</p>
 <ol>
-<li>Load the <strong>Prod</strong> version of the profile.</li>
-<li><strong>Save As</strong> a new version, and give the version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field.
+<li>Dale loads the <strong>Prod</strong> version of the profile.</li>
+<li>Dale performs a <strong>Save As</strong> a new version, and gives the version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field: <code>New Tag For 2023 1Q</code>
 <ul>
-<li>As you save the new version, publish it to the <strong>Dev</strong> environment.</li>
+<li>As Dale save the new version, they publish it to the <strong>Dev</strong> environment.</li>
 </ul>
 </li>
 </ol>
@@ -800,16 +808,14 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/about-publishing/">About Publishing</a>.</li>
 </ul>
 <p>If you need multiple development environments, create custom environments named <em>DEV A</em>, <em>DEV B</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
-<h4 id="what-if-you-are-the-only-developer">What if you are the only developer</h4>
-<p>If you are the only developer on a profile and you want to ensure that nobody makes any changes to the profile while you are working on it, use the <strong>Lock Profile</strong> setting to prevent other users from editing that profile.</p>
-<p>For more information, see <a href="/iq-tag-management/save-publish/publish-configuration/#version-workflow">Publish Configuration</a></p>
+<p>So, at the same time, if Drew the developer is working on cleaing up load rules on the profile, Drew can ask for a custom <strong>Dev</strong> environment and custom <strong>QA</strong> environment to avoid conflicting with Dale.</p>
 <h3 id="develop-changes">Develop changes</h3>
-<p>The developer works on their changes in the new version. As they work, they overwrite their version with their changes.</p>
+<p>Dale works on their changes in the new version. As Dale works, they overwrite their version with their changes.</p>
 <ol>
-<li>Make changes to the profile.</li>
-<li><strong>Save</strong> the changes to the version with the <strong>Overwrite existing version</strong> option.
+<li>Dale make changes to the profile.</li>
+<li>Dale performs a <strong>Save</strong> with the changes to the version with the <strong>Overwrite existing version</strong> option.
 <ul>
-<li>If the developer wants to make changes that they can roll back, they can <strong>Save As</strong> a new version that contains their changes.</li>
+<li>If Dale wants to make changes that they can roll back, they can <strong>Save As</strong> a new version that contains their changes.</li>
 </ul>
 </li>
 </ol>
@@ -825,7 +831,7 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/about-saving/">About saving</a>.</li>
 </ul>
 <h4 id="informal-developer-tests">Informal developer tests</h4>
-<p>As the developer works on their version, they should perform informal tests on their version in a <strong>Dev</strong> environment. Testing ensures that the version works as expected and doesn&rsquo;t impact site performance.</p>
+<p>As Dale works on their version, they should perform informal tests on their version in a <strong>Dev</strong> environment. Testing ensures that the version works as expected and doesn&rsquo;t impact site performance.</p>
 <p>Tealium provides many tools to assist with this effort, which include:</p>
 <ul>
 <li><a href="/iq-tag-management/troubleshooting/web-companion/">Tealium Tools - Web Companion</a>: Use this browser app to inspect and validate tags that load on your web pages. It contains multiple tools to help you diagnose problems.</li>
@@ -838,11 +844,12 @@ var utag_data = {
 <h3 id="keep-your-development-version-up-to-date">Keep your development version up to date</h3>
 <p>Sometimes, the version that is currently published to <strong>Prod</strong> will change while a developer is working on a new version:</p>
 <ul>
-<li>Concurrent development efforts.</li>
-<li>Testing different solutions to the same problem.</li>
-<li>Quick bug fixes to a <strong>Prod</strong> version.</li>
+<li>Concurrent development efforts (Drew is working on changes, too).</li>
+<li>Testing different solutions to the same problem (Drew might be testing profile libraries for the new tag).</li>
+<li>Quick bug fixes to a <strong>Prod</strong> version (Drew is fixing one of Dale&rsquo;s past mistakes).</li>
 </ul>
 <p>When this happens, every version currently in development needs to merge the changes that were made to the <strong>Prod</strong> version. This ensures that developers are working with the latest version of the main profile and identified any potential conflicts or incompatibilities earlier in the development process.</p>
+<p>So, if Drew&rsquo;s project finishes before Dave&rsquo;s, Dale will need to merge Drew&rsquo;s changes into their version.</p>
 <p>The following diagram represents the development process with two developers working on separate versions:</p>
 <figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices1.png"
          alt="Publishing Best Practices - Two Developers"
@@ -857,7 +864,7 @@ var utag_data = {
 <li>Confirm that all of the changes need to be added to the development version.</li>
 <li>Publish the new version to <strong>Dev</strong>.</li>
 </ol>
-<p>You can also merge changes directly from their version if you need their changes as part of your work. This also can let you know in advance if the other developer is working on the same object in the profile so you can collaborate on resolving merge conflicts.</p>
+<p>Dale can also merge Drew&rsquo;s changes directly from their version if you need their changes as part of their work. This also can let Dale know in advance if Drew is working on the same object in the profile so both of them can collaborate on resolving merge conflicts.</p>
 <p>If multiple developers are working on the same version, the platform will notify you of published changes and allow you to quickly load the new version or merge the new version into your current work so you can keep working. There are also communication tools that allow the group to communicate with each other over the platform.</p>
 <p>For more information, see:</p>
 <ul>
@@ -867,20 +874,20 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/concurrent-users/">Concurrent Users</a>: Concurrent user communication tools and several example collaboration workflow scenarios.</li>
 </ul>
 <h3 id="qa-testing">QA Testing</h3>
-<p>When a developer is done with their changes, they publish their version to <strong>QA</strong> and notify their testing staff to test the version. If you do not have a dedicated testing department, other developers can peer review the version to ensure that it follows coding standards, doesn&rsquo;t impact site performance, and functions as expected.</p>
+<p>When Dale is done with their changes, they publish their version to <strong>QA</strong> and notify their testing staff Terry to test the version. If you do not have a dedicated testing department, other developers can peer review the version to ensure that it follows coding standards, doesn&rsquo;t impact site performance, and functions as expected.</p>
 <ol>
-<li>Developer publishes version to <strong>QA</strong>.
+<li>Dale publishes version to <strong>QA</strong>.
 <ul>
-<li>If the version fails testing, the testing staff returns it to the developer to fix.</li>
-<li>If the version passes testing, the testing staff saves it as a new version and requests publishing it to <strong>Prod</strong>. The platform will notify the appropriate users that a version is waiting for approval.</li>
+<li>If the version fails Terry&rsquo;s testing, Terry returns it to Dale to fix.</li>
+<li>If the version passes Terry&rsquo;s testing, Terry saves it as new version and requests publishing it to <strong>Prod</strong>. The platform will notify the appropriate users that a version is waiting for approval.</li>
 </ul>
 </li>
 </ol>
 <p>For more information about testing, see <a href="/iq-tag-management/troubleshooting">Troubleshooting</a>.</p>
 <p>If you need multiple environments to test concurrent development projects, create custom environments named <em>QA A</em>, <em>QA B</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
 <h3 id="approval-for-prod-publish">Approval for Prod publish</h3>
-<p>When a version is queued up for publishing to <strong>Prod</strong>, the manager or staff responsible for publishing to <strong>Prod</strong> can schedule the publish to coincide with advertising campaigns or promotions. When they do approve the publish, the version is published to <strong>Prod</strong>.</p>
-<p>Now that the <strong>Prod</strong> version has updated, developers who are working on their own versions need to <a href="#keep-your-development-version-up-to-date">merge in all of the changes in the new <strong>Prod</strong> version</a>.</p>
+<p>When a version is queued up for publishing to <strong>Prod</strong>, Penn the product manager is notified of a publish reqiest. Penn can schedule the publish to coincide with advertising campaigns or promotions. When the publish is approved, the version is published to <strong>Prod</strong>.</p>
+<p>Now that the <strong>Prod</strong> version has updated with Dale&rsquo;s changes, and Drew is still working on their own changes, Drew needs to <a href="#keep-your-development-version-up-to-date">merge in all of the changes in the new <strong>Prod</strong> version</a>.</p>
 <p>For more information about how to set up an approval workflow, see <a href="/iq-tag-management/save-publish/publish-workflow-management/">Publish Workflow Management</a>.</p>
 <p>For more information about updating the remaining development versions with the new changes to <strong>Prod</strong>, see <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/">Merging changes between concurrent users</a>.</p>
 
@@ -889,18 +896,33 @@ var utag_data = {
 <div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
 
   
-  <a href="/iq-tag-management/save-publish/publishing-best-practices-personas/"
+  <a href="/iq-tag-management/save-publish/about-saving/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Publishing best practices - personas</div>
+      <div>About saving</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Publishing best practices - personas"</title>
+      <title>"About saving"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
   
   
+</div><div class="di">
+  
+  
+  <a href="/iq-tag-management/save-publish/publishing-best-practices/"
+    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
+    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Publishing best practices "</title>
+      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+    </svg>
+   <section class="tr pl3">
+      <div>Publishing best practices</div>
+    </section>
+  </a>
+  
+
 </div></div>
 
 
@@ -944,7 +966,8 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#summary">Summary</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#procedure-in-detail">Procedure in detail</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-the-account">Configure the account</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#our-cast-of-characters">Our cast of characters</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-the-account">Configure the account</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-new-version-based-on-prod">Create a new version based on Prod</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#develop-changes">Develop changes</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#keep-your-development-version-up-to-date">Keep your development version up to date</a></li>
