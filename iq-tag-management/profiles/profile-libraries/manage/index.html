@@ -189,9 +189,11 @@ var utag_data = {
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
-  <div class="w-100 pr4">
-  <div class="flex">
 
+<div class="w-100 pr4">
+<div class="flex">
+
+    
       <div id="menu" class="order-0 w-auto vh-100 overflow-auto dn db-ns sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6" role="navigation">
   <ul class="list pa0 mt0 mb1">
@@ -523,8 +525,6 @@ var utag_data = {
         <a href="/iq-tag-management/save-publish/concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".save-publish-concurrent-users">Concurrent users</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".merging-changes-between-concurrent-users">Merging changes between concurrent users</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/save-publish/subresource-integrity/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".subresource-integrity">Subresource Integrity</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".iq-administration">Administration</a>
@@ -555,13 +555,11 @@ var utag_data = {
         <ul class=" first-party-domains desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/first-party-domains/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-first-party-domains">About first-party domains</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-server-side/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-server-side-data-collection">Configure server-side data collection</a>
+        <a href="/iq-tag-management/administration/first-party-domains/configure-domains-and-certificates/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-first-party-domains">Configure domains and certificates</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-client-side/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-client-side-delivery">Configure client-side delivery</a>
+        <a href="/iq-tag-management/administration/first-party-domains/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Managing first-party-domains</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/update-endpoints/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".fpd-update-domains">Update endpoint configurations</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Manage First-Party-Domains</a>
+        <a href="/iq-tag-management/administration/first-party-domains/using/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".using-first-party-domains">Using first-party domains</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".linking-to-github">Linking to GitHub</a>
@@ -654,8 +652,6 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".frequently-asked-questions">Frequently Asked Questions</a>
         <ul class=" frequently-asked-questions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/frequently-asked-questions/faq-login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-log-in-to-tealium">How do I log in?</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-remove-a-user/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-remove-a-user">How do I remove a user?</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-reset-my-password/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-reset-my-password">How do I reset my password?</a>
@@ -669,10 +665,10 @@ var utag_data = {
       </li></ul></li></ul>
 </nav>
 </div>
+    
 
     <article id="main-content" class="order-1 overflow-auto max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
       <div class="documentation-copy ph4">
-
         <header class="flex-none w-100"><nav id="breadcrumb">
 <ul class="nav">
 
@@ -706,29 +702,24 @@ var utag_data = {
 </nav>
 
 <h1 class="lh-title mt30 mb3">Manage profile libraries</h1>
-        </header>
+</header>
 
-        <div class="mv2 mid-gray fn w-100">
-          
-            <p class="f4 fw3 lh-copy">
-              This article explains how to manage profile libraries.
-            </p>
-          
-        </div>
+<div class="mv2 mid-gray fn w-100">
+  
+    <p class="f4 fw3 lh-copy">
+      This article explains how to manage profile libraries.
+    </p>
+  
+</div>
 
-        <div class="prose nested-links" id="prose">
-         
-        
-        
-          
-          
-          <h2 id="create-a-library">Create a library</h2>
+<div class="prose nested-links" id="prose">
+  <h2 id="create-a-library">Create a library</h2>
 <p>Though all users in an account can see all libraries, only users with the <strong>Manage Profiles</strong> permission can create a profile library.</p>
 <p>Use the following steps to create a new library:</p>
 <ol>
 <li>
 <p>In the user admin menu click <strong>Manage Profiles</strong>.<br>
-The <strong>Manage Profiles</strong> window displays with all libraries and profiles for your account on the left.</p>
+The <strong>Manage Profiles</strong> window appears with all libraries and profiles for your account on the left.</p>
 </li>
 <li>
 <p>Next to <strong>Libraries</strong>, click <strong>Add</strong>.<br>
@@ -772,15 +763,12 @@ Wait for the library to publish and display a success message.</p>
 You must log into the library by selecting it from the account/profile menu and clicking <strong>Load Version</strong>.</p>
 </li>
 </ol>
-
-          
-          
-          <h2 id="edit-a-library">Edit a library</h2>
+<h2 id="edit-a-library">Edit a library</h2>
 <p>Use the following steps to edit a library:</p>
 <ol>
 <li>
 <p>In the user admin menu click <strong>Manage Profiles</strong>.<br>
-The <strong>Manage Profiles</strong> window displays with all libraries and profiles for your account on the left.</p>
+The <strong>Manage Profiles</strong> window appears with all libraries and profiles for your account on the left.</p>
 </li>
 <li>
 <p>Click the library you want to view and select the correct profile from the <strong>Profiles</strong> drop-down list and then click <strong>Edit</strong>.<br>
@@ -797,33 +785,25 @@ When editing a library, the changes go into effect immediately.</p>
 <p>Click <strong>Apply</strong> to exit the window.</p>
 </li>
 </ol>
-
-          
-          
-          <h2 id="save-a-library">Save a library</h2>
+<h2 id="save-a-library">Save a library</h2>
 <p>Consider the following before saving your library:</p>
 <ul>
-<li>You may only perform a <strong>Save as</strong> action with a library.</li>
-<li>As a best practice develop a naming convention to keep track of your library versions.</li>
+<li>You may only perform a <strong>Save as</strong> action with a library. You cannot use the <strong>Overwrite existing version</strong> option.</li>
+<li>As a best practice, develop a naming convention to keep track of your library versions. By default, the <strong>Version</strong> field displays a date and timestamp.</li>
 <li>Changes to a library do not automatically propagate to all the profiles that load it. You must re-publish each profile to include the changes to the library.</li>
 </ul>
+<p>For more information, see <a href="/iq-tag-management/save-publish/save-publish-a-version/">Save and publish a version</a></p>
 <p>Use the following steps to save a library:</p>
 <ol>
-<li>Click <strong>Save/Publish</strong>.<br>
-Only the <strong>Save As</strong> option appears.</li>
-<li>Enter a title using your naming conventions.</li>
-<li>Enter descriptive notes about this version.</li>
-<li>Click which environments to publish to.<br>
-<img src="/images/iq-tag-management/whiteui-tiq-managing-profile-libraries-publish-library.jpg" 
-         alt="Publish Library"
-         title="Publish Library"/></li>
+<li>Click <strong>Save/Publish</strong>.</li>
+<li>In the <strong>Version</strong> field, enter the name of the new version.</li>
+<li>In the <strong>Notes</strong> field, enter notes about changes you made to the profile library.
+The notes entered in this field are useful if you need to roll back to this profile library in the future. This is a required field, you cannot save the profile library without entering notes.</li>
+<li>(Optional) Select one or more <a href="/iq-tag-management/save-publish/about-publishing/">Publish Locations</a> to publish this version to a publishing environment. You can also select the <strong>Custom</strong> checkbox to select one or more <a href="/iq-tag-management/save-publish/custom-publish-environments/">custom environments</a>.</li>
 <li>Click <strong>Publish</strong>.</li>
 </ol>
-<p>Next, load the profiles that are linked to the library to import the latest changes and save the profile.</p>
-
-          
-          
-          <h2 id="link-a-library-to-a-profile">Link a library to a profile</h2>
+<p>Next, load each profile that is linked to the library to import the latest changes and save the profiles.</p>
+<h2 id="link-a-library-to-a-profile">Link a library to a profile</h2>
 <p>You may link a library to profile, or a profile to a library. After you create a link between a library and a profile, the next time you load the profile, the contents of the library will be imported.</p>
 <p>To link a library to a profile:</p>
 <ol>
@@ -836,7 +816,7 @@ You can optionally select a library to which you want to link a profile.</li>
          alt="Link to Library"
          title="Link to Library"/></li>
 <li>Click <strong>+ Link to Library</strong>.<br>
-The library selected displays.</li>
+The library selected appears.</li>
 <li>Select the publish environment (Dev, QA, Prod) of the library you want to link to the profile.<br>
 <img src="/images/iq-tag-management/whiteui-tiq-managing-profile-libraries-link-to-library-select-publish-environment.jpg" 
          alt="Select Publish Environment."
@@ -845,34 +825,26 @@ The library selected displays.</li>
 You cannot remove a link to required libraries.</li>
 <li>Click <strong>Apply</strong>.</li>
 </ol>
-
-          
-          
-          <h2 id="publish-linked-profiles">Publish linked profiles</h2>
+<h2 id="publish-linked-profiles">Publish linked profiles</h2>
 <p>Regardless of whether the library is optional or required, additions of new libraries or changes to existing libraries require that you publish a new version of the linked profiles to import the latest library configurations. You must publish each profile individually.</p>
 <p>Use the following steps to determine which profiles are linked to a library:</p>
 <ol>
 <li>In the user admin menu click <strong>Manage Profiles</strong>.<br>
 The <strong>Manage Profiles</strong> dialog appears.</li>
 <li>Under the <strong>Libraries</strong> section, click the library to inspect.<br>
-The profiles to which this library is linked display in the main window on the right. The <strong>Library Version</strong> column displays which publish environment of this library the profile is linked to.<br>
+The profiles to which this library is linked appear in the main window on the right. The <strong>Library Version</strong> column displays which publish environment of this library the profile is linked to.<br>
 <img src="/images/iq-tag-management/whiteui-tiq-managing-profile-libraries-view-library-version.jpg" 
          alt="View Library Version"
          title="View Library Version"/></li>
 <li>Click <strong>Cancel</strong> to close the window.</li>
 </ol>
-
-          
-          
-          <h2 id="delete-a-library">Delete a library</h2>
+<h2 id="delete-a-library">Delete a library</h2>
 <p>Deleting a library is an irreversible action. Tealium recommends that you phase out the use of a library across all affected profiles prior to deleting.</p>
 <p>To delete a library, contact your account manager.</p>
 
-          
-        
-        </div>
+</div>
 
-        <div class="mv30 nested-links overflow-hidden dpn"><div class="di">
+<div class="mv30 nested-links overflow-hidden dpn"><div class="di">
   
   
   <a href="/iq-tag-management/profiles/profile-libraries/about/"
@@ -888,6 +860,9 @@ The profiles to which this library is linked display in the main window on the r
   
 
 </div></div>
+
+
+
         <div class="bt-l b--moon-gray pv3 cb">
           <div id="feedback_form" class="dpn">
   <div id="feedback_buttons">
@@ -911,7 +886,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  May 22, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -919,7 +894,7 @@ No</button>
     </article>
 
     <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
-        
+      
 
 
 
@@ -934,8 +909,9 @@ No</button>
               </nav>
   </aside></nav>
 
-  </div>
-  </div>
+</div>
+</div>
+    
 
     </main>
 
@@ -989,14 +965,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Data Connect
         </a>
     </li>
   
@@ -1091,10 +1059,6 @@ No</button>
           Early Access
         </a>
     </li>
-  
-  
-  
-  
   
   
   
@@ -1334,14 +1298,6 @@ var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
 }
-const transformItems = function(hits) {
-  hits.map(hit => {
-    if (hit.url.indexOf('#breadcrumb') > 0) {
-      hit.url = hit.url.replace('#breadcrumb', '');
-    }
-  });
-  return hits;
-};
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
@@ -1353,8 +1309,7 @@ docsearch({
     "hitsPerPage": 50,
     optionalFilters: opt_filters
   },
-  debug: "true",
-  transformItems
+  debug: "true"
 });
 </script>
 
