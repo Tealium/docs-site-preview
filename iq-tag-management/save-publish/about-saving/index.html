@@ -525,8 +525,6 @@ var utag_data = {
         <a href="/iq-tag-management/save-publish/concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".save-publish-concurrent-users">Concurrent users</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".merging-changes-between-concurrent-users">Merging changes between concurrent users</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/save-publish/subresource-integrity/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".subresource-integrity">Subresource Integrity</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".iq-administration">Administration</a>
@@ -557,13 +555,11 @@ var utag_data = {
         <ul class=" first-party-domains desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/first-party-domains/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-first-party-domains">About first-party domains</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-server-side/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-server-side-data-collection">Configure server-side data collection</a>
+        <a href="/iq-tag-management/administration/first-party-domains/configure-domains-and-certificates/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-first-party-domains">Configure domains and certificates</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/configure-client-side/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".configure-client-side-delivery">Configure client-side delivery</a>
+        <a href="/iq-tag-management/administration/first-party-domains/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Managing first-party-domains</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/update-endpoints/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".fpd-update-domains">Update endpoint configurations</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/administration/first-party-domains/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-first-party-domains">Manage First-Party-Domains</a>
+        <a href="/iq-tag-management/administration/first-party-domains/using/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".using-first-party-domains">Using first-party domains</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".linking-to-github">Linking to GitHub</a>
@@ -656,8 +652,6 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".frequently-asked-questions">Frequently Asked Questions</a>
         <ul class=" frequently-asked-questions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/frequently-asked-questions/faq-login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-log-in-to-tealium">How do I log in?</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-remove-a-user/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-remove-a-user">How do I remove a user?</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-reset-my-password/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-reset-my-password">How do I reset my password?</a>
@@ -737,12 +731,12 @@ var utag_data = {
 </table>
 <p>After you save your changes, you can log out or close the window and your configuration is preserved for you or the next user that logs into the account.</p>
 <h2 id="versions-and-revisions">Versions and revisions</h2>
-<p>Your history is organized into <em>versions</em> and <em>revisions</em>.</p>
+<p>Your history is organized into versions and revisions.</p>
 <ul>
 <li><strong>Versions</strong><br>
-A version is created when you use the <em>Save As</em> option. A version has a name and contains one or more revisions. This allows you to revert back to a previous version.</li>
+A version is created when you perform a <strong>Save As</strong> action. A version has a name and contains one or more revisions. This allows you to revert back to a previous version.</li>
 <li><strong>Revisions</strong><br>
-A revision is created within the current version when you use the <em>Save</em> option. This is is typically used for minor changes. You cannot revert back to a previous revision within a version.</li>
+A revision is created within the current version when you use the <strong>Overwrite current version</strong> option. This is is typically used for minor changes. You cannot revert back to a previous revision within a version.</li>
 </ul>
 <p>View your save and publish history by going to <a href="/iq-tag-management/save-publish/version-history/"><strong>Client-Side Versions</strong></a>.</p>
 
@@ -790,7 +784,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  February 21, 2023 
+          <p>This page was last updated:  May 22, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -865,14 +859,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Data Connect
         </a>
     </li>
   
@@ -967,10 +953,6 @@ No</button>
           Early Access
         </a>
     </li>
-  
-  
-  
-  
   
   
   
@@ -1210,14 +1192,6 @@ var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
 }
-const transformItems = function(hits) {
-  hits.map(hit => {
-    if (hit.url.indexOf('#breadcrumb') > 0) {
-      hit.url = hit.url.replace('#breadcrumb', '');
-    }
-  });
-  return hits;
-};
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
@@ -1229,8 +1203,7 @@ docsearch({
     "hitsPerPage": 50,
     optionalFilters: opt_filters
   },
-  debug: "true",
-  transformItems
+  debug: "true"
 });
 </script>
 
