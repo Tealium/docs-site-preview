@@ -256,6 +256,14 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/server-side/data-connect/about/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-dc">Data Connect</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/predict/getting-started/about-predict/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ml">Predict ML</a>
       
       </li>
@@ -725,6 +733,10 @@ var utag_data = {
               <a href="#I" aria-label="Words starting with the letter I">I</a>
               
             
+          
+          
+
+          
           
           
 
@@ -2152,6 +2164,16 @@ apps tap into for timely and consistent visitor data. For more information on da
           
 
           
+
+                
+                <dt id="ipaas-integration-platform-as-a-service">iPaaS (Integration Platform as a Service)</dt>
+                <dd aria-labelledby="ipaas-integration-platform-as-a-service"><p>iPaaS, or Integration Platform as a Service, is a platform for building and deploying integrations within the cloud and between the cloud and enterprise. Large businesses that run enterprise-level systems often use iPaaS to integrate applications and local data and in both public and private clouds.</p>
+</dd>
+                
+                
+          
+
+          
             
           <a href="#intro" target="_self" rel="nofollow noopener noreferrer">Back to top</a>
 
@@ -2855,7 +2877,7 @@ image file is too small to be seen by people and requires a call back to a serve
 
                 
                 <dt id="save">Save</dt>
-                <dd aria-labelledby="save"><p>Performing a <strong>Save</strong> with the <strong>Overwrite current version</strong> option selected in iQ Tag Management overwrites the current version. If you use <strong>Overwrite current version</strong> instead of <strong>Save As</strong>, old configurations of the version are unrecoverable.</p>
+                <dd aria-labelledby="save"><p>Performing a &lsquo;Save&rsquo; in TiQ overwrites the current version. If you use Save instead of Save As, old configurations of the version are unrecoverable.</p>
 </dd>
                 
                 
@@ -2865,7 +2887,7 @@ image file is too small to be seen by people and requires a call back to a serve
 
                 
                 <dt id="save-as">Save As</dt>
-                <dd aria-labelledby="save-as"><p>Performing a <strong>Save As</strong> creates a new version. You can roll back to a previous version&rsquo;s configuration.</p>
+                <dd aria-labelledby="save-as"><p>Performing a &lsquo;Save As&rsquo; creates a new version. You can roll back to a previous version&rsquo;s configuration.</p>
 </dd>
                 
                 
@@ -3305,7 +3327,7 @@ who need this data to provide a better customer experience.</p>
 
                 
                 <dt id="versions">Versions</dt>
-                <dd aria-labelledby="versions"><p><a href="/iq-tag-management/save-publish/version-history/">Versions</a> are discrete sets of configurations for your Tealium implementation. Performing a <strong>Save As</strong> action creates new versions, while performing an <strong>Overwrite current version</strong> action (also known as <strong>Save</strong>) overwrites an existing version.</p>
+                <dd aria-labelledby="versions"><p><a href="/iq-tag-management/save-publish/version-history/">Versions</a> are discrete sets of configurations for your Tealium implementation. Performing a Save As creates new versions, while performing a simple save overwrites an existing version.</p>
 </dd>
                 
                 
@@ -3526,6 +3548,14 @@ the customer journey.</p>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Data Connect
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/predict/getting-started/about-predict/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Predict ML
         </a>
@@ -3614,6 +3644,10 @@ the customer journey.</p>
           Early Access
         </a>
     </li>
+  
+  
+  
+  
   
   
   
@@ -3746,6 +3780,14 @@ var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
 }
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
@@ -3757,7 +3799,8 @@ docsearch({
     "hitsPerPage": 50,
     optionalFilters: opt_filters
   },
-  debug: "true"
+  debug: "true",
+  transformItems
 });
 </script>
 
