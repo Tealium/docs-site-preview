@@ -525,8 +525,6 @@ var utag_data = {
         <a href="/iq-tag-management/save-publish/concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".save-publish-concurrent-users">Concurrent users</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".merging-changes-between-concurrent-users">Merging changes between concurrent users</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/save-publish/subresource-integrity/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".subresource-integrity">Subresource Integrity</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".iq-administration">Administration</a>
@@ -654,8 +652,6 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".frequently-asked-questions">Frequently Asked Questions</a>
         <ul class=" frequently-asked-questions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/frequently-asked-questions/faq-login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-log-in-to-tealium">How do I log in?</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-remove-a-user/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-remove-a-user">How do I remove a user?</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-reset-my-password/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-reset-my-password">How do I reset my password?</a>
@@ -738,8 +734,14 @@ var utag_data = {
 <h2 id="merging-changes-into-current-session">Merging changes into current session</h2>
 <ol>
 <li>
-<p>From the <strong>Merge Changes into Current Session</strong> drop-down list, select the version you want to merge into this session.</p>
+<p>In the <strong>Versions</strong> tab, identify the version you want to merge. Changes from that version are treated as incoming changes.</p>
  <p class="note"><i class="fa fa-exclamation-triangle"></i>Make sure that the incoming and current versions are in distinct origin paths.</p>
+</li>
+<li>
+<p>Click the drop-down arrow next to the incoming version and then select <strong>Merge changes into current session</strong>.
+<img src="/images/iq-tag-management/merge-version-dropdown.png" 
+         alt="Merge version dropdown"
+         title="Merge version dropdown" width="351" height="208"/></p>
 </li>
 <li>
 <p>In the next window, select the changes you wish to add, update, or remove in the current version.<br>
@@ -751,7 +753,7 @@ var utag_data = {
 <p>Review and confirm the changes. Then click the <strong>Merge</strong> button to complete the merge.</p>
 </li>
 <li>
-<p>Save/Publish the current version. You have the option to perform a <strong>Save</strong> or a <strong>Save As</strong>.</p>
+<p><strong>Save/Publish</strong> the current version. You have the option to save as a new version (Save As) or overwrite the existing version (Save).</p>
 </li>
 </ol>
 <p>Here&rsquo;s a quick video tutorial on how to merge changes between versions:</p>
@@ -908,7 +910,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  May 8, 2023 
+          <p>This page was last updated:  May 22, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -990,14 +992,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Data Connect
         </a>
     </li>
   
