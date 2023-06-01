@@ -853,7 +853,11 @@ var utag_data = {
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  }
 </span></span><span style="display:flex;"><span>});
-</span></span></code></pre></div><h2 id="tag-configuration">Tag configuration</h2>
+</span></span></code></pre></div><h2 id="managing-flicker-with-adobe-target">Managing Flicker with Adobe Target</h2>
+<p>Loading the Adobe Experience Platform Web SDK asynchronously can cause content flicker, as previously loaded content could be updated by Adobe Target. To minimize flicker, Adobe recommends adding a prehiding snippet. This snippet should be added the <code>utag.sync.js</code> template using a JavaScript extension.</p>
+<p>For more information about <code>utag.sync.js</code>, see <a href="/iq-tag-management/getting-started/install/utag-sync/">How <code>utag.sync.js</code> works</a>.</p>
+<p>For information about the prehiding snippet, see <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html">Manage Flicker</a>.</p>
+<h2 id="tag-configuration">Tag configuration</h2>
 <p>Navigate to the Tag Marketplace to add a new tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</p>
 <p>When adding the tag, configure the following settings:</p>
 <ul>
@@ -1738,7 +1742,7 @@ var utag_data = {
 <td style="text-align:left">identityMap.ECID</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>marketing.trackingCode</code></td>
+<td style="text-align:left"><code>xdm.marketing.trackingCode</code></td>
 <td>String</td>
 <td style="text-align:left">marketing.trackingCode</td>
 </tr>
@@ -2261,7 +2265,8 @@ No</button>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-tips">Tag tips</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#event-example">Event example</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#managing-flicker-with-adobe-target">Managing Flicker with Adobe Target</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#standard">Standard</a></li>
