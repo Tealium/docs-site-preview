@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Manage profiles | Profiles |Preview of Tealium Developer Docs</title>
+    <title>Profile switcher | Profiles |Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -287,10 +287,10 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".iq-profiles">Profiles</a>
-        <ul class="bl b--primary bw1 pl2 iq-profiles desktopmenu animated fadeIn list "><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/profiles/about/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".about-profiles">About profiles</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/profiles/profile-switcher/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".profile-switcher">Profile switcher</a>
+        <ul class="bl b--primary bw1 pl2 iq-profiles desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/profiles/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-profiles">About profiles</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/profiles/profile-switcher/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".profile-switcher">Profile switcher</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".profile-libraries">Profile libraries</a>
         <ul class=" profile-libraries desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -701,146 +701,53 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Manage profiles</h1>
+<h1 class="lh-title mt30 mb3">Profile switcher</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article explains how to manage profiles.
+      This article explains how to use the profile switcher.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="create-a-profile">Create a profile</h2>
-<p>You can create one or multiple profiles at the same time. Only users with the <strong>Create Profile</strong> permission can create profiles.</p>
-<p>Use the following steps to create a profile:</p>
-<ol>
-<li>
-<p>Click your user icon in the upper-right corner and select <strong>Manage Profiles</strong> from the drop-down list.<br>
-The <strong>Manage Profiles</strong> dialog appears.</p>
-</li>
-<li>
-<p>Under <strong>Profiles</strong> on the left, click <strong>+ Add</strong>.<br>
-The <strong>Create Profile</strong> dialog appears.</p>
-</li>
-<li>
-<p>In the <strong>Name</strong> field, enter a name for the new profile.<br>
-The name can be a maximum of 50 characters and only contain the following characters: <code>a-z</code>, <code>0-9</code>, period (<code>.</code>), and hyphen (<code>-</code>).</p>
- <p class="note"><i class="fa fa-exclamation-triangle"></i>The following restrictions apply to naming: The names <code>main</code> and <code>all</code> are reserved and cannot be used, the name cannot contain a double hyphen (<code>--</code>), and the name cannot begin with a period, such as <code>.profile2</code>.</p>
-</li>
-<li>
-<p>You can optionally click the plus button (<strong>+</strong>) to add more profile names.</p>
-</li>
-<li>
-<p>Check any items in the <strong>Copy Elements From</strong> section to be copied from the current profile to the new profile.</p>
-</li>
-<li>
-<p>Click <strong>Create Profile</strong> to create the profile.<br>
-<figure><a class="slb" href="/images/iq-tag-management/whiteui-tiq-managing-profiles-create-profile-dialog.jpg"><img src="/images/iq-tag-management/whiteui-tiq-managing-profiles-create-profile-dialog.jpg"
-         alt="Create Profile Dialog"
-         title="Create Profile Dialog"/>
-    </a>
-</figure><br>
-The new profile display in the <strong>Profiles</strong> list.</p>
- <p class="tip"><i class="fa fa-info-circle"></i>Creating a profile happens immediately. If there are any required libraries present, they will be linked to the profile automatically. Any variables based on AudienceStream attributes will not be copied upon profile creation. You must manually add attribute-based variables to newly-created profiles.</p>
-</li>
-</ol>
-<h3 id="copy-the-tag-template-for-utagjs-or-utagsyncjs">Copy the tag template for utag.js or utag.sync.js</h3>
-<p>Tag templates for individual tags were copied in the previous steps, but the templates for <code>utag.js</code> and <code>utag.sync.js</code> were not.</p>
-<p>Use the following steps to copy the tag template for <code>utag.js</code> and <code>utag.sync.js</code> from the origin profile and paste them into the new profile.</p>
-<h4 id="from-the-source-profile">From the source profile</h4>
-<ol>
-<li>
-<p>Log in to the source profile.</p>
-</li>
-<li>
-<p>Click your user icon in the upper left corner and select <strong>Manage Templates</strong> from the drop-down list.</p>
-</li>
-<li>
-<p>In the drop-down list, select one of the following to display the template code.</p>
-<ul>
-<li>For <code>utag.js</code>: <code>uTag Loader (Profile) UID:loader</code></li>
-<li>For<code> utag.sync.js</code>: <code>uTag Sync (Profile) UID:sync</code></li>
-</ul>
-</li>
-<li>
-<p>Enter <strong>Ctrl-A/Cmd-A</strong> to highlight the template content and then enter <strong>Ctrl-C/Cmd-C</strong> to copy.</p>
-</li>
-<li>
-<p>Click the <strong>X</strong> in the upper-right of the window to close.</p>
-</li>
-</ol>
-<h4 id="from-the-new-profile">From the new profile</h4>
-<ol>
-<li>
-<p>Log out of the origin profile.</p>
-</li>
-<li>
-<p>Log in to the new profile.</p>
-</li>
-<li>
-<p>Click your user icon in the upper left corner and select <strong>Manage Templates</strong> from the drop-down list.</p>
-</li>
-<li>
-<p>In the drop-down list, select one of the following to display the template code.</p>
-<ul>
-<li>For <code>utag.js</code>: <code>uTag Loader (Profile) UID:loader</code></li>
-<li>For <code>utag.sync.js</code>: <code>uTag Sync (Profile) UID:sync</code></li>
-</ul>
-</li>
-<li>
-<p>Click <strong>Delete</strong> in the upper-right corner to remove the tag template content.</p>
-</li>
-<li>
-<p>Enter <strong>Ctrl-V/Cmd-V</strong> to paste the contents copied from the origin profile.</p>
-</li>
-<li>
-<p>Click <strong>Save Profile Template</strong> to save the new template code.</p>
-</li>
-<li>
-<p>Save and publish your changes.</p>
-</li>
-<li>
-<p>Repeat the steps in this section for each additional profile if more than one profile was created in the copy.</p>
-</li>
-</ol>
-<h2 id="switch-profiles">Switch profiles</h2>
-<p>Each account may contain several profiles. Use the following steps to switch to another profile:</p>
-<ol>
-<li>Click the profile drop-down menu.</li>
-<li>From the drop-down list, select the profile you want to switch to.</li>
-<li>Select the version of the profile to switch to.
+  <h2 id="how-it-works">How it works</h2>
+<p>Each account can contain several profiles. The profile switcher allows you to quickly switch accounts, profiles, and profile versions.</p>
 <figure><a class="slb" href="/images/iq-tag-management/whiteui-tiq-managing-profiles-change-profiles.jpg"><img src="/images/iq-tag-management/whiteui-tiq-managing-profiles-change-profiles.jpg"
          alt="Change Profiles"
          title="Change Profiles"/>
     </a>
 </figure>
+<p>When you first load Tealium iQ Tag Management, the profile switcher displays the most recent version of the current profile.</p>
+<p>The <strong>Versions</strong> drop-down list displays the profile versions published to each <a href="/iq-tag-management/save-publish/about-publishing/">publish environment</a>.</p>
+<h2 id="switch-profiles-and-versions">Switch profiles and versions</h2>
+<p>Use the following steps to switch to another profile:</p>
+<ol>
+<li>Click the profile drop-down menu.</li>
+<li>From the drop-down list, select the profile you want to switch to.</li>
+<li>Select the version of the profile to switch to.
 <ul>
-<li>The most recent profile version is the default selection.</li>
-<li>The drop-down list displays the profile versions published to each <a href="/iq-tag-management/save-publish/about-publishing/">publish environment</a>.</li>
 <li>Click <strong>See All Versions</strong> to display all available versions of the profile.</li>
 </ul>
 </li>
 <li>Click <strong>Load Version</strong>.</li>
 </ol>
-<p>For more information, see [Profile Switcher}(/iq-tag-management/profiles/profile-switcher/).</p>
-<h2 id="remove-profile">Remove profile</h2>
-<p>To remove a profile, submit a request to <a href="https://support.tealiumiq.com">Tealium Support Desk</a>.</p>
+<p>You can also use the <strong>Switch to this Version</strong> option in the <a href="/iq-tag-management/save-publish/version-history/">Versions screen</a> to switch versions.</p>
 
 </div>
 
 <div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
 
   
-  <a href="/iq-tag-management/profiles/profile-switcher/"
+  <a href="/iq-tag-management/profiles/creating-a-mobile-profile/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Profile switcher</div>
+      <div>Create a mobile profile</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Profile switcher"</title>
+      <title>"Create a mobile profile"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -849,14 +756,14 @@ The new profile display in the <strong>Profiles</strong> list.</p>
 </div><div class="di">
   
   
-  <a href="/iq-tag-management/profiles/about/"
+  <a href="/iq-tag-management/profiles/manage/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"About profiles "</title>
+      <title>"Manage profiles "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>About profiles</div>
+      <div>Manage profiles</div>
     </section>
   </a>
   
@@ -888,7 +795,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 7, 2023 
+          <p>This page was last updated:  June 8, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -902,10 +809,8 @@ No</button>
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-profile">Create a profile</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#copy-the-tag-template-for-utagjs-or-utagsyncjs">Copy the tag template for utag.js or utag.sync.js</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#switch-profiles">Switch profiles</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#remove-profile">Remove profile</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#switch-profiles-and-versions">Switch profiles and versions</a></li>
               </nav>
   </aside></nav>
 
