@@ -719,31 +719,38 @@ var utag_data = {
 <ul>
 <li>
 <p><strong>Multiple concurrent projects</strong></p>
-<p>Developers can work on separate versions and then merge changes from one version into another. When one developer finishes their project, the version is published to production and other developers can merge the updates into their own still-in-development version. If multiple people are working on the same profile, the platform will notify the users of published changes. Users can load the new version or merge the new version into their current work so they can keep working.</p>
+<p>Developers can work on separate versions and then merge changes from one version into another. When one developer finishes their project, the version is published to production and other developers can merge the updates into their own still-in-development version. If multiple people are working on the same profile, the platform notifies the users of published changes. Users can load the new version or merge the new version into their current work so they can keep working.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/concurrent-users/">Concurrent Users</a>.</p>
 </li>
 <li>
 <p><strong>Branching, merging, and iteration</strong></p>
 <p>Developers have multiple methods to save their changes. <strong>Save As</strong> allows them to branch a new version off of their current version. <strong>Merging</strong> allows them to pull changes from one version into another. <strong>Save/Overwrite</strong> allows them to replace the current version when they save their changes.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/about-saving/">About Saving</a>.</p>
 </li>
 <li>
 <p><strong>Merge conflict resolution</strong></p>
 <p>If two developers change the same object in a profile, publishers can select the version of that object to keep in a version before they publish. This prevents the wrong version of an object from being published.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/merging-versions/#resolving-merge-conflicts">Resolving merge conflicts</a>.</p>
 </li>
 <li>
 <p><strong>Development and testing environments</strong></p>
 <p>By default, Tealium iQ offers Development, QA testing, and Production environments. Developers and QA testers can switch environments to test site performance, user experience, and data collection. Custom enrivonments can be created as needed to support multiple development projects in progress.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/about-publishing/#publish-environments">Publish environments</a>.</p>
 </li>
 <li>
 <p><strong>Testing tools</strong></p>
 <p>Tealium provides a set of testing tools that let developers and testers confirm that tags and events fire as expected, the data layer object contains the data you need, and data is processed correctly. If there&rsquo;s a problem, the tools help them diagnose the issue so it can be resolved before the version goes into production.</p>
+<p>For more information, see <a href="/iq-tag-management/tealium-tools/">Tealium Tools</a>.</p>
 </li>
 <li>
 <p><strong>Approval structure</strong></p>
 <p>The Account Administrator can set up permission levels and workflows on the account. These grant Developers, QA Testers, and Product Managers the access and permissions they need to perform their roles, but prevent users from performing tasks they shouldn&rsquo;t. For example, a developer shouldn&rsquo;t be allowed to publish directly to a production environment without QA testing and project manager approval.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/publish-workflow-management/">Publishing Workflow</a>.</p>
 </li>
 <li>
 <p><strong>Version tracking map</strong></p>
 <p>The version tracking map displays all of the versions in the Development, QA testing, and Production environments. Users can quickly see how versions branch from each other, compare the versions with a diff tool, and merge changes from one version to another.</p>
+<p>For more information, see <a href="/iq-tag-management/save-publish/version-history/">Version History</a>.</p>
 </li>
 </ul>
 <h2 id="summary">Summary</h2>
@@ -756,8 +763,7 @@ var utag_data = {
 <li>Configure the publishing environments, permissions, and workflows on the account.</li>
 <li>Load the <strong>Prod</strong> version.</li>
 <li><strong>Save As</strong> a new version and publish it to <strong>Dev</strong>.</li>
-<li>Make your changes and <strong>Save/Overwrite</strong> changes to the new version.</li>
-<li>Publish to <strong>Dev</strong> to test it.
+<li>Make your changes, <strong>Save/Overwrite</strong> changes to the new version, and publish to <strong>Dev</strong> to test it.
 <ul>
 <li>If other developers update the <strong>Prod</strong> version, merge those changes into the new version.</li>
 </ul>
@@ -777,11 +783,11 @@ var utag_data = {
 <li><strong>Blake</strong> - Account Administrator</li>
 </ul>
 <h3 id="configure-the-account">Configure the account</h3>
-<p>Before any development begins, Blake the account administrator should configure the account&rsquo;s publishing workflow and configuration.</p>
+<p>Before any development begins, Blake the account administrator  configures the account&rsquo;s publishing workflow and configuration.</p>
 <ul>
 <li>Enable and configure <strong>Workflow Management</strong> to control who can submit changes to the <strong>Prod</strong> environment and who can approve those changes for publishing.</li>
 <li>Enable <strong>Publish Notify Email</strong> so users and developers know when a new version is published while not logged in to Tealium iQ.</li>
-<li>If multiple projects are deveveloped and tested concurrently, set up <strong>Custom Publish Environments</strong> so the development and testing staff can load extra environments and configurations on websites through the <strong>Web Companion</strong> and <strong>Environment Switcher</strong> tools.</li>
+<li>If multiple projects are deveveloped and tested concurrently, set up <strong>Custom Publish Environments</strong> so the developmers can load extra environments and configurations on websites through the <strong>Web Companion</strong> and <strong>Environment Switcher</strong> tools.</li>
 </ul>
 <p>For more information, see:</p>
 <ul>
@@ -790,13 +796,13 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a></li>
 </ul>
 <h3 id="create-a-new-version-based-on-prod">Create a new version based on Prod</h3>
-<p>Dale the developer gets a new task: configure a new tag on the profile. The first thing Dale does is create a version as a workspace to make changes. Doing this ensures that Dale has a clean development environment with the most recent updates from production, and that Dale&rsquo;s work will merge back into production cleanly.</p>
+<p>Dale the developer gets a new task: configure a new tag on the profile. The first thing Dale does is create a version as a workspace to make changes. Doing this ensures that Dale has a clean development environment with the most recent updates from production, and that Dale&rsquo;s work can merge back into production cleanly.</p>
 <p>By default, Tealium iQ loads the most current version of a profile, so Dale needs to switch to the version that is currently published as <strong>Prod</strong>:</p>
 <ol>
 <li>Dale loads the <strong>Prod</strong> version of the profile.</li>
 <li>Dale performs a <strong>Save As</strong> a new version, and gives the new version a meaningful <strong>Title</strong> and description in the <strong>Note</strong> field: <code>New Tag For 2023 1Q</code>
 <ul>
-<li>Every time Dale saves the new version, Dale also publishes it to the <strong>Dev</strong> environment.</li>
+<li>Every time Dale overwrites the new version, Dale also publishes it to the <strong>Dev</strong> environment.</li>
 </ul>
 </li>
 </ol>
@@ -806,7 +812,7 @@ var utag_data = {
 <li><a href="/iq-tag-management/save-publish/about-publishing/">About Publishing</a>.</li>
 </ul>
 <p>If Dale and Drew need multiple development environments, Blake can create custom environments named <em>DEV A</em>, <em>DEV B</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
-<p>So, if Drew the developer is working on cleaning up load rules on the profile (let&rsquo;s call it version <code>Load Rule Cleanup For 2023 1Q</code>), Drew can ask for a custom <strong>Dev</strong> environment and custom <strong>QA</strong> environment to avoid conflicting with Dale.</p>
+<p>So, if Drew the developer is working on cleaning up load rules on the profile (let&rsquo;s call it version <code>Load Rule Cleanup For 2023 1Q</code>), Drew can ask for a custom <strong>Dev</strong> environment to avoid conflicting with Dale.</p>
 <h3 id="develop-changes">Develop changes</h3>
 <p>Dale works on changes in the new version and overwrites that version with each change.</p>
 <ol>
@@ -820,7 +826,7 @@ var utag_data = {
 <p>Some helpful development tips:</p>
 <ul>
 <li>Give objects meaningful and descriptive names and notes. This makes it easier for everyone to identify what has changed in a version and track those changes.</li>
-<li>Add labels to tags, variables, events, and extensions to group them by publish environment, geographic location, or campaign. This will help organize changes and identify objects that need to be checked during QA testing.</li>
+<li>Add labels to tags, variables, events, and extensions to group them by publish environment, geographic location, or campaign. This helps organize changes and identify objects that need to be checked during QA testing.</li>
 <li>Save changes often.</li>
 </ul>
 <p>For more information, see:</p>
@@ -828,26 +834,25 @@ var utag_data = {
 <li><a href="/iq-tag-management/labels/about/">About labels</a></li>
 <li><a href="/iq-tag-management/save-publish/about-saving/">About saving</a>.</li>
 </ul>
-<h4 id="informal-developer-tests">Informal developer tests</h4>
-<p>While working on changes in the new version, Dale should perform informal tests on it in a <strong>Dev</strong> environment. Testing ensures that the version works as expected and doesn&rsquo;t impact site performance.</p>
+<h4 id="developer-tests">Developer tests</h4>
+<p>While working on changes in the new version, Dale can perform tests on it in a <strong>Dev</strong> environment or a custom environment Dale may be using. Testing ensures that the version works as expected and doesn&rsquo;t impact site performance.</p>
 <p>Tealium provides many tools to assist with this effort, which include:</p>
 <ul>
 <li><a href="/iq-tag-management/troubleshooting/web-companion/">Tealium Tools - Web Companion</a>: Use this browser app to inspect and validate tags that load on your web pages. It contains multiple tools to help you diagnose problems.</li>
-<li><a href="/iq-tag-management/tealium-tools/environment-switcher/">Tealium Tools - Environment Switcher</a>: Use this tool to switch to the <strong>Dev</strong> environment to check site performance</li>
+<li><a href="/iq-tag-management/tealium-tools/environment-switcher/">Tealium Tools - Environment Switcher</a>: Use this tool to switch to the <strong>Dev</strong> environment to check site performance. The Environment Switcher also lets a developer use custom environments on a website.</li>
 <li><a href="/iq-tag-management/troubleshooting/utag-debugger/">Universal Tag Debugger</a>: Use this tool to validate the UDO and event tracking data.</li>
 <li><a href="/iq-tag-management/save-publish/version-diff-tool/">Version diff tool</a>: Use this tool to compare your development version to another version so you can see how your changes impact the distributed universal tag files.</li>
 </ul>
 <p>You can also use your browser&rsquo;s development console to inspect page elements, network calls, and more.</p>
 <p>For more information, see <a href="/iq-tag-management/troubleshooting">Troubleshooting</a>.</p>
 <h3 id="merge-prod-updates-into-the-development-version">Merge Prod updates into the development version</h3>
-<p>Sometimes, the version that is currently published to <strong>Prod</strong> will change while a developer is working on a new version:</p>
+<p>Sometimes, the version that is currently published to <strong>Prod</strong> changes while a developer is working on a new version:</p>
 <ul>
 <li>Concurrent development efforts (Drew finishes <code>Load Rule Cleanup For 2023 1Q</code> before Dale is done with <code>New Tag For 2023 1Q</code>).</li>
-<li>Testing different solutions to the same problem (Drew might be testing profile libraries for the new tag in another version).</li>
 <li>Quick bug fixes to a <strong>Prod</strong> version (Drew is fixing one of Dale&rsquo;s past mistakes).</li>
 </ul>
 <p>When this happens, every version currently in development needs to merge the changes that were made to the <strong>Prod</strong> version. This ensures that developers are working with the latest version of the main profile and identified any potential conflicts or incompatibilities earlier in the development process.</p>
-<p>So, if Drew&rsquo;s project finishes before Dale&rsquo;s, Dale will need to merge Drew&rsquo;s changes in <code>Load Rule Cleanup For 2023 1Q</code> into the <code>New Tag For 2023 1Q</code> version.</p>
+<p>So, if Drew&rsquo;s project finishes before Dale&rsquo;s, Dale needs to merge Drew&rsquo;s changes to <strong>Prod</strong> into the <code>New Tag For 2023 1Q</code> version.</p>
 <p>The following diagram represents the development process with two developers working on separate versions:</p>
 <figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices1.png"
          alt="Publishing Best Practices - Two Developers, Two QA branches"
@@ -862,7 +867,7 @@ var utag_data = {
 <li>Confirm that all of the changes need to be added to the development version.</li>
 <li>Publish the new version to <strong>Dev</strong>.</li>
 </ol>
-<p>If multiple developers are working on the same version, the platform will notify them of published changes and allow them to quickly load the new version or merge the new version into their current work so they can keep working. There are also communication tools that allow the group to communicate with each other over the platform.</p>
+<p>If multiple developers are working on the same version, the platform notifies them of published changes and allow them to quickly load the new version or merge changes in the new version into their current work so they can keep working. There are also communication tools that allow the group to communicate with each other over the platform.</p>
 <p>For more information, see:</p>
 <ul>
 <li><a href="/iq-tag-management/save-publish/merging-versions/">Merging Versions</a>: How to bring changes from an old version to the currently published version.</li>
@@ -876,21 +881,19 @@ var utag_data = {
 <li>Dale publishes the <code>New Tag For 2023 1Q</code> version to <strong>QA</strong>.
 <ul>
 <li>If the version fails Terry&rsquo;s testing, Terry returns it to Dale to fix.</li>
-<li>If the version passes Terry&rsquo;s testing, Terry saves it as new version (<code>New Tag For 2023 1Q - Passed Tests</code>) and requests publishing it to <strong>Prod</strong>. The platform will notify the appropriate users that a version is waiting for approval.</li>
+<li>If the version passes Terry&rsquo;s testing, Terry saves it as new version (<code>New Tag For 2023 1Q - Passed Tests</code>) and requests publishing it to <strong>Prod</strong>. The platform notifies the appropriate users that a version is waiting for approval.</li>
 </ul>
 </li>
 </ol>
 <p>For more information about testing, see <a href="/iq-tag-management/troubleshooting">Troubleshooting</a>.</p>
-<p>We recommend that the testing staff considates all development versions into a single version for testing. This allows the testing staff to test all of the pending changes in a single staging environment, which will reveal any conflicts between the developer&rsquo;s efforts before submitting them for publishing to <em>Prod</em>.</p>
-<p>However, if the testing staff needs multiple environments to test concurrent development projects separately, create custom environments named <em>QA A</em>, <em>QA B</em>, etc. For more information, see, <a href="/iq-tag-management/save-publish/custom-publish-environments/">Custom Publish Environments</a>.</p>
+<p>We recommend that the testing staff consolidates all development versions into a single version for testing. This allows the testing staff to test all of the pending changes in a single staging environment, which reveals any conflicts between the developer&rsquo;s efforts before submitting them for publishing to <strong>Prod</strong>.</p>
 <p>The following diagram represents the development process with two developers working on separate versions and a consolidated testing environment:</p>
 <figure><img src="/images/iq-tag-management/save-publish/publishingbestpractices3.png"
          alt="Publishing Best Practices - Two Developers, One QA branches"
          title="Publishing Best Practices - Two Developers, One QA branches"/>
 </figure>
 <h3 id="approval-for-prod-publish">Approval for Prod publish</h3>
-<p>When a version is queued up for publishing to <strong>Prod</strong>, Penn the product manager is notified of a publish reqiest. Penn can schedule the publish to coincide with advertising campaigns or promotions. When the publish is approved, the version is published to <strong>Prod</strong>.</p>
-<p>Now that the <strong>Prod</strong> version has updated with Dale&rsquo;s changes, if Drew is still working on <code>Load Rule Cleanup For 2023 1Q</code>, Drew needs to <a href="#keep-your-development-version-up-to-date">merge in all of the changes in the new <strong>Prod</strong> version</a>.</p>
+<p>When a version is queued up for publishing to <strong>Prod</strong>, Penn the product manager is notified of a publish request. Penn can publish the version to coincide with advertising campaigns or promotions. When the publish is approved, the version is published to <strong>Prod</strong>.</p>
 <p>For more information about how to set up an approval workflow, see <a href="/iq-tag-management/save-publish/publish-workflow-management/">Publish Workflow Management</a>.</p>
 <p>For more information about updating the remaining development versions with the new changes to <strong>Prod</strong>, see <a href="/iq-tag-management/save-publish/merging-changes-between-concurrent-users/">Merging changes between concurrent users</a>.</p>
 
@@ -938,7 +941,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  May 31, 2023 
+          <p>This page was last updated:  July 10, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
