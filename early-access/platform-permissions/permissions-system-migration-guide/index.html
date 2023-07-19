@@ -56,7 +56,7 @@ var utag_data = {
       
         <li class="f5 dib mr3" role="menuitem">
             
-          <a href="https://community.tealiumiq.com/t5/Developer-Questions/qa-p/developer-questions" class="dim link mid-gray">
+          <a href="https://community.tealiumiq.com/t5/Discussions/ct-p/tealiumlearningcommunity" class="dim link mid-gray">
           Forums
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
 <path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
@@ -207,6 +207,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/data-insights/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Data Insights</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/early-access/integrated-audiences/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".integrated-audiences">Integrated Audiences</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/linkedin-conversions-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".linkedin-conversions-connector">LinkedIn Conversions</a>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".permissions">Platform Permissions</a>
@@ -242,6 +244,8 @@ var utag_data = {
         <a href="/early-access/api-v3/tealium-collect-http-api-v3-early-access/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-collect-http-api-v3-early-access">Tealium Collect HTTP API</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/api-v3/tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-privacy-api-formerly-visitor-lookup-api">Visitor Privacy API</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/early-access/api-v3/tealium-api-visitor-profile-api-early-access/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tealium-api-v3-visitor-profile-api-early-access">Visitor Profile API</a>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/visitor-deletion-jobs/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-deletion-jobs">Visitor Deletion Jobs</a>
@@ -302,13 +306,13 @@ var utag_data = {
 </ul>
 <p>The new unified permissions system introduces the following two new concepts:</p>
 <ul>
-<li>A <a href="https://community.tealiumiq.com/t5/Product/Permission-Groups/ta-p/37757"><strong>permission group</strong></a> (usually referred to as <strong>group</strong>) defines a set of product access levels for the profiles, products, and product features in your account. They also determine publishing rights. Users in a group inherit those permissions for the associated profiles, making it easier for you to manage permissions for a large number of users.</li>
-<li>An <a href="https://community.tealiumiq.com/t5/Product/Admin-Roles/ta-p/37763"><strong>admin role</strong></a> defines a set of account access levels for the users in your account. Using admin roles make it easier for you to delegate management of your account and product features to a team of users. Users without admin roles receive a basic user role.</li>
+<li>A <strong>permission group</strong> (usually referred to as <strong>group</strong>) defines a set of product access levels for the profiles, products, and product features in your account. They also determine publishing rights. Users in a group inherit those permissions for the associated profiles, making it easier for you to manage permissions for a large number of users.</li>
+<li>An <strong>admin role</strong> defines a set of account access levels for the users in your account. Using admin roles make it easier for you to delegate management of your account and product features to a team of users. Users without admin roles receive a basic user role.</li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
 <p>Previously, account administrators had to administer client-side users, server-side users, and administration rights separately. Separately administering accounts required a lot of time and effort to audit each user’s viewing and editing rights as well as manage their access to profiles.</p>
 <p>Tealium now provides a unified permissions system so you can manage user access to your account and profiles through permission groups and admin roles.</p>
-<p>For more about the new permissions management system, see <a href="https://community.tealiumiq.com/t5/Product/Platform-Permissions-System/ta-p/37762">Platform Permissions System</a>.</p>
+<p>For more about the new permissions management system, see <a href="/early-access/platform-permissions/expanded-release/">Platform Permissions System</a>.</p>
 <h2 id="benefits-of-migration">Benefits of migration</h2>
 <p>Migrating from the old permissions system to the new one gives you an opportunity to audit the permissions, security, and structure of your account:</p>
 <ul>
@@ -349,24 +353,26 @@ var utag_data = {
 <h4 id="export-users">Export users</h4>
 <p>The <strong>Export Users</strong> function allows you to download a comma-separated value (CSV) file with the account&rsquo;s users, profiles, and legacy user permissions for each profile. This funcionality makes it easy to audit your users and their permissions to build permission groups and assign admin roles in the new platform permissions system.</p>
 <ol>
-<li>From the client-side’s User Menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
+<li>In the client-side admin menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
 <li>Click <strong>Export Users</strong>.</li>
 </ol>
-<figure><img src="/images/early-access/2.png"
+<figure><a class="slb" href="/images/early-access/2.png"><img src="/images/early-access/2.png"
          alt="2.png"
          title="2.png" width="608" height="378"/>
+    </a>
 </figure>
 <h4 id="client-side-inventory-using-the-user-permissions-exporter-tool">Client-side inventory using the User Permissions Exporter Tool</h4>
 <p>Use the User Permissions Exporter Tealium Tool to export a CSV file that contains each user’s permission on client-side profiles.</p>
 <ul>
 <li>For instructions on how to install and use the Tealium Tool Browser Extension, see <a href="/iq-tag-management/tealium-tools/browser-extension/">Tealium Tools Browser Extension</a>.</li>
-<li>For instructions on how to install and use the User Permissions Exporter, see <a href="https://community.tealiumiq.com/t5/Accounts-Profiles-and-Libraries/Tealium-Tool-User-Permissions-Exporter/ta-p/16149">Tealium Tool User Permissions Exporter</a>.</li>
+<li>For instructions on how to install and use the User Permissions Exporter, see <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363500-tealium-tool-user-permissions-exporter">Tealium Tool User Permissions Exporter</a>.</li>
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>You must have the Manage Users permission in the active account to run this tool.</p>
 <p>The following screenshot demonstrates a downloaded CSV file imported into a Google Sheet, with minor formatting adjustments on row 1 for readability:</p>
-<figure><img src="/images/early-access/1.png"
+<figure><a class="slb" href="/images/early-access/1.png"><img src="/images/early-access/1.png"
          alt="csv"
          title="csv" width="473" height="274"/>
+    </a>
 </figure>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Manage Site Scans will appear in the exported data. It is a legacy function, and you will not need it for migration purposes.</p>
 <p>In this example, <strong>user3</strong> appears three times in the <strong>User</strong> column. Unlike the other users, who have the same permission on all the profiles on the account, <strong>user3</strong> has different permissions on the profiles <strong>Website A</strong>, <strong>Website B</strong>, and <strong>Website C</strong>. Because of this, separate rows in the spreadsheet contain <strong>user3</strong>’s profile permissions.</p>
@@ -374,7 +380,7 @@ var utag_data = {
 <h4 id="manual-inventory-of-client-side-users-and-permissions">Manual inventory of client-side users and permissions</h4>
 <p>If you cannot use an automatic export or prefer to perform a manual inventory, you will need to manually collect each user’s permissions on the client side. Perform the following steps to export each users’ permissions on the client side:</p>
 <ol>
-<li>From the client-side’s User Menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
+<li>In the client-side admin menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
 <li>Create a spreadsheet and label the first column <strong>Users</strong>.</li>
 <li>In the spreadsheet, add the user list to the first column.</li>
 <li>In the spreadsheet, label the second column <strong>Profile</strong>.</li>
@@ -414,7 +420,7 @@ var utag_data = {
 <h4 id="manual-inventory-of-server-side-users-and-permissions">Manual inventory of server-side users and permissions</h4>
 <p>Perform the following steps to export each user’s permissions on the server side:</p>
 <ol>
-<li>From the server side’s User Menu, click <strong>Manage Users</strong>. If a server side user doesn’t already exist on the spreadsheet, add it to the first column.</li>
+<li>In the server-side admin menu, click <strong>Manage Users</strong>. If a server side user doesn’t already exist on the spreadsheet, add it to the first column.</li>
 <li>Click the user account.</li>
 <li>Click <strong>Next.</strong> The dialog now displays the user’s permissions in every profile.</li>
 <li>If the user has the same permissions on every profile, enter <strong>All</strong> in the <strong>Profile</strong> column and note the user’s permissions in the spreadsheet. If the user has different permissions on profiles, duplicate the user’s row in the spreadsheet so each line represents a different profile, enter the profile names in the <strong>Profile</strong> column, and note the permissions in the appropriate rows.
@@ -429,9 +435,10 @@ var utag_data = {
 <li>Repeat this process for each user.</li>
 </ol>
 <p>Based on the previous example, the following screenshot demonstrates a spreadsheet updated with server-side users and permissions:</p>
-<figure><img src="/images/early-access/2.png"
+<figure><a class="slb" href="/images/early-access/2.png"><img src="/images/early-access/2.png"
          alt="2.png"
          title="2.png" width="608" height="378"/>
+    </a>
 </figure>
 <p>In this example, <strong>user6</strong>, <strong>user7</strong>, and <strong>user8</strong> do not have any permissions on the client side, and they had to be added manually to the spreadsheet. Also, <strong>user7</strong> has different permissions on the server-side profiles <strong>App A</strong> and <strong>App B</strong>, so separate rows in the spreadsheet were created for <strong>user7</strong>’s profile permissions.</p>
 <p>You now have all the user permissions for client-side and server-side profiles from the legacy permissions system.</p>
@@ -709,9 +716,10 @@ var utag_data = {
 <p>If you disable a product for a user, but the user has server-side Publish permission and access to another product that shares elements with the first product, the user can still publish changes to those shared elements. For example, EventStream and AudienceStream share some elements, such as rules and labels. If a user has Publish permission and only has access to EventStream, they can publish changes to rules and labels they made in EventStream, and those changes will also affect AudienceStream. Similarly, if a user has Publish permission and only has access to AudienceStream, their published changes to rules and labels also affect EventStream.</p>
 <h4 id="update-the-spreadsheet">Update the spreadsheet</h4>
 <p>Create columns in the spreadsheet for each product and feature, and mark the level of access that the user should have on each.</p>
-<figure><img src="/images/early-access/3.png"
+<figure><a class="slb" href="/images/early-access/3.png"><img src="/images/early-access/3.png"
          alt="3.png"
          title="3.png"/>
+    </a>
 </figure>
 <p>Congratulations. You now have all your users&rsquo; individual needs in the spreadsheet.</p>
 <p>The next step is to organize the users into groups.</p>
@@ -725,9 +733,10 @@ var utag_data = {
 <li>Do you want to break down permission groups by product (AudienceStream, EventStream, Customer Data Hub, etc.)?</li>
 </ul>
 <p>For each Yes answer, add another column to the spreadsheet, and add notes in that column about how that question impacts that user&rsquo;s relationship to the organization and workflow.</p>
-<figure><img src="/images/early-access/4.png"
+<figure><a class="slb" href="/images/early-access/4.png"><img src="/images/early-access/4.png"
          alt="4.png"
          title="4.png"/>
+    </a>
 </figure>
 <h4 id="profile-audit">Profile audit</h4>
 <p>If you have only one main client-side profile and one main server-side profile, but your brand and organization is split among multiple regions and responsibility structures, this data can be useful as part of a future project to configure regional profiles on your account. However, Tealium recommends that you set up and test permissions on the new permissions system first.</p>
@@ -761,14 +770,8 @@ var utag_data = {
 <li><strong>Privacy Admin</strong> - This role manages the PII permission level in groups (Requires the User Admin role). Anyone responsible for data privacy and compliance should be a candidate for this role.</li>
 <li><strong>Profile Admin</strong> - This role manages access to profiles and libraries. Anyone who builds and organizes profiles on your account should have this role. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group.</li>
 </ul>
-<p>For more information abour admin roles, see <a href="https://community.tealiumiq.com/t5/Product/Admin-Roles/ta-p/37763">Admin Roles</a>.</p>
 <h2 id="deployment-strategies">Deployment strategies</h2>
 <p>Now that you have your planned list of users, permission groups, and admin roles, you’re ready to deploy your new permissions structure.</p>
-<ul>
-<li>For instructions on how to create a permission group, see <a href="https://community.tealiumiq.com/t5/Product/Permission-Groups/ta-p/37757">Permission Groups</a>.</li>
-<li>For instructions on how to assign an admin role to a user, see <a href="https://community.tealiumiq.com/t5/Product/Managing-Users/ta-p/37715">Managing Users</a>.</li>
-<li>For instructions on how to enforce the new permissions settings, see <a href="https://community.tealiumiq.com/t5/Product/Platform-Permissions-System/ta-p/37762">Platform Permissions System</a>.</li>
-</ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>Before turning on Permissions Enforcement, make sure that users have been added to groups and admin role permissions have been assigned to users that manage users, groups, and PII permissions. If you turn on permissions enforcement before you assign users to groups or assign admin roles to users, you may lose access to your account.</p>
 <p>The following examples describe strategies for deploying the new permissions system:</p>
 <h3 id="deployment-strategy-1---build-job-functions-and-roles-then-add-people">Deployment Strategy 1 - Build job functions and roles, then add people</h3>
@@ -816,7 +819,7 @@ var utag_data = {
 
 </div>
 
-<div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
   <a href="/early-access/platform-permissions/pii-account-roles/"
@@ -831,7 +834,7 @@ var utag_data = {
   </a>
   
   
-</div><div class="di">
+</div><div class="di mr3">
   
   
   <a href="/early-access/platform-permissions/expanded-release/"
@@ -873,7 +876,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 13, 2023 
+          <p>This page was last updated:  July 13, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -959,7 +962,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/functions/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
         </a>
     </li>
@@ -967,7 +970,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Data Connect
         </a>
     </li>
@@ -975,7 +978,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/predict/getting-started/about-predict/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/predict/getting-started/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Predict ML
         </a>
     </li>
@@ -983,7 +986,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-storage/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           DataAccess
         </a>
     </li>
@@ -1051,6 +1054,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Partner Integrations
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Glossary
         </a>
@@ -1111,6 +1122,12 @@ No</button>
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/early-access/data-insights/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Data Insights
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/early-access/integrated-audiences/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Integrated Audiences
       </a>
       </li>
       
@@ -1246,6 +1263,14 @@ var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
 }
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
@@ -1257,7 +1282,8 @@ docsearch({
     "hitsPerPage": 50,
     optionalFilters: opt_filters
   },
-  debug: "true"
+  debug: "true",
+  transformItems
 });
 </script>
 

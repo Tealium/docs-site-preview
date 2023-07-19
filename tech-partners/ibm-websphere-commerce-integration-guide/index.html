@@ -56,7 +56,7 @@ var utag_data = {
       
         <li class="f5 dib mr3" role="menuitem">
             
-          <a href="https://community.tealiumiq.com/t5/Developer-Questions/qa-p/developer-questions" class="dim link mid-gray">
+          <a href="https://community.tealiumiq.com/t5/Discussions/ct-p/tealiumlearningcommunity" class="dim link mid-gray">
           Forums
               <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
 <path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
@@ -250,7 +250,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/server-side/functions/about/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-fn">Functions</a>
+        <a href="/server-side/functions/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-fn">Functions</a>
       
       </li>
         
@@ -258,7 +258,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/server-side/data-connect/about/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-dc">Data Connect</a>
+        <a href="/server-side/data-connect/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-dc">Data Connect</a>
       
       </li>
         
@@ -266,7 +266,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/predict/getting-started/about-predict/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ml">Predict ML</a>
+        <a href="/predict/getting-started/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ml">Predict ML</a>
       
       </li>
         
@@ -274,7 +274,7 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
-        <a href="/server-side/data-storage/about/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-da">DataAccess</a>
+        <a href="/server-side/data-storage/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-da">DataAccess</a>
       
       </li>
         
@@ -354,6 +354,14 @@ var utag_data = {
 
       <li class="relative w-100 fw5 f5">
       
+        <a href="/partners/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".partners-overview">Partner Integrations</a>
+      
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
         <a href="/glossary/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">Glossary</a>
       
       </li>
@@ -413,9 +421,10 @@ var utag_data = {
 <p>To install the Tealium extension:</p>
 <ol>
 <li>Place the <code>TealiumUDO.jsp</code> file and related <code>.jspf</code> files into the <code>/Stores/WebContent/ AuroraStorefrontAssetStore/Tealium</code> directory.</li>
-<li>Place the <code>tealium_udo_helper_1_2_0a.jar</code> file (or later version) into the <code>/Stores/WebContent/WEB-INF/lib/</code> directory.<figure><img src="/images/tech-partners/ibmwebsphere1.png"
+<li>Place the <code>tealium_udo_helper_1_2_0a.jar</code> file (or later version) into the <code>/Stores/WebContent/WEB-INF/lib/</code> directory.<figure><a class="slb" href="/images/tech-partners/ibmwebsphere1.png"><img src="/images/tech-partners/ibmwebsphere1.png"
          alt="Tealium UDO UI file"
          title="Tealium UDO UI file"/>
+    </a>
 </figure></li>
 <li>To activate the extension, insert the following entries into the database and restart the Websphere Commerce web server:</li>
 </ol>
@@ -432,24 +441,26 @@ var utag_data = {
 <li>Log into iQ Tag Management and navigate to the <strong>Data Layer</strong> tab.</li>
 <li>Click the drop-down next to <strong>Add Data Source</strong>, then click <strong>Add Common
 Data Sources</strong>.</li>
-<li>Under <strong>Provider Bundles</strong>, select <strong>IBM WebSphere Commerce</strong> and click <strong>Import This Bundle</strong>.<figure><img src="/images/tech-partners/ibmwebsphere2.png"
+<li>Under <strong>Provider Bundles</strong>, select <strong>IBM WebSphere Commerce</strong> and click <strong>Import This Bundle</strong>.<figure><a class="slb" href="/images/tech-partners/ibmwebsphere2.png"><img src="/images/tech-partners/ibmwebsphere2.png"
          alt="IBM WebSphere Data Source"
          title="IBM WebSphere Data Source"/>
+    </a>
 </figure></li>
 <li>Click <strong>Close</strong>.</li>
 <li><strong>Save/Publish</strong> the changes to your iQ Tag Management profile.</li>
 </ol>
 <h3 id="validation">Validation</h3>
 <p>To validate the implementation, navigate to your site and view the page source. In the page’s source, look for <code>utag_data</code> (Tealium’s UDO). You can also see the <code>Validation.txt</code> file included in the distribution package for sample values on specific commerce pages.</p>
-<p>Use a proxy tool or Chrome developer tools to confirm that the browser is loading the <code>utag.js</code> file. After you activate a tag in iQ Tag Management, such as IBM Digital Analytics, you can use Charles Proxy, HTTP Fox, or Chrome Developer Tools to see the data passing to your analytics vendor. <figure><img src="/images/tech-partners/ibmwebsphere3.png"
+<p>Use a proxy tool or Chrome developer tools to confirm that the browser is loading the <code>utag.js</code> file. After you activate a tag in iQ Tag Management, such as IBM Digital Analytics, you can use Charles Proxy, HTTP Fox, or Chrome Developer Tools to see the data passing to your analytics vendor. <figure><a class="slb" href="/images/tech-partners/ibmwebsphere3.png"><img src="/images/tech-partners/ibmwebsphere3.png"
          alt="Validation with Chrome Developer Tools"
          title="Validation with Chrome Developer Tools"/>
+    </a>
 </figure></p>
 <p>The values for <code>wc.tealium.account</code> and <code>wc.tealium.profile</code> are the Tealium account and profile associated with the site, respectively.</p>
 
 </div>
 
-<div class="mv30 nested-links overflow-hidden dpn"><div class="fr">
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
   <a href="/tech-partners/optimizely-integration-with-audiencestream/"
@@ -464,7 +475,7 @@ Data Sources</strong>.</li>
   </a>
   
   
-</div><div class="di">
+</div><div class="di mr3">
   
   
   <a href="/tech-partners/google-analytics-4-measurement-protocol-connector-integration-guide/"
@@ -582,7 +593,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/functions/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/functions/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Functions
         </a>
     </li>
@@ -590,7 +601,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-connect/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Data Connect
         </a>
     </li>
@@ -598,7 +609,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/predict/getting-started/about-predict/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/predict/getting-started/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Predict ML
         </a>
     </li>
@@ -606,7 +617,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/server-side/data-storage/about/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           DataAccess
         </a>
     </li>
@@ -668,6 +679,14 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Technology Partners
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Partner Integrations
         </a>
     </li>
   
@@ -822,6 +841,14 @@ var opt_filters = [];
 if(hier_filters.length) {
   opt_filters.push(hier_filters);
 }
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
@@ -833,7 +860,8 @@ docsearch({
     "hitsPerPage": 50,
     optionalFilters: opt_filters
   },
-  debug: "true"
+  debug: "true",
+  transformItems
 });
 </script>
 
