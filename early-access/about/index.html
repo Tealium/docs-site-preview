@@ -213,9 +213,9 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".permissions">Platform Permissions</a>
         <ul class=" permissions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/early-access/platform-permissions/early-access-release/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Early Access Release</a>
+        <a href="/early-access/platform-permissions/ea/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Early Access Release</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/early-access/platform-permissions/expanded-release/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Expanded Early Access Release</a>
+        <a href="/early-access/platform-permissions/eea/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Expanded Early Access Release</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/early-access/platform-permissions/pii-account-roles/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">PII and Account Level Roles</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -289,37 +289,35 @@ var utag_data = {
 
 <div class="prose nested-links" id="prose">
   <h2 id="how-it-works">How it works</h2>
-<p>Early Access features are enabled on the login screen. Once a feature is enabled, it is preserved between login sessions. Early access features are only available to the user that enables them and not to the entire account.</p>
+<p>Early Access (EA) features are enabled on the login screen. After a feature is enabled, it is preserved between login sessions.</p>
+<p>EA features come with the following limitations:</p>
+<ul>
+<li>EA features are only available to the user that enables them and not to the entire account, and Tealium reserves the right to remove an account or user from EA.</li>
+<li>EA features may not be promoted to GA.</li>
+<li>The functionality of EA features may significantly change if they are promoted to GA.</li>
+<li>Tealium may impose usage limitations on EA features.</li>
+</ul>
 <h2 id="how-do-i-enable-early-access">How do I enable Early Access?</h2>
-<p>Use the following steps to enable an Early Access feature:</p>
+<p>Use the following steps to enable an EA feature:</p>
 <ol>
-<li>
-<p>Log out of iQ Tag Management if you are already logged in.</p>
-</li>
-<li>
-<p>Go to the <strong>Early Access</strong> login page URL at <a href="https://my.tealiumiq.com/?">https://my.tealiumiq.com/?</a></p>
-</li>
-<li>
-<p>Click the gear at the upper-right corner of the screen.</p>
-</li>
-<li>
-<p>Select the Early Access features of your choice and click <strong>OK</strong>.<br>
+<li>If you are already logged in to iQ Tag Management, log out.</li>
+<li>Go to the <strong>Early Access</strong> login page URL at <a href="https://my.tealiumiq.com/?">https://my.tealiumiq.com/?</a></li>
+<li>Click the gear at the upper-right corner of the screen.</li>
+<li>Select the EA features of your choice and click <strong>OK</strong>.<br>
 <figure><a class="slb" href="/images/early-access/github-early-access-login.jpg"><img src="/images/early-access/github-early-access-login.jpg"
          alt="GitHub Early Access Login"
          title="GitHub Early Access Login"/>
     </a>
-</figure></p>
-</li>
-<li>
-<p>Continue the login process as usual.</p>
-</li>
+</figure></li>
+<li>Continue the login process as usual.</li>
 </ol>
-<h2 id="can-i-provide-commentsfeedback">Can I provide comments/feedback?</h2>
-<p>Yes, we&rsquo;d love to hear your feedback about any of the Early Access features. Join the conversation in the <a href="https://community.tealiumiq.com/t5/Experiments-and-Early-Access/bd-p/9">Early Access discussion forum</a>. <!-- Forums --></p>
-<h2 id="how-does-early-access-differ-from-experiments">How does Early Access differ from Experiments?</h2>
-<p>Early Access only works for the features it has been enabled for. Future iterations of major releases will be released under <a href="/server-side/administration/enabling-experiments/">Enabling Experiments.</a></p>
-<h2 id="tealium-service-terms">Tealium service terms</h2>
-<p>See <a href="https://tealium.com/terms/">Tealium Service Terms</a> for our Master Services Agreements and Customer Protection Package information.</p>
+<h2 id="frequently-asked-questions">Frequently Asked Questions</h2>
+<h3 id="can-i-provide-commentsfeedback">Can I provide comments/feedback?</h3>
+<p>When you use an EA feature, you agree to provide feedback to Tealium about that feature. Join the conversation in the <a href="https://community.tealiumiq.com/t5/Experiments-and-Early-Access/bd-p/9">Early Access discussion forum</a>. <!-- Forums --></p>
+<h3 id="how-does-early-access-differ-from-experiments">How does Early Access differ from Experiments?</h3>
+<p>Early Access only works for the features it has been enabled for. Future iterations of major releases will be released under [Enabling Experiments].(/server-side/administration/enabling-experiments/)</p>
+<h3 id="tealium-service-terms">Tealium service terms</h3>
+<p>Features in EA are not equivalent to production functionality and are not subject to the Tealium master service agreement and service level agreement. See <a href="https://tealium.com/terms/">Tealium Service Terms</a> for our Master Services Agreements and Customer Protection Package information.</p>
 
 </div>
 
@@ -380,7 +378,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  July 6, 2023 
+          <p>This page was last updated:  August 2, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -396,7 +394,8 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-do-i-enable-early-access">How do I enable Early Access?</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#can-i-provide-commentsfeedback">Can I provide comments/feedback?</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#frequently-asked-questions">Frequently Asked Questions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#can-i-provide-commentsfeedback">Can I provide comments/feedback?</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-does-early-access-differ-from-experiments">How does Early Access differ from Experiments?</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tealium-service-terms">Tealium service terms</a></li>
               </nav>
