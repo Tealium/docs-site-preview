@@ -990,9 +990,21 @@ var utag_data = {
 <li>Configure the following settings in Adobe Experience Platform:
 <ol>
 <li>Navigate to <strong>Datastreams</strong> and select the datastream you want to use in the migration.</li>
-<li>In your Datastream <strong>Configure</strong> screen, note the <strong>Event Schema</strong> used in your datastream and click <strong>Save</strong>.</li>
-<li>In the Datastream details screen, ensure your Adobe Analytics service is enabled and select the service.</li>
-<li>In the <strong>Adobe Analytics service</strong> screen, enter the Adobe <strong>Report Suite ID</strong> that points to the appropriate data stores.</li>
+<li>In your Datastream <strong>Configure</strong> screen, note the <strong>Event Schema</strong> used in your datastream and click <strong>Save</strong>. <figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-datastreams.png"><img src="/images/client-side-tags/adobe-experience-platform-datastreams.png"
+         alt="Adobe Experience Platform Datastreams"
+         title="Adobe Experience Platform Datastreams"/>
+    </a>
+</figure></li>
+<li>In the Datastream details screen, ensure your Adobe Analytics service is enabled and select the service. <figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-service.png"><img src="/images/client-side-tags/adobe-experience-platform-service.png"
+         alt="Adobe Experience Platform Service enabled"
+         title="Adobe Experience Platform Service enabled"/>
+    </a>
+</figure></li>
+<li>In the <strong>Adobe Analytics service</strong> screen, enter the Adobe <strong>Report Suite ID</strong> that points to the appropriate data stores.<figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-aa-enable.png"><img src="/images/client-side-tags/adobe-experience-platform-aa-enable.png"
+         alt="Adobe Experience Platform Service enabled"
+         title="Adobe Experience Platform Service enabled"/>
+    </a>
+</figure></li>
 <li>Navigate to <strong>Data Management &gt; Schemas</strong> and select the <strong>Event Schema</strong> that is linked to your datastream.</li>
 <li>Ensure that <strong>Field Groups</strong> includes the <strong>Adobe Analytics ExperienceEvent Template</strong> field group. <figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-schemas.png"><img src="/images/client-side-tags/adobe-experience-platform-schemas.png"
          alt="Adobe Experience Platform Schemas"
@@ -1001,7 +1013,7 @@ var utag_data = {
 </figure></li>
 </ol>
 </li>
-<li>Map the following legacy attributes, properties, and events to the Adobe Experience Platform Web SDK tag in Tealium. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.
+<li>In this example you would map the following legacy attributes, properties, and events to the Adobe Experience Platform Web SDK tag in Tealium. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.
 <ol>
 <li>In the Adobe Experience Platform Web SDK tag, navigate to <strong>Data Mappings</strong>.</li>
 <li>Select the <strong>sf (js)</strong> variable and map to <strong>Analytics eVars &gt; evar181</strong> and click <strong>Done</strong>.</li>
