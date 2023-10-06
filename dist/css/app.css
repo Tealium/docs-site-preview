@@ -2365,6 +2365,9 @@ p.tip .fa-info-circle:before {
 .documentation-copy h2 {
   font-size: 1.65em
 }
+.release-notes h2.rn-section {
+  font-size: 1.65em;
+}
 .release-notes h2 {
   font-size: 1.45em;
 }
