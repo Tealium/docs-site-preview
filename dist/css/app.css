@@ -895,6 +895,7 @@ img { max-width: 100%; }
  */
 .overflow-hidden { overflow: hidden; }
 .overflow-auto { overflow: auto; }
+.overflow-y-auto { overflow-y: auto; }
 /*
 
    POSITIONING
@@ -2363,6 +2364,9 @@ p.tip .fa-info-circle:before {
 }
 .documentation-copy h2 {
   font-size: 1.65em
+}
+.release-notes h2 {
+  font-size: 1.45em;
 }
 /*@import '_carousel';*/
 .tab-pane .chroma{

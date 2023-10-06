@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "platforms",
+    reading_time  : "2",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -209,6 +210,8 @@ var utag_data = {
       </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/react-native/adobe-visitor-service/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".react-native-adobe-install">Adobe Visitor Service Module</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/platforms/react-native/crash-reporter/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-crash-reporter-install">Crash Reporter Module</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/react-native/location/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-location-install">Location Module</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/react-native/api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".react-native-api">API Reference</a>
@@ -251,6 +254,8 @@ var utag_data = {
 </header>
 
 <div class="mv2 mid-gray fn w-100">
+  
+
   
     <p class="f4 fw3 lh-copy">
       Learn to install Tealium Adobe Visitor Service Module for React Native.
@@ -322,6 +327,22 @@ var utag_data = {
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">decorateUrl</span>((<span style="color:#e6db74">&#34;https://tealium.com&#34;</span>, <span style="color:#a6e22e">value</span> =&gt; {
 </span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Decorated URL: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>);
 </span></span><span style="display:flex;"><span>});
+</span></span></code></pre></div><h3 id="geturlparameterscallback"><code>getUrlParameters(callback)</code></h3>
+<p>Retrieves the Adobe Visitor URL parameters to be appended to a URL.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">getUrlParameters</span>(<span style="color:#a6e22e">value</span> =&gt; {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">value</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">||</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">===</span> <span style="color:#66d9ef">undefined</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Adobe Visitor was null&#34;</span>);
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>;
+</span></span><span style="display:flex;"><span>    } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">of</span> Object.<span style="color:#a6e22e">keys</span>(<span style="color:#a6e22e">value</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">// Result: key = adobe_mc
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">//         value = MCMID=1234|MCORGID=12345@AdobeOrg|TS=1655826247
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">// Only for demonstration purposes; call some method in your app that decorates the URL and then launches your webview
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Retrieved URL Parameters: &#34;</span>, <span style="color:#a6e22e">key</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;=&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value</span>[<span style="color:#a6e22e">key</span>]);
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>});
 </span></span></code></pre></div><h3 id="resetvisitor"><code>resetVisitor()</code></h3>
 <p>Reset current visitor.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">TealiumAdobeVisitor</span>.<span style="color:#a6e22e">resetVisitor</span>();
@@ -331,13 +352,13 @@ var utag_data = {
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
-  <a href="/platforms/react-native/location/"
+  <a href="/platforms/react-native/crash-reporter/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Location Module</div>
+      <div>Crash Reporter Module</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Location Module"</title>
+      <title>"Crash Reporter Module"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -385,14 +406,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 17, 2023 
+          <p>This page was last updated:  August 15, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -408,6 +429,7 @@ No</button>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#linkecidtoknownidentifierid-providerid-authstate-callback">linkEcidToKnownIdentifier(id, providerId, authState, callback)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#getadobevisitorcallback">getAdobeVisitor(callback)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#decorateurlurl-callback">decorateUrl(url, callback)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#geturlparameterscallback">getUrlParameters(callback)</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#resetvisitor">resetVisitor()</a></li>
               </nav>
   </aside></nav>
@@ -581,6 +603,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -632,6 +664,12 @@ No</button>
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/platforms/react-native/adobe-visitor-service/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Adobe Visitor Service Module
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/react-native/crash-reporter/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Crash Reporter Module
       </a>
       </li>
       

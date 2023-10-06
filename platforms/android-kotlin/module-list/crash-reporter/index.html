@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "platforms",
+    reading_time  : "2",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -271,7 +272,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/android-kotlin/charles-proxy-android/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".charles-proxy-android">Proxy an Android device</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/platforms/android-kotlin/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".android-kotlin-release-notes">Release Notes</a>
+        <a href="/platforms/android-kotlin/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".android-kotlin-release-notes">Release notes</a>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -316,6 +317,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       Provides application crash tracking events.
     </p>
@@ -335,8 +338,8 @@ var utag_data = {
 </span></span></code></pre></div></li>
 <li>In your project module&rsquo;s <code>build.gradle</code> file, add the Maven dependencies for the Tealium library and Crash Reporter:
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.5.1&#39;</span>
-</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-crash-reporter:1.1.0&#39;</span>
+</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-core:1.5.3&#39;</span>
+</span></span><span style="display:flex;"><span>      implementation <span style="color:#e6db74">&#39;com.tealium:kotlin-crash-reporter:1.1.1&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></li>
 </ol>
@@ -347,12 +350,12 @@ var utag_data = {
 <p>Download the Tealium <a href="https://github.com/Tealium/tealium-kotlin/tree/master/crashreporter">Crash Reporter</a> module.</p>
 </li>
 <li>
-<p>Copy the file <code>tealium-kotlin.crashreporter-1.1.0.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p>
+<p>Copy the file <code>tealium-kotlin.crashreporter-1.1.1.aar</code> into your project&rsquo;s <code>&lt;PROJECT_ROOT&gt;/&lt;MODULE&gt;/libs</code> directory.</p>
 </li>
 <li>
 <p>Add the Tealium library dependency to your project module’s <code>build.gradle</code> file:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-groovy" data-lang="groovy"><span style="display:flex;"><span>dependencies <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.crashreporter-1.1.0&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>      implementation<span style="color:#f92672">(</span>name:<span style="color:#e6db74">&#39;tealium-kotlin.crashreporter-1.1.1&#39;</span><span style="color:#f92672">,</span> ext:<span style="color:#e6db74">&#39;aar&#39;</span><span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div></li>
 </ol>
@@ -482,14 +485,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  August 10, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -674,6 +677,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -760,7 +773,7 @@ No</button>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/platforms/android-kotlin/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Release Notes
+          Release notes
       </a>
       </li>
       

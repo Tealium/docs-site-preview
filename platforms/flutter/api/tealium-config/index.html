@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "platforms",
+    reading_time  : "4",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -207,6 +208,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/flutter/track/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter-track">Track</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/platforms/flutter/adobe-visitor-service/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter-adobe-install">Adobe Visitor Service Module</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/flutter/consent-management/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter-consent-management">Consent Management</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/platforms/flutter/data-management/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flutter-data-management">Data Management</a>
@@ -265,6 +268,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       A class to set configuration options for the main Tealium class. Individual modules provide their own extensions for the <code>TealiumConfig</code> class if they are enabled.
     </p>
@@ -318,13 +323,13 @@ var utag_data = {
 <td><code>customVisitorId</code></td>
 <td><code>String</code></td>
 <td>Set a custom Visitor ID</td>
-<td><code>&quot;ALK2398LSDKJ3289SLKJ3298SLKJ3&quot;</code></td>
+<td><code>ALK2398LSDKJ3289SLKJ3298SLKJ3</code></td>
 </tr>
 <tr>
 <td><code>dataSource</code></td>
 <td><code>String</code></td>
 <td>CDH data source key</td>
-<td><code> &quot;abc123&quot;</code></td>
+<td><code>abc123</code></td>
 </tr>
 <tr>
 <td><code>deepLinkTrackingEnabled</code></td>
@@ -366,31 +371,31 @@ var utag_data = {
 <td><code>overrideCollectBatchURL</code></td>
 <td><code>String</code></td>
 <td>Overrides the Tealium Collect batch URL to send data to a different endpoint</td>
-<td><code>&quot;https://custom-domain.com/batch-event&quot;</code></td>
+<td><code>https://example.com/batch-event</code></td>
 </tr>
 <tr>
 <td><code>overrideCollectProfile</code></td>
 <td><code>String</code></td>
 <td>Overrides the Tealium Profile sent in the tracking data.</td>
-<td><code>&quot;custom-profile&quot;</code></td>
+<td><code>custom-profile</code></td>
 </tr>
 <tr>
 <td><code>overrideCollectURL</code></td>
 <td><code>String</code></td>
 <td>Overrides the Tealium Collect URL to send data to a different endpoint. If using the event batching feature, also override the <code>overrideCollectBatchURL</code> property.</td>
-<td><code>&quot;https://custom-domain.com/event&quot;</code></td>
+<td><code>https://example.com/event</code></td>
 </tr>
 <tr>
 <td><code>overrideLibrarySettingsURL</code></td>
 <td><code>String</code></td>
-<td>Overrides the publish settings URL.`</td>
-<td><code>&quot;https://custom-domain.com/mobile.html&quot;</code></td>
+<td>Overrides the publish settings URL.</td>
+<td><code>https://example.com/mobile.html</code></td>
 </tr>
 <tr>
 <td><code>overrideTagManagementURL</code></td>
 <td><code>String</code></td>
 <td>Overrides the default URL used by the Tag Management module. This is needed if you are self-hosting your Tealium flutterScript files</td>
-<td><code>&quot;https://custom-domain.com/path/env/utag.js&quot;</code></td>
+<td><code>https://example.com/mobile.html</code></td>
 </tr>
 <tr>
 <td><code>profile</code></td>
@@ -700,14 +705,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  August 25, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -894,6 +899,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -939,6 +954,12 @@ No</button>
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/platforms/flutter/track/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Track
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/flutter/adobe-visitor-service/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Adobe Visitor Service Module
       </a>
       </li>
       

@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "tech-partners",
+    reading_time  : "4",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -372,6 +373,14 @@ var utag_data = {
       
         <a href="/early-access/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-ea">Early Access</a>
       
+      </li>
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/release-notes/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".">Release Notes</a>
+      
       </li></ul>
 </nav>
 </div>
@@ -403,6 +412,8 @@ var utag_data = {
 </header>
 
 <div class="mv2 mid-gray fn w-100">
+  
+
   
     <p class="f4 fw3 lh-copy">
       This article describes how to set up the Clicktale tag in your iQ Tag Management (TiQ) account.
@@ -461,7 +472,7 @@ Identifies when or if certain files are blocked, which identifies that an ad-blo
 </li>
 </ul>
 <h2 id="tag-configuration">Tag configuration</h2>
-<p>First, go to Tealium&rsquo;s tag marketplace and add the Clicktale Carmel tag (Learn more about <a href="/iq-tag-management/tags/manage-tags/">how to add a tag</a>).</p>
+<p>First, go to Tealium&rsquo;s tag marketplace and add the Clicktale Carmel tag (Learn more about <a href="/iq-tag-management/tags/manage/">how to add a tag</a>).</p>
 <p>After adding the tag, configure the following settings in the Data Mappings section.</p>
 <h2 id="load-rules">Load rules</h2>
 <p><a href="https://community.tealiumiq.com/posts/572034">Load Rules</a> determine when and where to load an instance of this tag. The &lsquo;Load on All Pages&rsquo; rule is the default load rule. To load this tag on a specific page, create a new load rule with the relevant conditions.</p>
@@ -643,7 +654,7 @@ No</button>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -830,6 +841,16 @@ No</button>
           Early Access
         </a>
     </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
   
   
   

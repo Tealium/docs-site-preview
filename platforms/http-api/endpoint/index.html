@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "platforms",
+    reading_time  : "7",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -244,6 +245,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       This article describes how to send data to the Tealium Customer Data Hub using the HTTP API for events.
     </p>
@@ -256,7 +259,7 @@ var utag_data = {
 <p>Tealium Collect is located at the following root URL:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/event
 </span></span></code></pre></div><h2 id="rate-limits">Rate limits</h2>
-<p>The Tealium Collect API supports a maximum rate limit of 100 requests/second.</p>
+<p>The Tealium Collect API supports a maximum rate limit of 100 requests/second. If you exceed the rate limit, Tealium will send an HTTP 429 response indicating too many requests.</p>
 <p class="tip"><i class="fa fa-info-circle"></i>If your business needs require higher call limits, contact your Tealium account manager.</p>
 <h2 id="standard-parameters">Standard parameters</h2>
 <p>Tealium Collect supports the following standard parameters in each request:</p>
@@ -522,14 +525,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 13, 2023 
+          <p>This page was last updated:  September 14, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -720,6 +723,16 @@ No</button>
           Early Access
         </a>
     </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
   
   
   

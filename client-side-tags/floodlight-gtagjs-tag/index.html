@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "client-side-tags",
+    reading_time  : "8",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -201,7 +202,9 @@ var utag_data = {
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+  <ul class="list pa0"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-client-side-tags">Release notes</a>
+      </li><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/6sense/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".6sense-tag">6sense</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/acoustic-digital-analytics-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-digital-analytics-tag">Acoustic Digital Analytics</a>
@@ -256,6 +259,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/agilone-webtag-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".agilone-webtag-tag">AgilOne Webtag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/aim-xr-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".aim-xr-tag">AIM XR (formerly DMD)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/airship-web-notify-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".airship-web-notify-tag">Airship Web Notify</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/akamai-mpulse-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".akamai-mpulse-tag">Akamai mPulse</a>
@@ -263,6 +268,8 @@ var utag_data = {
         <a href="/client-side-tags/alphonso-website-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".alphonso-website-tag">Alphonso Website</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amazon-advertising-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-tag">Amazon Advertising</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/amazon-advertising-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-cooke-matching-service-tag">Amazon Advertising Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amobee-cooking-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amobee-cooking-matching-service-tag">Amobee Cooking Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -384,8 +391,6 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/distribute-travel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".distribute-travel-tag">Distribute Travel</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/dmd-aimxr-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">DMD AIMXR</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".dun-amp-bradstreet-web-visitor-id-tag">Dun &amp; Bradstreet Web Visitor ID</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/dynamic-yield-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".dynamic-yield-tag">Dynamic Yield</a>
@@ -419,6 +424,8 @@ var utag_data = {
         <a href="/client-side-tags/firebase-remote-command-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".firebase-remote-command-tag">Firebase Remote Command Tag Setup Guide (Mobile)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/flashtalking-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flashtalking-cookie-matching-service-tag">Flashtalking Cookie Matching Service</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/flashtalking-onetag-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flashtalking-onetag-tag">Flashtalking OneTag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/flicker-free-test-and-target/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flicker-free-test-and-target">Flicker Free Test &amp; Target</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -550,13 +557,21 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/monetate-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".monetate-tag">Monetate</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/mouseflow-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mouseflow-tag">Mouseflow</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/mybuys-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mybuys-tag">MyBuys</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/nano-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nano-tag">Nano</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-platformone-conversion-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-platformone-conversion-tag-setup-guide">Neustar</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-real-user-measurement-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-real-user-measurement-tag">Neustar (Real User Measurement)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-fabrick-id-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-fabrick-id-tag">Neustar Fabrick ID</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-idmp-site-activity-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-idmp-site-activity-tag">Neustar IDMP Site Activity</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-pageadvisor-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-pageadvisor-tag">Neustar PageAdvisor</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/nextag-roi-tracker-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nextag-roi-tracker-tag">Nextag ROI Tracker</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -720,6 +735,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/wootric-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".wootric-tag">Wootric</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/wunderkind-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".wunderkind-tag">Wunderkind</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/x-plus-one-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".x-plus-one-tag">X Plus One Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/xandr-formerly-appnexus-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".xandr-formerly-appnexus-cookie-matching-service-tag">Xandr (formerly AppNexus) Cookie Matching Service</a>
@@ -777,6 +794,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       This article describes how to configure Floodlight in your Tealium iQ Tag Management account.
     </p>
@@ -817,15 +836,15 @@ var utag_data = {
 <li>Example: DC-123456789</li>
 </ul>
 </li>
-<li><strong>Activity Group</strong>
+<li><strong>Group Tag String</strong>
 <ul>
-<li>A single or comma-separated list of activity group names.</li>
+<li>A single or comma-separated list of group tag strings.</li>
 <li>Must match the number of Advertiser IDs.</li>
 </ul>
 </li>
-<li><strong>Activity</strong>
+<li><strong>Activity Tag String</strong>
 <ul>
-<li>A single or comma-separated list of activity names.</li>
+<li>A single or comma-separated list of activity tag strings.</li>
 <li>Must match the number of Advertiser IDs.</li>
 </ul>
 </li>
@@ -877,15 +896,15 @@ var utag_data = {
 <tbody>
 <tr>
 <td>Advertiser ID <code>advertiser_id</code></td>
-<td><ul><li>Required</li><li>String/Array</li><li>One or more Advertiser IDs separated by commas.</li><li>Example: DC-12345678</li><li>Data will be sent to all IDs.</li><li>Case-sensitive</li></ul></td>
+<td><ul><li>Required</li><li>String/Array</li><li>One or more Advertiser IDs separated by commas</li><li>Example: DC-12345678</li><li>Data will be sent to all IDs</li><li>Case-sensitive</li></ul></td>
 </tr>
 <tr>
-<td>Activity Group <code>activity_group</code></td>
-<td><ul><li>Required</li><li>String/Array</li><li>One or more Activity Group names separated by commas</li><li>Must match the length of Advertiser ID</li><li>Case-sensitive</li></ul></td>
+<td>Group Tag String <code>activity_group</code></td>
+<td><ul><li>Required</li><li>String/Array</li><li>One or more group tag strings separated by commas</li><li>Must match the length of Advertiser ID</li><li>Case-sensitive</li></ul></td>
 </tr>
 <tr>
-<td>Activity <code>activity</code></td>
-<td><ul><li>Required</li><li>String/Array</li><li>One or more Activity names separated by commas</li><li>Must match the length of Advertiser ID</li><li>Case-sensitive</li></ul></td>
+<td>Activity Tag String <code>activity</code></td>
+<td><ul><li>Required</li><li>String/Array</li><li>One or more activity tag strings separated by commas</li><li>Must match the length of Advertiser ID</li><li>Case-sensitive</li></ul></td>
 </tr>
 <tr>
 <td>Counting Method <code>counting_method</code></td>
@@ -893,19 +912,19 @@ var utag_data = {
 </tr>
 <tr>
 <td>Session ID <code>session_id</code></td>
-<td><ul><li>String/Array</li><li>Map none, one, or a set of values matching the length of Advertiser ID</li><li>Place blanks where not needed.</li></ul></td>
+<td><ul><li>String/Array</li><li>Map none, one, or a set of values matching the length of Advertiser ID</li><li>Place blanks where not needed</li></ul></td>
 </tr>
 <tr>
 <td>Event Name <code>event_name</code></td>
-<td><ul><li>The name of the current event.</li></ul></td>
+<td><ul><li>The name of the current event</li></ul></td>
 </tr>
 <tr>
 <td>Auto Fire Purchase Event <code>fire_purchase</code></td>
-<td><ul><li>Values are <strong>True</strong> or <strong>False</strong></li><li>Fires purchase event when an Order ID is present.</li><li>If counting method is not set, it will be set to transactions.</li></ul></td>
+<td><ul><li>Values are <strong>True</strong> or <strong>False</strong></li><li>Fires purchase event when an Order ID is present</li><li>If counting method is not set, it will be set to transactions</li></ul></td>
 </tr>
 <tr>
 <td>Allow Custom Scripts <code>custom_scripts</code></td>
-<td><ul><li>Values are <strong>True</strong> or <strong>False</strong></li><li>The default value is <strong>True</strong></li><li>Enables Dynamic tags to integrate third-party tools for tracking website activity.</li><li>Use to override the configuration value</li></ul></td>
+<td><ul><li>Values are <strong>True</strong> or <strong>False</strong></li><li>The default value is <strong>True</strong></li><li>Enables Dynamic tags to integrate third-party tools for tracking website activity</li><li>Use to override the configuration value</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -920,31 +939,31 @@ var utag_data = {
 <tbody>
 <tr>
 <td>Advertiser ID <code>advertiser_id</code></td>
-<td><ul><li>Use to override the configuration value</li><li>Accepts either a comma separated string or an array</li></ul></td>
+<td><ul><li>Use to override the configuration value.</li><li>Accepts either a comma separated string or an array.</li></ul></td>
 </tr>
 <tr>
-<td>Activity Group <code>activity_group</code></td>
-<td><ul><li>Use to override the configuration value</li><li>Must match the length of Advertiser ID</li><li>Accepts either a comma separated string or an array</li></ul></td>
+<td>Group Tag String <code>activity_group</code></td>
+<td><ul><li>Use to override the configuration value.</li><li>Must match the length of Advertiser ID.</li><li>Accepts either a comma separated string or an array.</li></ul></td>
 </tr>
 <tr>
-<td>Activity <code>activity</code></td>
-<td><ul><li>Use to override the configuration value</li><li>Must match the length of Advertiser ID</li><li>Accepts either a comma separated string or an array</li></ul></td>
+<td>Activity Tag String <code>activity</code></td>
+<td><ul><li>Use to override the configuration value.</li><li>Must match the length of Advertiser ID.</li><li>Accepts either a comma separated string or an array.</li></ul></td>
 </tr>
 <tr>
 <td>Counting Method <code>counting_method</code></td>
-<td><ul><li>Use to override the configuration value</li><li>Must match the length of Advertiser ID</li><li>Accepts either a comma separated string or an array</li><li>Converts to lowercase</li></ul></td>
+<td><ul><li>Use to override the configuration value.</li><li>Must match the length of Advertiser ID.</li><li>Accepts either a comma separated string or an array.</li><li>Converts to lowercase.</li></ul></td>
 </tr>
 <tr>
 <td>Event Name <code>event_action</code></td>
-<td><ul><li>The name of the current event</li></ul></td>
+<td><ul><li>The name of the current event.</li></ul></td>
 </tr>
 <tr>
 <td>Auto Fire Purchase Event<br> <code>fire_purchase</code></td>
-<td><ul><li>Values are True or False</li><li>Fires purchase event when an Order ID is present.</li><li>If counting method is not set, it will be set to transactions.</li></ul></td>
+<td><ul><li>Values are True or False.</li><li>Fires purchase event when an Order ID is present.</li><li>If counting method is not set, it will be set to transactions.</li></ul></td>
 </tr>
 <tr>
 <td>Allow Custom Scripts <code>custom_scripts</code></td>
-<td><ul><li>Values are True or False</li><li>Use to override the configuration value</li></ul></td>
+<td><ul><li>Values are True or False.</li><li>Use to override the configuration value.</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -988,23 +1007,23 @@ The event triggers when the supplied value is found in the data layer.</li>
 <tbody>
 <tr>
 <td>Order ID <code>order_id</code></td>
-<td><ul><li>Overrides <code>_corder</code>.</li></ul></td>
+<td><ul><li>Overrides <code>_corder</code></li></ul></td>
 </tr>
 <tr>
 <td>Order Total <code>order_total</code></td>
-<td><ul><li>Overrides <code>_ctotal</code>.</li></ul></td>
+<td><ul><li>Overrides <code>_ctotal</code></li></ul></td>
 </tr>
 <tr>
 <td>List of IDs<br> <code>product_id</code></td>
-<td><ul><li>Array</li><li>Overrides <code>_cprod</code>.</li></ul></td>
+<td><ul><li>Array</li><li>Overrides <code>_cprod</code></li></ul></td>
 </tr>
 <tr>
 <td>List of Quantities <code>product_quantity</code></td>
-<td><ul><li>Array</li><li>Overrides <code>_cquan</code>.</li><li>Accepts a single number override or an array of values</li></ul></td>
+<td><ul><li>Array</li><li>Overrides <code>_cquan</code></li><li>Accepts a single number override or an array of values</li></ul></td>
 </tr>
 <tr>
 <td>List of Prices<br> <code>product_unit_price</code></td>
-<td><ul><li>Array</li><li>Overrides <code>_cprice</code>.</li></ul></td>
+<td><ul><li>Array</li><li>Overrides <code>_cprice</code></li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -1019,91 +1038,91 @@ The event triggers when the supplied value is found in the data layer.</li>
 <tbody>
 <tr>
 <td>DoubleClick Custom Parameters <code>dc_custom_params.myvar</code></td>
-<td><ul><li>Use to send custom parameters as part of the <code>dc_custom_params</code> object</li><li>Replace <code>myvar</code> with the name of your parameter</li></ul></td>
+<td><ul><li>Use to send custom parameters as part of the <code>dc_custom_params</code> object.</li><li>Replace <code>myvar</code> with the name of your parameter.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 1 <code>custom.u1</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u1</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u1</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 2 <code>custom.u2</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u2</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u2</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 3 <code>custom.u3</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u3</code>.</li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u3</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 4 <code>custom.u4</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u4</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u4</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 5 <code>custom.u5</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u5</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u5</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 6 <code>custom.u6</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u6</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u6</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 7 <code>custom.u7</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u7</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u7</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 8 <code>custom.u8</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u8</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u8</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 9 <code>custom.u9</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u9</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u9</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 10 <code>custom.u10</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u10</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u10</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 11 <code>custom.u11</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u11</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u11</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 12 <code>custom.u12</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u12</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u12</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 13 <code>custom.u13</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u13</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u13</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 14 <code>custom.u14</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u14</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u14</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 15 <code>custom.u15</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u15</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u15</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 16 <code>custom.u16</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u16</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u16</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 17 <code>custom.u17</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u17</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u17</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 18 <code>custom.u18</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u18</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u18</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 19 <code>custom.u19</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u19</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimension.s</li><li>Associate with the custom Floodlight variable <code>u19</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 20 <code>custom.u20</code></td>
-<td><ul><li>Use to add custom metrics and dimensions</li><li>Associate with the custom Floodlight variable <code>u20</code></li><li>Defaults to dimension or metric name if not provided in mapping</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions.</li><li>Associate with the custom Floodlight variable <code>u20</code>.</li><li>Defaults to dimension or metric name if not provided in mapping.</li></ul></td>
 </tr>
 <tr>
 <td>Custom Variable 21+ <code>custom.u#</code></td>
-<td><ul><li>Use to add custom metrics and dimensions beyond 20 (not supported in Floodlight Search)</li><li>Associate with the custom Floodlight variable <code>u#</code></li><li>Replace the <code>#</code> sign in mapping with the desired number</li></ul></td>
+<td><ul><li>Use to add custom metrics and dimensions beyond 20 (not supported in Floodlight Search).</li><li>Associate with the custom Floodlight variable <code>u#</code>.</li><li>Replace the <code>#</code> sign in mapping with the desired number.</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -1119,6 +1138,63 @@ The event triggers when the supplied value is found in the data layer.</li>
 <tr>
 <td>Enable TCF Support <code>tag_enable_tcf_support</code></td>
 <td><ul><li>Values are <strong>true</strong> or <strong>false</strong>.</li></ul></td>
+</tr>
+</tbody>
+</table>
+<h3 id="enhanced-conversions">Enhanced Conversions</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>user_data.email</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Email Address</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.phone_number</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Phone Number</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.first_name</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">First Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.last_name</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Last Name</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.street</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Street Address</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.city</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">City</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.region</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Region</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.postal_code</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Postal Code</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>user_data.address.country</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Country</td>
 </tr>
 </tbody>
 </table>
@@ -1194,7 +1270,7 @@ No</button>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -1209,6 +1285,7 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#events">Events</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#e-commerce">E-Commerce</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#custom">Custom</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#enhanced-conversions">Enhanced Conversions</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#additional-documentation">Additional documentation</a></li>
               </nav>
   </aside></nav>
@@ -1382,6 +1459,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -1418,6 +1505,14 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

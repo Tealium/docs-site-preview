@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "client-side-tags",
+    reading_time  : "3",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -201,7 +202,9 @@ var utag_data = {
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+  <ul class="list pa0"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-client-side-tags">Release notes</a>
+      </li><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/6sense/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".6sense-tag">6sense</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/acoustic-digital-analytics-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-digital-analytics-tag">Acoustic Digital Analytics</a>
@@ -256,6 +259,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/agilone-webtag-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".agilone-webtag-tag">AgilOne Webtag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/aim-xr-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".aim-xr-tag">AIM XR (formerly DMD)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/airship-web-notify-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".airship-web-notify-tag">Airship Web Notify</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/akamai-mpulse-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".akamai-mpulse-tag">Akamai mPulse</a>
@@ -263,6 +268,8 @@ var utag_data = {
         <a href="/client-side-tags/alphonso-website-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".alphonso-website-tag">Alphonso Website</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amazon-advertising-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-tag">Amazon Advertising</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/amazon-advertising-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-cooke-matching-service-tag">Amazon Advertising Cookie Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/amobee-cooking-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amobee-cooking-matching-service-tag">Amobee Cooking Matching Service</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -384,8 +391,6 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/distribute-travel-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".distribute-travel-tag">Distribute Travel</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/client-side-tags/dmd-aimxr-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">DMD AIMXR</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/dun-amp-bradstreet-web-visitor-id-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".dun-amp-bradstreet-web-visitor-id-tag">Dun &amp; Bradstreet Web Visitor ID</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/dynamic-yield-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".dynamic-yield-tag">Dynamic Yield</a>
@@ -419,6 +424,8 @@ var utag_data = {
         <a href="/client-side-tags/firebase-remote-command-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".firebase-remote-command-tag">Firebase Remote Command Tag Setup Guide (Mobile)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/flashtalking-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flashtalking-cookie-matching-service-tag">Flashtalking Cookie Matching Service</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/flashtalking-onetag-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flashtalking-onetag-tag">Flashtalking OneTag</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/flicker-free-test-and-target/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".flicker-free-test-and-target">Flicker Free Test &amp; Target</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -550,13 +557,21 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/monetate-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".monetate-tag">Monetate</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/mouseflow-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mouseflow-tag">Mouseflow</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/mybuys-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".mybuys-tag">MyBuys</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/nano-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nano-tag">Nano</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-platformone-conversion-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-platformone-conversion-tag-setup-guide">Neustar</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-real-user-measurement-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-real-user-measurement-tag">Neustar (Real User Measurement)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/neustar-fabrick-id-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-fabrick-id-tag">Neustar Fabrick ID</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-idmp-site-activity-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-idmp-site-activity-tag">Neustar IDMP Site Activity</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/neustar-pageadvisor-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".neustar-pageadvisor-tag">Neustar PageAdvisor</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/nextag-roi-tracker-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".nextag-roi-tracker-tag">Nextag ROI Tracker</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -720,6 +735,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/wootric-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".wootric-tag">Wootric</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/wunderkind-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".wunderkind-tag">Wunderkind</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/x-plus-one-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".x-plus-one-tag">X Plus One Tag Setup Guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/xandr-formerly-appnexus-cookie-matching-service-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".xandr-formerly-appnexus-cookie-matching-service-tag">Xandr (formerly AppNexus) Cookie Matching Service</a>
@@ -777,6 +794,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       This article describes how to set up the The Trade Desk Cookie Matching Service tag in your Tealium iQ Tag Management account.
     </p>
@@ -784,8 +803,13 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="how-it-works">How it works</h2>
-<p>This solution requires Tealium iQ and Tealium AudienceStream. The Trade Desk Cookie Matching Service tag sets a new variable named <code>ttd_uuid</code>. It is stored as a session cookie as well as a standard data layer variable and triggers only once per session, by default.</p>
+  <h2 id="requirements">Requirements</h2>
+<ul>
+<li>iQ Tag Management</li>
+<li>AudienceStream</li>
+</ul>
+<h2 id="how-it-works">How it works</h2>
+<p>The Trade Desk Cookie Matching Service tag sets a new variable named <code>ttd_uuid</code>. It is stored as a session cookie and as a standard data layer variable. The tag triggers only once per session, by default.</p>
 <p>The Trade Desk Cookie Matching Service tag communicates with the Trade Desk servers to request the current user&rsquo;s identifier. When this value is returned to the tag, it is passed to AudienceStream so that it can be used to populate a visitor attribute containing the synced user ID. This attribute can then be used in The Trade Desk connector actions as a mapping to &ldquo;Trade Desk ID (TDID)&rdquo;.</p>
 <h2 id="data-layer-variables">Data Layer Variables</h2>
 <p>Before you add the tag, create the following data layer variables:</p>
@@ -800,8 +824,8 @@ var utag_data = {
     </a>
 </figure>
 <h2 id="tag-configuration">Tag Configuration</h2>
-<p>Go to the Tag Marketplace and add the Trade Desk Cookie Matching Service tag (<a href="/iq-tag-management/tags/manage-tags/">see how to add a tag</a>).</p>
-<p>After adding the tag, configure the below settings:</p>
+<p>Go to the Tag Marketplace and add the Trade Desk Cookie Matching Service tag (<a href="/iq-tag-management/tags/manage/">see how to add a tag</a>).</p>
+<p>After adding the tag, configure the following settings:</p>
 <ul>
 <li><strong>Tealium Account</strong> - leave blank unless sending The Trade Desk user ID to a different account.</li>
 <li><strong>Tealium Profile</strong> - leave blank unless sending The Trade Desk user ID to a different profile.</li>
@@ -812,39 +836,17 @@ var utag_data = {
 <p><code>utag_main_ttd_uuid</code> is not defined</p>
 <p>The tag also has built-in logic to only fire when the cookie is not defined, but using a load rule will ensure that the tag is not loaded on a page when it has already run for the current session.</p>
 <h2 id="data-mappings">Data Mappings</h2>
-<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-mappings/manage/">data layer variable</a> to the corresponding destination variable of the vendor Tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Destination Name</strong></th>
-<th><strong>Description</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>tealium_account</code></td>
-<td>The Tealium account to sync the user ID to (defaults to current account).</td>
-</tr>
-<tr>
-<td><code>tealium_profile</code></td>
-<td>The Tealium profile to sync the user ID to (defaults to current profile).</td>
-</tr>
-<tr>
-<td><code>gdpr</code></td>
-<td>Pass a value that indicates if the current user resides in the European Union (EU), and therefore subject to GDPR.<br> Set to <code>0</code> (default) if the user is not subject to GDPR.<br> Set to <code>1</code> if the user is subject to GDPR.</td>
-</tr>
-<tr>
-<td><code>gdpr_consent_string</code></td>
-<td>Base64 URL-encoded GDPR consent string.</td>
-</tr>
-<tr>
-<td><code>order_id</code></td>
-<td>Overrides the <code>_corder</code> e-commerce extension value.</td>
-</tr>
-</tbody>
-</table>
+<p>Mapping is the process of sending data from a <a href="/iq-tag-management/data-mappings/about/">data layer variable</a> to the corresponding destination variable of the vendor tag. For instructions on how to map a variable to a tag destination, see <a href="/iq-tag-management/data-mappings/manage/">data mappings</a>.</p>
+<p>|<strong>Destination Name</strong>| <strong>Type</strong> | <strong>Description</strong>|
+|&mdash;| &mdash;|
+|<code>tealium_account</code>| String | The Tealium account to sync the user ID to. The default is the current account. |
+|<code>tealium_profile</code>| String | The Tealium profile to sync the user ID to. The default is the current profile. |
+|<code>gdpr</code>| Boolean | Pass a value that indicates if the current user resides in the European Union (EU), and therefore subject to GDPR.<br> Set to <code>0</code> (default) if the user is not subject to GDPR.<br> Set to <code>1</code> if the user is subject to GDPR. <br> If you set this value to <code>0</code> and the visitors are located in the EU, the Cookie Sync Service returns an empty array. |
+|<code>gdpr_consent_string</code>| String | Base64 URL-encoded GDPR consent string.|
+| <code>domain</code> | The domain where the cookie synchronization initiates. <br> NOTE: You must add this domain to <strong>Allowlist</strong> in The Trade Desk configuration. |
+|<code>order_id</code>| String | Overrides the <code>_corder</code> e-commerce extension value.|</p>
 <h2 id="audiencestream-setup">AudienceStream Setup</h2>
-<p>Once you save and publish your changes to Prod, the new variables will be available in AudienceStream. The <code>ttd_uuid</code> variable will appear as an event attribute, but you must create it as a visitor attribute so that it can be used in The Trade Desk connector action.</p>
+<p>After you save and publish your changes to Prod, the new variables will be available in AudienceStream. The <code>ttd_uuid</code> variable will appear as an event attribute, but you must create it as a visitor attribute so that it can be used in The Trade Desk connector action.</p>
 <p>To add a visitor attribute to store the <code>ttd_uuid</code> value:</p>
 <ol>
 <li>Navigate to <strong>AudienceStream &gt; Attributes</strong>.</li>
@@ -915,21 +917,22 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 3, 2021 
+          <p>This page was last updated:  August 7, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#requirements">Requirements</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-layer-variables">Data Layer Variables</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag Configuration</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load Rules</a></li>
@@ -1107,6 +1110,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -1143,6 +1156,14 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   

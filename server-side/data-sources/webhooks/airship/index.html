@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "server-side",
+    reading_time  : "2",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -237,7 +238,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/getting-started/eventstream-api-hub/trace-test-with-trace/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-trace-test-with-trace">Test with Trace</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/getting-started/eventstream-api-hub/saving-and-publishing/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-saving-and-publishing">Saving and publishing</a>
+        <a href="/server-side/getting-started/eventstream-api-hub/saving-and-publishing/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-saving-and-publishing">Save and publish</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/getting-started/eventstream-api-hub/next-steps/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-next-steps">Next steps</a>
       </li></ul>
@@ -358,6 +359,8 @@ var utag_data = {
         <a href="/server-side/data-sources/data-sources-for-iq-tag-management/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Data sources for iQ Tag Management</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/vdata-endpoint/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Import data using Visitor Data Enrichment (/vdata)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-data-sources">Release notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".data-connect">Data Connect</a>
@@ -368,11 +371,13 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/rate-limits/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-rate-limits">Rate limits</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/error-handling/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-error-handling">Error handling</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/roles/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-roles">Roles</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-connect/dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-dashboard">Dashboard</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/events/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-events">Events</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-dashboard">Dashboard</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/usage-reports/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-usage-reports">Usage reports</a>
       </li><li class="relative w-100 fw8 f5 ">
@@ -391,6 +396,8 @@ var utag_data = {
         <a href="/server-side/data-connect/manage-data-connect-integrations/create-recipe/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-create-recipe-data-connect">Create a recipe</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/manage-data-connect-integrations/manage-recipes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-manage-recipes-data-connect">Manage recipes</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/manage-data-connect-integrations/troubleshooting-data-connect/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-troubleshoot-data-connect">Troubleshooting</a>
       </li></ul>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
@@ -398,7 +405,7 @@ var utag_data = {
         <ul class=" event-specifications desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/event-specifications/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-event-specifications">About event specifications</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/event-specifications/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-event-specifications">Manage event specifications</a>
+        <a href="/server-side/event-specifications/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-event-specifications">Manage event specs</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".live-events-feeds">Live Events and feeds</a>
@@ -500,6 +507,8 @@ var utag_data = {
         <a href="/server-side/connectors/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-connectors">Manage connectors</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/delayed-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">About delayed actions</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/connectors/batched-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".batched-actions">Batched actions</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".frequency-capping">Frequency capping</a>
         <ul class=" frequency-capping desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -517,8 +526,6 @@ var utag_data = {
         <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">BasicAuth and OAuth2</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/webhook-connectors/action-parameters/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Action parameters</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/connectors/webhook-connectors/batched-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".batched-actions">Batched actions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/webhook-connectors/validate-webhook-action/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Validate webhook action</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -550,7 +557,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/trace/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-traces">Manage traces</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/connectors/trace/view/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".view-trace">View a trace</a>
+        <a href="/server-side/connectors/trace/view/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".view-trace">View traces</a>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/cookie-matching/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Persistent cookie matching</a>
@@ -558,6 +565,8 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".audiences">Audiences</a>
         <ul class=" audiences desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/audiences/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-audiences">About audiences</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/audiences/audiencestream-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-dashboard">Dashboard</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".audience-discovery">Audience Discovery</a>
@@ -580,7 +589,9 @@ var utag_data = {
         <a href="/server-side/audiences/audience-sizing/examples/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audience-sizing-examples">Audience Sizing examples</a>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/audiences/create-an-audience/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".create-an-audience">Create an audience</a>
+        <a href="/server-side/audiences/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-audiences">Manage audiences</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/audiences/manage-segments/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-segments">Manage segments</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/audiences/visitor-profile-sampler/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-profile-sampler">Visitor profile sampler</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -655,7 +666,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/functions/event-visitor-functions/oauth2-authentication/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".functions-OAuth2-authentication">Add OAuth 2.0 authentication</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/functions/event-visitor-functions/uid2-token/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-visitor-function-get-uid20">Generate a UID2.0 token</a>
+        <a href="/server-side/functions/event-visitor-functions/uid2/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-visitor-function-get-uid20">Generate a UID2</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".data-transformation-functions">Data transformation functions</a>
@@ -721,6 +732,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-storage/frequently-asked-questions/how-long-is-data-stored/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".data-storage-how-long-is-data-stored">How long is the data stored in DataAccess?</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-storage/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-data-access">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-consent">Consent</a>
@@ -734,6 +747,13 @@ var utag_data = {
         <a href="/server-side/consent/server-side-support-gpc/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-global-privacy-control">Server-side Global Privacy Control</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/consent/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-consent">Release Notes</a>
+      </li></ul>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".data-insights">Data Insights</a>
+        <ul class=" data-insights desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-insights/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">About Data Insights</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-insights/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Manage dashboards, analyses, and datasets</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-save-publish">Save and publish</a>
@@ -760,7 +780,7 @@ var utag_data = {
         <ul class=" ss-user-permissions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/user-permissions/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-managing-server-side-user-permissions">About permissions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/administration/user-permissions/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-user-permissions">Manage permissions</a>
+        <a href="/server-side/administration/user-permissions/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-user-permissions">Manage user permissions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/user-permissions/faq/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".faq">FAQ</a>
       </li></ul>
@@ -780,6 +800,8 @@ var utag_data = {
         <a href="/server-side/administration/data-supply-chain-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-supply-chain-dashboard">Data Supply Chain dashboard</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/understanding-the-usage-report/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-understanding-the-usage-report">Usage report</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/administration/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-administration">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-tealium-tools">Tealium Tools</a>
@@ -801,6 +823,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/frequently-asked-questions/when-are-records-created-updated-and-deleted-in-audiencedb/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">When are records created, updated, and deleted in AudienceDB?</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-release-notes">Release notes</a>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -844,6 +868,8 @@ var utag_data = {
 </header>
 
 <div class="mv2 mid-gray fn w-100">
+  
+
   
     <p class="f4 fw3 lh-copy">
       This article describes how to use the Airship data source to create a webhook in your Airship account and send actionable events to Tealium.
@@ -984,7 +1010,7 @@ No</button>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -1169,6 +1195,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -1278,6 +1314,12 @@ No</button>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/server-side/data-insights/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Data Insights
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/server-side/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Save and publish
       </a>
@@ -1304,6 +1346,12 @@ No</button>
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/server-side/frequently-asked-questions/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Frequently Asked Questions
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/server-side/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Release notes
       </a>
       </li>
       

@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "server-side",
+    reading_time  : "4",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -237,7 +238,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/getting-started/eventstream-api-hub/trace-test-with-trace/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-trace-test-with-trace">Test with Trace</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/getting-started/eventstream-api-hub/saving-and-publishing/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-saving-and-publishing">Saving and publishing</a>
+        <a href="/server-side/getting-started/eventstream-api-hub/saving-and-publishing/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-saving-and-publishing">Save and publish</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/getting-started/eventstream-api-hub/next-steps/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".eventstream-api-hub-next-steps">Next steps</a>
       </li></ul>
@@ -358,6 +359,8 @@ var utag_data = {
         <a href="/server-side/data-sources/data-sources-for-iq-tag-management/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Data sources for iQ Tag Management</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-sources/vdata-endpoint/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Import data using Visitor Data Enrichment (/vdata)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-sources/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-data-sources">Release notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".data-connect">Data Connect</a>
@@ -368,11 +371,13 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/rate-limits/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-rate-limits">Rate limits</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/error-handling/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-error-handling">Error handling</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/roles/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-roles">Roles</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-connect/dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-dashboard">Dashboard</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/events/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-events">Events</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-dashboard">Dashboard</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/usage-reports/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-connect-usage-reports">Usage reports</a>
       </li><li class="relative w-100 fw8 f5 ">
@@ -391,6 +396,8 @@ var utag_data = {
         <a href="/server-side/data-connect/manage-data-connect-integrations/create-recipe/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-create-recipe-data-connect">Create a recipe</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-connect/manage-data-connect-integrations/manage-recipes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-manage-recipes-data-connect">Manage recipes</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-connect/manage-data-connect-integrations/troubleshooting-data-connect/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-troubleshoot-data-connect">Troubleshooting</a>
       </li></ul>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
@@ -398,7 +405,7 @@ var utag_data = {
         <ul class=" event-specifications desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/event-specifications/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-event-specifications">About event specifications</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/event-specifications/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-event-specifications">Manage event specifications</a>
+        <a href="/server-side/event-specifications/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-event-specifications">Manage event specs</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".live-events-feeds">Live Events and feeds</a>
@@ -500,6 +507,8 @@ var utag_data = {
         <a href="/server-side/connectors/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-connectors">Manage connectors</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/delayed-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">About delayed actions</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/connectors/batched-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".batched-actions">Batched actions</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".frequency-capping">Frequency capping</a>
         <ul class=" frequency-capping desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -517,8 +526,6 @@ var utag_data = {
         <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">BasicAuth and OAuth2</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/webhook-connectors/action-parameters/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Action parameters</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/connectors/webhook-connectors/batched-actions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".batched-actions">Batched actions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/webhook-connectors/validate-webhook-action/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Validate webhook action</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -550,7 +557,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/trace/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-traces">Manage traces</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/connectors/trace/view/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".view-trace">View a trace</a>
+        <a href="/server-side/connectors/trace/view/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".view-trace">View traces</a>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/connectors/cookie-matching/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Persistent cookie matching</a>
@@ -558,6 +565,8 @@ var utag_data = {
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".audiences">Audiences</a>
         <ul class=" audiences desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/audiences/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-audiences">About audiences</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/audiences/audiencestream-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencestream-dashboard">Dashboard</a>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".audience-discovery">Audience Discovery</a>
@@ -580,7 +589,9 @@ var utag_data = {
         <a href="/server-side/audiences/audience-sizing/examples/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audience-sizing-examples">Audience Sizing examples</a>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/audiences/create-an-audience/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".create-an-audience">Create an audience</a>
+        <a href="/server-side/audiences/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-audiences">Manage audiences</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/audiences/manage-segments/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-segments">Manage segments</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/audiences/visitor-profile-sampler/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".visitor-profile-sampler">Visitor profile sampler</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -655,7 +666,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/functions/event-visitor-functions/oauth2-authentication/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".functions-OAuth2-authentication">Add OAuth 2.0 authentication</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/functions/event-visitor-functions/uid2-token/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-visitor-function-get-uid20">Generate a UID2.0 token</a>
+        <a href="/server-side/functions/event-visitor-functions/uid2/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".use-visitor-function-get-uid20">Generate a UID2</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2  " data-target=".data-transformation-functions">Data transformation functions</a>
@@ -721,6 +732,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-storage/frequently-asked-questions/how-long-is-data-stored/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".data-storage-how-long-is-data-stored">How long is the data stored in DataAccess?</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-storage/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-data-access">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-consent">Consent</a>
@@ -734,6 +747,13 @@ var utag_data = {
         <a href="/server-side/consent/server-side-support-gpc/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-global-privacy-control">Server-side Global Privacy Control</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/consent/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-consent">Release Notes</a>
+      </li></ul>
+      </li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".data-insights">Data Insights</a>
+        <ul class=" data-insights desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-insights/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">About Data Insights</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/data-insights/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">Manage dashboards, analyses, and datasets</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-save-publish">Save and publish</a>
@@ -760,7 +780,7 @@ var utag_data = {
         <ul class=" ss-user-permissions desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/user-permissions/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-managing-server-side-user-permissions">About permissions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/administration/user-permissions/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-user-permissions">Manage permissions</a>
+        <a href="/server-side/administration/user-permissions/manage/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".manage-user-permissions">Manage user permissions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/user-permissions/faq/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".faq">FAQ</a>
       </li></ul>
@@ -780,6 +800,8 @@ var utag_data = {
         <a href="/server-side/administration/data-supply-chain-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-supply-chain-dashboard">Data Supply Chain dashboard</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/administration/understanding-the-usage-report/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-understanding-the-usage-report">Usage report</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/administration/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-administration">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".ss-tealium-tools">Tealium Tools</a>
@@ -801,6 +823,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/frequently-asked-questions/when-are-records-created-updated-and-deleted-in-audiencedb/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".">When are records created, updated, and deleted in AudienceDB?</a>
       </li></ul>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-release-notes">Release notes</a>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -845,6 +869,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       These are popular Badges that have proven useful to other clients.
     </p>
@@ -861,124 +887,125 @@ var utag_data = {
 </thead>
 <tbody>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badge-browseabandoner.png"><img src="/images/server-side/whiteui-badge-browseabandoner.png" width="78" height="77"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badge-browseabandoner.png"><img src="/images/server-side/whiteui-badge-browseabandoner.png" class="noshadow" width="78" height="77"/>
     </a>
-</figure> Browse Abandoner</td>
+</figure><br> Browse Abandoner</td>
 <td><ul><li><strong>Rule</strong> – A visitor who has viewed a product and did not add an item to the cart.</li><li><strong>Action</strong> – If a Known Visitor and Facebook ID is known, send data to Facebook to retarget the brand to the visitor.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges%29business-family.png"><img src="/images/server-side/whiteui-badges%29business-family.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges%29business-family.png"><img src="/images/server-side/whiteui-badges%29business-family.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Business/Family Traveler</td>
+</figure><br> Business/Family Traveler</td>
 <td><ul><li><strong>Rule</strong> – Assign when the visitor marks their travel type.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-cartabandoner.png"><img src="/images/server-side/whiteui-badges-cartabandoner.png" width="79" height="79"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-cartabandoner.png"><img src="/images/server-side/whiteui-badges-cartabandoner.png" class="noshadow" width="79" height="79"/>
     </a>
-</figure> Cart Abandoner</td>
+</figure><br> Cart Abandoner</td>
 <td><ul><li><strong>Rule</strong> – A visitor who has added an item to the cart and did not purchase.</li><li><strong>Action</strong> – If email address is known, send a personalized email with the abandoned items.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-couponcodeabuser.png"><img src="/images/server-side/whiteui-badges-couponcodeabuser.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-couponcodeabuser.png"><img src="/images/server-side/whiteui-badges-couponcodeabuser.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Coupon Code Abuser</td>
+</figure><br> Coupon Code Abuser</td>
 <td><ul><li><strong>Rule</strong> – A visitor attempts to use more than a certain number of coupon or promotion codes in a single visit.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-bades-couponcodestuffer.png"><img src="/images/server-side/whiteui-bades-couponcodestuffer.png" width="79" height="79"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-bades-couponcodestuffer.png"><img src="/images/server-side/whiteui-bades-couponcodestuffer.png" class="noshadow" width="79" height="79"/>
     </a>
-</figure> Coupon Code Stuffer</td>
+</figure><br> Coupon Code Stuffer</td>
 <td><ul><li><strong>Rule</strong> – A visitor has successfully used more than a certain number of coupon or promotion codes across all visits.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-disappointedshopper.png"><img src="/images/server-side/whiteui-badges-disappointedshopper.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-disappointedshopper.png"><img src="/images/server-side/whiteui-badges-disappointedshopper.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Disappointed Shopper</td>
+</figure><br> Disappointed Shopper</td>
 <td><ul><li><strong>Rule</strong> – Assign when a visitor views a product that is currently out of stock.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-freetrialuser.png"><img src="/images/server-side/whiteui-badges-freetrialuser.png" width="77" height="77"/>
-    </a><figcaption><p>Badges_FreeTrialUser.png</p>
-        </figcaption>
-</figure> Free Trial User</td>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-freetrialuser.png"><img src="/images/server-side/whiteui-badges-freetrialuser.png"
+         alt="Badges-Free-Trial-User.png"
+         title="Badges-Free-Trial-User.png" class="noshadow" width="77" height="77"/>
+    </a>
+</figure><br> Free Trial User</td>
 <td><ul><li><strong>Rule</strong> – Assign when a visitor has signed up for a Free Trial.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-frequenttraveler.png"><img src="/images/server-side/whiteui-badges-frequenttraveler.png" width="79" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-frequenttraveler.png"><img src="/images/server-side/whiteui-badges-frequenttraveler.png" class="noshadow" width="79" height="78"/>
     </a>
-</figure> Frequent Traveler</td>
+</figure><br> Frequent Traveler</td>
 <td><ul><li><strong>Rule</strong> – Assign when the visitor has traveled more than a certain number of times over a given time period, for example: Visitor has traveled 5 times in the last 12 weeks.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-knownvisitor.png"><img src="/images/server-side/whiteui-badges-knownvisitor.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-knownvisitor.png"><img src="/images/server-side/whiteui-badges-knownvisitor.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Known Visitor</td>
+</figure><br> Known Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assigned when we capture an important identifier of the visitor, for example: Customer ID (client&rsquo;s ID), Customer Email, Facebook ID. These visitors commonly targeted via email or social media</li><li><strong>Action</strong> – None, but used in an Audience to ensure the visitor is targetable with a selected vendor API.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-loyalvisitor.png"><img src="/images/server-side/whiteui-badges-loyalvisitor.png" width="77" height="77"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-loyalvisitor.png"><img src="/images/server-side/whiteui-badges-loyalvisitor.png" class="noshadow" width="77" height="77"/>
     </a>
-</figure> Loyal Visitor</td>
+</figure><br> Loyal Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assign when a visitor has a certain number of direct visits to the site.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-newvisitor.png"><img src="/images/server-side/whiteui-badges-newvisitor.png" width="92" height="92"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-newvisitor.png"><img src="/images/server-side/whiteui-badges-newvisitor.png" class="noshadow" width="92" height="92"/>
     </a>
-</figure> New Visitor</td>
+</figure><br> New Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assign when &ldquo;Lifetime visit count&rdquo; equals 1.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-purchaser.png"><img src="/images/server-side/whiteui-badges-purchaser.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-purchaser.png"><img src="/images/server-side/whiteui-badges-purchaser.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Purchaser</td>
+</figure><br> Purchaser</td>
 <td><ul><li><strong>Rule</strong> – A visitor who has converted, for example: purchased a product or signed up for a service.</li><li><strong>Action</strong> – Email in 2 weeks with an offer enticing to make another purchase or an email showing related items for purchase, for example if the visitor bought a baseball bat offer a baseball bag and batting gloves.</li><li><strong>Action</strong> – Remove visitor from retargeting campaign so they are not remarketed unnecessarily.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-recentvipvisitor.png"><img src="/images/server-side/whiteui-badges-recentvipvisitor.png" width="77" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-recentvipvisitor.png"><img src="/images/server-side/whiteui-badges-recentvipvisitor.png" class="noshadow" width="77" height="78"/>
     </a>
-</figure> Recent VIP Visitor</td>
+</figure><br> Recent VIP Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assign when their rolling 90-day purchase value is over a certain dollar amount.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-salesearcher.png"><img src="/images/server-side/whiteui-badges-salesearcher.png" width="78" height="79"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-salesearcher.png"><img src="/images/server-side/whiteui-badges-salesearcher.png" class="noshadow" width="78" height="79"/>
     </a>
-</figure> Sale Searcher</td>
+</figure><br> Sale Searcher</td>
 <td><ul><li><strong>Rule</strong> – Assigned when a visitor views more than a certain number of sale pages, no matter whether is the sales category or a product on sale.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badge-browseabandoner.png"><img src="/images/server-side/whiteui-badge-browseabandoner.png" width="78" height="77"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badge-browseabandoner.png"><img src="/images/server-side/whiteui-badge-browseabandoner.png" class="noshadow" width="78" height="77"/>
     </a>
-</figure> Search Abandoner</td>
+</figure><br> Search Abandoner</td>
 <td><ul><li><strong>Rule</strong> – A visitor who has landed on the site from a search engine and has not shown completed a common action, such as viewing at least 3 pages in the visit.</li><li><strong>Action</strong> – Determine the category searched and retarget with a Display Ad vendor.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-siteresearcher.png"><img src="/images/server-side/whiteui-badges-siteresearcher.png" width="76" height="76"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-siteresearcher.png"><img src="/images/server-side/whiteui-badges-siteresearcher.png" class="noshadow" width="76" height="76"/>
     </a>
-</figure> Site Researcher</td>
+</figure><br> Site Researcher</td>
 <td><ul><li><strong>Rule</strong> – Assign when a visitor has more than a certain number of visits to the site and the average visit duration is over a specific number of minutes.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-testuser.png"><img src="/images/server-side/whiteui-badges-testuser.png" width="78" height="77"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-testuser.png"><img src="/images/server-side/whiteui-badges-testuser.png" class="noshadow" width="78" height="77"/>
     </a>
-</figure> Test User</td>
+</figure><br> Test User</td>
 <td><ul><li><strong>Rule</strong> – Assigned when &ldquo;test&rdquo; is in the URL, or debug cookie is set, or some other criteria that indicates a test visitor.</li><li>Allows an Audience and Action to be tested in production before a campaign goes live to ensure setup is correct.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-unknownvisitor.png"><img src="/images/server-side/whiteui-badges-unknownvisitor.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-unknownvisitor.png"><img src="/images/server-side/whiteui-badges-unknownvisitor.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Unknown Visitor</td>
+</figure><br> Unknown Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assigned when the visitor has yet to authenticate on the website. Authenticate does not necessarily mean they have logged in, if a visitor comes to the site from an email and the email is in the URL then we&rsquo;ve determined who the visitor is and they have &ldquo;authenticated&rdquo;,</li><li><strong>Action</strong> – Display a modal to the visitor encouraging them to identify themselves. These visitors are more commonly targeted via Display Ad.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-recentvipvisitor.png"><img src="/images/server-side/whiteui-badges-recentvipvisitor.png" width="77" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-recentvipvisitor.png"><img src="/images/server-side/whiteui-badges-recentvipvisitor.png" class="noshadow" width="77" height="78"/>
     </a>
-</figure> VIP Visitor</td>
+</figure><br> VIP Visitor</td>
 <td><ul><li><strong>Rule</strong> – Assign when lifetime purchase value has increased to a certain dollar amount.</li></ul></td>
 </tr>
 <tr>
-<td style="text-align:center"><figure><a class="slb" href="/images/server-side/whiteui-badges-windowshopper.png"><img src="/images/server-side/whiteui-badges-windowshopper.png" width="78" height="78"/>
+<td style="text-align:center"><figure class="dib"><a class="slb" href="/images/server-side/whiteui-badges-windowshopper.png"><img src="/images/server-side/whiteui-badges-windowshopper.png" class="noshadow" width="78" height="78"/>
     </a>
-</figure> Window Shopper</td>
+</figure><br> Window Shopper</td>
 <td><ul><li><strong>Rule</strong> – A visitor who visits the site often but does not purchase, for example: a visitor who has been to the site 3 times in the last 7 days, has viewed a product details page or read an article, and has not purchased or signed up for a service.</li><li><strong>Action</strong> – Determine their affinity to a category and change the landing page of the next session to personalize the experience.</li></ul></td>
 </tr>
 </tbody>
@@ -1043,14 +1070,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  February 21, 2023 
+          <p>This page was last updated:  August 24, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -1226,6 +1253,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -1335,6 +1372,12 @@ No</button>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/server-side/data-insights/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Data Insights
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/server-side/save-publish/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Save and publish
       </a>
@@ -1361,6 +1404,12 @@ No</button>
       <li  class="tl dib ma0 hover-bg-primary w-100">
       <a href="https://docs-preview.tealium.com/server-side/frequently-asked-questions/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
           Frequently Asked Questions
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/server-side/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Release notes
       </a>
       </li>
       

@@ -26,6 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "server-side-connectors",
+    reading_time  : "7",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -201,7 +202,9 @@ var utag_data = {
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/server-side-connectors/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Server-Side Connectors</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+  <ul class="list pa0"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-server-side-connectors">Release Notes</a>
+      </li><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/server-side-connectors/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Server-Side Connectors</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/acoustic-campaign-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-campaign-connector">Acoustic Campaign (Experiment)</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/acoustic-exchange-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-exchange-connector">Acoustic Exchange</a>
@@ -237,6 +240,10 @@ var utag_data = {
         <a href="/server-side-connectors/airship-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".airship-connector">Airship</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/algolia-insights-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".algolia-insights-connector">Algolia Insights</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/amazon-ads-audience-management-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-ads-audience-management-connector">Amazon Ads Audience Management</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/amazon-ads-conversions-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-ads-conversions-connector">Amazon Ads Conversions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/amazon-advertising-dsp-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".amazon-advertising-dsp-connector">Amazon Advertising DSP</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -404,6 +411,8 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/google-display-video-360-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".google-display-amp-video-360-connector-setup-guide">Google Display and Video 360</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".google-sa360-enhanced-conversions-connector">Google SA360 Enhanced Conversions</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/google-sheets-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".google-sheets-connector">Google Sheets</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/heap-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".heap-connector">Heap</a>
@@ -493,6 +502,8 @@ var utag_data = {
         <a href="/server-side-connectors/moengage-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".moengage-connector">MoEngage</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/monetate-personalization-engine-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".monetate-personalization-engine-connector">Monetate Personalization Engine</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/movable-ink-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".movable-ink-connector">Movable Ink</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/new-relic-browser-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".new-relic-browser-connector">New Relic Browser</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -594,8 +605,6 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/singular-events-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".singular-events-connector">Singular Events</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/sizmek-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".sizmek-connector">Sizmek</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/slack-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".slack-connector">Slack</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/smart-digital/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".smart-digital-connector">Smart Digital</a>
@@ -630,9 +639,11 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/tiktok-audiences-connector-setup-guide/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-audiences-connector-setup-guide">TikTok Audiences</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side-connectors/tiktok-audiences-tealium-provided-credentials-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-audiences-tealium-provided-credentials-connector-setup-guide">TikTok Audiences (Tealium-Provided Credentials)</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/tiktok-events-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-events-connector">TikTok Events</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side-connectors/tiktok-offiline-events-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-offline-events-connector">TikTok Offline Events</a>
+        <a href="/server-side-connectors/tiktok-offline-events-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".tiktok-offline-events-connector">TikTok Offline Events</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side-connectors/trbo-connector/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".trbo-connector">trbo</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -713,6 +724,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       This article describes how to set up the Google Analytics 4 Measurement Protocol connector.
     </p>
@@ -720,8 +733,7 @@ var utag_data = {
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>This article describes how to set up the Google Analytics 4 Measurement Protocol connector.</p>
-<h2 id="connector-actions">Connector Actions</h2>
+  <h2 id="connector-actions">Connector Actions</h2>
 <table>
 <thead>
 <tr>
@@ -760,7 +772,7 @@ The measurement ID associated with a stream. Found in the Google Analytics UI un
 <li><strong>Firebase App ID (Optional)</strong><br>
 The Firebase App ID. The identifier for a Firebase app. Found in the Firebase console under: <strong>Project Settings &gt; General &gt; Your Apps &gt; App ID</strong>.</li>
 </ul>
-<h2 id="action-parameters-and-options">Action parameters and options</h2>
+<h2 id="action-settings---parameters-and-options">Action Settings - parameters and options</h2>
 <p>Enter a name for the action and select the action type from the drop-down menu.</p>
 <p>The following section describes how to set up parameters and options for each action.</p>
 <h3 id="mapping-client-id">Mapping client ID</h3>
@@ -771,7 +783,7 @@ The Firebase App ID. The identifier for a Firebase app. Found in the Firebase co
 <li><a href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookies-user-id#getting_the_client_id_from_the_cookie">Google Analytics &gt; Getting the Client ID from the cookie</a>.</li>
 <li><a href="https://developers.google.com/analytics/devguides/collection/protocol/v1/parameters#cid">Google Analytics Measurement Protocol &gt; Parameter Reference &gt; Client ID</a>.</li>
 </ul>
-<h3 id="send-pageview-event-gtagjs">Send PageView Event (gtag.js)</h3>
+<h3 id="action---send-pageview-event-gtagjs">Action - Send PageView Event (gtag.js)</h3>
 <h4 id="parameters">Parameters</h4>
 <table>
 <thead>
@@ -895,7 +907,7 @@ The Firebase App ID. The identifier for a Firebase app. Found in the Firebase co
 </tr>
 </tbody>
 </table>
-<h3 id="send-event-gtagjs">Send Event (gtag.js)</h3>
+<h3 id="action---send-event-gtagjs">Action - Send Event (gtag.js)</h3>
 <h4 id="parameters-1">Parameters</h4>
 <table>
 <thead>
@@ -1015,7 +1027,7 @@ The Firebase App ID. The identifier for a Firebase app. Found in the Firebase co
 </tr>
 </tbody>
 </table>
-<h3 id="send-firebase-event">Send Firebase Event</h3>
+<h3 id="action---send-firebase-event">Action - Send Firebase Event</h3>
 <h4 id="parameters-2">Parameters</h4>
 <table>
 <thead>
@@ -1191,14 +1203,14 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  May 2, 2023 
+          <p>This page was last updated:  September 7, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
       </div>
     </article>
 
-    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns">
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
       
 
 
@@ -1207,11 +1219,11 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#connector-actions">Connector Actions</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#configure-settings">Configure Settings</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-parameters-and-options">Action parameters and options</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action-settings---parameters-and-options">Action Settings - parameters and options</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#mapping-client-id">Mapping client ID</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#send-pageview-event-gtagjs">Send PageView Event (gtag.js)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#send-event-gtagjs">Send Event (gtag.js)</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#send-firebase-event">Send Firebase Event</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-pageview-event-gtagjs">Action - Send PageView Event (gtag.js)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-event-gtagjs">Action - Send Event (gtag.js)</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#action---send-firebase-event">Action - Send Firebase Event</a></li>
               </nav>
   </aside></nav>
 
@@ -1384,6 +1396,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -1420,6 +1442,11 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
+  
+  
+  
+  
   
   
   

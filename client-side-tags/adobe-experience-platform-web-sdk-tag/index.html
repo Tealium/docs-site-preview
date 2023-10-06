@@ -26,7 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "client-side-tags",
-    reading_time  : "14",
+    reading_time  : "15",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -202,7 +202,9 @@ var utag_data = {
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0"><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+  <ul class="list pa0"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/client-side-tags/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-client-side-tags">Release notes</a>
+      </li><li class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/client-side-tags/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Client-Side Tags</span></a></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/6sense/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".6sense-tag">6sense</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/client-side-tags/acoustic-digital-analytics-tag/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".acoustic-digital-analytics-tag">Acoustic Digital Analytics</a>
@@ -792,6 +794,8 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
+
+  
     <p class="f4 fw3 lh-copy">
       This article describes how to set up the Adobe Experience Platform Web SDK tag.
     </p>
@@ -921,7 +925,7 @@ var utag_data = {
 <p>The Adobe Analytics tag is a legacy tag replaced by the Adobe Experience Platform Web SDK tag. The Adobe Experience Platform Web SDK tag sends data to Adobe Analytics by translating the Experience Data Model (XDM) into an Adobe Analytics format.</p>
 <p>The Adobe Experience Platform Web SDK tag supports legacy variables, properties, and events.</p>
 <h3 id="code-comparison">Code comparison</h3>
-<p>The following examples show the structural differences between calls for Adobe Analytics and Adobe Experience Platform Web SDK:</p>
+<p>The following examples show the structural differences between calls in Adobe Analytics and Adobe Experience Platform Web SDK:</p>
 <h4 id="adobe-analytics">Adobe Analytics</h4>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#75715e">// Load the AppMeasurement library
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">var</span> <span style="color:#a6e22e">s</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">AppMeasurement</span>();
@@ -966,8 +970,34 @@ var utag_data = {
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">hellow</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value3&#34;</span>,
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>  });
-</span></span></code></pre></div><h3 id="migrate-the-adobe-analytics-tag">Migrate the Adobe Analytics tag</h3>
-<p>To migrate from the Adobe Analytics tag to the Adobe Experience Platform Web SDK tag, complete the following steps.</p>
+</span></span></code></pre></div><h3 id="migrate-the-adobe-analytics-tag-using-tealium-tools">Migrate the Adobe Analytics tag using Tealium Tools</h3>
+<p>Using the Adobe Experience Platform Web SDK Migrator tool, you can migrate existing Adobe Analytics AppMeasurement tags into the Adobe Experience Platform Web SDK tag.</p>
+<p>Before using the Migrator Tool, note the following limitations:</p>
+<ul>
+<li>This tool does not migrate doPlugins or extensions. If your configuration uses doPlugins or extensions, you will need to migrate those manually. For instructions on migrating these elements, see the <a href="https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#modifying-events-globally">Migrate events globally</a> section of the Adobe documentation).</li>
+<li>The <code>link_name</code> and <code>link_trackvars</code> variables are not supported.</li>
+<li><code>products</code> variables must to be split into different attributes before they can be manually mapped as per Adobe specifications in the Adobe Experience Platform Web SDK tag. For more information, see <a href="https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en">products</a> in the Adobe documentation.</li>
+<li>Any events and attributes that do not automatically migrate with the tool will have an empty mapping. You can manually map these empty attributes using the <a href="#migrate-the-adobe-analytics-tag-manually">Migrate the Adobe Analytics tag manually</a> guide.</li>
+</ul>
+<p>Complete the following steps to migrate your Adobe Analytics tag using Tealium Tools:</p>
+<ol>
+<li>Add the Adobe Experience Platform Web SDK Migrator to your Tealium Tools using the JSON definition at the following URL: <a href="https://solutions.tealium.net/hosted/tealiumTools/aep_migrate/aep_migrate.json">https://solutions.tealium.net/hosted/tealiumTools/aep_migrate/aep_migrate.json</a>. For more information about adding custom tools, see <a href="/iq-tag-management/tealium-tools/browser-extension/#add-a-custom-tool">Manage Custom Tools</a>.</li>
+<li>Go to <strong>iQ Tag Management &gt; Tags</strong> and launch the Adobe Experience Platform Web SDK Migrator tool.</li>
+<li>To disable your existing Adobe Analytics tag as part of the migration, select <strong>Disable existing tag</strong>.</li>
+<li>Select the scope for the migration:
+<ul>
+<li>All AppMeasurement Tags</li>
+<li>All Active AppMeasurement Tags</li>
+<li>Specific AppMeasurement Tag (You will need to add the tag UID for the tag you want to migrate.)</li>
+</ul>
+</li>
+<li>Click <strong>Start</strong>.<br>
+The Migrator tool will automatically migrate existing Adobe Analytics AppMeasurement tags into the Adobe Experience Platform Web SDK tag.</li>
+<li>Save and publish your profile.</li>
+</ol>
+<p>If your configuration uses doPlugins or extensions, you will need to migrate those manually (see below).</p>
+<h3 id="migrate-the-adobe-analytics-tag-manually">Migrate the Adobe Analytics tag manually</h3>
+<p>To migrate from the Adobe Analytics tag to the Adobe Experience Platform Web SDK tag manually, complete the following steps.</p>
 <p>This migration guide uses the following example data mappings in the Adobe Analytics tag:</p>
 <figure><a class="slb" href="/images/client-side-tags/adobe-analytics-migration-example1.png"><img src="/images/client-side-tags/adobe-analytics-migration-example1.png"
          alt="Adobe Analytics migration example data mappings"
@@ -980,7 +1010,7 @@ var utag_data = {
     </a>
 </figure>
 <ol>
-<li>Navigate to the Tag Marketplace to add a new Adobe Experience Platform Web SDK tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</li>
+<li>Go to the Tag Marketplace to add a new Adobe Experience Platform Web SDK tag. For more information, see <a href="/iq-tag-management/tags/about/">About tags</a>.</li>
 <li>Configure the following tag settings in Tealium:
 <ul>
 <li><strong>Org ID</strong>: Your Adobe-assigned Experience Cloud organization ID. For example, <code>XXX@AdobeOrg</code>.</li>
@@ -989,7 +1019,7 @@ var utag_data = {
 </li>
 <li>Configure the following settings in Adobe Experience Platform:
 <ol>
-<li>Navigate to <strong>Datastreams</strong> and select the datastream you want to use in the migration.</li>
+<li>Go to <strong>Datastreams</strong> and select the datastream you want to use in the migration.</li>
 <li>In your Datastream <strong>Configure</strong> screen, note the <strong>Event Schema</strong> used in your datastream and click <strong>Save</strong>. <figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-datastreams.png"><img src="/images/client-side-tags/adobe-experience-platform-datastreams.png"
          alt="Adobe Experience Platform Datastreams"
          title="Adobe Experience Platform Datastreams"/>
@@ -1005,7 +1035,7 @@ var utag_data = {
          title="Adobe Experience Platform Service enabled"/>
     </a>
 </figure></li>
-<li>Navigate to <strong>Data Management &gt; Schemas</strong> and select the <strong>Event Schema</strong> that is linked to your datastream.</li>
+<li>Go to <strong>Data Management &gt; Schemas</strong> and select the <strong>Event Schema</strong> that is linked to your datastream.</li>
 <li>Ensure that <strong>Field Groups</strong> includes the <strong>Adobe Analytics ExperienceEvent Template</strong> field group. <figure><a class="slb" href="/images/client-side-tags/adobe-experience-platform-schemas.png"><img src="/images/client-side-tags/adobe-experience-platform-schemas.png"
          alt="Adobe Experience Platform Schemas"
          title="Adobe Experience Platform Schemas"/>
@@ -1013,10 +1043,10 @@ var utag_data = {
 </figure></li>
 </ol>
 </li>
-<li>In this example you would map the following legacy attributes, properties, and events to the Adobe Experience Platform Web SDK tag in Tealium. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.
+<li>In this example, you would map the following legacy attributes, properties, and events to the Adobe Experience Platform Web SDK tag in Tealium. For more information, see <a href="/iq-tag-management/data-mappings/about/">About data mappings</a>.
 <ol>
-<li>In the Adobe Experience Platform Web SDK tag, navigate to <strong>Data Mappings</strong>.</li>
-<li>Select the <strong>sf (js)</strong> variable and map to <strong>Analytics eVars &gt; evar181</strong> and click <strong>Done</strong>.</li>
+<li>In the Adobe Experience Platform Web SDK tag, go to <strong>Data Mappings</strong>.</li>
+<li>Select the <strong>sf (js)</strong> variable and map it to <strong>Analytics eVars &gt; evar181</strong> then click <strong>Done</strong>.</li>
 <li>Select the <strong>page_category (js)</strong> variable and map to <strong>Analytics Props &gt; prop5</strong> and lick <strong>Done</strong>.</li>
 <li>Select the <strong>medallia_custom_event(js)</strong> variable and <strong>XDM Event Trigger</strong>. Configure the mapping using the following values and click <strong>Done</strong>:
 <ul>
@@ -1029,7 +1059,7 @@ var utag_data = {
 <li>Select the <strong>page_category (js)</strong> variable and configure the mapping using the following values and click <strong>Done</strong>:
 <ul>
 <li>Add <code>xdm._experience.analytics.customDimension</code> and <code>data.channel</code> as custom destinations.</li>
-<li>Navigate to <strong>Non-XDM/Custom Schema</strong> and for <strong>Non-XDM/Custom Schema Path</strong> enter <strong>channel</strong>.</li>
+<li>Go to <strong>Non-XDM/Custom Schema</strong> and for <strong>Non-XDM/Custom Schema Path</strong> enter <strong>channel</strong>.</li>
 </ul>
 </li>
 </ol>
@@ -2455,7 +2485,8 @@ No</button>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#blank-page-error-when-using-a-cookie-management-solution">Blank page error when using a Cookie Management Solution</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adobe-analytics-migration-guide">Adobe Analytics migration guide</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#code-comparison">Code comparison</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#migrate-the-adobe-analytics-tag">Migrate the Adobe Analytics tag</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#migrate-the-adobe-analytics-tag-using-tealium-tools">Migrate the Adobe Analytics tag using Tealium Tools</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#migrate-the-adobe-analytics-tag-manually">Migrate the Adobe Analytics tag manually</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tag-configuration">Tag configuration</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#load-rules">Load rules</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#data-mappings">Data mappings</a></li>
@@ -2646,6 +2677,16 @@ No</button>
   
   
   
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
+        </a>
+    </li>
+  
+  
+  
+  
+  
   
   
   
@@ -2682,6 +2723,7 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
   
   
   
