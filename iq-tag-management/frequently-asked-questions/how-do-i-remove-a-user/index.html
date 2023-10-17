@@ -569,6 +569,8 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/iq-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-dashboard">Tealium iQ Dashboard</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/administration/login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".login">Log in to Tealium</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".consent-management">Consent management</a>
@@ -607,7 +609,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/event-logging/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-logging-for-consent-management">Event logging</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-consent-management">Release notes</a>
+        <a href="/iq-tag-management/consent-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-consent-management">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".consent-integrations">Consent Integrations</a>
@@ -665,9 +667,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-use-an-array-variable-in-a-load-rule/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-use-an-array-variable-in-a-load-rule">How do I use an array variable in a load rule?</a>
       </li></ul>
-      </li></ul></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-tiq-tag-management">Release notes</a>
-      </li></ul>
+      </li></ul></li></ul>
 </nav>
 </div>
     
@@ -705,8 +705,6 @@ var utag_data = {
 
 <div class="mv2 mid-gray fn w-100">
   
-
-  
     <p class="f4 fw3 lh-copy">
       This article describes how to remove a user from your account.
     </p>
@@ -719,8 +717,10 @@ var utag_data = {
 <h2 id="answer">Answer</h2>
 <p>If you have a user that should no longer have access to your account, use the <a href="/iq-tag-management/administration/user-permissions/about/">Manage Users</a> admin tool to remove their Save and Publish privileges.</p>
 <p>If you want to completely remove the user from your account, follow these steps:</p>
+<h3 id="platform-permissions-system">Platform permissions system</h3>
+<p>See <a href="/administration/users/">Users</a>.</p>
+<h3 id="legacy-permissions-system">Legacy permissions system</h3>
 <ol>
-<li>Log into iQ Tag Management.</li>
 <li>In the admin menu, click <strong>Manage Users</strong>. The <strong>User Manager</strong> dialog displays a list of users.</li>
 <li>Select the boxes to the left of the user or users you want to remove.</li>
 <li>Click the <strong>More</strong> drop down list and select <strong>Remove User</strong>.</li>
@@ -786,7 +786,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 27, 2023 
+          <p>This page was last updated:  October 10, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -918,6 +918,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Administration
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium for Pharma
         </a>
@@ -960,14 +968,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Early Access
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Release Notes
         </a>
     </li>
   
@@ -1114,7 +1114,6 @@ No</button>
       </li>
       
       
-  
   
 
 </ul>

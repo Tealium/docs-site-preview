@@ -569,6 +569,8 @@ var utag_data = {
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/administration/iq-dashboard/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-dashboard">Tealium iQ Dashboard</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/iq-tag-management/administration/login/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".login">Log in to Tealium</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".consent-management">Consent management</a>
@@ -607,7 +609,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/consent-management/event-logging/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".event-logging-for-consent-management">Event logging</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/consent-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-consent-management">Release notes</a>
+        <a href="/iq-tag-management/consent-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-consent-management">Release Notes</a>
       </li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".consent-integrations">Consent Integrations</a>
@@ -665,9 +667,7 @@ var utag_data = {
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/iq-tag-management/frequently-asked-questions/how-do-i-use-an-array-variable-in-a-load-rule/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".iq-how-do-i-use-an-array-variable-in-a-load-rule">How do I use an array variable in a load rule?</a>
       </li></ul>
-      </li></ul></li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/iq-tag-management/release-notes/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".release-notes-tiq-tag-management">Release notes</a>
-      </li></ul>
+      </li></ul></li></ul>
 </nav>
 </div>
     
@@ -704,8 +704,6 @@ var utag_data = {
 </header>
 
 <div class="mv2 mid-gray fn w-100">
-  
-
   
     <p class="f4 fw3 lh-copy">
       The Workflow Management feature activates a workflow process where all publishes to the Prod require approval.
@@ -775,7 +773,21 @@ The saved changes are not actually published to Prod, but instead are sent to a 
 </ol>
 <h2 id="adjust-user-permissions">Adjust user permissions</h2>
 <p>The workflow process is dependent on two types of users: submitters and approvers. The following sections describe how to adjust user permissions for each type of user.</p>
-<h3 id="submitter-permissions">Submitter permissions</h3>
+<h3 id="platform-permissions-system">Platform permissions system</h3>
+<p>In the platform permissions system, administrators control access to profiles and publishing through permissions groups. Permissions groups are granted the necessary permissions to features and profiles, and then users are added to those groups.</p>
+<p>To submit changes to a profile, the user will need to added to a group with the following permissions on that profile:</p>
+<ul>
+<li><strong>Publish to Dev/Custom</strong></li>
+<li><strong>Publish to QA</strong></li>
+</ul>
+<p>To approve changes to a profile, the user will need to be added to a group with Publish to prod permissions on that profile:</p>
+<ul>
+<li><strong>Publish to Prod</strong></li>
+</ul>
+<p>For more information about assigning permission groups, see <a href="/administration/permission-groups/">Permission Groups</a>.</p>
+<h3 id="legacy-permissions-system">Legacy permissions system</h3>
+<p>The following procedures explain how to set submitter and approver permissions for a user.</p>
+<h4 id="submitter-permissions">Submitter permissions</h4>
 <p>Submitters are users that cannot publish directly to Prod. Their changes must be approved through the workflow process. Submitters must have the <strong>Publish to Prod Environment</strong> permission removed. The <strong>Publish to QA Environment</strong> and <strong>Publish to Dev/Custom Environment</strong> settings should remain checked.</p>
 <p>Use the following steps to adjust user permissions for a submitter:</p>
 <ol>
@@ -805,7 +817,7 @@ A new dialog appears.</li>
 <li>Click <strong>Close</strong> to close the <strong>Edit/View User Permissions</strong> dialog.</li>
 <li>Save and Publish your changes.</li>
 </ol>
-<h3 id="approver-permissions">Approver permissions</h3>
+<h4 id="approver-permissions">Approver permissions</h4>
 <p>Approvers are users that can publish directly to Prod, and they are responsible for reviewing pending publishes to Prod. Approvers must have the <strong>Publish to Prod Environment</strong> permission enabled. Due to the fact that all approvers receive email notifications each time a request for publish is submitted, it is best to limit the number of approvers in your profile.</p>
 <p>Use the following steps to adjust user permissions for an approver:</p>
 <ol>
@@ -936,7 +948,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 27, 2023 
+          <p>This page was last updated:  October 10, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -955,8 +967,8 @@ No</button>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#setting-up-workflow-management">Setting Up workflow management</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#enable-workflow-management">Enable workflow management</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#adjust-user-permissions">Adjust user permissions</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#submitter-permissions">Submitter permissions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#approver-permissions">Approver permissions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#platform-permissions-system">Platform permissions system</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#legacy-permissions-system">Legacy permissions system</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#workflow-example">Workflow example</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#submitting-a-publish-request">Submitting a publish request</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#approving-or-declining-a-publish-request">Approving or declining a publish request</a></li>
@@ -1085,6 +1097,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Administration
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium for Pharma
         </a>
@@ -1127,14 +1147,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Early Access
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Release Notes
         </a>
     </li>
   
@@ -1281,7 +1293,6 @@ No</button>
       </li>
       
       
-  
   
 
 </ul>
