@@ -282,7 +282,8 @@ var utag_data = {
 <h2 id="roles">Roles</h2>
 <p>You can grant the following admin roles to users in your account:</p>
 <h3 id="account-admin">Account admin</h3>
-<p>The account admin role has full access to the account. The account admin role includes all of the abilities of the other admin roles.</p>
+<p>The account admin role has full power and access to the account. The account admin role includes all account-level permissions and all profile-level permissions, including both client-side and server-side publishing permissions.</p>
+<p>In addition, Account admins control permissions enforcement on the account, which changes the account from legacy to platform permissions. For more information, see <a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a></p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>At least one user in your account must have the account admin role. If you are the only user with the account admin role in your account, you cannot remove this role from yourself.</p>
 <h3 id="user-admin">User admin</h3>
 <p>The user admin role has access to the following settings:</p>
@@ -294,6 +295,7 @@ var utag_data = {
 <li><strong>Set Password Policy</strong>: Manage the <a href="/iq-tag-management/administration/security/password-policy/">password policy</a> for the account.</li>
 <li><strong>SSO Management</strong>: Enable, disable, and manage <a href="/iq-tag-management/administration/security/sso/">Single-Sign On (SSO)</a>.</li>
 </ul>
+<p>Also, the user admin role can view all profiles on the account.</p>
 <h3 id="technical-admin">Technical admin</h3>
 <p>The technical admin role has access to the following settings:</p>
 <ul>
@@ -308,7 +310,7 @@ var utag_data = {
 <li><strong>Tag Marketplace Policy</strong>: Enable, disable, and configure the <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/">tag marketplace policy</a> to control which tags are available for use on this account.</li>
 </ul>
 <h3 id="profile-admin">Profile admin</h3>
-<p>The profile admin role has access to manage profiles and profile settings. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group.</p>
+<p>The profile admin role has access to manage profiles and profile settings. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group, which the profile admin can set.</p>
 <ul>
 <li><strong>Create New Profile</strong>: Create new profiles and assign permissions groups to them.</li>
 <li><strong>Manage Profile Libraries</strong>: <a href="/iq-tag-management/profiles/profile-libraries/">Manage profile libraries</a>.</li>
@@ -316,193 +318,6 @@ var utag_data = {
 </ul>
 <h3 id="account-viewer">Account viewer</h3>
 <p>The account viewer role can view everything in the account with read-only access. It is intended for auditing or legal review purposes.</p>
-<h2 id="permissions-matrix">Permissions matrix</h2>
-<table>
-<thead>
-<tr>
-<th></th>
-<th>Account Admin</th>
-<th>Privacy Admin</th>
-<th>Profile Admin</th>
-<th>Technical Admin</th>
-<th>User Admin</th>
-<th>Account viewer</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Accounts</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>First-Party Domains</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>GitHub Account</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Global Consent Management</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Initiate CDN Purge Request</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>MFA Reset For Others</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View, Edit</td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>MFA Toggle</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View, Edit</td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Password Policy</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Permission Groups</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View, Create, Edit</td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>PII and Restricted Data</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Permissions Enforcement</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Profile Libraries</strong></td>
-<td>View, Create, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Profiles</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td>View, Create, Edit</td>
-<td></td>
-<td>View</td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>SSO</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Tag Marketplace Policy</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>iQ Profile Publish Dev</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td>Edit</td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>iQ Profile Publish Prod</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td>Edit</td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>iQ Profile Publish QA</strong></td>
-<td>View, Edit</td>
-<td></td>
-<td>Edit</td>
-<td></td>
-<td></td>
-<td>View</td>
-</tr>
-<tr>
-<td><strong>Users</strong></td>
-<td>View, Create, Edit, Delete</td>
-<td></td>
-<td></td>
-<td></td>
-<td>View, Create, Edit</td>
-<td>View</td>
-</tr>
-</tbody>
-</table>
 <h2 id="manage-a-users-admin-roles">Manage a user’s admin roles</h2>
 <p>To edit a user’s admin roles:</p>
 <ol>
@@ -575,7 +390,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  October 10, 2023 
+          <p>This page was last updated:  October 17, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -598,8 +413,7 @@ No</button>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#privacy-admin">Privacy admin</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#profile-admin">Profile admin</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#account-viewer">Account viewer</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#permissions-matrix">Permissions matrix</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manage-a-users-admin-roles">Manage a user’s admin roles</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manage-a-users-admin-roles">Manage a user’s admin roles</a></li>
               </nav>
   </aside></nav>
 
