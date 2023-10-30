@@ -6,7 +6,7 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
      
-    <title>Permission groups | Platform Administration | Preview of Tealium Developer Docs</title>
+    <title>Plan | Platform Permissions Migration Guide | Preview of Tealium Developer Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -26,7 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "administration",
-    reading_time  : "6",
+    reading_time  : "13",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -207,18 +207,18 @@ var utag_data = {
         <a href="/administration/about-permissions/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-platform-permissions">About platform permissions</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/administration/admin-roles/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".admin-roles">Admin roles</a>
-      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/administration/permission-groups/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".permission-groups">Permission groups</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/administration/permission-groups/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permission-groups">Permission groups</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/administration/users/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".users">Users</a>
-      </li><li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2  " data-target=".platform-permissions-migration-guide">Platform Permissions Migration Guide</a>
-        <ul class=" platform-permissions-migration-guide desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+      </li><li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  pl0 pr2 primary-color expanded " data-target=".platform-permissions-migration-guide">Platform Permissions Migration Guide</a>
+        <ul class="bl b--primary bw1 pl2 platform-permissions-migration-guide desktopmenu animated fadeIn list "><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/administration/permissions-system-migration-guide/migration-about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-about">About Migration</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/administration/permissions-system-migration-guide/strategy/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-strategy">Strategy</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/administration/permissions-system-migration-guide/plan/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-plan">Migration Plan</a>
+      </li><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/administration/permissions-system-migration-guide/plan/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".permissions-system-migration-guide-plan">Migration Plan</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/administration/permissions-system-migration-guide/deployment-strategies/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".permissions-system-migration-guide-deployment-strategies">Deployment Strategies</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -236,13 +236,19 @@ var utag_data = {
 
     
     
+    
   
   <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
   
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/administration/">Administration</a></li>
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/administration/">Administration</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/administration/permissions-system-migration-guide/">Platform Permissions Migration Guide</a></li>
   
 
   
@@ -251,171 +257,457 @@ var utag_data = {
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Permission groups</h1>
+<h1 class="lh-title mt30 mb3">Plan</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
   
     <p class="f4 fw3 lh-copy">
-      This article describes how to manage permission groups in the platform permissions system.
+      This document describes how to plan your migration to the platform permissions system.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="how-it-works">How it works</h2>
-<p>A permission group consists of the following components:</p>
+  <h2 id="export-users">Export Users</h2>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This feature requires Manage Account permissions on the account and Manage Users permissions on every profile. The file only contains users and legacy user permissions in profiles that the currently logged-in user has Manage Users permissions on. If permissions enforcement has been turned on, this button no longer appears.</p>
+<p>The export users feature allows you to download a comma-separated value (CSV) file with the account&rsquo;s users, profiles, and legacy user permissions for each profile. This makes it easy to audit your users and their permissions to build permission groups and assign admin roles in the platform permissions system.</p>
+<ol>
+<li>In the client-side admin menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
+<li>Click <strong>Export Users</strong>.</li>
+</ol>
 <ul>
-<li>A list of users.</li>
-<li>A list of profiles and access levels on those profiles.</li>
-<li>A list of product features and permissions for those product features, which includes publishing rights for client-side profiles.</li>
-<li>Publishing rights for server-side profiles.</li>
+<li>In the admin menu, click <strong>Manage Users</strong>. When the <strong>Manage Users</strong> dialog appears, click <strong>Export Users</strong>.</li>
+<li>In the admin menu, click <strong>Manage Permissions</strong> and then click the <strong>Users</strong> tab. When the <strong>Users</strong> table appears, click <strong>Export Users</strong>.</li>
 </ul>
-<p>Permission groups can be granted the following feature permissions:</p>
-<ul>
-<li><strong>No Access</strong>: The permission group does not have access to the feature and it will not appear in their navigation.</li>
-<li><strong>View</strong>: The permission group can view the feature and data it contains, but they cannot edit it.</li>
-<li><strong>View &amp; Edit</strong>: The permission group can view the feature and data it contains, and they can edit the data.</li>
-<li><strong>View, Edit, &amp; Delete</strong>: The permission group can view the feature and the data it contains, and they can edit or delete the data.</li>
-</ul>
-<figure><a class="slb" href="/images/administration/permission-groups-products-features-example.png"><img src="/images/administration/permission-groups-products-features-example.png"
-         alt="Products and Features exmaple"
-         title="Products and Features exmaple"/>
+<p>The CSV file lists permission values as <code>TRUE</code> or <code>FALSE</code>.</p>
+<p>The following screenshot demonstrates a downloaded CSV file imported into a Google Sheet, with minor formatting adjustments on row 1 and <code>TRUE</code> and <code>FALSE</code> entries changes to <code>Y</code> and <code>N</code> for readability:</p>
+<figure><a class="slb" href="/images/platform-permissions/permissionssystemmigrationguide-1.png"><img src="/images/platform-permissions/permissionssystemmigrationguide-1.png"/>
     </a>
 </figure>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Users that have <strong>View &amp; Edit</strong> or <strong>View, Edit &amp; Delete</strong> permission also have <strong>Save</strong> permission for their changes to a profile.</p>
-<p>The interface changes based on the user&rsquo;s permissions:</p>
 <ul>
-<li>If a user does not have access to a product, that product does not appear in the navigation.</li>
-<li>If a user has access to some features, but not others, they only see the features they can access in the navigation.</li>
-<li>If a user does not have edit permission for a feature, the <strong>Edit</strong> button does not appear on pages for that feature.</li>
+<li>For instructions on how to install and use the Tealium Tool Browser Extension, see <a href="/iq-tag-management/tealium-tools/browser-extension/">Tealium Tools Browser Extension</a>.</li>
+<li>For instructions on how to install and use the User Permissions Exporter, see <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363500-tealium-tool-user-permissions-exporter">Tealium Tool User Permissions Exporter</a>.</li>
 </ul>
-<p>A permission group can also be granted publishing rights for server-side profiles. Users who are members of a permission group with server-side publishing rights have full access to all server-side products and features in addition to any other permissions they receive from that or other permission groups.</p>
-<p>For more information, see <a href="/administration/about-permissions/">About platform permissions</a>.</p>
-<h3 id="product-features">Product features</h3>
-<p>Product access is divided into feature permissions.</p>
-<p>For example, access to AudienceStream is divided into the following feature permissions:</p>
-<ul>
-<li>Dashboard</li>
-<li>Discovery/Sizing</li>
-<li>Audiences</li>
-<li>Audience Connectors</li>
-<li>Visitor/Visit Attributes</li>
-</ul>
-<h4 id="permissions-to-features-in-multiple-products">Permissions to features in multiple products</h4>
-<p>Carefully consider when you set a user to <strong>No Access</strong> for a feature or product. If you disable feature access for a user, that user cannot access the feature or any other features that depend on it. For example:</p>
-<ul>
-<li>If you set a user to <strong>No Access</strong> for AudienceStream, that user cannot select an audience to action in an AudienceStream connector.</li>
-<li>If you set a user to <strong>No Access</strong> for server-side labels, the user does not see labels on the server-side. They can still access connectors or other elements with labels on them, but they cannot see or edit the labels themselves.</li>
-</ul>
-<h3 id="publishing-permissions">Publishing permissions</h3>
-<p>Permission groups also manage publishing permissions on the client-side and server-side.</p>
-<ul>
-<li>On the client-side, set publishing rights with the <strong>Publish to Dev/Custom</strong>, <strong>Publish to QA</strong>, and <strong>Publish to Prod</strong> feature permissions.</li>
-<li>On the server-side, set publishing rights on the <strong>Group Permissions</strong> tab of the permission group.</li>
-</ul>
-<p>Permission groups have publishing rights on the profiles to which you give them access.</p>
-<!-- #### Publishing changes to features in multiple products
-
-If you disable a product for a user, but the user has server-side publish permission and access to another product that shares features with the first product, the user can still publish changes to those shared features. For example, EventStream and AudienceStream share some features, such as rules and labels.
-
-If a user has publish permission and only has access to EventStream, they can publish changes made to rules and labels in EventStream, and those changes also affect AudienceStream. Similarly, if a user has publish permission and only has access to AudienceStream, their published changes to rules and labels also affect EventStream. -->
-<h3 id="users-in-multiple-permission-groups">Users in multiple permission groups</h3>
-<p>Access rights to profiles are cumulative. The user always receives the highest level of access granted by their permission groups, even if the permission groups have conflicting permissions.</p>
-<p>For example, Group A has <strong>View</strong> permissions on a profile, while Group B has <strong>View &amp; Edit</strong> permissions on that profile. A user in both Group A and Group B has <strong>View &amp; Edit</strong> permissions on that profile.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>A user with the profile admin role has full permission on all profiles in the account.</p>
-<h3 id="default-permission-groups">Default permission groups</h3>
-<p>To get you started with permission groups, the system creates the following default permission groups:</p>
-<ul>
-<li><strong>Viewers</strong>: Viewing permissions on all products and features in the account.</li>
-<li><strong>Editors</strong>: Edit permissions on all products and features in the account.</li>
-<li><strong>Publishers</strong>: Publish permissions for versions on client-side and server-side.</li>
-</ul>
-<p>Add users and assign profiles to these default permission groups or create and configure your own groups.</p>
-<h2 id="manage-permission-groups">Manage permission groups</h2>
-<p>To manage permission groups, in the admin menu, click <strong>Manage Permissions</strong>. The <strong>Manage Permissions</strong> screen appears, displaying the <strong>Groups</strong> table.</p>
-<h3 id="view-a-permission-group">View a permission group</h3>
-<p>Click a permission group to display that permission group&rsquo;s details. Click one of the following tabs to display more details about that permission group:</p>
-<ul>
-<li><strong>Users</strong>: Lists the users who are a member of the permission group.</li>
-<li><strong>Features</strong>: Lists the features for each product and the group member permissions for those features.</li>
-<li><strong>Profiles</strong>: Lists the profiles and the group member permissions for those profiles.</li>
-</ul>
-<h3 id="create-a-permission-group">Create a permission group</h3>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>To create or edit a permission group, you must have the account admin or the user admin role. To add a permission group to a profile, you must have the account admin or the profile admin role.</p>
-<p>To create a permission group, set the access level for each product feature, and then invite users to join the account and the permission group:</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Manage Site Scans appears in the exported data. It is a legacy function, and you do not need it for migration purposes.</p>
+<p>In this example, <strong>user3</strong> appears three times in the <strong>User</strong> column. Unlike the other users, who have the same permission on all the profiles on the account, <strong>user3</strong> has different permissions on the profiles <strong>Website A</strong>, <strong>Website B</strong>, and <strong>Website C</strong>. Because of this, separate rows in the spreadsheet contain <strong>user3</strong>’s profile permissions.</p>
+<h2 id="manual-inventory-of-client-side-and-server-side-users-and-permissions">Manual inventory of client-side and server-side users and permissions</h2>
+<p>If you cannot use an automatic export or prefer to perform a manual inventory, you need to manually collect each user’s permissions on the client-side.</p>
+<h3 id="client-side">Client-side</h3>
+<p>Perform the following steps to export each users’ permissions on the client-side:</p>
 <ol>
-<li>From the admin menu, click <strong>Manage Permissions</strong>. The <strong>Manage Permissions</strong> screen appears.</li>
-<li>Click <strong>+ New Group</strong>. The <strong>New Permission Group</strong> slideout appears.</li>
-<li>In the <strong>Name</strong> box, enter a name for the permission group.</li>
-<li>Select what the permission group initially contains:
+<li>In the client-side admin menu, click <strong>Manage Users</strong>. The table displays a list of users on the account with their general permissions.</li>
+<li>Create a spreadsheet and label the first column <strong>Users</strong>.</li>
+<li>In the spreadsheet, add the user list to the first column.</li>
+<li>In the spreadsheet, label the second column <strong>Profile</strong>.</li>
+<li>Click the first account.</li>
+<li>Click <strong>Edit/View User Settings</strong>. The dialog box displays the user’s permissions on the account and on each profile (Full, Partial, or None).</li>
+<li>In the spreadsheet, create three new columns with this information and note the column names to use later when you are setting up the Manage Account and Manage Users admin roles:<br>
 <ul>
-<li><strong>Blank Group</strong> - Start a permission group without any existing settings.</li>
-<li><strong>Duplicate an Existing Group</strong> - Start a new permission group with the same permissions, profiles, and users of the permission group that you select.</li>
+<li><strong>Account</strong></li>
+<li><strong>Profiles</strong></li>
+<li><strong>JavaScript Code</strong></li>
 </ul>
 </li>
-<li>Click <strong>Next</strong>. The <strong>Set Account Permissions</strong> slideout appears.</li>
-<li>If you want to give the group permission to publish profile changes, under <strong>Server-Side</strong> select <strong>Publish.</strong> Remember that server-side publishing rights include full access to all server-side products and features.</li>
-<li>Select the products you want the permission group to access.</li>
-<li>Click <strong>Next</strong>. The <strong>Feature Permissions</strong> slideout appears.</li>
-<li>Under <strong>Feature Permissions</strong>, select the access level for each product feature.
+<li>Click <strong>Close</strong>.</li>
+<li>Click <strong>Edit/View User Permissions</strong>. The dialog box displays the Account, Profiles, and JavaScript permissions (You already have this information).</li>
+<li>Click <strong>Next</strong>.</li>
+<li>Select <strong>Select from Currently Assigned Profile(s)</strong>.</li>
+<li>Select each profile from the drop-down box and click <strong>Next</strong>. The dialog box displays the user’s permissions on every profile.</li>
+<li>If the user has the same permissions on every profile, put <strong>All</strong> in the <strong>Profile</strong> column of the spreadsheet and note the user’s permissions. If the user has different permissions on profiles, duplicate the user’s row in the spreadsheet so each line represents a different profile, enter the profile names in the <strong>Profile</strong> column, and note their permissions in columns titled:
 <ul>
-<li>Some features appear in multiple products, such as access to connectors. Feature access levels apply to the feature, regardless of which product it appears in.</li>
-<li><strong>Edit</strong> access for a product feature includes the ability to save changes to the profile.</li>
+<li>Manage Users</li>
+<li>Manage Resource Locks</li>
+<li>Publish to Dev/Custom Environment</li>
+<li>Publish to QA Environment</li>
+<li>Publish to Prod Environment</li>
+<li>Manage Tag Templates</li>
+<li>Save Existing Versions</li>
+<li>Save As New Versions</li>
+<li>Promote to Dev/Custom Environment</li>
+<li>Promote to QA Environment</li>
+<li>Promote to Prod Environment</li>
 </ul>
 </li>
-<li>Click <strong>Next</strong>. The <strong>Profiles</strong> slideout appears.</li>
-<li>Select the profiles to allow the permission group to access.</li>
-<li>Click <strong>Next</strong>. The <strong>Add Users</strong> slideout appears.</li>
-<li>Select up to 25 users to add to the permission group.
-<ul>
-<li>To add a user who is not already on your account, you must add the user to the account first. For more information, see <a href="/administration/users/">Users</a>.</li>
-</ul>
-</li>
-<li>Click <strong>Add</strong>.
-<ul>
-<li>If you do not add any users to the permission group, a warning message appears. If you want to add users later, click <strong>Continue</strong>. Otherwise, click <strong>Cancel</strong> and add users to the permission group.</li>
-</ul>
-</li>
+<li>Click <strong>Cancel</strong>.</li>
+<li>Repeat this process for each user.</li>
 </ol>
-<p>The <strong>Manage Permissions</strong> screen appears and the new permission group appears in the list.</p>
-<h3 id="edit-a-permission-group">Edit a permission group</h3>
-<p>To edit a permission group:</p>
+<p><figure><a class="slb" href="/images/platform-permissions/permissionssystemmigrationguide-2.png"><img src="/images/platform-permissions/permissionssystemmigrationguide-2.png"/>
+    </a>
+</figure>
+You now have all the client-side user permissions.</p>
+<h3 id="server-side">Server-side</h3>
+<p>Perform the following steps to export each user’s permissions on the server-side:</p>
 <ol>
-<li>From the admin menu, click <strong>Manage Permissions</strong>. The <strong>Manage Permissions</strong> screen appears.</li>
-<li>Click the <strong>Permission Group</strong> tab.</li>
-<li>Click the permission group you want to edit. The permission group details appear.</li>
-<li>Select the information you want to edit:
+<li>In the server-side admin menu, click <strong>Manage Users</strong>. If a server-side user doesn’t already exist on the spreadsheet, add it to the first column.</li>
+<li>Click the user account.</li>
+<li>Click <strong>Next.</strong> The dialog now displays the user’s permissions in every profile.</li>
+<li>If the user has the same permissions on every profile, enter <strong>All</strong> in the <strong>Profile</strong> column and note the user’s permissions in the spreadsheet. If the user has different permissions on profiles, duplicate the user’s row in the spreadsheet so each line represents a different profile, enter the profile names in the <strong>Profile</strong> column, and note the permissions in the appropriate rows.
 <ul>
-<li><strong>Group Permissions</strong>: Set the permission group access levels for product features.</li>
-<li><strong>Users</strong>: Add or remove users from the permission group.</li>
-<li><strong>Profiles</strong>: Add or remove profiles from the permission group and set the permission group access levels for that profile.</li>
+<li><strong>No Access</strong> - Cannot access profile.</li>
+<li><strong>Reader</strong> - Read-only access to profile.</li>
+<li><strong>Editor</strong> - Edit and save the profile, but cannot publish.</li>
+<li><strong>Publisher</strong> - Editor, plus save and publish the profile. Also has full access to every server-side product and feature.</li>
 </ul>
 </li>
+<li>Click <strong>Close</strong></li>
+<li>Repeat this process for each user.</li>
 </ol>
-<h3 id="manage-user-permission-groups">Manage user permission groups</h3>
-<p>To manage permission group membership from a user’s profile:</p>
-<ol>
-<li>From the admin menu, click <strong>Manage Permissions</strong>. The <strong>Manage Permissions</strong> screen appears.</li>
-<li>Click the <strong>User</strong> tab.</li>
-<li>Click the user that you want to edit. The <strong>User Details</strong> slideout appears.</li>
-<li>Click the <strong>Group</strong> tab, and then click <strong>Edit</strong>.</li>
-<li>Select the permission groups you want to add the user to or remove them from.</li>
-<li>Click <strong>Finish</strong>.</li>
-</ol>
+<p>Based on the previous example, the following screenshot demonstrates a spreadsheet updated with server-side users and permissions:</p>
+<p>In this example, <strong>user6</strong>, <strong>user7</strong>, and <strong>user8</strong> do not have any permissions on the client-side, and they had to be added manually to the spreadsheet. Also, <strong>user7</strong> has different permissions on the server-side profiles <strong>App A</strong> and <strong>App B</strong>, so separate rows in the spreadsheet were created for <strong>user7</strong>’s profile permissions.</p>
+<p>You now have all the user permissions for client-side and server-side profiles from the legacy permissions system.</p>
+<h2 id="audit-the-spreadsheet">Audit the spreadsheet</h2>
+<p>Now that you have everyone’s permissions in a spreadsheet, check for users with too much access or not enough access to the profiles they need to perform their job. Remember that a user must be in at least one permission group to access a profile’s resources. Update the spreadsheet to reflect their actual needs.</p>
+<p>Also, be sure to remove any users who longer work for the company or require access to the account.</p>
+<h2 id="add-individual-user-needs-to-the-spreadsheet">Add individual user needs to the spreadsheet</h2>
+<p>Now that you have each user&rsquo;s profile rights on the spreadsheet, you need add some final product and data-level needs to the spreadsheet for each user:</p>
+<ul>
+<li>The level of access to PII data the user should have.</li>
+<li>The products and product features each user should be able to access.</li>
+<li>The level of access each user should have on each product feature.</li>
+</ul>
+<h3 id="pii-data-needs">PII data needs</h3>
+<p>PII Permissions control who can see PII data and who can edit the <strong>Restricted Data</strong> property that identifies PII data. Only one level of PII permissions can be assigned to a group. The three levels of PII permissions are as follows:</p>
+<ul>
+<li><strong>No PII</strong> – Users can view PII attributes, but cannot see the values of these attributes. PII is obscured wherever it is shown, including Trace and Live Events.</li>
+<li><strong>View</strong> – Users can view the values of PII attributes, data but cannot edit or manage PII data.</li>
+<li><strong>Manage &amp; View</strong> – Users can view, edit, and manage PII data.</li>
+</ul>
+<p>Note in your spreadsheet whether a user should have no access, View access, or Manage &amp; View access for PII.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>In EA and EEA, PII permissions were managed by groups. In GA, PII permissions management moved from group-based management to user-based management. PII permissions set by group in EA and EEA will automatically migrate to user-based PII permissions.</p>
+<h3 id="product-and-feature-needs">Product and feature needs</h3>
+<p>Product access permissions specify the Tealium products and features that users can access.</p>
+<p>Product access permissions are divided into feature permissions, and may vary depending on the product permissions assigned to the group, as shown in the following table.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Users that have <strong>View &amp; Edit</strong> or <strong>View, Edit &amp; Delete</strong> permission also have <strong>Save</strong> permission.</p>
+<h4 id="iq-tag-management">iQ Tag Management</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>JavaScript Extension</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Advanced JavaScript Extension - Promote to Dev</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Advanced JavaScript Extension - Promote to QA</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Advanced JavaScript Extension - Promote to Prod</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Publish to Dev/Custom</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Publish to QA</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Publish to Prod</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Save</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Publish Settings</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Code Settings</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Resource Lock</td>
+<td style="text-align:left">No Access, View, Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Client-Side Versions</td>
+<td style="text-align:left">No Access, View, View &amp; Edit</td>
+</tr>
+<tr>
+<td>Tag Templates</td>
+<td style="text-align:left">No Access, View, View &amp; Edit</td>
+</tr>
+<tr>
+<td>Tags, Extensions, Load Rules, Data Layer</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="audiencestream">AudienceStream</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Dashboard</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>Discovery/Sizing</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>Audiences</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Audience Connectors</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Visitor/Visit Attributes</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="eventstream">EventStream</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data Sources</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Event Attributes</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Event Connectors</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Event Specs</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Live Events</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Omnichannel</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="dataaccess">DataAccess</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access Keys</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>Data Insight</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>EventStore Legacy</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>AudienceDB</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>EventDB</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>AudienceStore</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>EventStore</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="predict">Predict</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>All features</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="functions">Functions</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Credentials/Authentications, Global Variables</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+</tbody>
+</table>
+<h4 id="server-side-tools">Server-Side Tools</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Manage Rules</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Visitor Delete</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Visitor Lookup</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Visitor Profile Sampler</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+</tbody>
+</table>
+<h4 id="server-side-others">Server-Side (Others)</h4>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th style="text-align:left">Available Permissions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Labels</td>
+<td style="text-align:left">No Access, View, View &amp; Edit, View Edit &amp; Delete</td>
+</tr>
+<tr>
+<td>Trace</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+<tr>
+<td>Versions</td>
+<td style="text-align:left">No Access, View</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cross-feature-permission-issues">Cross-feature permission issues</h4>
+<p>Carefully consider when you disable access to a feature or product. If you disable access to a feature for a user, that user cannot access the feature in any other features that depend on it. For example:</p>
+<ul>
+<li>If you disable access to AudienceStream audiences for a user, that user cannot select an audience to action in an AudienceStream connector.</li>
+<li>If you disable access to server-side labels for a user, the user cannot see labels on the server-side. They can access connectors or other elements with labels on them, but they cannot see or edit the labels themselves.</li>
+</ul>
+<p>If you disable a product for a user, but the user has server-side Publish permission and access to another product that shares elements with the first product, the user can still publish changes to those shared elements. For example, EventStream and AudienceStream share some elements, such as rules and labels. If a user has Publish permission and only has access to EventStream, they can publish changes to rules and labels they made in EventStream, and those changes also affect AudienceStream. Similarly, if a user has Publish permission and only has access to AudienceStream, their published changes to rules and labels also affect EventStream.</p>
+<h3 id="update-the-spreadsheet">Update the spreadsheet</h3>
+<p>Create columns in the spreadsheet for each product and feature, and mark the level of access that the user should have on each.</p>
+<figure><a class="slb" href="/images/platform-permissions/permissionssystemmigrationguide-3.png"><img src="/images/platform-permissions/permissionssystemmigrationguide-3.png"/>
+    </a>
+</figure>
+<p>Congratulations. You now have all your users&rsquo; individual needs in the spreadsheet.</p>
+<p>The next step is to organize the users into groups.</p>
+<h2 id="add-organizational-information">Add organizational information</h2>
+<p>Every organization has a unique structure, needs, and workflow. Setting permissions to match your organization&rsquo;s workflow can ensure that each person has access appropriate for their job role, and does not have access to data due to privacy regulations. So, you need to ask some questions about your users and organization to help sort them into groups.</p>
+<p>Here are some suggestions:</p>
+<ul>
+<li>Do you want separate permission groups for your client-side and server-side profiles because different parts of your organization manage these products?</li>
+<li>Do you want to create permission groups based on job responsibilities (Developer, QA, Data Manager, Engineer, Compliance, et cetera) so that when you add, move, or remove users, you can quickly assign permissions based on their job title?</li>
+<li>Do you want to break down permission groups by region because your profiles and users are organized by geographic campaigns and sites, and different data storage and data privacy laws apply to them?</li>
+<li>Do you want to break down permission groups by product (AudienceStream, EventStream, Customer Data Hub, et cetera)?</li>
+</ul>
+<p>For each Yes answer, add another column to the spreadsheet, and add notes in that column about how that question impacts that user&rsquo;s relationship to the organization and workflow.</p>
+<figure><a class="slb" href="/images/platform-permissions/permissionssystemmigrationguide-4.png"><img src="/images/platform-permissions/permissionssystemmigrationguide-4.png"/>
+    </a>
+</figure>
+<h3 id="profile-audit">Profile audit</h3>
+<p>If you have only one main client-side profile and one main server-side profile, but your brand and organization is split among multiple regions and responsibility structures, this data can be useful as part of a future project to configure regional profiles on your account. However, Tealium recommends that you set up and test permissions on the platform permissions system first.</p>
+<h2 id="sort-the-users-into-groups">Sort the users into groups</h2>
+<p>Now that you have all the users’ needs and relationships to the organization documented in your spreadsheet, sort the users by each of the columns.</p>
+<p>You can now organize those users into groups based on their common needs and access rights:</p>
+<ul>
+<li>The profiles users in the group needs to access.</li>
+<li>The level of access group members need on each profile.</li>
+<li>Whether group members should have publishing rights for client-side and server-side profiles.</li>
+<li>The products and product features each group should be able to access.</li>
+<li>The level of access each group should have on each product feature.</li>
+<li>Whether users should have access to PII data.</li>
+<li>Whether users should be able to publish client-side, server-side, or both. Rememeber that server-side publishing access includes full access to server-side features and products.</li>
+</ul>
+<p>You can break the users into smaller groups based on your organization’s other needs, such as managing users by department or job function, grouping them by geography, and so on.</p>
+<p>These final groups of users are the permission groups you need to create.</p>
+<h2 id="add-admin-roles">Add admin roles</h2>
+<p>Now that you have the groups planned out, it&rsquo;s time to plan out the admin roles.</p>
+<p>Looking at your spreadsheet, ask yourself some questions about the account itself:</p>
+<ul>
+<li>Who needs full access to the account?</li>
+<li>Who manages users and user membership in the account’s groups?</li>
+<li>Who manages the technical configuration of the account?</li>
+<li>Who manages the Personally Identifiable Information (PII) data rights on the account?</li>
+<li>Who manages the account’s profiles?</li>
+</ul>
+<p>The Admin and Profiles settings from the client-side inventory of user permissions can help you determine who should get admin roles for the account in the platform permission system:</p>
+<ul>
+<li><strong>Account Admin</strong> -This role has full access to the account (Includes the permissions of other roles).</li>
+<li><strong>User Admin</strong> - This role manages permission groups and user permissions. Anyone responsible for adding users, editing users, and assigning users to permission groups should have this role.</li>
+<li><strong>Technical Admin</strong> - This role manages account configuration features, such as first-party domains.</li>
+<li><strong>Privacy Admin</strong> - This role manages the PII permission level in groups (Requires the User Admin role). Anyone responsible for data privacy and compliance should be a candidate for this role.</li>
+<li><strong>Profile Admin</strong> - This role manages access to profiles and libraries. Anyone who builds and organizes profiles on your account should have this role. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group.</li>
+</ul>
+<p>For more information about admin roles, see <a href="/administration/admin-roles/">Admin Roles</a>.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>The <strong>User Admin</strong> admin role is especially useful for the migration process because these people can help you refine the permission groups as your users test the platform permission system.</p>
+<p>Congratulations. You now know the permission groups you need to create and the admin roles you need to assign.</p>
 
 </div>
 
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
-  <a href="/administration/users/"
+  <a href="/administration/permissions-system-migration-guide/deployment-strategies/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Users</div>
+      <div>Deployment Strategies</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Users"</title>
+      <title>"Deployment Strategies"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -424,14 +716,14 @@ If a user has publish permission and only has access to EventStream, they can pu
 </div><div class="di mr3">
   
   
-  <a href="/administration/admin-roles/"
+  <a href="/administration/permissions-system-migration-guide/strategy/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Admin roles "</title>
+      <title>"Strategy "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Admin roles</div>
+      <div>Strategy</div>
     </section>
   </a>
   
@@ -477,16 +769,19 @@ No</button>
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#product-features">Product features</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#publishing-permissions">Publishing permissions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#users-in-multiple-permission-groups">Users in multiple permission groups</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#default-permission-groups">Default permission groups</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manage-permission-groups">Manage permission groups</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#view-a-permission-group">View a permission group</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-a-permission-group">Create a permission group</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#edit-a-permission-group">Edit a permission group</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manage-user-permission-groups">Manage user permission groups</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#export-users">Export Users</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#manual-inventory-of-client-side-and-server-side-users-and-permissions">Manual inventory of client-side and server-side users and permissions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#client-side">Client-side</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#server-side">Server-side</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#audit-the-spreadsheet">Audit the spreadsheet</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#add-individual-user-needs-to-the-spreadsheet">Add individual user needs to the spreadsheet</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#pii-data-needs">PII data needs</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#product-and-feature-needs">Product and feature needs</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#update-the-spreadsheet">Update the spreadsheet</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#add-organizational-information">Add organizational information</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#profile-audit">Profile audit</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#sort-the-users-into-groups">Sort the users into groups</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#add-admin-roles">Add admin roles</a></li>
               </nav>
   </aside></nav>
 
@@ -730,7 +1025,7 @@ No</button>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/administration/permissions-system-migration-guide/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+      <a href="https://docs-preview.tealium.com/administration/permissions-system-migration-guide/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4 bg-primary-color">
           Platform Permissions Migration Guide
       </a>
       </li>
