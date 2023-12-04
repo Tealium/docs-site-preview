@@ -26,7 +26,7 @@
 <script>
 var utag_data = {
     site_section  : "server-side",
-    reading_time  : "5",
+    reading_time  : "3",
     site_language : "en",
     tealium_event : "page_view"
 }
@@ -478,14 +478,18 @@ var utag_data = {
         <a href="/server-side/attributes/data-layer-enrichment/enable/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-enable-data-layer-enrichment">Enable Data Layer Enrichment</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/attributes/data-layer-enrichment/tealium-collect-dle/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-add-configure-tealium-collect-tag">Add and configure the Tealium Collect tag</a>
-      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/attributes/data-layer-enrichment/dle-object/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-layer-enrichment-object">Data Layer Enrichment object</a>
       </li><li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2  ind2 pr2 primary-color expanded " data-target=".data-layer-enrichment-api">Data Layer Enrichment API</a>
         <ul class="bl b--primary bw1 pl2 data-layer-enrichment-api desktopmenu animated fadeIn list "><li class="selected relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".server-side-data-layer-enrichment-public-api">About Data Layer Enrichment Public API</a>
+        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api/" class="db link ind2 pr2 pv2 bg-secondary primary-color" data-target=".server-side-data-layer-enrichment-public-api">About</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-manage-data-layer-enrichment-public-api">Manage Data Layer Enrichment Public API</a>
+        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/dle-objects/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-layer-enrichment-objects">Data Layer Enrichment API objects</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/get-data-layer-enrichment-api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-manage-data-layer-enrichment-public-api">GET Data Layer Enrichment Public API</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/get-profile-definition-api/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-get-profile-definition-api">GET Profile Definition API</a>
+      </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
+        <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api-npp/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".server-side-data-layer-enrichment-public-api-npp">Next page personalization</a>
       </li></ul>
       </li></ul>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -704,7 +708,7 @@ var utag_data = {
         <ul class=" audiencedb-eventdb desktopmenu animated fadeIn list  dn"><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-storage/audiencedb-eventdb/about/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".about-audiencedb-and-eventdb">About</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
-        <a href="/server-side/data-storage/audiencedb-eventdb/enable-audiencedb-eventdb/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".enable-audiencedb-eventdb">Enable AudienceDB and EventDB</a>
+        <a href="/server-side/data-storage/audiencedb-eventdb/config-audiencedb-eventdb/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".enable-audiencedb-eventdb">Configure AudienceDB and EventDB</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
         <a href="/server-side/data-storage/audiencedb-eventdb/audiencedb-data-guide/" class="db link ind2 pr2 pv2 text-color-primary hover-primary-color " data-target=".audiencedb-data-guide">AudienceDB data guide</a>
       </li><li class="relative w-100 hover-accent-color-light fw4 f5 ">
@@ -878,98 +882,66 @@ var utag_data = {
 
   
     <p class="f4 fw3 lh-copy">
-      The Data Layer Enrichment Public API allows you to retrieve a visitor profile for a known visitor ID while that visitor has an active visit. You can combine the Data Layer Enchrichment Public API with the Customer Data Hub Profile Definition API to improve personalization experience on your websites.
+      The Data Layer Enrichment Public API allows you to retrieve a visitor profile for a known visitor ID while that visitor has an active visit.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h3 id="how-it-works">How it works</h3>
-<p>When the Data Layer Enrichment Public API receives a request, the API verifies if there is a whitelisted domain in your Customer Data Hub profile. If a whitelist is available, the Data Layer Enrichment Public API attempts to match the referrer with the whitelisted domains.</p>
+  <h2 id="how-it-works">How it works</h2>
+<p>The returned visitor profile differs from the typical visitor profile in the following ways:</p>
+<ul>
+<li>Badges and audiences are returned as objects</li>
+<li>Timelines and funnels have been removed</li>
+</ul>
+<p>If the visitor profile of an active visitor is not yet available when you submit a GET request, the API will return an empty JSON object.</p>
+<p>For more information about JSON objects, see <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/dle-objects/">Data Layer Enrichment API objects</a>.</p>
+<h3 id="combine-with-the-profile-definition-api">Combine with the Profile Definition API</h3>
+<p>When you use the API to get visitor data, you can also retreive the names of badges that may appear in the visitor data using the Profile Definition API.</p>
+<p>For example, a request for a visitor profile with two applied badges will return the following using the Data Layer Enrichment Public API:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{ 
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;badges&#34;</span> : {
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;24935&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;8879&#34;</span>: <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>The Profile Definition API returns the badge IDs and their names. In this example, for the same profile, it would return:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;badges&#34;</span> : [
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">24935</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Cart abandoner&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        {
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">8879</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Frequent visitor&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Combining the two APIs in your workflow can provide you with additional badge and audience information for visitor profiles for use cases like <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api-npp/">next page personalization</a>.</p>
+<h2 id="domain-allow-list">Domain allow list</h2>
+<p>By default, Data Layer Enrichment Public API honors requests from all domains. If you want to limit these requests from only specific domains, allow list them in your profile. Allow listing prevents non-trusted domains from accessing visitor information in the TAPID cookie. When a visitor navigates to any domain outside the allow list that is potentially malicious, the API will use only the visitor ID in the URL path.</p>
 <p>The API verification can return the following results depending on the profile:</p>
 <ul>
-<li>No whitelist found<br>
-If there is no whitelist available, the Data Layer Enrichment Public API uses the visitor ID in the URL.</li>
-<li>Whitelist found, domains match<br>
-If the referrer and the whitelisted domains match, the Data Layer Enrichment Public API gets the visitor ID from the third-party TAPID cookie.</li>
-<li>Whitelist found, domains do not Match<br>
-If the referrer and the whitelisted domains do not match, the Data Layer Enrichment Public API gets the visitor ID from the URL.</li>
+<li>Domains match<br>
+If the referrer and the allow listed domains match, the Data Layer Enrichment Public API gets the visitor ID from the third-party TAPID cookie.</li>
+<li>Domains do not match<br>
+If the referrer and the allow listed domains do not match, the Data Layer Enrichment Public API gets the visitor ID from the URL.</li>
 </ul>
-<p>The Data Layer Enrichment Public API uses the TAPID cookie when the referrer matches the whitelisted domain, otherwise the API uses the visitor ID from the URL.</p>
-<h3 id="next-page-personalization">Next page personalization</h3>
-<p>You can combine the Customer Data Hub Profile Definition API and the Data Layer Enrichment Public API to improve personalized experiences for your website visitors. In this example, we want to enable next page personalization on a website that uses a content management system (CMS).</p>
-<p>To retrieve the Customer Data Hub profile for a known visitor ID, run an automated script in the CMS at a given interval (for example, once per hour) to trigger the Customer Data Hub Profile Definition API. The API will import the audiences and badges that could potentially be assigned to a visitor. The CMS stores the audience and badge information for use with the Data Layer Enrichment Public API.</p>
-<p>This information is stored within the CMS and continually referenced in the following steps:</p>
-<ol>
-<li>
-<p>Create a script in the CMS that runs the following code to capture the visitor ID:</p>
-<pre tabindex="0"><code>document.cookie.match(/v_id:([^$]+)/)[1]
-</code></pre></li>
-</ol>
-<p>Ensure the script runs on page load and only if the CMS does not already have the visitor ID.<br>
-This script imports the value of the <code>v_id</code> key from the <code>utag_main</code> cookie namespace, also known as <code>utag.data[&quot;cp.utag_main_v_id&quot;]</code>.</p>
-<p class="tip"><i class="fa fa-info-circle"></i>The account and profile imported into the script refer to the AudienceStream account and profile. Many clients have a Tealium iQ Tag Mangement profile that differs from an AudienceStream profile. For example, the Tealium iQ profiles <code>tealium/audiencestream</code> and <code>tealium/tiq</code> may point to the AudienceStream profile <code>tealium/main</code>.</p>
-<ol>
-<li>
-<p>Trigger the Data Layer Enrichment Public API.</p>
-</li>
-<li>
-<p>With the response of the Data Layer Enrichment Public API, cross-reference against the response of the Customer Data Hub Profile Definition API to see the names of which Audiences and Badges are assigned to the specific visitor. This comparison allows you to implement the following personalization actions:</p>
-<ul>
-<li>On page 8 the visitor is assigned the &ldquo;Sample Badge&rdquo; in AudienceStream.</li>
-<li>On page 9, prior to page rendering, the CMS triggers a call to the Data Layer Enrichment Public API and captures the latest profile for next page personalization.</li>
-</ul>
-</li>
-</ol>
-<h3 id="retrieving-a-visitor-profile-with-the-customer-data-hub-profile-definition-api">Retrieving a visitor profile with the Customer Data Hub Profile Definition API</h3>
-<p>The returned visitor profile contains attribute IDs, such as <code>metrics 5117</code>. If you want the data layer to display something more meaningful to the end user, you can retrieve the Customer Data Hub profile definition and translate the attribute IDs into attribute names using the Customer Data Hub Profile Definition API.</p>
-<p>Use the following GET command to retrieve a Customer Data Hub profile definition:</p>
-<pre tabindex="0"><code>    GET http(s)://visitor-service.tealiumiq.com/datacloudprofiledefinitions/{account}/{profile}
-</code></pre><h4 id="example-response">Example response</h4>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>    {
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;audiences&#34;</span> : [
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#e6db74">&#34;tealiummobile_demo_101&#34;</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Sample Audience&#34;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        ],
-</span></span><span style="display:flex;"><span>        <span style="color:#f92672">&#34;badges&#34;</span> : [
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">5113</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Sample Badge&#34;</span>
-</span></span><span style="display:flex;"><span>            },
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">32</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Unbadged&#34;</span>
-</span></span><span style="display:flex;"><span>            },
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">31</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Frequent visitor&#34;</span>
-</span></span><span style="display:flex;"><span>            },
-</span></span><span style="display:flex;"><span>            {
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;id&#34;</span> : <span style="color:#ae81ff">30</span>,
-</span></span><span style="display:flex;"><span>                <span style="color:#f92672">&#34;name&#34;</span> : <span style="color:#e6db74">&#34;Fan&#34;</span>
-</span></span><span style="display:flex;"><span>            }
-</span></span><span style="display:flex;"><span>        ]
-</span></span><span style="display:flex;"><span>    }
-</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>In this example, only audience and badge definitions are returned. You can optionally append the <code>visitor_id</code> parameter to the previous example. If this method is used, the response will be empty unless the specified visitor is currently active.</p>
-<h3 id="whitelisting-domains">Whitelisting domains</h3>
-<p>By default, Data Layer Enrichment Public API honors requests from all domains. If you want to limit these requests from only specific domains, whitelist them in your Customer Data Hub profile. Whitelisting prevents non-trusted domains from accessing visitor information in the TAPID cookie. When a visitor navigates to any domain outside the whitelist that is potentially malicious, the Data Layer Enrichment Public API will use only the visitor ID in the URL path.</p>
-<p>When you whitelist a domain, all of its sub-domains are automatically included. For example, if you whitelist <code>example.com</code>, any sub-domain that matches <code>*****.example.com</code> is included.</p>
-<h4 id="subdomain-examples">Subdomain examples</h4>
+<h3 id="subdomains">Subdomains</h3>
+<p>When you allow list a domain, all of its subdomains are automatically included. For example, if you allow <code>example.com</code>, any subdomain that matches <code>*****.example.com</code> is included.</p>
 <pre tabindex="0"><code> http://example.com
  https://mobile.example.com/xyz/index.html
  http://app.mobile.example.com
-</code></pre><p>Complete the following steps to create a whitelist in your Customer Data Hub profile:</p>
+</code></pre><h3 id="create-an-allow-list">Create an allow list</h3>
+<p>Complete the following steps to create an allow list in your profile:</p>
 <ol>
-<li>Navigate to your Customer Data Hub profile.</li>
-<li>From the gear icon in the top right of the screen, select <strong>Data Layer Enrichment</strong>.</li>
-<li>Enter the comma-separated list of domains you trust. You can add a maximum of 250 domains per profile.<br>
-Do Not insert the <code>http</code> or <code>https</code> protocol before the domain.</li>
+<li>Go to <strong>Admin menu &gt; Data Layer Enrichment</strong>.</li>
+<li>Enter the comma-separated list of domains you trust. You can add a maximum of 250 domains per profile. Do Not insert the <code>http</code> or <code>https</code> protocol before the domain.</li>
 <li>Click <strong>Save</strong>.</li>
-<li>Click <strong>Save/Publish</strong> to save and publish your changes.</li>
+<li>Save and publish your changes.</li>
 </ol>
-<h3 id="tapid-issues-and-visitor-switching">TAPID issues and visitor switching</h3>
+<h2 id="tapid-issues-and-visitor-switching">TAPID issues and visitor switching</h2>
 <p>AudienceStream gives the ID in the <code>TAPID</code> cookie precedence over other IDs to determine the visitor profile to use and provides parameters that control how the endpoint handles ID priority.</p>
 <p>For example, if a user logs in and their ID is added to the <code>TAPID</code> cookie, traffic from all the anonymous users on the device are logged to that user. AudienceStream will continue to log activity to the first user if a second user logs in to that device with an anonymous cookie. For example, if visitors use a shared smart television or a public kiosk, the visitors&rsquo; profile data can become contaminated.</p>
 
@@ -978,13 +950,13 @@ Do Not insert the <code>http</code> or <code>https</code> protocol before the do
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
-  <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/manage-data-layer-enrichment-api/"
+  <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/dle-objects/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Manage Data Layer Enrichment Public API</div>
+      <div>Data Layer Enrichment API objects</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Manage Data Layer Enrichment Public API"</title>
+      <title>"Data Layer Enrichment API objects"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1017,7 +989,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  February 8, 2023 
+          <p>This page was last updated:  December 4, 2023 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1031,11 +1003,12 @@ No</button>
 
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#next-page-personalization">Next page personalization</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#retrieving-a-visitor-profile-with-the-customer-data-hub-profile-definition-api">Retrieving a visitor profile with the Customer Data Hub Profile Definition API</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#whitelisting-domains">Whitelisting domains</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tapid-issues-and-visitor-switching">TAPID issues and visitor switching</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#how-it-works">How it works</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#combine-with-the-profile-definition-api">Combine with the Profile Definition API</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#domain-allow-list">Domain allow list</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#subdomains">Subdomains</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#create-an-allow-list">Create an allow list</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" href="#tapid-issues-and-visitor-switching">TAPID issues and visitor switching</a></li>
               </nav>
   </aside></nav>
 
