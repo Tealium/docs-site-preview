@@ -3,31 +3,18 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-     
-    <title>Facebook Conversions Connector Setup Guide | Server-Side Connectors | Preview of Tealium Developer Docs</title>
+    <title>Facebook Conversions Connector Setup Guide | Server-Side Connectors |Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-     <meta name="generator" content="Hugo 0.111.3">
-
-      
-        <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
-      
-
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
     
-      
-    
-      
-        <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/server-side-connectors/facebook-conversions-connector/">
-      
-    
-    
-
-     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/server-side-connectors/facebook-conversions-connector/">
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
       if (location.hash) {
@@ -39,32 +26,24 @@
     </script>
   </head>
   <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
-      
-        
-<script>
-var utag_data = {
-    site_section  : "server-side-connectors",
-    reading_time  : "13",
-    site_language : "en",
-    tealium_event : "page_view"
-}
-</script>
+    <script>
+    var utag_data = {
+        site_section  : "server-side-connectors",
+        reading_time  : "19",
+        site_language : "en",
+        tealium_event : "page_view"
+    }
+    </script>
 
-<script>
- (function(a,b,c,d){
-    a="//tags.tiqcdn.com/utag/tealium/docs/qa/utag.js";
-    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
-    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
-  })();
-</script>
-
-      
-
-    
+    <script>
+     (function(a,b,c,d){
+        a="//tags.tiqcdn.com/utag/tealium/docs/qa/utag.js";
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+    </script>
 <nav class="w-100 sticky-t bg-primary-color-light bb b--light-gray dpn" role="navigation">
-
   <div class="flex-ns flex-wrap items-center justify-start mw9">
-
     <div class="lh-solid ml0-ns mr0 mr4-l mv3 pl15 dib db-ns">
       <a href="/"><img src="/images/icons/tealium-documentation-logo-color.svg" class="v-mid dib" width="186" height="31"></a>
     </div>
@@ -72,8 +51,11 @@ var utag_data = {
     <div class="dib ml3 mr4 mv3 pl15"><div id="docsearch">
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
-      <li class="f5 dib">
-         <i class="fa fa-globe" style="color: rgba(255, 255, 255, .6)" aria-hidden="true"></i>
+      <li class="f5 dib mr4">
+         <a href="https://support.tealiumiq.com/en/support/solutions" class="dim link mid-gray">Knowledge Base&nbsp;<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+</a>
       </li>
         
       <li class="f5 dib mr4">
@@ -87,9 +69,7 @@ var utag_data = {
       </li>
             
     </ul>
-
   </div>
-  
 </nav>
     
     <main role="main" class="content-with-sidebar pb0-ns">
@@ -106,9 +86,10 @@ var utag_data = {
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0" data-nav-section="server-side-connectors"><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".release-notes-server-side-connectors">Release Notes</a></li><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/server-side-connectors/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Server-Side Connectors</span></a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/acoustic-campaign-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".acoustic-campaign-connector">Acoustic Campaign (Experiment)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+  <ul class="list pa0" data-nav-section="server-side-connectors"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/server-side-connectors/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Server-Side Connectors</span></a>
+        <ul data-level="1" class="server-side-connectors desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/server-side-connectors/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".release-notes-server-side-connectors">Release notes</a></li></ul></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/acoustic-campaign-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".acoustic-campaign-connector">Acoustic Campaign</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/acoustic-exchange-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".acoustic-exchange-connector">Acoustic Exchange</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/acoustic-transact-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".acoustic-transact-connector">Acoustic Transact</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/activecampaign-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".activecampaign-connector">ActiveCampaign</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -136,7 +117,6 @@ var utag_data = {
         <a href="/server-side-connectors/amazon-eventbridge-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amazon-eventbridge-connector">Amazon EventBridge</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/amazon-firehose-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amazon-firehose-connector">Amazon Firehose</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/amazon-pinpoint-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amazon-pinpoint-connector">Amazon Pinpoint</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/ambassador-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ambassador-connector">Ambassador</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/amobee-connector-setup-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amobee-connector-setup-guide">Amobee</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/amplitude-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amplitude-connector">Amplitude</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/amplitude-connector-setup-guide-deprecated/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".amplitude-connector-setup-guide-deprecated">Amplitude (Deprecated)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -152,7 +132,6 @@ var utag_data = {
         <a href="/server-side-connectors/basis-technologies-dsp-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".basis-technologies-dsp-connector">Basis Technologies DSP</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/branch-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".branch-events-connector">Branch Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/braze-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".braze-connector">Braze</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/bronto-ecommerce-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".bronto-ecommerce-connector">Bronto Ecommerce</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/campaign-monitor-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".campaign-monitor-connector">Campaign Monitor</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/centro-dsp-connector-setup-guide-deprecated/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".centro-dsp-connector-setup-guide-deprecated">Centro DSP (Deprecated)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/cheetah-digital-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".cheetah-digital-connector">Cheetah Digital</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -163,6 +142,7 @@ var utag_data = {
         <a href="/server-side-connectors/connector-insights-facebook-custom-audiences/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connector-insights-facebook-custom-audiences">Connector Insights Facebook Custom Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/connector-insights-facebook-event-match-quality/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connector-insights-facebook-event-match-quality">Connector Insights Facebook Event Match Quality</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/connector-insights-google-ads-customer-match/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connector-insights-google-ads-customer-match">Connector Insights Google Ads Customer Match</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/connector-insights-google-dv360-customer-match/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connector-insights-google-dv360-customer-match">Connector Insights Google DV360 Customer Match Connector</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/connector-insights-twitter-custom-audiences/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connector-insights-twitter-custom-audiences">Connector Insights Twitter Custom Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/cordial-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".cordial-connector">Cordial</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/coveo-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".coveo-connector">Coveo</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -184,6 +164,7 @@ var utag_data = {
         <a href="/server-side-connectors/enchant-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".enchant-connector">Enchant</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/epsilon-event-api-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".epsilon-event-api-connector">Epsilon Event API</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/everflow-conversion-tracking-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".everflow-conversion-tracking-connector">Everflow Conversion Tracking</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/exactag-s2s-tracking-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".exactag-s2s-tracking-connector">Exactag S2S Tracking</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/experian-marketing-suite-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".experian-marketing-suite-connector">Experian Marketing Suite</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/facebook-connector-series/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".facebook-connector-series">Facebook and Tealium Customer Data Hub (Series)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/facebook-app-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".facebook-app-events-connector">Facebook App Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -203,7 +184,6 @@ var utag_data = {
         <a href="/server-side-connectors/google-ad-manager-audience-integration-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ad-manager-audience-integration-connector">Google Ad Manager Audience Integration</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-ads-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-conversions-connector">Google Ads Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-ads-customer-match-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-customer-match-connector">Google Ads Customer Match</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/google-ads-enhanced-conversions-legacy-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-enhanced-conversions-legacy-connector">Google Ads Enhanced Conversions - Legacy</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-enhanced-conversions-for-leads-connector">Google Ads Enhanced Conversions for Leads</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-enhanced-conversions-for-web-connector">Google Ads Enhanced Conversions for Web</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-ads-store-sales-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-ads-store-sales-connector">Google Ads Store Sales</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -243,6 +223,7 @@ var utag_data = {
         <a href="/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".linkedin-matched-audiences-connector-setup-guide">LinkedIn Matched Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/listrak-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".listrak-connector">Listrak</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/lithium-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".lithium-connector">Lithium</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/liveperson-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".liveperson-connector">LivePerson</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/localytics-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".localytics-connector">Localytics</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/madvertise-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".madvertise-connector">Madvertise</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/mailchimp-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mailchimp-connector">Mailchimp</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -250,6 +231,7 @@ var utag_data = {
         <a href="/server-side-connectors/mailgun-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mailgun-connector">Mailgun</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/mailrelay-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mailrelay-connector">Mailrelay</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/mandrill-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mandrill-connector">Mandrill</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/mapp-connect-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mapp-connect-connector">Mapp Connect</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/marketo-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".marketo-connector">Marketo</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/mediamath-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".mediamath-connector">MediaMath</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/microsoft-azure-event-hubs-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".microsoft-azure-event-hubs-connector">Microsoft Azure Event Hubs</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -267,6 +249,7 @@ var utag_data = {
         <a href="/server-side-connectors/new-relic-mobile-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".new-relic-mobile-connector">New Relic Mobile</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/new-relic-mobile-crash-tracking-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".new-relic-mobile-crash-tracking-connector">New Relic Mobile Crash Tracking</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/nextdoor-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".nextdoor-connector">Nextdoor</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/nine-audience-match-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".nine-audience-match-connector">Nine Audience Match</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/onesignal-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".onesignal-connector">OneSignal</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/ontraport-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ontraport-connector">Ontraport</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/optimizely-data-platform-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".optimizely-data-platform-connector">Optimizely Data Platform</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -278,10 +261,8 @@ var utag_data = {
         <a href="/server-side-connectors/pega-webhook-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pega-webhook-connector">Pega Webhook</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pegasystems-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pegasystems-connector-setup-guide">Pegasystems</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pendo-engage-api-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pendo-engage-api-connector">Pendo Engage API</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/persistiq-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".persistiq-connector">PersistIQ</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pinterest-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pinterest-audiences-connector">Pinterest Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pinterest-conversions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pinterest-conversions-connector">Pinterest Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/pipedrive-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pipedrive-connector">Pipedrive</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/postmark-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".postmark-connector">Postmark</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pulsepoint-npi-list-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pulsepoint-npi-list-connector">PulsePoint NPI List</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pushcrew-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pushcrew-connector">PushCrew</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -289,7 +270,6 @@ var utag_data = {
         <a href="/server-side-connectors/quantcast-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".quantcast-audiences-connector">Quantcast Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/reddit-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".reddit-conversions-connector">Reddit Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/referralcandy-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".referralcandy-connector">ReferralCandy</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/replyai-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".replyai-connector">Reply.ai</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/responsys-connector-soap-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".responsys-connector-soap-api">Responsys (SOAP API)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/responsys-marketing-cloud-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".responsys-marketing-cloud-connector">Responsys Marketing Cloud</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/rokt-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".rokt-events-connector">ROKT Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -300,18 +280,14 @@ var utag_data = {
         <a href="/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-email-studio-oauth2-exacttarget-connector-setup-guide">Salesforce Email Studio OAuth2 (ExactTarget)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/salesforce-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-connector">Salesforce for AudienceStream</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/salesforce-interaction-studio-connector-setup-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-interaction-studio-connector-setup-guide">Salesforce Interaction Studio</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/salesforce-journey-builder-connector-deprecated/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-journey-builder-connector-deprecated">Salesforce Journey Builder (Deprecated)</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/salesforce-journey-builder-with-oauth-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-journey-builder-with-oauth-connector">Salesforce Journey Builder with OAuth</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/salesforce-journey-builder-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-journey-builder-connector">Salesforce Journey Builder</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pardot-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-pardot-connector">Salesforce Pardot</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/salesforce-standard-objects-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-standard-objects-connector">Salesforce Standard Objects</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/salesmachine-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesmachine-connector">Salesmachine</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/sas-360-match-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sas-360-match-connector">SAS 360 Match</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/selligent-marketing-cloud-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".selligent-marketing-cloud-connector">Selligent Marketing Cloud</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/sendgrid-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sendgrid-connector">SendGrid</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/sendicate-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sendicate-connector">Sendicate</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/sendinblue-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sendinblue-connector">SendinBlue</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/sendlane-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sendlane-connector">Sendlane</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/sendx-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sendx-connector">SendX</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/session-ai-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".session-ai-connector">Session AI</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/silverpop-engage-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".silverpop-engage-connector">Silverpop Engage</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/singular-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".singular-events-connector">Singular Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -321,6 +297,7 @@ var utag_data = {
         <a href="/server-side-connectors/smartsurvey-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".smartsurvey-connector">SmartSurvey</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/snapchat-audience-match-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".snapchat-audience-match-connector">Snapchat Audience Match</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/snapchat-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".snapchat-conversions-connector">Snapchat Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/snowflake-streaming-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".snowflake-streaming-connector">Snowflake Streaming Connector</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/sparkpost-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sparkpost-connector">SparkPost</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/splunk-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".splunk-connector">Splunk</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/swrve-app-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".swrve-app-events-connector">Swrve App Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -339,6 +316,7 @@ var utag_data = {
         <a href="/server-side-connectors/tiktok-offline-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tiktok-offline-events-connector">TikTok Offline Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/trbo-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".trbo-connector">trbo</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/tune-in-app-events-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tune-in-app-events-connector">TUNE In-App Events</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/tune-postback-tracking-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tune-postback-tracking-connector">TUNE Postback Tracking</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/tvsquared-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tvsquared-connector">TVSquared</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/twilio-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".twilio-connector">Twilio</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/twitter-campaigns-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".twitter-campaigns-connector">Twitter Campaigns</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -346,6 +324,7 @@ var utag_data = {
         <a href="/server-side-connectors/twitter-custom-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".twitter-custom-audiences-connector">Twitter Custom Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/userlist-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".userlist-connector">Userlist</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/veeva-crm-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Veeva CRM</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/vkontakte-ads-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".vkontakte-ads-connector">VKontakte Ads</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/webhook-connector-setup-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".webhook-connector-setup-guide">Webhook</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/webtrekk-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".webtrekk-connector">Webtrekk</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/whatsapp-business-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".whatsapp-business-connector">WhatsApp Business</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -364,7 +343,7 @@ var utag_data = {
 </div>
     
 
-    <article id="main-content" class="order-1 overflow-auto max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
+    <article id="main-content" class="order-1 overflow-auto vh-100 max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
       <div class="documentation-copy ph4">
         <header class="flex-none w-100"><nav id="breadcrumb">
 <ul class="nav">
@@ -402,7 +381,7 @@ var utag_data = {
 <div class="prose nested-links" id="prose">
   <h2 id="prerequisites">Prerequisites</h2>
 <p>If you are using the Facebook Conversions connector for web events, the client-side <a href="/client-side-tags/facebook-pixel-tag/">Facebook Pixel tag</a> must be running in the web browser. For more information, see the <a href="https://www.facebook.com/business/help/2041148702652965">Facebook Help Center</a>.</p>
-<p>Enable the Tealium partner integration in your Facebook Ads account settings as follows:</p>
+<p>To enable the Tealium partner integration in your Facebook Ads account settings, use the following steps:</p>
 <ol>
 <li>Log into your Facebook Ads Manager account and select <strong>Events Manager</strong> from the menu.</li>
 <li>In the menu, select <strong>Data Sources</strong>, then select the Pixel and click the <strong>Settings</strong> tab.</li>
@@ -412,14 +391,14 @@ var utag_data = {
 </ol>
 <p>If you do not see the option to toggle a partner integration, contact your Tealium Account Manager for support.</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>The Facebook Pixel tag automatically hashes user data. This pixel functionality cannot be changed.</p>
-<h3 id="api-information">API Information</h3>
+<h2 id="api-information">API Information</h2>
 <p>This connector uses the following vendor API:</p>
 <ul>
 <li>API Name: Facebook Graph API - Facebook Pixel</li>
 <li>API Version: v18.0</li>
 <li>API Endpoint: <code>https://graph.facebook.com</code></li>
 </ul>
-<h2 id="connector-actions">Connector Actions</h2>
+<h2 id="actions">Actions</h2>
 <table>
 <thead>
 <tr>
@@ -435,14 +414,19 @@ var utag_data = {
 <td style="text-align:left">✓</td>
 </tr>
 <tr>
+<td style="text-align:left">Send Advanced Measurement Event</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
+</tr>
+<tr>
 <td style="text-align:left">Send Lead Event</td>
 <td style="text-align:left">✓</td>
 <td style="text-align:left">✓</td>
 </tr>
 </tbody>
 </table>
-<h2 id="configure-settings">Configure Settings</h2>
-<p>Go to the Connector Marketplace and add a new connector. Read the <a href="/server-side/connectors/about/">Connector Overview</a> article for general instructions on how to add a connector.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Navigate to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">About Connectors</a>.</p>
 <p>After adding the connector, configure the following settings:</p>
 <ul>
 <li>
@@ -457,18 +441,15 @@ var utag_data = {
 <ul>
 <li>If your pixel has been whitelisted and enabled for Tealium, a <strong>TealiumTestConnector</strong> event is tracked on your pixel. Click <strong>Test Connection</strong> to send a test event named <strong>TealiumConnectorTest</strong>.</li>
 <li>Check the Facebook Events Manager Pixel Overview to confirm the event was received.</li>
-<li>If your test fails, double-check the steps described in the <a href="/server-side-connectors/facebook-conversions-connector/">Facebook Server-Side Events Connector Setup Guide</a>.</li>
+<li>If your test fails, double-check your configuration settings.</li>
 </ul>
 </li>
 </ul>
-<h2 id="action-settings---parameters-and-options">Action Settings - Parameters and Options</h2>
-<p>Click <strong>Next</strong> or click the <strong>Actions</strong> tab. You configure connector actions in the <strong>Actions</strong> tab.</p>
-<p>This section describes how to set up parameters and options for each action.</p>
-<h3 id="deduplication-for-facebook-pixel-and-facebook-conversions-api-for-web-events">Deduplication for Facebook Pixel and Facebook Conversions API for Web Events</h3>
-<p>To configure this connector action to receive event IDs from the Facebook Pixel tag in your iQ Tag Management account, look for event attributes using the following naming convention:</p>
-<p><code>fb_event_id_&lt;Facebook Event&gt;_&lt;Tag UID&gt;</code></p>
+<h3 id="deduplication-for-web-events">Deduplication for web events</h3>
+<p>To configure this connector to deduplicate events from the Facebook Pixel tag, use the event IDs sent in event attributes with the following naming convention:</p>
+<p><code>fb_event_id_FACEBOOKEVENT_TAGID</code></p>
 <p>For example: <code>fb_event_id_Purchase_32</code> or <code>fb_event_id_PageView</code></p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>IDs were previously generated as <code>fb_event_id_&lt;Facebook Event&gt;</code>. These IDs continue to be generated but are considered legacy. The new IDs allow for use with multiple Facebook tags firing on a single page and offer a stronger tie back to the related tag. If you are using the legacy version, you must change the connector to the new ID.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Event IDs were previously generated as <code>fb_event_id_FACEBOOKEVENT</code>. These IDs continue to be generated but are considered legacy. The new IDs allow for use with multiple Facebook tags firing on a single page and offer a stronger tie back to the related tag. If you are using the legacy version, you must change the connector to the new ID.</p>
 <p>Use a separate action for each type of event ID. Map the event-specific event ID attribute to Event ID with the matching event name mapped to <strong>Event Name</strong>. For example:</p>
 <table>
 <thead>
@@ -489,18 +470,21 @@ var utag_data = {
 </tbody>
 </table>
 <p>See the <a href="/client-side-tags/facebook-pixel-tag/">Facebook Pixel Tag Setup Guide</a>.</p>
-<h4 id="automatic-deduplication">Automatic Deduplication</h4>
-<p>When the <strong>Automatic Deduplication</strong> value is populated, the connector will look for the corresponding variable within the UDO object. You are no longer required to add an Event ID if this section is populated and you are using Tealium iQ. However, the following approach may still be needed when using EventStream without TealiumiQ.</p>
-<p>The connector uses the following order of operations:</p>
+<h4 id="automatic-deduplication">Automatic deduplication</h4>
+<p>When the <strong>Automatic Deduplication</strong> value is populated, the connector looks for the corresponding event attribute. You are no longer required to add an Event ID if this section is populated and you are using Tealium iQ. However, the following approach may still be needed when using EventStream without Tealium iQ.</p>
+<p>The connector follow this order of operations:</p>
 <ul>
 <li>If <strong>Automatic Deduplication</strong> is populated, and the value is found in the data layer, (for example, <code>fb_event_id_ViewContent_30</code>) this value supersedes anything mapped in Event ID.</li>
-<li>If <strong>Automatic Deduplication</strong> is populated, but it can’t find the tag ID version, but can find the legacy version (with no ID attached), that value is used (for example, <code>fb_event_id_ViewContent</code>).</li>
-<li>If <strong>Automatic Deduplication</strong> is populated, but the valie isn&rsquo;t found, the mapped Event ID is used, if it is populated.</li>
+<li>If <strong>Automatic Deduplication</strong> is populated, but it cannot find the tag ID version, but it can find the legacy version (with no ID attached), that value is used (for example, <code>fb_event_id_ViewContent</code>).</li>
+<li>If <strong>Automatic Deduplication</strong> is populated, but the value isn&rsquo;t found, the mapped Event ID is used, if it is populated.</li>
 </ul>
 <h3 id="offline-conversions">Offline conversions</h3>
 <p>We recommend using the Facebook Conversions connector for offline conversions instead of the <a href="/server-side-connectors/facebook-offline-conversions-connector/">Facebook Offline Conversions connector</a> for new integrations.</p>
 <p>To process offline and store events through the Facebook Conversions connector, set the <code>action_source</code> parameter to <code>physical_store</code>.</p>
-<h3 id="action---send-event">Action - Send Event</h3>
+<h2 id="actions-1">Actions</h2>
+<p>Click <strong>Next</strong> or click the <strong>Actions</strong> tab. You configure connector actions in the <strong>Actions</strong> tab.</p>
+<p>This section describes how to set up parameters and options for each action.</p>
+<h3 id="send-event">Send Event</h3>
 <h4 id="parameters">Parameters</h4>
 <p>For <strong>User Data</strong> parameters, the following table notes the level of importance for some parameters. The importance level describes the parameter&rsquo;s influence on your event match quality. For example, <strong>Email (em)</strong> has an importance level of <strong>Highest</strong> while <strong>Phone Number (ph)</strong> has an importance level of <strong>High</strong>.</p>
 <table>
@@ -513,195 +497,195 @@ var utag_data = {
 <tbody>
 <tr>
 <td style="text-align:left">Event Source URL</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>Required if the <strong>Action Source</strong> is set to website.</li><li>The browser URL where the event happened.</li><li><strong>EventStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the attribute Current URL in EventStream.</li><li><strong>AudienceStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the <strong>Last Event URL</strong> attribute in AudienceStream.</li></ul></td>
+<td style="text-align:left">The browser URL where the event happened. This parameter is required if the <strong>Action Source</strong> is set to the website. <ul><li><strong>EventStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the attribute Current URL in EventStream.</li><li><strong>AudienceStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the <strong>Last Event URL</strong> attribute in AudienceStream.</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Test Event Code</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>Send the test ID in the <code>test_event_code</code> parameter to start seeing event activity in the Test Events window.</li><li>Events sent with <code>test_event_code</code> are not dropped, instead they flow into Events Manager and are used for targeting and ads measurement purposes.</li></ul></td>
+<td style="text-align:left">Send the test ID in the <code>test_event_code</code> parameter to start seeing event activity in the Test Events window. Events sent with <code>test_event_code</code> are not dropped, instead they flow into Events Manager and are used for targeting and ads measurement purposes.</td>
 </tr>
 <tr>
 <td style="text-align:left">Data Processing Options</td>
-<td style="text-align:left"><ul><li><strong>Required.</strong></li><li>Map value to LDU to have Facebook process event with Limited Data Use restrictions.</li><li>Otherwise map <code>None</code> to specify that the event should not be processed with Limited Data Use restrictions.</li><li>For more information, see <a href="https://developers.facebook.com/docs/marketing-apis/data-processing-options">Facebook Data Processing Options</a>.</li></ul></td>
+<td style="text-align:left">(Required) Map this value to <code>LDU</code> to have Facebook process event with Limited Data Use restrictions. Otherwise map this value to <code>None</code> to specify that the event should not be processed with Limited Data Use restrictions. For more information, see <a href="https://developers.facebook.com/docs/marketing-apis/data-processing-options">Facebook Data Processing Options</a>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Event Name</td>
-<td style="text-align:left"><ul><li><strong>Required.</strong></li><li>A Facebook pixel standard or custom event name.</li></ul></td>
+<td style="text-align:left">(Required) A Facebook pixel standard or custom event name.</td>
 </tr>
 <tr>
 <td style="text-align:left">Debugging Level</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>Specifies the trace level for the event.  <ul><li><code>1</code> for Error</li><li><code>2</code> for Info</li><li><code>3</code> for Debug</li></ul></li></ul>If you use Trace to verify hashing of data, the data shown at the top of Trace, such as user_data - EMAIL, is the data that came into the connector, not the data sent to Facebook. The data sent to Facebook is shown in the <strong>Request Body Section</strong> of Trace.</td>
+<td style="text-align:left">Specifies the trace level for the event.  <ul><li><code>1</code> for Error</li><li><code>2</code> for Info</li><li><code>3</code> for Debug</li></ul></li></ul>If you use Trace to verify hashing of data, the data shown at the top of Trace, such as <code>user_data - EMAIL</code>, is the data that came into the connector, not the data sent to Facebook. The data sent to Facebook is shown in the <strong>Request Body Section</strong> of Trace.</td>
 </tr>
 <tr>
 <td style="text-align:left">Action Source</td>
-<td style="text-align:left"><ul><li>Required.</li><li>This field allows you to specify where your conversions occurred.</li><li>Valid action sources are:  <ul><li><code>email</code></li><li><code>website</code></li><li><code>app</code></li><li><code>phone_call</code></li><li><code>chat</code></li><li><code>physical_store</code></li><li><code>system_generated</code></li><li><code>other</code></li></ul> </li></ul></td>
+<td style="text-align:left">(Required) This field specifies where your conversions occurred. Valid action sources are:  <ul><li><code>email</code></li><li><code>website</code></li><li><code>app</code></li><li><code>phone_call</code></li><li><code>chat</code></li><li><code>physical_store</code></li><li><code>system_generated</code></li><li><code>other</code></li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Dataset ID Override</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>String</li><li>Can be used to override the value used for the initial connector configuration.</li><li>If not provided, the Dataset ID from the connector configuration is used.</li></ul></td>
+<td style="text-align:left">This string value can be used to override the value used for the initial connector configuration. If not provided, the Dataset ID from the connector configuration is used.</td>
 </tr>
 <tr>
 <td style="text-align:left">Data Processing Options Country</td>
-<td style="text-align:left"><ul><li><strong>Required</strong> if <strong>Data Processing Options</strong> is mapped to LDU.</li><li>Map the country code associated with the user event.</li><li>Accepted code values:  <ul><li><code>1</code> for the United States of America</li><li><code>0</code> to request country to be geolocated by Facebook</li></ul> </li><li>Geolocation also requires mapping the <strong>Client IP Address</strong> attribute.</li></ul></td>
+<td style="text-align:left">Map the country code associated with the user event. This parameter is required if <strong>Data Processing Options</strong> is mapped to <code>LDU</code>.  Accepted code values:  <ul><li><code>1</code> for the United States of America</li><li><code>0</code> to request country to be geolocated by Facebook</li></ul>  Geolocation also requires mapping the <strong>Client IP Address</strong> attribute.</td>
 </tr>
 <tr>
 <td style="text-align:left">Event ID</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>An ID used by Facebook to de-duplicate the same event sent from both server and browser.</li><li>Verify that this is a unique ID to one pair of events sent from browser and server.</li></ul></td>
+<td style="text-align:left">An ID used by Facebook to de-duplicate the same event sent from both server and browser. Verify that this value is a unique ID to one pair of events sent from browser and server.</td>
 </tr>
 <tr>
 <td style="text-align:left">Event Time</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>A Unix timestamp in seconds indicating when the actual event occurred. The connector converts a mapped date attribute to seconds and, if the attribute is absent, auto-populates the event time.</li></ul></td>
+<td style="text-align:left">A Unix timestamp in seconds indicating when the actual event occurred. The connector converts a mapped date attribute to seconds and, if the attribute is absent, auto-populates the event time.</td>
 </tr>
 <tr>
 <td style="text-align:left">Data Processing Options State</td>
-<td style="text-align:left"><ul><li>Required if <strong>Data Processing Options</strong> is mapped to LDU.</li><li>Map state code associated with user event.</li><li>Accepted code values:  <ul><li><code>1000</code> for California</li><li><code>0</code> to request state to be geolocated by Facebook</li></ul> </li><li>Geolocation also requires also mapping the <strong>Client IP Address</strong> attribute.</li></ul></td>
+<td style="text-align:left">This parameter is required if <strong>Data Processing Options</strong> is mapped to <code>LDU</code>. Map state code associated with user event. Accepted code values:  <ul><li><code>1000</code> for California</li><li><code>0</code> to request state to be geolocated by Facebook</li></ul> Geolocation also requires also mapping the <strong>Client IP Address</strong> attribute.</td>
 </tr>
 <tr>
 <td style="text-align:left">Opt Out</td>
-<td style="text-align:left"><ul><li>Optional.</li><li>A flag indicating to not use this event for ads delivery optimization.</li><li>Set this to true to only use the event for attribution.</li><ul></td>
+<td style="text-align:left">A boolean indicating to not use this event for ads delivery optimization. Set this value to <code>true</code> to only use the event for attribution.</td>
 </tr>
 <tr>
 <td style="text-align:left">Zip (zip)</td>
-<td style="text-align:left"><ul><li>Postal zip code.</li><li>Example: <code>94035</code>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">Postal zip code. For example, <code>94035</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">FB Login ID</td>
-<td style="text-align:left"><ul><li>ID issued by Facebook when a person first logs into an instance of an app.</li><li>This is also known as the <a href="https://developers.facebook.com/docs/development/support#app-scoped-ids">App-Scoped ID</a>.</li><li>Do not hash.</li></ul></td>
+<td style="text-align:left">ID issued by Facebook when a person first logs into an instance of an app. This parameter is also known as the <a href="https://developers.facebook.com/docs/development/support#app-scoped-ids">App-Scoped ID</a>. Do not hash this value.</td>
 </tr>
 <tr>
 <td style="text-align:left">Partner ID</td>
-<td style="text-align:left"><ul><li>The partner&rsquo;s ID.</li><li>This parameter can be used by third-party ID providers such as Liveramp and TradeDesk as an additional user identifier.</li><li>Do not hash.</li></ul></td>
+<td style="text-align:left">The partner&rsquo;s ID. This parameter can be used by third-party ID providers such as Liveramp and TradeDesk as an additional user identifier. Do not hash this value.</td>
 </tr>
 <tr>
 <td style="text-align:left">Partner Name</td>
-<td style="text-align:left"><ul><li>The partner&rsquo;s name.</li><li>This parameter can be used by third-party ID providers such as Liveramp and TradeDesk as an additional user identifier.</li><li>Do not hash.</li></ul></td>
+<td style="text-align:left">The partner&rsquo;s name. This parameter can be used by third-party ID providers such as Liveramp and TradeDesk as an additional user identifier. Do not hash this value.</td>
 </tr>
 <tr>
 <td style="text-align:left">Client User Agent (ua)</td>
-<td style="text-align:left"><ul><li><strong>Optional.</strong></li><li>Required if the <strong>Action Source</strong> is set to website.</li><li>The user agent for the browser corresponding to the event.</li><li>Do not hash.</li><li><strong>EventStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the User Agent attribute in EventStream.</li><li><strong>AudienceStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the visitor&rsquo;s last User Agent in AudienceStream.</li><li><strong>Importance: High</strong></li></ul></td>
+<td style="text-align:left">This parameter is required if the <strong>Action Source</strong> is set to website. The user agent for the browser corresponding to the event. Do not hash this value.  <ul><li><strong>EventStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the User Agent attribute in EventStream.</li><li><strong>AudienceStream</strong> - If the <strong>Action Source</strong> is set to website and this field is not mapped, it is automatically mapped to the visitor&rsquo;s last User Agent in AudienceStream.</li></ul> <strong>Importance: High</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Client IP Address (ip)</td>
-<td style="text-align:left"><ul><li>Do not hash.</li><li>The IP address of the browser corresponding to the event. Tealium can capture the client IP address, but it is not available by default. To enable this feature, contact your Customer Success Manager. For more information, see <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363403-enabling-ip-address-collection-in-server-side-tealium-products">Enabling IP Address Collection in Server-Side Tealium Products</a>.</li><li><strong>Importance: High</strong></li></ul></td>
+<td style="text-align:left">The IP address of the browser corresponding to the event. Tealium can capture the client IP address, but it is not available by default. To enable this feature, contact your Customer Success Manager. For more information, see <a href="https://support.tealiumiq.com/en/support/solutions/articles/36000363403-enabling-ip-address-collection-in-server-side-tealium-products">Enabling IP Address Collection in Server-Side Tealium Products</a>. Do not hash this value. <strong>Importance: High</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Phone (ph)</td>
-<td style="text-align:left"><ul><li>A phone number.</li><li>Include only digits with country code, area code, and number.</li><li>Example: <strong>16505551212</strong></li><li><strong>Importance: High</strong> </li></ul></td>
+<td style="text-align:left">A phone number. Include only digits with country code, area code, and number. For example, <code>16505551212</code>. <strong>Importance: High</strong> </li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">State (st)</td>
-<td style="text-align:left"><ul><li>US State abbreviation.</li><li>Example: <strong>ca</strong>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">US State abbreviation. For example, <code>ca</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Email (em)</td>
-<td style="text-align:left"><ul><li>Email address.</li><li>Example: <code>user@example.com</code>.</li><li><strong>Importance: Highest</strong></li></ul></td>
+<td style="text-align:left">Email address. For example, <code>user@example.com</code>. <strong>Importance: Highest</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Last Name (ln)</td>
-<td style="text-align:left"><ul><li>Last name in lowercase.</li><li>Example: <code>smith</code>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">Last name in lowercase. For example, <code>smith</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">First Name (fn)</td>
-<td style="text-align:left"><ul><li>First name in lowercase.</li><li>Example: <code>joe</code>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">First name in lowercase. For example, <code>joe</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Lead ID</td>
-<td style="text-align:left"><ul><li>ID associated with a lead generated by Facebook <a href="https://developers.facebook.com/docs/marketing-api/guides/lead-ads">Lead Ads</a>.</li><li>Do not hash.</li></ul></td>
+<td style="text-align:left">ID associated with a lead generated by Facebook <a href="https://developers.facebook.com/docs/marketing-api/guides/lead-ads">Lead Ads</a>. Do not hash this value.</td>
 </tr>
 <tr>
 <td style="text-align:left">City (ct)</td>
-<td style="text-align:left"><ul><li>City in lower-case without spaces or punctuation.</li><li>Example: <strong>menlopark</strong>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">City in lowercase without spaces or punctuation. For example, <code>menlopark</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Country (country)</td>
-<td style="text-align:left"><ul><li>Two-letter country code in lowercase.</li><li>Example: <code>us</code>.</li><li><strong>Importance: Medium</strong></li></ul></td>
+<td style="text-align:left">Two-letter country code in lowercase. For example, <code>us</code>. <strong>Importance: Medium</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">External ID</td>
-<td style="text-align:left"><ul><li>Do not hash.</li><li>Any unique ID from the advertiser, such as loyalty membership IDs, user IDs, or external cookie IDs.</li></ul></td>
+<td style="text-align:left">Any unique ID from the advertiser, such as loyalty membership IDs, user IDs, and external cookie IDs. Map array type attributes to add multiple IDs. This mapping is automatically populated with the Tealium Visitor ID unless automapping is disabled.</td>
 </tr>
 <tr>
 <td style="text-align:left">Browser ID (fpb)</td>
-<td style="text-align:left"><ul><li>Do not hash.</li><li>The browser ID value stored in Facebook&rsquo;s <code>_fbp</code> cookie.</li><li>This parameter is automapped unless you disable automapping.</li><li><strong>Importance: High</strong></li></ul></td>
+<td style="text-align:left">The browser ID value stored in Facebook&rsquo;s <code>_fbp</code> cookie. This parameter is automapped unless you disable automapping. Do not hash this value. <strong>Importance: High</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Subscription ID</td>
-<td style="text-align:left"><ul><li>Do not hash.</li><li>The subscription ID for the user in this transaction.</li><li>This is similar to the order ID for an individual product.</li></li>Example: <strong>anid1234</strong></li></ul></td>
+<td style="text-align:left">The subscription ID for the user in this transaction. This is similar to the order ID for an individual product. For example, <code>anid1234</code>. Do not hash this value.</td>
 </tr>
 <tr>
 <td style="text-align:left">Gender</td>
-<td style="text-align:left"><ul><li>Lowercase.</li><li>Options are:  <ul><li><strong>f</strong> for female</li><li><strong>m</strong> for male</li></ul> </li></ul></td>
+<td style="text-align:left">Lowercase single-letter value for gender. Options are:  <ul><li><code>f</code> for female</li><li><code>m</code> for male</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Date of Birth</td>
-<td style="text-align:left"><ul><li>Date of birth given as year, month, and day.</li><li>Example: <strong>19971226</strong> for December 26, 1997.</li></ul></td>
+<td style="text-align:left">Date of birth given as year, month, and day. For example, <code>19971226</code> for December 26, 1997.</td>
 </tr>
 <tr>
 <td style="text-align:left">Click ID (fbc)</td>
-<td style="text-align:left"><ul><li>Do not hash.</li><li>The Facebook click ID value stored in Facebook&rsquo;s <code>_fbc</code> cookie.</li><li>This parameter is automapped unless automapping is disabled.</li><li><strong>Importance: High</strong>                                 </li></ul></td>
+<td style="text-align:left">The Facebook click ID value stored in Facebook&rsquo;s <code>_fbc</code> cookie. This parameter is automapped unless automapping is disabled. Do not hash this value. Facebook recommends storing and persisting the <code>fbclid</code> cookie. <strong>Importance: High</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">User Data is already hashed</td>
-<td style="text-align:left"><ul><li>The Facebook Conversions connector requires the Facebook Pixel tag, which automatically hashes user data. This pixel functionality cannot be changed.</li><li>Select this option to avoid hashing the data again.</li></ul></td>
+<td style="text-align:left">The Facebook Conversions connector requires the Facebook Pixel tag, which automatically hashes user data. This pixel functionality cannot be changed. Select this option to avoid hashing the data again.</td>
 </tr>
 <tr>
 <td style="text-align:left">Currency</td>
-<td style="text-align:left"><ul><li>The currency for the value specified if applicable.</li><li>Currency must be a valid ISO 4217 three-digit currency code.</li><li>Example: <strong>usd</strong></li></ul></td>
+<td style="text-align:left">The currency for the value specified if applicable. Currency must be a valid ISO 4217 three-digit currency code. For example, <code>usd</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Content Name</td>
-<td style="text-align:left"><ul><li>The name of the page or product associated with the event.</li><li>Example: <strong>lettuce</strong></li></ul></td>
+<td style="text-align:left">The name of the page or product associated with the event. For example, <code>lettuce</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Number of Items</td>
-<td style="text-align:left"><ul><li>Use only with <strong>InitiateCheckout</strong> events.</li><li>The number of items that a user tries to buy during checkout.</li><li>Example: <strong>4</strong></li></ul></td>
+<td style="text-align:left">Use only with <strong>InitiateCheckout</strong> events. The number of items that a user tries to buy during checkout. For example, <code>4</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Search String</td>
-<td style="text-align:left"><ul><li>A search query made by a user.</li><li>Use only with Search events.</li><li>Example: <strong>lettuce</strong></li></ul></td>
+<td style="text-align:left">A search query made by a user. Use only with search events. For example, <strong>lettuce</strong></td>
 </tr>
 <tr>
 <td style="text-align:left">Order ID</td>
-<td style="text-align:left"><ul><li>The order ID for this transaction.</li><li>Example: <strong>order1234</strong></li></ul></td>
+<td style="text-align:left">The order ID for this transaction. For example, <code>order1234</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Content Type</td>
-<td style="text-align:left"><ul><li>Must be either <strong>product</strong> or <strong>product_group</strong>.</li><li>Set to product if the keys you send are in <strong>Content IDs</strong> or <strong>Content Product</strong>.</li><li><strong>Content Product</strong> represent products.</li><li>Set to <strong>product_group</strong> if the keys you send are in <strong>Content IDs</strong>.</li><li><strong>Content Product</strong> represents product groups.</li></ul></td>
+<td style="text-align:left">This value must be either <code>product</code> or <code>product_group</code>. <ul><li>Set to <code>product</code> if the keys you send are in <strong>Content IDs</strong> or <strong>Content Product</strong>. <strong>Content Product</strong> represents products.</li><li>Set to <code>product_group</code> if the keys you send are in <strong>Content IDs</strong>. <strong>Content Product</strong> represents product groups.</li></ul></td>
 </tr>
 <tr>
 <td style="text-align:left">Predicted Lifetime Value</td>
-<td style="text-align:left"><ul><li>The predicted lifetime value of a conversion event.</li><li>Example: <strong>432.12</strong></li></ul></td>
+<td style="text-align:left">The predicted lifetime value of a conversion event. For example, <code>432.12</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Content IDs</td>
-<td style="text-align:left"><ul><li>The Content IDs associated with the event, such as product SKUs for items in an AddToCart event.</li><li>Example: <strong>[&lsquo;ABC123&rsquo;, &lsquo;XYZ789&rsquo;]</strong>.</li><li>If a non-array event attribute is provided, it is converted into a single-item array.</li><li>If <strong>Content Type</strong> is <strong>product</strong>; this mapped value must be a non-array event attribute or single-element array.</li></ul></td>
+<td style="text-align:left">The Content IDs associated with the event, such as product SKUs for items in an AddToCart event. For example, <code>['ABC123', 'XYZ789']</code>. If a non-array event attribute is provided, it is converted into a single-item array. If <strong>Content Type</strong> is <code>product</code>, this mapped value must be a non-array event attribute or single-element array.</td>
 </tr>
 <tr>
 <td style="text-align:left">Value</td>
-<td style="text-align:left"><ul><li>A numeric value associated with this event.</li><li>This may be a monetary value or a value in some other metric.</li><li>Example: <strong>142.54</strong></li></ul></td>
+<td style="text-align:left">A numeric value associated with this event. This may be a monetary value or a value in another metric. For example, <code>142.54</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Content Category</td>
-<td style="text-align:left"><ul><li>The category of the content associated with the event.</li><li>Example: <strong>grocery</strong></li></ul></td>
+<td style="text-align:left">The category of the content associated with the event. For example, <code>grocery</code>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Quantities</td>
-<td style="text-align:left"><ul><li>Product quantities.</li></ul></td>
+<td style="text-align:left">Product quantities.</td>
 </tr>
 <tr>
 <td style="text-align:left">Prices</td>
-<td style="text-align:left"><ul><li>Product individual prices.</li></ul></td>
+<td style="text-align:left">Product individual prices.</td>
 </tr>
 <tr>
 <td style="text-align:left">IDs</td>
-<td style="text-align:left"><ul><li>Product IDs.</li></ul></td>
+<td style="text-align:left">Product IDs.</td>
 </tr>
 <tr>
 <td style="text-align:left">JSON Template Variables</td>
-<td style="text-align:left"><ul><li>Provide template variables as data input for templates.</li><li>See the <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a>.</li><li>Name nested template variables with the dot notation.</li><li>Example <code>items.name</code>.</li><li>Nested template variables are typically built from data layer list attributes.</li></ul></td>
+<td style="text-align:left">Provide template variables as data input for templates. For more information, see <a href="/server-side/connectors/webhook-connectors/template-variables/">Template Variables Guide</a>. Name nested template variables with the dot notation. For example, <code>items.name</code>. Nested template variables are typically built from data layer list attributes.</td>
 </tr>
 <tr>
 <td style="text-align:left">JSON Templates</td>
-<td style="text-align:left"><ul><li>Provide valid JSON templates to be referenced in Custom Data section.</li><li>Templates are injected by name with double curly braces into supported fields.</li><li>Example: <code>{{SomeTemplateName}}</code>.</li><li>For additional information, see the <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Webhook - Send Custom Request - Trimou Templating Engine Guide</a>.</li></ul></td>
+<td style="text-align:left">Provide valid JSON templates to be referenced in Custom Data section. Templates are injected by name with double curly braces into supported fields. For example, <code>{{SomeTemplateName}}</code>. For additional information, see <a href="/server-side/connectors/webhook-connectors/trimou-templating-engine/">Webhook - Send Custom Request - Trimou Templating Engine Guide</a>.</td>
 </tr>
 <tr>
 <td style="text-align:left">Tealium iQ Tag ID</td>
@@ -713,7 +697,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left">Automatic Deduplication</td>
-<td style="text-align:left">When you provide the Tealium iQ Tag ID, we will automatically look for the <strong>Event ID</strong> value that Tealium iQ sends.</td>
+<td style="text-align:left">When you provide the Tealium iQ Tag ID, the connector automatically looks for the <strong>Event ID</strong> value that Tealium iQ sends.</td>
 </tr>
 <tr>
 <td style="text-align:left">Advertiser Tracking Enabled</td>
@@ -721,7 +705,7 @@ var utag_data = {
 </tr>
 <tr>
 <td style="text-align:left">Application Tracking Enabled</td>
-<td style="text-align:left">Required. You can enable ad tracking at the app level. Your SDK should allow an app developer to put an opt-out setting into their app. Use this field to specify the person&rsquo;s choice. Use <code>0</code> for disabled, <code>1</code> for enabled.</td>
+<td style="text-align:left">Required. This parameter enables ad tracking at the app level. Your SDK should allow an app developer to put an opt-out setting into their app. Use this field to specify the person&rsquo;s choice. Use <code>0</code> for disabled, <code>1</code> for enabled.</td>
 </tr>
 <tr>
 <td style="text-align:left">App Version</td>
@@ -800,7 +784,7 @@ var utag_data = {
 <td style="text-align:left">Used internally by the Android SDKs.</td>
 </tr>
 <tr>
-<td style="text-align:left">Url Schemes (Array)</td>
+<td style="text-align:left">URL Schemes (Array)</td>
 <td style="text-align:left">Used internally by the iOS and Android SDKs.</td>
 </tr>
 <tr>
@@ -824,7 +808,305 @@ var utag_data = {
 <li>User Agent (<code>fbc</code>)</li>
 </ul>
 <p>To disable automapping, set <strong>Disable Automapping</strong> to <code>true</code>. Any automapped parameters will not be sent to the vendor.</p>
-<h3 id="action---send-lead-event">Action - Send Lead Event</h3>
+<h3 id="send-advanced-measurement-event">Send Advanced Measurement Event</h3>
+<p>This Facebook action has limited availability. Contact your Facebook representative to request access. If this action has not been activated in your Facebook account, it returns errors such as &ldquo;Application does not have the capability to make this API call.&rdquo; or &ldquo;This pixel is not authorized to report server events.&rdquo;</p>
+<h4 id="event-data">Event Data</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Event Name</td>
+<td>(Required) A Facebook pixel standard event name.</td>
+</tr>
+<tr>
+<td>Event Time</td>
+<td>A Unix timestamp, in seconds, indicating when the actual event occurred. The connector will convert a mapped date attribute to seconds and will auto-populate the event time if absent.</td>
+</tr>
+<tr>
+<td>Event Source Url</td>
+<td>The browser URL where the event happened. Required if <strong>Action Source</strong> is set to <code>website</code>. If <strong>Action Source</strong> is set to <code>website</code> and this field is not mapped, in EventStream it will be auto-mapped to the attribute <code>Current URL</code>. If <strong>Action Source</strong> is set to <code>website</code> and this field is not mapped, in AudienceStream it will be auto-mapped to the attribute <code>Last Event URL</code>.</td>
+</tr>
+<tr>
+<td>Opt Out</td>
+<td>A flag that indicates we should not use this event for ads delivery optimization. Set this to <code>true</code> to use the event for attribution only.</td>
+</tr>
+<tr>
+<td>Event ID</td>
+<td>An ID used by Facebook to de-duplicate the same event sent from both server and browser. Verify this is an ID unique to one pair of events sent from browser and server.</td>
+</tr>
+<tr>
+<td>Debugging Level</td>
+<td>Set the <code>trace</code> level for the event. Accepted values: <code>1</code> for Error, <code>2</code> for Info, or <code>3</code> for Debug.</td>
+</tr>
+<tr>
+<td>Test Event Code</td>
+<td>Send the test ID as a test_event_code parameter to start seeing event activity appear in the Test Events window. Events sent with test_event_code are not dropped. They flow into Events Manager and are used for targeting and ads measurement purposes.</td>
+</tr>
+<tr>
+<td>Pixel/Dataset ID Override</td>
+<td>If not provided, then the Pixel ID from the connector configuration is used.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="user-data">User Data</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Email</td>
+<td>Unhashed lowercase or hashed SHA-256.</td>
+</tr>
+<tr>
+<td>First Name</td>
+<td>A first name in lowercase.</td>
+</tr>
+<tr>
+<td>Last Name</td>
+<td>A last name in lowercase.</td>
+</tr>
+<tr>
+<td>Phone</td>
+<td>A phone number. Digits only including country code and area code: <code>16505554444</code>.</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Single lowercase letter, <code>f</code> or <code>m</code>, if unknown, leave blank.</td>
+</tr>
+<tr>
+<td>Date of Birth</td>
+<td>A date of birth given as year, month, and day: <code>19971226</code> for December 26, 1997.</td>
+</tr>
+<tr>
+<td>City</td>
+<td>A city in lower-case without spaces or punctuation: <code>menlopark</code>.</td>
+</tr>
+<tr>
+<td>State or Province</td>
+<td>A two-letter state code in lowercase: <code>ca</code>.</td>
+</tr>
+<tr>
+<td>Zip or Postal Code</td>
+<td>A five-digit zip code: <code>94035</code>.</td>
+</tr>
+<tr>
+<td>Country</td>
+<td>A two-letter country code in lowercase. Example: <code>us</code>.</td>
+</tr>
+<tr>
+<td>Advanced Measurement Table</td>
+<td>The data table for Advanced Measurement API.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="custom-data">Custom Data</h4>
+<p>Map custom data either as plain test values or using a JSON template by referencing its name in the format: <code>{{template_name}}</code>.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Value</td>
+<td>A numeric value associated with this event. This could be a monetary value or a value in some other metric: <code>142.54</code>.</td>
+</tr>
+<tr>
+<td>Currency</td>
+<td>The currency for the value specified if applicable. Currency must be a valid ISO 4217 three digit currency code: <code>usd</code>.</td>
+</tr>
+<tr>
+<td>Content Name</td>
+<td>The name of the page or product associated with the event: <code>lettuce</code>.</td>
+</tr>
+<tr>
+<td>Content Category</td>
+<td>The category of the content associated with the event: <code>grocery</code>.</td>
+</tr>
+<tr>
+<td>Content IDs</td>
+<td><ul><li>The content IDs associated with the event, such as product SKUs for items in an AddToCart event: <code>[</code>ABC123<code>, </code>XYZ789<code>]</code>.</li> <li>If a non-array event attribute is provided, it will be converted into a single-item array.</li> <li>If <b>Content Type</b> is <code>product</code>, this mapped value must be a non-array event attribute or single-element array.</li></ul></td>
+</tr>
+<tr>
+<td>Content Type</td>
+<td><ul><li>Must be either <code>product</code> or <code>product_group</code>.</li> <li>Set to <code>product</code> if the keys you send <strong>Content IDs</strong>: or <strong>Content Product</strong> represent products.</li> <li>Set to <code>product_group</code> if the keys you send in <strong>Content IDs:</strong> represent product groups. </li></ul></td>
+</tr>
+<tr>
+<td>Order ID</td>
+<td>The order ID for this transaction: <code>order1234</code>.</td>
+</tr>
+<tr>
+<td>Predicted Lifetime Value</td>
+<td>The predicted lifetime value of a conversion event: <code>432.12</code>.</td>
+</tr>
+<tr>
+<td>Number of Items</td>
+<td>Use only with <code>InitiateCheckout</code> events. The number of items that a user tries to buy during checkout: <code>4</code>.</td>
+</tr>
+<tr>
+<td>Search String</td>
+<td>Use only with Search events. A search query made by a user: <code>lettuce</code>.</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>Use only with <code>CompleteRegistration</code> events. The status of the registration event: <code>registered</code>.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="contents-data">Contents Data</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IDs</td>
+<td>Product IDs.</td>
+</tr>
+<tr>
+<td>Quantities</td>
+<td>Product quantities.</td>
+</tr>
+<tr>
+<td>Prices</td>
+<td>Product individual prices.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="automatic-deduplication-1">Automatic Deduplication</h4>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tealium iQ Tag ID</td>
+<td>When the Tealium iQ Tag ID is provided, we automatically look for your Event ID value that is sent from Tealium iQ.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="app-data">App Data</h4>
+<p>Required for app events.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Advertiser Tracking Enabled</td>
+<td>(Required) Use this field to specify ATT permission on an iOS 14.5+ device. Set to <code>0</code> for disabled or <code>1</code> for enabled.</td>
+</tr>
+<tr>
+<td>Application Tracking Enabled</td>
+<td>(Required) Users can enable ad tracking on an app level. Your SDK should allow an app developer to put an opt-out setting into their app. Use this field to specify the user&rsquo;s choice. Use <code>0</code> for disabled, <code>1</code> for enabled.</td>
+</tr>
+<tr>
+<td>App Version</td>
+<td>(Required) The Version must be <code>a2</code> for Android or <code>i2</code> for iOS.</td>
+</tr>
+<tr>
+<td>App Package Name</td>
+<td>The app package name, for example: <code>com.facebook.sdk.samples.hellofacebook</code>.</td>
+</tr>
+<tr>
+<td>Short Version</td>
+<td>The short version, for example: <code>1.0</code>.</td>
+</tr>
+<tr>
+<td>Long Version</td>
+<td>The long version, for example: <code>1.0 long</code>.</td>
+</tr>
+<tr>
+<td>OS Version</td>
+<td>(Required) OS version, for example: 13.4.1.</td>
+</tr>
+<tr>
+<td>Device Model Name</td>
+<td>The device model name, for example: <code>iPhone5,1</code>.</td>
+</tr>
+<tr>
+<td>Locale</td>
+<td>The locale, for example: <code>En_US</code>.</td>
+</tr>
+<tr>
+<td>Timezone Abbreviation</td>
+<td>The timezone abbreviation, for example: <code>PDT</code>.</td>
+</tr>
+<tr>
+<td>Carrier</td>
+<td>The carrier, for example: <code>AT&amp;T</code>.</td>
+</tr>
+<tr>
+<td>Screen Width</td>
+<td>The screen width, for example: <code>320</code>.</td>
+</tr>
+<tr>
+<td>Screen Height</td>
+<td>The screen height, for example: <code>568</code>.</td>
+</tr>
+<tr>
+<td>Screen Density</td>
+<td>The screen density, for example: <code>2</code>.</td>
+</tr>
+<tr>
+<td>CPU Cores</td>
+<td>The CPU cores, for example: <code>2</code>.</td>
+</tr>
+<tr>
+<td>Storage Size (GB)</td>
+<td>The external storage size in GB, for example: <code>13</code>.</td>
+</tr>
+<tr>
+<td>Free Storage (GB)</td>
+<td>The free space on external storage in GB, for example: <code>8</code>.</td>
+</tr>
+<tr>
+<td>Device Timezone</td>
+<td>The device timezone, for example: <code>USA/New York</code>.</td>
+</tr>
+<tr>
+<td>Campaign IDs</td>
+<td>An encrypted string and non-user metadata appended to the outbound URL (for example, <code>ad_destination_url</code>) or deep link (for App Aggregated Event Manager) when a user clicked on a link from Facebook.</td>
+</tr>
+<tr>
+<td>Install Referrer</td>
+<td>Third-party install referrer, currently available for Android only. For more information, see <a href="https://developers.google.com/analytics/devguides/collection/android/v4/campaigns?fbclid=IwAR0vdnDVr5OsK-VRvhw5qCOwOwVSFbs-pqgU_MIrQwdLGtZzbWIjjT2ttnA">Google Analytics (Android) &gt; Campaign Measurement</a>.</td>
+</tr>
+<tr>
+<td>Installer Package</td>
+<td>Used internally by the Android SDKs.</td>
+</tr>
+<tr>
+<td>Url Schemes (Array)</td>
+<td>Used internally by the iOS and Android SDKs.</td>
+</tr>
+<tr>
+<td>Windows Attribution ID</td>
+<td>Attribution token used for Windows 10.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="send-lead-event">Send Lead Event</h3>
 <h4 id="batch-limits">Batch Limits</h4>
 <p>This action uses batched requests to support high-volume data transfers to the vendor. For more information, see <a href="/server-side/connectors/batched-actions/">Batched Actions</a>. Requests are queued until one of the following thresholds is met or the profile is published:</p>
 <ul>
@@ -847,20 +1129,24 @@ var utag_data = {
 </tr>
 <tr>
 <td>Event Name</td>
-<td>(Required) Capture the lead stages you use in your CRM. The <code>event_name</code> parameter should indicate a lead moving through the sales funnel in your CRM. Make sure to send all stages as they are updated, including the raw lead.</td>
+<td>(Required) Capture the lead stages you use in your CRM. The <code>event_name</code> parameter indicates a lead moving through the sales funnel in your CRM. Make sure to send all stages as they are updated, including the raw lead.</td>
 </tr>
 <tr>
 <td>Event Time</td>
-<td>A Unix timestamp in seconds indicating when the lead stage update event is updated by your CRM. The timestamp must occur after the lead generation time or the event may be discarded. If this field is not mapped, it will be initialized with the current timestamp.</td>
+<td>A Unix timestamp in seconds indicating when the lead stage update event is updated by your CRM. The timestamp must occur after the lead generation time or the event may be discarded. If this field is not mapped, it is initialized with the current timestamp.</td>
 </tr>
 <tr>
 <td>Test Event Code</td>
-<td>You can verify that your server events are received correctly by Facebook by using the <strong>Test Events</strong> feature in <strong>Events Manager</strong>. To find the tool, navigate to <strong>Events Manager &gt; Data Sources &gt; Your Pixel &gt; Test Events</strong>.</td>
+<td>Verify that your server events are received correctly by Facebook by using the <strong>Test Events</strong> feature in <strong>Events Manager</strong>. To find the tool, navigate to <strong>Events Manager &gt; Data Sources &gt; Your Pixel &gt; Test Events</strong>.</td>
+</tr>
+<tr>
+<td>Lead Event Source</td>
+<td>The name of the CRM where the events are coming from.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="setup">Setup</h2>
-<p>There are several options available to setup and manage Tealium&rsquo;s server-side API partner integration with Facebook.</p>
+<p>There are several options available to setup and manage the Tealium server-side API partner integration with Facebook.</p>
 <ul>
 <li><a href="https://www.facebook.com/events_manager2/partner_integrations/tealium"><strong>The Facebook Partner Integration Gallery</strong></a><br>
 <figure><a class="slb" href="/images/server-side-connectors/facebook-partner-integration-gallery.png"><img src="/images/server-side-connectors/facebook-partner-integration-gallery.png"
@@ -868,7 +1154,7 @@ var utag_data = {
          title="Facebook Partner Integration Gallery"/>
     </a>
 </figure></li>
-<li>The Pixel <strong>Settings</strong> tab via the <strong>Choose Partner</strong> button:<figure><a class="slb" href="/images/server-side-connectors/choosepartner.png"><img src="/images/server-side-connectors/choosepartner.png"
+<li>The Pixel <strong>Settings</strong> tab through the <strong>Choose Partner</strong> button:<figure><a class="slb" href="/images/server-side-connectors/choosepartner.png"><img src="/images/server-side-connectors/choosepartner.png"
          alt="Choose partner"
          title="Choose partner"/>
     </a>
@@ -968,7 +1254,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  February 27, 2024 
+          <p>This page was last updated:  June 12, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -983,14 +1269,15 @@ No</button>
   <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#prerequisites" href="javascript:void(0)">Prerequisites</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#api-information" href="javascript:void(0)">API Information</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#connector-actions" href="javascript:void(0)">Connector Actions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configure-settings" href="javascript:void(0)">Configure Settings</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action-settings---parameters-and-options" href="javascript:void(0)">Action Settings - Parameters and Options</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#deduplication-for-facebook-pixel-and-facebook-conversions-api-for-web-events" href="javascript:void(0)">Deduplication for Facebook Pixel and Facebook Conversions API for Web Events</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#api-information" href="javascript:void(0)">API Information</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#actions" href="javascript:void(0)">Actions</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configuration" href="javascript:void(0)">Configuration</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#deduplication-for-web-events" href="javascript:void(0)">Deduplication for web events</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#offline-conversions" href="javascript:void(0)">Offline conversions</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action---send-event" href="javascript:void(0)">Action - Send Event</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action---send-lead-event" href="javascript:void(0)">Action - Send Lead Event</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#actions" href="javascript:void(0)">Actions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#send-event" href="javascript:void(0)">Send Event</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#send-advanced-measurement-event" href="javascript:void(0)">Send Advanced Measurement Event</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#send-lead-event" href="javascript:void(0)">Send Lead Event</a></li>
               </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#setup" href="javascript:void(0)">Setup</a></li>
               <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#verify-events" href="javascript:void(0)">Verify Events</a></li>
               <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overview-tab" href="javascript:void(0)">Overview Tab</a></li>
@@ -1149,7 +1436,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/api/getting-started/auth/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/api/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           API
         </a>
     </li>
@@ -1213,8 +1500,16 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Release Notes
+        <a href="https://docs-preview.tealium.com/release-notes/by-feature/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release notes (by feature)
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/releases/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Releases notes (by date)
         </a>
     </li>
   
@@ -1258,9 +1553,13 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
-  
-  
-  
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/server-side-connectors/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Release notes
+      </a>
+      </li>
+      
+      
   
   
   

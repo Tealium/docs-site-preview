@@ -1,10 +1,823 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html class="no-js" lang="en">
   <head>
-    <title>https://docs-preview.tealium.com/ja/platforms/shopify/install/</title>
-    <link rel="canonical" href="https://docs-preview.tealium.com/ja/platforms/shopify/install/">
-    <meta name="robots" content="noindex">
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=https://docs-preview.tealium.com/ja/platforms/shopify/install/">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Install | Tealium for Shopify |Preview of Tealium Docs</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+    
+    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/platforms/shopify/install/">
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
+  <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
+    <script>
+    var utag_data = {
+        site_section  : "platforms",
+        reading_time  : "7",
+        site_language : "en",
+        tealium_event : "page_view"
+    }
+    </script>
+
+    <script>
+     (function(a,b,c,d){
+        a="//tags.tiqcdn.com/utag/tealium/docs/qa/utag.js";
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+    </script>
+<nav class="w-100 sticky-t bg-primary-color-light bb b--light-gray dpn" role="navigation">
+  <div class="flex-ns flex-wrap items-center justify-start mw9">
+    <div class="lh-solid ml0-ns mr0 mr4-l mv3 pl15 dib db-ns">
+      <a href="/"><img src="/images/icons/tealium-documentation-logo-color.svg" class="v-mid dib" width="186" height="31"></a>
+    </div>
+    
+    <div class="dib ml3 mr4 mv3 pl15"><div id="docsearch">
+</div>
+</div><ul class="list ma0 pa0 dn dib-ns">
+      <li class="f5 dib mr4">
+         <a href="https://support.tealiumiq.com/en/support/solutions" class="dim link mid-gray">Knowledge Base&nbsp;<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+</a>
+      </li>
+        
+      <li class="f5 dib mr4">
+      
+        
+      
+        
+          <a href="/ja/platforms/shopify/install/" class="dim link mid-gray">日本語</a>
+        
+      
+      </li>
+            
+    </ul>
+  </div>
+</nav>
+    
+    <main role="main" class="content-with-sidebar pb0-ns">
+      
+
+<div class="w-100 pr4">
+<div class="flex">
+
+    
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
+<nav class="side-nav f6" role="navigation">
+  <ul class="list pa0 mt0 mb1">
+  
+    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/platforms" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Platforms</a></li>
+  
+  </ul>
+  <ul class="list pa0" data-nav-section="shopify"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">Shopify</span>
+        <ul data-level="1" class="shopify desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/shopify/install/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".shopify-install">Install</a></li></ul></li></ul>
+</nav>
+</div>
+    
+
+    <article id="main-content" class="order-1 overflow-auto vh-100 max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
+      <div class="documentation-copy ph4">
+        <header class="flex-none w-100"><nav id="breadcrumb">
+<ul class="nav">
+
+    
+    
+    
+  
+  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/">Platforms</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/shopify/">Tealium for Shopify</a></li>
+  
+
+  
+  
+
+</ul>
+</nav>
+
+<h1 class="lh-title mt30 mb3">Install</h1>
+</header>
+
+<div class="mv2 mid-gray fn w-100">
+  
+
+  
+    <p class="f4 fw3 lh-copy">
+      This article describes how to customize your Shopify theme to use Tealium with the Tealium Shopify integration.
+    </p>
+  
+</div>
+
+<div class="prose nested-links" id="prose">
+  <p class="note"><i class="fa fa-exclamation-triangle"></i>Tealium Shopify integration does not currently support Shopify version 2.0. Alternatively, you can use the <a href="/platforms/http-api/">Tealium HTTP API</a> to send network requests to server-side directly using the web pixels.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>To use Tealium with Shopify, you must customize your Shopify theme to use Tealium code with the Tealium Shopify integration. The Tealium code provides a Universal Data Object (UDO) and loads the necessary Tealium assets on each page of your site.</p>
+<p>The code snippet for the order status page also appears on the &ldquo;Thank you&rdquo; page of the checkout. The code snippet provides the UDO for conversion tracking. Since the order status page may be revisited after the order is placed, it is recommended to configure logic in Tealium iQ Tag Management in order not to track conversions twice.</p>
+<p>Only Shopify Plus customers have access to the <code>checkout.liquid</code> file, which loads <code>utag.js</code> throughout the checkout funnel. This integration does not currently support the checkout funnel. However you may implement your own <code>checkout.liquid</code> following the patterns used on other pages.</p>
+<h2 id="setup-instructions">Setup Instructions</h2>
+<p>To customize your Shopify theme for Tealium integration, follow these steps:</p>
+<ol>
+<li><a href="#enable-tealium-settings">Enable Tealium settings</a>.</li>
+<li><a href="#install-utagjs-and-on-page-data-layer">Install utag.js and the on-page data layer</a>.</li>
+<li><a href="#install-script-for-order-status-page">Install the script for the order status page</a>.</li>
+<li>(For Shopify Plus customers) <a href="#install-script-for-checkout-shopify-plus-only">Install the script for the checkout process</a>. <p class="note"><i class="fa fa-exclamation-triangle"></i>Shopify will deprecate the <code>checkout.liquid</code> theme file on August 13, 2024. For details, see <a href="https://shopify.dev/docs/apps/checkout#upgrade">Shopify.dev docs: Upgrade</a>.</p></li>
+</ol>
+<h3 id="enable-tealium-settings">Enable Tealium settings</h3>
+<p>Copy and paste the following JSON object into the JSON array in the <a href="https://help.shopify.com/themes/development/theme-editor/settings-schema">Config/settings_schema.json</a> file of your Shopify theme. The JSON object enables the Tealium-specific settings for your theme.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;name&#34;</span>: <span style="color:#e6db74">&#34;Tealium&#34;</span>,
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;settings&#34;</span>: [
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;tealium_account&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;Account&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;info&#34;</span>: <span style="color:#e6db74">&#34;Name of your acount&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;tealium_profile&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;Profile&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;default&#34;</span>: <span style="color:#e6db74">&#34;main&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;info&#34;</span>: <span style="color:#e6db74">&#34;Which profile to load your tags from&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;placeholder&#34;</span>: <span style="color:#e6db74">&#34;main&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;text&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;tealium_environment&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;Environment&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;default&#34;</span>: <span style="color:#e6db74">&#34;prod&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;info&#34;</span>: <span style="color:#e6db74">&#34;Which environment to load your tags from&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;placeholder&#34;</span>: <span style="color:#e6db74">&#34;prod&#34;</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span>    {
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;type&#34;</span>: <span style="color:#e6db74">&#34;checkbox&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;tealium_enabled&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;label&#34;</span>: <span style="color:#e6db74">&#34;Enable&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;default&#34;</span>: <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;info&#34;</span>: <span style="color:#e6db74">&#34;Check to enable Tealium&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  ]
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Edit your Tealium-specific settings in the <strong>General Settings</strong> tab when customizing your theme.</p>
+<h3 id="install-utagjs-and-on-page-data-layer">Install utag.js and on-page data layer</h3>
+<p>Follow these steps to install <code>utag.js</code> and set up an on-page data layer for your Shopify store. This process involves adding specific snippets to your Shopify theme, which are provided in the <a href="https://github.com/Tealium/integration-shopify">Tealium Integration for Shopify GitHub repository</a>. These snippets enable the Universal Data Object (UDO) implementations, necessary for tracking and analytics on different types of pages within your store.</p>
+<h4 id="step-1---access-your-themes-code">Step 1 - Access your theme&rsquo;s code</h4>
+<ol>
+<li>Log in to your Shopify account.</li>
+<li>Go to <strong>Online Store &gt; Themes</strong> to view your current theme.</li>
+<li>Find the theme you want to edit, click on the <strong>Actions</strong> drop-down menu, and select <strong>Edit code</strong>. Alternatively, you can access the code editor directly by clicking the <strong>Customize</strong> button for your theme.</li>
+</ol>
+<h4 id="step-2---add-the-udo-implementation-snippets">Step 2 - Add the UDO implementation snippets</h4>
+<ol>
+<li>Access the <a href="https://github.com/Tealium/integration-shopify">Tealium Integration for Shopify GitHub repository</a> to download the necessary code snippets for UDO implementations across various page types.</li>
+<li>In the Shopify theme code editor, click the <strong>Snippets</strong> folder to expand it.</li>
+<li>Drag and drop the appropriate snippets from the GitHub repository into the <strong>Snippets</strong> folder in your Shopify theme editor. For more information, see <a href="https://help.shopify.com/themes/development/templates#snippets">Shopify.dev docs: Theme snippets</a>.</li>
+</ol>
+<h4 id="step-3---reference-the-snippets-in-your-templates">Step 3 - Reference the snippets in your templates</h4>
+<ol>
+<li>
+<p>After adding the snippets, click the <strong>Templates</strong> folder to expand it.</p>
+</li>
+<li>
+<p>For each template that corresponds to a page type (such as product, home, about us), insert a reference to the relevant UDO snippet at the beginning of the template file. These references ensure the data layer is initialized correctly for each page type.</p>
+<p>For example, to integrate the data layer on a product page, edit the <code>product.liquid</code> template as follows:</p>
+<ul>
+<li>
+<p>At the beginning of the <code>product.liquid</code> file, add the following line to include the <code>product_udo</code> snippet, previously added to the <strong>Snippets</strong> folder:</p>
+<pre tabindex="0"><code class="language-liquid" data-lang="liquid">{% include &#39;product_udo&#39; %}
+</code></pre></li>
+<li>
+<p>This line should be placed before any existing content in the template file to ensure the data layer is initialized before any other scripts run. The <code>product.liquid</code> template should be similar to this after including the <code>product_udo</code> snippet:</p>
+<pre tabindex="0"><code class="language-liquid" data-lang="liquid">{% include &#39;product_udo&#39; %}
+
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section &#39;product-template&#39; %}
+
+&lt;script&gt;
+  // Override default values of shop.strings for each template.
+  // Alternate product templates can change values of
+  // add to cart button, sold out, and unavailable states here.
+  theme.productStrings = {
+    addToCart: {{ &#39;products.product.add_to_cart&#39; | t | json }},
+    soldOut: {{ &#39;products.product.sold_out&#39; | t | json }},
+    unavailable: {{ &#39;products.product.unavailable&#39; | t | json }}
+  }
+&lt;/script&gt;
+</code></pre></li>
+<li>
+<p>Continue this process for each template corresponding to different page types, using the appropriate snippet name in place of <code>product_udo</code>. Generally, the names of the snippets and the templates they correspond to are similar, without the <code>_udo</code> suffix in the snippet names. For example:</p>
+<ul>
+<li>For the <code>index.liquid</code> template (the homepage), include the <code>home_udo</code> snippet.</li>
+<li>For generic templates like <code>404.liquid</code>, use the <code>page_udo</code> snippet to ensure a broad coverage.
+For more information, see <a href="https://help.shopify.com/themes/development/templates">Shopify.dev docs: Theme architecture</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After adding the <code>include</code> statement to a template, click <strong>Save</strong> to apply your changes.</p>
+</li>
+<li>
+<p>To verify your changes, open the developer console in your web browser and inspect <code>utag.data</code>.</p>
+</li>
+</ol>
+<h3 id="install-script-for-order-status-page">Install script for order status page</h3>
+<p>Unlike other pages, the order status page doesn&rsquo;t have access to the admin settings, so you must reconfigure your Tealium account information. Follow these steps to define these settings:</p>
+<ol>
+<li>
+<p>From your Shopify admin, click <strong>Settings</strong> and then click <strong>Checkout</strong>.</p>
+</li>
+<li>
+<p>In the <strong>Checkout</strong> settings, scroll to <strong>Order status page</strong> near the bottom of the page.</p>
+</li>
+<li>
+<p>In <strong>Additional scripts</strong>, add the following code:</p>
+<pre tabindex="0"><code class="language-liquid" data-lang="liquid">&lt;script&gt;
+  {
+    &#34;product_price&#34;: [
+    {% for line_item in checkout.line_items %}
+      &#34;{{ line_item.price | money_without_currency }}&#34;{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+    &#34;product_name&#34;: [
+    {% for line_item in checkout.line_items %}
+      &#34;{{ line_item.title }}&#34;{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+    &#34;product_sku&#34;: [
+    {% for line_item in checkout.line_items %}
+      &#34;{{ line_item.sku }}&#34;{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+    ],
+
+    &#34;page_name&#34;: &#34;{{ page_title }}&#34;,
+    &#34;language_code&#34;: &#34;{{ shop.locale }}&#34;,
+
+    {% if customer %}
+      &#34;customer_logged_in&#34;: &#34;true&#34;,
+      &#34;customer_id&#34;: &#34;{{ customer.id }}&#34;,
+      &#34;customer_email&#34;: &#34;{{ customer.email }}&#34;,
+      &#34;customer_first_name&#34;: &#34;{{ customer.first_name }}&#34;,
+      &#34;customer_last_name&#34;: &#34;{{ customer.last_name }}&#34;,
+
+      {% if customer.default_address %}
+        &#34;country_code&#34;: &#34;{{ customer.default_address.country_code }}&#34;,
+      {% endif %}
+
+    {% else %}
+      &#34;customer_loggedin&#34;: &#34;false&#34;,
+    {% endif %}
+
+    {% if cart %}
+      &#34;cart_total_items&#34;: &#34;{{ cart.item_count }}&#34;,
+      &#34;cart_total_value&#34;: &#34;{{ cart.total_price | money_without_currency }}&#34;,
+    {% endif %}
+
+    &#34;page_type&#34;: &#34;order&#34;
+  }
+&lt;/script&gt;
+
+&lt;!-- Loading script asynchronously --&gt;
+&lt;script type=&#34;text/javascript&#34;&gt;
+    (function(a,b,c,d){
+    a=&#39;//tags.tiqcdn.com/utag/{{ settings.tealium_account }}/{{ settings.tealium_profile }}/{{ settings.tealium_environment }}/utag.js&#39;;
+    b=document;c=&#39;script&#39;;d=b.createElement(c);d.src=a;d.type=&#39;text/java&#39;+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+&lt;/script&gt;
+{% else %}
+&lt;!-- Configure your Tealium account information for the order confirmation page. --&gt;
+{% endif %}
+</code></pre><p>For more information, see <a href="https://help.shopify.com/themes/customization/order-status">Shopify help center: Order status page</a></p>
+</li>
+<li>
+<p>Set <code>tealium_enabled</code> to <code>true</code>.</p>
+</li>
+<li>
+<p>Set the <code>tealium_account</code>, <code>tealium_profile</code>, and <code>tealium_environment</code> variables to match what you configured in the settings.</p>
+</li>
+</ol>
+<h3 id="install-script-for-checkout-shopify-plus-only">Install script for checkout (Shopify Plus only)</h3>
+<p>This step is for Shopify Plus customers who want to integrate <code>utag.js</code> throughout the checkout funnel using the <code>checkout.liquid</code> file.</p>
+<h4 id="accessing-checkoutliquid">Accessing <code>checkout.liquid</code></h4>
+<ul>
+<li><strong>Shopify Plus Customers</strong>: You can request access to your <code>checkout.liquid</code> file if it&rsquo;s not already accessible. This file loads <code>utag.js</code> during the checkout process. If you haven&rsquo;t previously modified this file, you&rsquo;ll need to contact Shopify Support to gain access before you can proceed with the installation.</li>
+<li><strong>Non-Shopify Plus Customers</strong>: Shopify Support does not grant access to the <code>checkout.liquid</code> file for customers without a Shopify Plus account. This limitation means that the <code>utag.js</code> script cannot be installed on checkout pages. However, completing the prior steps ensures that <code>utag.js</code> is installed on other important pages, such as the shopping cart and order confirmation pages.</li>
+</ul>
+<h4 id="installation-instructions">Installation instructions</h4>
+<ol>
+<li>Open the <code>checkout_udo.liquid</code> file.</li>
+<li>In line 10, replace the placeholders with your Tealium iQ account and profile information.</li>
+<li>Copy the modified content and paste it in the Shopify checkout liquid file.</li>
+<li>Save your changes and test to ensure the integration works as expected.</li>
+</ol>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This  checkout code serves as a foundational template. Depending on your Shopify site&rsquo;s specific requirements and setup, customizations may be necessary for optimal performance.</p>
+<h2 id="release-notes">Release Notes</h2>
+<h4 id="102">1.0.2</h4>
+<ul>
+<li>Updated <code>README</code> to more clearly reflect the capabilities of the integration.</li>
+<li>Updated <code>order_status</code> snippet to include more data and better variable names.</li>
+<li>Renamed checkout.liquid to <code>order_status.liquid</code> to better reflect its functionality.</li>
+</ul>
+<h4 id="101">1.0.1</h4>
+<ul>
+<li>Fixed misspelled variable name in the global_udo_vars snippet. <code>customer_loggedin</code> was replaced with <code>customer_logged_in</code>.</li>
+</ul>
+<h4 id="100-initial-release">1.0.0 Initial Release</h4>
+<ul>
+<li>All snippets and configuration required to customize a Shopify theme to integrate Tealium.</li>
+<li>Instructions for customizing a theme.</li>
+</ul>
+<h2 id="license">License</h2>
+<p>Use of this software is subject to the terms and conditions of the license agreement contained in the file titled <a href="https://github.com/Tealium/integration-shopify/blob/master/LICENSE.txt">LICENSE.txt</a>. Please read the license before downloading or using any of the files contained in this repository. By downloading or using any of these files, you are agreeing to be bound by and comply with the license agreement.</p>
+
+</div>
+
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"></div>
+
+
+
+        <div class="bt-l b--moon-gray pv3 cb">
+          <div id="feedback_form" class="dpn">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">Was this page helpful?</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+Yes</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+No</button>
+  </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea><button id="feedback_submit" class="db ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">Send Feedback</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">Thank you for your feedback!</p>
+  </div>
+</div>
+
+        </div>
+        <div class="bt-l b--moon-gray pt3 f6">
+          <p>This page was last updated:  April 8, 2024 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
+      
+
+
+
+  <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it works</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#setup-instructions" href="javascript:void(0)">Setup Instructions</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#enable-tealium-settings" href="javascript:void(0)">Enable Tealium settings</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#install-utagjs-and-on-page-data-layer" href="javascript:void(0)">Install utag.js and on-page data layer</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#install-script-for-order-status-page" href="javascript:void(0)">Install script for order status page</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#install-script-for-checkout-shopify-plus-only" href="javascript:void(0)">Install script for checkout (Shopify Plus only)</a></li>
+              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#release-notes" href="javascript:void(0)">Release Notes</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#license" href="javascript:void(0)">License</a></li>
+              </nav>
+  </aside></nav>
+
+</div>
+</div>
+    
+
+    </main>
+
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+<div class="globalmenu mobilemenu dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Home
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/iq-tag-management/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          iQ Tag Management
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          EventStream API Hub
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          AudienceStream CDP
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/functions/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Functions
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Data Connect
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/predict/getting-started/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Predict ML
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          DataAccess
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/client-side-tags/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Client-Side Tags
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side-connectors/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Server-Side Connectors
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/platforms/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Platforms
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/api/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          API
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Administration
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium for Pharma
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium Identity Partners
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Technology Partners
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Partner Integrations
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Glossary
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Early Access
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/by-feature/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release notes (by feature)
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/releases/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Releases notes (by date)
+        </a>
+    </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+</div>
+
+
+<div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
+    <ul class="list dib ph0 ma0 scrolling-touch tc">
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/shopify/install/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Install
+      </a>
+      </li>
+      
+      
+  
+
+</ul>
+
+</div>
+
+
+
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Site</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Section</button>
+
+</div>
+</div>
+
+</footer>
+
+    <script src="/dist/js/app.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://kit.fontawesome.com/59194dc628.js" crossorigin="anonymous"></script>
+
+
+    
+      
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+const translations = {
+  button: {
+    buttonText: 'Search',
+    buttonAriaLabel: 'Search',
+  },
+  modal: {
+    searchBox: {
+      resetButtonTitle: 'Clear the query',
+      resetButtonAriaLabel: 'Clear the query',
+      cancelButtonText: 'Cancel',
+      cancelButtonAriaLabel: 'Cancel',
+    },
+    startScreen: {
+      recentSearchesTitle: 'Recent',
+      noRecentSearchesText: 'No recent searches',
+      saveRecentSearchButtonTitle: 'Save this search',
+      removeRecentSearchButtonTitle: 'Remove this search from history',
+      favoriteSearchesTitle: 'Favorite',
+      removeFavoriteSearchButtonTitle: 'Remove this search from favorites',
+    },
+    errorScreen: {
+      titleText: 'Unable to fetch results',
+      helpText: 'You might want to check your network connection.',
+    },
+    footer: {
+      selectText: 'to select',
+      selectKeyAriaLabel: 'Enter key',
+      navigateText: 'to navigate',
+      navigateUpKeyAriaLabel: 'Arrow up',
+      navigateDownKeyAriaLabel: 'Arrow down',
+      closeText: 'to close',
+      closeKeyAriaLabel: 'Escape key',
+      searchByText: 'Search by',
+    },
+    noResultsScreen: {
+      noResultsText: 'No results for',
+      suggestedQueryText: 'Try searching for',
+      reportMissingResultsText: 'Believe this query should return results?',
+      reportMissingResultsLinkText: 'Let us know.',
+    },
+  },
+};
+var default_sections = [
+];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+if(ls_sections.indexOf("JAVASCRIPT") != -1) {
+  ls_sections = [];
+  localStorage.setItem("tealdocs_sections", JSON.stringify(default_sections));
+}
+var local_sections = new Set(ls_sections);
+var cur_section = $('#breadcrumb ul li:nth-child(n+2)');
+if(cur_section && cur_section.length) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 10) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
+}
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
+var opt_filters = [];
+if(hier_filters.length) {
+  opt_filters.push(hier_filters);
+}
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
+docsearch({
+  container: '#docsearch',
+  appId: '01G44CJWZ0',
+  apiKey: '09633c367e743588b87dbb988dad4158',
+  indexName: 'tealium',
+  placeholder: 'Search',
+  translations: translations,
+  searchParameters: {
+    "hitsPerPage": 50,
+    "analytics": false ,
+    "analyticsTags": ["site"]
+  },
+  insights: true,
+  debug: true ,
+  transformItems
+});
+</script>
+
+    
+
+  </body>
 </html>

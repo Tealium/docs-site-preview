@@ -1,10 +1,1722 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html class="no-js" lang="en">
   <head>
-    <title>https://docs-preview.tealium.com/ja/platforms/ios-swift/api/tealium-config/</title>
-    <link rel="canonical" href="https://docs-preview.tealium.com/ja/platforms/ios-swift/api/tealium-config/">
-    <meta name="robots" content="noindex">
     <meta charset="utf-8">
-    <meta http-equiv="refresh" content="0; url=https://docs-preview.tealium.com/ja/platforms/ios-swift/api/tealium-config/">
+    <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>TealiumConfig | API Reference |Preview of Tealium Docs</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="generator" content="Hugo 0.111.3">
+    
+    <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    
+    
+    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/platforms/ios-swift/api/tealium-config/">
+    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+    <script>
+      history.scrollRestoration = "manual";
+      if (location.hash) {
+        window.scrollTo(0, 0);
+        setTimeout(function() {
+          window.scrollTo(0, 0);
+        }, 10);
+      }
+    </script>
   </head>
+  <body class="sidebar ma0 sans-serif text-color-primary  hg-page">
+    <script>
+    var utag_data = {
+        site_section  : "platforms",
+        reading_time  : "17",
+        site_language : "en",
+        tealium_event : "page_view"
+    }
+    </script>
+
+    <script>
+     (function(a,b,c,d){
+        a="//tags.tiqcdn.com/utag/tealium/docs/qa/utag.js";
+        b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+        a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+      })();
+    </script>
+<nav class="w-100 sticky-t bg-primary-color-light bb b--light-gray dpn" role="navigation">
+  <div class="flex-ns flex-wrap items-center justify-start mw9">
+    <div class="lh-solid ml0-ns mr0 mr4-l mv3 pl15 dib db-ns">
+      <a href="/"><img src="/images/icons/tealium-documentation-logo-color.svg" class="v-mid dib" width="186" height="31"></a>
+    </div>
+    
+    <div class="dib ml3 mr4 mv3 pl15"><div id="docsearch">
+</div>
+</div><ul class="list ma0 pa0 dn dib-ns">
+      <li class="f5 dib mr4">
+         <a href="https://support.tealiumiq.com/en/support/solutions" class="dim link mid-gray">Knowledge Base&nbsp;<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
+<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
+</svg>
+</a>
+      </li>
+        
+      <li class="f5 dib mr4">
+      
+        
+      
+        
+          <a href="/ja/platforms/ios-swift/api/tealium-config/" class="dim link mid-gray">日本語</a>
+        
+      
+      </li>
+            
+    </ul>
+  </div>
+</nav>
+    
+    <main role="main" class="content-with-sidebar pb0-ns">
+      
+
+<div class="w-100 pr4">
+<div class="flex">
+
+    
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-scroll dn db-ns sticky-l pt3 pl125" style="width:280px;">
+<nav class="side-nav f6" role="navigation">
+  <ul class="list pa0 mt0 mb1">
+  
+    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/platforms" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Platforms</a></li>
+  
+  </ul>
+  <ul class="list pa0" data-nav-section="ios-swift"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><span class="pb2">iOS (Swift) 2.x</span>
+        <ul data-level="1" class="ios-swift desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-install">Install</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/track/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-track">Track</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/data-layer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-data-layer">Data Layer</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/consent-management/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-consent-management">Consent Management</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/app-extensions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-app-extensions">App Extensions</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/modules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-modules">Modules</a></li><li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".ios-swift-module-list">Module List</a>
+        <ul class="pl2  ios-swift-module-list desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/appdata/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-appdata">AppData Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/adobe-visitor-service/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-adobe-visitor-service">AdobeVisitorService Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/attribution/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-attribution">Attribution Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/autotracking/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-autotracking">AutoTracking Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/collect/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-collect">Collect Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/connectivity/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-connectivity">Connectivity Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/crash-reporter/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-crashreporter">CrashReporter Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/device-data/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-devicedata">DeviceData Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/in-app-purchase/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-inapppurchase">In-App Purchase Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/lifecycle/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-lifecycle">Lifecycle Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/location/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-location">Location Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/media/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-media">Media Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/remote-commands/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-remotecommands">RemoteCommands Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/tag-management/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-tagmanagement">TagManagement Module</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/module-list/visitor-service/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-module-visitor-service">VisitorService Module</a></li></ul>
+      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/with-objective-c/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".with-objective-c">Working with Objective-C</a></li><li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 primary-color expanded " data-target=".ios-swift-api">API Reference</a>
+        <ul class="pl2 bl b--primary bw1 ios-swift-api desktopmenu animated fadeIn list "><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/location-module/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-location-module">LocationModule</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/media-session/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-media-session">MediaSession</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-tealium">Tealium</a></li><li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium-config/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".ios-swift-api-tealium-config">TealiumConfig</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium-consent-categories/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-tealium-consent-categories">TealiumConsentCategories</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium-consent-manager/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-tealium-consent-manager">TealiumConsentManager</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium-data-layer/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-tealium-data-layer">TealiumDataLayer</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/platforms/ios-swift/api/tealium-instance-manager/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-api-tealium-instance-manager">TealiumInstanceManager</a></li></ul>
+      </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/charles-proxy-iosdevice/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".charles-proxy-iosdevice">Proxy an iOS device</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/proxy-appletv/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".proxy-an-apple-tv">Proxy an Apple TV</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/privacy-manifests/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-privacy-manifests">Privacy Manifests</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/ios-swift/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ios-swift-release-notes">Release notes</a></li></ul></li></ul>
+</nav>
+</div>
+    
+
+    <article id="main-content" class="order-1 overflow-auto vh-100 max-vh-100 pt4 ph4 mid-gray mt0-ns w-100" style="flex:1;scroll-padding-top:96px;">
+      <div class="documentation-copy ph4">
+        <header class="flex-none w-100"><nav id="breadcrumb">
+<ul class="nav">
+
+    
+    
+    
+    
+  
+  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/">Platforms</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/ios-swift/">Tealium for iOS (Swift)</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl3"><a class="f6 mb0 link mid-gray dim mr1" href="/platforms/ios-swift/api/">API Reference</a></li>
+  
+
+  
+  
+
+</ul>
+</nav>
+
+<h1 class="lh-title mt30 mb3">TealiumConfig</h1>
+</header>
+
+<div class="mv2 mid-gray fn w-100">
+  
+
+  
+    <p class="f4 fw3 lh-copy">
+      A class to set configuration options for the main Tealium class. Individual modules provide their own extensions for the TealiumConfig class if they are enabled.
+    </p>
+  
+</div>
+
+<div class="prose nested-links" id="prose">
+  <h2 id="class-tealiumconfig">Class: <code>TealiumConfig</code></h2>
+<p>The following summarizes the commonly used methods and properties of the iOS (Swift) <code>TealiumConfig</code> class.</p>
+<table>
+<thead>
+<tr>
+<th>Method/Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#addremotecommand"><code>addRemoteCommand()</code></a></td>
+<td>Adds remote commands for later execution</td>
+</tr>
+<tr>
+<td><a href="#adobevisitorauthstate"><code>adobeVisitorAuthState</code></a></td>
+<td>Sets the current authentication state for the visitor.</td>
+</tr>
+<tr>
+<td><a href="#adobevisitorcustomvisitorid"><code>adobeVisitorCustomVisitorId</code></a></td>
+<td>Sets the known visitor ID to the Adobe ECID, if it&rsquo;s known at initialization time. If the ECID changes in the future, call <code>linkECIDToKnownIdentifier</code> to update the visitor ID.</td>
+</tr>
+<tr>
+<td><a href="#adobevisitordataproviderid"><code>adobeVisitorDataProviderId</code></a></td>
+<td>Sets the data provider ID, provided by Adobe, which is required when linking an ECID to a known ID.</td>
+</tr>
+<tr>
+<td><a href="#adobevisitorexistingecid"><code>adobeVisitorExistingEcid</code></a></td>
+<td>Sets the existing ECID from a previous installation to be used, such as the Adobe SDK, instead of requesting a new ECID.</td>
+</tr>
+<tr>
+<td><a href="#adobevisitororgid"><code>adobeVisitorOrgId</code></a></td>
+<td>String containing the Adobe Org ID including the <code>@</code> portion.</td>
+</tr>
+<tr>
+<td><a href="#adobevisitorretries"><code>adobeVisitorRetries</code></a></td>
+<td>The number of allowed invalid visitor ID retries before a request fails, which results in tracking calls being sent anyway without an ECID.</td>
+</tr>
+<tr>
+<td><a href="#appDelegateProxyEnabled"><code>appDelegateProxyEnabled</code></a></td>
+<td>Enables (default) or disables the Tealium AppDelegate proxy</td>
+</tr>
+<tr>
+<td><a href="#autotrackingblocklistfilename"><code>autoTrackingBlocklistFilename</code></a></td>
+<td>Sets the name of the local block list file.</td>
+</tr>
+<tr>
+<td><a href="#autotrackingblocklisturl"><code>autoTrackingBlocklistURL</code></a></td>
+<td>Sets the URL of the remote block list file.</td>
+</tr>
+<tr>
+<td><a href="#autotrackingcollectordelegate"><code>autoTrackingCollectorDelegate</code></a></td>
+<td>Sets the global delegate that executes for automatically tracked views.</td>
+</tr>
+<tr>
+<td><a href="#batchingbypasskeys"><code>batchingBypassKeys</code></a></td>
+<td>Sets a list of event names for which batching is bypassed (sent as individual events)</td>
+</tr>
+<tr>
+<td><a href="#batchingenabled"><code>batchingEnabled</code></a></td>
+<td>Enables or disables (default) event batching</td>
+</tr>
+<tr>
+<td><a href="#batchsize"><code>batchSize</code></a></td>
+<td>Sets the amount of events to combine into a single batch request (max: 10)</td>
+</tr>
+<tr>
+<td><a href="#connectivityrefreshenabled"><code>connectivityRefreshEnabled</code></a></td>
+<td>If enabled (default), the connectivity module checks for a connection at a specified interval</td>
+</tr>
+<tr>
+<td><a href="#connectivityrefreshinterval"><code>connectivityRefreshInterval</code></a></td>
+<td>Sets the default connectivity refresh interval in seconds</td>
+</tr>
+<tr>
+<td><a href="#consentexpiry"><code>consentExpiry</code></a></td>
+<td>Sets the expiration time of the user consent selections</td>
+</tr>
+<tr>
+<td><a href="#consentloggingenabled"><code>consentLoggingEnabled</code></a></td>
+<td>Enables or disables the consent logging feature</td>
+</tr>
+<tr>
+<td><a href="#consentpolicy"><code>consentPolicy</code></a></td>
+<td>Sets the <a href="/platforms/ios-swift/consent-management/#set-policy">consent policy</a> (defaults to GDPR)</td>
+</tr>
+<tr>
+<td><a href="#deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></a></td>
+<td>Enables or disables automatic tracking of deep links</td>
+</tr>
+<tr>
+<td><a href="#desiredaccuracy"><code>desiredAccuracy</code></a></td>
+<td>The accuracy of the location data that your app wants to receive</td>
+</tr>
+<tr>
+<td><a href="#diskstoragedirectory"><code>diskStorageDirectory</code></a></td>
+<td>Sets the directory to be used for disk storage. Default <code>.caches</code>.</td>
+</tr>
+<tr>
+<td><a href="#dispatchafter"><code>dispatchAfter</code></a></td>
+<td>Sets the number of events after which the queue is flushed</td>
+</tr>
+<tr>
+<td><a href="#dispatchexpiration"><code>dispatchExpiration</code></a></td>
+<td>Sets the batch expiration in days. If the device is offline for an extended period, older events are deleted</td>
+</tr>
+<tr>
+<td><a href="#dispatchqueuelimit"><code>dispatchQueueLimit</code></a></td>
+<td>Sets the maximum number of queued events. If this number is reached, and the queue has not been flushed, the oldest events are deleted.</td>
+</tr>
+<tr>
+<td><a href="#dispatchlisteners"><code>dispatchListeners</code></a></td>
+<td>Provides the option to add custom <code>DispatchListener</code>s to listen for tracking calls just prior to dispatch</td>
+</tr>
+<tr>
+<td><a href="#dispatchvalidators"><code>dispatchValidators</code></a></td>
+<td>Provides the option to add custom <code>DispatchValidator</code>s to control whether to dispatch, queue, or drop events events</td>
+</tr>
+<tr>
+<td><a href="#enablebackgroundlocation"><code>enableBackgroundLocation</code></a></td>
+<td>Enables location updates to take place while the app is running in the background</td>
+</tr>
+<tr>
+<td><a href="#existingvisitorid"><code>existingVisitorId</code></a></td>
+<td>Sets the existing visitor ID, used as the first party ID in the app extension</td>
+</tr>
+<tr>
+<td><a href="#geofencefilename"><code>geofenceFileName</code></a></td>
+<td>Sets the name of a local geofences JSON file asset. <em>Do not include the file extension.</em></td>
+</tr>
+<tr>
+<td><a href="#geofencetrackingenabled"><code>geofenceTrackingEnabled</code></a></td>
+<td>Disables or enables geofence tracking</td>
+</tr>
+<tr>
+<td><a href="#geofenceurl"><code>geofenceUrl</code></a></td>
+<td>Sets the URL of a hosted JSON file</td>
+</tr>
+<tr>
+<td><a href="#hosteddatalayerexpiry"><code>hostedDataLayerExpiry</code></a></td>
+<td>Sets an expiration on the hosted data layer data</td>
+</tr>
+<tr>
+<td><a href="#hosteddatalayerkeys"><code>hostedDataLayerKeys</code></a></td>
+<td>Sets the event mappings used by the hosted data layer module when looking up data layer IDs</td>
+</tr>
+<tr>
+<td><a href="#iscollectenabled"><code>isCollectEnabled</code></a></td>
+<td>Provides an option to disable the Collect dispatcher</td>
+</tr>
+<tr>
+<td><a href="#lifecycleautotrackingenabled"><code>lifecycleAutoTrackingEnabled</code></a></td>
+<td>Enables or disables lifecycle auto tracking. Default is <code>true</code>. If set to <code>false</code> and lifecycle launch/sleep/wake events are desired, they need to be manually called using the public methods in the <code>LifecycleModule</code></td>
+</tr>
+<tr>
+<td><a href="#logger"><code>logger</code></a></td>
+<td>Sets a custom logger conforming to the <code>TealiumLoggerProtocol</code> that replaces the current <code>TealiumLogger</code></td>
+</tr>
+<tr>
+<td><a href="#loglevel"><code>logLevel</code></a></td>
+<td>Sets the log level property, which controls how much information is logged</td>
+</tr>
+<tr>
+<td><a href="#logtype"><code>logType</code></a></td>
+<td>Sets a new log type</td>
+</tr>
+<tr>
+<td><a href="#memoryreportingenabled"><code>memoryReportingEnabled</code></a></td>
+<td>Enables or disables memory reporting in the DeviceData module</td>
+</tr>
+<tr>
+<td><a href="#minimumfreediskspace"><code>minimumFreeDiskSpace</code></a></td>
+<td>Sets the minimum free disk space in Megabytes  for Disk Storage to be enabled</td>
+</tr>
+<tr>
+<td><a href="#minutesbetweenrefresh"><code>minutesBetweenRefresh</code></a></td>
+<td>Determines how often to fetch the publish settings</td>
+</tr>
+<tr>
+<td><a href="#onconsentexpiration"><code>onConsentExpiration</code></a></td>
+<td>Callback to execute once consent selections expire</td>
+</tr>
+<tr>
+<td><a href="#overrideCollectProfile"><code>overrideCollectProfile</code></a></td>
+<td>Overrides the Tealium Collect profile to send data to a different Tealium profile</td>
+</tr>
+<tr>
+<td><a href="#overrideCollectURL"><code>overrideCollectURL</code></a></td>
+<td>Overrides the Tealium Collect URL to send data to a different endpoint</td>
+</tr>
+<tr>
+<td><a href="#overrideCollectBatchURL"><code>overrideCollectBatchURL</code></a></td>
+<td>Overrides the Tealium Collect Batch URL to send data to a different endpoint</td>
+</tr>
+<tr>
+<td><a href="#overrideCollectDomain"><code>overrideCollectDomain</code></a></td>
+<td>Overrides the Tealium Collect domain name to send data to a different endpoint</td>
+</tr>
+<tr>
+<td><a href="#overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></a></td>
+<td>Overrides the name of the consent categories event attribute. Use this to support custom enforcement of server-side consent. (default: <code>consent_categories</code>)</td>
+</tr>
+<tr>
+<td><a href="#publishsettingsprofile"><code>publishSettingsProfile</code></a></td>
+<td>Overrides the publish settings profile</td>
+</tr>
+<tr>
+<td><a href="#publishsettingsurl"><code>publishSettingsURL</code></a></td>
+<td>Overrides the publish settings URL</td>
+</tr>
+<tr>
+<td><a href="#remoteapienabled"><code>remoteAPIEnabled</code></a></td>
+<td>Enables or disables <code>remote_api</code> event. Required for RemoteCommands module if DispatchQueue module in use.</td>
+</tr>
+<tr>
+<td><a href="#remotecommands"><code>remoteCommands</code></a></td>
+<td>Returns an array of all registered remote commands</td>
+</tr>
+<tr>
+<td><a href="#remotehttpcommanddisabled"><code>remoteHTTPCommandDisabled</code></a></td>
+<td>Disables the built-in remote HTTP command if <code>true</code></td>
+</tr>
+<tr>
+<td><a href="#rootview"><code>rootView</code></a></td>
+<td>Sets the current <code>UIView</code> for <code>WKWebView</code> to be attached to</td>
+</tr>
+<tr>
+<td><a href="#searchadsenabled"><code>searchAdsEnabled</code></a></td>
+<td>Enables or disables the Apple Search Ads API in the Attribution module</td>
+</tr>
+<tr>
+<td><a href="#sendcrashdataoncrashdetected"><code>sendCrashDataOnCrashDetected</code></a></td>
+<td>Sends a crash event when a crash is detected and only adds crash data to that event</td>
+</tr>
+<tr>
+<td><a href="#sessioncountingenabled"><code>sessionCountingEnabled</code></a></td>
+<td>Disables session counting for Tealium iQ accounts. Use this if you are self-hosting your Tealium JavaScript files</td>
+</tr>
+<tr>
+<td><a href="#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a></td>
+<td>Determines whether to add a <code>WKWebView</code> cookie observer</td>
+</tr>
+<tr>
+<td><a href="#shoulduseremotepublishsettings"><code>shouldUseRemotePublishSettings</code></a></td>
+<td>Sets the Mobile Publish Settings (default: enabled)</td>
+</tr>
+<tr>
+<td><a href="#skadattributionenabled"><code>skAdAttributionEnabled</code></a></td>
+<td>Enables the use <a href="https://developer.apple.com/documentation/storekit/skadnetwork">SKAdNetwork</a> framework</td>
+</tr>
+<tr>
+<td><a href="#skadconversionkeys"><code>skAdConversionKeys</code></a></td>
+<td>Defines the event and value for which to call the <a href="https://developer.apple.com/documentation/storekit/skadnetwork/3566697-updateconversionvalue"><code>SKAdNetwork.updateConversionValue()</code></a> method</td>
+</tr>
+<tr>
+<td><a href="#tagmanagementoverrideurl"><code>tagManagementOverrideURL</code></a></td>
+<td>Overrides the default URL used by the Tag Management module</td>
+</tr>
+<tr>
+<td><a href="#tealiumconfig"><code>TealiumConfig()</code></a></td>
+<td>Constructor for a <code>TealiumConfig</code> object</td>
+</tr>
+<tr>
+<td><a href="#timedeventtriggers"><code>timedEventTriggers</code></a></td>
+<td>A list of <code>TimedEventTrigger</code> objects for automatically tracking timed events</td>
+</tr>
+<tr>
+<td><a href="#updatedistance"><code>updateDistance</code></a></td>
+<td>Sets the distance interval (meters) in which the location updates are received</td>
+</tr>
+<tr>
+<td><a href="#usehighaccuracy"><code>useHighAccuracy</code></a></td>
+<td>Sets the location precision to low accuracy (default) or high accuracy</td>
+</tr>
+<tr>
+<td><a href="#visitoridentitykey"><code>visitorIdentityKey</code></a></td>
+<td>A config key that specifies the data layer key that represents the customer identifier. It can be used to enable <a href="/platforms/getting-started-mobile/identity-resolution/#visitor-switching">visitor switching</a>.</td>
+</tr>
+<tr>
+<td><a href="#webviewprocesspool"><code>webviewProcessPool</code></a></td>
+<td>Prevents cookie synchronization issues if your app contains other webviews besides the Tealium Tag Management webview</td>
+</tr>
+<tr>
+<td><a href="#webviewconfig"><code>webviewConfig</code></a></td>
+<td>Permits a custom <code>WKWebviewConfiguration</code> object to be passed, which is used by the Tealium Tag Management webview</td>
+</tr>
+</tbody>
+</table>
+<h3 id="addremotecommand"><code>addRemoteCommand()</code></h3>
+<p>Adds remote commands for later execution.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>addRemoteCommand(command)
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>command</code></td>
+<td style="text-align:left"><code>RemoteCommand</code></td>
+<td style="text-align:left">Instance of a <code>TealiumRemoteCommand</code> to be added</td>
+</tr>
+</tbody>
+</table>
+<p>The following example, placed prior to Tealium initialization, shows how add remote commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">#if</span> <span style="color:#75715e">os</span>(<span style="color:#75715e">iOS</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> remoteCommand = RemoteCommand(commandId: <span style="color:#e6db74">&#34;test&#34;</span>,
+</span></span><span style="display:flex;"><span>        description: <span style="color:#e6db74">&#34;test&#34;</span>) { response <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>			print(<span style="color:#e6db74">&#34;Remote Command &#39;test&#39; executed&#34;</span>)
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>config.addRemoteCommand(remoteCommand)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#endif</span>
+</span></span></code></pre></div><h3 id="adobevisitorauthstate"><code>adobeVisitorAuthState</code></h3>
+<p>Sets the current authentication state for the visitor.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorAuthState = .authenticated
+</span></span><span style="display:flex;"><span>config.adobeVisitorAuthState = .loggedOut
+</span></span><span style="display:flex;"><span>config.adobeVisitorAuthState = .unknown
+</span></span></code></pre></div><h3 id="adobevisitorcustomvisitorid"><code>adobeVisitorCustomVisitorId</code></h3>
+<p>Sets the known visitor ID to the Adobe ECID, if it&rsquo;s known at initialization time. If the ECID changes in the future, call <a href="/platforms/ios-swift/api/tealium/#linkecidtoknownidentifier"><code>linkECIDToKnownIdentifier</code></a> to update the visitor ID.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorCustomVisitorId = <span style="color:#e6db74">&#34;20381482060927465156359999806251989655&#34;</span>
+</span></span></code></pre></div><h3 id="adobevisitordataproviderid"><code>adobeVisitorDataProviderId</code></h3>
+<p>Sets the data provider ID, provided by Adobe, which is required when linking an ECID to a known ID.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorDataProviderId = <span style="color:#e6db74">&#34;01&#34;</span>
+</span></span></code></pre></div><h3 id="adobevisitorexistingecid"><code>adobeVisitorExistingEcid</code></h3>
+<p>Sets the existing ECID from a previous installation to be used, such as the Adobe SDK, instead of requesting a new ECID.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorExistingEcid = <span style="color:#e6db74">&#34;20381482060927465156359999806251989655&#34;</span>
+</span></span></code></pre></div><h3 id="adobevisitororgid"><code>adobeVisitorOrgId</code></h3>
+<p>String containing the Adobe Org ID including the <code>@</code> portion. If the Org ID is not provided, the module is not initialized and no visitor ID is retrieved. Tracking calls continue as normal without an Adobe ECID.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorOrgId = STRING_VALUE
+</span></span></code></pre></div><p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorOrgId = <span style="color:#e6db74">&#34;1A2A111A111150AA0A110A12@AdobeOrg&#34;</span>
+</span></span></code></pre></div><h3 id="adobevisitorretries"><code>adobeVisitorRetries</code></h3>
+<p>The number of allowed invalid visitor ID retries before a request fails, which results in tracking calls being sent anyway without an ECID.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.adobeVisitorRetries = <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><h3 id="appdelegateproxyenabled"><code>appDelegateProxyEnabled</code></h3>
+<p>Enables the AppDelegate proxy to automatically deep link tracking and initiate a Tealium trace session from a deep link. The property is enabled and set <code>true</code> by default. To disable, set property to <code>false</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.appDelegateProxyEnabled = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><h3 id="autotrackingblocklistfilename"><code>autoTrackingBlocklistFilename</code></h3>
+<p>For use with the <a href="/platforms/ios-swift/module-list/autotracking/#block-list">AutoTracking Module</a>.</p>
+<p>Sets the name of the block list file that contains a list of views to omit from automatic tracking. The file should be available in the Android <code>assets</code> directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingBlocklistFilename = <span style="color:#e6db74">&#34;autotracking-blocklist.json&#34;</span>
+</span></span></code></pre></div><h3 id="autotrackingblocklisturl"><code>autoTrackingBlocklistURL</code></h3>
+<p>For use with the <a href="/platforms/ios-swift/module-list/autotracking/#block-list">AutoTracking Module</a>.</p>
+<p>Sets a URL to a JSON formatted block list file that contains a list of views to omit from automatic tracking.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingBlocklistUrl = <span style="color:#e6db74">&#34;https://example.com/autotracking-blocklist.json&#34;</span>
+</span></span></code></pre></div><h3 id="autotrackingcollectordelegate"><code>autoTrackingCollectorDelegate</code></h3>
+<p>For use with the <a href="/platforms/ios-swift/module-list/autotracking/">AutoTracking Module</a>.</p>
+<p>The global delegate set on the <code>TealiumConfig</code> object that executes for views tracked by the <a href="/platforms/ios-swift/module-list/autotracking/">AutoTracking module</a>. Edit this delegate to customize the data included with specific views.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.autoTrackingCollectorDelegate = myCollectorDelegate
+</span></span></code></pre></div><h3 id="batchingbypasskeys"><code>batchingBypassKeys</code></h3>
+<p>Sets a list of event names for which batching is bypassed (sent as individual events).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchingBypassKeys = [<span style="color:#e6db74">&#34;home_screen&#34;</span>]
+</span></span></code></pre></div><h3 id="batchingenabled"><code>batchingEnabled</code></h3>
+<p>Enables or disables event batching. Disabled by default.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchingEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="batchsize"><code>batchSize</code></h3>
+<p>Sets the amount of events to combine into a single batch request. Maximum is 10.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.batchSize = <span style="color:#ae81ff">8</span>
+</span></span></code></pre></div><h3 id="collectors"><code>Collectors</code></h3>
+<p>Collectors are modules that gather supplemental information from the device and append it to the data layer before it&rsquo;s transmitted to the Tealium Customer Data Hub. Some collectors are included in the core library, while others are optional and installed as separate modules.</p>
+<p>The following table lists the available collectors. Default collectors are denoted by a <code>*</code> next to the collector name.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Collector Name</th>
+<th style="text-align:left">TealiumConfig Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>AdobeVisitor</code></td>
+<td style="text-align:left"><code>Collectors.AdobeVisitor</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>AppData</code>*</td>
+<td style="text-align:left"><code>Collectors.AppData</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Connectivity</code>*</td>
+<td style="text-align:left"><code>Collectors.Connectivity</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Device</code></td>
+<td style="text-align:left"><code>Collectors.Device</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Lifecycle</code></td>
+<td style="text-align:left"><code>Collectors.Lifecycle</code></td>
+</tr>
+</tbody>
+</table>
+<p>These modules are enabled or disabled using the <a href="/platforms/ios-swift/api/tealium-config/"><code>TealiumConfig</code></a> <code>collectors</code> property.</p>
+<p>The following example adds to existing list of collectors you&rsquo;re using:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.collectors = [Collectors.AdobeVisitor]
+</span></span></code></pre></div><h3 id="connectivityrefreshenabled"><code>connectivityRefreshEnabled</code></h3>
+<p>If enabled (default), the connectivity module checks for a connection at a specified interval (controlled via <code>setConnectivityRefreshInterval</code>). Queued dispatches are then sent as soon as a connection is resumed.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.connectivityRefreshEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="connectivityrefreshinterval"><code>connectivityRefreshInterval</code></h3>
+<p>Sets the default connectivity refresh interval in seconds. Default is 30 seconds if not set on the TealiumConfig instance.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.connectivityRefreshInterval = <span style="color:#ae81ff">30</span>
+</span></span></code></pre></div><h3 id="consentexpiry"><code>consentExpiry</code></h3>
+<p>Sets the expiration time of the user consent selections. Set this property when initializing Tealium. The default expiration times for consent selections are:</p>
+<ul>
+<li>CCPA: 395 days</li>
+<li>GDPR: 365 days</li>
+</ul>
+<p>The following sets the consent expiry to 90 days.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentExpiry = (<span style="color:#ae81ff">90</span>, .days)
+</span></span></code></pre></div><h3 id="consentloggingenabled"><code>consentLoggingEnabled</code></h3>
+<p>Enables the <a href="/server-side/consent/event-specs/">Consent Logging</a> feature, which sends all consent status changes to Tealium Customer Data Hub for auditing purposes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentLoggingEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="consentpolicy"><code>consentPolicy</code></h3>
+<p>Sets the <a href="/platforms/ios-swift/consent-management/#set-policy">consent policy</a>. Consent Manager is only enabled if this property is set.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.consentPolicy = .ccpa
+</span></span></code></pre></div><h3 id="deeplinktrackingenabled"><code>deepLinkTrackingEnabled</code></h3>
+<p>Enables or disables automatic tracking of standard deep links, such as links to the app from Facebook or other sources, as well as QR trace. Enabled by default.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.deepLinkTrackingEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="desiredaccuracy"><code>desiredAccuracy</code></h3>
+<p>The accuracy of the location data that your app wants to receive.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.desiredAccuracy = .best
+</span></span></code></pre></div><p>The available <code>desiredAccuracy</code> options are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"><code>desiredAccuracy</code> option</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>.bestForNavigation</code></td>
+<td style="text-align:left">Level of accuracy intended for use in navigation apps that require precise position information at all times</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.best</code></td>
+<td style="text-align:left">Very high accuracy but don’t need the same level of accuracy required for navigation apps</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.nearestTenMeters</code></td>
+<td style="text-align:left">Accuracy to the nearest 10 meters</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.nearestHundredMeters</code></td>
+<td style="text-align:left">Accuracy to the nearest 100 meters</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.reduced</code></td>
+<td style="text-align:left">Accuracy within 1-20 kilometers</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.withinOneKilometer</code></td>
+<td style="text-align:left">Accuracy to the nearest 1 kilometer</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.withinThreeKilometers</code></td>
+<td style="text-align:left">Accuracy to the nearest 3 kilometers</td>
+</tr>
+</tbody>
+</table>
+<p>Learn more about Apple&rsquo;s <a href="https://developer.apple.com/documentation/corelocation/cllocationaccuracy">desired accuracy constants</a>.</p>
+<h3 id="diskstoragedirectory"><code>diskStorageDirectory</code></h3>
+<p>Sets the directory to be used for disk storage. Default <code>.caches</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.diskStorageDirectory = .documents
+</span></span></code></pre></div><h3 id="dispatchlisteners"><code>dispatchListeners</code></h3>
+<p>Provides the option to add custom <code>DispatchListener</code>s to listen for tracking calls just prior to dispatch.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchListeners = [<span style="color:#66d9ef">self</span>]
+</span></span></code></pre></div><h3 id="dispatchvalidators"><code>dispatchValidators</code></h3>
+<p>Provides the option to add custom <code>DispatchValidator</code>s to control whether to dispatch, queue or drop events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchValidators = [<span style="color:#66d9ef">self</span>]
+</span></span></code></pre></div><h3 id="dispatchafter"><code>dispatchAfter</code></h3>
+<p>Number of events after which to automatically flush the queue.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchAfter = <span style="color:#ae81ff">20</span>
+</span></span></code></pre></div><h3 id="dispatchexpiration"><code>dispatchExpiration</code></h3>
+<p>Sets the dispatch expiration in days. If the device is offline for an extended period. Older events are deleted.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchExpiration = <span style="color:#ae81ff">5</span>
+</span></span></code></pre></div><h3 id="dispatchqueuelimit"><code>dispatchQueueLimit</code></h3>
+<p>Sets the maximum number of events to store in the event queue. If this number is reached, and the queue has not been flushed, the oldest events are deleted.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.dispatchQueueLimit = <span style="color:#ae81ff">50</span>
+</span></span></code></pre></div><h3 id="enablebackgroundlocation"><code>enableBackgroundLocation</code></h3>
+<p>Enables location updates to take place while the app is running in the background.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.enableBackgroundLocation = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="existingvisitorid"><code>existingVisitorId</code></h3>
+<p>Sets the existing visitor ID, used as the first party ID in the app extension |</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.existingVisitorId = id
+</span></span></code></pre></div><h3 id="geofencefilename"><code>geofenceFileName</code></h3>
+<p>Sets the name of a local geofences file asset. Do not include the file extension.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.geofenceFileName = &lt;String&gt;
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">The JSON file name</td>
+<td style="text-align:left"><code>geofences</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="geofencetrackingenabled"><code>geofenceTrackingEnabled</code></h3>
+<p>Disables or enables geofence tracking.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.geofenceTrackingEnabled = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>Bool</code></td>
+<td style="text-align:left">Boolean indicating whether geofencing should be enabled</td>
+<td style="text-align:left"><code>false</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="geofenceurl"><code>geofenceUrl</code></h3>
+<p>Sets the URL of a hosted geofences file.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.geofenceUrl = &lt;String (url)<span style="color:#f92672">&gt;</span>
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">The URL of a geofences file</td>
+<td style="text-align:left"><code>https://example.com/.../geofences.json</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="hosteddatalayerexpiry"><code>hostedDataLayerExpiry</code></h3>
+<p>Sets an expiration on the hosted data layer data. If this property isn&rsquo;t set, hosted data layer items persist for 7 days by default, and are re-downloaded once this period has expired.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.hostedDataLayerExpiry = (<span style="color:#ae81ff">1</span>, unit: .minutes)
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>Setting a shorter expiration time reduces mobile device battery life due to increased network requests.</p>
+<h3 id="hosteddatalayerkeys"><code>hostedDataLayerKeys</code></h3>
+<p>Sets the hosted data layer keys (lookup variables) used by the hosted data layer module when retrieving data layer IDs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.hostedDataLayerKeys = [<span style="color:#e6db74">&#34;product_view&#34;</span> : <span style="color:#e6db74">&#34;product_id&#34;</span>]
+</span></span></code></pre></div><h3 id="iscollectenabled"><code>isCollectEnabled</code></h3>
+<p>Provides option to disable the collect dispatcher. Mainly intended for use by remote publish settings.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.isCollectEnabled = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><h3 id="lifecycleautotrackingenabled"><code>lifecycleAutoTrackingEnabled</code></h3>
+<p>Enables or disables lifecycle auto tracking. Default is <code>true</code>. If set to <code>false</code> and lifecycle launch/sleep/wake events are desired, they need to be manually called using the public methods in the <code>LifecycleModule</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.lifecycleTrackingEnabled = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><h3 id="logger"><code>logger</code></h3>
+<p>Sets a custom logger conforming to the <code>TealiumLoggerProtocol</code> that replaces the current <code>TealiumLogger</code>.</p>
+<p>The following example shows how to set your custom logger on the config object:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CustomLogger</span>: TealiumLoggerProtocol {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ... conforming to the TealiumLoggerProtocol</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// plus your own custom methods</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TealiumHelper</span> {
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> config = TealiumConfig(...)
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">var</span> tealium: Tealium?
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">let</span> customLogger = CustomLogger()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">private</span> <span style="color:#66d9ef">init</span>() {
+</span></span><span style="display:flex;"><span>		config.logger = customLogger
+</span></span><span style="display:flex;"><span>		<span style="color:#75715e">// ...</span>
+</span></span><span style="display:flex;"><span>		tealium = Tealium(config: config)
+</span></span><span style="display:flex;"><span>	}
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="loglevel"><code>logLevel</code></h3>
+<p>Sets the log level property, which controls how much information is logged, to one of the following values:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Log Level</th>
+<th style="text-align:left">Log Activity Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>.debug</code></td>
+<td style="text-align:left">Debug-level events used for debugging an application (recommended for development environment)</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.info</code></td>
+<td style="text-align:left">Informational events that highlight the progress of the application</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.error</code></td>
+<td style="text-align:left">Error events such as critical errors and failures</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.fault</code></td>
+<td style="text-align:left">Fault or severe events such as system-level or multi-process errors</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>.silent</code></td>
+<td style="text-align:left">No logging</td>
+</tr>
+</tbody>
+</table>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logLevel = .debug
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>View your development logs in the Xcode console or the Mac Console app. View your production logs with the Console app by connecting your iOS device.</p>
+<h3 id="logtype"><code>logType</code></h3>
+<p>Sets a new logger type. The default is <code>.os</code> or <a href="https://developer.apple.com/documentation/os/oslog"><code>OSLog</code></a></p>
+<p>The following example shows how to set the log level to <code>print</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.logType = .print
+</span></span></code></pre></div><h3 id="memoryreportingenabled"><code>memoryReportingEnabled</code></h3>
+<p>Enables or disables memory reporting in the DeviceData module (default: disabled).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.memoryReportingEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="minimumfreediskspace"><code>minimumFreeDiskSpace</code></h3>
+<p>Sets the minimum free disk space in Megabytes for Disk Storage to be enabled</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.minimumFreeDiskSpace = <span style="color:#ae81ff">25</span>
+</span></span></code></pre></div><h3 id="minutesbetweenrefresh"><code>minutesBetweenRefresh</code></h3>
+<p>Determines how often to fetch the publish settings.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.minutesBetweenRefresh = <span style="color:#ae81ff">15</span>
+</span></span></code></pre></div><h3 id="onconsentexpiration"><code>onConsentExpiration</code></h3>
+<p>Callback to execute once consent selections expire.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.onConsentExpiration = {
+</span></span><span style="display:flex;"><span>	<span style="color:#75715e">// display consent modal</span>
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="overridecollectprofile"><code>overrideCollectProfile</code></h3>
+<p>Overrides the Tealium Collect profile to send data to a different Tealium profile.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectProfile = <span style="color:#e6db74">&#34;main&#34;</span>
+</span></span></code></pre></div><h3 id="overridecollecturl"><code>overrideCollectURL</code></h3>
+<p>Overrides the Tealium Collect URL to send data to a different endpoint. If using the event batching feature, also override the <a href="#overrideCollectBatchURL">overrideCollectBatchURL</a> property.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectURL = url
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Property value</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>url</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">The URL to override</td>
+</tr>
+</tbody>
+</table>
+<p>The default URL is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/event/
+</span></span></code></pre></div><p>The property is used to set a custom hostname or to set a specific region hostname. The following example sets the Tealium Collect base URL to stay within the EU Central region:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> url = <span style="color:#e6db74">&#34;https://collect-eu-central-1.tealiumiq.com/event/&#34;</span>
+</span></span><span style="display:flex;"><span>config.overrideCollectURL = url
+</span></span></code></pre></div><h3 id="overridecollectbatchurl"><code>overrideCollectBatchURL</code></h3>
+<p>Overrides the Tealium Collect batch URL to send data to a different endpoint.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectBatchURL = url
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Property value</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>url</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">The URL to override</td>
+</tr>
+</tbody>
+</table>
+<p>The default URL with event batching is:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>https://collect.tealiumiq.com/bulk-event/
+</span></span></code></pre></div><p>The method is typically used to set a custom hostname, or to set a specific region hostname. The following example sets the Tealium Collect base URL to stay within the EU Central region:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> url = <span style="color:#e6db74">&#34;https://collect-eu-central-1.tealiumiq.com/bulk-event/&#34;</span>
+</span></span><span style="display:flex;"><span>config.overrideCollectBatchURL = url
+</span></span></code></pre></div><h3 id="overridecollectdomain"><code>overrideCollectDomain</code></h3>
+<p>Overrides the default Collect domain. Set the value to a hostname with the protocol excluded, such as <code>my-company.com</code>. Use this property for both batch and single event dispatches. If <code>overrideCollectURL</code> or <code>overrideCollectBatchURL</code> is populated, this property takes precedence.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideCollectDomain = <span style="color:#e6db74">&#34;my-company.com&#34;</span>
+</span></span></code></pre></div><h3 id="overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></h3>
+<p>Overrides the name of the consent categories attribute sent in consent events. Use this to support custom enforcement of server-side consent. The default value is <code>consent_categories</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.overrideConsentCategoriesKey = <span style="color:#e6db74">&#34;consent_categories_granted&#34;</span>
+</span></span></code></pre></div><p>Default consent event:</p>
+<pre tabindex="0"><code>{
+    &#34;tealium_event&#34;      : &#34;grant_partial_consent&#34;,
+    &#34;policy&#34;             : &#34;gdpr&#34;,
+    &#34;consent_categories&#34; : [&#34;Affiliates&#34;, &#34;Social&#34;]
+}
+</code></pre><p>Consent event with override:</p>
+<pre tabindex="0"><code>{
+    &#34;tealium_event&#34;              : &#34;grant_partial_consent&#34;,
+    &#34;policy&#34;                     : &#34;gdpr&#34;,
+    &#34;consent_categories_granted&#34; : [&#34;Affiliates&#34;, &#34;Social&#34;]
+}
+</code></pre><p>Learn more about <a href="/server-side/consent/consent-management/">disabling automatic enforcement of server-side consent</a>.</p>
+<h3 id="publishsettingsprofile"><code>publishSettingsProfile</code></h3>
+<p>Overrides the publish settings profile.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.publishSettingsProfile = <span style="color:#e6db74">&#34;main&#34;</span>
+</span></span></code></pre></div><h3 id="publishsettingsurl"><code>publishSettingsURL</code></h3>
+<p>Overrides the publish settings URL.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.publishSettingsURL = <span style="color:#e6db74">&#34;https://www.example.com/custom/publish/settings.html&#34;</span>
+</span></span></code></pre></div><h3 id="remoteapienabled"><code>remoteAPIEnabled</code></h3>
+<p>Enables or disables <code>remote_api</code> event. Required for RemoteCommands module if DispatchQueue module in use. Default <code>false</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.remoteAPIEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="remotecommands"><code>remoteCommands</code></h3>
+<p>Returns an array of all registered remote commands.</p>
+<p>The following example shows how to get an array of all registered remote commands:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> remoteCommands = config.remoteCommands
+</span></span></code></pre></div><h3 id="remotehttpcommanddisabled"><code>remoteHTTPCommandDisabled</code></h3>
+<p>Disables the built-in remote HTTP command (see <a href="/platforms/ios-swift/module-list/remote-commands/">Swift Module: RemoteCommands</a>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.remoteHTTPCommandDisabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="rootview"><code>rootView</code></h3>
+<p>Sets the current <code>UIView</code> for <code>WKWebView</code> to be attached to. Only required if you have a complex view hierarchy, such as with a push notification, where auto-detection may fail.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> view = <span style="color:#66d9ef">self</span>.view
+</span></span><span style="display:flex;"><span>config.rootView = view
+</span></span></code></pre></div><h3 id="searchadsenabled"><code>searchAdsEnabled</code></h3>
+<p>Enables or disables the Apple Search Ads API in the Attribution module (default: disabled).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.searchAdsEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="sendcrashdataoncrashdetected"><code>sendCrashDataOnCrashDetected</code></h3>
+<p>Sends a crash event when a crash is detected and only adds crash data to that event (default: false).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sendCrashDataOnCrashDetected = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="sessioncountingenabled"><code>sessionCountingEnabled</code></h3>
+<p>Disables session counting for Tealium iQ accounts. Use this if you are self-hosting your Tealium JavaScript files (default: true).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.sessionCountingEnabled = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><h3 id="shouldaddcookieobserver"><code>shouldAddCookieObserver</code></h3>
+<p>If set to <code>true</code> (default), this method determines whether to add a <code>WKWebView</code> cookie observer in order to successfully migrate all cookies. If set to <code>false</code>, if multiple cookie observers are present then only one of them is called, which may cause some cookies to not migrate.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.shouldAddCookieObserver = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>The <a href="#shouldaddcookieobserver"><code>shouldAddCookieObserver</code></a> property permits using your own cookie observer during cookie synchronization, which requires a cookie observer to retrieve cookies on the main thread after setting them. This issue is caused by bugs in <code>WKWebView</code>, which prevents your own observer from being called.</p>
+<h3 id="shoulduseremotepublishsettings"><code>shouldUseRemotePublishSettings</code></h3>
+<p>Sets the <a href="/iq-tag-management/profiles/creating-a-mobile-profile/">Mobile Publish Settings</a> (version 1.9.0+) to enabled (default) or disabled.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.shouldUseRemotePublishSettings = <span style="color:#66d9ef">false</span>
+</span></span></code></pre></div><p class="note"><i class="fa fa-exclamation-triangle"></i>Mobile Publish Settings are enabled by default, and must be disabled if you don’t wish to use them. Configure the Mobile Publish Settings in iQ Tag Management, or disable the feature using <code>config.shouldUseRemotePublishSettings = false</code> in the Swift installation. Failure to do causes initialization failures and prevents tracking.</p>
+<h3 id="skadattributionenabled"><code>skAdAttributionEnabled</code></h3>
+<p>Enables or disables the Apple SKAdNetwork API in the Attribution module (default: disabled).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.skAdAttributionEnabled = <span style="color:#66d9ef">true</span>
+</span></span></code></pre></div><h3 id="skadconversionkeys"><code>skAdConversionKeys</code></h3>
+<p>Dictionary defining the event for which to call the <code>SKAdNetwork.updateConversionValue()</code> method and the key to use as the conversion value.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.skAdConversionKeys = [<span style="color:#e6db74">&#34;purchase&#34;</span>: <span style="color:#e6db74">&#34;number_of_coins&#34;</span>]
+</span></span></code></pre></div><p>In this case, the below event will equate to: <code>SKAdNetwork.updateConversionValue(40)</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium?.track(<span style="color:#e6db74">&#34;purchase&#34;</span>, dataLayer: [<span style="color:#e6db74">&#34;number_of_coins&#34;</span>: <span style="color:#ae81ff">40</span>])
+</span></span></code></pre></div><h3 id="tagmanagementoverrideurl"><code>tagManagementOverrideURL</code></h3>
+<p>Overrides the default URL used by the Tag Management module. This is needed if you are self-hosting your Tealium JavaScript files.</p>
+<p>The following example shows how to override the default URL used by the Tag Management module.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> url = <span style="color:#e6db74">&#34;https://tags.mycdn.com/utag/myaccount/myprofile/myenv/mobile.html&#34;</span>
+</span></span><span style="display:flex;"><span>config.tagManagementOverrideURL =  url
+</span></span></code></pre></div><h3 id="tealiumconfig"><code>TealiumConfig()</code></h3>
+<p>Constructor for a <code>TealiumConfig</code> object. This object is required to initialize the library for your specific account.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>TealiumConfig(account:String, profile:String, environment:String, dataSource:String)
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>account</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">Tealium account name</td>
+<td style="text-align:left"><code>companyXYZ</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>profile</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">Tealium profile name</td>
+<td style="text-align:left"><code>main</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>environment</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">Tealium environment name</td>
+<td style="text-align:left">[<code>dev</code>, <code>qa</code>, <code>prod</code>]</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>datasource</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">(Optional) Tealium data source key from CDH</td>
+<td style="text-align:left"><code>abc123</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="timedeventtriggers"><code>timedEventTriggers</code></h3>
+<p>A list of <code>TimedEventTrigger</code> objects for automatically tracking timed events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.timedEventTriggers = [TimedEventTrigger(start: <span style="color:#e6db74">&#34;START_EVENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                               stop: <span style="color:#e6db74">&#34;STOP_EVENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                               name: <span style="color:#e6db74">&#34;TIMED_EVENT_NAME&#34;</span>)]
+</span></span></code></pre></div><p>The following are <code>TimedEventTrigger</code> parameters:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Parameter</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>start</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">Name of the <code>TealiumEvent</code> to start the timed event</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>stop</code></td>
+<td style="text-align:left"><code>String</code></td>
+<td style="text-align:left">Name of the <code>TealiumEvent</code>  to stop the timed event</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>name</code></td>
+<td style="text-align:left"><code>String?</code></td>
+<td style="text-align:left">(Optional) Name of timed event (default: <code>&quot;START_EVENT::STOP_EVENT&quot;</code>)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="updatedistance"><code>updateDistance</code></h3>
+<p>Sets the distance interval (meters) in which location updates are received.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Only use this method if <code>useHighAccuracy</code> is set to <code>true</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.updateDistance = &lt;Double&gt;
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>Double</code></td>
+<td style="text-align:left">The distance interval (meters) in which location updates are received</td>
+<td style="text-align:left"><code>150.0</code></td>
+</tr>
+</tbody>
+</table>
+<p>Usage example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">start</span>() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> config = TealiumConfig(account: <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 profile: <span style="color:#e6db74">&#34;NAME&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Location module config methods</span>
+</span></span><span style="display:flex;"><span>      config.useHighAccuracy = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      config.updateDistance = <span style="color:#ae81ff">150.0</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="usehighaccuracy"><code>useHighAccuracy</code></h3>
+<p>Sets the location precision to low accuracy (default) or high accuracy.</p>
+<p>The property is disabled by default, which sets the location precision to low accuracy. If the location enabled device moves 500 meters or more, then this is considered a significant location changes causing a location update. Location updates typically take longer than five minutes with this setting.</p>
+<p>Learn more about <a href="https://developer.apple.com/documentation/corelocation/getting_the_user_s_location/using_the_significant-change_location_service">Apple&rsquo;s significant-change location service</a>.</p>
+<p>If enabled, the property sets the location of data precision to the highest possible accuracy. The initial event is delivered as quickly as possible and then continues to determine the location and delivers additional events, as necessary, when that data is available.</p>
+<p>Learn more about <a href="https://developer.apple.com/documentation/corelocation/cllocationmanager/1423836-desiredaccuracy?language=swift">Apple&rsquo;s accuracy of location data</a>.</p>
+<p>Using high accuracy results in greater battery consumption for your device than low accuracy, due to more frequent location updates.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>config.useHighAccuracy = &lt;Bool&gt;
+</span></span></code></pre></div><table>
+<thead>
+<tr>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>Boolean</code></td>
+<td style="text-align:left">Sets the location data accuracy</td>
+<td style="text-align:left"><code>true</code></td>
+</tr>
+</tbody>
+</table>
+<p>Usage example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">func</span> <span style="color:#a6e22e">start</span>() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> config = TealiumConfig(account: <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 profile: <span style="color:#e6db74">&#34;NAME&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// Tealium Location module config methods</span>
+</span></span><span style="display:flex;"><span>      config.useHighAccuracy = <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>      config.updateDistance = <span style="color:#ae81ff">150.0</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="visitoridentitykey"><code>visitorIdentityKey</code></h3>
+<p>Used to enable visitor switching on the specified <code>visitorIdentityKey</code> in the data layer.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>  <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">start</span>() {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> customerIdentifierKey = <span style="color:#e6db74">&#34;customer_id&#34;</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">let</span> config = TealiumConfig(account: <span style="color:#e6db74">&#34;ACCOUNT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 profile: <span style="color:#e6db74">&#34;NAME&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 environment: <span style="color:#e6db74">&#34;ENVIRONMENT&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 datasource: <span style="color:#e6db74">&#34;DATASOURCE&#34;</span>)
+</span></span><span style="display:flex;"><span>      config.visitorIdentityKey = customerIdentifierKey
+</span></span><span style="display:flex;"><span>      <span style="color:#75715e">// use the same customerIdentifierKey for storing a specific customer identifier in the data layer</span>
+</span></span><span style="display:flex;"><span>  }
+</span></span></code></pre></div><h3 id="webviewprocesspool"><code>webviewProcessPool</code></h3>
+<p>Prevent cookie synchronization issues if your app contains other webviews besides the Tealium Tag Management webview. If you use a webview in your app, create and retain a singleton <code>WKProcessPool</code> instance and set it prior to instantiating Tealium.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> processPool = MyApp.wkProcessPool
+</span></span><span style="display:flex;"><span>config.webviewProcessPool = processPool
+</span></span></code></pre></div><h3 id="webviewconfig"><code>webviewConfig</code></h3>
+<p>Permits a custom <code>WKWebviewConfiguration</code> object to be passed, which is used by the Tealium Tag Management webview. If using this option instead of <code>webviewProcessPool</code> option, set the singleton <code>WKProcessPool</code> via the customizable <code>WKWebviewConfiguration</code> <code>processPool</code> property.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>It is recommended to use this option as it may be required if future API changes are made to <code>WKWebView</code>.</p>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> processPool = MyApp.wkProcessPool
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> configuration = WKWebViewConfiguration()
+</span></span><span style="display:flex;"><span>configuration.processPool = processPool
+</span></span><span style="display:flex;"><span>config.webviewConfig = configuration
+</span></span></code></pre></div>
+</div>
+
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
+
+  
+  <a href="/platforms/ios-swift/api/tealium-consent-categories/"
+    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
+    <section class="tl pr3">
+      <div>TealiumConsentCategories</div>
+    </section>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"TealiumConsentCategories"</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+  
+  
+</div><div class="di mr3">
+  
+  
+  <a href="/platforms/ios-swift/api/tealium/"
+    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
+    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Tealium "</title>
+      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+    </svg>
+   <section class="tr pl3">
+      <div>Tealium</div>
+    </section>
+  </a>
+  
+
+</div></div>
+
+
+
+        <div class="bt-l b--moon-gray pv3 cb">
+          <div id="feedback_form" class="dpn">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">Was this page helpful?</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+Yes</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+No</button>
+  </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea><button id="feedback_submit" class="db ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">Send Feedback</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">Thank you for your feedback!</p>
+  </div>
+</div>
+
+        </div>
+        <div class="bt-l b--moon-gray pt3 f6">
+          <p>This page was last updated:  October 19, 2023 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
+      
+
+
+
+  <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#class-tealiumconfig" href="javascript:void(0)">Class: TealiumConfig</a></li>
+              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#addremotecommand" href="javascript:void(0)">addRemoteCommand()</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitorauthstate" href="javascript:void(0)">adobeVisitorAuthState</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitorcustomvisitorid" href="javascript:void(0)">adobeVisitorCustomVisitorId</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitordataproviderid" href="javascript:void(0)">adobeVisitorDataProviderId</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitorexistingecid" href="javascript:void(0)">adobeVisitorExistingEcid</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitororgid" href="javascript:void(0)">adobeVisitorOrgId</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#adobevisitorretries" href="javascript:void(0)">adobeVisitorRetries</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#appdelegateproxyenabled" href="javascript:void(0)">appDelegateProxyEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#autotrackingblocklistfilename" href="javascript:void(0)">autoTrackingBlocklistFilename</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#autotrackingblocklisturl" href="javascript:void(0)">autoTrackingBlocklistURL</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#autotrackingcollectordelegate" href="javascript:void(0)">autoTrackingCollectorDelegate</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#batchingbypasskeys" href="javascript:void(0)">batchingBypassKeys</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#batchingenabled" href="javascript:void(0)">batchingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#batchsize" href="javascript:void(0)">batchSize</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#collectors" href="javascript:void(0)">Collectors</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#connectivityrefreshenabled" href="javascript:void(0)">connectivityRefreshEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#connectivityrefreshinterval" href="javascript:void(0)">connectivityRefreshInterval</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#consentexpiry" href="javascript:void(0)">consentExpiry</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#consentloggingenabled" href="javascript:void(0)">consentLoggingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#consentpolicy" href="javascript:void(0)">consentPolicy</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#deeplinktrackingenabled" href="javascript:void(0)">deepLinkTrackingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#desiredaccuracy" href="javascript:void(0)">desiredAccuracy</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#diskstoragedirectory" href="javascript:void(0)">diskStorageDirectory</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dispatchlisteners" href="javascript:void(0)">dispatchListeners</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dispatchvalidators" href="javascript:void(0)">dispatchValidators</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dispatchafter" href="javascript:void(0)">dispatchAfter</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dispatchexpiration" href="javascript:void(0)">dispatchExpiration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#dispatchqueuelimit" href="javascript:void(0)">dispatchQueueLimit</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#enablebackgroundlocation" href="javascript:void(0)">enableBackgroundLocation</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#existingvisitorid" href="javascript:void(0)">existingVisitorId</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#geofencefilename" href="javascript:void(0)">geofenceFileName</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#geofencetrackingenabled" href="javascript:void(0)">geofenceTrackingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#geofenceurl" href="javascript:void(0)">geofenceUrl</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#hosteddatalayerexpiry" href="javascript:void(0)">hostedDataLayerExpiry</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#hosteddatalayerkeys" href="javascript:void(0)">hostedDataLayerKeys</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#iscollectenabled" href="javascript:void(0)">isCollectEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#lifecycleautotrackingenabled" href="javascript:void(0)">lifecycleAutoTrackingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#logger" href="javascript:void(0)">logger</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#loglevel" href="javascript:void(0)">logLevel</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#logtype" href="javascript:void(0)">logType</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#memoryreportingenabled" href="javascript:void(0)">memoryReportingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#minimumfreediskspace" href="javascript:void(0)">minimumFreeDiskSpace</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#minutesbetweenrefresh" href="javascript:void(0)">minutesBetweenRefresh</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#onconsentexpiration" href="javascript:void(0)">onConsentExpiration</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overridecollectprofile" href="javascript:void(0)">overrideCollectProfile</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overridecollecturl" href="javascript:void(0)">overrideCollectURL</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overridecollectbatchurl" href="javascript:void(0)">overrideCollectBatchURL</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overridecollectdomain" href="javascript:void(0)">overrideCollectDomain</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overrideconsentcategorieskey" href="javascript:void(0)">overrideConsentCategoriesKey</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#publishsettingsprofile" href="javascript:void(0)">publishSettingsProfile</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#publishsettingsurl" href="javascript:void(0)">publishSettingsURL</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#remoteapienabled" href="javascript:void(0)">remoteAPIEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#remotecommands" href="javascript:void(0)">remoteCommands</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#remotehttpcommanddisabled" href="javascript:void(0)">remoteHTTPCommandDisabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#rootview" href="javascript:void(0)">rootView</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#searchadsenabled" href="javascript:void(0)">searchAdsEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#sendcrashdataoncrashdetected" href="javascript:void(0)">sendCrashDataOnCrashDetected</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#sessioncountingenabled" href="javascript:void(0)">sessionCountingEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#shouldaddcookieobserver" href="javascript:void(0)">shouldAddCookieObserver</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#shoulduseremotepublishsettings" href="javascript:void(0)">shouldUseRemotePublishSettings</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#skadattributionenabled" href="javascript:void(0)">skAdAttributionEnabled</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#skadconversionkeys" href="javascript:void(0)">skAdConversionKeys</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tagmanagementoverrideurl" href="javascript:void(0)">tagManagementOverrideURL</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealiumconfig" href="javascript:void(0)">TealiumConfig()</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#timedeventtriggers" href="javascript:void(0)">timedEventTriggers</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#updatedistance" href="javascript:void(0)">updateDistance</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#usehighaccuracy" href="javascript:void(0)">useHighAccuracy</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#visitoridentitykey" href="javascript:void(0)">visitorIdentityKey</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#webviewprocesspool" href="javascript:void(0)">webviewProcessPool</a></li>
+              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#webviewconfig" href="javascript:void(0)">webviewConfig</a></li>
+              </nav>
+  </aside></nav>
+
+</div>
+</div>
+    
+
+    </main>
+
+    <footer class="bg-secondary ph1-ns relative w-100 pv4 bt b--light-gray" role="contentinfo">
+  <div class="center flex-ns flex-wrap justify-between mw9 w-90 dn db-ns">
+
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="nav-list footer-heading-title">
+          <div class="footer-logo-wrapper">
+            <img class="logo" src="https://tealium.com/wp-content/uploads/2015/12/tealium_footer_logo_01-206x49.png" alt="tealium_footer_logo_01">
+          </div>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Support</li>
+<li class="mb2"><a class="link" href="https://university.tealium.com/">Tealium University</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/en/support/solutions">Knowledge Base</a></li>
+<li class="mb2"><a class="link" href="https://support.tealiumiq.com/" target="">Support Desk</a></li>
+      </ul>
+    </div>
+    
+    <div class="flex nested-links w-33">
+      <ul class="list v-top mt0 pt0">
+        <li class="fw5 f5 mb3 ttu o-50">Company</li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/">Tealium.com</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="http://tealium.com/blog/">Blog</a>
+        </li>
+        <li class="mb2">
+          <a class="link" href="https://tealium.com/careers/">Careers</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+  <div class="dpn bg-primary-color-dark bottom-0 left-0 right-0 dn-ns db fixed pb3 ph3 w-100">
+<div class="globalmenu mobilemenu dn">
+    
+
+<ul class="list hidden dib ph0 ma0 scrolling-touch tc">
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Home
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/iq-tag-management/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          iQ Tag Management
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          EventStream API Hub
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          AudienceStream CDP
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/functions/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Functions
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-connect/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Data Connect
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/predict/getting-started/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Predict ML
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          DataAccess
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/client-side-tags/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Client-Side Tags
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side-connectors/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Server-Side Connectors
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/platforms/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Platforms
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/api/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          API
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Administration
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/industries/tealium-for-pharma/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium for Pharma
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/industries/tealium-identity-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium Identity Partners
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/tech-partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Technology Partners
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/partners/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Partner Integrations
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/glossary/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Glossary
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/early-access/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Early Access
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/release-notes/by-feature/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release notes (by feature)
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/releases/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Releases notes (by date)
+        </a>
+    </li>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</ul>
+
+</div>
+
+
+<div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
+    <ul class="list dib ph0 ma0 scrolling-touch tc">
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/install/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Install
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/track/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Track
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/data-layer/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Data Layer
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/consent-management/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Consent Management
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/app-extensions/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          App Extensions
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/modules/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Modules
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/module-list/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Module List
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/with-objective-c/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Working with Objective-C
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/api/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4 bg-primary-color">
+          API Reference
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/charles-proxy-iosdevice/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Proxy an iOS device
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/proxy-appletv/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Proxy an Apple TV
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/privacy-manifests/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Privacy Manifests
+      </a>
+      </li>
+      
+      <li  class="tl dib ma0 hover-bg-primary w-100">
+      <a href="https://docs-preview.tealium.com/platforms/ios-swift/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Release notes
+      </a>
+      </li>
+      
+      
+  
+
+</ul>
+
+</div>
+
+
+
+
+<div class="flex dn-l justify-between">
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link mr2 white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".globalmenu">Site</button>
+
+  <button class="js-toggle flex-auto dib dn-l f6 tc db mt3 ph3 pv2 link white bg-primary-color-dark hover-bg-primary-color ba b--white-40 w-auto" data-target=".docsmenu">Section</button>
+
+</div>
+</div>
+
+</footer>
+
+    <script src="/dist/js/app.js"></script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<script src="https://kit.fontawesome.com/59194dc628.js" crossorigin="anonymous"></script>
+
+
+    
+      
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script type="text/javascript">
+const translations = {
+  button: {
+    buttonText: 'Search',
+    buttonAriaLabel: 'Search',
+  },
+  modal: {
+    searchBox: {
+      resetButtonTitle: 'Clear the query',
+      resetButtonAriaLabel: 'Clear the query',
+      cancelButtonText: 'Cancel',
+      cancelButtonAriaLabel: 'Cancel',
+    },
+    startScreen: {
+      recentSearchesTitle: 'Recent',
+      noRecentSearchesText: 'No recent searches',
+      saveRecentSearchButtonTitle: 'Save this search',
+      removeRecentSearchButtonTitle: 'Remove this search from history',
+      favoriteSearchesTitle: 'Favorite',
+      removeFavoriteSearchButtonTitle: 'Remove this search from favorites',
+    },
+    errorScreen: {
+      titleText: 'Unable to fetch results',
+      helpText: 'You might want to check your network connection.',
+    },
+    footer: {
+      selectText: 'to select',
+      selectKeyAriaLabel: 'Enter key',
+      navigateText: 'to navigate',
+      navigateUpKeyAriaLabel: 'Arrow up',
+      navigateDownKeyAriaLabel: 'Arrow down',
+      closeText: 'to close',
+      closeKeyAriaLabel: 'Escape key',
+      searchByText: 'Search by',
+    },
+    noResultsScreen: {
+      noResultsText: 'No results for',
+      suggestedQueryText: 'Try searching for',
+      reportMissingResultsText: 'Believe this query should return results?',
+      reportMissingResultsLinkText: 'Let us know.',
+    },
+  },
+};
+var default_sections = [
+];
+var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
+if(ls_sections.indexOf("JAVASCRIPT") != -1) {
+  ls_sections = [];
+  localStorage.setItem("tealdocs_sections", JSON.stringify(default_sections));
+}
+var local_sections = new Set(ls_sections);
+var cur_section = $('#breadcrumb ul li:nth-child(n+2)');
+if(cur_section && cur_section.length) {
+  var sect = cur_section.text().trim();
+  if(local_sections.has(sect)) {
+    
+    local_sections.delete(sect);
+    local_sections.add(sect);
+  }
+  else {
+    
+    local_sections.add(sect);
+    if(local_sections.size > 10) {
+      local_sections.delete(ls_sections[0]);
+    }
+  }
+  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
+}
+var filt_pre = "hierarchy.lvl0:";
+var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
+  : default_sections.map(s => filt_pre+s);
+var opt_filters = [];
+if(hier_filters.length) {
+  opt_filters.push(hier_filters);
+}
+const transformItems = function(hits) {
+  hits.map(hit => {
+    if (hit.url.indexOf('#breadcrumb') > 0) {
+      hit.url = hit.url.replace('#breadcrumb', '');
+    }
+  });
+  return hits;
+};
+docsearch({
+  container: '#docsearch',
+  appId: '01G44CJWZ0',
+  apiKey: '09633c367e743588b87dbb988dad4158',
+  indexName: 'tealium',
+  placeholder: 'Search',
+  translations: translations,
+  searchParameters: {
+    "hitsPerPage": 50,
+    "analytics": false ,
+    "analyticsTags": ["site"]
+  },
+  insights: true,
+  debug: true ,
+  transformItems
+});
+</script>
+
+    
+
+  </body>
 </html>
