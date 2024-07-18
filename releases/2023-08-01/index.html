@@ -316,6 +316,32 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/ios-swift/release-notes/">Tealium for iOS (Swift) </a></h4>
+        <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Removed data from the data layer that remained from a previous migration from the Objective-C library: <code>app_version</code>, <code>uuid</code>, <code>visitor_id</code>, <code>last_track_event</code> and <code>last_session_created</code>.</li>
+<li>Prevented an eventual crash on XCode 15 beta due to <code>+load</code> method being defined on an <code>obj-c</code> category of a Swift class.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/android-kotlin/release-notes/">Tealium for Android (Kotlin) </a></h4>
+        <ul>
+<li>Core 1.5.4
+<ul>
+<li>Session data expiration bug fix: fixes an issue whereby session scoped data may not be expired on launch</li>
+<li>Event router events buffering: buffers events until SDK is ready so events are not missed during startup</li>
+<li>Database lock crash bug fix: Some uncaught exceptions in persistence led to possible crashes</li>
+<li>ProGuard rules updates to reinstate incorrectly obfuscated <code>BatchDispatch</code> class</li>
+</ul>
+</li>
+<li>AdIdentifier 1.1.2
+<ul>
+<li>Fix: Data layer writes moved onto Tealium background thread</li>
+</ul>
+</li>
+</ul>
+
+        
         <h4><a href="/client-side-tags/release-notes/">Client-side tags </a></h4>
         <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>

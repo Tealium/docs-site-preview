@@ -316,6 +316,71 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/javascript/release-notes/">Tealium Universal Tag (utag.js) </a></h4>
+        <ul>
+<li>Values from <code>localStorage</code> and <code>sessionStorage</code> are automatically added to the <a href="/platforms/javascript/data-layer/#local-and-session-storage">data layer object</a>.</li>
+<li>Added override options <a href="/platforms/javascript/settings/#ignorelocalstorage"><code>ignoreSessionStorage</code></a> and <a href="/platforms/javascript/settings/#ignoresessionstorage"><code>ignoreLocalStorage</code></a>.</li>
+<li>Fixed an issue where <code>tealium_environment</code> and <code>ut.env</code> were not set correctly for first-party domain customers.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/ios-swift/release-notes/">Tealium for iOS (Swift) </a></h4>
+        <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Updated <code>SKAdNetwork</code> calls to use <code>updatePostbackConversionValue</code> if on iOS 15</li>
+</ul>
+<p><strong>High Impact Changes</strong></p>
+<ul>
+<li>Removed initial call to <code>trackUserConsentCategories</code> this may effect you
+if you rely on that being called.</li>
+</ul>
+<p><strong>New Features</strong></p>
+<ul>
+<li>Added config option <a href="/platforms/ios-swift/api/tealium-config/#overrideconsentcategorieskey"><code>overrideConsentCategoriesKey</code></a> to override the name of the Tealium consent categories attribute, to support custom enforcement of server-side consent.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/react-native/release-notes/">Tealium for React Native </a></h4>
+        <ul>
+<li>Added React 18 to supported versions for all packages</li>
+<li>All remote command and location modules updated to support React 18</li>
+<li>Upgraded Kotlin version to 1.6.0</li>
+</ul>
+
+        
+        <h4><a href="/platforms/cordova/release-notes/">Tealium for Cordova </a></h4>
+        <ul>
+<li>Fixed incorrect <code>plugin_version</code> version number in data layer.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/xamarin/release-notes/">Tealium for Xamarin </a></h4>
+        <ul>
+<li>Fixed a bug that caused events to be tracked as views.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/android-kotlin/release-notes/">Tealium for Android (Kotlin) </a></h4>
+        <ul>
+<li>Core 1.4.3
+<ul>
+<li>DeviceCollector bug fix: Correct calculation for <code>tealium_logical_resolution</code></li>
+</ul>
+</li>
+<li>TagManagement 1.1.3
+<ul>
+<li>Bug fix: Relocate <code>sessionCountingEnabled</code> to fix miscount on fresh launch</li>
+</ul>
+</li>
+<li>VisitorService 1.1.1
+<ul>
+<li>Bug fix: Move visitor service profile override to earlier initialization</li>
+</ul>
+</li>
+<li>Location: Add missing ProGuard rules for new classes</li>
+</ul>
+
+        
         <h4><a href="/iq-tag-management/consent/consent-management/release-notes/">Client-side consent management </a></h4>
         <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>

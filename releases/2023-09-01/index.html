@@ -316,6 +316,42 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/javascript/release-notes/">Tealium Universal Tag (utag.js) </a></h4>
+        <p>Version 4.50 provides more transparency and control over cookies written by <code>utag.js</code>.</p>
+<p>Previously, we recommended using multi-value cookies (multicookies). However, due to the increasing demand for transparency and simplicity, particularly for data privacy audits, we have revised our recommendation. Now, we advise using standalone cookies, which is now the default behavior in <code>utag.js</code>.</p>
+<p>This release includes the following updates:</p>
+<ul>
+<li>Writes separate <code>utag_main</code> cookies instead of a single multi-value cookie. To use the legacy behavior that stores multiple values in a single cookie, set <a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a> to <code>false</code>.</li>
+<li>Moves responsibility for <code>utag_main_v_id</code> from <code>utag.js</code> to the Tealium Collect tag. To force <code>utag.js</code> to set the <code>utag_main_v_id</code> cookie, set <a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a> to <code>true</code>.</li>
+<li>Adds a new <code>id</code> element in the Consent Manager cookie for logging consent. When this cookie is first set, it will match any <code>utag_main_v_id</code> values found, after which it won&rsquo;t be changed. That behavior prioritizes maintaining the link between the user and the logged events, but means that a match isn&rsquo;t guaranteed in all cases.</li>
+<li>Can easily be upgraded by updating the relevant <a href="/iq-tag-management/templates/about/">templates</a>.</li>
+<li>Adds the following utag settings:
+<ul>
+<li><a href="/platforms/javascript/settings/#split_cookie"><code>split_cookie</code></a> - Set to <code>false</code> to use the legacy single multi-value cookie.</li>
+<li><a href="/platforms/javascript/settings/#split_cookie_allowlist"><code>split_cookie_allowlist</code></a> - Specifies an array cookie names that can be set using the <code>utag_main</code> namespace.</li>
+<li><a href="/platforms/javascript/settings/#always_set_v_id"><code>always_set_v_id</code></a> - Forces <code>utag.js</code> to set the <code>utag_main_v_id</code> cookie or the <code>v_id</code> component of <code>utag_main</code>.</li>
+</ul>
+</li>
+<li>Updates the following templates:
+<ul>
+<li><code>utag.js</code> (<code>loader</code>) to version 4.50, to update cookie behavior</li>
+<li><code>cmGeneral</code> to version 3.0.12, to add centralized logic for generating or retrieving a device ID that can be called from consent logging templates</li>
+<li><code>cmDoNotSell</code> to version 1.4.0, to call the centralized logic</li>
+<li><code>fullConsentEventHandler</code> to version 1.0.3, to call the centralized logic</li>
+<li><code>partialConsentEventHandler</code> to version 1.0.3, to call the centralized logic</li>
+<li><code>Collect</code> to version <code>tv:20064.20230519</code> (released in May 2023)</li>
+</ul>
+</li>
+</ul>
+<p>For more information about the new settings for enhanced transparency in utag 4.50 or later, see <a href="https://tealium.com/blog/customer-experience/enhancing-cookie-transparency-with-utag-4-51-a-comprehensive-introduction/">Enhancing Cookie Transparency with utag 4.51</a>.</p>
+        
+        <h4><a href="/platforms/android-kotlin/release-notes/">Tealium for Android (Kotlin) </a></h4>
+        <ul>
+<li>Fix: ProGuard adjustment resolve missing <code>BatchDispatch$Companion</code> class.</li>
+<li>Minor lint warning fixes</li>
+</ul>
+
+        
         <h4><a href="/client-side-tags/release-notes/">Client-side tags </a></h4>
         <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>

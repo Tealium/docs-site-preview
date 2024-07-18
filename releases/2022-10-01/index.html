@@ -316,6 +316,67 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/android-java/release-notes/">Tealium for Android (Java) </a></h4>
+        <ul>
+<li>Added support for <code>QueryParameterProvider</code> - allows additional parameters to be added to the URL used for the WebViewDispatcher</li>
+</ul>
+
+        
+        <h4><a href="/platforms/ios-swift/release-notes/">Tealium for iOS (Swift) </a></h4>
+        <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Improved the Tag Management module code and thread security.</li>
+<li>VisitorService&rsquo;s <a href="/platforms/ios-swift/module-list/visitor-service/#requestvisitorprofile"><code>requestVisitorProfile</code></a> now skips the timeout set by the <code>visitorServiceRefresh</code> config key.</li>
+<li>Added an observable for <a href="/platforms/ios-swift/api/tealium/#onvisitorid"><code>onVisitorId</code></a> changes in the <code>Tealium</code> class to notify new IDs when <code>resetVisitorId</code> is called or when we automatically switch to a new visitor.</li>
+<li>Added the <a href="/platforms/ios-swift/api/tealium-config/#visitoridentitykey"><code>visitorIdentityKey</code></a> config key for the new visitor switching API.</li>
+<li>Migrated the <code>app_uuid</code> storage to the data layer to allow applications to delete it if needed.</li>
+<li>Added <a href="/platforms/ios-swift/api/tealium/#clearstoredvisitorids"><code>clearStoredVisitorIds</code></a> method in <code>Tealium</code> class to delete all stored visitor IDs for current and previous identities and reset the current <code>visitorId</code>.</li>
+<li>Added <a href="/platforms/ios-swift/api/tealium/#decorateurl"><code>decorateUrl</code></a> method to <code>AdobeVisitorService</code> module to add Adobe query parameter to a URL.</li>
+</ul>
+<p><strong>New Features</strong></p>
+<ul>
+<li>Added query parameter provider functionality for Adobe ECID in the Tag Management module to decorate the webview URL with Adobe query parameter.</li>
+<li>Added support in remote commands for command mappings to <code>all_events</code> and <code>all_views</code>, which are triggered on each event and view, respectively.</li>
+<li>Added support for <a href="/platforms/getting-started-mobile/identity-resolution/#visitor-switching">visitor switching</a>.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/android-kotlin/release-notes/">Tealium for Android (Kotlin) </a></h4>
+        <ul>
+<li>Visitor Switching
+<ul>
+<li>Added <a href="/platforms/android-kotlin/api/tealium-config/#visitoridentitykey"><code>TealiumConfig.visitorIdentityKey</code></a> to specify the data layer key that represents a known identity in the data layer</li>
+<li>Known identities are hashed and linked to the <code>tealium_visitor_id</code> for better switching between known identities</li>
+</ul>
+</li>
+<li>Added the following listeners:
+<ul>
+<li><code>VisitorIdUpdatedListener</code>: notifies when the visitor ID is updated as a result of switching identities or resetting the visitor ID</li>
+<li><code>DataLayerUpdatedListener</code>: listens for updates to key/value pairs in the data layer</li>
+<li><code>onDataUpdated(String, Any)</code>: notifies when a value is updated in the data layer</li>
+<li><code>onDataRemoved(Set&lt;String&gt;)</code>: notifies when the specified key is removed from the data layer by user interaction or data expiration</li>
+</ul>
+</li>
+<li>RemoteCommandDispatcher 1.2.0
+<ul>
+<li>Support for default mapping <code>all_events</code> and <code>all_views</code> in the JSON mapping file to enable triggering specific commands in response to each view or event</li>
+</ul>
+</li>
+<li>TagManagement 1.2.0
+<ul>
+<li><code>QueryParameterProvider</code>: added additional parameters to the URL for the Tag Management module</li>
+<li>Improved webview instantiation and page load management</li>
+</ul>
+</li>
+<li>Kotlin dependency updates
+<ul>
+<li>Stdlib: 1.6.21</li>
+<li>Coroutines: 1.6.2</li>
+</ul>
+</li>
+</ul>
+
+        
         <h4><a href="/iq-tag-management/consent/consent-management/release-notes/">Client-side consent management </a></h4>
         <h4 id="updates">Updates</h4>
 <ul>

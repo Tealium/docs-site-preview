@@ -316,6 +316,33 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/ios-swift/release-notes/">Tealium for iOS (Swift) </a></h4>
+        <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Improved launch performance in case of a large data layer.</li>
+<li>Fixed a bug where publish settings were not updated correctly in some internal modules.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/cordova/release-notes/">Tealium for Cordova </a></h4>
+        <ul>
+<li>Added handling of <code>Map</code> type from the Ionic plugin. <code>Map</code> types are converted to <code>Object</code> where necessary.</li>
+</ul>
+
+        
+        <h4><a href="/platforms/android-kotlin/release-notes/">Tealium for Android (Kotlin) </a></h4>
+        <ul>
+<li>Connectivity collector bug fix: Fixed an issue in the event where <code>telephonyManager.networkOperator</code> returns a blank string</li>
+<li>Deep link reporting bug fix:
+<ul>
+<li>Deep link handling limited to activities launched with intents where <code>action == Intent.ACTION_VIEW</code></li>
+<li>Empty URIs are ignored, and deep links that match what is already stored is a <code>no*op</code></li>
+<li>Handling pushed on to Tealium background thread.</li>
+</ul>
+</li>
+</ul>
+
+        
         <h4><a href="/iq-tag-management/consent/consent-integrations/release-notes/">Consent Integrations </a></h4>
         <h4 id="newcool-stuff">New/Cool Stuff</h4>
 <ul>

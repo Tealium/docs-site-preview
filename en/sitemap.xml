@@ -3844,7 +3844,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/best-practices/</loc>
-    <lastmod>2023-12-29T14:09:44-06:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -6291,35 +6291,35 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent/consent-management/release-notes/</loc>
-    <lastmod>2024-07-09T17:35:12-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/templates/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/consent/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/insights/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/trace/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/labels/resource-locks/</loc>
@@ -6458,12 +6458,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/javascript/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started-mobile/troubleshooting/</loc>
@@ -7538,48 +7533,23 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/java/release-notes/</loc>
-    <lastmod>2024-06-24T10:39:29-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/java/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/nativescript/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/nativescript/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/react-native-v1/release-notes/</loc>
-    <lastmod>2024-04-02T12:52:09-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/react-native-v1/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/react-native/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/react-native/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/release-notes/</loc>
-    <lastmod>2024-05-01T09:17:52-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/remote-commands/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/app-extensions/</loc>
@@ -7691,12 +7661,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/csharp/release-notes/</loc>
-    <lastmod>2024-04-02T12:46:02-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/csharp/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/module-list/</loc>
@@ -7736,48 +7701,23 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/cordova-v1/release-notes/</loc>
-    <lastmod>2024-04-02T12:56:53-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/cordova-v1/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/cordova/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/cordova/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/dotnet-maui/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/dotnet-maui/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/xamarin-v1/release-notes/</loc>
-    <lastmod>2024-04-02T12:54:07-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/xamarin-v1/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/xamarin/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/xamarin/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-objective-c/tag-management/</loc>
@@ -7925,21 +7865,11 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/flutter-v1/release-notes/</loc>
-    <lastmod>2024-04-02T12:48:34-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/flutter-v1/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/flutter/release-notes/</loc>
-    <lastmod>2024-04-16T11:24:34-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/flutter/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-objective-c/watchos/</loc>
@@ -7979,21 +7909,11 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/android-java/release-notes/</loc>
-    <lastmod>2024-04-17T13:17:11-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/android-java/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/release-notes/</loc>
-    <lastmod>2024-04-02T12:49:06-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/ios-swift-v1/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/proxy-appletv/</loc>
@@ -8015,30 +7935,15 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/android-kotlin/release-notes/</loc>
-    <lastmod>2024-05-22T16:25:47-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/android-kotlin/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-objective-c/release-notes/</loc>
-    <lastmod>2024-04-02T12:48:55-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/ios-objective-c/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift/release-notes/</loc>
-    <lastmod>2024-05-22T16:27:12-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/ios-swift/release-notes/"
-      />
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/campaign-monitor-connector/</loc>
@@ -12037,12 +11942,280 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/releases/2012-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2012-10-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2012-11-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2012-12-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2013-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2013-03-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2013-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2013-11-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-05-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-10-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2014-12-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2015-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2015-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2015-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2015-07-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2016-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2016-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2016-08-15/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2016-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2017-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2017-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2018-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2018-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2018-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2018-12-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-03-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-07-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-10-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-11-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2019-12-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-05-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-07-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-10-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2020-11-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-03-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-05-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-07-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-08-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-09-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-10-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-11-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2021-12-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-03-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-04-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-05-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2022-07-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/releases/2022-09-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2022-10-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2022-11-01/</loc>
@@ -12050,11 +12223,15 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2022-12-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-01-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2023-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-03-01/</loc>
@@ -12062,27 +12239,27 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-04-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-05-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-06-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-07-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-08-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-09-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-09-27/</loc>
@@ -12106,7 +12283,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-11-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2023-11-08/</loc>
@@ -12141,6 +12318,10 @@
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/releases/2024-01-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/releases/2024-01-11/</loc>
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
   </url>
@@ -12157,6 +12338,10 @@
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/releases/2024-02-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/releases/2024-02-07/</loc>
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
   </url>
@@ -12171,6 +12356,10 @@
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-02-28/</loc>
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2024-03-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-03-06/</loc>
@@ -12206,7 +12395,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-05-01/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-05-08/</loc>
@@ -12214,7 +12403,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-05-15/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-05-22/</loc>
@@ -12223,6 +12412,10 @@
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-05-30/</loc>
     <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/releases/2024-06-01/</loc>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/releases/2024-06-05/</loc>
@@ -13983,23 +14176,23 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/events/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/labels/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/load-rules/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/release-notes/</loc>
@@ -14012,11 +14205,11 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/save-publish/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/release-notes/</loc>
-    <lastmod>2023-10-06T18:00:33+01:00</lastmod>
+    <lastmod>2024-07-18T14:47:50-07:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14025,27 +14218,27 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/administration/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/moments-api/release-notes/</loc>
-    <lastmod>2024-07-11T16:44:13-07:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/release-notes/</loc>
-    <lastmod>2023-10-06T18:00:33+01:00</lastmod>
+    <lastmod>2024-07-16T16:46:54-07:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"

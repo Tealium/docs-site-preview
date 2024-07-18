@@ -316,6 +316,15 @@
       <div class="prose nested-links" id="prose">
       <section class="w-100 pb3">
         
+        <h4><a href="/platforms/ios-swift/release-notes/">Tealium for iOS (Swift) </a></h4>
+        <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Added the <code>getTagManagementWebView</code> method on the Tealium instance to access the internal TagManagement WebView so clients can set the <code>isInspectable</code> flag and debug on XCode 14.3+.</li>
+<li>Fixed a possible crash that could happen when comparing two <code>TealiumConfig</code> objects with a <code>WKWebViewConfiguration</code> inside.</li>
+<li>Fixed an edge case that could cause some of our internal files to be unintentionally backed up and reused on different devices.</li>
+</ul>
+
+        
         <h4><a href="/iq-tag-management/consent/consent-integrations/release-notes/">Consent Integrations </a></h4>
         <h4 id="fixes">Fixes</h4>
 <ul>
