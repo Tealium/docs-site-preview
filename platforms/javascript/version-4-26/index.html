@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Debugging | Tealium for JavaScript (utag.js) | Preview of Tealium Docs</title>
+    <title>Version 4.26 notes | Tealium for JavaScript (utag.js) | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -13,7 +13,7 @@
     <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
     
-    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/platforms/javascript/debugging/">
+    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/platforms/javascript/version-4-26/">
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
@@ -29,7 +29,7 @@
     <script>
     var utag_data = {
         site_section  : "platforms",
-        reading_time  : "4",
+        reading_time  : "7",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -63,7 +63,7 @@
         
       
         
-          <a href="/ja/platforms/javascript/debugging/" class="dim link mid-gray">日本語</a>
+          <a href="/ja/platforms/javascript/version-4-26/" class="dim link mid-gray">日本語</a>
         
       
       </li>
@@ -94,8 +94,8 @@
         <a href="/platforms/javascript/universal-data-object/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Universal Data Object (utag_data)</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/platforms/javascript/data-layer-object/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Data layer object (b)</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/platforms/javascript/single-page-applications/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Single-Page Applications</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/settings/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".utag-settings">Settings</a></li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/debugging/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">Debugging</a></li><li class="relative w-100 fw8 f5 ">
+        <a href="/platforms/javascript/settings/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".utag-settings">Settings</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/debugging/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Debugging</a></li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".javascript-api">API Reference</a>
         <ul class="pl2  javascript-api desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/platforms/javascript/api/cookie-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-cookie-functions">Cookie Functions</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -104,8 +104,8 @@
         <a href="/platforms/javascript/api/utility-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".javascript-api-utility-functions">Utility Functions</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/platforms/javascript/version-4-52/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Version 4.52&#43; notes</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/version-4-50/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Version 4.50&#43; notes</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/platforms/javascript/version-4-26/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Version 4.26 notes</a></li></ul></li></ul>
+        <a href="/platforms/javascript/version-4-50/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Version 4.50&#43; notes</a></li><li data-level="2" class="selected relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/platforms/javascript/version-4-26/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">Version 4.26 notes</a></li></ul></li></ul>
 </nav>
 </div>
     
@@ -138,7 +138,7 @@
 </ul>
 </nav>
 
-<h1 class="lh-title mt30 mb3">Debugging</h1>
+<h1 class="lh-title mt30 mb3">Version 4.26 notes</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -146,168 +146,121 @@
 
   
     <p class="f4 fw3 lh-copy">
-      Learn the basics of debugging tracking calls.
+      Learn about the changes in version 4.26 and how to update to the latest version.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p>The functions <code>utag.view()</code> and <code>utag.link()</code> are used to track page views and events, respectively. This article shows how to debug these functions to see how and when they are being called and what data is being processed.</p>
-<h2 id="debug-mode">Debug mode</h2>
-<p>To enable debug mode, open the developer console in your browser and run the following command:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span>document.<span style="color:#a6e22e">cookie</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;utagdb=true&#34;</span>;
-</span></span></code></pre></div><p>This cookie turns on debug mode which generates useful output to the console.</p>
-<figure><a class="slb" href="/images/platforms/javascript/console-output.png"><img src="/images/platforms/javascript/console-output.png"
-         alt="Console output"
-         title="Console output" width="1000" height="500"/>
-    </a>
-</figure>
-<p>When debug mode is enabled, log statements appear in the console when tracking calls occur. Look in the console output for these statements:</p>
-<pre tabindex="0"><code class="language-none" data-lang="none">trigger: view
-trigger: link
-</code></pre><p>The following example demonstrates how this looks in the console after an event is tracked:</p>
-<figure><a class="slb" href="/images/platforms/javascript/debugging-console-utag-link.png"><img src="/images/platforms/javascript/debugging-console-utag-link.png"
-         alt="Debug Console utag.link"
-         title="Debug Console utag.link" width="492" height="322"/>
-    </a>
-</figure>
-<p>Click the line after <code>trigger:view</code> or <code>trigger:link</code> to expand and collapse the event data object.</p>
-<h2 id="breakpoints">Breakpoints</h2>
-<p>For more in-depth debugging, it is useful to set breakpoints in <code>utag.js</code> to pause the code when calls tracking calls occur. Use breakpoints to inspect the tracking data object or to inspect the stack trace to see where the call originated.</p>
-<p>To use Chrome DevTools to set a breakpoint:</p>
-<ol>
-<li>Open DevTools and go to the <strong>Sources</strong> tab, then open the file <code>utag.js</code>.</li>
-<li>Find the line with <code>return this.track(</code> and click the line number to set a breakpoint:<br>
-<figure><a class="slb" href="/images/platforms/javascript/debugging-utag-code.png"><img src="/images/platforms/javascript/debugging-utag-code.png"
-               alt="utag breakpoint"
-               title="utag breakpoint" width="385" height="63"/>
-          </a>
-      </figure></li>
-<li>Return to the main window and perform an action to trigger a tracking call. When the tracking call runs, the code will pause on the breakpoint.</li>
-<li>In the right panel, expand the <strong>Watch</strong> pane and click the <strong>+</strong> sign to add a watch expression. Type <code>a</code> and click <strong>Enter</strong> to add a watch expression for this variable.</li>
-<li>Expand the object that is contained in parameter <code>a</code> to show the data that was passed to the tracking call. This data is available in extensions, load rules and data mappings.</li>
-<li>In the right panel, expand the <strong>Call Stack</strong> pane to see where the tracking call originated.</li>
-</ol>
-<p>The following is an example of where to look for the location of a <code>utag.link()</code> call:</p>
-<figure><a class="slb" href="/images/platforms/javascript/utag-link-call-stack.png"><img src="/images/platforms/javascript/utag-link-call-stack.png"
-         alt="utag link call stack"
-         title="utag link call stack" width="1120" height="622"/>
-    </a>
-</figure>
-<p>This example shows the breakpoint in <code>utag.js</code> that was placed to debug the <code>utag.link()</code> call. Item (2), when clicked, shows the <code>utag.link()</code> call that is made within the source code (to the left).</p>
-<p>You have now successfully been able to debug three things:</p>
-<ul>
-<li>Did the breakpoint get hit? If yes, then the function is set up to be triggered correctly.</li>
-<li>Since the breakpoint was hit, you were able to see what data was sent when <code>utag.view()</code> or <code>utag.link()</code> was called.</li>
-<li>You were able to view the actual configuration of the <code>utag.view()</code> or <code>utag.link()</code> call.</li>
+  <p>For all release notes, see <a href="/release-notes/?filter=tealium-universal-tag">Tealium for Javascript release notes</a>.</p>
+<hr>
+<h2 id="overview">Overview</h2>
+<p>Load rules are re-evaluated for both <code>utag.view()</code> and <code>utag.link()</code> calls.</p>
+<p>Changes to the way the <code>utag.js</code> 4.26 file handles query string parameters and meta tags means that they are no longer lower-cased by default. If you have query string parameters or meta tags identified as data sources in your profile, you may need to update those data source names in the Data Layer tab to match upper case and lower case letters exactly.</p>
+<h2 id="custom-script-source-is-a-blocking-tag">Custom script source is a blocking tag</h2>
+<p>A blocking tag is a tag that must run before any other tags run. When you enter the location for the <a href="/iq-tag-management/templates/manage/">custom script source advanced setting</a> for a tag, this tag automatically becomes a blocking tag. This tag still loads asynchronously, but subsequent asynchronous scripts. For example, <code>utag.10.js</code> does not load until the blocking tag is complete.</p>
+<p><strong>Best Practice:</strong> If you want to load custom JavaScript for a tag but you do not want it to be a blocking tag, use the <a href="/iq-tag-management/tags/tealium-generic-tag/">Tealium Generic Tag</a> to load it.</p>
+<h2 id="wait-flag-improvement">Wait flag improvement</h2>
+<p>The <a href="/iq-tag-management/templates/manage/">wait flag is an advanced setting</a> within tag configuration.</p>
+<p>Tags whose <strong>Wait Flag</strong> is set to  &ldquo;No&rdquo; load and fire immediately after the <code>utag.js</code> file loads. Those tags, whose <strong>Wait Flag</strong> is set to &ldquo;No,&rdquo; that load sooner may fire sooner, regardless of their order in Tealium iQ. For example, if Tag 2 loads before Tag 1, and Tag 1 is placed higher in the Tags tab in Tealium iQ, Tag 2 may still fire sooner, despite the order they&rsquo;re in. Previously, tags executed in the order specified in Tealium iQ. These tags then waited for tags placed higher in the order to load before loading themselves.</p>
+<p>This means that you may now have a mixture of tags with their Wait Flag set to &lsquo;No&rsquo; and tags with their Wait Flag set to &lsquo;Yes&rsquo; in the same profile.</p>
+<h2 id="tracking-calls-load-new-tags">Tracking calls load new tags</h2>
+<p>After the initial page load, subsequent calls to <code>utag.view()</code> re-evaluate load rules to load new tags. In previous versions, calls to <code>utag.view</code> could not load new tags. This feature is enabled by default in <code>utag.js</code> 4.26.</p>
+<p>Disable this feature to keep current behavior. See <a href="/platforms/javascript/settings/"><code>utag.cfg.load_rules_ajax</code> flag</a> details below for more information.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>A <code>utag.link()</code> call does not load a new tag. Only a <code>utag.view()</code> call does this.</p>
+<h2 id="load-a-tag-by-uid">Load a tag by UID</h2>
+<p>For advanced implementations, especially those using AJAX, use the <code>utag.view()</code> call to bring in a new tag and fire it based on the tag&rsquo;s UID (as seen in the Tags tab of Tealium iQ). This bypasses all load rules.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">view</span>({<span style="color:#a6e22e">page_name</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;New Page&#34;</span>}, <span style="color:#66d9ef">null</span>, [<span style="color:#ae81ff">5</span>]);
+</span></span></code></pre></div><ul>
+<li>Param 1: Data Layer</li>
+<li>Param 2: Callback function (or null)</li>
+<li>Param 3: Array of UIDs to load and fire</li>
 </ul>
-<p>This is helpful when you are not seeing the correct data passed when certain events are triggered. It is likely that the data being sent in the function is incorrect.</p>
-<p>For more information, see <a href="https://developer.chrome.com/docs/devtools/javascript/reference/">Chrome DevTools: JavaScript debugging</a>.</p>
-<h2 id="console-output">Console output</h2>
-<p>This following table describes some of the important debug statements that appear in the console. The debug output on your site might vary slightly based on your version of <code>utag.js</code> or your specific settings.</p>
-<table>
-<thead>
-<tr>
-<th>Debug statement</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Pre-INIT</code></td>
-<td>Extensions scoped to <strong>Pre Loader</strong> run.</td>
-</tr>
-<tr>
-<td><code>PINIT</code></td>
-<td>Extensions scoped to <strong>Before Load Rules</strong> run, load rules are evaluated, and tags are loaded.</td>
-</tr>
-<tr>
-<td><code>utag.loader.RD</code></td>
-<td>Data layer variables are read from the page (see <a href="/iq-tag-management/data-layer/data-layer-variables/">data layer variable types</a>.</td>
-</tr>
-<tr>
-<td><code>utag.loader.INIT</code></td>
-<td>Extensions scoped to <strong>After Load Rules</strong> run and tags are loaded.</td>
-</tr>
-<tr>
-<td><code>All Tags EXTENSIONS</code></td>
-<td>Extensions scoped to <strong>After Load Rules</strong> run.</td>
-</tr>
-<tr>
-<td><code>utag.loader.INIT: waiting &lt;UID&gt;</code></td>
-<td>The tag (UID) is set to load at DOM Ready and is added to the queue.</td>
-</tr>
-<tr>
-<td><code>READY:utag.cfg.readywait</code></td>
-<td>DOM Ready occurs and <code>PINIT</code> runs.</td>
-</tr>
-<tr>
-<td><code>READY:utag.cfg.wq</code></td>
-<td>DOM Ready occurs and queued tags are processed.</td>
-</tr>
-<tr>
-<td><code>WQ: #</code></td>
-<td>The number of tags in the queue to wait for DOM Ready.</td>
-</tr>
-<tr>
-<td><code>Attach to head</code></td>
-<td>Tag script is added into the source code.</td>
-</tr>
-<tr>
-<td><code>utag.loader.LOAD &lt;UID&gt;</code></td>
-<td>The tag (UID) has loaded on the page.</td>
-</tr>
-<tr>
-<td><code>Sending: &lt;UID&gt;</code></td>
-<td>The tag (UID) is triggering the call to the vendor.</td>
-</tr>
-<tr>
-<td><code>trigger:view</code></td>
-<td><code>utag.view()</code> was called.</td>
-</tr>
-<tr>
-<td><code>trigger:link</code></td>
-<td><code>utag.link()</code> was called.</td>
-</tr>
-<tr>
-<td><code>trigger:called before tags loaded</code></td>
-<td>A tracking call occurred before the tags loaded on the page. The tracking call is queued and will run after the tags load.</td>
-</tr>
-<tr>
-<td><code>utag.handler.INIT</code></td>
-<td>Queued tags are triggered.</td>
-</tr>
-</tbody>
-</table>
+<h2 id="read-new-meta-tags">Read new meta tags</h2>
+<p>These types of meta tags with &ldquo;name=&rdquo; were picked up in a previous version of <code>utag.js</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">name</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;keywords&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Apple,Tab&#34;</span> /&gt;
+</span></span></code></pre></div><p>The new <code>utag.js</code> 4.26 now picks up those with <code>property= </code>(see &ldquo;Open Graph&rdquo; meta tags)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;og:type&#34;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;video.movie&#34;</span> /&gt; 
+</span></span></code></pre></div><h2 id="lowercase-query-string-or-meta-variables">Lowercase query string or meta variables</h2>
+<p>This is a logic change in the default behavior of <code>utag.data</code>. Set the <a href="#utagcfglowerqp"><code>utag.cfg.lowerqp</code> flag</a> to <code>true</code> to automatically lowercase. However, the default setting keeps the mixed case.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>Set the <code>utag.cfg.lowerqp</code> flag to true for backward compatibility with previous <code>utag.js</code> behavior.</p>
+<p>Set the <code>utag.cfg.lowermeta</code> flag to <code>true</code> to enable lower-casing for the meta tags. This only applies to the name of the name/value pair for that meta tag.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>If you have mixed-case query string parameters, you need to update the data source&rsquo;s name in the Data Sources tab to match exactly. Any code that refers to this query string type data source must also be updated.</p>
+<h2 id="new-cookie-values">New cookie values</h2>
+<p>There are new cookie name/value pairs in the <code>utag_main</code> cookie:</p>
+<ul>
+<li><strong><code>utag_main_vid</code></strong><br>
+A long string to uniquely identify the visitor, such as <code>013efdc67183001adeec0eef13010a051001b00f0093c</code>)</li>
+<li><strong><code>utag_main__ss</code></strong><br>
+A &ldquo;Session Start&rdquo; flag. Set to <code>&quot;1&quot;</code> for the first page view of a new session. Default session time is 30 minutes elapsed with no activity.</li>
+<li>The session ID value in the <code>utag_main_ses_id</code> cookie</li>
+<li>The visitor ID value in the <code>utag_main_v_id</code> cookie</li>
+<li>The session start flag (0 or 1) found in the <code>utag_main__ss</code> cookie</li>
+</ul>
+<p>(The previous cookie values <code>utag_main__st</code> and <code>utag_main_ses_id</code> are still set.)</p>
+<h2 id="session-tracking">Session tracking</h2>
+<p>A request for an empty file, <code>utag.v.js</code>, is made once at the start of a visitor session. This is used internally by Tealium to log the session count. The HTTP request URL looks like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>http://tags.tiqcdn.com/utag/tiqapp/utag.v.js?a<span style="color:#f92672">=</span>tealium/main/201306012057&amp;cb<span style="color:#f92672">=</span><span style="color:#ae81ff">1370276499302</span>
+</span></span></code></pre></div><p>The new cookie value <code>utag_main__ss</code>, is used to determine when to fire. This is only sent on the first event of a session. This request is sent last, after all tags have fired.</p>
+<h2 id="url-fragments">URL fragments</h2>
+<p>Key/value pairs found after the <code>#</code> sign are added as <code>qp.</code> variables. This is important for AJAX sites.</p>
+<p>Example URL: <code>http://www.example.com?param1=value1&amp;param2=value2#hash1=value3)</code></p>
+<p>Previous:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;qp.param1&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value1&#34;</span>, <span style="color:#e6db74">&#34;qp.param2&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value2&#34;</span>}
+</span></span></code></pre></div><p>New:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">utag</span>.<span style="color:#a6e22e">data</span> <span style="color:#f92672">=</span> { <span style="color:#e6db74">&#34;qp.param1&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value1&#34;</span>, <span style="color:#e6db74">&#34;qp.param2&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value2&#34;</span>, <span style="color:#e6db74">&#34;qp.hash1&#34;</span>  <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;value3&#34;</span>}
+</span></span></code></pre></div><h2 id="all-page-data-available-to-tracking-calls">All page data available to tracking calls</h2>
+<p>Previously, <code>utag.view</code> and <code>utag.link</code> calls only knew about the data you passed them. Items like <code>b[&quot;qp.campaign&quot;]</code> were not available. Now, all &ldquo;built-in&rdquo; data points such as URL, meta, or cookie values are added to the data layer for the <code>utag.link</code> and <code>utag.view</code> calls.</p>
+<p>Also, dynamic items that may have changed for AJAX sites (such as <code>b[&quot;dom.url&quot;]</code>) are re-built so they use the current value. The current value may be different from the value at the time of the initial landing on an AJAX page.</p>
+<h2 id="new-override-settings">New override settings</h2>
+<p>Use a JavaScript Code extension scoped to &ldquo;Pre Loader&rdquo; and the global variable <code>window.utag_cfg_ovrd</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span>window.<span style="color:#a6e22e">utag_cfg_ovrd</span> <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;noview&#34;</span>          <span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;lowerqp&#34;</span>         <span style="color:#f92672">:</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;load_rules_ajax&#34;</span> <span style="color:#f92672">:</span> <span style="color:#66d9ef">false</span>
+</span></span><span style="display:flex;"><span>};
+</span></span></code></pre></div><h2 id="additional-settings">Additional settings</h2>
+<ul>
+<li><code>utag.cfg.load_rules_ajax</code><br>
+Set this flag to <code>false</code> when you do <em>not</em> wish to &ldquo;re-evaluate&rdquo; load rules for each <code>utag.view</code> and <code>utag.link</code> call. For <code>utag.view</code>, this may also load a new <code>utag.X.js</code> file if it did not load on the initial page view.</li>
+<li><code>utag.udoname</code><br>
+The name of the data object. The <code>utag.js</code> code assumes the data object is a global variable. For example, not an object within another object. By default, this is set to <code>utag_data</code></li>
+<li><code>utag.cfg.load_rules_at_wait</code><br>
+Set this flag to <code>true</code> when you wish to re-evaluate load rules at Wait (DOM Ready). This enables legacy support where data may have been set after <code>utag.js</code> loads and you want to use this data to fire a Tag set to wait for DOM Ready.</li>
+<li><code>utag.cfg.lowerqp</code><br>
+Set this flag to <code>true</code> if you wish to lowercase your query string name/value pairs. This used to be the default behavior.</li>
+<li><code>utag.cfg.lowermeta</code><br>
+Set this flag to <code>true</code> if you wish to lowercase your meta tags&rsquo; names. The value of the name/value pair for the meta tag is not lowercased.</li>
+<li><code>utag.cfg.noview</code><br>
+Set this flag to <code>true</code> if you wish to control when the initial <code>utag.view</code> call is made. This is common for AJAX sites where your application controls the page view event (not the initial page load action.)</li>
+</ul>
+<h2 id="considerations">Considerations</h2>
+<ul>
+<li>Accidentally Firing Multiple Orders - The <code>utag.link</code> and <code>utag.view</code> calls now have all of the &ldquo;DOM&rdquo; type of data points available in every call. For example, the query string data such as <code>b[&quot;qp.order_id&quot;]</code> is read on the page load and trigger an order event. However, if you fire a <code>utag.link</code> call on that same order page, it also has the <code>b[&quot;qp.order_id&quot;]</code> data set and trigger a second order event.</li>
+<li>For most intuitive behavior, we recommend setting all <code>utag_data</code> values before you load in the <code>utag.js</code> file. And keep <code>utag.cfg.load_rules_at_wait</code> at &ldquo;false,&rdquo; which is the default.</li>
+<li>Be aware that updating to <code>utag.js</code> 4.26 changes the default behavior for lower casing your query string params. Values are no longer automatically lower-cased.</li>
+<li>&ldquo;All Tags&rdquo;-scoped Extensions may or may not run before DOM Ready-scoped extensions. Order is not guaranteed. If you manipulate a data layer element in an All Tags-scoped extension, then it may affect your Content Modification Extension&rsquo;s criteria.</li>
+</ul>
+<p><strong>Best Practice:</strong> Do not modify the original data layer object. If you need to modify a value, use a new variable instead.</p>
+<h2 id="known-issues">Known issues</h2>
+<ul>
+<li>The <code>utag_data</code> object becomes a reference to <code>utag.data</code>, and changing one changes the other.</li>
+<li>Internet Explorer 8 may introduce timing issues if your Data Layer is defined at the end of your <code>&lt;body&gt;</code> element, just before DOM Ready (and the <code>utag.js</code> is already loaded). As a best practice, always declare your <code>utag_data</code> object before you load the <code>utag.js</code> file.</li>
+</ul>
 
 </div>
 
-<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
-
-  
-  <a href="/platforms/javascript/version-4-52/"
-    class="inline-flex items-center-ns ba b--black-10 br3 pa3">
-    <section class="tl pr3">
-      <div>Version 4.52&#43; notes</div>
-    </section>
-    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Version 4.52&#43; notes"</title>
-      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
-    </svg>
-  </a>
+<div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="di mr3">
   
   
-</div><div class="di mr3">
-  
-  
-  <a href="/platforms/javascript/settings/"
+  <a href="/platforms/javascript/version-4-50/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Settings "</title>
+      <title>"Version 4.50&#43; notes "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Settings</div>
+      <div>Version 4.50&#43; notes</div>
     </section>
   </a>
   
@@ -339,7 +292,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  November 8, 2024 
+          <p>This page was last updated:  October 11, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -353,9 +306,21 @@ No</button>
 
   <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#debug-mode" href="javascript:void(0)">Debug mode</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#breakpoints" href="javascript:void(0)">Breakpoints</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#console-output" href="javascript:void(0)">Console output</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#overview" href="javascript:void(0)">Overview</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#custom-script-source-is-a-blocking-tag" href="javascript:void(0)">Custom script source is a blocking tag</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#wait-flag-improvement" href="javascript:void(0)">Wait flag improvement</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tracking-calls-load-new-tags" href="javascript:void(0)">Tracking calls load new tags</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#load-a-tag-by-uid" href="javascript:void(0)">Load a tag by UID</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#read-new-meta-tags" href="javascript:void(0)">Read new meta tags</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#lowercase-query-string-or-meta-variables" href="javascript:void(0)">Lowercase query string or meta variables</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#new-cookie-values" href="javascript:void(0)">New cookie values</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#session-tracking" href="javascript:void(0)">Session tracking</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#url-fragments" href="javascript:void(0)">URL fragments</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#all-page-data-available-to-tracking-calls" href="javascript:void(0)">All page data available to tracking calls</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#new-override-settings" href="javascript:void(0)">New override settings</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#additional-settings" href="javascript:void(0)">Additional settings</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#considerations" href="javascript:void(0)">Considerations</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#known-issues" href="javascript:void(0)">Known issues</a></li>
               </nav>
   </aside></nav>
 
