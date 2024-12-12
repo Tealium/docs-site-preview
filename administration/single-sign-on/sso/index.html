@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://use.typekit.net/ilp4lxb.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Set up Single Sign-On for Tealium Accounts | Single sign-on (SSO) |Preview of Tealium Docs</title>
+    <title>Set up Single Sign-On for Tealium Accounts | Single sign-on (SSO) | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -86,7 +86,7 @@
     <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
   
   </ul>
-  <ul class="list pa0" data-nav-section="administration"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/administration/" class="dib w-100 link text-color-primary hover-primary-color"><span class="pb2">Administration</span></a>
+  <ul class="list pa0" data-nav-section="administration"><li data-level="1" class="relative w-100 fw8 f4 mv2 text-color-primary pv1 ind2"><a href="/administration/" class="dib w-100 link text-color-primary hover-primary-color mb2"><span class="pb2">Administration</span></a>
         <ul data-level="1" class="administration desktopmenu animated fadeIn list pl0 mt2"><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/administration/account-organization/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Account organization</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/administration/about-permissions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-platform-permissions">About platform permissions</a></li><li class="relative w-100 fw8 f5 ">
@@ -112,7 +112,7 @@
         <a href="/administration/single-sign-on/okta/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".sso-okta-idp">Okta</a></li></ul>
       </li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
         <a href="/administration/feedback/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".feedback-policy">Feedback policy</a></li><li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
-        <a href="/administration/release-notes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".release-notes-administration">Release Notes</a></li></ul></li></ul>
+        <a href="/administration/profile-retention/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".profile-retention-policy">Profile retention policy</a></li></ul></li></ul>
 </nav>
 </div>
     
@@ -165,7 +165,7 @@
 <li><strong>Tealium</strong>: Account Admin and User Admin permissions</li>
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>If you have access to multiple Tealium accounts, SSO is only enabled for your primary account.</p>
-<h2 id="how-it-works">How it Works</h2>
+<h2 id="how-it-works">How it works</h2>
 <p>SSO is a secure way of using one authentication system to gain access to multiple applications. Tealium supports Security Assertion Markup Language (SAML) 2.0 to implement SSO and acts as the service provider (SP) for your Identity Provider (IdP) configuration. Using SAML for Tealium SSO allows you to secure users&rsquo; accounts under your trusted enterprise IdP.</p>
 <h3 id="supported-idps">Supported IdPs</h3>
 <p>Tealium SSO supports and has configuration instructions for connections to the following IdPs:</p>
@@ -178,7 +178,7 @@
 <li>Okta</li>
 </ul>
 <p>Tealium also supports SSO implementation to IdP platforms not listed above. However, additional testing and configuration time may be required to set up IdP connections from other platforms. Contact Tealium Support for questions regarding implementation of other IdP platforms.</p>
-<h2 id="tealium-sso-login-process">Tealium SSO Login Process</h2>
+<h2 id="tealium-sso-login-process">Tealium SSO login process</h2>
 <figure><a class="slb" href="/images/iq-tag-management/administration/security/sso-configuration1.png"><img src="/images/iq-tag-management/administration/security/sso-configuration1.png"
          alt="Tealium SSO Login Process"
          title="Tealium SSO Login Process"/>
@@ -197,22 +197,21 @@
 <li>Your IdP sends a SAML response to Tealium SSO SP and Tealium SSO SP validates the login information.</li>
 <li>A new Tealium login session is created.</li>
 </ol>
-<h2 id="configure-and-manage-your-sso">Configure and manage your SSO</h2>
-<p>Set up and manage your Tealium SSO through the Client-side or Server-Side <strong>Admin menu &gt; SSO (Single Sign-On)</strong>. After you establish a connection to your IdP and turn on authentication, Tealium SSO is activated across client- and server-side products.</p>
-<figure><a class="slb" href="/images/iq-tag-management/administration/security/sso-client-side-menu.png"><img src="/images/iq-tag-management/administration/security/sso-client-side-menu.png"
+<h2 id="configure-and-manage-sso">Configure and manage SSO</h2>
+<figure class="fr mt0"><a class="slb" href="/images/iq-tag-management/administration/security/sso-client-side-menu.png"><img src="/images/iq-tag-management/administration/security/sso-client-side-menu.png"
          alt="SSO client-side menu"
-         title="SSO client-side menu" width="150"/>
+         title="SSO client-side menu" class="noshadow" width="150"/>
     </a>
 </figure>
-<h3 id="set-up-your-sso">Set up your SSO</h3>
+<p>To set up and manage Tealium SSO go to:<br>
+<strong>Admin menu &gt; SSO (Single Sign-On)</strong>.</p>
+<p>After you establish a connection to your IdP and turn on authentication, Tealium SSO is activated across client- and server-side products.</p>
 <p>Set up your Tealium SSO in four steps:</p>
-<ol>
-<li><a href="#step-1-configure-your-idp">Configure your IdP</a></li>
-<li><a href="#step-2-connect-to-your-idp">Connect to your IdP</a></li>
-<li><a href="#step-3-test-your-sp-initiated-sso">Test your SSO</a></li>
-<li><a href="#step-4-activate-your-sp-initiate-sso">Activate your SSO</a></li>
-</ol>
-<h4 id="step-1-configure-your-idp">Step 1: Configure your IdP</h4>
+<p><a href="#step-1-configure-idp">Step 1: Configure your IdP</a><br>
+<a href="#step-2-connect-to-idp">Step 2: Connect to your IdP</a><br>
+<a href="#step-3-test-your-sp-initiated-sso">Step 3: Test your SSO</a><br>
+<a href="#step-4-activate-your-sp-initiated-sso">Step 4: Activate your SSO</a></p>
+<h3 id="step-1-configure-idp">Step 1: Configure IdP</h3>
 <p>Create a new SAML SSO connection by completing the following steps:</p>
 <ol>
 <li>Navigate to <strong>Admin Menu &gt; SSO (Single Sign-On)</strong>.</li>
@@ -225,7 +224,7 @@
 <ol start="2">
 <li>In the <strong>New SAML Single-Sign On (SSO) Connection &gt; Configure IdP</strong> screen, download the Tealium metadata file to your computer and then import this file into your IdP.</li>
 <li>Create a new Tealium application in your IdP and download your IdP metadata file. Each IdP requires a different configuration to access and download a metadata file for creating a new SSO connection.<br>
-For specific IdP instructions, see <a href="#idp-configuration-instructions">IdP Configuration Instructions</a>.<br>
+For specific IdP instructions, see <a href="#idp-instructions">IdP Configuration Instructions</a>.<br>
 Ensure you have the following information from your IdP:
 <ul>
 <li>SAML Metadata file</li>
@@ -235,7 +234,7 @@ Ensure you have the following information from your IdP:
 </li>
 <li>After you configure your IdP and collect the required information for a new SSO connection, click <strong>Continue</strong> in the Tealium New SAML Single-Sign on (SSO) Connection wizard.</li>
 </ol>
-<h5 id="idp-configuration-instructions">IdP Configuration Instructions</h5>
+<h3 id="idp-instructions">IdP instructions</h3>
 <p>The following table lists instructions on how to set up your IdP to work with Tealium SSO:</p>
 <table>
 <thead>
@@ -263,7 +262,7 @@ Ensure you have the following information from your IdP:
 </tr>
 <tr>
 <td>OneLogin</td>
-<td>Follow the instructions in the <a href="https://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5">OneLogin documentation</a> to download your metadata file to upload to Tealium.<br> In your setup, ensure the following values are set:<ul><li>User has an attribute set to <code>email</code>.</li><li><strong>RelayState</strong> is set to the same value as the <strong>EntityID</strong> provided in Tealium metadata file.</li><li><strong>Audience</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the Tealium metadata file.</li><li><strong>Recipient</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the Tealium metadata file.</li><li><strong>ACS (Consumer) URL Validator</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerServicenode</strong> in the <strong>Tealium</strong> metadata file. Every slash must be escaped with backslash.</li><ul><li>For example, if the <strong>Location</strong> attribute has a <code>https://prod-federation.auth.us-west-1.amazoncognito.com/saml2/idpresponse</code> value, then the <strong>URL Validator</strong> should be <code>https:\/\/prod-federation.auth.us-west-1.amazoncognito.com\/saml2\/idpresponse</code></li></ul><li><strong>ACS (Consumer) URL</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the <strong>Tealium</strong> metadata file.</li></ul></td>
+<td>Follow the instructions in the <a href="https://onelogin.service-now.com/support?id=kb_article&amp;sys_id=b2c91143db109700d5505eea4b9619d5">OneLogin documentation</a> to download your metadata file to upload to Tealium.<br> In your setup, ensure the following values are set:<ul><li>User has an attribute set to <code>email</code>.</li><li><strong>Audience</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the Tealium metadata file.</li><li><strong>Recipient</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the Tealium metadata file.</li><li><strong>ACS (Consumer) URL Validator</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerServicenode</strong> in the <strong>Tealium</strong> metadata file. Every slash must be escaped with backslash.</li><ul><li>For example, if the <strong>Location</strong> attribute has a <code>https://prod-federation.auth.us-west-1.amazoncognito.com/saml2/idpresponse</code> value, then the <strong>URL Validator</strong> should be <code>https:\/\/prod-federation.auth.us-west-1.amazoncognito.com\/saml2\/idpresponse</code></li></ul><li><strong>ACS (Consumer) URL</strong> is set to the same value as the <strong>Location</strong> attribute of the <strong>AssertionConsumerService</strong> node in the Tealium metadata file.</li><li><strong>Login URL</strong> is set to <code>https://my.tealiumiq.com/login/sso/{ACCOUNT_NAME}</code>.</li><li><strong>SAML Initiator</strong> is set to <strong>Service Provider</strong>.</li></ul></td>
 </tr>
 <tr>
 <td>Okta</td>
@@ -271,7 +270,15 @@ Ensure you have the following information from your IdP:
 </tr>
 </tbody>
 </table>
-<h4 id="step-2-connect-to-your-idp">Step 2: Connect to your IdP</h4>
+<h3 id="federation-id">Federation ID</h3>
+<p>By default, Tealium uses the user&rsquo;s email address to identify the user during login. Federation ID allows for an alternative user identifier.</p>
+<ul>
+<li>The Federation ID maps to the SAML NameID property.</li>
+<li>If a Federation ID is not assigned to a user in Tealium, the system defaults to matching the Email attribute. For more information, see <a href="/administration/users/#edit-a-user">Edit a user</a>.</li>
+<li>Email attribute mapping is still required in your SAML configuration.</li>
+</ul>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Contact Tealium Support to enable Federation ID on your account.</p>
+<h3 id="step-2-connect-to-idp">Step 2: Connect to IdP</h3>
 <p>Connect to your IdP by completing the following steps:</p>
 <ol>
 <li>In the <strong>Connect to IdP</strong> screen, upload the SAML metadata file you downloaded from your IdP. The <strong>Identity Provider</strong> field auto-populates with the name of your IdP after the connection is established.</li>
@@ -286,10 +293,10 @@ Ensure you have the following information from your IdP:
 <li>(Optional) If your IdP provides you with a separate signing certificate, upload that file under <strong>IdP SAML 2.0 Signing Certificate</strong>.</li>
 <li>Click <strong>Establish Connection</strong>.</li>
 </ol>
-<h4 id="step-3-test-your-sp-initiated-sso">Step 3: Test your SP-Initiated SSO</h4>
+<h3 id="step-3-test-your-sp-initiated-sso">Step 3: Test your SP-initiated SSO</h3>
 <p>After connecting to your IdP, your SSO is set to <strong>Test</strong> authentication mode. <strong>Test</strong> mode allows users in your account to choose either the Tealium-initiated login or the SP-initiated login. Use this mode to validate your SP-initiated login before switching on the authentication mode. For successful testing, ensure you log in using the following URL: <code>my.tealiumiq.com/login/sso</code>.</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>To test the connection to you IdP, copy and paste the <strong>Test URL</strong> from under <strong>Certificate Details</strong> in your browser.</p>
-<h4 id="step-4-activate-your-sp-initiated-sso">Step 4: Activate your SP-Initiated SSO</h4>
+<h3 id="step-4-activate-your-sp-initiated-sso">Step 4: Activate your SP-initiated SSO</h3>
 <p>After you are satisfied with the SP-initiated login experience for your users, complete the following steps to activate the SP-initiated SSO.</p>
 <ol>
 <li>From the <strong>Manage SSO</strong> screen, switch the <strong>Authentication Mode</strong> to <strong>On</strong>. Switching the authentication mode to <strong>On</strong> forces all users in your account to authenticate through the SP-initiated login and resets the Tealium-provided login credentials for all users.</li>
@@ -343,7 +350,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  April 2, 2024 
+          <p>This page was last updated:  November 25, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -355,14 +362,19 @@ No</button>
 
 
 
-  <aside class="fixed-lTK mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+  <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#requirements" href="javascript:void(0)">Requirements</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it Works</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#supported-idps" href="javascript:void(0)">Supported IdPs</a></li>
-              </ul><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium-sso-login-process" href="javascript:void(0)">Tealium SSO Login Process</a></li>
-              <li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configure-and-manage-your-sso" href="javascript:void(0)">Configure and manage your SSO</a></li>
-              <ul class="toc-h3"><li class="mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#set-up-your-sso" href="javascript:void(0)">Set up your SSO</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#requirements" href="javascript:void(0)">Requirements</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it works</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#supported-idps" href="javascript:void(0)">Supported IdPs</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tealium-sso-login-process" href="javascript:void(0)">Tealium SSO login process</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configure-and-manage-sso" href="javascript:void(0)">Configure and manage SSO</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#step-1-configure-idp" href="javascript:void(0)">Step 1: Configure IdP</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#idp-instructions" href="javascript:void(0)">IdP instructions</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#federation-id" href="javascript:void(0)">Federation ID</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#step-2-connect-to-idp" href="javascript:void(0)">Step 2: Connect to IdP</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#step-3-test-your-sp-initiated-sso" href="javascript:void(0)">Step 3: Test your SP-initiated SSO</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#step-4-activate-your-sp-initiated-sso" href="javascript:void(0)">Step 4: Activate your SP-initiated SSO</a></li>
               </nav>
   </aside></nav>
 
@@ -430,6 +442,16 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/guides/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Guides
+        </a>
+    </li>
+  
+  
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/iq-tag-management/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           iQ Tag Management
         </a>
@@ -450,6 +472,14 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           AudienceStream CDP
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/moments-api/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Moments API
         </a>
     </li>
   
@@ -580,16 +610,8 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/release-notes/by-feature/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Release notes (by feature)
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/releases/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Releases notes (by date)
+        <a href="https://docs-preview.tealium.com/release-notes/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Release Notes
         </a>
     </li>
   
@@ -688,8 +710,8 @@ No</button>
       </li>
       
       <li  class="tl dib ma0 hover-bg-primary w-100">
-      <a href="https://docs-preview.tealium.com/administration/release-notes/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
-          Release Notes
+      <a href="https://docs-preview.tealium.com/administration/profile-retention/" class="f5 link primary-color-light  hover-white db ma0 w-100 pv2 ph4">
+          Profile retention policy
       </a>
       </li>
       
