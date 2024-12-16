@@ -144,6 +144,12 @@
 <hr>
 <h2 id="overview">Overview</h2>
 <p>Version 4.52 introduces a queuing system for early tracking events in Single Page Applications (SPAs), a <code>nonblocking_tags</code> setting to improve Interaction to Next Paint (INP) scores, enhanced session counting for first-party setups, and performance optimizations.</p>
+<h2 id="important-notes-for-version-452">Important notes for version 4.52+</h2>
+<p>Please review the following before implementing changes in version 4.52+:</p>
+<ul>
+<li><strong>Queue for early tracking events:</strong> Only use the queue snippet with version 4.52 and later. Adding it with earlier versions will prevent <code>utag.js</code> from running.</li>
+<li><strong>Session counting for first-party, reverse proxy and self-hosted setups:</strong> First-party and reverse-proxy customers should remove any previous custom session counting logic to avoid duplicate sessions. For self-hosted setups, contact Tealium support to deactivate your billing requests.</li>
+</ul>
 <h2 id="queue-for-early-tracking-events">Queue for early tracking events</h2>
 <p>This version adds a queuing system for Tealium iQ’s tracking functions (<code>utag.view</code>, <code>utag.link</code>, <code>utag.track</code>), making them available immediately on page load. Previously, these functions would not work until <code>utag.js</code> fully loaded, causing errors or lost events in SPAs when called too early.</p>
 <p>To enable this, add the following snippet above your existing Tealium iQ code:</p>
@@ -235,7 +241,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  December 10, 2024 
+          <p>This page was last updated:  December 16, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
