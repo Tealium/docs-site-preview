@@ -164,6 +164,7 @@
 <h2 id="nonblocking-tags-option">Nonblocking tags option</h2>
 <p>The new <code>nonblocking_tags</code> setting provides a way to make tags nonblocking, helping improve the INP score by allowing tags to load asynchronously. By default, tags are blocking, which ensures tracking but may delay page load times for heavy or resource-intensive tags. Enabling <code>nonblocking_tags</code> optimizes performance for users prioritizing INP scores for SEO.</p>
 <p><strong>Best Practice</strong>: Use <code>nonblocking_tags</code> for pages with resource-intensive tags that don’t need to block DOM rendering. Consider navigation delays on critical navigation and exit events, since nonblocking tags load without holding the page for tracking (which is why they improve the INP score).</p>
+<p>For more information, see <a href="/platforms/javascript/settings/#nonblocking_tags">Settings: <code>nonblocking_tags</code></a></p>
 <h2 id="session-counting-for-first-party-setups">Session counting for first-party setups</h2>
 <p>Adds session counting for first-party and reverse-proxy customers who previously needed custom configurations to measure sessions. The new setup standardizes session counting without requiring custom scripts, improving accuracy for first-party environments.</p>
 <ul>
@@ -176,7 +177,7 @@
 <li>Updates to minimize unnecessary cookie reads, improving performance on pages with multiple or complex cookies. The <code>utag_main</code> cookie now avoids repetitive reads without affecting cookie-based tracking or data storage. This enhancement is applied automatically with version 4.52.</li>
 <li>Addresses long-standing inconsistent behaviors that could create unexpected tracking issues. These fixes make Tealium iQ more predictable, particularly for advanced implementations:
 <ul>
-<li><strong>Before Load Rules scoped Javascript extension</strong>: All extensions scoped to Before Load Rules now execute once per page load, even for tags called by UID. To retain the legacy behavior, set <code>suppress_before_load_rules_with_uids</code> to <code>true</code>.</li>
+<li><strong>Before Load Rules scoped Javascript extension</strong>: All extensions scoped to Before Load Rules now execute once per page load, even for tags called by UID. To retain the legacy behavior, set <code>suppress_before_load_rules_with_uids</code> to <code>true</code>. For more information, see <a href="/platforms/javascript/settings/#suppress_before_load_rules_with_uids">Settings: <code>suppress_before_load_rules_with_uids</code></a>.</li>
 <li><strong>Event attribute overwrites</strong>: All <code>tealium_*</code> event attributes are now automatically overwritten by Tealium-generated values, except for <code>tealium_visitor_id</code> and <code>tealium_event</code>. This prevents conflicts from manually set <code>tealium_*</code> attributes in the data layer.</li>
 </ul>
 </li>
@@ -241,7 +242,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  December 16, 2024 
+          <p>This page was last updated:  December 17, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
