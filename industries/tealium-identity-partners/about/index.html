@@ -29,7 +29,7 @@
     <script>
     var utag_data = {
         site_section  : "industries",
-        reading_time  : "6",
+        reading_time  : "7",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -52,10 +52,7 @@
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
       <li class="f5 dib mr4">
-         <a href="https://support.tealiumiq.com/en/support/solutions" class="dim link mid-gray">Knowledge Base&nbsp;<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
-<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
-</svg>
-</a>
+         <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
         
       <li class="f5 dib mr4">
@@ -197,6 +194,15 @@
       <li class="relative w-100 fw5 f5">
       
         <a href="/server-side/data-storage/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-da">DataAccess</a>
+      
+      </li>
+        
+        
+        
+
+      <li class="relative w-100 fw5 f5">
+      
+        <a href="/server-side/insights/" class="db link hover-primary-color pv1 mb2 text-color-primary hover-primary-color " data-target=".home-in">Tealium Insights</a>
       
       </li>
         
@@ -381,7 +387,7 @@
 <li>Deterministic matching uses first-party data to link device-level data to the appropriate user profiles.</li>
 <li>Probabilistic models use predictive algorithms to link user data to an individual based on a confidence level.</li>
 </ul>
-<p>The deterministic method uses PII (email, UID2.0, etc.) to identify the user. Tealium employs the deterministic model with Visitor Stitching.</p>
+<p>The deterministic method uses PII (email, UID2.0, etc.) to identify the user. Tealium employs the deterministic model with visitor stitching.</p>
 <p>Integrations with probabilistic identity programs typically require the use of Tealium’s functions to process returned data along with the confidence score.</p>
 <h2 id="how-it-works">How it works</h2>
 <h3 id="auth0-and-ciam">Auth0 and CIAM</h3>
@@ -391,7 +397,7 @@
 </figure>
 <p>When the user logs in to Auth0, their identity is confirmed by the Auth0 authorization server.</p>
 <p>Tealium appears as an Auth0 action, which can be used through drag and drop integration.</p>
-<p>The Auth0 Data Source appears under the new Identity category in Tealium.</p>
+<p>The Auth0 data source appears under the new <strong>Identity</strong> category in Tealium.</p>
 <h3 id="uid-20">UID 2.0</h3>
 <p>The Trade Desk and other vendors use UID 2.0, which uses PII for deterministic identification. You will need to configure an enrichment and function code to assign a UID 2.0 to a visitor:</p>
 <figure><a class="slb" href="/images/industries/screen-shot-2022-09-26-at-13.41.53.png"><img src="/images/industries/screen-shot-2022-09-26-at-13.41.53.png"/>
@@ -405,18 +411,26 @@
 <li>Provide customer data strategies, and additional optional services.</li>
 <li>Require access to Functions and Tealium iQ Tag Management.</li>
 <li>Cleanse and store first and third party data for businesses, which can group profiles into households, gather demographics, track NCOA (National Change of Address), and more.</li>
-<li>Identify visitors via probabalistic methods to &ldquo;stitch deterministically, enrich probabalistically.&rdquo;</li>
+<li>Identify visitors through probabalistic methods to &ldquo;stitch deterministically, enrich probabalistically.&rdquo;</li>
 </ul>
 <figure><a class="slb" href="/images/industries/data-partners-&#43;-tealium---acxiom-%283%29.png"><img src="/images/industries/data-partners-&#43;-tealium---acxiom-%283%29.png"/>
     </a>
 </figure>
+<h3 id="netid">netID</h3>
+<p>After login or registration with a netID on a website, the user’s netID identity parameter is available to Tealium’s real-time data collection, enrichment, and activation capabilities.</p>
+<p>When the user logs in on a website with netID authentication, their identity is confirmed by the netID authentication API. The identity parameter <code>tpid</code> from the API <code>READ SERVICE</code> response can be persisted in the Tealium data layer.</p>
+<ul>
+<li>Use netID within Tealium iQ load rules and tag variable mapping for client-side activation to your advertising technologies, where supported.</li>
+<li>Use netID within Tealium EventStream rules, event feeds, and connector attribute mappings for server-side activation to your advertising technologies, where supported.</li>
+<li>Use netID to enrich Tealium AudienceStream visitor profiles and to map connector attributes for customer profile-based activation and suppression across your advertising technologies, where supported.</li>
+</ul>
 <h2 id="how-you-can-use-identity-providers">How you can use Identity Providers</h2>
 <p>You can use an identity provider to immediately share PII such as phone numbers and email addresses with Tealium to enrich customer profiles. This allows you to turn anonymous visitors into known visitors or customers.</p>
 <p>Because data providers constantly clean and normalize their data, you can use this information to help clean your own data.</p>
 <p>As third party cookies are deprecated, anonymous retargeting will no longer be possible. So sharing one or more pieces of PII with AdTech ID partners allows identification and targeting of that individual across publishers and domains.</p>
 <p>Many customers have already hired third-party identity providers to improve their visitor profiles. The Tealium Identity Marketplace can help simplify the process of subscribing to, importing, and incorporating this data.</p>
 <h2 id="identity-tags-connectors-and-data-sources">Identity Tags, Connectors, and Data Sources</h2>
-<p>The <strong>Identity</strong> category in each of the Tags, Connectors, and Data Sources interfaces lists all of the available identifier resources for that part of the platform.</p>
+<p>The <strong>Identity</strong> category in each of the <strong>Tags</strong>, <strong>Connectors</strong>, and <strong>Data Sources</strong> interfaces lists all of the available identifier resources for that part of the platform.</p>
 <h3 id="identity-and-data-management-solutions">Identity and Data Management Solutions</h3>
 <table>
 <thead>
@@ -445,6 +459,12 @@
 <td style="text-align:left">Tag</td>
 <td style="text-align:left">Merkury uses an organization’s first-party CRM data and valuable interactions such as logins, outbound email campaigns and media reach to create and grow a universe of person-based IDs. Tealium IQ’s data mapping feature allows you to control which data points are shared with Merkury.</td>
 <td style="text-align:left"><a href="/client-side-tags/merkle-merkury-tag/">Merkle Merkury Tag Setup Guide</a></td>
+</tr>
+<tr>
+<td style="text-align:left">netID</td>
+<td style="text-align:left">Data Layer (UDO object)</td>
+<td style="text-align:left">To implement the netID Login Standard, netID partners implement the netID browser-based Javascript API request on their website, and persist netID identity and privacy properties in browser storage, such as first-party-cookies, localStorage, or sessionStorage, where Tealium can pick them up for downstream activation.</td>
+<td style="text-align:left"><a href="/industries/tealium-identity-partners/netid-identity-resolution/">netID Implementation Guide</a></td>
 </tr>
 </tbody>
 </table>
@@ -498,7 +518,7 @@
 <tr>
 <td style="text-align:left">The Trade Desk (TDD)</td>
 <td style="text-align:left">Function</td>
-<td style="text-align:left">UID2.0 is an open source identifier that replaces 3rd-party cookies.</td>
+<td style="text-align:left">UID2.0 is an open source identifier that replaces third-party cookies.</td>
 <td style="text-align:left"><a href="/server-side-connectors/the-trade-desk-connector/">The Trade Desk Connector Setup Guide</a> (used with UID2.0 Function)</td>
 </tr>
 </tbody>
@@ -519,6 +539,7 @@
 <ul>
 <li>For The Trade Desk and UID 2.0, see <a href="/server-side/functions/event-visitor-functions/uid2/">Using Tealium Functions to Generate a UID2.0 Token</a>.</li>
 <li>For Acxiom, see <a href="../acxiom-identity-resolution/">Using Tealium Functions for Acxiom Identity Resolution</a>.</li>
+<li>For netID, see <a href="/industries/tealium-identity-partners/netid-identity-resolution/">netID Implementation Guide</a>.</li>
 </ul>
 <p>We will add more function examples soon.</p>
 
@@ -527,13 +548,13 @@
 <div class="mv30 nested-links overflow-hidden dpn flex justify-between flex-row-reverse"><div class="fr ml3">
 
   
-  <a href="/industries/tealium-identity-partners/acxiom-identity-resolution/"
+  <a href="/industries/tealium-identity-partners/netid-identity-resolution/"
     class="inline-flex items-center-ns ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Using Tealium Functions for Acxiom Identity Resolution</div>
+      <div>netID Implementation Guide</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Using Tealium Functions for Acxiom Identity Resolution"</title>
+      <title>"netID Implementation Guide"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -566,7 +587,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  September 14, 2023 
+          <p>This page was last updated:  December 26, 2024 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -586,6 +607,7 @@ No</button>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#auth0-and-ciam" href="javascript:void(0)">Auth0 and CIAM</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#uid-20" href="javascript:void(0)">UID 2.0</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#acxiom-and-merkle" href="javascript:void(0)">Acxiom and Merkle</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#netid" href="javascript:void(0)">netID</a></li>
               </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-you-can-use-identity-providers" href="javascript:void(0)">How you can use Identity Providers</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#identity-tags-connectors-and-data-sources" href="javascript:void(0)">Identity Tags, Connectors, and Data Sources</a></li>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#identity-and-data-management-solutions" href="javascript:void(0)">Identity and Data Management Solutions</a></li>
@@ -729,6 +751,14 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           DataAccess
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/insights/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium Insights
         </a>
     </li>
   

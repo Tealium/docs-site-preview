@@ -566,6 +566,7 @@ img { max-width: 100%; }
 }
 @media screen and (min-width: 87.5em) {
   .dn-l {              display: none; }
+  .db-l {              display: block; }
 }
 /*
 
@@ -1111,6 +1112,15 @@ img { max-width: 100%; }
 
 }
 @media screen and (min-width: 87.5em) {
+
+  .ph0-l {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .ph4-l {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .mr4-l  {  margin-right: 2rem; }
 }
 /*
@@ -1158,6 +1168,7 @@ img { max-width: 100%; }
      -l  = large
 
 */
+.no-underline { text-decoration: none; }
 /*
 
   TEXT ALIGN
@@ -2548,6 +2559,12 @@ nav#breadcrumb ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-bottom: 1px solid rgba(255, 255, 255, .3);
 }
 .prose table {
     width: 100%;

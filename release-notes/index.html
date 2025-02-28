@@ -51,10 +51,7 @@
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
       <li class="f5 dib mr4">
-         <a href="https://support.tealiumiq.com/en/support/solutions" class="dim link mid-gray">Knowledge Base&nbsp;<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="10" viewBox="0 0 32 32" class="fill-current v-base" aria-label="External Link">
-<path d="M25.152 16.576v5.696q0 2.144-1.504 3.648t-3.648 1.504h-14.848q-2.144 0-3.648-1.504t-1.504-3.648v-14.848q0-2.112 1.504-3.616t3.648-1.536h12.576q0.224 0 0.384 0.16t0.16 0.416v1.152q0 0.256-0.16 0.416t-0.384 0.16h-12.576q-1.184 0-2.016 0.832t-0.864 2.016v14.848q0 1.184 0.864 2.016t2.016 0.864h14.848q1.184 0 2.016-0.864t0.832-2.016v-5.696q0-0.256 0.16-0.416t0.416-0.16h1.152q0.256 0 0.416 0.16t0.16 0.416zM32 1.152v9.12q0 0.48-0.352 0.8t-0.8 0.352-0.8-0.352l-3.136-3.136-11.648 11.648q-0.16 0.192-0.416 0.192t-0.384-0.192l-2.048-2.048q-0.192-0.16-0.192-0.384t0.192-0.416l11.648-11.648-3.136-3.136q-0.352-0.352-0.352-0.8t0.352-0.8 0.8-0.352h9.12q0.48 0 0.8 0.352t0.352 0.8z"></path>
-</svg>
-</a>
+         <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
         
       <li class="f5 dib mr4">
@@ -111,7 +108,7 @@
           
         </div>
 
-        <div class="prose topic nested-links" id="prose"><div class="multi-select-wrapper bb b--light mb4">
+        <div class="nested-links fw3"><div class="multi-select-wrapper bb b--light mb4">
 <div class="multi-select">
     <div class="dropdown">
         <button class="dropdown-toggle">Filter by<span class="chevron">&#9662;</span></button>
@@ -134,8 +131,14 @@
                 <input class="css-checkbox" type="checkbox" value="api" />
                 <span>API</span>
             </label><label>
+                <input class="css-checkbox" type="checkbox" value="attributes" />
+                <span>Attributes</span>
+            </label><label>
                 <input class="css-checkbox" type="checkbox" value="audiences" />
                 <span>Audiences</span>
+            </label><label>
+                <input class="css-checkbox" type="checkbox" value="client-side-administration" />
+                <span>Client-side administration</span>
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="client-side-tags" />
                 <span>Client-side tags</span>
@@ -148,6 +151,9 @@
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="consent-management" />
                 <span>Client-side consent management</span>
+            </label><label>
+                <input class="css-checkbox" type="checkbox" value="consent-orchestration" />
+                <span>Consent Orchestration (Event-level)</span>
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="data-layer" />
                 <span>Data layer</span>
@@ -179,11 +185,17 @@
                 <input class="css-checkbox" type="checkbox" value="labels" />
                 <span>Labels</span>
             </label><label>
+                <input class="css-checkbox" type="checkbox" value="live-events-and-feeds" />
+                <span>Live Events and feeds</span>
+            </label><label>
                 <input class="css-checkbox" type="checkbox" value="load-rules" />
                 <span>Load rules</span>
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="moments-api" />
                 <span>Moments API</span>
+            </label><label>
+                <input class="css-checkbox" type="checkbox" value="product-highlights" />
+                <span>Product highlights</span>
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="profiles" />
                 <span>Profiles</span>
@@ -193,6 +205,9 @@
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="save-publish" />
                 <span>Save and publish</span>
+            </label><label>
+                <input class="css-checkbox" type="checkbox" value="server-side" />
+                <span>Server-side</span>
             </label><label>
                 <input class="css-checkbox" type="checkbox" value="server-side-admin" />
                 <span>Server-side administration</span>
@@ -245,6 +260,9 @@
                 <input class="css-checkbox" type="checkbox" value="tealium-react-v2" />
                 <span>Tealium for React Native</span>
             </label><label>
+                <input class="css-checkbox" type="checkbox" value="tealium-tools" />
+                <span>Tealium Tools</span>
+            </label><label>
                 <input class="css-checkbox" type="checkbox" value="tealium-universal-tag" />
                 <span>Tealium Universal Tag (utag.js)</span>
             </label><label>
@@ -269,7 +287,7 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-    const filterOptions = {"iq-tag-management" : {label:"iQ Tag Management", class: "color-indigo"},"platforms" : {label:"Platforms", class: "color-indigo"},"server-side" : {label:"Server-side", class: "color-indigo"},"account-admin" : {label:"Administration", class: "color-violet"},"api" : {label:"API", class: "color-violet"},"audiences" : {label:"Audiences", class: "color-violet"},"client-side-tags" : {label:"Client-side tags", class: "color-violet"},"connectors" : {label:"Connectors", class: "color-violet"},"consent-integrations" : {label:"Consent Integrations", class: "color-violet"},"consent-management" : {label:"Client-side consent management", class: "color-violet"},"data-layer" : {label:"Data layer", class: "color-violet"},"data-mappings" : {label:"Data mappings", class: "color-violet"},"data-sources" : {label:"Data sources", class: "color-violet"},"data-storage" : {label:"DataAccess", class: "color-violet"},"docs" : {label:"Docs", class: "color-violet"},"events" : {label:"Events", class: "color-violet"},"extensions" : {label:"Extensions", class: "color-violet"},"functions" : {label:"Functions", class: "color-violet"},"insights" : {label:"Insights", class: "color-violet"},"labels" : {label:"Labels", class: "color-violet"},"load-rules" : {label:"Load rules", class: "color-violet"},"moments-api" : {label:"Moments API", class: "color-violet"},"profiles" : {label:"Profiles", class: "color-violet"},"remote-commands" : {label:"Remote commands", class: "color-violet"},"save-publish" : {label:"Save and publish", class: "color-violet"},"server-side-admin" : {label:"Server-side administration", class: "color-violet"},"server-side-connectors" : {label:"Server-side connectors", class: "color-violet"},"server-side-consent-management" : {label:"Server-side consent management", class: "color-violet"},"tags" : {label:"Tags", class: "color-violet"},"tealium-android-java" : {label:"Tealium for Android (Java)", class: "color-violet"},"tealium-android-kotlin" : {label:"Tealium for Android (Kotlin)", class: "color-violet"},"tealium-cordova" : {label:"Tealium for Cordova", class: "color-violet"},"tealium-csharp" : {label:"Tealium for C#", class: "color-violet"},"tealium-flutter-v1" : {label:"Tealium for Flutter 1.x", class: "color-violet"},"tealium-flutter-v2" : {label:"Tealium for Flutter", class: "color-violet"},"tealium-ios-objective-c" : {label:"Tealium for iOS (Objective C)", class: "color-violet"},"tealium-ios-swift" : {label:"Tealium for iOS (Swift)", class: "color-violet"},"tealium-java" : {label:"Tealium for Java", class: "color-violet"},"tealium-nativescript" : {label:"Tealium for Nativescript", class: "color-violet"},"tealium-net-maui" : {label:"Tealium for .NET MAUI", class: "color-violet"},"tealium-react-v1" : {label:"Tealium for React Native", class: "color-violet"},"tealium-react-v2" : {label:"Tealium for React Native", class: "color-violet"},"tealium-universal-tag" : {label:"Tealium Universal Tag (utag.js)", class: "color-violet"},"tealium-xamarin-v1" : {label:"Tealium for Xamarin 1.x", class: "color-violet"},"tealium-xamarin-v2" : {label:"Tealium for Xamarin", class: "color-violet"},"templates" : {label:"Templates", class: "color-violet"},"trace" : {label:"Trace", class: "color-violet"},};
+    const filterOptions = {"iq-tag-management" : {label:"iQ Tag Management", class: "color-indigo"},"platforms" : {label:"Platforms", class: "color-indigo"},"server-side" : {label:"Server-side", class: "color-indigo"},"account-admin" : {label:"Administration", class: "color-violet"},"api" : {label:"API", class: "color-violet"},"attributes" : {label:"Attributes", class: "color-violet"},"audiences" : {label:"Audiences", class: "color-violet"},"client-side-administration" : {label:"Client-side administration", class: "color-violet"},"client-side-tags" : {label:"Client-side tags", class: "color-violet"},"connectors" : {label:"Connectors", class: "color-violet"},"consent-integrations" : {label:"Consent Integrations", class: "color-violet"},"consent-management" : {label:"Client-side consent management", class: "color-violet"},"consent-orchestration" : {label:"Consent Orchestration (Event-level)", class: "color-violet"},"data-layer" : {label:"Data layer", class: "color-violet"},"data-mappings" : {label:"Data mappings", class: "color-violet"},"data-sources" : {label:"Data sources", class: "color-violet"},"data-storage" : {label:"DataAccess", class: "color-violet"},"docs" : {label:"Docs", class: "color-violet"},"events" : {label:"Events", class: "color-violet"},"extensions" : {label:"Extensions", class: "color-violet"},"functions" : {label:"Functions", class: "color-violet"},"insights" : {label:"Insights", class: "color-violet"},"labels" : {label:"Labels", class: "color-violet"},"live-events-and-feeds" : {label:"Live Events and feeds", class: "color-violet"},"load-rules" : {label:"Load rules", class: "color-violet"},"moments-api" : {label:"Moments API", class: "color-violet"},"product-highlights" : {label:"Product highlights", class: "color-violet"},"profiles" : {label:"Profiles", class: "color-violet"},"remote-commands" : {label:"Remote commands", class: "color-violet"},"save-publish" : {label:"Save and publish", class: "color-violet"},"server-side" : {label:"Server-side", class: "color-violet"},"server-side-admin" : {label:"Server-side administration", class: "color-violet"},"server-side-connectors" : {label:"Server-side connectors", class: "color-violet"},"server-side-consent-management" : {label:"Server-side consent management", class: "color-violet"},"tags" : {label:"Tags", class: "color-violet"},"tealium-android-java" : {label:"Tealium for Android (Java)", class: "color-violet"},"tealium-android-kotlin" : {label:"Tealium for Android (Kotlin)", class: "color-violet"},"tealium-cordova" : {label:"Tealium for Cordova", class: "color-violet"},"tealium-csharp" : {label:"Tealium for C#", class: "color-violet"},"tealium-flutter-v1" : {label:"Tealium for Flutter 1.x", class: "color-violet"},"tealium-flutter-v2" : {label:"Tealium for Flutter", class: "color-violet"},"tealium-ios-objective-c" : {label:"Tealium for iOS (Objective C)", class: "color-violet"},"tealium-ios-swift" : {label:"Tealium for iOS (Swift)", class: "color-violet"},"tealium-java" : {label:"Tealium for Java", class: "color-violet"},"tealium-nativescript" : {label:"Tealium for Nativescript", class: "color-violet"},"tealium-net-maui" : {label:"Tealium for .NET MAUI", class: "color-violet"},"tealium-react-v1" : {label:"Tealium for React Native", class: "color-violet"},"tealium-react-v2" : {label:"Tealium for React Native", class: "color-violet"},"tealium-tools" : {label:"Tealium Tools", class: "color-violet"},"tealium-universal-tag" : {label:"Tealium Universal Tag (utag.js)", class: "color-violet"},"tealium-xamarin-v1" : {label:"Tealium for Xamarin 1.x", class: "color-violet"},"tealium-xamarin-v2" : {label:"Tealium for Xamarin", class: "color-violet"},"templates" : {label:"Templates", class: "color-violet"},"trace" : {label:"Trace", class: "color-violet"},};
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     const dropdownMenu = document.querySelector('.dropdown-menu');
     const selectedTagsContainer = document.querySelector('.selected-filter');
@@ -464,7 +482,838 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
-</script><h2 class="rn-date-separator tc mv4 w-100 fw7 f5" id="december-2024"><span class="bg-white ph3">December 2024</span><hr></h2>
+</script><h2 class="rn-date-separator tc mv4 w-100 fw7 f5" id="february-2025"><span class="bg-white ph3">February 2025</span><hr></h2>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="product-highlights" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Product highlights</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="product-highlights-2025-02-28"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h3 id="tealium-product-highlights-february-2025">Tealium Product Highlights (February 2025)</h3>
+<hr>
+<h3 id="-whats-new">🔥 What&rsquo;s New</h3>
+<p><strong>Consent Orchestration</strong><br>
+<a href="/server-side/consent/consent-orchestration/about/">Tealium Consent Orchestration</a> lets you centrally control consent conditions for event-level activations. It enforces user consent in real-time, ensuring that data processing aligns with user preferences and legal requirements.</p>
+<p><strong>Custom Environment Publish Permissions</strong><br>
+We&rsquo;re introducing enhanced controls to <a href="/iq-tag-management/save-publish/manage-environments/">manage custom environments</a> to better manage publishing access in Tealium iQ. This ensures only authorized users can deploy changes, providing better governance and preventing unintended updates in critical environments.</p>
+<p><strong>New Tags and Connectors</strong></p>
+<ul>
+<li><a href="/server-side-connectors/amazon-s3-connector/">Amazon S3 connector</a></li>
+<li><a href="/server-side-connectors/split-io-connector/">Split.io connector</a></li>
+<li><a href="/server-side-connectors/sklik-connector/">Sklik connector</a></li>
+<li><a href="/client-side-tags/taboola-cookie-matching-service-tag/">Taboola Cookie Matching Service tag</a></li>
+<li><a href="/client-side-tags/genesys-web-messaging-tag/">Genesys Web Messaging tag</a></li>
+</ul>
+<hr>
+<h3 id="-coming-soon-to-ga">⏳ Coming Soon to GA</h3>
+<p><strong>Improved Server-Side Version History Experience</strong><br>
+The new <a href="/early-access/server-side-concurrency/version-history/">server-side versions</a> experience provides expanded visibility into component changes, merges, and publishes, providing a holistic historical record of saves and publishes.</p>
+<p><strong>Tealium AI Assistant</strong><br>
+Powered with Tealium Docs, the <a href="/early-access/administration/ai-assistant/">Tealium AI Assistant</a> is a chatbot that answers your questions about configuring and using Tealium.</p>
+<p><strong>Cloud Data Warehouse Inbound (Snowflake)</strong><br>
+<a href="/early-access/data-sources/snowflake-data-source/about/">Import bulk data from Snowflake</a> tables or views at near real-time speeds. After you import your data, transform and map it to Tealium attributes and build better audiences for targeted activation.</p>
+<hr>
+<h3 id="-early-access-features">🔬 Early Access Features</h3>
+<p><strong>Concurrent Users in Server-Side Products</strong><br>
+<a href="/early-access/server-side-concurrency/concurrent-users/">Server-side concurrency</a> helps organizations collaborate more easily in our server-side experience, allowing multiple users to work without overriding or disrupting each other.</p>
+<p><strong>CookieConsent &amp; Tealium iQ</strong><br>
+<a href="/early-access/consent/cookieconsent-consent-integration/">CookieConsent</a> is a flexible, open-source CMP integrated with Tealium Consent Integrations, offering A/B testing, stronger enforcement, better accessibility, and a block-by-default framework. It also ensures accurate server-side tracking without duplicates.</p>
+<p><strong>Audience Sizing</strong><br>
+<a href="/early-access/audiences/potential-audience-sizing/">Potential audience sizing</a> shows your total visitor population and how many profiles match your audience conditions in real time, helping you refine targeting.</p>
+<p><strong>New Connectors Experience</strong><br>
+The <a href="/early-access/connectors/interface/">new connectors experience</a> delivers streamlined workflows, improved connector metrics, enhanced error tracking, and upgraded usability such as the ability to copy mappings and perform bulk actions. Enjoy faster performance and developer-friendly tools like template placeholders and an improved code editor.</p>
+<p><strong>Cloud Data Warehouse Outbound (Databricks)</strong><br>
+The <a href="/early-access/server-side-connectors/databricks-customer-provided-storage-connector/">Tealium + Databricks integration</a> empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting the real-time Customer Data Platform (CDP) from Tealium with the advanced AI and analytics capabilities from Databricks, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.</p>
+
+                <div class=""><span class="f7">February 28, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-tags" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Client-side tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-tags-2025-02-26"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-tags">New tags</h4>
+<ul>
+<li>New marketplace tag: <a href="/client-side-tags/taboola-cookie-matching-service-tag/">Taboola Cookie Matching Service tag</a></li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated the <a href="/client-side-tags/google-ads-conversion-tracking-and-remarketing-gtagjs-tag/">Google Ads Conversion Tracking &amp; Remarketing tag</a> to support <code>user_provided_data</code> event mapping.</li>
+<li>Updated the <a href="/client-side-tags/firebase-remote-command-tag/">Firebase Remote Command tag</a> with the following changes:
+<ul>
+<li>Added the following parameters to the <code>initiateconversionmeasurement</code> method:
+<ul>
+<li><code>param_phone_number</code></li>
+<li><code>param_hashed_email_address</code></li>
+<li><code>param_hashed_phone_number</code></li>
+</ul>
+</li>
+<li>Added support for <code>setConsent</code> event.</li>
+</ul>
+</li>
+<li>Updated <a href="/client-side-tags/the-trade-desk-universal-pixel-tag/">The Trade Desk Universal Pixel tag</a> to allow the tag to fire on link events.</li>
+<li>Updated the <a href="/client-side-tags/pinterest-tag/">Pinterest tag</a> with the following changes:
+<ul>
+<li>Removed Product ID as a requirement to send product data.</li>
+<li>Updated the tag to support event-specific parameters. Previously, values could not be assigned to <code>order_subtotal</code> for individual events.</li>
+</ul>
+</li>
+<li>Updated the <a href="/client-side-tags/adjust-mobile-remote-command-tag/">Adjust Remote Command tag</a> configuration and mappings to support Adjust SDK version <code>5.0.0</code>.</li>
+<li>Updated the <a href="/client-side-tags/microsoft-advertising-universal-event-tracking-uet-tag/">Microsoft Advertising Universal Event Tracking (UET) tag</a> to support enhanced conversions.</li>
+<li>Updated the <a href="/client-side-tags/heap-tag/">Heap tag</a> with the following changes:
+<ul>
+<li>Added <strong>Advanced Configuration</strong> data mappings.</li>
+<li>Renamed the <strong>User ID</strong> parameter to <strong>Identity</strong>.</li>
+<li>Added <code>trackPageview</code> event.</li>
+</ul>
+</li>
+<li>Updated <a href="/client-side-tags/podsights-pixel/">Podsights Pixel tag</a> to new Spotify Pixel rebranding.</li>
+</ul>
+
+                <div class=""><span class="f7">February 26, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2025-02-26"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-connectors">New connectors</h4>
+<ul>
+<li>New marketplace connector: <a href="/server-side-connectors/sklik-connector/">Sklik connector</a>.</li>
+<li>New marketplace connector: <a href="/server-side-connectors/amazon-s3-connector/">Amazon S3 connector</a>.</li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/server-side-connectors/webhook-connector-setup-guide/#webhook-oauth2-2-legged-configuration">Webhook OAuth2 (2-Legged) connector</a> to improve support for various authentication approaches.</li>
+<li>Updated the <a href="/server-side-connectors/snapchat-conversions-connector/">Snapchat Conversions connector</a> to remove the prerequisite to add a Tealium user to authenticate your Snapchat account.</li>
+<li>Updated the <a href="/server-side-connectors/appsflyer-app-events-connector/">Appsflyer App Events connector</a> to add <strong>TCF Consent</strong> parameters to the <strong>Track in App Event</strong> action.</li>
+<li>Updated the <a href="/server-side-connectors/braze-connector/">Braze connector</a> to add the new <code>au-01</code> endpoint <code>https://rest.au-01.braze.co</code>.</li>
+<li>Updated the <a href="/server-side-connectors/pegasystems-connector/">Pegasystems connector</a> to support batching for the Send Customer Profile action.</li>
+<li>Updated the <a href="/server-side-connectors/ispot-tv-conversion-tracking-connector/">iSpot TV Conversion Tracking connector</a> to make the <strong>Custom Data</strong> mapping optional.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to populate <code>external ID</code> with the <code>Tealium Visitor ID</code> when automapping is enabled.</li>
+<li>Updated the <a href="/server-side-connectors/nextdoor-connector/">Nextdoor connector</a> to support automatic deduplication of <code>event ID</code>.</li>
+</ul>
+
+                <div class=""><span class="f7">February 26, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-ios-swift" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Tealium for iOS (Swift)</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tealium-ios-swift-2025-02-26"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                <h4>Version 2.16.0</h4>
+                <p><strong>Medium Impact Changes</strong></p>
+<ul>
+<li>Improve performance of blocklist downloads in the Autotracking Module.</li>
+<li>Improve performance of geofences downloads in the Location Module.</li>
+</ul>
+
+                <div class=""><span class="f7">February 26, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="trace" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Trace</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="trace-2025-02-26"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updated-and-fixes">Updated and fixes</h4>
+<ul>
+<li>Resolved an issue with audiences and label-based filtering.</li>
+<li>Updated the inner slideout in Trace to close when clicking outside of it but still inside the outer Trace slideout.</li>
+<li>Fixed an issue where strings removed by an enrichment still appeared in Trace without any indication that they&rsquo;ve been removed.</li>
+</ul>
+
+                <div class=""><span class="f7">February 26, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-tags" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Client-side tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-tags-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/client-side-tags/adobe-experience-platform-web-sdk-tag/">Adobe Experience Platform Web SDK tag</a> to change <code>webpagedetails</code> field to <code>webPageDetails</code>.</li>
+<li>Updated <a href="/client-side-tags/braze-web-sdk-tag/">Braze Web SDK tag</a> to add <strong>All Events</strong> parameter.</li>
+<li>Updated <a href="/client-side-tags/epsilon-universal-site-tag/">Epsilon Site yag</a> to support Cookie ID mapping and SPA.</li>
+<li>Updated <a href="/client-side-tags/facebook-pixel-tag/">Facebook Pixel tag</a> to add <code>content_type</code> as a standard events parameter for a search event.</li>
+<li>Updated <a href="/client-side-tags/naver-tag/">Naver tag</a> to include event triggers and event-specific parameters sections.</li>
+</ul>
+<h4 id="deprecations">Deprecations</h4>
+<ul>
+<li>Deprecated Seznam Retargeting tag and renamed it to Seznam Retargeting (Legacy) tag.</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="consent-integrations" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Consent Integrations</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="consent-integrations-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated utcm_framework for Consent Integrations to v1.3.0:
+<ul>
+<li>Supports callback-based CMP integrations.</li>
+<li>Fixes event ordering and race conditions.</li>
+<li>Includes Consent Register to v1.1.0.</li>
+</ul>
+</li>
+<li>Updated cmGeneral for Consent Integration to v3.2.0:
+<ul>
+<li>Ensures extensions scoped before load rules only run once, even when tags are referenced by UID.</li>
+<li>Adds a page-accessible version in <code>window.utag.gdpr.version</code>.</li>
+<li>Includes Consent Register (v1.1.0).</li>
+</ul>
+</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="save-publish" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Save and publish</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="save-publish-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Added a warning that notifies users of an error preventing save of custom environment permissions and provides a retry option.</li>
+<li>Removed <strong>Legacy Settings</strong> section from <strong>Publish Configurations</strong> menu.</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-connectors">New connectors</h4>
+<ul>
+<li>New marketplace connector: <a href="/server-side-connectors/split-io-connector/">Split.io connector</a>.</li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/server-side-connectors/emarsys-connector/">Emarsys connector</a> to fix HTTP method to call API.</li>
+<li>Updated <a href="/server-side-connectors/line-connector/">LINE connector</a> to add Contact ID to all actions.</li>
+<li>Updated <a href="/server-side-connectors/yahoo-japan-ads-api-connector-setup-guide/">Yahoo! Japan Ads connector</a>:
+<ul>
+<li>Batch limit changed to 200 records, 6 hours, and 10 MB.</li>
+<li>Changed Account ID parameter to required.</li>
+<li>Fixed an authentication error.</li>
+</ul>
+</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tags" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tags-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates">Updates</h4>
+<ul>
+<li>Automatically add newly created custom environments to each tag&rsquo;s list of enabled custom publish environments.</li>
+<li>Fixed a bug in tags that reset the configured lists of custom publish targets to All Custom Targets.</li>
+<li>Fixed a bug in tags to display the unsaved changes icon correctly when the user finishes editing a tag.</li>
+<li>Added a confirmation prompt when users click outside the tag edit window to prevent accidental changes or discarding of changes.</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-ios-swift" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Tealium for iOS (Swift)</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tealium-ios-swift-2025-02-12"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                <h4>Version 2.15.1</h4>
+                <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Fixed a potential race condition within Consent Management.</li>
+</ul>
+
+                <div class=""><span class="f7">February 12, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="consent-orchestration" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Consent Orchestration (Event-level)</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="consent-orchestration-2025-02-06"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="tealium-consent-orchestration-now-available">Tealium Consent Orchestration now Available</h4>
+<p>We are excited to introduce Tealium Consent Orchestration, an event-level consent and data protection for server-side products which allows you to centrally control consent conditions for event-level activations. This ensures that data processing aligns with user preferences and legal requirements.</p>
+<p>Consent Orchestration offers the following capabilities:</p>
+<ul>
+<li><strong>Centralized Consent Management</strong>: Define and enforce consent rules on the server-side, organizing them into purpose groups to ensure compliance with user privacy policies.</li>
+<li><strong>Error Protection &amp; Data Integrity</strong>: Prevent accidental data leaks by ensuring that data is activated only when consent is granted or valid exemption conditions are met.</li>
+<li><strong>Flexible Consent Policies</strong>: Customize and selectively apply consent policies at scale, ensuring that only consented data is processed while adapting to different regulatory requirements.</li>
+<li><strong>Exemptions</strong>: Define exemptions for specific conditions where data tracking is allowed without explicit user consent, providing flexibility while ensuring compliance with data protection regulations.</li>
+<li><strong>Controls event-level activations</strong>: Manage consent enforcement for EventStream connector actions, Event functions, EventStore, EventDB, and events processed by AudienceStream.</li>
+</ul>
+<p>For more information about Consent Orchestration, see the <a href="/server-side/consent/consent-orchestration/about/">About Consent Orchestration</a>.</p>
+
+                <div class=""><span class="f7">February 6, 2025</span></div>
+              </div><h2 class="rn-date-separator tc mv4 w-100 fw7 f5" id="january-2025"><span class="bg-white ph3">January 2025</span><hr></h2>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="attributes" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Attributes</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="attributes-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed an issue where timeline enrichments recorded incorrect timestamps during visitor stitching.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-administration" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Client-side administration</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-administration-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="fixed">Fixed</h4>
+<ul>
+<li>Fixed an issue with user export where the system failed to retrieve data for one or more profiles.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-tags" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Client-side tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-tags-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-tags">New tags</h4>
+<ul>
+<li>New marketplace tag: <a href="/client-side-tags/comscore-tag/">Comscore tag</a></li>
+<li>New marketplace tag: <a href="/client-side-tags/mapp-intelligence-smart-pixel-tag/">Mapp Intelligence Smart Pixel tag</a></li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/client-side-tags/braze-web-sdk-tag/">Braze Web SDK tag</a> to add &ldquo;All Events&rdquo; parameter.</li>
+<li>Updated <a href="/client-side-tags/google-analytics-4-ga4-tag/">Google Analytics 4 tag</a> to support refund events via dynamic mapping.</li>
+<li>Updated <a href="/client-side-tags/google-consent-mode-tag/">Google Consent Mode tag</a> to support custom data layer name.</li>
+<li>Renamed <a href="/client-side-tags/mapp-intelligence-tag/">Mapp Intelligence tag</a> to Mapp Intelligence (Legacy pixel).</li>
+<li>Updated <a href="/client-side-tags/merkle-merkury-tag/">Merkle Merkury tag</a> to correct setting the confidence score and added base URL as a configuration field.</li>
+<li>Updated <a href="/client-side-tags/nextdoor-conversion-pixel-tag/">Nextdoor Conversion Pixel tag</a> to add event ID for server-side deduplication.</li>
+<li>Updated the <a href="/client-side-tags/taboola-pixel-tag/">Taboola Pixel tag</a> to support Unified E-commerce events.</li>
+<li>Renamed Kenshoo Conversion tag to <a href="/client-side-tags/skai-conversion-tag/">Skai Conversion tag</a>.</li>
+<li>Renamed At Internet Piano Analytics tag to <a href="/client-side-tags/piano-analytics-tag/">Piano Analytics  tag</a>.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="connectors" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="connectors-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Connectors Dashboard to add option to edit labels for individual connectors.</li>
+<li>Updated Connectors Dashboard metrics in all private cloud environments.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="docs" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Docs</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="docs-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-stuff">New stuff</h4>
+<ul>
+<li>New guide available: <a href="/guides/user-identifier-guide/">User identifiers best practices guide</a>, which provides guidance about when and how to set visitor ID attributes for optimal visitor stitching.</li>
+</ul>
+<h4 id="improvements-to-search">Improvements to search</h4>
+<ul>
+<li>Searches for snake-case variable names such as <code>tealium_visitor_id</code> will now return exact matches.</li>
+<li>Search supports advanced search syntax:
+<ul>
+<li>Exact match search using quotes. For example, find the exact phrase: <code>&quot;user ID&quot;</code>.</li>
+<li>Exclude search terms using a hyphen. For example, find pages containing &ldquo;google conversion&rdquo; but not &ldquo;connector&rdquo;: <code>&quot;google conversion -connector&quot;</code>.</li>
+</ul>
+</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="functions" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Functions</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="functions-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed error in custom functions that caused tests to incorrectly fail with a &ldquo;There is no session ID or Tealium event&rdquo; error because the default code does not include <code>tealium_event</code>.</li>
+<li>Fixed an issue where <code>getAttributeValueById</code> method in Functions API could have returned a wrong attribute with same name but different type.</li>
+<li>Removed unsupported JavaScript APIs from Functions code editor.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="labels" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Labels</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="labels-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed an issue with how labels are rendered in the filter menu on the Tags, Load Rules, and Events screens.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-connectors">New connectors</h4>
+<ul>
+<li>New marketplace connector: <a href="/server-side-connectors/bloomreach-connector/">Bloomreach connector</a></li>
+<li>New marketplace connector: <a href="/server-side-connectors/datadog-connector/">DataDog connector</a></li>
+<li>New marketplace connector: <a href="/server-side-connectors/stackadapt-events-connector/">StackAdapt Events connector</a></li>
+<li>New marketplace connector: <a href="/server-side-connectors/taboola-audiences-connector/">Taboola Audiences connector</a></li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/server-side-connectors/mixpanel-connector/">Mixpanel connector</a> to allow selection of regional endpoint.</li>
+<li>Updated <a href="/server-side-connectors/snowflake-streaming-connector/">Snowflake Streaming Connector</a> to Snowflake Ingest SDK version 3.0.1 and fixed channel management issue.</li>
+<li>Updated <a href="/server-side-connectors/stackadapt-events-connector/">StackAdapt Events connector</a> to fix error with optional Parameters section.</li>
+<li>Renamed TVSquared connector to <a href="/server-side-connectors/innovidxp-connector/">InnovidXP connector</a>.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-universal-tag" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Tealium Universal Tag (utag.js)</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tealium-universal-tag-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated utag 4.52 to include <code>utag.v.js</code> in the <code>distro.zip</code> file for <a href="/iq-tag-management/getting-started/install/self-host/">self-hosting customers</a> to ensure proper functionality. This change also ensures that billing continues to work as expected for customers who update to utag 4.52.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="trace" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Trace</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="trace-2025-01-29"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="fixes">Fixes</h4>
+<ul>
+<li>Fixed an issue in trace where the display of audiences joined before the current trace was incorrect.</li>
+</ul>
+
+                <div class=""><span class="f7">January 29, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="remote-commands" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Remote commands</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="remote-commands-2025-01-17"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Firebase Remote Command to latest Firebase SDK version.</li>
+</ul>
+
+                <div class=""><span class="f7">January 17, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="docs" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Docs</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="docs-2025-01-15"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-stuff">New stuff</h4>
+<ul>
+<li>New guide available: <a href="/guides/exclude-offline-purchasers/">Exclude offline purchasers from remarketing guide</a>, which provides information about improving marketing efficiency and customer experience by removing offline purchasers from online remarketing campaigns.</li>
+</ul>
+
+                <div class=""><span class="f7">January 15, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-admin" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Server-side administration</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-admin-2025-01-15"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Update to <a href="/server-side/administration/understanding-the-usage-report/">Usage Reports</a> to include all AudienceStream events, online and offline, in the Total AudienceStream Events graph. Added the Real-Time AudienceStream Events graph and the Bulk AudienceStream Events graph.</li>
+</ul>
+
+                <div class=""><span class="f7">January 15, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2025-01-15"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/server-side-connectors/awin-conversions-connector/">Awin Conversions connector</a> to remove the Commission Group Code parameter from the Product Level Conversion section, which was a duplicate of the Commission Group Code parameter in the main mapping section.</li>
+</ul>
+
+                <div class=""><span class="f7">January 15, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-ios-swift" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Tealium for iOS (Swift)</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tealium-ios-swift-2025-01-14"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                <h4>Version 2.15.0</h4>
+                <p><strong>Low Impact Changes</strong></p>
+<ul>
+<li>Added the <a href="/platforms/ios-swift/api/tealium-config/#senddeeplinkevent"><code>sendDeepLinkEvent</code></a> flag to <code>TealiumConfig</code> to send a <code>deep_link</code> event when a deep link is received.</li>
+</ul>
+
+                <div class=""><span class="f7">January 14, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-tags" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Client-side tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-tags-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Twitter Pixel Tag and Twitter Tag names to <a href="/client-side-tags/x-pixel-tag/">X Pixel Tag</a> and <a href="/client-side-tags/x-tag/">X Tag</a>.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="connectors" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="connectors-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Update to enable Connectors Dashboard metrics for all <code>pc-</code> environments.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="data-layer" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Data layer</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="data-layer-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates">Updates</h4>
+<ul>
+<li>Update to <strong>Data Layer</strong> screen to correct the video link.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="docs" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Docs</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="docs-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-stuff">New stuff</h4>
+<ul>
+<li>New guide available: <a href="/guides/customer-spending-levels-guide/">Customer spending levels guide</a>, which provides information about targeting visitors based on the amount they spend.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="remote-commands" data-rn-category="platforms">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="platforms"><div class="badge color-indigo"><span class="badge-label">Platforms</span></div><div class="badge color-violet"><span class="badge-label">Remote commands</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="remote-commands-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Adjust Remote Command to latest Adjust SDK version.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="save-publish" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Save and publish</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="save-publish-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated publish to improve performance and reduce the amount of data being fetched.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated profile switcher to improve performance and reduce the amount of data being fetched.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-connectors">New connectors</h4>
+<ul>
+<li><a href="/server-side-connectors/google-bigquery-connector/">Google BigQuery connector</a></li>
+<li><a href="/server-side-connectors/yahoo-pixel-api-connector/">Yahoo Pixel API connector</a></li>
+</ul>
+<h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated the <a href="/server-side-connectors/amazon-ads-audience-management-connector/">Amazon Ads Audience Management connector</a> to support user consent strings.</li>
+<li>Updated the <a href="/server-side-connectors/google-ads-customer-match-connector/">Google Ads Customer Match connector</a> to support dynamically setting the <strong>Google Ads client customer ID</strong>.</li>
+<li>Updated the <a href="/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/">Google Ads Enhanced Conversion for Leads connector</a> to support dynamically setting <strong>Google Ads client customer ID</strong>.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to add an <code>Event Name Override</code> parameter in <strong>Conversion Event Parameters</strong> that enables users to specify the name of a custom event.</li>
+<li>Updated the <a href="/server-side-connectors/salesforce-journey-builder-connector/">Salesforce Journey Builder connector</a> to resolve an issue in which an error occurs when optional attributes are not set.</li>
+<li>Updated the <a href="/server-side-connectors/x-custom-audiences-connector/">X Custom Audiences connector</a> to remove the <strong>User Identifier Hashing</strong> section and add the hashing information to the <strong>User Identifier</strong> section, as follows:
+<ul>
+<li>Required: Provide at least one user identifier</li>
+<li>All user identifiers except &ldquo;Partner User ID&rdquo; must be hashed using SHA256 and normalized.</li>
+<li>When you select <strong>apply SHA256 hash</strong>, the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.</li>
+</ul>
+</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tags" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tags-2025-01-08"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates">Updates</h4>
+<ul>
+<li>Update to resolve an issue in which visit and visitor AudienceStream attributes did not display the correct icon in the <strong>Mapped Variables</strong> tab and the hover info window in the <strong>Mappings Toolbox</strong>.</li>
+<li>Update to resolve an issue with adding an event to an existing tag in which the <strong>New Event</strong> page becomes unresponsive after changing the event type.</li>
+<li>Update to resolve an issue in which validation warnings were not properly highlighting missing variables for Event Trigger Variables.</li>
+<li>Update to Events Edit view to resolve an issue in which validation warnings did not properly highlight missing variables for Event Trigger Variables.</li>
+</ul>
+
+                <div class=""><span class="f7">January 8, 2025</span></div>
+              </div><h2 class="rn-date-separator tc mv4 w-100 fw7 f5" id="december-2024"><span class="bg-white ph3">December 2024</span><hr></h2>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-tools" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Tealium Tools</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="tealium-tools-2024-12-23"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                <h4>Version 3</h4>
+                <p>For detailed information on the changes and trade-offs, see <a href="/iq-tag-management/tealium-tools/tealium-tools-version-3/">Tealium Tools Version 3 Released</a>.</p>
+<p>We&rsquo;re happy to announce exciting new features and some updates to ones you are already using.
+This is an update to Tealium Tools browser extension available on the Google Chrome Web Store and as a Microsoft Edge Add-on.</p>
+<p>New Features include:</p>
+<ul>
+<li>Support for Manifest V3</li>
+<li>Sidebar support</li>
+<li>Custom tile sorting</li>
+<li>SSO login support</li>
+<li>uTag Debugger</li>
+<li>Built-in feedback form</li>
+</ul>
+
+                <div class=""><span class="f7">December 23, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="client-side-tags" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Client-side tags</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="client-side-tags-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/client-side-tags/extole-tag/">Extole tag</a> to resolve an issue with conversion events where the key is missing and an <code>undefined</code> error occurs.</li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="consent-integrations" data-rn-category="iq-tag-management">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="iq-tag-management"><div class="badge color-indigo"><span class="badge-label">iQ Tag Management</span></div><div class="badge color-violet"><span class="badge-label">Consent Integrations</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="consent-integrations-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Consent Integrations to fix an issue with sorting the list of integrations. The list is now sorted by the number of warnings.</li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="docs" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Docs</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="docs-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="new-stuff">New stuff</h4>
+<p>Tealium Docs has a new section: <a href="/guides/">Guides</a></p>
+<p>These guides provide practical examples and strategies to help you use Tealium effectively and solve real-world challenges.  Check out the latest guide:</p>
+<ul>
+<li><a href="/guides/customer-spending-levels-guide/">Customer spending levels guide</a></li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="live-events-and-feeds" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Live Events and feeds</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="live-events-and-feeds-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Fixed an issue in Live Events where certain characters were shown as their HTML-encoded versions.</li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="server-side-connectors" data-rn-category="">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key=""><div class="badge color-violet"><span class="badge-label">Server-side connectors</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="server-side-connectors-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated <a href="/server-side-connectors/amazon-ads-audience-management-connector/">Amazon Ads Audience Management connector</a> to correct an issue that results in an empty dropdown list of advertisers.</li>
+<li>Updated <a href="/server-side-connectors/amazon-ads-conversions-connector/">Amazon Ads Conversions connector</a> to add automatic deduplication and optional mapping of <code>Tag ID</code>.</li>
+<li>Updated the following connectors to Google Ads API v18:
+<ul>
+<li><a href="/server-side-connectors/google-ads-conversions-connector/">Google Ads Conversions connector</a></li>
+<li><a href="/server-side-connectors/google-ads-customer-match-connector/">Google Ads Customer Match connector</a></li>
+<li><a href="/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/">Google Ads Enhanced Conversions for Leads connector</a></li>
+<li><a href="/server-side-connectors/google-ads-enhanced-conversions-for-web-connector/">Google Ads Enhanced Conversion for Web connector</a></li>
+<li><a href="/server-side-connectors/google-ads-store-sales-connector/">Google Ads Store Sales connector</a></li>
+</ul>
+</li>
+<li>Updated <a href="/server-side-connectors/google-display-video-360-connector/">Google Display &amp; Video 360 connector</a> and <a href="/server-side-connectors/google-ad-manager-360-connector/">Google Ad Manager 360 connector</a> to upgrade the protobuf-java library for Maven to version 4.29.0.</li>
+<li>Updated <a href="/server-side-connectors/rokt/">ROKT Events connector</a> to rename connector and update actions and settings.</li>
+<li>Update to undo deprecation of <a href="/server-side-connectors/singular-events-connector/">Singular Events connector</a>.</li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
 
               <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="tealium-universal-tag" data-rn-category="platforms">
 
@@ -474,24 +1323,43 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
                 <h4>Version 4.52</h4>
                 <p>For detailed information on the changes, how to implement them, and trade-offs, see <a href="/platforms/javascript/version-4-52/">Version 4.52&#43; notes</a>.</p>
-<p>Version 4.52 introduces a queuing system for Single Page Applications, a setting to improve Google’s Interaction to Next Paint (INP) scores for customers with very heavy tags, and improvements in session counting for first-party setups. This update also includes performance and usability improvements.</p>
+<p>Version 4.52 introduces improved support for single-page applications (SPAs), optimizations for Google’s Interaction to Next Paint (INP) scores, improvements in session counting for first-party setups, and several bug fixes and performance updates.</p>
 <p>This release includes the following updates:</p>
 <ul>
-<li><strong>Queue for early tracking events</strong>: Adds a queuing feature to make Tealium iQ tracking functions (<code>utag.view, utag.link</code> and <code>utag.track</code>) immediately available on page load, eliminating issues  (especially common in SPAs) when tracking calls are made before <code>utag.js</code>  loaded. Use this feature only with <code>utag.js</code> version 4.52 and later. Adding it with earlier versions will prevent <code>utag.js</code> from running.</li>
-<li><strong>Nonblocking tags option</strong>: A new <a href="/platforms/javascript/settings/#nonblocking_tags"><code>nonblocking_tags</code></a> setting to improve Interaction to Next Paint (INP) scores by making tags nonblocking. This is useful for cases with heavy or resource-intensive tags, and helps reduce potential negative impacts on page load times and search rankings, but means that page interactions are no longer blocked by tags, which comes with tradeoffs. For more information on the tradeoffs, see <a href="/platforms/javascript/version-4-52/#nonblocking-tags-option">Nonblocking tags option</a>.</li>
-<li><strong>Session counting fix for first-party setups</strong>: Restores session counting for first-party and reverse-proxy customers, removing the need for custom solutions. First-party customers should deactivate any previous custom session counting configurations to avoid duplicate counting. For self-hosted setups, please contact Tealium support to deactivate your billing requests.</li>
-<li><strong>Performance enhancements</strong>: Optimizes Tealium iQ performance by reducing unnecessary cookie reads and eliminating inconsistent behaviors:
+<li><strong>Queue for early tracking events</strong><br>
+Adds a queuing feature to make tracking functions (<code>utag.view</code>, <code>utag.link</code> and <code>utag.track</code>) immediately available on page load, eliminating issues (especially common in SPAs) when tracking calls are made before <code>utag.js</code> is loaded. Use this feature only with version 4.52 and later. Using it with earlier versions will prevent <code>utag.js</code> from running.</li>
+<li><strong>Non-blocking tags option</strong><br>
+A new setting, <a href="/platforms/javascript/settings/#nonblocking_tags"><code>nonblocking_tags</code></a>, improves Interaction to Next Paint (INP) scores by making tags non-blocking. This is useful for large or resource-intensive tags by reducing potential negative impacts on page load times and search rankings, but means that page interactions are no longer blocked by tags, which comes with tradeoffs. For more information on the tradeoffs, see <a href="/platforms/javascript/version-4-52/#nonblocking-tags-option">Non-blocking tags option</a>.</li>
+<li><strong>Fixed session counting for first-party setups</strong><br>
+Restores session counting for first-party and reverse-proxy customers, removing the need for custom solutions. First-party customers should deactivate any previous custom session counting configurations to avoid duplicate counting. For self-hosted setups, contact Tealium support to deactivate your billing requests.</li>
+<li><strong>Performance enhancements</strong><br>
+Optimizes performance by reducing unnecessary cookie reads and eliminating inconsistent behaviors:
 <ul>
-<li>Before Load Rules extensions now execute once per page load. Added a new setting <a href="/platforms/javascript/settings/#suppress_before_load_rules_with_uids">suppress_before_load_rules_with_uids</a> to restore legacy behavior, preventing Before Load Rules extensions from executing for tags loaded by UID.</li>
-<li>Event attributes like <code>tealium_*</code> are automatically overwritten except <code>tealium_visitor_id</code> and <code>tealium_event</code>.</li>
+<li>Extensions scoped to <strong>Before Load Rules</strong> now execute once per page load. A new setting, <a href="/platforms/javascript/settings/#suppress_before_load_rules_with_uids">suppress_before_load_rules_with_uids</a>, has been added to restore legacy behavior, preventing <strong>Before Load Rules</strong> extensions from executing for tags loaded by UID.</li>
+<li>Event attributes with the tealium_* prefix are now overwritten by Tealium-generated values, except for <code>tealium_visitor_id</code> and <code>tealium_event</code>. This prevents conflicts from manually set <code>tealium_*</code> attributes in the data layer.</li>
 </ul>
 </li>
 <li><strong>Bug fixes</strong>:
 <ul>
 <li>Resolved an issue where specifying a non-existent <code>tagUID</code> in tracking calls could cause unexpected errors.</li>
-<li>Added a fix for cases where Consent Integrations could ignore <code>utag_cfg_ovrd</code> settings initially (before respecting them ultimately) by populating <code>utag.cfg</code> before AND after Consent Integrations.</li>
+<li>Added a fix for cases where Consent Integrations could ignore <code>utag_cfg_ovrd</code> settings initially (before respecting them ultimately) by populating <code>utag.cfg</code> before <em>and</em> after Consent Integrations.</li>
 </ul>
 </li>
+</ul>
+
+                <div class=""><span class="f7">December 18, 2024</span></div>
+              </div>
+
+              <div class="release-note-item mb4 ba b--light br3 bg-white pa3 relative" data-rn-feature="trace" data-rn-category="server-side">
+
+                <div class="w-80 rn-badges pb3 dib flex flex-wrap items-start" style="gap: 8px;" data-hg-category-key="server-side"><div class="badge color-indigo"><span class="badge-label">Server-side</span></div><div class="badge color-violet"><span class="badge-label">Trace</span></div></div>
+                <div class="fr pb3 dib">
+                <a class="permalink absolute pointer tooltipped tooltipped-w" aria-label="Copy to clipboard" id="trace-2024-12-18"><svg class="fill-current o-60 hover-accent-color-light" height="22px" viewBox="0 0 24 24" width="22px" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"></path></svg></a>
+                </div>
+                
+                <h4 id="updates-and-fixes">Updates and fixes</h4>
+<ul>
+<li>Updated Trace to ensure audience membership is correctly reflected in the visitor profile JSON.</li>
 </ul>
 
                 <div class=""><span class="f7">December 18, 2024</span></div>
@@ -682,7 +1550,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </ul>
 </li>
 <li>Updated the <a href="/server-side-connectors/awin-conversions-connector/">Awin Conversion connector</a> to remove HTML encoding in <code>parts</code> query parameter.</li>
-<li>Updated the <a href="/early-access/taboola-audiences-connector/">Taboola Audiences connector</a> with the following changes:
+<li>Updated the <a href="/server-side-connectors/taboola-audiences-connector/">Taboola Audiences connector</a> with the following changes:
 <ul>
 <li>Resolved <code>NullPointerException</code> errors in the <strong>Add User to Audience</strong> action.</li>
 <li>Added minimum TTL validation when creating audiences. The minimum supported TTL is now 1440 hours (60 days).</li>
@@ -963,10 +1831,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>
-<li>Updated the <a href="/early-access/api-v3/iq-profiles/about/">Tealium V3 iQ Profiles API (Early Access)</a> with the following changes:
+<li>Updated the <a href="/early-access/api/api-v3/iq-profiles/about/">Tealium V3 iQ Profiles API (Early Access)</a> with the following changes:
 <ul>
 <li>Fixed <code>loadrule_expression</code> logic for AND rules for all iQ Profiles APIs.</li>
-<li><a href="/early-access/api-v3/iq-profiles/iq-tags-api/">iQ Tags API</a>:
+<li><a href="/early-access/api/api-v3/iq-profiles/iq-tags-api/">iQ Tags API</a>:
 <ul>
 <li>Updated PATCH method to change the <code>value.tagConfiguration</code> parameter name to <code>value.configuration</code>.</li>
 <li>Removed <code>scope</code> and <code>loadRuleJoinOperator</code> fields.</li>
@@ -974,7 +1842,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <li>Removed <code>template</code> field in the GET response.</li>
 </ul>
 </li>
-<li><a href="/early-access/api-v3/iq-profiles/iq-events-api/">iQ Events API</a>: Removed duplicated IDs for the <code>eventLoadRuleList</code> parameter.</li>
+<li><a href="/early-access/api/api-v3/iq-profiles/iq-events-api/">iQ Events API</a>: Removed duplicated IDs for the <code>eventLoadRuleList</code> parameter.</li>
 </ul>
 </li>
 </ul>
@@ -1028,7 +1896,7 @@ document.addEventListener('DOMContentLoaded', () => {
 </ul>
 <h4 id="new-connectors">New connectors</h4>
 <ul>
-<li>New marketplace connector: <a href="/early-access/taboola-audiences-connector/">Taboola Audiences</a></li>
+<li>New marketplace connector: <a href="/server-side-connectors/taboola-audiences-connector/">Taboola Audiences</a></li>
 </ul>
 
                 <div class=""><span class="f7">October 30, 2024</span></div>
@@ -4275,7 +5143,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <ul>
 <li>Renamed Sizmek Versa tag to <a href="/client-side-tags/amazon-ads-server-tag/">Amazon Ads Server</a> tag.</li>
 <li>Updated <a href="/client-side-tags/namogoo-tag/">Namogoo</a> tag to include events and events parameters.</li>
-<li>Updated <a href="/client-side-tags/at-internet-piano-analytics-tag/">AT Internet Piano tag</a> to allow a custom visitor ID.</li>
+<li>Updated <a href="/client-side-tags/piano-analytics-tag/">AT Internet Piano tag</a> to allow a custom visitor ID.</li>
 <li>Updated <a href="/client-side-tags/adobe-experience-platform-web-sdk-tag/">Adobe Experience Platform Web SDK tag</a> to allow you to select the tag version.</li>
 </ul>
 
@@ -4807,7 +5675,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <li>Updated <a href="/server-side-connectors/pulsepoint-npi-list-connector/">PulsePoint NPI List connector</a> to include batch endpoint.</li>
 <li>Updated <a href="/server-side-connectors/microsoft-customer-match/">Microsoft Customer Match connector</a> to correct an issue where the connector was forcing a consent prompt for already authorized users.</li>
 <li>Updated <a href="/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/">Salesforce Email Studio OAuth2 (ExactTarget) connector</a> to display data extensions in most recent order.</li>
-<li>Updated the <a href="/early-access/spotify-conversions-connector-alpha/">EA Spotify Conversions Connector</a> to remove the option to create a Conversion Tracker ID during configuration. Users must contact Spotify directly to obtain a Conversion Tracker ID.</li>
+<li>Updated the <a href="/early-access/server-side-connectors/spotify-conversions-connector-alpha/">EA Spotify Conversions Connector</a> to remove the option to create a Conversion Tracker ID during configuration. Users must contact Spotify directly to obtain a Conversion Tracker ID.</li>
 <li>Deprecated the following connectors:
 <ul>
 <li>Zoho Mail</li>
@@ -5794,7 +6662,7 @@ Removed consent-based filtering of <a href="/server-side/consent/event-specs/">T
 <li>Added the following listeners:
 <ul>
 <li><code>VisitorIdUpdatedListener</code>: notifies when the visitor ID is updated as a result of switching identities or resetting the visitor ID</li>
-<li><code>DataLayerUpdatedListener</code>: listens for updates to key/value pairs in the data layer</li>
+<li><code>DataLayerUpdatedListener</code>: listens for updates to key-value pairs in the data layer</li>
 <li><code>onDataUpdated(String, Any)</code>: notifies when a value is updated in the data layer</li>
 <li><code>onDataRemoved(Set&lt;String&gt;)</code>: notifies when the specified key is removed from the data layer by user interaction or data expiration</li>
 </ul>
@@ -6176,7 +7044,7 @@ if you rely on that being called.</li>
 </li>
 <li>InAppPurchase 1.0.1
 <ul>
-<li>Additional <code>purchase_date</code> key provided in ISO-8601 format</li>
+<li>Additional <code>purchase_date</code> key provided in ISO 8601 format</li>
 </ul>
 </li>
 <li>Tag Management 1.1.2
@@ -6438,7 +7306,7 @@ if you rely on that being called.</li>
 </ul>
 </li>
 <li>Data layer performance improvements, and additional support for storing <code>JSONArray</code> objects</li>
-<li>Dates now get formatted as ISO-8601 as standard</li>
+<li>Dates now get formatted as ISO 8601 as standard</li>
 <li>Dependency updates to Kotlin, Coroutines, Android Target Version, AGP 7, Java 11, MockK, Robolectric</li>
 <li>BugFixes:
 <ul>
@@ -8501,7 +9369,9 @@ No</button>
 
   <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#december-2024" href="javascript:void(0)">December 2024</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#february-2025" href="javascript:void(0)">February 2025</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#january-2025" href="javascript:void(0)">January 2025</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#december-2024" href="javascript:void(0)">December 2024</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#november-2024" href="javascript:void(0)">November 2024</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#october-2024" href="javascript:void(0)">October 2024</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#september-2024" href="javascript:void(0)">September 2024</a></li>
@@ -8732,6 +9602,14 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/server-side/data-storage/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           DataAccess
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/server-side/insights/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium Insights
         </a>
     </li>
   
