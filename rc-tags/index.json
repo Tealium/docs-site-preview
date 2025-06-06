@@ -2,17 +2,10 @@
 {
     "kind": "taxonomy",
     "name": "rc-tags",
-    "count": 44,
+    "count": 46,
     "items": [
 
     
-        {
-            "weight": "0",
-            "url": "https://docs-preview.tealium.com/rc-tags/ss_connectors/index.json",
-            "name": "ss_connectors"
-        }  
-
-    , 
         {
             "weight": "0",
             "url": "https://docs-preview.tealium.com/rc-tags/as_attributes/index.json",
@@ -239,6 +232,13 @@
     , 
         {
             "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/ss_connectors/index.json",
+            "name": "ss_connectors"
+        }  
+
+    , 
+        {
+            "weight": "0",
             "url": "https://docs-preview.tealium.com/rc-tags/ss_data_sources/index.json",
             "name": "ss_data_sources"
         }  
@@ -253,8 +253,22 @@
     , 
         {
             "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/ss_functions_dashboard/index.json",
+            "name": "ss_functions_dashboard"
+        }  
+
+    , 
+        {
+            "weight": "0",
             "url": "https://docs-preview.tealium.com/rc-tags/ss_functions_overview/index.json",
             "name": "ss_functions_overview"
+        }  
+
+    , 
+        {
+            "weight": "0",
+            "url": "https://docs-preview.tealium.com/rc-tags/ss_integrations/index.json",
+            "name": "ss_integrations"
         }  
 
     , 
