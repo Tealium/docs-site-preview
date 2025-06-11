@@ -2,7 +2,7 @@
 {
     "kind": "taxonomy",
     "name": "rc-tags",
-    "count": 46,
+    "count": 45,
     "items": [
 
     
@@ -262,13 +262,6 @@
             "weight": "0",
             "url": "https://docs-preview.tealium.com/rc-tags/ss_functions_overview/index.json",
             "name": "ss_functions_overview"
-        }  
-
-    , 
-        {
-            "weight": "0",
-            "url": "https://docs-preview.tealium.com/rc-tags/ss_integrations/index.json",
-            "name": "ss_integrations"
         }  
 
     , 
