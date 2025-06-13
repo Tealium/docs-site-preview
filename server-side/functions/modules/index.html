@@ -32,7 +32,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side",
-        reading_time  : "9",
+        reading_time  : "10",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -578,7 +578,7 @@
 <li>JavaScript Console API</li>
 </ul>
 <h2 id="crypto">Crypto</h2>
-<p>This feature introduces a high-performance, Java-based crypto and hashing library for Tealium Functions. It offers a direct replacement for the existing JavaScript-based Crypto-ES library. The Tealium crypto library is written in Java and inherits interfaces of the <code>crypto-es</code> JavaScript library. All interfaces are the same as for <code>crypto-es</code>.</p>
+<p>This feature introduces a high-performance crypto and hashing library for Tealium Functions, implemented in Java. It offers a direct replacement for the existing JavaScript-based Crypto-ES library and provides the same interface.</p>
 <p>For more information, see <a href="https://www.npmjs.com/package/crypto-es/v/1.2.7">NPM: Crypto-ES</a>.</p>
 <h3 id="import-library">Import library</h3>
 <p>To import the Tealium crypto library, add the following line to your code:</p>
@@ -712,7 +712,7 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">uHash1</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hash1</span> <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// convert to hex
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">hHash1</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">hash1</span> <span style="color:#f92672">&gt;&gt;&gt;</span> <span style="color:#ae81ff">0</span>).<span style="color:#a6e22e">toString</span>(<span style="color:#ae81ff">16</span>);
-</span></span></code></pre></div><h3 id="known-errors">Known errors</h3>
+</span></span></code></pre></div><h3 id="error-messages">Error messages</h3>
 <p>The Tealium crypto library is stricter about input data than <code>crypto-es</code>, so you might experience the following errors in cases of invalid usage:</p>
 <table>
 <thead>
@@ -728,7 +728,7 @@
 </tr>
 <tr>
 <td><code>Wrong key size</code></td>
-<td>The key size for DES cipher must be 8 bytes and for TripleDES it must be 16 bytes.</td>
+<td>The key size for DES cipher must be 8 bytes, and for TripleDES it must be 16 bytes.</td>
 </tr>
 <tr>
 <td><code>Wrong IV length</code></td>
@@ -748,7 +748,22 @@
 </tr>
 </tbody>
 </table>
-<h2 id="crypto-esjs">Crypto-ES.js</h2>
+<h3 id="migrating-from-crypto-es-to-tealium-crypto-library">Migrating from Crypto-ES to Tealium crypto library</h3>
+<p>The <code>tealium/crypto</code> library provides the same interface as <code>crypto-es</code> and can be used as a direct replacement. To minimize the risk of unexpected behavior in production when migrating, test the migration using one of the following approaches:</p>
+<ul>
+<li>
+<p><strong>Use a sandbox environment with the <code>tealium/crypto</code> library (recommended)</strong><br>
+Duplicate the function in a sandbox environment and update the imports to use <code>tealium/crypto</code>. Limit invocations to test audiences or feeds to verify that the function behaves as expected without affecting live traffic.</p>
+</li>
+<li>
+<p><strong>Run a <code>tealium/crypto</code> version in parallel with the existing function</strong><br>
+Create a copy of the function and update the imports to use <code>tealium/crypto</code>. Route a portion of traffic to it for direct comparison under real-world conditions. This approach enables 1:1 output and performance validation but may increase resource usage and cost. Turn off the duplicate after testing to avoid unnecessary system load.</p>
+</li>
+</ul>
+<p>Avoid using the <strong>Test</strong> tab with test payloads, as it doesn&rsquo;t simulate production load or provide reliable performance insights.</p>
+<p>After validation, you can migrate fully and turn off or delete the previous version using <code>crypto-es</code>.</p>
+<h2 id="crypto-esjs-legacy">Crypto-ES.js (legacy)</h2>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>This is a legacy version of the crypto library. For new use cases, see the <a href="#crypto">Tealium crypto library</a> library, which offers the same interface with improved performance and modular imports.</p>
 <p>Crypto-ES.js is a library of encryption algorithms available that provides hashing, encoding, and cipher algorithms. For more information, see <a href="https://www.npmjs.com/package/crypto-es/v/1.2.7">NPM: Crypto-ES</a>.</p>
 <p>The following example shows how to encrypt and decrypt text:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#66d9ef">import</span> <span style="color:#a6e22e">CryptoES</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;crypto-es&#39;</span>;
@@ -913,7 +928,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 11, 2025 
+          <p>This page was last updated:  June 13, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -931,8 +946,9 @@ No</button>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#import-library" href="javascript:void(0)">Import library</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#import-modules" href="javascript:void(0)">Import modules</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#examples" href="javascript:void(0)">Examples</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#known-errors" href="javascript:void(0)">Known errors</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#crypto-esjs" href="javascript:void(0)">Crypto-ES.js</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#error-messages" href="javascript:void(0)">Error messages</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#migrating-from-crypto-es-to-tealium-crypto-library" href="javascript:void(0)">Migrating from Crypto-ES to Tealium crypto library</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#crypto-esjs-legacy" href="javascript:void(0)">Crypto-ES.js (legacy)</a></li>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#gcm-mode-for-aes-encryption" href="javascript:void(0)">GCM mode for AES encryption</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#sha3-algorithm" href="javascript:void(0)">SHA3 algorithm</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#crc32-algorithm" href="javascript:void(0)">CRC32 algorithm</a></li>
