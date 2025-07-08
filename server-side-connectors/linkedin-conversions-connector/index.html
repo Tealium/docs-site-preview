@@ -32,7 +32,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side-connectors",
-        reading_time  : "11",
+        reading_time  : "12",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -304,6 +304,7 @@
         <a href="/server-side-connectors/reddit-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".reddit-conversions-connector">Reddit Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/reddit-custom-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".reddit-custom-audiences-connector">Reddit Custom Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/rokt/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".rokt-events-connector">ROKT</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/roku-events-api-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".roku-events-api-connector">Roku Events API</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/rtb-house-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".rtb-house-connector">RTB House</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/salesforce-audience-studio-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-audience-studio-connector">Salesforce Audience Studio</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/salesforce-dmp-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".salesforce-dmp-connector">Salesforce DMP</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -470,6 +471,10 @@
 <li>If <strong>Automatic Deduplication</strong> values are set, and the value is found in the data layer, (for example, <code>linkedin_event_id_10501014_30</code>) and this value supersedes any mapping for event ID.</li>
 <li>If <strong>Automatic Deduplication</strong> values are set, but the values are not found, the mapped event ID is used, if it is set.</li>
 </ol>
+<h3 id="deduplication-limitations">Deduplication limitations</h3>
+<p>LinkedIn does not currently offer a way to properly deduplicate conversion events that are tracked by both the Insight Tag (pixel) and the Conversions API (CAPI). When both methods send tracking signals for the same event, LinkedIn keeps only the most recent signal and discards the earlier one—even if both signals use the same event ID. This means that if you use both the Insight Tag and the Conversions API to track the same conversion event, you may encounter missing or overwritten data in your LinkedIn reporting.</p>
+<p>There are also differences in the data fields each method supports. The Insight Tag cannot accept value or currency information for conversion events. These fields are supported only in Conversions API implementations.</p>
+<p>To ensure accurate reporting, such as calculating return on ad spend (ROAS) and total revenue, LinkedIn recommends that you use only one tracking method (either the Insight Tag or the Conversions API) for each specific conversion event and not both at the same time. For advertisers who need comprehensive conversion tracking and ROAS optimization, LinkedIn recommends using the Conversions API with all relevant event details, including value and currency.</p>
 <h2 id="create-a-conversion">Create a conversion</h2>
 <p>You can use Tealium to create a conversion event to be tracked within your <strong>Campaign Manager</strong> interface. Creating a conversion within Tealium negates the need to configure a conversion event for tracking within the LinkedIn Campaign Manager. These values will be used to track the conversion events and be used to associate the conversion event values with campaigns being run. These will appear in the <strong>Analyze &gt; Conversion Tracking</strong> section. The events will appear with a data source value of <code>Tealium</code> when viewing within the LinkedIn Campaign Manager platform.</p>
 <table>
@@ -500,6 +505,11 @@
 <td>Post Click attribution window size (<code>postClickAttributionWindowSize</code>)</td>
 <td>Conversion window timeframe (in days) of a member clicking on a LinkedIn Ad (a post-click conversion) within which conversions will be attributed to a LinkedIn ad. Allowed values are <code>1</code>, <code>7</code>, <code>30</code>, or <code>90</code>. The default value is <code>30</code></td>
 <td><code>90</code> (integer)</td>
+</tr>
+<tr>
+<td>View Through Attribution Window Size (<code>viewThroughAttributionWindowSize</code>)</td>
+<td>Conversion window timeframe (in days) of a member seeing a LinkedIn ad (a view-through conversion) within which conversions will be attributed to a LinkedIn ad. Allowed values are <code>1</code>, <code>7</code>, <code>30</code>, or <code>90</code>. The default value is <code>7</code></td>
+<td>7 (integer)</td>
 </tr>
 <tr>
 <td>Attribution Type (<code>attributionType</code>)<br>Parameter values:<ul><li><code>LAST_TOUCH_BY_CAMPAIGN</code></li><li><code>LAST_TOUCH_BY_CONVERSION</code></li></ul></td>
@@ -554,7 +564,7 @@
 </tr>
 <tr>
 <td>Email Address (already SHA256 hashed)</td>
-<td>Provide an email address that is a plain text and has been already SHA256 hashed.</td>
+<td>Provide an email address that has been already SHA256 hashed.</td>
 </tr>
 <tr>
 <td>Email Address (apply SHA256 hash)</td>
@@ -562,7 +572,7 @@
 </tr>
 <tr>
 <td>LinkedIn First Party Ads Tracking UUID</td>
-<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> in order to activate first-party cookies that appends a <strong>Click ID</strong> parameter <code>li_fat_id</code> to the click URLs.</td>
+<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> to activate first-party cookies that appends a <strong>Click ID</strong> parameter <code>li_fat_id</code> to the click URLs.</td>
 </tr>
 <tr>
 <td>Acxiom ID</td>
@@ -665,7 +675,7 @@
 </tr>
 <tr>
 <td>Email Address (already SHA256 hashed)</td>
-<td>Provide an email address that is plain text and has been already SHA256 hashed.</td>
+<td>Provide an email address that has been already SHA256 hashed.</td>
 </tr>
 <tr>
 <td>Email Address (apply SHA256 hash)</td>
@@ -673,7 +683,7 @@
 </tr>
 <tr>
 <td>LinkedIn First Party Ads Tracking UUID</td>
-<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> in order to activate first party cookies that appends a <strong>Click ID</strong> parameter <code>li_fat_id</code> to the click URLs.</td>
+<td>First Party Cookie ID. Advertisers need to enable enhanced conversion tracking from <strong>Campaign Manager</strong> to activate first-party cookies that append a <strong>Click ID</strong> parameter <code>li_fat_id</code> to the click URLs.</td>
 </tr>
 <tr>
 <td>Acxiom ID</td>
@@ -689,7 +699,7 @@
 </tr>
 <tr>
 <td>Last Name</td>
-<td>The last name of the contact to match the conversion. Required if <strong>Company</strong>, <strong>Title</strong>, or <strong>Country Code</strong>  attributes are populated.</td>
+<td>The last name of the contact to match the conversion. Required if <strong>Company</strong>, <strong>Title</strong>, or <strong>Country Code</strong> attributes are populated.</td>
 </tr>
 <tr>
 <td>Company</td>
@@ -744,7 +754,7 @@
 <tbody>
 <tr>
 <td>Tealium iQ Tag ID</td>
-<td>The Tealium iQ tag that provides the Event ID value.</td>
+<td>The Tealium iQ tag that provides the event ID value.</td>
 </tr>
 <tr>
 <td>LinkedIn Insight Tag Conversion ID</td>
@@ -816,7 +826,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 26, 2025 
+          <p>This page was last updated:  July 2, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -835,6 +845,7 @@ No</button>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configure-settings" href="javascript:void(0)">Configure settings</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#deduplication" href="javascript:void(0)">Deduplication</a></li>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#automatic-deduplication" href="javascript:void(0)">Automatic deduplication</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#deduplication-limitations" href="javascript:void(0)">Deduplication limitations</a></li>
               </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#create-a-conversion" href="javascript:void(0)">Create a conversion</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#associate-campaigns-to-conversions" href="javascript:void(0)">Associate campaigns to conversions</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#actions" href="javascript:void(0)">Actions</a></li>
@@ -1036,6 +1047,14 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
+        <a href="https://docs-preview.tealium.com/tools/tealium-consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+          Tealium Consent
+        </a>
+    </li>
+  
+  
+  
+    <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/tools/tealium-tools/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium Tools
         </a>
@@ -1137,6 +1156,7 @@ No</button>
 
 <div class="docsmenu mobilemenu dn" style="overflow-y:scroll;">
     <ul class="list dib ph0 ma0 scrolling-touch tc">
+  
   
   
   
