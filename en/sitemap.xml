@@ -453,7 +453,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/about/</loc>
-    <lastmod>2025-06-11T07:28:07-07:00</lastmod>
+    <lastmod>2025-07-08T21:09:54+01:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -1983,7 +1983,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/add/</loc>
-    <lastmod>2025-06-11T07:28:07-07:00</lastmod>
+    <lastmod>2025-07-08T13:20:50-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -3153,7 +3153,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/consent/consent-overview/</loc>
-    <lastmod>2025-07-08T12:00:26-07:00</lastmod>
+    <lastmod>2025-07-09T09:03:48-07:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/tags/tealium-pixel-container-tag/</loc>
@@ -3930,6 +3930,10 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/iq-tag-management/tags/cookie-matching/</loc>
+    <lastmod>2025-07-08T21:09:54+01:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side/save-publish/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
     <xhtml:link
@@ -3963,15 +3967,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/early-access/data-sources/databricks-cloud-data-source/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/server-side/connectors/cookie-matching/</loc>
-    <lastmod>2025-03-11T11:00:58-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side/connectors/cookie-matching/"
       />
   </url>
   <url>
@@ -5839,7 +5834,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/order-of-operations/</loc>
-    <lastmod>2025-01-22T10:56:25-06:00</lastmod>
+    <lastmod>2025-07-08T14:47:40-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -6028,7 +6023,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/audiences/visitor-lookup-tool/</loc>
-    <lastmod>2025-05-15T09:41:58-05:00</lastmod>
+    <lastmod>2025-07-08T07:58:53-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -7963,7 +7958,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/</loc>
-    <lastmod>2024-02-28T13:07:45+00:00</lastmod>
+    <lastmod>2025-07-08T09:26:16-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -8053,7 +8048,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/</loc>
-    <lastmod>2024-03-11T11:14:41-05:00</lastmod>
+    <lastmod>2025-07-08T09:26:16-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -10527,15 +10522,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/client-side-tags/pinterest-tag/</loc>
-    <lastmod>2019-10-30T00:00:00+00:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/client-side-tags/pinterest-tag/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/client-side-tags/mybuys-tag/</loc>
     <lastmod>2017-12-11T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -11320,7 +11306,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/amazon-ads-audience-management-connector/</loc>
-    <lastmod>2025-02-12T08:55:17-08:00</lastmod>
+    <lastmod>2025-07-08T15:23:36-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11410,7 +11396,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/amazon-s3-connector/</loc>
-    <lastmod>2025-06-13T08:34:37-05:00</lastmod>
+    <lastmod>2025-07-08T15:44:12-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12544,7 +12530,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/</loc>
-    <lastmod>2025-01-07T10:22:37-06:00</lastmod>
+    <lastmod>2025-07-08T13:35:16-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12616,7 +12602,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-campaign-manager-360-floodlight-connector/</loc>
-    <lastmod>2025-05-21T08:40:14-05:00</lastmod>
+    <lastmod>2025-07-09T09:44:01-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12679,7 +12665,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-sa360-enhanced-conversions-connector/</loc>
-    <lastmod>2025-04-22T09:35:49-05:00</lastmod>
+    <lastmod>2025-07-08T15:37:27-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -13156,7 +13142,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/linkedin-conversions-connector/</loc>
-    <lastmod>2025-07-02T15:25:34-05:00</lastmod>
+    <lastmod>2025-07-07T14:29:51-07:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -13704,6 +13690,15 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/client-side-tags/pinterest-tag/</loc>
+    <lastmod>2025-07-08T13:38:05-05:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/client-side-tags/pinterest-tag/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/pinterest-audiences-connector/</loc>
     <lastmod>2025-01-22T12:24:19-06:00</lastmod>
     <xhtml:link
@@ -13713,13 +13708,8 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/server-side-connectors/pinterest-conversions/</loc>
-    <lastmod>2025-04-28T10:34:02+01:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side-connectors/pinterest-conversions/"
-      />
+    <loc>https://docs-preview.tealium.com/server-side-connectors/pinterest-conversions-connector/</loc>
+    <lastmod>2025-07-08T13:39:08-05:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/administration/platform-permissions/</loc>
@@ -14020,7 +14010,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/</loc>
-    <lastmod>2025-03-26T14:34:47-07:00</lastmod>
+    <lastmod>2025-07-08T09:26:16-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14038,7 +14028,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/</loc>
-    <lastmod>2025-03-26T14:34:47-07:00</lastmod>
+    <lastmod>2025-07-08T09:26:16-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14164,7 +14154,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/snowflake-streaming-connector/</loc>
-    <lastmod>2025-02-11T14:26:09-08:00</lastmod>
+    <lastmod>2025-07-08T14:35:32-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14245,7 +14235,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_connectors/index.json</loc>
-    <lastmod>2025-06-12T12:54:34-07:00</lastmod>
+    <lastmod>2025-07-08T21:09:54+01:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14353,7 +14343,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_visitor_lookup/index.json</loc>
-    <lastmod>2025-05-15T09:41:58-05:00</lastmod>
+    <lastmod>2025-07-08T07:58:53-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14875,7 +14865,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/data-storage/visitor-deletion-jobs/</loc>
-    <lastmod>2025-01-29T04:31:03-08:00</lastmod>
+    <lastmod>2025-07-08T07:58:38-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"

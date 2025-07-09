@@ -181,7 +181,8 @@
         <a href="/iq-tag-management/tags/tealium-generic-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-generic-tag">Tealium Generic Tag</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/iq-tag-management/tags/tealium-pixel-container-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-pixel-container-tag">Tealium Pixel Container Tag</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/iq-tag-management/tags/tealium-custom-container-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tealium-custom-container-tag">Tealium Custom Container Tag</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/iq-tag-management/tags/tag-reporting/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tag-reporting">Tag reporting</a></li></ul>
+        <a href="/iq-tag-management/tags/tag-reporting/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tag-reporting">Tag reporting</a></li><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/iq-tag-management/tags/cookie-matching/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-persistent-cookie-matching">Persistent cookie matching</a></li></ul>
       </li><li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  " data-target=".templates">Templates</a>
         <ul class="pl2  templates desktopmenu animated fadeIn list  dn"><li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -444,7 +445,7 @@
 
   
     <p class="f4 fw3 lh-copy">
-      Learn how Tealium enforces user consent across client-side and server-side platforms, and choose the right solution for your setup, whether using a commercial consent management platform, custom tool, or Tealium’s interface.
+      Learn how Tealium enforces user consent across client-side and server-side platforms, and choose the right solution for your setup, whether using a commercial consent management platform, custom tool, or Tealium-supported consent capture.
     </p>
   
 </div>
@@ -464,16 +465,17 @@
 </li>
 </ul>
 <h3 id="server-side-enforcement">Server-side enforcement</h3>
-<p>On the server-side, <a href="/server-side/consent/consent-orchestration/about/">Consent orchestration</a> enforces consent policies on events before they are processed or activated. It evaluates incoming events against purpose-based rules and blocks events that don’t meet consent conditions.</p>
-<p>Consent orchestration supports events in:</p>
+<p>On the server-side, <a href="/server-side/consent/consent-orchestration/about/">Consent orchestration</a> enforces consent policies at the event level before events are processed or activated. It evaluates incoming events against purpose-based rules and blocks events that don’t meet consent conditions.</p>
+<p>Consent orchestration applies event-level enforcement across:</p>
 <ul>
 <li>Tealium Collect</li>
 <li>EventStream</li>
 <li>EventStore</li>
 <li>EventDB</li>
+<li>AudienceStream profile processing</li>
 <li>Server-side connectors</li>
 </ul>
-<p>It does not yet enforce consent at the visitor profile level or control AudienceStream activations. Use manual consent conditions for AudienceStream until support is available.</p>
+<p>It does not yet enforce consent on AudienceStream activations. Use manual consent conditions for AudienceStream until support is available.</p>
 <p>Together, these components give you scalable, centralized, and consistent consent enforcement across your data stack, without tying enforcement to business logic or requiring additional custom development.</p>
 <h2 id="tealium-consent-features-and-when-to-use-them">Tealium consent features and when to use them</h2>
 <figure><a class="slb" href="/images/iq-tag-management/tealium-consent-levels.png"><img src="/images/iq-tag-management/tealium-consent-levels.png"
@@ -491,7 +493,7 @@
 <tbody>
 <tr>
 <td><a href="#consent-integrations">Consent integrations</a></td>
-<td><ul><li>You already use a commercial consent management platform (CMP) like OneTrust, TrustArc, Didomi, or Usercentrics to capture consent and want to enforce those decisions reliably through Tealium without custom development.</li><li>You need Tealium to respect and enforce consent decisions from your existing CMP while enabling purpose-based enforcement and tag mapping.</li></ul></td>
+<td><ul><li>You use a commercial consent management platform (CMP) like OneTrust, TrustArc, Didomi, or Usercentrics to capture consent and want to enforce those decisions reliably through Tealium without custom development.</li><li>You need Tealium to respect and enforce consent decisions from your CMP while enabling purpose-based enforcement and tag mapping.</li></ul></td>
 </tr>
 <tr>
 <td><a href="#cookieconsent-consent-integration">CookieConsent consent integration</a></td>
@@ -503,15 +505,15 @@
 </tr>
 <tr>
 <td><a href="#consent-orchestration">Consent orchestration</a></td>
-<td><ul><li>You need centralized, server-side enforcement of user consent at the event level for EventStream and related server-side features (EventStore, EventDB, and event functions).</li><li>You want to define and manage purpose-based consent policies centrally to ensure compliance with privacy laws.</li><li>You need to exempt specific data sources or regions that don’t require consent, while enforcing consent elsewhere.</li></ul></td>
+<td><ul><li>You need centralized, server-side enforcement of user consent at the event level across EventStream, EventStore, EventDB, AudienceStream profile processing, and server-side connectors.</li><li>You want to define and manage purpose-based consent policies centrally to ensure compliance with privacy laws.</li><li>You need to exempt specific data sources or regions that don’t require consent, while enforcing consent elsewhere.</li></ul></td>
 </tr>
 <tr>
 <td><a href="#consent-manager">Consent manager</a></td>
-<td><ul><li>You have an existing consent manager setup and are planning to migrate to the CookieConsent consent integration.</li></ul></td>
+<td><ul><li>You have a consent manager setup and are planning to migrate to the CookieConsent consent integration.</li></ul></td>
 </tr>
 <tr>
 <td><a href="#manual-consent-conditions">Manual consent conditions</a></td>
-<td><ul><li>You need to enforce consent in AudienceStream, which is not yet supported by consent orchestration.</li><li>You use manual conditions in EventStream and have not yet migrated to consent orchestration.</li></ul></td>
+<td><ul><li>You need to enforce visitor-level consent conditions inside AudienceStream audiences, not yet supported by Consent Orchestration.</li><li>You use manual conditions in EventStream and have not yet migrated to consent orchestration.</li></ul></td>
 </tr>
 </tbody>
 </table>
@@ -593,12 +595,12 @@
 <p>Use consent orchestration if you need centralized, rule-based consent enforcement for server-side data collection and processing. It&rsquo;s ideal for organizations that require centralized control over consent policies to ensure compliance with data privacy regulations.</p>
 <h4 id="considerations-2">Considerations</h4>
 <ul>
-<li>Consent orchestration does not yet enforce AudienceStream activations. Until support is added, continue using manual consent conditions in AudienceStream as described in <a href="/server-side/consent/consent-management/">Server-side consent management</a>.</li>
+<li>Consent orchestration does not yet enforce AudienceStream activations or support visitor-level consent conditions (such as consent-based badges) in Audiences. Until support is added, use manual consent conditions in AudienceStream as described in <a href="/server-side/consent/consent-management/">Server-side consent management</a>.</li>
 <li>Ensure that your server-side profiles are configured correctly to use consent orchestration.</li>
 <li>Server-side customers using the consent manager still need to implement <a href="/server-side/consent/consent-management/#manual-enforcement-instructions">manual enforcements</a> until migration to consent orchestration is possible.</li>
 </ul>
 <h3 id="consent-manager">Consent manager</h3>
-<p>The <a href="/iq-tag-management/consent/consent-management/about/">consent manager</a> is Tealium&rsquo;s original client-side solution for capturing and enforcing user consent. It includes a simple, built-in user interface to collect consent choices and applies enforcement using load rules and tag configurations in Tealium iQ Tag Management.</p>
+<p>The <a href="/iq-tag-management/consent/consent-management/about/">consent manager</a> is an older client-side solution for capturing and enforcing user consent. It includes a simple, built-in user interface to collect consent choices and applies enforcement using load rules and tag configurations in Tealium iQ Tag Management.</p>
 <p>The consent manager remains supported for existing implementations. However, for new projects, Tealium recommends using the <a href="/iq-tag-management/consent/cookieconsent-consent-integration/">CookieConsent consent integration</a>, which provides better flexibility, accessibility, and alignment with modern privacy standards.</p>
 <h4 id="key-features-4">Key features</h4>
 <ul>
@@ -636,9 +638,9 @@ You are still transitioning from consent manager to consent orchestration.</p>
 <p><strong>Does the new open source tool CookieConsent support consent logging?</strong></p>
 <p>Not directly. However, Tealium provides a <a href="/iq-tag-management/extensions/extensions-list/cookieconsent-v3-logging-extension/">logging extension</a> that listens for consent decisions and sends them as a JSON payload to Tealium Collect (with EventDB or EventStream) or any other endpoint you configure. The extension can be lightly customized to match your system’s requirements.</p>
 <p><strong>Is Tealium part of the IAB’s Transparency and Consent Framework (TCF)?</strong></p>
-<p>No. Tealium does not participate in the TCF as a CMP or vendor. However, you can integrate with TCF-compliant CMPs using consent integrations. For more information, see <a href="https://tealium.com/blog/data-strategy/the-iabs-transparency-and-consent-framework-and-tealium/">The IAB’s Transparency and Consent Framework and Tealium</a>.</p>
+<p>No. Tealium does not participate in the TCF as a CMP or vendor. This applies to all Tealium consent solutions, including CookieConsent and earlier tools. You can integrate with TCF-compliant CMPs using consent integrations. For more information, see <a href="https://tealium.com/blog/data-strategy/the-iabs-transparency-and-consent-framework-and-tealium/">The IAB’s Transparency and Consent Framework and Tealium</a>.</p>
 <p><strong>Is Tealium a Google Certified CMP?</strong></p>
-<p>No. Tealium is not a Google Certified CMP. However, it integrates with Google Certified CMPs and supports <a href="https://docs.tealium.com/iq-tag-management/consent/google-consent-mode/">Google consent mode</a> through enforcement rules. For more about Google-certified and IAB-certified CMPs, see <a href="https://tealium.com/blog/data-strategy/the-iabs-transparency-and-consent-framework-and-tealium/">The IAB’s Transparency and Consent Framework and Tealium</a>.</p>
+<p>No. Tealium is not a Google Certified CMP. This also applies to CookieConsent and earlier consent features. However, Tealium integrates with Google Certified CMPs and supports <a href="https://docs.tealium.com/iq-tag-management/consent/google-consent-mode/">Google consent mode</a> through enforcement rules. For more information, see <a href="https://tealium.com/blog/data-strategy/the-iabs-transparency-and-consent-framework-and-tealium/">The IAB’s Transparency and Consent Framework and Tealium</a>.</p>
 <h2 id="related-documentation">Related documentation</h2>
 <ul>
 <li><a href="/iq-tag-management/consent/consent-integrations/about/">Consent integrations</a></li>
@@ -709,7 +711,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  July 8, 2025 
+          <p>This page was last updated:  July 9, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

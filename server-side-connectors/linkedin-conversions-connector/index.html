@@ -297,7 +297,7 @@
         <a href="/server-side-connectors/pegasystems-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pegasystems-connector-setup-guide">Pegasystems</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pendo-engage-api-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pendo-engage-api-connector">Pendo Engage API</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pinterest-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pinterest-audiences-connector">Pinterest Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/pinterest-conversions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pinterest-conversions-connector">Pinterest Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/pinterest-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pinterest-conversions-connector">Pinterest Conversions</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/pulsepoint-npi-list-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".pulsepoint-npi-list-connector">PulsePoint NPI List</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/qualtrics-xm-directory-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".qualtrics-xm-directory-connector">Qualtrics XM Directory</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/quantcast-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".quantcast-audiences-connector">Quantcast Audiences</a></li><li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -444,8 +444,8 @@
 <h2 id="deduplication">Deduplication</h2>
 <p>Deduplication is the ability for the system to identify the same event being sent from both the Insight Tag and CAPI, and then discard one to ensure proper counting. Deduplication lets you send the same events through both sources, allowing CAPI to work in tandem with your <a href="/client-side-tags/linkedin-insight-tag/">LinkedIn Insight tag</a> to provide maximum visibility into the conversions your campaigns are driving.</p>
 <p>To configure this connector action to receive event IDs from the LinkedIn Insights tag in your iQ Tag Management account, look for event attributes using the following naming convention:</p>
-<pre tabindex="0"><code class="language-none" data-lang="none">linkedin_event_id_&lt;CONVERSION_ID&gt;_&lt;TAG_UID&gt;
-</code></pre><p>You can find your tag&rsquo;s UID in the Tealium iQ <strong>Tags</strong> table or the tag details screen:</p>
+<pre tabindex="0"><code class="language-none" data-lang="none">linkedin_event_id_{CONVERSION_ID}_{TAG_UID}
+</code></pre><p>Find your tag&rsquo;s UID in the Tealium iQ <strong>Tags</strong> table or the tag details screen:</p>
 <figure><a class="slb" href="/images/server-side-connectors/linkedin-insight-tag-uid.png"><img src="/images/server-side-connectors/linkedin-insight-tag-uid.png"
          alt="LinkedIn Insight Tag UID"
          title="LinkedIn Insight Tag UID"/>
@@ -826,7 +826,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  July 2, 2025 
+          <p>This page was last updated:  July 7, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
