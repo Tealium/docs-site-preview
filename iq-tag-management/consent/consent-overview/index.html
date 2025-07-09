@@ -468,14 +468,14 @@
 <p>On the server-side, <a href="/server-side/consent/consent-orchestration/about/">Consent orchestration</a> enforces consent policies at the event level before events are processed or activated. It evaluates incoming events against purpose-based rules and blocks events that don’t meet consent conditions.</p>
 <p>Consent orchestration applies event-level enforcement across:</p>
 <ul>
-<li>Tealium Collect</li>
 <li>EventStream</li>
+<li>EventStream connector actions</li>
 <li>EventStore</li>
 <li>EventDB</li>
+<li>Functions (event-level activations)</li>
 <li>AudienceStream profile processing</li>
-<li>Server-side connectors</li>
 </ul>
-<p>It does not yet enforce consent on AudienceStream activations. Use manual consent conditions for AudienceStream until support is available.</p>
+<p>It does not yet enforce consent on AudienceStream activations. Use <a href="/server-side/consent/consent-management/#manual-enforcement-instructions">manual enforcements</a> for AudienceStream until support is available.</p>
 <p>Together, these components give you scalable, centralized, and consistent consent enforcement across your data stack, without tying enforcement to business logic or requiring additional custom development.</p>
 <h2 id="tealium-consent-features-and-when-to-use-them">Tealium consent features and when to use them</h2>
 <figure><a class="slb" href="/images/iq-tag-management/tealium-consent-levels.png"><img src="/images/iq-tag-management/tealium-consent-levels.png"

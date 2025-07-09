@@ -471,10 +471,7 @@
 <div class="prose nested-links" id="prose">
   <p>Use this extension to log user consent decisions collected through the CookieConsent v3 interface. It captures relevant information such as the consent ID, accepted categories, and the consent model, then sends this data as a JSON payload to your endpoint using the <code>fetch()</code> API. You can configure the payload to match your system’s requirements, whether you are sending to the Tealium Collect endpoint or a custom destination.</p>
 <h2 id="requirements">Requirements</h2>
-<ul>
-<li><a href="/iq-tag-management/extensions/extensions-list/cookieconsent-v3-loader-extension/">CookieConsent v3 Loader extension</a></li>
-<li><a href="/iq-tag-management/consent/cookieconsent-consent-integration/#step-3-create-a-cookieconsent-v3-integration-and-enforcement-rule">CookieConsent v3 consent integration</a></li>
-</ul>
+<p>The CookieConsent v3 Logging extension requires the Manage JavaScript Code Extensions permission.</p>
 <h2 id="how-it-works">How it works</h2>
 <p>This extension listens for <code>consent_updated</code> events from the CookieConsent interface. When a user makes or updates a consent decision, the extension retrieves the consent state and sends the information as a JSON payload to a specified endpoint using the <code>fetch()</code> method.</p>
 <p>The payload typically includes:</p>
@@ -567,7 +564,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  June 17, 2025 
+          <p>This page was last updated:  July 9, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
