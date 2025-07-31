@@ -16,8 +16,10 @@
     <meta NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
     
     
+    <link rel="alternate" type="application/rss&#43;xml" href="https://docs-preview.tealium.com/release-notes/index.xml">
+    
     <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/release-notes/">
-    <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
+    <link rel="alternate" type="application/rss+xml" href="https://docs-preview.tealium.com/release-notes/index.xml" title="Preview of Tealium Docs"><link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
       if (location.hash) {
@@ -101,7 +103,7 @@
         
       
       </li>
-            
+      
     </ul>
   </div>
 </nav>
@@ -138,12 +140,14 @@
         <h1 class="f2 f2-l fw6 m0 mt3 pb3">Release notes</h1>
         </header>
 
-        <div class="mv2 mid-gray fn w-100">
+        <div class="mv2 mid-gray fn w-100 nested-links fw3 lh-copy">
           
-            <p class="f4 fw3 lh-copy">
+            <p class="f4">
               Stay updated with the latest product features, enhancements, and fixes.
             </p>
           
+          <p class="msg"><img src="/images/icons/rss-icon.png" class="fl di pr3 mt2" width="32" height="32"/> To get the latest product updates delivered to you in an RSS feed, add the URL of this page to your feed reader, or add the feed&rsquo;s URL directly: <a href="./index.xml">RSS Feed</a>.</p>
+
         </div>
 
         <div class="nested-links fw3">
@@ -1668,7 +1672,7 @@ The <a href="/early-access/attributes-improvements/about/">AudienceStream attrib
 <ul>
 <li>Updated <a href="/server-side-connectors/facebook-audiences-connector/">Facebook Audiences connector</a> to correct issue where an error was displayed if the Facebook TOS had not been accepted.</li>
 <li>Updated <a href="/server-side-connectors/linkedin-conversions-connector/">LinkedIn Conversions connector</a> to support external IDs and valueType in conversion creation, and updated API to version 202501.</li>
-<li>Updated <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to include additional contents data mappings.</li>
+<li>Updated <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to include additional contents data mappings.</li>
 <li>Updated <a href="/server-side-connectors/snapchat-conversions-connector/">Snapchat Conversions connector</a> to accept an array of strings for <strong>num_items</strong>.</li>
 </ul>
 
@@ -2024,7 +2028,7 @@ The <a href="/early-access/attributes-improvements/about/">AudienceStream attrib
 <li>Updated the <a href="/server-side-connectors/x-custom-audiences-connector/">X Custom Audiences connector</a> to add <strong>Do Not Reach List</strong> action.</li>
 <li>Updated the <a href="/server-side-connectors/webhook-connector-setup-guide/">Webhook JWT connector</a> to fix an issue related to using a template as URL.</li>
 <li>Updated the <a href="/server-side-connectors/the-trade-desk-real-time-conversion-events-connector/">Trade Desk Real-Time Conversion Events connector</a> to support dynamic conversion event name mapping.</li>
-<li>Updated the <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to populate <code>external ID</code> with the <code>Tealium Visitor ID</code> when automapping is enabled.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to populate <code>external ID</code> with the <code>Tealium Visitor ID</code> when automapping is enabled.</li>
 <li>Updated the <a href="/server-side-connectors/google-ads-conversions-connector/">Google Ads Conversions Connector</a> to add new conversion actions to better support MCC accounts and add alignment with the other Google Ads connector actions.</li>
 <li>Rebranded the Lithium connector to <a href="/server-side-connectors/khoros-connector/">Khoros connector</a>.</li>
 </ul>
@@ -2872,7 +2876,7 @@ The <a href="/early-access/server-side-connectors/databricks-customer-provided-s
 <li>Updated the <a href="/server-side-connectors/amazon-ads-audience-management-connector/">Amazon Ads Audience Management connector</a> to support user consent strings.</li>
 <li>Updated the <a href="/server-side-connectors/google-ads-customer-match-connector/">Google Ads Customer Match connector</a> to support dynamically setting the <strong>Google Ads client customer ID</strong>.</li>
 <li>Updated the <a href="/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/">Google Ads Enhanced Conversion for Leads connector</a> to support dynamically setting <strong>Google Ads client customer ID</strong>.</li>
-<li>Updated the <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to add an <code>Event Name Override</code> parameter in <strong>Conversion Event Parameters</strong> that enables users to specify the name of a custom event.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to add an <code>Event Name Override</code> parameter in <strong>Conversion Event Parameters</strong> that enables users to specify the name of a custom event.</li>
 <li>Updated the <a href="/server-side-connectors/salesforce-journey-builder-connector/">Salesforce Journey Builder connector</a> to resolve an issue in which an error occurs when optional attributes are not set.</li>
 <li>Updated the <a href="/server-side-connectors/x-custom-audiences-connector/">X Custom Audiences connector</a> to remove the <strong>User Identifier Hashing</strong> section and add the hashing information to the <strong>User Identifier</strong> section, as follows:
 <ul>
@@ -4887,7 +4891,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
 <ul>
 <li>Updated the <a href="/server-side-connectors/branch-events-connector/">Branch Events connector</a> to make boolean attributes mappable for the <strong>Limit Ad Tracking</strong> parameter and added the <strong>User Data</strong> category as a mapping option for the following attributes: <code>developer_identity</code>, <code>randomized_device_token</code>, and <code>browser_fingerprint_id</code>.</li>
 <li>Updated the <a href="/server-side-connectors/oracle-eloqua-connector/">Eloqua connector</a> to fix an API error when creating a target shared list.</li>
-<li>Updated the <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to add AudienceStream support.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to add AudienceStream support.</li>
 <li>Updated the <a href="/server-side-connectors/webhook-connector-setup-guide/">Webhook connector</a> to correct decimal rounding when using <strong>Print Attribute Names</strong> with the <strong>Send Visitor Profile</strong> action.</li>
 </ul>
 <h4 id="new-connectors">New connectors</h4>
@@ -5611,7 +5615,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
                 <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>
 <li>Updated the <a href="/server-side-connectors/session-ai-connector/">Session AI connector</a> to fix an issue where an action throws a null pointer exception when purchase attributes are added.</li>
-<li>Updated the <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to add <strong>Click ID</strong> parameter to the user data.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to add <strong>Click ID</strong> parameter to the user data.</li>
 </ul>
 
                 <div class=""><span class="f7">March 27, 2024</span></div>
@@ -5764,7 +5768,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
 <h4 id="updates-and-fixes">Updates and fixes</h4>
 <ul>
 <li>Updated the <a href="/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/">LinkedIn Matched Audiences connector</a> to fix an issue where users were encountering an error when attempting to view configured actions in the UI.</li>
-<li>Updated the <a href="/server-side-connectors/pinterest-conversions-connector/">Pinterest Conversions connector</a> to make the <strong>Event ID</strong> parameter optional.</li>
+<li>Updated the <a href="/server-side-connectors/pinterest-conversions/">Pinterest Conversions connector</a> to make the <strong>Event ID</strong> parameter optional.</li>
 <li>Updated the <a href="/server-side-connectors/appsflyer-app-events-connector/">Appsflyer App Events connector</a> to add <strong>Track In App Event (SDK Clients)</strong> action, enabling event sending for clients using the Appsflyer SDK.</li>
 </ul>
 
@@ -11442,14 +11446,6 @@ No</button>
     <li  class="tl dib ma0 hover-bg-primary w-100">
         <a href="https://docs-preview.tealium.com/administration/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Administration
-        </a>
-    </li>
-  
-  
-  
-    <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/tools/tealium-consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
-          Tealium Consent
         </a>
     </li>
   
