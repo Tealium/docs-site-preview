@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>tag:docs.tealium.com,2025:tealium-docs-release-notes</id>
   <title>Preview of Tealium Docs Release notes</title>
-  <link rel="self" href="https://docs-preview.tealium.com/release-notes/" />
+  <link rel="self" href="https://docs-preview.tealium.com/release-notes/index.xml" />
   <icon>https://docs-preview.tealium.com/release-notes//images/icons/tealium_logo_icon.png</icon>
   <author>
     <name>Tealium</name>
