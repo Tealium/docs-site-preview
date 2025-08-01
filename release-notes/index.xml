@@ -9,6 +9,306 @@
   </author>
       
     <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2025-07-30</id>
+      <title> Client-side tags (July 30, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#client-side-tags-2025-07-30" />
+      <updated>2025-07-30T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/parsely-tag/&#34;&gt;Parse.ly tag&lt;/a&gt; to replace the previous API endpoint with the new endpoint &lt;code&gt;cdn.parsley.com&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/pinterest-tag/&#34;&gt;Pinterest tag&lt;/a&gt; to support &lt;code&gt;event_id&lt;/code&gt; mapping, including fallback logic and consistent event name casing. This allows marketers to override the default event ID behavior and standardize event attribution.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:product-highlights-2025-07-30</id>
+      <title> Product highlights (July 30, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#product-highlights-2025-07-30" />
+      <updated>2025-07-30T00:00:00-07:00</updated>
+      
+      <category term="Product highlights" />
+      <content type="html">&lt;h3 id=&#34;tealium-product-highlights-july-2025&#34;&gt;Tealium Product Highlights (July 2025)&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-whats-new&#34;&gt;🔥 What&amp;rsquo;s new&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;New connectors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/cdk-connector/&#34;&gt;CDK CRM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Moments iQ Enhancements&lt;/strong&gt;&lt;br&gt;
+We&amp;rsquo;ve made &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/moments-iq/manage/&#34;&gt;Moments iQ&lt;/a&gt; easier and faster to use. Enjoy streamlined tabs, flexible placement, a new styling matrix, and simpler answer setup that gives you more control over building experiences.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Organized tabs&lt;/strong&gt;: General settings, form options, and styling controls now appear in their own dedicated screens to keep the configuration tidy and easy to navigate.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Styling matrix view&lt;/strong&gt;: See and manage up to 30 style configurations at a glance. No more scrolling and searching the configuration list.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Flexible placement&lt;/strong&gt;: Choose exactly where your experience lives: top left, bottom right, center screen, or embedded – it’s your call.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Add answers with ease&lt;/strong&gt;: No more pipe-separated lists. Just add new answers line by line for a cleaner, simpler setup.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Conditional redirects&lt;/strong&gt;: Set unique redirects per answer or a single fallback redirect - no JavaScript extensions needed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;New styling options&lt;/strong&gt;: A handful of fresh styling options to keep your experiences on brand and looking sharp.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Databricks outbound connector&lt;/strong&gt;&lt;br&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+&lt;h3 id=&#34;-early-access&#34;&gt;🔬 Early Access&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Databricks Data Cloud Inbound&lt;/strong&gt;&lt;br&gt;
+Import bulk data from &lt;a href=&#34;https://docs.tealium.com/early-access/data-sources/databricks-cloud-data-source/&#34;&gt;Databricks&lt;/a&gt; tables or views at near real-time speeds or at a scheduled time. After you import your data, transform and map it to Tealium attributes and build better audiences for targeted activation. Combine data storage with real-time data for cross-system connectivity to enable real-time, agile, consented data streams.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
+&lt;a href=&#34;https://docs.tealium.com/early-access/audiences/potential-audience-sizing/&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
+The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;*Early Access sign ups:&lt;/strong&gt; If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:save-publish-2025-07-30</id>
+      <title>iQ Tag Management &gt; Save and publish (July 30, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#save-publish-2025-07-30" />
+      <updated>2025-07-30T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Save and publish" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where a merge of tag changes caused an error in the load order of tags.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-07-30</id>
+      <title> Server-side connectors (July 30, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-07-30" />
+      <updated>2025-07-30T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h3 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-dv-360-customer-match-connector/&#34;&gt;Google Display &amp;amp; Video 360 Customers Match connector&lt;/a&gt; to use Google Data Manager API.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/iterable-connector/&#34;&gt;Iterable connector&lt;/a&gt; to fix an issue that caused the &lt;strong&gt;Test Connection&lt;/strong&gt; action to fail.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:tags-2025-07-30</id>
+      <title>iQ Tag Management &gt; Tags (July 30, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#tags-2025-07-30" />
+      <updated>2025-07-30T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added a notification alert to the Tags Marketplace to indicate when a Tags Marketplace Policy is in effect.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:tealium-net-maui-2025-07-29</id>
+      <title>Platforms &gt; Tealium for .NET MAUI (July 29, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#tealium-net-maui-2025-07-29" />
+      <updated>2025-07-29T00:00:00-07:00</updated>
+      <category term="Platforms" />
+      <category term="Tealium for .NET MAUI" />
+      <content type="html">&lt;ul&gt;
+&lt;li&gt;Update Tealium dependencies: iOS Swift v2.18.x and Android Kotlin v1.9.1.&lt;/li&gt;
+&lt;li&gt;Use XCFrameworks instead of Fat Frameworks for the iOS bindings.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2025-07-23</id>
+      <title> Client-side tags (July 23, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#client-side-tags-2025-07-23" />
+      <updated>2025-07-23T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue in the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/braze-web-sdk-tag/&#34;&gt;Braze Web SDK tag&lt;/a&gt; that prevented the first queued event from being captured. With this fix, the first event is now correctly processed, ensuring accurate capture and measurement of all events.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/cj-universal-tag/&#34;&gt;CJ Universal tag&lt;/a&gt; to include the tag template version in the data object sent to CJ.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:extensions-2025-07-23</id>
+      <title>iQ Tag Management &gt; Extensions (July 23, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#extensions-2025-07-23" />
+      <updated>2025-07-23T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Extensions" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Enhanced error messaging when an extension with a condition is changed to a scope that does not support conditions.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-07-23</id>
+      <title> Server-side connectors (July 23, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-07-23" />
+      <updated>2025-07-23T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h3 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/yahoo-datax-connector/&#34;&gt;Yahoo DataX connector&lt;/a&gt; to make the Client&amp;rsquo;s MDM Number field optional when creating a new taxonomy.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/reddit-conversions-connector/&#34;&gt;Reddit Conversions connector&lt;/a&gt; to support mapping multiple account IDs.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-bigquery-connector/&#34;&gt;Google BigQuery connector&lt;/a&gt; with a new action to execute custom queries.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/emarsys-connector/&#34;&gt;Emarsys connector&lt;/a&gt; to support selecting either OAuth (v3) or WSSE (v2) authentication during configuration. The connector dynamically uses the corresponding endpoint version and input fields based on the selected authentication method.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:events-2025-07-16</id>
+      <title>iQ Tag Management &gt; Events (July 16, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#events-2025-07-16" />
+      <updated>2025-07-16T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Events" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/events/event-types/html5-video-event/&#34;&gt;HTML 5 video event&lt;/a&gt; that incorrectly added &lt;code&gt;vid_id&lt;/code&gt; attributes to non-video elements in the page.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:save-publish-2025-07-16</id>
+      <title>iQ Tag Management &gt; Save and publish (July 16, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#save-publish-2025-07-16" />
+      <updated>2025-07-16T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Save and publish" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated all screens that display save history to include UIDs for variables, load rules, events, extensions, and tag templates. Titles are now shown for inherited tags (if available) instead of the vendor name. Previously, only tag UIDs were shown.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-07-16</id>
+      <title> Server-side connectors (July 16, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-07-16" />
+      <updated>2025-07-16T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h3 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-analytics-4-measurement-protocol-connector/&#34;&gt;Google Analytics 4 Measurement Protocol connector&lt;/a&gt; to support device and user location mappings.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:templates-2025-07-16</id>
+      <title>iQ Tag Management &gt; Templates (July 16, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#templates-2025-07-16" />
+      <updated>2025-07-16T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Templates" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the &lt;strong&gt;Manage Templates&lt;/strong&gt; screen that caused the tag name not to appear after updating the tag with a PATCH API request.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-07-11</id>
+      <title> Server-side connectors (July 11, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-07-11" />
+      <updated>2025-07-11T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h3 id=&#34;new-connectors&#34;&gt;New connectors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2025-07-09</id>
+      <title> Client-side tags (July 9, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#client-side-tags-2025-07-09" />
+      <updated>2025-07-09T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/pinterest-tag/&#34;&gt;Pinterest tag&lt;/a&gt; to support mapping event ID for use with conversions for web.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/tiktok-pixel-tag/&#34;&gt;TikTok Pixel tag&lt;/a&gt;  that caused an incorrect calculation for the total value when quantities contained leading zeroes.&lt;/li&gt;
+&lt;li&gt;Fixed an issue where the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/reddit-pixel-tag/&#34;&gt;Reddit Pixel tag&lt;/a&gt; would overwrite the global function named &lt;code&gt;md5&lt;/code&gt;. You must update the tag template to receive this fix.&lt;/li&gt;
+&lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/client-side-tags/braze-web-sdk-tag/&#34;&gt;Braze Web SDK tag&lt;/a&gt; to allow for multiple custom attribute mappings.&lt;/li&gt;
+&lt;li&gt;Fixed an issue in the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/optimise-media-conversion-tag/&#34;&gt;Optimise Media Conversion tag&lt;/a&gt; that caused mapped values to be applied to the tag twice.&lt;/li&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/adform-tag/&#34;&gt;Adform tag&lt;/a&gt; that caused events tracked before the Adform library loaded to fail.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/piano-analytics-tag/&#34;&gt;Piano Analytics tag&lt;/a&gt; to support queued events.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:events-2025-07-09</id>
+      <title>iQ Tag Management &gt; Events (July 9, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#events-2025-07-09" />
+      <updated>2025-07-09T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Events" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/events/event-types/youtube-event/&#34;&gt;Youtube Video Event&lt;/a&gt; that caused tracking to fail when the function &lt;code&gt;getVideoData()&lt;/code&gt; did not exist.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:moments-iq-2025-07-09</id>
+      <title>iQ Tag Management &gt; Moments iQ (July 9, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#moments-iq-2025-07-09" />
+      <updated>2025-07-09T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Moments iQ" />
+      <content type="html">&lt;h4 id=&#34;updates&#34;&gt;Updates&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added an option for &lt;strong&gt;Tag Code Version&lt;/strong&gt; to allow support for additional versioned features.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-07-09</id>
+      <title> Server-side connectors (July 9, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-07-09" />
+      <updated>2025-07-09T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h3 id=&#34;new-connectors&#34;&gt;New connectors&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/cdk-connector/&#34;&gt;CDK CRM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Resolved an issue in the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/snapchat-conversions-connector/&#34;&gt;Snapchat Conversions connector&lt;/a&gt; where automatic deduplication failed because the event ID was missing from the request body.&lt;/li&gt;
+&lt;li&gt;Renamed the Salesforce Interaction Studio connector to &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/salesforce-marketing-cloud-personalization-interaction-studio-connector/&#34;&gt;Salesforce Marketing Cloud Personalization&lt;/a&gt; and enabled all actions for visitor data.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/amazon-redshift-connector/&#34;&gt;Amazon Redshift connector&lt;/a&gt; to fix incorrect action names.&lt;/li&gt;
+&lt;li&gt;Updated connectors using Google Ads API to v20 of the API.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/the-trade-desk-third-party-data-connector/&#34;&gt;The Trade Desk Third-Party Data connector&lt;/a&gt; to support assigning data rates using either an advertiser ID, a partner ID, or both, and validates that at least one is provided.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/reddit-conversions-connector/&#34;&gt;Reddit Conversions connector&lt;/a&gt; to trim whitespace from user-entered account IDs.&lt;/li&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/adobe-campaign-standard-connector/&#34;&gt;Adobe Campaign Standard connector&lt;/a&gt; to no longer display empty configuration fields.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-campaign-manager-360-floodlight-connector/&#34;&gt;Google Campaign Manager 360 connector&lt;/a&gt; to support user identifiers.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/amazon-ads-audience-management-connector/&#34;&gt;Amazon Ads Audience Management connector&lt;/a&gt; to support an External ID mapping that applies a SHA256 hash to a plain text value.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
       <id>tag:docs.tealium.com,2025:connectors-2025-07-02</id>
       <title>Server-side &gt; Connectors (July 2, 2025)</title>
       <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#connectors-2025-07-02" />
@@ -79,7 +379,7 @@ The &lt;a href=&#34;https://docs.tealium.com/server-side/connectors/interface/&#
 &lt;p&gt;&lt;strong&gt;Databricks Data Cloud Inbound&lt;/strong&gt;&lt;br&gt;
 Import bulk data from &lt;a href=&#34;https://docs.tealium.com/early-access/data-sources/databricks-cloud-data-source/&#34;&gt;Databricks&lt;/a&gt; tables or views at near real-time speeds or at a scheduled time. After you import your data, transform and map it to Tealium attributes and build better audiences for targeted activation. Combine data storage with real-time data for cross-system connectivity to enable real-time, agile, consented data streams.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Databricks outbound connector&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/early-access/audiences/potential-audience-sizing/&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
@@ -325,7 +625,7 @@ The new &lt;a href=&#34;https://docs.tealium.com/server-side/connectors/about/&#
 &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/consent/cookieconsent-consent-integration/&#34;&gt;CookieConsent&lt;/a&gt; is a flexible, open-source consent management tool now integrated with Tealium iQ and hosted on the Tealium CDN. Combined with Tealium enforcement tools and integrations, it supports enterprise-scale deployments, A/B testing, improved accessibility, and a block-by-default framework. It also ensures accurate server-side tracking, including the ability to refire events upon the initial consent decision and trigger additional server-side actions without duplication or data loss.&lt;/p&gt;
 &lt;h3 id=&#34;-early-access&#34;&gt;🔬 Early Access&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Databricks outbound connector&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/early-access/audiences/potential-audience-sizing/&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
@@ -541,7 +841,7 @@ Import bulk data from &lt;a href=&#34;https://docs.tealium.com/server-side/data-
 &lt;p&gt;&lt;strong&gt;New Connectors Experience&lt;/strong&gt;&lt;br&gt;
 The new &lt;a href=&#34;https://docs.tealium.com/server-side/connectors/about/&#34;&gt;connectors experience&lt;/a&gt; delivers streamlined workflows, improved connector metrics, enhanced error tracking, and upgraded usability such as the ability to copy mappings and perform bulk actions. Enjoy faster performance and developer-friendly tools like template placeholders and an improved code editor.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Databricks Outbound Connector&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks Outbound Connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks Outbound Connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;EARLY ACCESS | SIGN-UP REQUIRED&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Early Access may only be available to select customers for the following programs. If you are interested in trying this feature, contact your Tealium Support representative.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Audience Sizing&lt;/strong&gt;&lt;br&gt;
@@ -622,6 +922,21 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvement
 &lt;li&gt;Fixed missing &lt;code&gt;DEV_JS_PROMOTION&lt;/code&gt; flag for extension in &lt;strong&gt;Account Data Exporter&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Fixed issue in &lt;strong&gt;Tag Mappings Export&lt;/strong&gt; where export failed because only header info was being exported.&lt;/li&gt;
 &lt;li&gt;Removed references to load rules and tags from &lt;strong&gt;Bulk Edit Assets&lt;/strong&gt; interface.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:tealium-net-maui-2025-04-16</id>
+      <title>Platforms &gt; Tealium for .NET MAUI (April 16, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#tealium-net-maui-2025-04-16" />
+      <updated>2025-04-16T00:00:00-07:00</updated>
+      <category term="Platforms" />
+      <category term="Tealium for .NET MAUI" />
+      <content type="html">&lt;ul&gt;
+&lt;li&gt;Added .NET9 support&lt;/li&gt;
+&lt;li&gt;Updated to latest Tealium SDK versions: iOS Swift v2.16.x and Android Kotlin v1.7.3&lt;/li&gt;
+&lt;li&gt;Updated Xamarin.Kotlin.StdLib dependency version to use a range&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>
@@ -742,7 +1057,7 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvement
 &lt;ul&gt;
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/facebook-audiences-connector/&#34;&gt;Facebook Audiences connector&lt;/a&gt; to correct issue where an error was displayed if the Facebook TOS had not been accepted.&lt;/li&gt;
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/linkedin-conversions-connector/&#34;&gt;LinkedIn Conversions connector&lt;/a&gt; to support external IDs and valueType in conversion creation, and updated API to version 202501.&lt;/li&gt;
-&lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to include additional contents data mappings.&lt;/li&gt;
+&lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to include additional contents data mappings.&lt;/li&gt;
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/snapchat-conversions-connector/&#34;&gt;Snapchat Conversions connector&lt;/a&gt; to accept an array of strings for &lt;strong&gt;num_items&lt;/strong&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -870,7 +1185,7 @@ Our navigation is getting a glow-up—fresh, modern, and way easier on the eyes!
 &lt;p&gt;&lt;strong&gt;New Connectors Experience&lt;/strong&gt;&lt;br&gt;
 The new &lt;a href=&#34;https://docs.tealium.com/server-side/connectors/about/&#34;&gt;connectors experience&lt;/a&gt; delivers streamlined workflows, improved connector metrics, enhanced error tracking, and upgraded usability such as the ability to copy mappings and perform bulk actions. Enjoy faster performance and developer-friendly tools like template placeholders and an improved code editor.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Databricks Outbound Connector&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks Outbound Connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Databricks Outbound Connector&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting Tealium’s real-time Customer Data Platform (CDP) with Databricks’ advanced AI and analytics capabilities, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;EARLY ACCESS | SIGN-UP REQUIRED&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;&lt;em&gt;Early Access may only be available to select customers for the following programs.  If you are interested in trying this feature, contact your Tealium Support representative.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Audience Sizing&lt;/strong&gt;&lt;br&gt;
@@ -1083,7 +1398,7 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvement
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/x-custom-audiences-connector/&#34;&gt;X Custom Audiences connector&lt;/a&gt; to add &lt;strong&gt;Do Not Reach List&lt;/strong&gt; action.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/webhook-connector-setup-guide/&#34;&gt;Webhook JWT connector&lt;/a&gt; to fix an issue related to using a template as URL.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/the-trade-desk-real-time-conversion-events-connector/&#34;&gt;Trade Desk Real-Time Conversion Events connector&lt;/a&gt; to support dynamic conversion event name mapping.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to populate &lt;code&gt;external ID&lt;/code&gt; with the &lt;code&gt;Tealium Visitor ID&lt;/code&gt; when automapping is enabled.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to populate &lt;code&gt;external ID&lt;/code&gt; with the &lt;code&gt;Tealium Visitor ID&lt;/code&gt; when automapping is enabled.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-ads-conversions-connector/&#34;&gt;Google Ads Conversions Connector&lt;/a&gt; to add new conversion actions to better support MCC accounts and add alignment with the other Google Ads connector actions.&lt;/li&gt;
 &lt;li&gt;Rebranded the Lithium connector to &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/khoros-connector/&#34;&gt;Khoros connector&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1206,7 +1521,7 @@ Powered with Tealium Docs, the &lt;a href=&#34;https://docs.tealium.com/administ
 &lt;p&gt;&lt;strong&gt;New Connectors Experience&lt;/strong&gt;&lt;br&gt;
 The &lt;a href=&#34;https://docs.tealium.com/server-side/connectors/interface/&#34;&gt;new connectors experience&lt;/a&gt; delivers streamlined workflows, improved connector metrics, enhanced error tracking, and upgraded usability such as the ability to copy mappings and perform bulk actions. Enjoy faster performance and developer-friendly tools like template placeholders and an improved code editor.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Cloud Data Warehouse Outbound (Databricks)&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Tealium + Databricks integration&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting the real-time Customer Data Platform (CDP) from Tealium with the advanced AI and analytics capabilities from Databricks, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-customer-provided-storage-connector/&#34;&gt;Tealium + Databricks integration&lt;/a&gt; empowers businesses to unify and activate their customer data with speed and intelligence. By seamlessly connecting the real-time Customer Data Platform (CDP) from Tealium with the advanced AI and analytics capabilities from Databricks, organizations can enrich customer profiles, enhance predictive modeling, and drive smarter, data-driven decisions.&lt;/p&gt;
 </content>
     </entry>
       
@@ -1887,11 +2202,11 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/amazon-ads-audience-management-connector/&#34;&gt;Amazon Ads Audience Management connector&lt;/a&gt; to support user consent strings.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-ads-customer-match-connector/&#34;&gt;Google Ads Customer Match connector&lt;/a&gt; to support dynamically setting the &lt;strong&gt;Google Ads client customer ID&lt;/strong&gt;.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-ads-enhanced-conversions-for-leads-connector/&#34;&gt;Google Ads Enhanced Conversion for Leads connector&lt;/a&gt; to support dynamically setting &lt;strong&gt;Google Ads client customer ID&lt;/strong&gt;.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add an &lt;code&gt;Event Name Override&lt;/code&gt; parameter in &lt;strong&gt;Conversion Event Parameters&lt;/strong&gt; that enables users to specify the name of a custom event.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add an &lt;code&gt;Event Name Override&lt;/code&gt; parameter in &lt;strong&gt;Conversion Event Parameters&lt;/strong&gt; that enables users to specify the name of a custom event.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/salesforce-journey-builder-connector/&#34;&gt;Salesforce Journey Builder connector&lt;/a&gt; to resolve an issue in which an error occurs when optional attributes are not set.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/x-custom-audiences-connector/&#34;&gt;X Custom Audiences connector&lt;/a&gt; to remove the &lt;strong&gt;User Identifier Hashing&lt;/strong&gt; section and add the hashing information to the &lt;strong&gt;User Identifier&lt;/strong&gt; section, as follows:
 &lt;ul&gt;
-&lt;li&gt;Required: Provide at least one user identifier&lt;/li&gt;
+&lt;li&gt;(Required) Provide at least one user identifier&lt;/li&gt;
 &lt;li&gt;All user identifiers except &amp;ldquo;Partner User ID&amp;rdquo; must be hashed using SHA256 and normalized.&lt;/li&gt;
 &lt;li&gt;When you select &lt;strong&gt;apply SHA256 hash&lt;/strong&gt;, the connector will whitespace trim, lowercase, and hash this value using SHA256 hash.&lt;/li&gt;
 &lt;/ul&gt;
@@ -3793,7 +4108,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
 &lt;ul&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/branch-events-connector/&#34;&gt;Branch Events connector&lt;/a&gt; to make boolean attributes mappable for the &lt;strong&gt;Limit Ad Tracking&lt;/strong&gt; parameter and added the &lt;strong&gt;User Data&lt;/strong&gt; category as a mapping option for the following attributes: &lt;code&gt;developer_identity&lt;/code&gt;, &lt;code&gt;randomized_device_token&lt;/code&gt;, and &lt;code&gt;browser_fingerprint_id&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/oracle-eloqua-connector/&#34;&gt;Eloqua connector&lt;/a&gt; to fix an API error when creating a target shared list.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add AudienceStream support.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add AudienceStream support.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/webhook-connector-setup-guide/&#34;&gt;Webhook connector&lt;/a&gt; to correct decimal rounding when using &lt;strong&gt;Print Attribute Names&lt;/strong&gt; with the &lt;strong&gt;Send Visitor Profile&lt;/strong&gt; action.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&#34;new-connectors&#34;&gt;New connectors&lt;/h4&gt;
@@ -4479,7 +4794,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
       <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/session-ai-connector/&#34;&gt;Session AI connector&lt;/a&gt; to fix an issue where an action throws a null pointer exception when purchase attributes are added.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add &lt;strong&gt;Click ID&lt;/strong&gt; parameter to the user data.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to add &lt;strong&gt;Click ID&lt;/strong&gt; parameter to the user data.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>
@@ -4624,7 +4939,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
 &lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/linkedin-matched-audiences-connector-setup-guide/&#34;&gt;LinkedIn Matched Audiences connector&lt;/a&gt; to fix an issue where users were encountering an error when attempting to view configured actions in the UI.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to make the &lt;strong&gt;Event ID&lt;/strong&gt; parameter optional.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pinterest-conversions-connector/&#34;&gt;Pinterest Conversions connector&lt;/a&gt; to make the &lt;strong&gt;Event ID&lt;/strong&gt; parameter optional.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/&#34;&gt;Appsflyer App Events connector&lt;/a&gt; to add &lt;strong&gt;Track In App Event (SDK Clients)&lt;/strong&gt; action, enabling event sending for clients using the Appsflyer SDK.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -7681,7 +7996,7 @@ if you rely on that being called.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;Low Impact Changes&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Prevented automatic deep link tracking from digesting AppDelegate&amp;rsquo;s deep links, in order to allow other implementations to handle their own deep links.&lt;/li&gt;
+&lt;li&gt;Prevented automatic deep link tracking from digesting AppDelegate&amp;rsquo;s deep links, to allow other implementations to handle their own deep links.&lt;/li&gt;
 &lt;li&gt;Fixed threading issues for &lt;code&gt;TagManagement&lt;/code&gt; module and &lt;code&gt;TealiumConfig&lt;/code&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
@@ -8291,7 +8606,7 @@ if you rely on that being called.&lt;/li&gt;
 &lt;li&gt;Bug Fixes:
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;safeGet&lt;/code&gt; extension methods added in Kotlin to check key safety on earlier React Native versions earlier than 0.63.3&lt;/li&gt;
-&lt;li&gt;React module imports added to the bridging header in order to accomodate React Native versions earlier than 0.63.3&lt;/li&gt;
+&lt;li&gt;React module imports added to the bridging header to accomodate React Native versions earlier than 0.63.3&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;SDK dependency and &lt;code&gt;package.json&lt;/code&gt; increments&lt;/li&gt;
@@ -8308,7 +8623,7 @@ if you rely on that being called.&lt;/li&gt;
       <category term="Tealium for React Native 2.x" />
       <content type="html">&lt;p&gt;&lt;strong&gt;Low Impact Changes&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Bug Fix: Removed the &lt;code&gt;deinit&lt;/code&gt; from the React Native Module in order to prevent the &lt;code&gt;EventEmitter&lt;/code&gt; event names being cleared out on hot reload.&lt;/li&gt;
+&lt;li&gt;Bug Fix: Removed the &lt;code&gt;deinit&lt;/code&gt; from the React Native Module to prevent the &lt;code&gt;EventEmitter&lt;/code&gt; event names being cleared out on hot reload.&lt;/li&gt;
 &lt;/ul&gt;
 </content>
     </entry>
@@ -8633,7 +8948,7 @@ if you rely on that being called.&lt;/li&gt;
       <content type="html">&lt;ul&gt;
 &lt;li&gt;Tealium iQ session reporting is now handled by the SDK rather than the webview&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p class=&#34;note&#34;&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34;&gt;&lt;/i&gt;Update your &lt;code&gt;mobile.html&lt;/code&gt; template within Tealium iQ when updating to v5.8.0 in order to support this change.&lt;/p&gt;
+&lt;p class=&#34;note&#34;&gt;&lt;i class=&#34;fa fa-exclamation-triangle&#34;&gt;&lt;/i&gt;Update your &lt;code&gt;mobile.html&lt;/code&gt; template within Tealium iQ when updating to v5.8.0 to support this change.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Minor fixes for issues raised by security scan&lt;/li&gt;
 &lt;li&gt;CrashReporter 1.1.0
@@ -9441,7 +9756,7 @@ Current ISO string timestamp for browser&amp;rsquo;s time zone (not available on
       <category term="Platforms" />
       <category term="Tealium Universal Tag (utag.js)" />
       <content type="html">&lt;ul&gt;
-&lt;li&gt;Added an override (&lt;code&gt;utag_cfg_ovrd&lt;/code&gt;) flag to &lt;code&gt;utag.js&lt;/code&gt; in order to delay the loading of Tags until the DOM readyState &amp;ldquo;complete&amp;rdquo; (AKA &amp;ldquo;load&amp;rdquo;) event. This flag provides a delay that may improve page display time speeds by causing all Tags with the &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/templates/manage/&#34;&gt;Wait = Yes setting&lt;/a&gt; to execute even later. Set this flag by entering the following code into a PreLoader-scoped &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/&#34;&gt;JavaScript Code extension&lt;/a&gt;:&lt;/li&gt;
+&lt;li&gt;Added an override (&lt;code&gt;utag_cfg_ovrd&lt;/code&gt;) flag to &lt;code&gt;utag.js&lt;/code&gt; to delay the loading of Tags until the DOM readyState &amp;ldquo;complete&amp;rdquo; (AKA &amp;ldquo;load&amp;rdquo;) event. This flag provides a delay that may improve page display time speeds by causing all Tags with the &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/templates/manage/&#34;&gt;Wait = Yes setting&lt;/a&gt; to execute even later. Set this flag by entering the following code into a PreLoader-scoped &lt;a href=&#34;https://docs.tealium.com/iq-tag-management/extensions/extensions-list/advanced-javascript-code-extension/&#34;&gt;JavaScript Code extension&lt;/a&gt;:&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;var&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;utag_cfg_ovrd&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; {};
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;utag_cfg_ovrd&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;dom_complete&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;true&lt;/span&gt;;
@@ -9524,7 +9839,7 @@ Current ISO string timestamp for browser&amp;rsquo;s time zone (not available on
       <category term="Tealium Universal Tag (utag.js)" />
       <content type="html">&lt;ul&gt;
 &lt;li&gt;Introduces support for AudienceStream &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/data-layer-enrichment/about/&#34;&gt;Data Layer Enrichment&lt;/a&gt;. This requires &lt;a href=&#34;https://docs.tealium.com/server-side/getting-started/audiencestream-cdp/introduction/&#34;&gt;AudienceStream&lt;/a&gt; and the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/tealium-collect-tag/&#34;&gt;DataCloud Tag&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;The &lt;code&gt;utag.js&lt;/code&gt; reads &lt;a href=&#34;http://en.wikipedia.org/wiki/Meta_element&#34;&gt;Meta tags&lt;/a&gt; with every &lt;code&gt;utag.view&lt;/code&gt; call in order to capture dynamic Meta tags.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;utag.js&lt;/code&gt; reads &lt;a href=&#34;http://en.wikipedia.org/wiki/Meta_element&#34;&gt;Meta tags&lt;/a&gt; with every &lt;code&gt;utag.view&lt;/code&gt; call to capture dynamic Meta tags.&lt;/li&gt;
 &lt;li&gt;There are several changes to the &lt;code&gt;utag_main&lt;/code&gt; cookie:
 &lt;ul&gt;
 &lt;li&gt;
