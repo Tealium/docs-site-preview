@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:title" content="Consent Management" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs-preview.tealium.com/platforms/remote-commands/consent-management/" />
+<meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
+<meta property="og:description" content="Learn to implement consent management in remote commands." />
+<meta property="og:site_name" content="Preview of Tealium Docs" />
     <title>Consent Management | Remote Commands | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -102,7 +108,7 @@
         
       
       </li>
-            
+      
     </ul>
   </div>
 </nav>
@@ -215,7 +221,7 @@
 <li>All JSON remote commands are triggered.</li>
 <li>Remote command tags are only triggered if they are assigned to one of the categories that the user has consented to, or if the tag has been omitted from consent.</li>
 </ul>
-<p>Learn more about <a href="/iq-tag-management/consent-management/consent-preferences-dialog/manage/">consent categories</a> and the <a href="/server-side/consent/event-specs/">consent event specifications</a>.</p>
+<p>Learn more about <a href="/iq-tag-management/consent-management/consent-preferences-dialog/manage/">consent categories</a> and the <a href="/consent/server-side/event-specs/">consent event specifications</a>.</p>
 <h2 id="remote-api-call">Remote API Call</h2>
 <p>How the <strong>Remote API</strong> option affects a remote command depends on whether the remote command is implemented using a JSON configuration file or via Tealium iQ.</p>
 <h3 id="json-remote-commands">JSON Remote Commands</h3>
@@ -233,7 +239,7 @@
 <p>To update a tag to expect <code>remote_api</code> calls, change the list of events to the following:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-javascript" data-lang="javascript"><span style="display:flex;"><span><span style="color:#a6e22e">u</span>.<span style="color:#a6e22e">ev</span> <span style="color:#f92672">=</span> { <span style="color:#a6e22e">remote_api</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">1</span> }; <span style="color:#75715e">// remove &#34;view&#34; and &#34;link&#34; to avoid double-counting when remote_api is enabled
 </span></span></span></code></pre></div><p>The following example shows how to disable tracking in the Braze Mobile Remote Command tag. Map the <code>tealium_event</code> variable to the Braze command <code>Disable Data Collection (disableSDK)</code>.
-Learn more about <a href="/server-side/consent/event-specs/">consent event specifications</a>.</p>
+Learn more about <a href="/consent/server-side/event-specs/">consent event specifications</a>.</p>
 <figure><a class="slb" href="/images/platforms/remote-commands/remote-command-tag-mapping-consent.png"><img src="/images/platforms/remote-commands/remote-command-tag-mapping-consent.png"/>
     </a><figcaption><p>Remote command tag mapping consent</p>
         </figcaption>
@@ -518,7 +524,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/tools/tealium-consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium Consent
         </a>
     </li>

@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:title" content="Install" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs-preview.tealium.com/platforms/ios-swift-v1/install/" />
+<meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
+<meta property="og:description" content="How to install the Tealium SDK for iOS (Swift)." />
+<meta property="og:site_name" content="Preview of Tealium Docs" />
     <title>Install | Tealium for iOS (Swift) version 1.x | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -102,7 +108,7 @@
         
       
       </li>
-            
+      
     </ul>
   </div>
 </nav>
@@ -226,9 +232,9 @@
 <p>To abstract the Tealium implementation from the rest of your app, we recommend using a helper class. This gives you a single entry point from which to initialize and make tracking calls. It also allows you to update the code in your helper file, and not in every single <code>ViewController</code> or Swift file.</p>
 <p>Explore our <a href="https://github.com/Tealium/tealium-swift/tree/master/samples/TealiumSwiftExample">sample helper class</a>.</p>
 <h2 id="install">Install</h2>
-<p>The Tealium iOS library is divided into modules. It is recommended to install only the modules that you need in order to maintain a smaller resource footprint. <a href="/platforms/ios-swift-v1/modules/">Learn more</a> about the modules available for iOS.</p>
+<p>The Tealium iOS library is divided into modules. It is recommended to install only the modules that you need to maintain a smaller resource footprint. <a href="/platforms/ios-swift-v1/modules/">Learn more</a> about the modules available for iOS.</p>
 <p>Install the Tealium for iOS library with Swift Package Manager, CocoaPods, or Carthage.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>If you do not require consent management, exclude or disable the consent manager module. The <a href="/platforms/ios-swift-v1/consent-management/">Consent Manager</a> module is enabled by default, which initially prevents tracking calls from being sent. In order to allow tracking calls, set the consent status to <code>.consented</code>.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>If you do not require consent management, exclude or disable the consent manager module. The <a href="/platforms/ios-swift-v1/consent-management/">Consent Manager</a> module is enabled by default, which initially prevents tracking calls from being sent. To allow tracking calls, set the consent status to <code>.consented</code>.</p>
 <h3 id="swift-package-manager-recommended">Swift Package Manager (Recommended)</h3>
 <p>Supported in version 1.9.0+, the Swift Package Manager is the recommended and simplest way to install the Tealium Swift library:</p>
 <ol>
@@ -250,7 +256,7 @@
 <li>Restricting a target within a package to a specific platform is not possible. Modules such as <a href="/platforms/ios-swift-v1/module-list/tag-management/"><code>TagManagement</code></a>, which are only supported for iOS, also become available to non-iOS targets. Adding one of these modules to an non-iOS target causes the compiler throws errors due to unavailable system libraries.</li>
 </ul>
 <h3 id="cocoapods">CocoaPods</h3>
-<p>To install the Tealium for iOS library with CocoaPods (recommended):</p>
+<p>To install the Tealium for iOS library with CocoaPods (Recommended):</p>
 <ol>
 <li>
 <p>Add the Tealium Swift pod <code>&quot;tealium-swift&quot;</code> to your Podfile. It has a subspec for each module, each of which depends on the &ldquo;Core&rdquo; module. If you do not specify any subspecs, all modules are installed by default.</p>
@@ -549,7 +555,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  January 7, 2023 
+          <p>This page was last updated:  June 20, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -769,7 +775,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/tools/tealium-consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium Consent
         </a>
     </li>

@@ -7,6 +7,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta property="og:title" content="Admin roles" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://docs-preview.tealium.com/administration/admin-roles/" />
+<meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
+<meta property="og:description" content="This article describes admin roles in the platform permissions system." />
+<meta property="og:site_name" content="Preview of Tealium Docs" />
     <title>Admin roles | Platform Administration | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -102,7 +108,7 @@
         
       
       </li>
-            
+      
     </ul>
   </div>
 </nav>
@@ -208,7 +214,7 @@
 <p>You can grant the following admin roles to users in your account:</p>
 <h3 id="account-admin">Account admin</h3>
 <p>The account admin role has full power and access to the account. The account admin role includes all account-level permissions and all profile-level permissions, including both client-side and server-side publishing permissions.</p>
-<p>In addition, account admins control permissions enforcement on the account, which changes the account from legacy to platform permissions. For more information, see <a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a></p>
+<p>In addition, account admins control permissions enforcement on the account, which changes the account from legacy to platform permissions. For more information, see <a href="/administration/permissions-system-migration-guide/permissions-enforcement/">Permissions Enforcement</a>.</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>At least one user in your account must have the account admin role. If you are the only user with the account admin role in your account, you cannot remove this role from yourself.</p>
 <h3 id="user-admin">User admin</h3>
 <p>The user admin role has access to the following settings:</p>
@@ -231,12 +237,12 @@
 <h3 id="privacy-admin">Privacy admin</h3>
 <p>The privacy admin role can only be granted to users with the user admin role. The privacy admin role has access to the following settings:</p>
 <ul>
-<li><strong>Consent Management</strong>: Manage <a href="/iq-tag-management/consent/consent-management/about/">consent parameters and languages</a>, which apply to all profiles that use consent management.</li>
+<li><strong>Consent Management</strong>: Manage <a href="/consent/client-side/consent-management/about/">consent parameters and languages</a>, which apply to all profiles that use consent management.</li>
 <li><strong>PII View and Manage</strong>: Manage Personally Identifiable Information (PII) user permissions and view and edit attributes with <a href="/server-side/attributes/restricted-data/">restricted data</a>.</li>
 <li><strong>Tag Marketplace Policy</strong>: Enable, disable, and configure the <a href="/iq-tag-management/tags/tag-marketplace/tag-marketplace-policy/">tag marketplace policy</a> to control which tags are available for use on this account.</li>
 </ul>
 <h3 id="profile-admin">Profile admin</h3>
-<p>The profile admin role has access to manage profiles and profile settings. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group, which the profile admin can set.</p>
+<p>The profile admin role has access to manage client-side profiles and profile settings. This role does not include profile editing or publishing permissions; those are granted through rights in a permission group, which the profile admin can set.</p>
 <ul>
 <li><strong>Manage Profile Libraries</strong>: <a href="/iq-tag-management/profiles/profile-libraries/">Manage profile libraries</a>.</li>
 <li><strong>Manage Profiles</strong>: <a href="/iq-tag-management/profiles/manage/">Create and manage profiles</a>. <p class="note"><i class="fa fa-exclamation-triangle"></i>Only client-side profiles can be created through the platform. To create a server-side profile, contact Tealium Support.</p></li>
@@ -319,7 +325,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  May 16, 2025 
+          <p>This page was last updated:  July 10, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -538,7 +544,7 @@ No</button>
   
   
     <li  class="tl dib ma0 hover-bg-primary w-100">
-        <a href="https://docs-preview.tealium.com/tools/tealium-consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
+        <a href="https://docs-preview.tealium.com/consent/" class="f5 link primary-color-light overflow hover-white db ma0 w-100 pv3 ph4">
           Tealium Consent
         </a>
     </li>
