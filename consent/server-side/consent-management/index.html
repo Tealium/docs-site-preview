@@ -282,7 +282,7 @@ To allow visitor profiles to be stored in AudienceStore and AudienceDB, the visi
 </ul>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>For all DataAccess products (EventStore, AudienceStore, EventDB, and AudienceDB), <a href="/consent/server-side/event-specs/#consent-change-events">Consent change events</a> are sent/stored regardless of the contents of the <code>consent_categories</code> array to support consent logging.</p>
 <h2 id="disabling-automatic-enforcement">Disabling automatic enforcement</h2>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>Disabled by default for new profiles. Enabling Consent Orchestration disables and replaces legacy event-level server-side enforcement. To disable automatic enforcement on existing profiles, see <a href="/server-side/administration/account-settings/#consent-enforcement">Server-side account settings</a>. For more information, see <a href="/consent/server-side/consent-orchestration/about/">About Consent Orchestration</a>.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Automatic enforcement is disabled by default for new profiles. Enabling Consent Orchestration disables and replaces legacy event-level server-side enforcement. To disable automatic enforcement on existing profiles, see <a href="/server-side/administration/account-settings/#consent-enforcement">Server-side account settings</a>. For more information, see <a href="/consent/server-side/consent-orchestration/about/">About Consent Orchestration</a>.</p>
 <p>The built-in enforcement based on <code>consent_categories</code> can sometimes cause unwanted blocking of consented data. To override that logic, follow these steps:</p>
 <ol>
 <li>Use a JavaScript Code extension scoped to the Tealium Collect tag to copy the opt-in categories to a new array, such as <code>consent_categories_granted</code>:
@@ -293,6 +293,7 @@ To allow visitor profiles to be stored in AudienceStore and AudienceDB, the visi
 <li>Manually add conditions based on <code>consent_categories_granted</code> to each event feed and audience.</li>
 </ol>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>This will disable all automatic enforcement and consent-based blocking. To avoid tracking without end-user permission, ensure you are extremely cautious with your configuration when using this workaround.</p>
+<p>After disabling automatic enforcement, follow the steps in <a href="/consent/server-side/manual-enforcement/">Manual server-side consent enforcement</a> to configure consent conditions manually.</p>
 
 </div>
 
