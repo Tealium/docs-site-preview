@@ -1,0 +1,768 @@
+# -------------------------------
+# 英語
+[languages.en]
+  languageName = "English"
+  contentDir = "content/en"
+  baseurl = "http://docs.tealium.com/"
+  weight = 0
+
+# -------------------------------
+# ホーム
+# -------------------------------
+
+   [[menu.homep]]
+     name = "はじめに"
+     identifier = "home-start"
+     weight = 90
+
+   [[menu.homep]]
+     name = "ガイド"
+     identifier = "home-guides"
+     weight = 95
+     url = "/guides/"
+
+   [[menu.homep]]
+     name = "クライアントサイド"
+     identifier = "home-cs"
+     weight = 100
+
+   [[menu.homep]]
+     name = "iQ タグ管理"
+     identifier = "home-iq"
+     weight = 115
+     url = "/iq-tag-management/"
+
+   [[menu.homep]]
+     name = "サーバーサイド"
+     identifier = "home-ss"
+     weight = 120
+
+   [[menu.homep]]
+     name = "EventStream API Hub"
+     identifier = "home-es"
+     weight = 121
+     url = "/server-side/#eventstream-api-hub"
+
+   [[menu.homep]]
+     name = "AudienceStream CDP"
+     identifier = "home-as"
+     weight = 125
+     url = "/server-side/#audiencestream-cdp"
+
+   [[menu.homep]]
+     name = "Moments API"
+     identifier = "home-mapi"
+     weight = 126
+     url = "/server-side/moments-api/"
+
+   [[menu.homep]]
+     name = "Functions"
+     identifier = "home-fn"
+     weight = 130
+     url = "/server-side/functions/"
+
+   [[menu.homep]]
+     name = "Data Connect"
+     identifier = "home-dc"
+     weight = 133
+     url = "/server-side/data-connect/"
+
+   [[menu.homep]]
+     name = "Predict ML"
+     identifier = "home-ml"
+     weight = 135
+     url = "/predict/getting-started/"
+
+   [[menu.homep]]
+     name = "DataAccess"
+     identifier = "home-da"
+     weight = 140
+     url = "/server-side/data-storage/"
+
+   [[menu.homep]]
+     name = "Tealium Insights"
+     identifier = "home-in"
+     weight = 141
+     url = "/server-side/insights/"
+
+   [[menu.homep]]
+     name = "インテグレーション"
+     identifier = "home-int"
+     weight = 300
+
+   [[menu.homep]]
+     name = "クライアントサイドタグ"
+     identifier = "home-tags"
+     url = "/client-side-tags/"
+     weight = 310
+
+   [[menu.homep]]
+     name = "サーバーサイドコネクタ"
+     identifier = "home-conn"
+     url = "/server-side-connectors/"
+     weight = 320
+
+   [[menu.homep]]
+     name = "開発者"
+     identifier = "home-dev"
+     weight = 400
+
+   [[menu.homep]]
+     name = "プラットフォーム"
+     identifier = "home-plat"
+     weight = 410
+     url = "/platforms/"
+
+   [[menu.homep]]
+     name = "API"
+     identifier = "home-api"
+     weight = 420
+     url = "/api/"
+     post = "break"
+
+   [[menu.homep]]
+     name = "管理"
+     identifier = "home-admin"
+     url = "/administration/"
+     weight = 450
+
+  [[menu.homep]]
+     name = "Tealium Consent"
+     identifier = "home-consent"
+     url = "/consent/"
+     weight = 455
+
+   [[menu.homep]]
+     name = "アーリーアクセス"
+     identifier = "home-ea"
+     weight = 10000
+     url = "/early-access/"
+
+   [[menu.homep]]
+     name = "リリースノート"
+     identifier = "home-rn"
+     weight = 90000
+     url = "/release-notes/"
+
+
+
+# -------------------------------
+# ガイド
+# -------------------------------
+    [[menu.guides]]
+      name = "ガイド"
+      weight = 90
+      identifier = "guides"
+      
+# -------------------------------
+# タグ
+# -------------------------------
+    [[menu.client-side-tags]]
+      name = "クライアントサイドタグ"
+      weight = 100
+      identifier = "client-side-tags"
+
+# -------------------------------
+# コネクタ
+# -------------------------------
+    [[menu.server-side-connectors]]
+      name = "サーバーサイドコネクタ"
+      weight = 200
+      identifier = "server-side-connectors"
+
+# -------------------------------
+# iQ タグ管理
+# -------------------------------
+    [[menu.iq-tag-management]]
+      name = "iQ タグ管理"
+      weight = -10
+      identifier = "iq-tag-management"
+
+# -------------------------------
+# サーバーサイド製品
+# -------------------------------
+    [[menu.server-side]]
+      name = "サーバーサイド CDH"
+      weight = 300
+      identifier = "server-side"
+
+# -------------------------------
+# 管理
+# -------------------------------
+    [[menu.administration]]
+      name = "管理"
+      weight = 450
+      identifier = "administration"
+
+# -------------------------------
+# Tealium Consent
+# -------------------------------
+
+[[menu.consent]]
+  name = "Tealium Consent"
+  weight = -10
+  identifier = "consent"
+
+  [[menu.consent]]
+    name = "Tealium Consent 概要"
+    identifier = "consent-overview"
+    url = "/consent/consent-overview/"
+    weight = -5
+
+  # -------------------------------
+  # クライアントサイドサイドバー
+    [[menu.consent]]
+      name = "クライアントサイドの同意"
+      weight = 5
+
+  [[menu.consent]]
+    name = "CookieConsent"
+    identifier = "cookieconsent-consent-integration"
+    url = "/consent/client-side/cookieconsent-consent-integration/"
+    weight = 15
+
+  [[menu.consent]]
+    name = "同意統合"
+    identifier = "consent-integrations"
+    url = "/consent/client-side/consent-integrations/"
+    weight = 20
+
+  [[menu.consent]]
+    name = "クライアントサイドの同意管理"
+    identifier = "consent-management"
+    url = "/consent/client-side/consent-management/"
+    weight = 25
+
+  [[menu.consent]]
+    name = "Tealium同意登録"
+    identifier = "consent-register"
+    url = "/consent/client-side/consent-register/"
+    weight = 30
+
+  [[menu.consent]]
+    name = "Google同意モード"
+    identifier = "google-consent-mode"
+    url = "/consent/client-side/google-consent-mode/"
+    weight = 35
+
+  # -------------------------------
+  # サーバーサイドサイドバー
+    [[menu.consent]]
+      name = "サーバーサイドの同意"
+      weight = 100
+
+  [[menu.consent]]
+    name = "同意オーケストレーション（イベントレベル）"
+    identifier = "consent-orchestration"
+    url = "/consent/server-side/consent-orchestration/"
+    weight = 110
+
+  [[menu.consent]]
+    name = "手動の強制"
+    identifier = "manual-server-side-consent-enforcement"
+    url = "/consent/server-side/manual-enforcement/"
+    weight = 115
+
+  [[menu.consent]]
+    name = "サーバーサイドの同意管理"
+    identifier = "server-side-consent-management"
+    url = "/consent/server-side/consent-management/"
+    weight = 120
+
+  [[menu.consent]]
+    name = "同意変更イベント仕様"
+    identifier = "server-side-consent-change-event-specifications"
+    url = "/consent/server-side/server-side-consent-change-event-specifications/"
+    weight = 125
+
+  [[menu.consent]]
+    name = "同意変更イベント仕様"
+    identifier = "server-side-consent-change-event-specifications"
+    url = "/consent/server-side/event-specs/"
+    weight = 130
+  
+  [[menu.consent]]
+    name = "プライバシーポリシー抜粋のサンプル"
+    identifier = "server-side-sample-privacy-policy-excerpts"
+    url = "/consent/server-side/sample-privacy-policy-excerpts/"
+    weight = 135
+
+  [[menu.consent]]
+    name = "グローバルプライバシーコントロール"
+    identifier = "server-side-global-privacy-control"
+    url = "/consent/server-side/server-side-support-gpc/"
+    weight = 140
+      
+# -------------------------------
+# Predict
+# -------------------------------
+    [[menu.predict]]
+      name = "Predict ML"
+      weight = -10
+      identifier = "predict"
+
+      # [[menu.predict]]
+      #   name = "はじめに"
+      #   parent = "predict"
+      #   weight = 200
+      # [[menu.predict]]
+      #   name = "予測データの選択"
+      #   parent = "predict"
+      #   weight = 300
+      # [[menu.predict]]
+      #   name = "トレーニングモデルの作成"
+      #   parent = "predict"
+      #   weight = 400
+      # [[menu.predict]]
+      #   name = "モデルの評価と再トレーニング"
+      #   parent = "predict"
+      #   weight = 500
+      # [[menu.predict]]
+      #   name = "モデルのデプロイ"
+      #   parent = "predict"
+      #   weight = 600
+      # [[menu.predict]]
+      #   name = "オーディエンスの作成"
+      #   parent = "predict"
+      #   weight = 700
+      # [[menu.predict]]
+      #   name = "高度なトピック"
+      #   parent = "predict"
+      #   weight = 800
+      # [[menu.predict]]
+      #   name = "追加情報"
+      #   parent = "predict"
+      #   weight = 900
+
+    # -------------------------------
+
+
+# パートナー
+[[menu.partners]]
+  name = "パートナー統合"
+  identifier = "partners"
+  weight = 1
+
+# API
+[[menu.api]]
+  name = "Tealium API"
+  identifier = "api"
+
+[[menu.api-v1]]
+  name = "Tealium API (V1)"
+  linkName = "Tealium API (V1)"
+  identifier = "api-v1"
+
+[[menu.api-v3]]
+  name = "Tealium API"
+  identifier = "api-v3"
+
+# プラットフォーム
+[[menu.getting-started-web]]
+  name = "入門"
+  identifier = "getting-started-web"
+
+[[menu.getting-started-mobile]]
+  name = "モバイルの入門"
+  identifier = "getting-started-mobile"
+
+[[menu.remote-commands]]
+  name = "リモートコマンド"
+  identifier = "remote-commands"
+
+[[menu.android-java]]
+  name = "Android (Java)"
+  identifier = "android-java"
+
+[[menu.android-kotlin]]
+  name = "Android (Kotlin)"
+  identifier = "android-kotlin"
+
+[[menu.cordova-v1]]
+  name = "Cordova 1.x"
+  identifier = "cordova-v1"
+
+[[menu.cordova]]
+  name = "Cordova 2.x"
+  identifier = "cordova"
+
+[[menu.dotnet-maui]]
+  name = ".NET MAUI"
+  identifier = "dotnet-maui"
+
+[[menu.flutter-v1]]
+  name = "Flutter 1.x"
+  identifier = "flutter-v1"
+
+[[menu.flutter]]
+  name = "Flutter 2.x"
+  identifier = "flutter"
+
+[[menu.ios-objective-c]]
+  name = "iOS (Objective-C)"
+  identifier = "ios-objective-c"
+
+[[menu.ios-swift-v1]]
+  name = "iOS (Swift) 1.x"
+  identifier = "ios-swift-v1"
+
+[[menu.ios-swift]]
+  name = "iOS (Swift) 2.x"
+  identifier = "ios-swift"
+
+[[menu.nativescript]]
+  name = "NativeScript"
+  identifier = "nativescript"
+
+[[menu.react-native-v1]]
+  name = "React Native 1.x"
+  identifier = "react-native-v1"
+
+[[menu.react-native]]
+  name = "React Native 2.x"
+  identifier = "react-native"
+
+[[menu.unity-v1]]
+  name = "Unity 1.x"
+  identifier = "unity-v1"
+
+[[menu.unity]]
+  name = "Unity 2.x"
+  identifier = "unity"
+
+[[menu.xamarin-v1]]
+  name = "Xamarin 1.x"
+  identifier = "xamarin-v1"
+
+[[menu.xamarin]]
+  name = "Xamarin 2.x"
+  identifier = "xamarin"
+
+[[menu.javascript]]
+  name = "JavaScript (Web)"
+  identifier = "javascript"
+
+[[menu.adobe-launch]]
+  name = "Adobe Launch"
+  identifier = "adobe-launch"
+
+[[menu.amp]]
+  name = "AMP"
+  identifier = "amp"
+
+[[menu.angular]]
+  name = "Angular"
+  identifier = "angular"
+
+[[menu.google-tag-manager]]
+  name = "Google Tag Manager"
+  identifier = "google-tag-manager"
+
+[[menu.magento-v1]]
+  name = "Magento 1.x"
+  identifier = "magento-v1"
+
+[[menu.magento]]
+  name = "Magento 2.x"
+  identifier = "magento"
+
+[[menu.salesforce]]
+  name = "Salesforce"
+  identifier = "salesforce"
+
+[[menu.wordpress]]
+  name = "WordPress"
+  identifier = "wordpress"
+
+[[menu.shopify]]
+  name = "Shopify"
+  identifier = "shopify"
+
+[[menu.shopify-legacy]]
+  name = "Shopify (legacy)"
+  identifier = "shopify-legacy"
+
+[[menu.csharp]]
+  name = "C#"
+  identifier = "csharp"
+
+[[menu.http-api]]
+  name = "HTTP API"
+  identifier = "http-api"
+
+[[menu.java]]
+  name = "Java"
+  identifier = "java"
+
+[[menu.node]]
+  name = "Node"
+  identifier = "node"
+
+[[menu.python]]
+  name = "Python"
+  identifier = "python"
+
+[[menu.roku]]
+  name = "Roku"
+  identifier = "roku"
+
+[[menu.ruby]]
+  name = "Ruby"
+  identifier = "ruby"
+
+# Webサイドバー
+[[menu.platforms]]
+  name = "Web"
+  weight = 200
+
+[[menu.platforms]]
+  name = "入門"
+  identifier = "getting-started-web"
+  url = "/platforms/getting-started-web/quick-start/"
+  weight = 201
+
+[[menu.platforms]]
+  name = "JavaScript (Web)"
+  weight = 202
+  identifier = "javascript"
+  url = "/platforms/javascript/install/"
+
+[[menu.platforms]]
+  name = "Adobe Launch"
+  weight = 205
+  identifier = "adobe-launch"
+  url = "/platforms/adobe-launch/install/"
+
+[[menu.platforms]]
+  name = "AMP"
+  weight = 210
+  identifier = "amp"
+  url = "/platforms/amp/install/"
+
+[[menu.platforms]]
+  name = "Angular"
+  weight = 220
+  identifier = "angular"
+  url = "/platforms/angular/install/"
+
+[[menu.platforms]]
+  name = "Google Tag Manager"
+  weight = 225
+  identifier = "google-tag-manager"
+  url = "/platforms/google-tag-manager/install/"
+
+[[menu.platforms]]
+  name = "Magento 1.x"
+  weight = 227
+  identifier = "magento-v1"
+  url = "/platforms/magento-v1/install/"
+
+[[menu.platforms]]
+  name = "Magento 2.x"
+  weight = 229
+  identifier = "magento"
+  url = "/platforms/magento/install/"
+
+[[menu.platforms]]
+  name = "Salesforce"
+  weight = 230
+  identifier = "salesforce"
+  url = "/platforms/salesforce/install/"
+
+[[menu.platforms]]
+  name = "Shopify"
+  weight = 234
+  identifier = "about-shopify-app"
+  url = "/platforms/shopify/about/"
+
+[[menu.platforms]]
+  name = "Shopify (legacy)"
+  weight = 235
+  identifier = "shopify-install"
+  url = "/platforms/shopify-legacy/install/"
+
+[[menu.platforms]]
+  name = "WordPress"
+  weight = 236
+  identifier = "wordpress-launch"
+  url = "/platforms/wordpress/install/"
+  post = "break"
+
+# モバイルサイドバー
+[[menu.platforms]]
+  name = "モバイル"
+  weight = 1000
+
+[[menu.platforms]]
+  name = "入門"
+  identifier = "getting-started"
+  url = "/platforms/getting-started-mobile/quick-start/"
+  weight = 1050
+
+[[menu.platforms]]
+  name = "リモートコマンド"
+  weight = 1100
+  identifier = "remote-commands"
+  url = "/platforms/remote-commands/"
+
+[[menu.platforms]]
+  name = "Android (Java)"
+  weight = 1150
+  identifier = "android-java"
+  url = "/platforms/android-java/install/"
+
+[[menu.platforms]]
+  name = "Android (Kotlin)"
+  weight = 1200
+  identifier = "android-kotlin"
+  url = "/platforms/android-kotlin/install/"
+
+[[menu.platforms]]
+  name = "Cordova 1.x"
+  weight = 1250
+  identifier = "cordova-v1"
+  url = "/platforms/cordova-v1/install/"
+
+[[menu.platforms]]
+  name = "Cordova 2.x"
+  weight = 1260
+  identifier = "cordova"
+  url = "/platforms/cordova/install/"
+
+[[menu.platforms]]
+  name = "Flutter 1.x"
+  weight = 1300
+  identifier = "flutter-v1"
+  url = "/platforms/flutter-v1/install/"
+
+[[menu.platforms]]
+  name = "Flutter 2.x"
+  weight = 1310
+  identifier = "flutter"
+  url = "/platforms/flutter/install/"
+
+[[menu.platforms]]
+  name = "iOS (Objective-C)"
+  weight = 1350
+  identifier = "ios-objective-c"
+  url = "/platforms/ios-objective-c/install/"
+
+[[menu.platforms]]
+  name = "iOS (Swift) 1.x"
+  weight = 1400
+  identifier = "ios-swift-v1"
+  url = "/platforms/ios-swift-v1/install/"
+
+[[menu.platforms]]
+  name = "iOS (Swift) 2.x"
+  weight = 1450
+  identifier = "ios-swift"
+  url = "/platforms/ios-swift/install/"
+
+[[menu.platforms]]
+  name = "NativeScript"
+  weight = 1470
+  identifier = "nativescript"
+  url = "/platforms/nativescript/install/"
+
+[[menu.platforms]]
+  name = ".NET MAUI"
+  weight = 1485
+  identifier = "dotnet-maui"
+  url = "/platforms/dotnet-maui/install/"
+
+[[menu.platforms]]
+  name = "React Native 1.x"
+  weight = 1500
+  identifier = "react-native-v1"
+  url = "/platforms/react-native-v1/install/"
+
+[[menu.platforms]]
+  name = "React Native 2.x"
+  weight = 1550
+  identifier = "react-native"
+url = "/platforms/react-native/install/"
+
+[[menu.platforms]]
+  name = "Unity 1.x"
+  weight = 1560
+  identifier = "unity-v1"
+  url = "/platforms/unity-v1/install/"
+
+[[menu.platforms]]
+  name = "Unity 2.x"
+  weight = 1570
+  identifier = "unity"
+  url = "/platforms/unity/install/"
+
+[[menu.platforms]]
+  name = "Xamarin 1.x"
+  weight = 1600
+  identifier = "xamarin-v1"
+  url = "/platforms/xamarin-v1/install/"
+  
+[[menu.platforms]]
+  name = "Xamarin 2.x"
+  weight = 1610
+  identifier = "xamarin"
+  url = "/platforms/xamarin/install/"
+  post = "break"
+
+# -------------------------------
+# サーバーサイドバー
+[[menu.platforms]]
+  name = "サーバー"
+  weight = 3000
+
+[[menu.platforms]]
+  name = "C#"
+  weight = 3100
+  identifier = "csharp"
+  url = "/platforms/csharp/install/"
+
+[[menu.platforms]]
+  name = "HTTP API"
+  weight = 3200
+  identifier = "http-api"
+  url = "/platforms/http-api/endpoint/"
+
+[[menu.platforms]]
+  name = "Java"
+  weight = 3300
+  identifier = "java"
+  url = "/platforms/java/install/"
+
+[[menu.platforms]]
+  name = "Node"
+  weight = 3400
+  identifier = "node"
+  url = "/platforms/node/install/"
+
+[[menu.platforms]]
+  name = "Python"
+  weight = 3500
+  identifier = "python"
+  url = "/platforms/python/install/"
+
+# 高レベルアイテム
+[[menu.platforms]]
+  name = "Roku"
+  weight = 3600
+  identifier = "roku"
+  url = "/platforms/roku/install/"
+
+# 高レベルアイテム
+[[menu.platforms]]
+  name = "Ruby"
+  weight = 3700
+  identifier = "ruby"
+  url = "/platforms/ruby/install/"
+  post = "break"
+
+# -------------------------------
+# アーリーアクセス
+# -------------------------------
+[[menu.early-access]]
+  name = "アーリーアクセス"
+  identifier = "early-access"
+  weight = -10

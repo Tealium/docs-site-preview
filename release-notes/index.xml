@@ -25,6 +25,10 @@
 &lt;li&gt;&lt;code&gt;_cprod&lt;/code&gt; (array) to &lt;code&gt;contents[].id&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;_csku&lt;/code&gt; (array) to &lt;code&gt;contents[].item_number&lt;/code&gt;&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;_cquan&lt;/code&gt; (array) to &lt;code&gt;contents[].quantity&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_corder&lt;/code&gt; to &lt;code&gt;order_id&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_ccat&lt;/code&gt; (array) to &lt;code&gt;contents[].category&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_cprodname&lt;/code&gt; (array) to &lt;code&gt;contents[].name&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_cprice&lt;/code&gt; (array) to &lt;code&gt;contents[].item_price&lt;/code&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;

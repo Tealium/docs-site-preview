@@ -472,6 +472,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/consent-orchestration/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/consent-orchestration/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/about/</loc>
@@ -926,6 +931,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/consent-overview/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/consent-overview/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/tealium-s3/</loc>
@@ -1182,6 +1192,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/hosted-data-layer/use-case-amp-analytisc-remote-configuration-file/</loc>
@@ -1582,6 +1597,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/consent-orchestration/enforcement-conditions-conflict/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/consent-orchestration/enforcement-conditions-conflict/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/how-tealium-iq-works/</loc>
@@ -2522,6 +2542,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/collect/</loc>
@@ -3003,6 +3028,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/cookieconsent-consent-integration/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/cookieconsent-consent-integration/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-layer/data-layer-converter/customize-data-layer-converter/</loc>
@@ -3790,6 +3820,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/remote-commands/integrations/skadnetwork/</loc>
@@ -3992,6 +4027,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/data-mappings/about/</loc>
@@ -4086,10 +4126,20 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/explicit-consent-prompt/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/explicit-consent-prompt/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/privacy-banner-and-popup/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/privacy-banner-and-popup/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/trace/about/</loc>
@@ -4157,6 +4207,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/consent-preferences-dialog/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/consent-preferences-dialog/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/getting-started/install/utag-sync/</loc>
@@ -4269,10 +4324,20 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/explicit-consent-prompt/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/explicit-consent-prompt/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/file-storage/</loc>
@@ -4313,10 +4378,20 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-register/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-register/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/amp/</loc>
@@ -4339,6 +4414,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/consent-preferences-dialog/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/consent-preferences-dialog/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/administration/permissions-system-migration-guide/deployment-strategies/</loc>
@@ -4352,6 +4432,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/google-consent-mode/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/google-consent-mode/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/ios-swift-v1/module-list/lifecycle/</loc>
@@ -4500,6 +4585,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/privacy-banner-and-popup/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/privacy-banner-and-popup/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started-web/data-layer/definitions/publisher/</loc>
@@ -4682,8 +4772,21 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/consent/server-side/manual-enforcement/</loc>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/manual-enforcement/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/consent-management/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/consent-management/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-storage/about/</loc>
@@ -4760,6 +4863,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/consent-preferences-dialog/manage/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/consent-preferences-dialog/manage/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/event-specifications/manage/</loc>
@@ -4773,6 +4881,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/explicit-consent-prompt/manage/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/explicit-consent-prompt/manage/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/extensions/manage/</loc>
@@ -4804,6 +4917,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/privacy-banner-and-popup/manage/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/privacy-banner-and-popup/manage/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/profiles/manage/</loc>
@@ -5357,6 +5475,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/event-specs/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/event-specs/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/data-layer/</loc>
@@ -5388,6 +5511,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/global-parameters/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/global-parameters/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/csharp/</loc>
@@ -5590,6 +5718,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/global-privacy-control/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/global-privacy-control/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/</loc>
@@ -5603,6 +5736,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/global-privacy-control/client-side-support-gpc/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/global-privacy-control/client-side-support-gpc/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/shopify/</loc>
@@ -5625,34 +5763,74 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/global-privacy-control/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/global-privacy-control/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/about/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/about/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/consent-integrations-decision-flow/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/consent-integrations-decision-flow/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/manage/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/manage/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/supported-vendors/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/supported-vendors/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/validate-and-debug/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/validate-and-debug/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/custom-cmp/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/custom-cmp/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-integrations/enforcement-conditions-conflict/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-integrations/enforcement-conditions-conflict/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/getting-started-mobile/data-layer/</loc>
@@ -5666,6 +5844,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/client-side/consent-management/event-logging/</loc>
     <lastmod>2025-08-05T04:31:37-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/client-side/consent-management/event-logging/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/labels/manage/</loc>
@@ -6237,6 +6420,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/sample-privacy-policy-excerpts/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/sample-privacy-policy-excerpts/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/single-page-applications/</loc>
@@ -6349,6 +6537,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/server-side-support-gpc/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/server-side-support-gpc/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/javascript/settings/</loc>
@@ -6497,6 +6690,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/consent/server-side/consent-orchestration/</loc>
     <lastmod>2025-08-10T05:20:58-07:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/consent/server-side/consent-orchestration/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/frequently-asked-questions/lead-scoring-model/</loc>
@@ -12116,7 +12314,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-audiences-connector/</loc>
-    <lastmod>2025-08-06T12:23:05-05:00</lastmod>
+    <lastmod>2025-08-08T11:48:38-07:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
