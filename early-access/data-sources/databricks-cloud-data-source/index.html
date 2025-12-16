@@ -150,10 +150,6 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
-      <a href="/early-access/cloudstream/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>CloudStream</span></a>
-      </li>
-      
-      <li  class="tl dib ma0 w-100">
       <a href="/early-access/data-sources/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  bg-secondary primary-color"><span>Data sources</span></a>
       </li>
       
@@ -171,6 +167,10 @@
       
       <li  class="tl dib ma0 w-100">
       <a href="/early-access/api/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Tealium API</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
+      <a href="/early-access/visitor-stitching/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Visitor stitching</span></a>
       </li>
       
       
@@ -235,22 +235,6 @@
         <a href="/early-access/audiences/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-audiences-early-access">About audiences</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/early-access/audiences/manage/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-audiences-early-access">Manage audiences</a></li></ul>
-      </li>
-    <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".ea-cloudstream">CloudStream</a>
-        <ul class="pl2  ea-cloudstream desktopmenu animated fadeIn list  dn">
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-cloudstream">About</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/datasources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-datasources">Data sources</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-attributes">Cloud attributes</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/segments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-segments">Segments</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/connectors/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-connectors">Connectors</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/cloudstream/data-record-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-data-record-functions">Data record functions</a></li></ul>
       </li>
     <li class="relative w-100 fw8 f5  active">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".ea-data-sources">Data sources</a>
@@ -326,9 +310,17 @@
     <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/early-access/api/api-v3/iq-profiles/iq-load-rules-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-load-rules-api">iQ Load Rules API</a></li>
     <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/early-access/api/api-v3/iq-profiles/iq-tags-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-tags-api">iQ Tags API</a></li></ul>
+        <a href="/early-access/api/api-v3/iq-profiles/iq-tags-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-tags-api">iQ Tags API</a></li>
+    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/api/api-v3/iq-profiles/iq-tag-templates-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".early-access-iq-tag-template-api">iQ Tag Template API</a></li></ul>
       </li></ul>
       </li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".ea-visitor-stitching">Visitor stitching</a>
+        <ul class="pl2  ea-visitor-stitching desktopmenu animated fadeIn list  dn">
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/early-access/visitor-stitching/stitching-merge-rules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Stitching merge rules</a></li></ul>
       </li></ul></li></ul>
 </nav>
 </div>
@@ -447,7 +439,7 @@
 <p>The <code>WHERE</code> clause does not support subqueries from multiple tables. To import data from multiple Databricks tables, create a view in Databricks and select the view in the data source configuration.</p>
 <p>For more information, see <a href="https://docs.databricks.com/aws/en/views/">Databricks: What is a view?</a> (for <a href="https://docs.databricks.com/aws/en/views/">AWS</a>, <a href="https://learn.microsoft.com/en-us/azure/databricks/views/">Azure</a>, <a href="https://docs.databricks.com/gcp/en/views/">GCP</a>).</p>
 <h2 id="ip-access-list">IP access list</h2>
-<p>If your Databricks workspace is restricted by IP addresses, add the <a href="">Tealium IP addresses</a> to your Databricks IP access list.</p>
+<p>If your Databricks workspace is restricted by IP addresses, add the <a href="/server-side/administration/ip-allow-list/">Tealium IP addresses</a> to your Databricks IP access list.</p>
 <p>For more information, see <a href="https://docs.databricks.com/aws/en/security/network/front-end/ip-access-list">Databricks: Manage IP access list</a> (for <a href="https://docs.databricks.com/aws/en/security/network/front-end/ip-access-list">AWS</a>, <a href="https://learn.microsoft.com/en-us/azure/databricks/security/network/front-end/ip-access-list">Azure</a>, <a href="https://docs.databricks.com/gcp/en/security/network/front-end/ip-access-list">GCP</a>).</p>
 
 </div>
@@ -509,7 +501,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  October 27, 2025 
+          <p>This page was last updated:  December 10, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>

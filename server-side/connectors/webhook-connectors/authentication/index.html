@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Stitching merge rules" />
+    <meta property="og:title" content="Webhook authentication" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs-preview.tealium.com/server-side/visitor-stitching/stitching-merge-rules/" />
+<meta property="og:url" content="https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/authentication/" />
 <meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
-<meta property="og:description" content="Stitching merge rules are optional, per‑attribute rules that determine the final value of an attribute when two visitor profiles are stitched." />
+<meta property="og:description" content="This article describes how to configure different authentication methods for the HTTP-based webhook connector." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
-    <title>Stitching merge rules | Visitor stitching | Preview of Tealium Docs</title>
+    <title>Webhook authentication | Webhook connectors | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -36,7 +36,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side",
-        reading_time  : "15",
+        reading_time  : "4",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -124,6 +124,10 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
+      <a href="/server-side/cloudstream/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>CloudStream</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
       <a href="/server-side/data-connect/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Data Connect</span></a>
       </li>
       
@@ -144,7 +148,7 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
-      <a href="/server-side/connectors/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Connectors</span></a>
+      <a href="/server-side/connectors/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  bg-secondary primary-color"><span>Connectors</span></a>
       </li>
       
       <li  class="tl dib ma0 w-100">
@@ -156,7 +160,7 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
-      <a href="/server-side/visitor-stitching/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  bg-secondary primary-color"><span>Visitor stitching</span></a>
+      <a href="/server-side/visitor-stitching/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Visitor stitching</span></a>
       </li>
       
       <li  class="tl dib ma0 w-100">
@@ -417,6 +421,18 @@
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".cloudstream">CloudStream</a>
+        <ul class="pl2  cloudstream desktopmenu animated fadeIn list  dn">
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-cloudstream">About</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/datasources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-datasources">Data sources</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-attributes">Cloud attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/segments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-segments">Segments</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-connect">Data Connect</a>
         <ul class="pl2  data-connect desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -580,9 +596,9 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/moments-api/managed-mcp-server/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".moments-api-mcp-server">Managed MCP server</a></li></ul>
       </li>
-    <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".connectors">Connectors</a>
-        <ul class="pl2  connectors desktopmenu animated fadeIn list  dn">
+    <li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".connectors">Connectors</a>
+        <ul class="pl2  connectors desktopmenu animated fadeIn list ">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-connectors">About connectors</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -617,15 +633,15 @@
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/templates/help-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Helper functions</a></li></ul>
       </li>
-    <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".webhook-connectors">Webhook connectors</a>
-        <ul class="pl2  webhook-connectors desktopmenu animated fadeIn list  dn">
+    <li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".webhook-connectors">Webhook connectors</a>
+        <ul class="pl2 bl b--primary bw1 webhook-connectors desktopmenu animated fadeIn list ">
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">About webhook connectors</a></li>
+    <li data-level="4" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/connectors/webhook-connectors/authentication/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">Authentication</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">BasicAuth and OAuth2</a></li>
-    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/action-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Action parameters</a></li>
+        <a href="/server-side/connectors/webhook-connectors/actions-and-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Actions and parameters</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/validate-webhook-action/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Validate webhook action</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -696,17 +712,15 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/trace/view/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".view-trace">View traces</a></li></ul>
       </li>
-    <li class="relative w-100 fw8 f5  active">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".visitor-stitching">Visitor stitching</a>
-        <ul class="pl2 bl b--primary bw1 visitor-stitching desktopmenu animated fadeIn list ">
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".visitor-stitching">Visitor stitching</a>
+        <ul class="pl2  visitor-stitching desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-visitor-stitching">About visitor stitching</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".anonymous-user-visitor-id-attributes">Anonymous IDs, user identifiers, and visitor ID attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/visitor-id-attribute/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-id-attribute">Visitor ID attributes</a></li>
-    <li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/visitor-stitching/stitching-merge-rules/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">Stitching merge rules</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/diagram/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-stitching-example">Visitor stitching example</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -788,6 +802,12 @@
         <a href="/server-side/functions/data-transformation-functions/functions-transforms-example-code/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-transforms-example-code">Example code</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/data-transformation-functions/transforms-flatten-library/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".transforms-flatten-library">Flatten nested objects</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-record-functions">Data record functions</a>
+        <ul class="pl2  data-record-functions desktopmenu animated fadeIn list  dn">
+    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/functions/data-record-functions/data-record-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-data-record-functions">About data record functions</a></li></ul>
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
@@ -938,6 +958,7 @@
     
     
     
+    
   
   <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
   
@@ -949,7 +970,12 @@
 
   
   
-  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/visitor-stitching/">Visitor stitching</a></li>
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/connectors/">Connectors</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl3"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/connectors/webhook-connectors/">Webhook connectors</a></li>
   
 
   
@@ -958,7 +984,7 @@
 </ul>
 </nav>
 
-<h1 class="lh-title mt4 mt30-ns mb3">Stitching merge rules</h1>
+<h1 class="lh-title mt4 mt30-ns mb3">Webhook authentication</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -966,916 +992,220 @@
 
   
     <p class="f5 f4-ns fw3 lh-copy">
-      Stitching merge rules are optional, per‑attribute rules that determine the final value of an attribute when two visitor profiles are stitched.
+      This article describes how to configure different authentication methods for the HTTP-based webhook connector.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <h2 id="requirements">Requirements</h2>
-<ul>
-<li>Tealium AudienceStream enabled</li>
-<li>Visitor stitching enabled</li>
-<li>Account admin permissions</li>
-</ul>
-<h2 id="how-it-works">How it works</h2>
-<p>Visitor stitching uses event replay to build a merged profile from historical events, but operates within system constraints such as profile retention windows and an event maximum of approximately 1500 events. When visitor profiles grow beyond these constraints, the stitching process can cause older or high‑volume event histories to have an incomplete record of data. As a result, sometimes important long‑lived attributes, such as those used for consent or lifetime metrics, do not retain their expected values during the stitching process.</p>
-<p>Stitching merge rules address this gap by augmenting the stitching process with attribute‑specific logic that applies the same decision every time to produce durable, consistent outcomes. Historical events are replayed when possible, and then merge rules resolve the final attribute value after replay completes. This ensure that your most important attributes retain their intended value even when historical event processing cannot include all past events.</p>
-<h2 id="enable-stitching-merge-rules">Enable stitching merge rules</h2>
-<p>To enable stitching merge rules on a profile:</p>
+  <h2 id="basicauth">BasicAuth</h2>
+<p>Use the BasicAuth webhook for integrations that use a basic HTTP authentication with the HTTP header field <code>Authorization</code>. The credentials are passed as a Base64 encoded string of <code>{username}:{password}</code>.</p>
+<p>Use the following settings for BasicAuth authentication:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>(Required) A descriptive title for the webhook.</td>
+</tr>
+<tr>
+<td>BasicAuth Username</td>
+<td>The username for the webhook authentication.</td>
+</tr>
+<tr>
+<td>BasicAuth Password</td>
+<td>The password for the webhook authentication.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="oauth2-3-legged">OAuth2 (3-legged)</h2>
+<p>Use the OAuth2 3-legged webhook for integrations that require a user-consent authorization flow. This method redirects the user to the provider&rsquo;s consent page, obtains an authorization code, and exchanges it for an access token. The webhook then uses that token to authenticate requests on the user&rsquo;s behalf.</p>
+<p>The OAuth2 methods support server-side applications only.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>You must register your web application with an OAuth 2.0 service and configure it to allow the redirect URL: <code>https://my.tealiumiq.com/oauth/webhook/callback.html</code></p>
+<p>Use the following settings for OAuth2 (3-legged) authentication:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>(Required) A descriptive title for the webhook.</td>
+</tr>
+<tr>
+<td>Client ID</td>
+<td>(Required) The client identifier assigned to your application from the OAuth service.</td>
+</tr>
+<tr>
+<td>Client Secret</td>
+<td>(Required) The client secret assigned to your application from the OAuth service.</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>The type of permission you want to request to access the application.</td>
+</tr>
+<tr>
+<td>Authorization URL</td>
+<td>(Required) The URL where you want to redirect the user after authorization.</td>
+</tr>
+<tr>
+<td>Authorization URL Query Parameters</td>
+<td>Enter one or more name-value pairs for the authorization URL. Separate multiple pairs using an ampersand (<code>&amp;</code>). Do not use an ampersand (<code>&amp;</code>) at the start. <br/>Correct: <code>access_type=offline&amp;prompt=consent</code>  <br/>       Incorrect: <code>&amp;access_type=offline&amp;prompt=consent</code></td>
+</tr>
+<tr>
+<td>Access Token URL</td>
+<td>(Required) The token URL to get the refresh token.</td>
+</tr>
+<tr>
+<td>Authorization Token Location</td>
+<td>Specify where to place the authorization token.</td>
+</tr>
+<tr>
+<td>Authorization Header Prefix</td>
+<td>Default value is <code>Bearer</code>. Specify a new value to override (only required for some OAuth2 services).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="oauth2-2-legged">OAuth2 (2-legged)</h2>
+<p>Use the OAuth2 2-legged webhook for integrations that rely on server-to-server authentication without user involvement. This method exchanges client credentials (client ID and secret) for an access token directly from the provider. The webhook then uses that token to authenticate requests to your system.</p>
+<p>Use the following settings for OAuth2 (2-legged) authentication:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>(Required) Enter a descriptive title for the webhook.</td>
+</tr>
+<tr>
+<td>Access token URL</td>
+<td>(Required) Enter the API endpoint URL to request an access token.</td>
+</tr>
+<tr>
+<td>Client ID</td>
+<td>(Required) Enter your web application client ID.</td>
+</tr>
+<tr>
+<td>Client Secret</td>
+<td>(Required) Enter your web application client secret.</td>
+</tr>
+<tr>
+<td>Username</td>
+<td>Enter your username. Username is required if using Password grant type.</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Enter your password. Password is required if using Password grant type.</td>
+</tr>
+<tr>
+<td>Client Authentication ID</td>
+<td>The client ID to send as part of the authorization header.</td>
+</tr>
+<tr>
+<td>Client Authentication Secret</td>
+<td>The client secret to send as part of the authorization header.</td>
+</tr>
+<tr>
+<td>Scope</td>
+<td>Select the scope of permissions to request (only required for some OAuth2 services).</td>
+</tr>
+<tr>
+<td>Extra Authorization Parameters</td>
+<td>Add extra authorization parameters (only required for some OAuth2 services). Separate multiple parameters with <code>&amp;</code>.</td>
+</tr>
+<tr>
+<td>Authorization URL</td>
+<td>(Required) An API endpoint URL to request an authorization code from.</td>
+</tr>
+<tr>
+<td>Authorization Token Location</td>
+<td>Specify where to place the authorization token.</td>
+</tr>
+<tr>
+<td>Authorization Header Prefix</td>
+<td>Default value is <code>Bearer</code>. Specify a new value to override (only required for some OAuth2 services).</td>
+</tr>
+<tr>
+<td>Custom Headers</td>
+<td>Specify comma-separated key-value pairs with the custom headers that you want add to the authentication call. For example: <code>'header1:value1','header2:value2','header3:valuex,valuey'</code>.</td>
+</tr>
+<tr>
+<td>Custom Body Values</td>
+<td>Define comma-separated key-value pairs. For example: <code>'var1:value1','var2:value2','var3:varx,vary'</code>. They will be used in the body following the format set in the <strong>Body Content Type</strong> field.</td>
+</tr>
+<tr>
+<td>Body Content Type</td>
+<td>Specify the body content type.</td>
+</tr>
+<tr>
+<td>Authorization Values Location</td>
+<td>Specify the location of the authorization values (Client ID, client secret, username, password, and scope).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="jwt">JWT</h2>
+<p>Use the JWT webhook for integrations that authenticate using a signed JSON Web Token.</p>
+<p>Use the following settings for JWT authentication:</p>
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name</td>
+<td>(Required) Enter a descriptive title for the webhook.</td>
+</tr>
+<tr>
+<td>JWT Token</td>
+<td>Enter the JSON web token.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="access-tokens-for-oauth2">Access tokens for OAuth2</h2>
+<p>Webhook requests using OAuth2 must supply the access token in the request. The token generated by your OAuth2 connection is provided by the connector in a template variable named <code>{{webhook_access_token}}</code>, which is passed differently between each API. In the following example, it is expected in the header as <code>Authorization: Bearer TOKEN_HERE</code>.</p>
+<p>Use the following steps generate and map this header:</p>
 <ol>
-<li>Go to <strong>Admin &gt; Server-Side Settings</strong>.</li>
-<li>Toggle <strong>Stitching Merge Rules</strong> to <strong>On</strong>.</li>
-<li>Click <strong>Save</strong>.</li>
-</ol>
-<p>The stitching merge rule checkbox now appears when you edit visitor attributes:</p>
-<figure><a class="slb" href="/images/server-side/merge-rules/attribute-stitching-merge-rule-checkbox-select.png"><img src="/images/server-side/merge-rules/attribute-stitching-merge-rule-checkbox-select.png"/>
+<li>Create a template named <code>auth_template</code> using the following example:<br>
+<code>Bearer {{webhook_access_token}}</code></li>
+<li>In the Headers section, map this template to <strong>Authorization</strong>.<br>
+<figure><a class="slb" href="/images/server-side/webhook-custom-and-batched.jpg"><img src="/images/server-side/webhook-custom-and-batched.jpg"
+         alt="Webhook Custom and Batched.jpg"
+         title="Webhook Custom and Batched.jpg"/>
     </a>
-</figure>
-<h2 id="when-merge-rules-apply">When merge rules apply</h2>
-<p>Stitching merge rules are applied only when two visitors with prior activity are stitched. This is the scenario where event replay may miss older events and require a rule to resolve the final attribute value.</p>
-<p>Stitching occurs in three scenarios:</p>
-<ul>
-<li><strong>Scenario A: Two new visitors.</strong><br>
-Neither profile has prior activity, so event replay is not needed (beyond the current events) and merge rules do not apply.</li>
-<li><strong>Scenario B: New visitor and returning visitor.</strong><br>
-One profile has no history, so event replay of the returning visitor determines the outcome and merge rules do not apply.</li>
-<li><strong>Scenario C: Two returning visitors.</strong><br>
-Both profiles have prior events, so event replay runs within system limits and merge rules are applied to determine the final values.</li>
-</ul>
-<h2 id="identify-attributes-that-need-a-merge-rule">Identify attributes that need a merge rule</h2>
-<p>Not every attribute needs a stitching merge rule, so the first step is to determine which important attributes benefit most from a stitching merge rule. In general, stitching merge rules should be used for your most important attributes that track lifetime values and those related to data privacy and consent.</p>
-<p>The following categories of attributes are good candidate for stitching merge rules:</p>
-<ul>
-<li><strong>Long‑lived or high‑volume profiles</strong><br>
-Histories that exceed the retention window or the event replay maximum (approximately 1,500 events) risk missing older events that are critical to the final state. Stitching merge rules preserve intended outcomes despite those omissions.</li>
-<li><strong>Cross‑device journeys</strong><br>
-When consolidating activity from multiple devices and platforms, stitching merge rules help retain values originally set on older sessions that may fall outside replay.</li>
-<li><strong>Consent orchestration</strong><br>
-Ensure the correct consent status persists even if the deciding consent event is older than the retention window or displaced by volume.</li>
-<li><strong>Lifetime metrics</strong><br>
-Maintain accurate counters, tallies, and accumulations for power users whose event histories regularly exceed replay limits.</li>
-<li><strong>CRM/file‑imported attributes</strong><br>
-Keep authoritative values imported from systems of record (for example, CRM) that must persist beyond replay&rsquo;s time and volume limits.</li>
-</ul>
-<h3 id="analyze-enrichments">Analyze enrichments</h3>
-<p>Once you identify an attribute that needs a stitching merge rule, the next step is to select the best one based on the logic of its enrichments.</p>
-<p>Choosing the correct rule requires understanding how the attribute is intended to be set by your enrichments. The selected merge rule should use the same decision basis  so the stitched result matches the enrichment intent. Diverging from the core intent of your enrichments can produce data inconsistencies.</p>
-<h2 id="automatic-merge-rules">Automatic merge rules</h2>
-<p>The following attribute data types have stitching merge rules applied automatically because the merge logic is deterministic.</p>
-<h3 id="funnels">Funnels</h3>
-<p>Funnel attributes only have one merge rule option: Merge funnel. The merge funnel rule combines the funnel steps from each visitor chronologically. If duplicate steps exist, the earlier occurring step is saved and the older one is removed.</p>
-<h3 id="timelines">Timelines</h3>
-<p>Timeline attributes only have one merge rule option: Merge timeline. The merge timeline rule combines the timeline entries from each visitor chronologically.</p>
-<p>If the timeline attribute has an enrichment to expire entries older than X days, the merge rule expires entries older than <code>X</code> days from the time of the merge. If more than one enrichment expires entries, the merge rule uses the lowest value for X days.</p>
-<p>Remember, timelines have a maximum of 100 entries. If the limit is exceeded after the merge, the timeline is trimmed to the newest 100 entries.</p>
-<h3 id="tally-favorites">Tally favorites</h3>
-<p>A tally attribute generates a &ldquo;favorite&rdquo; attribute that contains the tally key with the highest value. Tally attributes are always merged with UNION rules, so the &ldquo;favorite&rdquo; attribute always needs to be recalculated on the merged visitor.</p>
-<p><strong>Automated behavior</strong>:</p>
-<ul>
-<li>If the tally has a merge rule, the &ldquo;favorite&rdquo; attribute automatically uses the <strong>RECALCULATE (FORCE)</strong> rule so its value is recomputed on the stitched visitor after other merge rules run.</li>
-<li>If the tally has no merge rule, the favorite string automatically has no merge rule.</li>
-<li>If a merge rule is removed from the tally, the &ldquo;favorite&rdquo; attribute&rsquo; merge rule is removed automatically.</li>
-</ul>
-<h3 id="preloaded-attributes">Preloaded attributes</h3>
-<p>Preloaded attributes are system‑managed attributes that exist in all profiles where AudienceStream is enabled. When stitching merge rules are enabled, these attributes receive appropriate, replay‑consistent merge rules automatically and the selections are not editable. This maintains consistency with their built-in enrichments.</p>
-<p>For more information, see <a href="/server-side/attributes/preloaded/">Preloaded attributes</a>.</p>
-<h3 id="attributes-with-only-one-merge-rule-option">Attributes with only one merge rule option</h3>
-<p>The following attribute types always use a single merge rule that most accurately reproduces stitching outcomes. The merge rule appears on the attribute screen, but cannot be changed.</p>
-<ul>
-<li><strong>Timelines</strong>: Always uses <strong>Merge timeline</strong> to combine entries and apply the shortest expiration (if configured).</li>
-<li><strong>Funnels</strong>: Always uses <strong>Merge funnel</strong> to retain the earliest valid occurrence of each step and maintain sequence integrity.</li>
-<li><strong>Visitor IDs</strong>: Always uses the <strong>Older</strong> rule so the earlier‑seen identifier persists.</li>
-</ul>
-<h2 id="rules-and-attributes-table">Rules and attributes table</h2>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th style="text-align:center">Badge</th>
-<th style="text-align:center">Boolean</th>
-<th style="text-align:center">Date</th>
-<th style="text-align:center">Number</th>
-<th style="text-align:center">Set of Strings</th>
-<th style="text-align:center">String</th>
-<th style="text-align:center">Tally</th>
-<th style="text-align:center">Arrays</th>
-<th style="text-align:center">Funnel</th>
-<th style="text-align:center">Timeline</th>
-<th style="text-align:center">Visitor ID</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AND</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>OR</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Max</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Min</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Newer</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-</tr>
-<tr>
-<td>Older</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Recalculate</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Recalculate (Force)</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Sum</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Union</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Union Sum</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Union Max</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Union Min</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Merge Funnel</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-</tr>
-<tr>
-<td>Merge Timeline</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">–</td>
-<td style="text-align:center">✔</td>
-<td style="text-align:center">–</td>
-</tr>
-</tbody>
-</table>
-<h2 id="merge-rule-definitions">Merge rule definitions</h2>
-<h3 id="and">AND</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>AND</td>
-<td>(Badge) Set to <code>Assigned</code> only if both are <code>Assigned</code>.<br>(Boolean) Set to <code>true</code> only if both are <code>true</code>.</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br><img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-and-example.png" />
-<p>This example attribute is <code>true</code> for a visitor if all of the visitor&rsquo;s online visits came from PPC. Based on these enrichments, the merged attribute should be <code>true</code> only if both visitors have the attribute set to <code>true</code>. If either visitor has the attribute set to <code>false</code>, it means not all of that visitor&rsquo;s online visits were from PPC, so the merged attribute value should be <code>false</code>. Use the <code>AND</code> rule to achieve the correct merged value.</p>
-<p><strong>Badges</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Visitor A</th>
-<th>Visitor B</th>
-<th>Merged visitor with AND rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Assigned</code></td>
-<td><code>Assigned</code></td>
-<td><code>Assigned</code></td>
-</tr>
-<tr>
-<td><code>Assigned</code></td>
-<td><code>Not Assigned</code></td>
-<td><code>Not Assigned</code></td>
-</tr>
-<tr>
-<td><code>Not Assigned</code></td>
-<td><code>Assigned</code></td>
-<td><code>Not Assigned</code></td>
-</tr>
-<tr>
-<td><code>Not Assigned</code></td>
-<td><code>Not Assigned</code></td>
-<td><code>Not Assigned</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Booleans</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Visitor A</th>
-<th>Visitor B</th>
-<th>Merged visitor with AND rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>True</code></td>
-<td><code>True</code></td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td><code>True</code></td>
-<td><code>False</code></td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td><code>True</code></td>
-<td>(unset)</td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td><code>False</code></td>
-<td><code>True</code></td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td><code>False</code></td>
-<td><code>False</code></td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td>(unset)</td>
-<td><code>True</code></td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td>(unset)</td>
-<td>(unset)</td>
-<td>(unset)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="or">OR</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OR</td>
-<td>(Badge) Set to <code>Assigned</code> if either is <code>Assigned</code>.<br>(Boolean) Set to <code>true</code> if either is <code>true</code>.</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br><img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-or-example.png" />
-<p>This example badge is assigned if the visitor sees a one-time event, and the badge is never unassigned.</p>
-<p>Based on these enrichments, the merged badge should be assigned if either visitor has registered, so the <code>OR</code> rule is the appropriate choice to determine the correct result.</p>
-<p><strong>Badges</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Visitor A</th>
-<th>Visitor B</th>
-<th>Merged visitor with OR rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>Assigned</code></td>
-<td><code>Assigned</code></td>
-<td><code>Assigned</code></td>
-</tr>
-<tr>
-<td><code>Assigned</code></td>
-<td><code>Not Assigned</code></td>
-<td><code>Assigned</code></td>
-</tr>
-<tr>
-<td><code>Not Assigned</code></td>
-<td><code>Assigned</code></td>
-<td><code>Assigned</code></td>
-</tr>
-<tr>
-<td><code>Not Assigned</code></td>
-<td><code>Not Assigned</code></td>
-<td><code>Not Assigned</code></td>
-</tr>
-</tbody>
-</table>
-<p><strong>Booleans</strong>:</p>
-<table>
-<thead>
-<tr>
-<th>Visitor A</th>
-<th>Visitor B</th>
-<th>Merged visitor with OR rule</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>True</code></td>
-<td><code>True</code></td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td><code>True</code></td>
-<td><code>False</code></td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td><code>True</code></td>
-<td>(unset)</td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td><code>False</code></td>
-<td><code>True</code></td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td><code>False</code></td>
-<td><code>False</code></td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td>(unset)</td>
-<td><code>True</code></td>
-<td><code>True</code></td>
-</tr>
-<tr>
-<td>(unset)</td>
-<td>(unset)</td>
-<td>(unset)</td>
-</tr>
-</tbody>
-</table>
-<h3 id="max">MAX</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MAX</td>
-<td>(Number) Keep the higher value<br>(Date) Keep the later date.</td>
-<td><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-max-example.png" />
-<p>In this example, use the MAX merge rule to select the more recent of the dates from the merged visitor profiles.</p>
-<p>Since this enrichment uses the current timestamp, the OLDER rule would produce the same result.</p>
-<h3 id="min">MIN</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>MIN</td>
-<td>(Number) Keep the lower value<br>(Date) Keep the earlier date.</td>
-<td><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-min-example.png" />
-<p>In this example, use the MIN merge rule to select the earlier of the two dates from the merged visitor profiles.</p>
-<p>Since this enrichment uses the current timestamp, the NEWER rule produces the same result.</p>
-<h3 id="newer">NEWER</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NEWER</td>
-<td>Keep the more recently updated value (including removed values)</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br> <img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date<br><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/set-of-strings.png" class="di v-mid"
-         alt="Set of Strings"
-         title="Set of Strings" width="16"/> Set of strings<br><img src="/images/server-side/string.png" class="di v-mid"
-         alt="String"
-         title="String" width="16"/> String<br><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-newer-example.png" />
-<p>The NEWER rule chooses the attribute value, including a removed value, that was updated most recently. This rule is best for attributes with enrichments that are based on incoming event attributes (as opposed to other visitor attributes).</p>
-<p>The NEWER rule is based on an internal timestamp that is set when an enrichment updates the value of an attribute. If the internal timestamp is not set for both attributes, the timestamps of the last visit for each visitor are used to determine which was set first.</p>
-<h3 id="older">OLDER</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OLDER</td>
-<td>Keep the earlier updated value (including removed values)</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br> <img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date<br><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/set-of-strings.png" class="di v-mid"
-         alt="Set of Strings"
-         title="Set of Strings" width="16"/> Set of strings<br><img src="/images/server-side/string.png" class="di v-mid"
-         alt="String"
-         title="String" width="16"/> String<br><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-older-example.png" />
-<p>The OLDER rule chooses the attribute value, including a removed value, that was updated earlier. The OLDER rule is best for attributes with enrichments that only set a value if a value is not already set to ensure that only the first value  for the visitor is saved.</p>
-<p>The OLDER rule is based on an internal timestamp that is set when an enrichment updates the value of an attribute. If the internal timestamp is not set for both attributes, the timestamps of the last visit for each visitor are used to determine which was set first.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>If an attribute does not use a self-referencing rule to ensure it&rsquo;s only set once, then using the OLDER rule will not necessarily result in the earliest value set.</p>
-<h3 id="recalculate">RECALCULATE</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RECALCULATE</td>
-<td>Discard previous values and run enrichments on the final merged profile.</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br> <img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date<br><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/set-of-strings.png" class="di v-mid"
-         alt="Set of Strings"
-         title="Set of Strings" width="16"/> Set of strings<br><img src="/images/server-side/string.png" class="di v-mid"
-         alt="String"
-         title="String" width="16"/> String<br><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally<br><img src="/images/server-side/array-of-booleans.png" class="di fl"
-         alt="Array of Booleans"
-         title="Array of Booleans" width="16"/> Array of booleans<br><img src="/images/server-side/array-of-numbers.png" class="di fl"
-         alt="Array of Numbers"
-         title="Array of Numbers" width="16"/> Array of numbers<br><img src="/images/server-side/array-of-strings.png" class="di fl"
-         alt="Array of Strings"
-         title="Array of Strings" width="16"/> Array of strings</td>
-</tr>
-</tbody>
-</table>
-<p>The RECALCULATE rule discards the initial merged value of the attribute and reruns the enrichments for the attribute. Discarding the initial merged value ensures that the recalculation starts with an empty value and the value is set only based on the enrichments.</p>
-<p>The RECALCULATE rule is best for attributes derived from the value of another visitor or visit attribute, such as a number attribute that is the count of items in a set of strings. In these cases, the underlying attribute values are set first using other merge rules and then the RECALCULATE rule runs.</p>
-<p><strong>Rule behavior</strong>:</p>
-<ul>
-<li>If an enrichment is set to run on <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong>, it is run in the merge rule only if the event leading to the merge also caused a <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong>.</li>
-<li>Enrichment rule conditions that use event attributes are evaluated based on the event that caused the merge.</li>
-<li>Enrichment rule conditions with the <strong>Has Changed</strong> operator evaluate to <code>true</code> if this attribute has changed compared to <em>either</em> of the visitor profiles being merged.</li>
-</ul>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-recalculate-example.png" />
-<p>In this example, the attribute value is based on another visitor attribute, <code>Orders Timeline</code>. The <code>Orders Timeline</code> attribute has its own merge rule (in this case, a timeline merge) which runs before this number attribute is evaluated by the RECALCULATE rule.</p>
-<h3 id="recalculate-force">RECALCULATE (FORCE)</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>RECALCULATE (FORCED)</td>
-<td>Discard previous values and run enrichments on the final merged profile and force some conditions to <code>true</code>.</td>
-<td><img src="/images/server-side/badge.png" class="di v-mid"
-         alt="Badge"
-         title="Badge" width="16"/> Badge<br> <img src="/images/server-side/boolean.png" class="di v-mid"
-         alt="Boolean"
-         title="Boolean" width="16"/> Boolean<br><img src="/images/server-side/date.png" class="di v-mid"
-         alt="Date"
-         title="Date" width="16"/> Date<br><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number<br><img src="/images/server-side/set-of-strings.png" class="di v-mid"
-         alt="Set of Strings"
-         title="Set of Strings" width="16"/> Set of strings<br><img src="/images/server-side/string.png" class="di v-mid"
-         alt="String"
-         title="String" width="16"/> String<br><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally<br><img src="/images/server-side/array-of-booleans.png" class="di fl"
-         alt="Array of Booleans"
-         title="Array of Booleans" width="16"/> Array of booleans<br><img src="/images/server-side/array-of-numbers.png" class="di fl"
-         alt="Array of Numbers"
-         title="Array of Numbers" width="16"/> Array of numbers<br><img src="/images/server-side/array-of-strings.png" class="di fl"
-         alt="Array of Strings"
-         title="Array of Strings" width="16"/> Array of strings</td>
-</tr>
-</tbody>
-</table>
-<p>The RECALCULATE (FORCE) rule is the same as the RECALCULATE rule except that it forces several enrichment conditions to <code>true</code>. The RECALCULATE (FORCE) rule is best for attributes derived from the value of one or more other visitor or visit attributes that also use any of the <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong> conditions.</p>
-<p>Visitor stitching can occur at times that do not coincide with the <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong> conditions, so this rule forces those enrichments to run to ensure the correct value is set.</p>
-<p><strong>Rule behavior</strong>:</p>
-<ul>
-<li>If an enrichment is set to run on <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong>, it is forced to run in the merge rule even if the event leading to the merge did not cause a <strong>New Visitor</strong>, <strong>New Visit</strong>, or <strong>End of Visit</strong>.</li>
-<li>Enrichment rule conditions that use event attributes are forced to evaluate to <code>true</code>.</li>
-<li>Enrichment rule conditions with the <strong>Has Changed</strong> operator are forced to evaluate to <code>true</code>.</li>
-</ul>
-<p><strong>Example</strong></p>
-<img src="/images/server-side/merge-rules/rule-recalculate-force-end-visit.png" />
-<p>In this example, the attribute depends on another visitor attribute, <code>Lifetime visit count</code>, and assigns a badge when the visitor has made 10 or more visits. However, the enrichment is set to run on <code>Visit Ended</code>, which might not be true when the visitor stitching occurs, so the RECALCULATE (FORCE) rule should be used to force the enrichment to run anyway.</p>
-<p>If <code>Visit Ended</code> is not forced to evaluate to <code>true</code>, the badge could remain unassigned until the end of the visit and the visitor could leave and then rejoin the audience. This might be undesirable behavior if leaving the audience causes connector actions to fire.</p>
-<h3 id="sum">SUM</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SUM</td>
-<td>Add values from both visitors.</td>
-<td><img src="/images/server-side/number.png" class="di v-mid"
-         alt="Number"
-         title="Number" width="16"/> Number</td>
-</tr>
-</tbody>
-</table>
-<p>The SUM rule keeps the sum of the values of each number attribute. If one of the values is not set, the result is the other value that is set. If neither value is set, the merged value is also not set (as opposed to a value of <code>0</code>).</p>
-<img src="/images/server-side/merge-rules/rule-sum-example.png" />
-<p>In this example, if Visitor A made 10 online visits and Visitor B made 5, then the merged visitor should have 15 visits.</p>
-<h3 id="union">UNION</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UNION</td>
-<td>Combine values from both, preserving consistent order across arrays.</td>
-<td><img src="/images/server-side/set-of-strings.png" class="di v-mid"
-         alt="Set of Strings"
-         title="Set of Strings" width="16"/> Set of strings<br><img src="/images/server-side/array-of-booleans.png" class="di v-mid"
-         alt="Array of Booleans"
-         title="Array of Booleans" width="16"/> Array of booleans<br><img src="/images/server-side/array-of-numbers.png" class="di v-mid"
-         alt="Array of Numbers"
-         title="Array of Numbers" width="16"/> Array of numbers<br><img src="/images/server-side/array-of-strings.png" class="di v-mid"
-         alt="Array of Strings"
-         title="Array of Strings" width="16"/> Array of strings</td>
-</tr>
-</tbody>
-</table>
-<p>The UNION rule combines values from both attributes, preserving consistent order across arrays. The values in a set of strings are deduplicated.</p>
-<p><strong>Example: Set of strings</strong></p>
-<img src="/images/server-side/merge-rules/rule-union-set-example.png" />
-<p>In this example, the UNION rule combines the entries and removes the duplicate entry for Wednesday because entries in a set of strings must be unique.</p>
-<p>Example of UNION rule for a set of strings attribute:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-A:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Monday&#34;</span>, <span style="color:#e6db74">&#34;Wednesday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-B:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Friday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Merged:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Monday&#34;</span>, <span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Friday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Example: Array</strong></p>
-<img src="/images/server-side/merge-rules/rule-union-array-example.png" />
-<p>In this example, an array of strings attribute tracks the day of the week each time the visitor sees the order confirmation page. Unlike a set of strings attribute, the merged value of two arrays can contain duplicate values.</p>
-<p>Example of a UNION rule for an array of strings attribute:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-Older:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Monday&#34;</span>, <span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Monday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-Active:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Friday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Merged:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Days of week viewed confirmation&#34;</span>: [<span style="color:#e6db74">&#34;Monday&#34;</span>, <span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Monday&#34;</span>, <span style="color:#e6db74">&#34;Wednesday&#34;</span>, <span style="color:#e6db74">&#34;Friday&#34;</span>]
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>The merged attribute retains the order of the arrays from the original visitor profiles, with the older visitor entries first and the active visitor entries second.</p>
-<h3 id="union-maxminsum">UNION MAX/MIN/SUM</h3>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-<th>Supported data types</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>UNION MAX</td>
-<td>Merge keys and keep the higher value for matching keys.</td>
-<td><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally</td>
-</tr>
-<tr>
-<td>UNION MIN</td>
-<td>Merge keys and keep the lower value for matching keys.</td>
-<td><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally</td>
-</tr>
-<tr>
-<td>UNION SUM</td>
-<td>Merge keys and add values for matching keys.</td>
-<td><img src="/images/server-side/tally.png" class="di v-mid"
-         alt="Tally"
-         title="Tally" width="16"/> Tally</td>
-</tr>
-</tbody>
-</table>
-<p>The UNION MAX/MIN/SUM rules merge tally attributes where the values of any common keys are combined based on the specific rule (MAX, MIN, or SUM). The merged tally retains all keys that exist in one of the original attributes.</p>
-<p><strong>Example: UNION SUM</strong></p>
-<img src="/images/server-side/merge-rules/rule-union-sum-example.png" />
-<p>In this example, the tally counts the different product categories the visitor has seen on product details pages. Use the UNION SUM rule to merge the keys and add the values for matching keys.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-A:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Lifetime count of product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Accessories&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">2</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">1</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-B:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Lifetime count of product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">4</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">3</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Electronics&#34;</span>: <span style="color:#ae81ff">5</span>    
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Merged:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Lifetime count of product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Accessories&#34;</span>: <span style="color:#ae81ff">1</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">6</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">4</span>,
-</span></span><span style="display:flex;"><span>      <span style="color:#f92672">&#34;Electronics&#34;</span>: <span style="color:#ae81ff">5</span>    
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p><strong>Example: UNION MAX</strong></p>
-<img src="/images/server-side/merge-rules/rule-union-max-example.png" />
-<p>In this example, the tally stores the last date (in milliseconds since the Epoch) that a product category was seen. Use the UNION MAX rule to merge the keys and keep the most recent value for matching keys.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-A:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Dates of last seen product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Accessories&#34;</span>: <span style="color:#ae81ff">1702454863722</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">1733414869787</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">1731414884828</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Visitor-B:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Dates of last seen product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">1732424969356</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">1733414883367</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Electronics&#34;</span>: <span style="color:#ae81ff">1721357252812</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span><span style="color:#960050;background-color:#1e0010">Merged:</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;Date of last seen product categories&#34;</span>: {
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Accessories&#34;</span>: <span style="color:#ae81ff">1702454863722</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Apparel&#34;</span>: <span style="color:#ae81ff">1733414869787</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Books&#34;</span>: <span style="color:#ae81ff">1733414883367</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;Electronics&#34;</span>: <span style="color:#ae81ff">1721357252812</span>
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div>
+</figure></li>
+<li>Click <strong>Save</strong>.</li>
+<li>Save and Publish your changes.</li>
+</ol>
+<h2 id="http-response-cookies">HTTP response cookies</h2>
+<p>Cookie-based session management is generally discouraged in server-to-server environments that communicate with stateless APIs. For that reason, the webhook connector does not track cookie-based sessions and effectively ignores <code>Set-Cookie</code> header values in HTTP responses.</p>
+
 </div>
 
 <div class="mv30 nested-links overflow-hidden dn-p flex justify-between flex-row-reverse"><div class="w-50 ml3">
 
   
-  <a href="/server-side/visitor-stitching/diagram/"
+  <a href="/server-side/connectors/webhook-connectors/actions-and-parameters/"
     class="w-100 justify-end inline-flex items-center ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Visitor stitching example</div>
+      <div>Actions and parameters</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Visitor stitching example"</title>
+      <title>"Actions and parameters"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1884,14 +1214,14 @@ Keep authoritative values imported from systems of record (for example, CRM) tha
 </div><div class="w-50 mr3">
   
   
-  <a href="/server-side/visitor-stitching/visitor-id-attribute/"
+  <a href="/server-side/connectors/webhook-connectors/about/"
     class="w-100 justify-start inline-flex items-center ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Visitor ID attributes "</title>
+      <title>"About webhook connectors "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Visitor ID attributes</div>
+      <div>About webhook connectors</div>
     </section>
   </a>
   
@@ -1923,7 +1253,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  December 14, 2025 
+          <p>This page was last updated:  December 10, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1937,31 +1267,12 @@ No</button>
 
   <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#requirements" href="javascript:void(0)">Requirements</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it works</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#enable-stitching-merge-rules" href="javascript:void(0)">Enable stitching merge rules</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#when-merge-rules-apply" href="javascript:void(0)">When merge rules apply</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#identify-attributes-that-need-a-merge-rule" href="javascript:void(0)">Identify attributes that need a merge rule</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#analyze-enrichments" href="javascript:void(0)">Analyze enrichments</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#automatic-merge-rules" href="javascript:void(0)">Automatic merge rules</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#funnels" href="javascript:void(0)">Funnels</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#timelines" href="javascript:void(0)">Timelines</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tally-favorites" href="javascript:void(0)">Tally favorites</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#preloaded-attributes" href="javascript:void(0)">Preloaded attributes</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#attributes-with-only-one-merge-rule-option" href="javascript:void(0)">Attributes with only one merge rule option</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#rules-and-attributes-table" href="javascript:void(0)">Rules and attributes table</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#merge-rule-definitions" href="javascript:void(0)">Merge rule definitions</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#and" href="javascript:void(0)">AND</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#or" href="javascript:void(0)">OR</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#max" href="javascript:void(0)">MAX</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#min" href="javascript:void(0)">MIN</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#newer" href="javascript:void(0)">NEWER</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#older" href="javascript:void(0)">OLDER</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#recalculate" href="javascript:void(0)">RECALCULATE</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#recalculate-force" href="javascript:void(0)">RECALCULATE (FORCE)</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#sum" href="javascript:void(0)">SUM</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#union" href="javascript:void(0)">UNION</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#union-maxminsum" href="javascript:void(0)">UNION MAX/MIN/SUM</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#basicauth" href="javascript:void(0)">BasicAuth</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#oauth2-3-legged" href="javascript:void(0)">OAuth2 (3-legged)</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#oauth2-2-legged" href="javascript:void(0)">OAuth2 (2-legged)</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#jwt" href="javascript:void(0)">JWT</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#access-tokens-for-oauth2" href="javascript:void(0)">Access tokens for OAuth2</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#http-response-cookies" href="javascript:void(0)">HTTP response cookies</a></li>
               </nav>
   </aside></nav>
 

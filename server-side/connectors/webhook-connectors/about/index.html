@@ -11,7 +11,7 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/about/" />
 <meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
-<meta property="og:description" content="This article describes the available webhook connectors." />
+<meta property="og:description" content="Connect the webhook connector to an HTTP API endpoint to send event or visitor data directly to your service, either by posting the full JSON payload or mapping individual attributes to request fields." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
     <title>About webhook connectors | Webhook connectors | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
@@ -143,6 +143,10 @@
       
       <li  class="tl dib ma0 w-100">
       <a href="/server-side/data-sources/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Data sources</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
+      <a href="/server-side/cloudstream/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>CloudStream</span></a>
       </li>
       
       <li  class="tl dib ma0 w-100">
@@ -439,6 +443,18 @@
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".cloudstream">CloudStream</a>
+        <ul class="pl2  cloudstream desktopmenu animated fadeIn list  dn">
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-cloudstream">About</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/datasources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-datasources">Data sources</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-attributes">Cloud attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/segments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-segments">Segments</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-connect">Data Connect</a>
         <ul class="pl2  data-connect desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -645,9 +661,9 @@
     <li data-level="4" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/about/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">About webhook connectors</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">BasicAuth and OAuth2</a></li>
+        <a href="/server-side/connectors/webhook-connectors/authentication/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Authentication</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/action-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Action parameters</a></li>
+        <a href="/server-side/connectors/webhook-connectors/actions-and-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Actions and parameters</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/validate-webhook-action/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Validate webhook action</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -727,8 +743,6 @@
         <a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".anonymous-user-visitor-id-attributes">Anonymous IDs, user identifiers, and visitor ID attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/visitor-id-attribute/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-id-attribute">Visitor ID attributes</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/visitor-stitching/stitching-merge-rules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Stitching merge rules</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/diagram/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-stitching-example">Visitor stitching example</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -810,6 +824,12 @@
         <a href="/server-side/functions/data-transformation-functions/functions-transforms-example-code/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-transforms-example-code">Example code</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/data-transformation-functions/transforms-flatten-library/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".transforms-flatten-library">Flatten nested objects</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-record-functions">Data record functions</a>
+        <ul class="pl2  data-record-functions desktopmenu animated fadeIn list  dn">
+    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/functions/data-record-functions/data-record-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-data-record-functions">About data record functions</a></li></ul>
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
@@ -994,7 +1014,7 @@
 
   
     <p class="f5 f4-ns fw3 lh-copy">
-      This article describes the available webhook connectors.
+      Connect the webhook connector to an HTTP API endpoint to send event or visitor data directly to your service, either by posting the full JSON payload or mapping individual attributes to request fields.
     </p>
   
 </div>
@@ -1006,68 +1026,77 @@
 <li>Tealium account enabled for AudienceStream (for visitor data)</li>
 </ul>
 <h2 id="how-it-works">How it works</h2>
-<p>The Webhook Connector sends customized data to your vendor through HTTP requests, using all aspects of an HTTP request, including the URL, URL Parameters, Headers, Cookies, Body Content Type, and Body Data. Webhook also supports batching. Additionally, it includes a powerful templating feature designed to handle complex and dynamic data formats.</p>
-<p>There are three Webhook connectors to choose from based on the authorization requirements of your vendor, as follows:</p>
+<p>The webhook connector sends event or visitor data to your vendor through HTTP requests. All aspects of the HTTP request can be configured to create the exact request needed by your vendor.</p>
+<h2 id="authentication">Authentication</h2>
+<p>The following authentication methods are supported for HTTP-based webhook connectors:</p>
 <ul>
-<li><strong>Webhook (BasicAuth)</strong> – For services that do not require authentication or only require basic authentication with a username and password.</li>
-<li><strong>Webhook (OAuth2 - 3-Legged)</strong> – Requires the user to login to the service to obtain an access token.</li>
-<li><strong>Webhook (OAuth2 - 2-Legged)</strong> – Does not require the user to login to the service. The webhook is configured with the information required to authenticate.</li>
-<li><strong>Webhook (JWT)</strong> – Uses JSON web token authentication. Does not require the user to log in to the service. The webhook is configured with the information required to authenticate.</li>
+<li><strong>BasicAuth</strong>: Authenticate webhook requests using a username and password sent with the request.</li>
+<li><strong>OAuth2 3-Legged</strong>: Authenticate webhook requests through a user-consent flow that issues access tokens on the user&rsquo;s behalf. Requires the user to log in to the service to obtain an access token.</li>
+<li><strong>OAuth2 2-Legged</strong>: Authenticate webhook requests using server-to-server access tokens without any user involvement.</li>
+<li><strong>JWT</strong>: Authenticate webhook requests with a JSON web token.</li>
 </ul>
 <p>Webhook OAuth2 is used for services that explicitly require OAuth 2.0 authentication.</p>
-<p>To get started, go to the connector marketplace and add the Webhook instance you want to use. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">Connector Overview</a></p>
-<h2 id="connector-actions">Connector actions</h2>
+<p>For more information, see <a href="/server-side/connectors/webhook-connectors/authentication/">Webhook authentication</a>.</p>
+<p class="tip"><i class="fa fa-info-circle"></i>To use a webhook to send data to a JDBC-compatible database, see <a href="/server-side-connectors/webhook-jdbc/">Webhook JDBC</a>.</p>
+<h2 id="actions">Actions</h2>
 <table>
 <thead>
 <tr>
-<th><strong>Action Name</strong></th>
-<th><strong>Description</strong></th>
-<th><strong>Webhook (BasicAuth)</strong></th>
-<th><strong>Webhook OAuth2</strong></th>
+<th style="text-align:left">Action Name</th>
+<th style="text-align:left">Description</th>
+<th style="text-align:left">Webhook (BasicAuth)</th>
+<th style="text-align:left">Webhook OAuth2</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="/server-side/connectors/webhook-connectors/action-parameters/#action---send-event-data-via-http-request">Send Event Data via HTTP Request</a></td>
-<td>Sends the entire event object, either as a URL-encoded JSON string or a JSON payload.</td>
-<td>✓</td>
-<td>✗</td>
+<td style="text-align:left">Send Event Data via HTTP Request</td>
+<td style="text-align:left">Sends the entire event object, either as a URL-encoded JSON string or a JSON payload.</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
 </tr>
 <tr>
-<td><a href="/server-side/connectors/webhook-connectors/action-parameters/#action---send-visitor-data-via-http-request">Send Visitor Data via HTTP Request</a></td>
-<td>Sends the entire visitor profile object, either as a URL-encoded JSON string or a JSON payload.</td>
-<td>✓</td>
-<td>✗</td>
+<td style="text-align:left">Send Visitor Data via HTTP Request</td>
+<td style="text-align:left">Sends the entire visitor profile object, either as a URL-encoded JSON string or a JSON payload.</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
 </tr>
 <tr>
-<td><a href="/server-side/connectors/webhook-connectors/action-parameters/#action---send-customized-data-via-http-request-advanced">Send Customized Data via HTTP Request (Advanced)</a></td>
-<td>Sends individual event/visitor attributes specified with mappings.</td>
-<td>✓</td>
-<td>✓</td>
+<td style="text-align:left">Send Customized Data via HTTP Request (Advanced)</td>
+<td style="text-align:left">Sends individual event/visitor attributes specified with mappings</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
 </tr>
 <tr>
-<td><a href="/server-side/connectors/webhook-connectors/action-parameters/#action---send-batched-customized-data-via-http-request-advanced">Send Batched Customized Data via HTTP Request (Advanced)</a></td>
-<td>Sends batched event/visitor attributes specified with mappings.</td>
-<td>✓</td>
-<td>✓</td>
+<td style="text-align:left">Send Batched Data via HTTP Request</td>
+<td style="text-align:left">Sends the entire event object, either as a URL-encoded JSON string or a JSON payload.</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
+</tr>
+<tr>
+<td style="text-align:left">Send Batched Customized Data via HTTP Request (Advanced)</td>
+<td style="text-align:left">Sends batched event/visitor attributes specified with mappings.</td>
+<td style="text-align:left">✓</td>
+<td style="text-align:left">✓</td>
 </tr>
 </tbody>
 </table>
+<p>For more information, see <a href="/server-side/connectors/webhook-connectors/actions-and-parameters/">Webhook actions and parameters</a>.</p>
 <h2 id="http-response-cookies">HTTP response cookies</h2>
-<p>While cookie-based session management is common in web browsers, it is generally discouraged in server-to-server environments that communicate with stateless APIs. For that reason, the Webhook connector does not track cookie-based sessions and effectively ignores <code>Set-Cookie</code> header values in HTTP responses.</p>
+<p>While cookie-based session management is common in web browsers, it is generally discouraged in server-to-server environments that communicate with stateless APIs. For that reason, the webhook connector does not track cookie-based sessions and effectively ignores <code>Set-Cookie</code> header values in HTTP responses.</p>
 
 </div>
 
 <div class="mv30 nested-links overflow-hidden dn-p flex justify-between flex-row-reverse"><div class="w-50 ml3">
 
   
-  <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/"
+  <a href="/server-side/connectors/webhook-connectors/authentication/"
     class="w-100 justify-end inline-flex items-center ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>BasicAuth and OAuth2</div>
+      <div>Authentication</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"BasicAuth and OAuth2"</title>
+      <title>"Authentication"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1100,7 +1129,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  November 6, 2025 
+          <p>This page was last updated:  December 10, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1116,7 +1145,8 @@ No</button>
       <p class="b ttu">On this page</p>
       <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#requirements" href="javascript:void(0)">Requirements</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it works</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#connector-actions" href="javascript:void(0)">Connector actions</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#authentication" href="javascript:void(0)">Authentication</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#actions" href="javascript:void(0)">Actions</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#http-response-cookies" href="javascript:void(0)">HTTP response cookies</a></li>
               </nav>
   </aside></nav>

@@ -38,7 +38,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side",
-        reading_time  : "5",
+        reading_time  : "4",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -143,6 +143,10 @@
       
       <li  class="tl dib ma0 w-100">
       <a href="/server-side/data-sources/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Data sources</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
+      <a href="/server-side/cloudstream/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>CloudStream</span></a>
       </li>
       
       <li  class="tl dib ma0 w-100">
@@ -439,6 +443,18 @@
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".cloudstream">CloudStream</a>
+        <ul class="pl2  cloudstream desktopmenu animated fadeIn list  dn">
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-cloudstream">About</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/datasources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-datasources">Data sources</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-attributes">Cloud attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/cloudstream/segments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloudstream-segments">Segments</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-connect">Data Connect</a>
         <ul class="pl2  data-connect desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -645,9 +661,9 @@
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">About webhook connectors</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/basicauth-oauth2/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">BasicAuth and OAuth2</a></li>
+        <a href="/server-side/connectors/webhook-connectors/authentication/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Authentication</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/connectors/webhook-connectors/action-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Action parameters</a></li>
+        <a href="/server-side/connectors/webhook-connectors/actions-and-parameters/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Actions and parameters</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/connectors/webhook-connectors/validate-webhook-action/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Validate webhook action</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -727,8 +743,6 @@
         <a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".anonymous-user-visitor-id-attributes">Anonymous IDs, user identifiers, and visitor ID attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/visitor-id-attribute/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-id-attribute">Visitor ID attributes</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/visitor-stitching/stitching-merge-rules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Stitching merge rules</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/diagram/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-stitching-example">Visitor stitching example</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -810,6 +824,12 @@
         <a href="/server-side/functions/data-transformation-functions/functions-transforms-example-code/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-transforms-example-code">Example code</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/data-transformation-functions/transforms-flatten-library/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".transforms-flatten-library">Flatten nested objects</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-record-functions">Data record functions</a>
+        <ul class="pl2  data-record-functions desktopmenu animated fadeIn list  dn">
+    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/functions/data-record-functions/data-record-functions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-data-record-functions">About data record functions</a></li></ul>
       </li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
@@ -1128,40 +1148,6 @@
 <li><strong>Enriched With</strong>:  Remove <code>purchased_product</code> (value &ldquo;iPhone Case&rdquo;)</li>
 <li><strong>Resulting Value</strong>: <code>&quot;iPhone 10&quot;, &quot;AirPods Pro&quot;</code></li>
 </ul>
-<h2 id="stitching-merge-rules">Stitching merge rules</h2>
-<p>Stitching merge rules (if enabled) are optional, per‑attribute rules that determine the final value of an attribute when two visitor profiles are stitched.</p>
-<p>The set of strings attribute supports the following stitching merge rules:</p>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NEWER</td>
-<td>Keep the more recently updated value (including removed values)</td>
-</tr>
-<tr>
-<td>OLDER</td>
-<td>Keep the earlier updated value (including removed values)</td>
-</tr>
-<tr>
-<td>RECALCULATE</td>
-<td>Discard previous values and run enrichments on the final merged profile</td>
-</tr>
-<tr>
-<td>RECALCULATE (FORCE)</td>
-<td>Discard previous values and run enrichments on the final merged profile, force some conditions to true</td>
-</tr>
-<tr>
-<td>UNION</td>
-<td>Combine values from both, preserving consistent order across arrays</td>
-</tr>
-</tbody>
-</table>
-<p>For more information, see <a href="/server-side/visitor-stitching/stitching-merge-rules/">Stitching merge rules</a>.</p>
 
 </div>
 
@@ -1222,7 +1208,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  December 14, 2025 
+          <p>This page was last updated:  December 15, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1248,7 +1234,6 @@ No</button>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#set-to-top-tally-items" href="javascript:void(0)">Set to Top Tally Items</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#set-to-tally-items-above-target-value" href="javascript:void(0)">Set to Tally Items Above Target Value</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#remove-entry-from-set-of-strings" href="javascript:void(0)">Remove Entry from Set of Strings</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#stitching-merge-rules" href="javascript:void(0)">Stitching merge rules</a></li>
               </nav>
   </aside></nav>
 

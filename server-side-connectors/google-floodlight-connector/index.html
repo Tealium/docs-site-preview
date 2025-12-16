@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Criteo Audience Match Connector Setup Guide" />
+    <meta property="og:title" content="Google Floodlight (CM360/SA360/DV360) Connector Setup Guide" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs-preview.tealium.com/server-side-connectors/criteo-audience-match-connector/" />
-<meta property="og:image" content="https://docs-preview.tealium.com/images/integrations/criteo.png" />
-<meta property="og:description" content="This article describes how to set up the Criteo Audience Match connector." />
+<meta property="og:url" content="https://docs-preview.tealium.com/server-side-connectors/google-floodlight-connector/" />
+<meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
+<meta property="og:description" content="This article describes how to configure the Google Floodlight (CM360/SA360/DV360) Connector in your Customer Data Hub account." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
-    <title>Criteo Audience Match Connector Setup Guide | Server-Side Connectors | Preview of Tealium Docs</title>
+    <title>Google Floodlight (CM360/SA360/DV360) Connector Setup Guide | Server-Side Connectors | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -22,7 +22,7 @@
     <meta NAME="robots" CONTENT="noindex, nofollow">
     
     
-    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/server-side-connectors/criteo-audience-match-connector/">
+    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/server-side-connectors/google-floodlight-connector/">
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
@@ -38,7 +38,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side-connectors",
-        reading_time  : "3",
+        reading_time  : "7",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -98,7 +98,7 @@
         
       
         
-          <a href="/ja/server-side-connectors/criteo-audience-match-connector/" class="dim link mid-gray">日本語</a>
+          <a href="/ja/server-side-connectors/google-floodlight-connector/" class="dim link mid-gray">日本語</a>
         
       
       </li>
@@ -121,7 +121,7 @@
         
       
         
-          <a href="/ja/server-side-connectors/criteo-audience-match-connector/" class="dim link mid-gray">日本語</a>
+          <a href="/ja/server-side-connectors/google-floodlight-connector/" class="dim link mid-gray">日本語</a>
         
       
       </li>
@@ -341,7 +341,7 @@
       <a href="/server-side-connectors/criteo-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Criteo</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
-      <a href="/server-side-connectors/criteo-audience-match-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Criteo Audience Match</span></a>
+      <a href="/server-side-connectors/criteo-audiences-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Criteo Audiences</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
       <a href="/server-side-connectors/criteo-audiences-oauth-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Criteo Audiences (OAuth)</span></a>
@@ -449,9 +449,6 @@
       <a href="/server-side-connectors/google-bigquery-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google BigQuery</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
-      <a href="/server-side-connectors/google-campaign-manager-360-floodlight-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google Campaign Manager 360 Floodlight</span></a>
-      </li>
-  <li  class="tl dib ma0 w-100">
       <a href="/server-side-connectors/google-cloud-pubsub-connector-service-account/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google Cloud Pub/Sub</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
@@ -462,6 +459,9 @@
       </li>
   <li  class="tl dib ma0 w-100">
       <a href="/server-side-connectors/google-display-video-360-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google Display and Video 360</span></a>
+      </li>
+  <li  class="tl dib ma0 w-100">
+      <a href="/server-side-connectors/google-floodlight-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google Floodlight</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
       <a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Google SA360 Enhanced Conversions</span></a>
@@ -845,7 +845,10 @@
       <a href="/server-side-connectors/vkontakte-ads-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>VKontakte Ads</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
-      <a href="/server-side-connectors/webhook-connector-setup-guide/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Webhook</span></a>
+      <a href="/server-side-connectors/webhook-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Webhook</span></a>
+      </li>
+  <li  class="tl dib ma0 w-100">
+      <a href="/server-side-connectors/webhook-jdbc/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Webhook JDBC</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
       <a href="/server-side-connectors/whatsapp-business-connector/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>WhatsApp Business</span></a>
@@ -1051,8 +1054,8 @@
         <a href="/server-side-connectors/coveo-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".coveo-connector">Coveo</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/criteo-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".criteo-connector-setup-guide">Criteo</a></li>
-    <li data-level="1" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/criteo-audience-match-connector/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".criteo-audience-match-connector-setup-guide">Criteo Audience Match</a></li>
+    <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/criteo-audiences-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".criteo-audiences-connector-setup-guide">Criteo Audiences</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/criteo-audiences-oauth-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".criteo-audiences-oauth-connector">Criteo Audiences (OAuth)</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -1124,8 +1127,6 @@
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-bigquery-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-bigquery-connector">Google BigQuery</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/google-campaign-manager-360-floodlight-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-campaign-manager-360-floodlight-connector-setup-guide">Google Campaign Manager 360 Floodlight</a></li>
-    <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-cloud-pubsub-connector-service-account/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-cloud-pubsub-connector-service-account">Google Cloud Pub/Sub</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-cloud-storage-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-cloud-storage-connector">Google Cloud Storage</a></li>
@@ -1133,6 +1134,8 @@
         <a href="/server-side-connectors/google-dv-360-customer-match-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-dv360-customer-match-connector">Google Display &amp; Video 360 Customer Match</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-display-video-360-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-display-amp-video-360-connector-setup-guide">Google Display and Video 360</a></li>
+    <li data-level="1" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/google-floodlight-connector/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".google-floodlight-connector-setup-guide">Google Floodlight</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".google-sa360-enhanced-conversions-connector">Google SA360 Enhanced Conversions</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -1388,7 +1391,9 @@
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/vkontakte-ads-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".vkontakte-ads-connector">VKontakte Ads</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side-connectors/webhook-connector-setup-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".webhook-connector-setup-guide">Webhook</a></li>
+        <a href="/server-side-connectors/webhook-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Webhook</a></li>
+    <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side-connectors/webhook-jdbc/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Webhook JDBC</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side-connectors/whatsapp-business-connector/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".whatsapp-business-connector">WhatsApp Business</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -1441,7 +1446,7 @@
 </ul>
 </nav>
 
-<h1 class="lh-title mt4 mt30-ns mb3">Criteo Audience Match Connector Setup Guide</h1>
+<h1 class="lh-title mt4 mt30-ns mb3">Google Floodlight (CM360/SA360/DV360) Connector Setup Guide</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -1449,14 +1454,53 @@
 
   
     <p class="f5 f4-ns fw3 lh-copy">
-      This article describes how to set up the Criteo Audience Match connector.
+      This article describes how to configure the Google Floodlight (CM360/SA360/DV360) Connector in your Customer Data Hub account.
     </p>
   
 </div>
 
 <div class="prose nested-links" id="prose">
-  <p class="note"><i class="fa fa-exclamation-triangle"></i>We reccomend that you use the <a href="/server-side-connectors/criteo-audiences-oauth-connector/">Criteo Audience Match (OAuth) connector</a> to send visitor data to Criteo. The OAuth connector uses your Criteo account credentials and the Authorization Code flow for improved security, privacy, and easier account management.</p>
-<h2 id="connector-actions">Connector actions</h2>
+  <p>The Google Floodlight connector inserts offline conversions into the Floodlight Conversion Tracking and Attribution system through the Google Campaign Manager 360 API.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Floodlight is the conversion tracking system used across the Google Marketing Platform. All GMP products (Campaign Manager 360*, Search Ads 360, and Display &amp; Video 360) can use Floodlight for measuring conversions.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>You must have a Campaign Manager 360 (CM360) account.</li>
+<li>Your CM360 account must be enabled for API access.</li>
+<li>You must have a CM360 user profile with access to the advertiser account used for Floodlight tracking.</li>
+<li>Enable the following OAuth scope in your CM360 account to grant access to conversion data: <code>https://www.googleapis.com/auth/ddmconversions</code>.</li>
+<li>Add the <strong><a href="mailto:api@tealium.com">api@tealium.com</a></strong> user to your account and grant it access to your CM360 account with the <strong>Insert offline conversions</strong> permission.</li>
+<li>After you add the <strong><a href="mailto:api@tealium.com">api@tealium.com</a></strong> user to your CM360 account, use the generated profile ID in the connector, either on the configuration page or on an action page. If it is defined in both locations, the profile ID defined on an action page takes precedence.</li>
+</ul>
+<h2 id="api-information">API information</h2>
+<p>This connector uses the following vendor API:</p>
+<ul>
+<li>API Name: Google Campaign Manager 360 API</li>
+<li>API Version: v4</li>
+<li>API Endpoint: <code>https://www.googleapis.com/dfareporting/</code></li>
+<li>Documentation: <a href="https://developers.google.com/doubleclick-advertisers/rest/v4">Campaign Manager 360 API</a></li>
+</ul>
+<h3 id="batch-limits">Batch limits</h3>
+<p>This connector uses batched requests to support high-volume data transfers to the vendor. For more information, see <a href="/server-side/connectors/batched-actions/">Batched Actions</a>. Requests are queued until one of the following thresholds is met or the profile is published:</p>
+<ul>
+<li>Max number of requests: 1000</li>
+<li>Max time since oldest request: 60 minutes</li>
+<li>Max size of requests: 1 MB</li>
+</ul>
+<h2 id="delayed-actions">Delayed actions</h2>
+<p>Actions are delayed for 30 minutes to accommodate uploading offline conversions, as per Google’s best practices. For more information about delayed actions using the Google Campaign Manager 360 Floodlight connector, see <a href="https://support.google.com/campaignmanager/answer/2823388?hl=en">Google: Best practices for uploading offline conversions</a>.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Actions are not delayed when using <a href="/server-side/trace/about/">trace</a> in EventSream or AudienceStream.</p>
+<h2 id="configuration">Configuration</h2>
+<p>Go to the Connector Marketplace and add a new connector. Read the <a href="/server-side/connectors/about/">Connector Overview</a> article for general instructions on how to add a connector.</p>
+<p>After adding the connector, configure the following settings:</p>
+<ul>
+<li><strong>Floodlight Profile ID</strong>
+<ul>
+<li>The Floodlight Profile ID that is given to you by Campaign Manager 360, after adding the <code>api@tealium.com</code> user to your Campaign Manager 360 account.</li>
+</ul>
+</li>
+</ul>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>When you add this connector, you are be prompted to accept the vendor&rsquo;s data platform policy.</p>
+<h2 id="actions">Actions</h2>
 <table>
 <thead>
 <tr>
@@ -1467,54 +1511,113 @@
 </thead>
 <tbody>
 <tr>
-<td>Add User to Audience</td>
-<td>✓</td>
-<td>✓</td>
-</tr>
-<tr>
-<td>Remove User from Audience</td>
+<td>Track Floodlight Conversion</td>
 <td>✓</td>
 <td>✓</td>
 </tr>
 </tbody>
 </table>
-<h3 id="api-information">API information</h3>
-<p>This connector uses the following vendor API:</p>
-<ul>
-<li>API Name: Criteo API</li>
-<li>API Version: 2025-07</li>
-<li>API Endpoint: <code>https://api.criteo.com/2025-07/audiences</code></li>
-<li>Documentation: <a href="https://developers.criteo.com/marketing-solutions/docs/audiences">Criteo: Audiences API</a></li>
-</ul>
-<h3 id="batch-limits">Batch limits</h3>
-<p>This connector uses batched requests to support high-volume data transfers to the vendor. For more information, see <a href="/server-side/connectors/batched-actions/">Batched Actions</a>. Requests are queued until one of the following thresholds is met or the profile is published:</p>
-<ul>
-<li>Max number of requests: 50000</li>
-<li>Max time since oldest request: 15 minutes</li>
-<li>Max size of requests: 10 MB</li>
-</ul>
-<h2 id="configure-settings">Configure settings</h2>
-<h3 id="request-consent-link-from-criteo">Request Consent Link from Criteo</h3>
-<p>If you intend to use this connector, send an email to <a href="mailto:asintegrations@tealium.com">asintegrations@tealium.com</a> to receive a consent link that authorizes the Tealium Customer Data Hub to manage audiences on behalf of advertisers. For more information, see <a href="https://developers.criteo.com/marketing-solutions/docs/authorization-requests">Criteo Developers: Send an Authorization Request to Your Users</a>.</p>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>This step may take up to three working days for approval.</p>
-<p>After receiving the Criteo activation link, complete the following steps:</p>
-<ol>
-<li>Click the activation link provided.<br>
-The <strong>Criteo Consent Portal</strong> appears.</li>
-<li>Grant the requested authorization levels for the account.</li>
-</ol>
-<h3 id="add-connector-and-configure-settings">Add Connector and Configure Settings</h3>
-<p>Go to the Connector Marketplace and add the Criteo Audience Match connector to your profile. For general instructions on how to add a connector, see <a href="/server-side/connectors/about/">Connector Overview</a>.</p>
-<p>After adding the connector, configure the following settings:</p>
-<ul>
-<li><strong>Advertiser ID (Required)</strong><br>
-Configure the <strong>Advertiser ID</strong> associated with an integration in your Criteo account.</li>
-</ul>
-<h2 id="action-settings---parameters-and-options">Action Settings - Parameters and Options</h2>
 <p>Click <strong>Next</strong> or go to the <strong>Actions</strong> tab. This is where you configure connector actions.</p>
 <p>This section describes how to set up parameters and options for each action.</p>
-<h3 id="action---add-user-to-audience">Action - Add User to Audience</h3>
-<h4 id="parameters">Parameters</h4>
+<h3 id="track-floodlight-conversion">Track Floodlight Conversion</h3>
+<h4 id="configuration-id-parameters">Configuration ID parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Profile ID</td>
+<td>The Floodlight Profile ID that CM360 gives to you, after adding the <strong><a href="mailto:api@tealium.com">api@tealium.com</a></strong> user to your CM360 account. If configured here, the value is overwritten with the value defined in the Configuration.</td>
+</tr>
+<tr>
+<td>Floodlight Configuration ID</td>
+<td>(Required) The Floodlight configuration ID of this conversion.</td>
+</tr>
+<tr>
+<td>Floodlight Activity ID</td>
+<td>(Required) The Floodlight activity ID of this conversion.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="userdevice-id">User/Device ID</h4>
+<ul>
+<li>If multiple attributes are mapped, the first non-empty value is sent.</li>
+<li>All the conversions are sent after a 30 minute delay.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Encrypted User ID</td>
+<td>If one or more Encrypted User IDs are specified, then Encryption Entity Type, ID, and Source sections are required.</td>
+</tr>
+<tr>
+<td>Mobile Device ID</td>
+<td>Specify a single device ID, a single click ID, a single user ID, match ID, or multiple user candidate IDs. It is acceptable to use a list with candidate IDs for a single user candidate ID parameter.</td>
+</tr>
+<tr>
+<td>Google Click ID</td>
+<td>Specify a single device ID, a single click ID, a single user ID, match ID, or multiple user candidate IDs. It is acceptable to use a list with candidate IDs for a single user candidate ID parameter.</td>
+</tr>
+<tr>
+<td>Display Click ID</td>
+<td>Specify a single device ID, a single click ID, a single user ID, match ID, or multiple user candidate IDs. It is acceptable to use a list with candidate IDs for a single user candidate ID parameter.</td>
+</tr>
+<tr>
+<td>Match ID</td>
+<td>Specify a single device ID, a single click ID, a single user ID, match ID, or multiple user candidate IDs. It is acceptable to use a list with candidate IDs for a single user candidate ID parameter.</td>
+</tr>
+<tr>
+<td>Impression ID</td>
+<td>Specify a single device ID, a single click ID, a single user ID, match ID, or multiple user candidate IDs. It is acceptable to use a list with candidate IDs for a single user candidate ID parameter.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="additional-parameters">Additional parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ordinal</td>
+<td>(Required) The ordinal of the conversion. Used to de-duplicate conversions of the same user and day.</td>
+</tr>
+<tr>
+<td>Timestamp in micros</td>
+<td>The timestamp of conversion, in Unix epoch microseconds. If not provided, it is auto-generated.</td>
+</tr>
+<tr>
+<td>Limit Ad Tracking</td>
+<td>Set to <code>true</code> to use the conversion for reporting only, not for targeting.</td>
+</tr>
+<tr>
+<td>Child Directed Treatment</td>
+<td>Set as <code>true</code> for conversions directed toward children.</td>
+</tr>
+<tr>
+<td>Non-Personalized Ad</td>
+<td>Set as <code>true</code> if the conversion was for a non-personalized ad.</td>
+</tr>
+<tr>
+<td>Treatment For Underage</td>
+<td>Set to <code>true</code> if the request may come from an underage user (see GDPR).</td>
+</tr>
+</tbody>
+</table>
+<h4 id="user-identifiers">User identifiers</h4>
 <table>
 <thead>
 <tr>
@@ -1524,56 +1627,145 @@ Configure the <strong>Advertiser ID</strong> associated with an integration in y
 </thead>
 <tbody>
 <tr>
-<td>Audience</td>
-<td>Select an audience or enter the Audience ID to add the user to.</td>
+<td>Email Address (already SHA256 hashed)</td>
+<td>Provide an email address which has been already whitespace trimmed, lowercased, and SHA256 hashed. Remove all periods (<code>.</code>) that precede the domain name in <code>gmail.com</code> and <code>googlemail.com</code> email addresses before hashing.</td>
 </tr>
 <tr>
-<td>Identifier</td>
-<td>Map a user identifier value. <ul><li><strong>Email</strong>: Send email value as-is without applying built-in hashing. Select this option if the value requires no hashing or is already hashed.</li><li><strong>Email (apply MD5 hash)</strong>: Hash email value with MD5 before sending.</li><li><strong>Email (apply MD5 SHA256 hash)</strong>: Hash email value with MD5 and then SHA256 before sending.</li><li><strong>Mobile ID</strong>: IDFA mobile ID for Apple, ADID mobile ID for Android.</li><li><strong>Identity Link</strong>: Identity Link</li><li><strong>Gum ID</strong>: Identifier obtained from cookie matching. A corresponding Gum Caller ID is automatically added to the request.</li></ul></td>
+<td>Email Address (apply SHA256 hash)</td>
+<td>Provide a plain text email address and the connector removes all periods (<code>.</code>) that precede the domain name in <code>gmail.com</code> and <code>googlemail.com</code> email addresses, whitespace trim, lowercase, and hash this value using SHA256 hash.</td>
 </tr>
 <tr>
-<td>Gum Caller ID</td>
-<td>Gum Caller <code>ID</code> - Value used by Criteo for <code>GUM</code> (Generative Unified Media) salting. If using the Tealium iQ Criteo Cookie Matching Service tag, leave this unmapped.</td>
+<td>Phone Number (already SHA256 hashed)</td>
+<td>Provide a phone number which has been already whitespace trimmed and SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Phone Number (apply SHA256 hash)</td>
+<td>Provide a plain text phone number and the connector removes all non-figit symbols, prefix the number with a plus sign (<code>+</code>), whitespace trim and hash this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>Address Info: First Name (already SHA256 hashed)</td>
+<td>Provide first name which has been already whitespace trimmed, lowercased, and SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Address Info: First Name (apply SHA256 hash)</td>
+<td>Provide a plain text first name and the connector whitespace trims, lowercases, and hashes this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>Address Info: Last Name (already SHA256 hashed)</td>
+<td>Provide last name which has been already whitespace trimmed, lowercased, and SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Address Info: Last Name (apply SHA256 hash)</td>
+<td>Provide a plain text last name and the connector whitespace trims, lowercases, and hashes this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>Address Info: Street Address (already SHA256 hashed)</td>
+<td>Provide a street address which does not contain special characters, has been already whitespace trimmed, lowercased, and SHA256 hashed.</td>
+</tr>
+<tr>
+<td>Address Info: Street Address (apply SHA256 hash)</td>
+<td>Provide a plain text street address and the connector removes all special characters, whitespace trims, lowercases, and hashes this value using SHA256 hash.</td>
+</tr>
+<tr>
+<td>Address Info: City</td>
+<td>City of the user&rsquo;s address.</td>
+</tr>
+<tr>
+<td>Address Info: State</td>
+<td>State code of the user&rsquo;s address.</td>
+</tr>
+<tr>
+<td>Address Info: Postal Code</td>
+<td>Postal code of the user&rsquo;s address.</td>
+</tr>
+<tr>
+<td>Address Info: Country Code</td>
+<td>The 2-letter country code of the user&rsquo;s address in ISO 3166-1 alpha-2 format.</td>
 </tr>
 </tbody>
 </table>
-<h3 id="action---remove-user-from-audience">Action - Remove User from Audience</h3>
-<h4 id="parameters-1">Parameters</h4>
+<h4 id="encryption">Encryption</h4>
 <table>
 <thead>
 <tr>
-<th><strong>Parameter</strong></th>
-<th><strong>Description</strong></th>
+<th>Parameter</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Audience</td>
-<td>Select an audience or enter the Audience ID to remove the user from.</td>
+<td>Encryption Entity Type</td>
+<td>Required if Encrypted User ID is specified.. Must match the encryption configuration for ad serving or data transfer.</td>
 </tr>
 <tr>
-<td>Identifier</td>
-<td>Map a user identifier value. <ul><li><strong>Email</strong>: Send email value as-is without applying built-in hashing. Select this option if the value requires no hashing or is already hashed.</li><li><strong>Email (apply MD5 hash)</strong>: Hash email value with MD5 before sending.</li><li><strong>Email (apply MD5 SHA256 hash)</strong>: Hash email value with MD5 and then SHA256 before sending.</li><li><strong>Mobile ID</strong>: IDFA mobile ID for Apple, ADID mobile ID for Android.</li><li><strong>Identity Link</strong>: Identity Link</li><li><strong>Gum ID</strong>: Identifier obtained from cookie matching. A corresponding Gum Caller ID is automatically added to the request.</li></ul></td>
+<td>Encryption Entity ID</td>
+<td>Required if Encrypted User ID is specified. Must match the encryption configuration for ad serving or data transfer.</td>
 </tr>
 <tr>
-<td>Gum Caller ID</td>
-<td>Gum Caller <code>ID</code> - Value used by Criteo for <code>GUM</code> salting. If using the Tealium iQ Criteo Cookie Matching Service tag, leave this unmapped.</td>
+<td>Encryption Source</td>
+<td>Required if Encrypted User ID is specified. Describes whether the encrypted cookie was received from ad serving or from data transfer.</td>
 </tr>
 </tbody>
 </table>
+<h4 id="quantity-and-value">Quantity and value</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Conversion Quantity</td>
+<td>The quantity of the conversion.</td>
+</tr>
+<tr>
+<td>Conversion Value</td>
+<td>The value of the conversion.</td>
+</tr>
+</tbody>
+</table>
+<h4 id="custom-data">Custom data</h4>
+<p>Map attributes to <code>U</code> custom variables as needed. Only populated values are sent.
+Use of the mapping destinations in this section supersede any mappings in the <strong>Custom Data Arrays - Legacy</strong> section.</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Custom Variable Values</td>
+<td>A collection of custom values. Each value must not exceed 50 characters.</td>
+</tr>
+<tr>
+<td>Custom Variable Types</td>
+<td>A collection of strings, each having a form of <code>Uxxx</code> where <code>xxx</code> is a number from <code>1</code> to <code>100</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="vendor-documentation">Vendor documentation</h2>
+<ul>
+<li><a href="https://developers.google.com/doubleclick-advertisers/getting_started">Campaign Manager 360 API: Get Started</a></li>
+<li><a href="https://developers.google.com/doubleclick-advertisers/rest/v4/conversions/batchinsert">Campaign Manager 360 API (Method: conversions.batchinsert)</a></li>
+<li><a href="https://support.google.com/campaignmanager/answer/2823388?hl=en">About Floodlight conversion tracking</a></li>
+</ul>
 
 </div>
 
 <div class="mv30 nested-links overflow-hidden dn-p flex justify-between flex-row-reverse"><div class="w-50 ml3">
 
   
-  <a href="/server-side-connectors/criteo-audiences-oauth-connector/"
+  <a href="/server-side-connectors/google-sa360-enhanced-conversions-connector/"
     class="w-100 justify-end inline-flex items-center ba b--black-10 br3 pa3">
     <section class="tl pr3">
-      <div>Criteo Audiences (OAuth)</div>
+      <div>Google SA360 Enhanced Conversions</div>
     </section>
     <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Criteo Audiences (OAuth)"</title>
+      <title>"Google SA360 Enhanced Conversions"</title>
       <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
     </svg>
   </a>
@@ -1582,14 +1774,14 @@ Configure the <strong>Advertiser ID</strong> associated with an integration in y
 </div><div class="w-50 mr3">
   
   
-  <a href="/server-side-connectors/coveo-connector/"
+  <a href="/server-side-connectors/google-display-video-360-connector/"
     class="w-100 justify-start inline-flex items-center ba b--black-10 br3 pa3">
     <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
-      <title>"Coveo "</title>
+      <title>"Google Display and Video 360 "</title>
       <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
     </svg>
    <section class="tr pl3">
-      <div>Coveo</div>
+      <div>Google Display and Video 360</div>
     </section>
   </a>
   
@@ -1621,7 +1813,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  October 21, 2025 
+          <p>This page was last updated:  December 16, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1635,15 +1827,14 @@ No</button>
 
   <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
       <p class="b ttu">On this page</p>
-      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#connector-actions" href="javascript:void(0)">Connector actions</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#api-information" href="javascript:void(0)">API information</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#batch-limits" href="javascript:void(0)">Batch limits</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configure-settings" href="javascript:void(0)">Configure settings</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#request-consent-link-from-criteo" href="javascript:void(0)">Request Consent Link from Criteo</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#add-connector-and-configure-settings" href="javascript:void(0)">Add Connector and Configure Settings</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action-settings---parameters-and-options" href="javascript:void(0)">Action Settings - Parameters and Options</a></li>
-              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action---add-user-to-audience" href="javascript:void(0)">Action - Add User to Audience</a></li>
-              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#action---remove-user-from-audience" href="javascript:void(0)">Action - Remove User from Audience</a></li>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#requirements" href="javascript:void(0)">Requirements</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#api-information" href="javascript:void(0)">API information</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#batch-limits" href="javascript:void(0)">Batch limits</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#delayed-actions" href="javascript:void(0)">Delayed actions</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#configuration" href="javascript:void(0)">Configuration</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#actions" href="javascript:void(0)">Actions</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#track-floodlight-conversion" href="javascript:void(0)">Track Floodlight Conversion</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#vendor-documentation" href="javascript:void(0)">Vendor documentation</a></li>
               </nav>
   </aside></nav>
 
