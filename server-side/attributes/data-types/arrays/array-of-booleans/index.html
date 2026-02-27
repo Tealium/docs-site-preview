@@ -38,7 +38,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side",
-        reading_time  : "2",
+        reading_time  : "1",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -526,7 +526,9 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/preloaded/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".preloaded-attributes">Preloaded attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/attributes/manage-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-manage-attributes">Manage attributes</a></li>
+        <a href="/server-side/attributes/manage-es-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-manage-es-attributes">Manage event attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/attributes/manage-as-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-manage-as-attributes">Manage visitor and visit attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/enrichments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-about-enrichments">About enrichments</a></li>
     <li class="relative w-100 fw8 f5 ">
@@ -1058,40 +1060,6 @@
 <li><strong>Starting value</strong>: <code>[true, false, true]</code></li>
 <li><strong>Resulting value</strong>: (Removed)</li>
 </ul>
-<h2 id="stitching-merge-rules">Stitching merge rules</h2>
-<p>Stitching merge rules (if enabled) are optional, per‑attribute rules that determine the final value of an attribute when two visitor profiles are stitched.</p>
-<p>The array of booleans attribute supports the following stitching merge rules:</p>
-<table>
-<thead>
-<tr>
-<th>Rule</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>NEWER</td>
-<td>Keep the more recently updated value (including removed values)</td>
-</tr>
-<tr>
-<td>OLDER</td>
-<td>Keep the earlier updated value (including removed values)</td>
-</tr>
-<tr>
-<td>RECALCULATE</td>
-<td>Discard previous values and run enrichments on the final merged profile</td>
-</tr>
-<tr>
-<td>RECALCULATE (FORCE)</td>
-<td>Discard previous values and run enrichments on the final merged profile, force some conditions to true</td>
-</tr>
-<tr>
-<td>UNION</td>
-<td>Combine values from both, preserving consistent order across arrays.</td>
-</tr>
-</tbody>
-</table>
-<p>For more information, see <a href="/early-access/visitor-stitching/stitching-merge-rules/">Stitching merge rules</a>.</p>
 
 </div>
 
@@ -1152,7 +1120,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  December 14, 2025 
+          <p>This page was last updated:  December 18, 2025 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1170,7 +1138,6 @@ No</button>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#add-a-boolean" href="javascript:void(0)">Add a boolean</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#add-an-array-of-booleans" href="javascript:void(0)">Add an array of booleans</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#reset" href="javascript:void(0)">Reset</a></li>
-              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#stitching-merge-rules" href="javascript:void(0)">Stitching merge rules</a></li>
               </nav>
   </aside></nav>
 

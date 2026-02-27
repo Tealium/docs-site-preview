@@ -381,7 +381,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/platforms/shopify/about/</loc>
-    <lastmod>2025-03-26T14:30:07-07:00</lastmod>
+    <lastmod>2026-01-13T07:49:20-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -416,17 +416,8 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/early-access/attributes-improvements/about/</loc>
-    <lastmod>2025-11-06T13:13:17-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/attributes-improvements/about/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/about/</loc>
-    <lastmod>2025-11-06T13:13:17-06:00</lastmod>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -552,7 +543,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/about/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -606,7 +597,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/visitor-stitching/about/</loc>
-    <lastmod>2025-11-14T14:28:14-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -1039,6 +1030,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/authentication/</loc>
     <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/connectors/webhook-connectors/authentication/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-connect/manage-data-connect-integrations/best-practices/</loc>
@@ -1131,30 +1127,30 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-attributes/</loc>
-    <lastmod>2025-09-05T13:47:31-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side/attributes/manage-attributes/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/early-access/attributes-improvements/manage-as-attributes-early-access/</loc>
-    <lastmod>2025-03-14T14:11:34-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/attributes-improvements/manage-as-attributes-early-access/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/administration/single-sign-on/manage/</loc>
     <lastmod>2024-04-02T15:18:00-05:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/administration/single-sign-on/manage/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-es-attributes/</loc>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/attributes/manage-es-attributes/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/server-side/attributes/manage-as-attributes/</loc>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/attributes/manage-as-attributes/"
       />
   </url>
   <url>
@@ -1209,15 +1205,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/iq-tag-management/data-layer/data-layer-variables/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/early-access/attributes-improvements/manage-es-attributes-early-access/</loc>
-    <lastmod>2025-09-05T13:47:31-05:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/attributes-improvements/manage-es-attributes-early-access/"
       />
   </url>
   <url>
@@ -1304,6 +1291,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/actions-and-parameters/</loc>
     <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/connectors/webhook-connectors/actions-and-parameters/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/tealium-collect-dle/</loc>
@@ -1703,7 +1695,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/example/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -2071,6 +2063,15 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/platforms/shopify/configure-shopify-marketplace/</loc>
+    <lastmod>2026-01-13T07:49:20-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/platforms/shopify/configure-shopify-marketplace/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side/data-sources/connect-to-data-source/</loc>
     <lastmod>2025-05-12T10:18:46-07:00</lastmod>
     <xhtml:link
@@ -2170,15 +2171,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/platforms/shopify/install/</loc>
-    <lastmod>2025-09-04T20:34:16+01:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/shopify/install/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/api-v1/iq-revisions/</loc>
     <lastmod>2023-01-07T08:47:11-08:00</lastmod>
     <xhtml:link
@@ -2260,8 +2252,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/post-group-api/</loc>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/post-group-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/post-user-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -2451,6 +2452,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/changelog/</loc>
     <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/connectors/webhook-connectors/changelog/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/data-connect/dashboard/</loc>
@@ -2468,15 +2474,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/api-v1/hosted-data-layer/data-objects/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/get-scim-sync-logs-api/</loc>
-    <lastmod>2025-11-21T08:23:55-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/get-scim-sync-logs-api/"
       />
   </url>
   <url>
@@ -2499,7 +2496,12 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/visitor-stitching/stitching-merge-rules/</loc>
-    <lastmod>2025-12-16T14:57:07-08:00</lastmod>
+    <lastmod>2025-12-18T16:42:15-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/visitor-stitching/stitching-merge-rules/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/iq-tag-management/events/subscribe-tags-to-events/</loc>
@@ -2598,15 +2600,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/server-side/data-connect/manage-data-connect-integrations/create-recipe/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/platforms/shopify/data-layer-and-events/</loc>
-    <lastmod>2025-03-26T14:30:07-07:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/platforms/shopify/data-layer-and-events/"
       />
   </url>
   <url>
@@ -2718,8 +2711,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/get-group-api/</loc>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/get-group-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/get-user-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -2751,6 +2753,15 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/server-side/moments-api/iq-implementation-example/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/platforms/shopify/install/</loc>
+    <lastmod>2026-01-13T07:49:20-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/platforms/shopify/install/"
       />
   </url>
   <url>
@@ -2827,7 +2838,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/cloudstream/segments/</loc>
-    <lastmod>2025-11-24T16:14:04-06:00</lastmod>
+    <lastmod>2026-01-15T16:08:24-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -2943,8 +2954,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/get-groups-api/</loc>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/get-groups-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/get-users-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -2989,7 +3009,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/batched-actions/</loc>
-    <lastmod>2024-02-26T13:00:12+00:00</lastmod>
+    <lastmod>2026-01-08T16:12:45-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -3057,6 +3077,15 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/iq-tag-management/data-layer/data-layer-converter/customize-data-layer-converter/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/platforms/shopify/data-layer-and-events/</loc>
+    <lastmod>2026-01-13T07:49:20-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/platforms/shopify/data-layer-and-events/"
       />
   </url>
   <url>
@@ -3492,8 +3521,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/patch-group-api/</loc>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/patch-group-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/patch-user-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -3627,8 +3665,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/put-group-api/</loc>
+    <lastmod>2026-01-12T13:30:29-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/put-group-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/put-user-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -3690,8 +3737,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/api/scim-api/delete-group-api/</loc>
+    <lastmod>2025-12-17T14:18:43-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/api/scim-api/delete-group-api/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/early-access/api/scim-api/delete-user-api/</loc>
-    <lastmod>2025-11-24T12:26:42-06:00</lastmod>
+    <lastmod>2025-12-17T13:32:02-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -3889,7 +3945,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/uid2/</loc>
-    <lastmod>2025-09-03T08:34:34-05:00</lastmod>
+    <lastmod>2025-12-30T11:59:27-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -4429,7 +4485,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/log-streaming/about/</loc>
-    <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <lastmod>2026-01-07T11:06:01-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -7102,7 +7158,12 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/administration/ip-allow-list/</loc>
-    <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <lastmod>2026-01-13T11:47:29-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side/administration/ip-allow-list/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/administration/tealium-content-security-policies-reference-guide/</loc>
@@ -8474,7 +8535,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/industries/</loc>
-    <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <lastmod>2025-12-30T11:59:27-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -8995,15 +9056,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-custom-audiences/</loc>
-    <lastmod>2022-03-28T00:00:00+00:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-facebook-custom-audiences/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/mediamath-connector/</loc>
     <lastmod>2022-09-22T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -9109,15 +9161,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/client-side-tags/branch-mobile-remote-command-tag/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-event-match-quality/</loc>
-    <lastmod>2022-06-14T00:00:00+00:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-facebook-event-match-quality/"
       />
   </url>
   <url>
@@ -9481,15 +9524,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-app-events-connector/</loc>
-    <lastmod>2021-10-13T00:00:00+00:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side-connectors/facebook-app-events-connector/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/client-side-tags/pardot-tag/</loc>
     <lastmod>2020-07-24T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -9739,15 +9773,6 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/client-side-tags/apprl-tag/"
-      />
-  </url>
-  <url>
-    <loc>https://docs-preview.tealium.com/client-side-tags/contentsquare-ux-analytics-tag/</loc>
-    <lastmod>2021-06-01T00:00:00+00:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/client-side-tags/contentsquare-ux-analytics-tag/"
       />
   </url>
   <url>
@@ -11045,6 +11070,10 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/mobile/about-tealium-prism/</loc>
+    <lastmod>2026-02-23T16:58:37-08:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/activecampaign-connector/</loc>
     <lastmod>2025-11-06T13:13:17-06:00</lastmod>
     <xhtml:link
@@ -11252,6 +11281,15 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/guides/function-for-ai-activation/</loc>
+    <lastmod>2026-01-16T08:30:06-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/guides/function-for-ai-activation/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/client-side-tags/aim-xr-website-tag/</loc>
     <lastmod>2025-11-12T11:12:53-06:00</lastmod>
     <xhtml:link
@@ -11351,6 +11389,15 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/amazon-connect-connector/</loc>
+    <lastmod>2026-01-07T15:33:19-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/amazon-connect-connector/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/amazon-eventbridge-connector/</loc>
     <lastmod>2025-06-13T14:43:57-05:00</lastmod>
     <xhtml:link
@@ -11379,7 +11426,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/amazon-s3-connector/</loc>
-    <lastmod>2025-11-05T10:20:47-08:00</lastmod>
+    <lastmod>2026-01-06T15:15:18-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11455,7 +11502,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/array-of-booleans/</loc>
-    <lastmod>2025-12-14T21:35:20-08:00</lastmod>
+    <lastmod>2025-12-18T13:26:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11464,7 +11511,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/array-of-numbers/</loc>
-    <lastmod>2025-12-14T21:35:20-08:00</lastmod>
+    <lastmod>2025-12-18T13:26:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11473,7 +11520,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/arrays/</loc>
-    <lastmod>2025-12-14T21:35:20-08:00</lastmod>
+    <lastmod>2025-12-18T13:26:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11482,7 +11529,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/rc-tags/as_attributes/index.json</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:26:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11580,6 +11627,15 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/client-side-tags/avantlink-avantmetrics-tag/</loc>
+    <lastmod>2026-01-14T16:32:46-05:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/client-side-tags/avantlink-avantmetrics-tag/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/avo-inspector-connector/</loc>
     <lastmod>2025-06-10T12:47:38-05:00</lastmod>
     <xhtml:link
@@ -11644,7 +11700,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/badge/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11671,7 +11727,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/boolean/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11904,8 +11960,35 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-amazon-ads-data-manager/</loc>
+    <lastmod>2026-01-06T15:52:24-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-amazon-ads-data-manager/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-conversions/</loc>
+    <lastmod>2026-01-07T10:22:29-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-facebook-conversions/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-facebook-custom-audiences/</loc>
+    <lastmod>2026-01-06T15:52:24-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-facebook-custom-audiences/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-google-ads-customer-match/</loc>
-    <lastmod>2024-10-15T14:06:26-05:00</lastmod>
+    <lastmod>2026-01-07T10:22:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11914,7 +11997,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-google-dv360-customer-match/</loc>
-    <lastmod>2024-06-04T16:31:31-05:00</lastmod>
+    <lastmod>2026-01-07T10:22:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -11922,12 +12005,12 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-twitter-custom-audiences/</loc>
-    <lastmod>2024-10-07T08:17:33-05:00</lastmod>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/connector-insights-x-custom-audiences/</loc>
+    <lastmod>2026-01-07T10:22:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-twitter-custom-audiences/"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/connector-insights-x-custom-audiences/"
       />
   </url>
   <url>
@@ -11955,6 +12038,15 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/client-side-tags/contentsquare-mobile-remote-command-tag/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/client-side-tags/contentsquare-ux-analytics-tag/</loc>
+    <lastmod>2026-01-14T12:26:22-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/client-side-tags/contentsquare-ux-analytics-tag/"
       />
   </url>
   <url>
@@ -12148,7 +12240,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/date/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12274,7 +12366,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2026-01-08T08:00:40-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12337,7 +12429,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/rc-tags/es_attributes/index.json</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:26:29-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12391,7 +12483,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/guides/exclude-offline-purchasers/</loc>
-    <lastmod>2025-06-25T09:45:44-05:00</lastmod>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12399,8 +12491,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-app-events-connector/</loc>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/facebook-app-events-connector/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-audiences-connector/</loc>
-    <lastmod>2025-08-08T11:48:38-07:00</lastmod>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12409,7 +12510,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-audiences-customer-provided-credentials-connector/</loc>
-    <lastmod>2025-11-06T13:13:17-06:00</lastmod>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12418,7 +12519,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-conversions-connector/</loc>
-    <lastmod>2025-11-12T12:55:49-06:00</lastmod>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12427,7 +12528,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/facebook-messenger-connector/</loc>
-    <lastmod>2025-06-13T14:43:57-05:00</lastmod>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12454,7 +12555,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/ftp-connector/</loc>
-    <lastmod>2025-11-05T10:20:47-08:00</lastmod>
+    <lastmod>2026-01-07T10:52:08-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12534,8 +12635,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/client-side-tags/freakout-tag/</loc>
+    <lastmod>2025-12-29T08:33:02-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/client-side-tags/freakout-tag/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/funnel/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12607,7 +12717,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-ads-customer-match-connector/</loc>
-    <lastmod>2025-06-10T12:47:38-05:00</lastmod>
+    <lastmod>2025-12-17T12:52:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12697,7 +12807,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/data-sources/google-bigquery-cloud-data-source/</loc>
-    <lastmod>2025-10-27T11:31:55-07:00</lastmod>
+    <lastmod>2026-01-08T10:16:12-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12724,7 +12834,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-cloud-storage-connector/</loc>
-    <lastmod>2025-11-05T10:20:47-08:00</lastmod>
+    <lastmod>2026-01-07T11:06:01-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12787,7 +12897,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/google-sa360-enhanced-conversions-connector/</loc>
-    <lastmod>2025-09-16T12:13:15+01:00</lastmod>
+    <lastmod>2026-01-15T10:32:34-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -12801,6 +12911,15 @@
       rel="alternate"
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/tech-partners/google-sa360-enhanced-conversions-implementation-guide/"
+      />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/server-side-connectors/google-vertex-commerce-connector/</loc>
+    <lastmod>2026-01-13T08:13:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/google-vertex-commerce-connector/"
       />
   </url>
   <url>
@@ -13561,7 +13680,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/microsoft-fabric-eventhouse-connector/</loc>
-    <lastmod>2025-11-05T10:20:47-08:00</lastmod>
+    <lastmod>2026-01-07T08:19:14-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -13723,7 +13842,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/new-relic-connector/</loc>
-    <lastmod>2025-11-05T10:20:47-08:00</lastmod>
+    <lastmod>2026-01-07T08:25:06-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -13732,7 +13851,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/nextdoor-connector/</loc>
-    <lastmod>2025-11-06T13:13:17-06:00</lastmod>
+    <lastmod>2026-01-06T14:01:23-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -13759,7 +13878,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/number/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14100,6 +14219,10 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/early-access/mobile/quick-start/</loc>
+    <lastmod>2026-02-24T08:45:38-08:00</lastmod>
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/recent/</loc>
     <lastmod>2024-04-16T17:30:32-06:00</lastmod>
     <xhtml:link
@@ -14137,7 +14260,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/client-side-tags/reddit-pixel-tag/</loc>
-    <lastmod>2025-12-09T08:58:53-06:00</lastmod>
+    <lastmod>2025-12-23T08:30:26-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14352,15 +14475,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/early-access/server-side-connectors/</loc>
-    <lastmod>2025-01-29T04:31:03-08:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/server-side-connectors/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/</loc>
     <lastmod>2025-10-01T19:17:08+01:00</lastmod>
     <xhtml:link
@@ -14398,7 +14512,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/set-of-strings/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14550,15 +14664,6 @@
       />
   </url>
   <url>
-    <loc>https://docs-preview.tealium.com/early-access/server-side-connectors/spotify-conversions-connector-alpha/</loc>
-    <lastmod>2025-11-06T13:13:17-06:00</lastmod>
-    <xhtml:link
-      rel="alternate"
-      hreflang="ja"
-      href="https://docs-preview.tealium.com/ja/early-access/server-side-connectors/spotify-conversions-connector-alpha/"
-      />
-  </url>
-  <url>
     <loc>https://docs-preview.tealium.com/client-side-tags/spotify-pixel-tag/</loc>
     <lastmod>2025-11-06T12:35:35-06:00</lastmod>
     <xhtml:link
@@ -14568,8 +14673,17 @@
       />
   </url>
   <url>
+    <loc>https://docs-preview.tealium.com/client-side-tags/sprinklr-universal-pixel-tag/</loc>
+    <lastmod>2025-12-17T11:55:02-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/client-side-tags/sprinklr-universal-pixel-tag/"
+      />
+  </url>
+  <url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_attributes/index.json</loc>
-    <lastmod>2025-12-03T12:01:58-06:00</lastmod>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14587,7 +14701,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/rc-tags/ss_cloud_stream/index.json</loc>
-    <lastmod>2025-12-03T12:01:58-06:00</lastmod>
+    <lastmod>2026-01-15T16:08:24-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14749,7 +14863,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/string/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-11-04T15:24:41-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14785,7 +14899,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/tally/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14821,7 +14935,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/tech-partners/tealium-adfixus-integration/</loc>
-    <lastmod>2025-06-10T14:39:13-05:00</lastmod>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -14962,6 +15076,10 @@
       hreflang="ja"
       href="https://docs-preview.tealium.com/ja/industries/tealium-for-automotive/"
       />
+  </url>
+  <url>
+    <loc>https://docs-preview.tealium.com/early-access/mobile/</loc>
+    <lastmod>2026-02-23T16:58:37-08:00</lastmod>
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/industries/tealium-for-pharma/</loc>
@@ -15118,7 +15236,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/attributes/data-types/timeline/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -15244,7 +15362,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/guides/vip-badge-guide/</loc>
-    <lastmod>2025-01-21T11:10:18-06:00</lastmod>
+    <lastmod>2025-12-18T11:23:33-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"
@@ -15262,7 +15380,12 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/early-access/visitor-stitching/</loc>
-    <lastmod>2025-12-15T10:25:02-08:00</lastmod>
+    <lastmod>2025-12-18T13:16:48-08:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/early-access/visitor-stitching/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/vkontakte-ads-connector/</loc>
@@ -15294,6 +15417,11 @@
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/webhook-connector/</loc>
     <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/webhook-connector/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-keenio-api/</loc>
@@ -15324,7 +15452,12 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/webhook-jdbc/</loc>
-    <lastmod>2025-12-10T18:08:41-06:00</lastmod>
+    <lastmod>2026-01-09T15:38:41-06:00</lastmod>
+    <xhtml:link
+      rel="alternate"
+      hreflang="ja"
+      href="https://docs-preview.tealium.com/ja/server-side-connectors/webhook-jdbc/"
+      />
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-krux-deprecated/</loc>
@@ -15346,7 +15479,7 @@
   </url>
   <url>
     <loc>https://docs-preview.tealium.com/server-side-connectors/whatsapp-business-connector/</loc>
-    <lastmod>2025-07-01T09:08:08-05:00</lastmod>
+    <lastmod>2026-01-12T15:52:47-06:00</lastmod>
     <xhtml:link
       rel="alternate"
       hreflang="ja"

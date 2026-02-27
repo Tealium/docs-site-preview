@@ -9,6 +9,207 @@
   </author>
       
     <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2026-01-14</id>
+      <title> Client-side tags (January 14, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#client-side-tags-2026-01-14" />
+      <updated>2026-01-14T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/avantlink-avantmetrics-tag/&#34;&gt;AvantLink AvantMetrics tag&lt;/a&gt; with updated branding, improved mapping capabilities, and enhanced compatibility with e-commerce and AudienceStream variables.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/tealium-collect-tag/&#34;&gt;Tealium Collect tag&lt;/a&gt; to resolve &lt;code&gt;visitor_id&lt;/code&gt; on every event, enabling accurate visitor switching in mobile webviews. Tag update required.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/evergage-tag/&#34;&gt;Evergage tag&lt;/a&gt; with a new URL for the CDN.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:insights-2026-01-14</id>
+      <title>Server-side &gt; Insights (January 14, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#insights-2026-01-14" />
+      <updated>2026-01-14T00:00:00-07:00</updated>
+      <category term="Server-side" />
+      <category term="Insights" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the dashboard experience to check customer-predefined dashboards and update them to the latest version when available.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:iq-tag-management-2026-01-14</id>
+      <title> iQ Tag Management (January 14, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#iq-tag-management-2026-01-14" />
+      <updated>2026-01-14T00:00:00-07:00</updated>
+      
+      <category term="iQ Tag Management" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue where PaaS string replacements for consent integrations were unreliable when identifiers contained underscores. In some cases, partial or incorrect replacements occurred, potentially impacting consent enforcement. The replacement logic now correctly handles underscores and other supported special characters in all cases.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2026-01-14</id>
+      <title> Server-side connectors (January 14, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#server-side-connectors-2026-01-14" />
+      <updated>2026-01-14T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h4 id=&#34;new-connectors&#34;&gt;New connectors&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-vertex-commerce-connector/&#34;&gt;Google Vertex AI Search for Commerce connector&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/confluent-kafka-connect-connector/&#34;&gt;Confluent Kafka Connect connector&lt;/a&gt; where batched actions were sending JSON objects as JSON-escaped strings as the data parameter, causing parsing issues on the Kafka side.&lt;/li&gt;
+&lt;li&gt;Updated Facebook connectors to use v24 of the Meta Marketing API.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2026-01-08</id>
+      <title> Client-side tags (January 8, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#client-side-tags-2026-01-08" />
+      <updated>2026-01-08T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/mparticle-by-rokt-tag/&#34;&gt;mParticle by Rokt tag&lt;/a&gt; where page views were not tracked after the initial page load. Tag update required.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/reddit-pixel-tag/&#34;&gt;Reddit Pixel tag&lt;/a&gt; to rename the setting &lt;strong&gt;Account ID&lt;/strong&gt; to &lt;strong&gt;Pixel ID&lt;/strong&gt; and to rename the parameter &lt;code&gt;num_items&lt;/code&gt; to &lt;code&gt;itemCount&lt;/code&gt;. Tag update required.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:product-highlights-2026-01-08</id>
+      <title> Product highlights (January 8, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#product-highlights-2026-01-08" />
+      <updated>2026-01-08T00:00:00-07:00</updated>
+      
+      <category term="Product highlights" />
+      <content type="html">&lt;h3 id=&#34;tealium-product-highlights-novemberdecember-2025&#34;&gt;Tealium Product Highlights (November/December 2025)&lt;/h3&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;-whats-new&#34;&gt;🔥 What&amp;rsquo;s new&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;New connectors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/webhook-jdbc/&#34;&gt;Webhook JDBC&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/stackadapt-audiences-connector/&#34;&gt;StackAdapt Audiences&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;New tags&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/client-side-tags/roku-javascript-pixel-tag/&#34;&gt;Roku JavaScript Pixel&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/client-side-tags/the-trade-desk-real-time-conversion-events-tag/&#34;&gt;The Trade Desk Real-time Conversion Events&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/client-side-tags/mparticle-by-rokt-tag/&#34;&gt;mParticle by Rokt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;CloudStream now available&lt;/strong&gt;&lt;br&gt;
+&lt;a href=&#34;https://docs.tealium.com/server-side/cloudstream/about/&#34;&gt;CloudStream&lt;/a&gt; is a zero‑copy segment building and activation solution that reads directly from your cloud data warehouse without storing customer data in Tealium. Build and manage segments using your existing warehouse structures, then activate them through Tealium connectors or custom functions with built‑in tools to test and validate end‑to‑end data flows.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  &lt;br&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+&lt;h3 id=&#34;-early-access&#34;&gt;🔬 Early Access&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Stitching merge rules&lt;/strong&gt; (sign up required*)&lt;br&gt;
+&lt;a href=&#34;https://docs.tealium.com/early-access/visitor-stitching/stitching-merge-rules/&#34;&gt;Stitching merge rules&lt;/a&gt; are optional, per‑attribute rules that determine the final value of an attribute when two visitor profiles are stitched. They make key attributes like consent status, lifetime metrics, and CRM‑imported fields more durable for the most active and long-lived customers.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Amazon Redshift, Google BigQuery, and Databricks data cloud inbound&lt;/strong&gt; (sign up required*)&lt;br&gt;
+Import bulk data from &lt;a href=&#34;https://docs.tealium.com/early-access/data-sources/amazon-redshift-cloud-data-source/&#34;&gt;Amazon Redshift&lt;/a&gt;, &lt;a href=&#34;https://docs.tealium.com/early-access/data-sources/google-bigquery-cloud-data-source/&#34;&gt;Google BigQuery&lt;/a&gt;, or &lt;a href=&#34;https://docs.tealium.com/early-access/data-sources/databricks-cloud-data-source/&#34;&gt;Databricks&lt;/a&gt; at near real-time speeds or at a scheduled time. After you import your data, transform and map it to Tealium attributes and build better audiences for targeted activation. Combine data storage with real-time data for cross-system connectivity to enable real-time, agile, consented data streams.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Audience fill&lt;/strong&gt; (sign up required*)&lt;br&gt;
+&lt;a href=&#34;https://docs.tealium.com/early-access/audiences/about/#fill-an-audience&#34;&gt;Fill an audience&lt;/a&gt; accelerates time-to-value for marketers by offering a one-time historical fill followed by real-time audience maintenance through batch-style activation within Tealium. You can now immediately activate newly created audiences using historical visitor data, eliminating long waiting periods for real-time traffic to build membership.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;SCIM API for user provisioning&lt;/strong&gt; (sign up required*)&lt;br&gt;
+The new &lt;a href=&#34;https://docs.tealium.com/early-access/api/scim-api/&#34;&gt;SCIM-compliant API&lt;/a&gt; for user management enables IT teams to provision, update, and deprovision Tealium users directly from their identity provider (IdP), improving security, reducing manual work, and accelerating onboarding and offboarding.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Custom action functions in CloudStream&lt;/strong&gt; (sign up required*)&lt;br&gt;
+Create, publish, and manage custom activation connectors and workflows when using &lt;a href=&#34;https://docs.tealium.com/server-side/cloudstream/about/&#34;&gt;CloudStream&lt;/a&gt; zero-copy processing on data from data clouds. These functions enable organizations to send data outbound to any custom destination at the end of the data supply chain.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;*Early Access sign up&lt;/strong&gt;: If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2026-01-08</id>
+      <title> Server-side connectors (January 8, 2026)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2026#server-side-connectors-2026-01-08" />
+      <updated>2026-01-08T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h4 id=&#34;new&#34;&gt;New&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.tealium.com/server-side-connectors/amazon-connect-connector/&#34;&gt;Amazon Connect connector&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Added &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/connector-insights-amazon-ads-data-manager/&#34;&gt;Connector Insights for Amazon Ads Data Manager&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/connector-insights-facebook-conversions/&#34;&gt;Connector Insights for Facebook Conversions&lt;/a&gt; to include diagnostics for event match quality and to add offline data quality metrics.&lt;/li&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-ads-store-sales-connector/&#34;&gt;Google Ads Store Sales connector&lt;/a&gt; where the &lt;strong&gt;Conversion Action&lt;/strong&gt; list was blank, preventing successful configuration.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:attributes-2025-12-17</id>
+      <title>Server-side &gt; Attributes (December 17, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#attributes-2025-12-17" />
+      <updated>2025-12-17T00:00:00-07:00</updated>
+      <category term="Server-side" />
+      <category term="Attributes" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the table in the &lt;strong&gt;Visit and Visitor Attributes&lt;/strong&gt; interface to display the last update timestamp, labels, dependencies, and warnings.&lt;/li&gt;
+&lt;li&gt;Updated the attribute details page to list dependencies and more information about the attribute.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:client-side-tags-2025-12-17</id>
+      <title> Client-side tags (December 17, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#client-side-tags-2025-12-17" />
+      <updated>2025-12-17T00:00:00-07:00</updated>
+      
+      <category term="Client-side tags" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/contentsquare-ux-analytics-tag/&#34;&gt;Contentsquare UX Analytics tag&lt;/a&gt; to support WebView Tag IDs and improve page view sequencing logic to avoid duplicating events.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/schema-app-tag/&#34;&gt;Schema App tag&lt;/a&gt; to add &lt;strong&gt;Output Cache&lt;/strong&gt; setting and declare  &lt;code&gt;window.schema_highlighter&lt;/code&gt; before loading the Schema App library.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/client-side-tags/sprinklr-universal-pixel-tag/&#34;&gt;Sprinklr Universal Pixel tag&lt;/a&gt; to generate event IDs and support user identifier mappings.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:consent-integrations-2025-12-17</id>
+      <title>iQ Tag Management &gt; Consent integrations (December 17, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#consent-integrations-2025-12-17" />
+      <updated>2025-12-17T00:00:00-07:00</updated>
+      <category term="iQ Tag Management" />
+      <category term="Consent integrations" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Updated the consent integrations &lt;code&gt;utcm_framework&lt;/code&gt; template to version 1.3.3 to fix a race condition where &lt;code&gt;tagUid&lt;/code&gt; filtering is applied before the latest consent state is evaluated.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
+      <id>tag:docs.tealium.com,2025:server-side-connectors-2025-12-17</id>
+      <title> Server-side connectors (December 17, 2025)</title>
+      <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#server-side-connectors-2025-12-17" />
+      <updated>2025-12-17T00:00:00-07:00</updated>
+      
+      <category term="Server-side connectors" />
+      <content type="html">&lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed an issue with the Data Manager actions in the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-dv-360-customer-match-connector/&#34;&gt;Google DV360 Customer Match connector&lt;/a&gt; where user identifiers were set incorrectly.&lt;/li&gt;
+&lt;li&gt;Fixed an issue with the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/marketo-connector/&#34;&gt;Marketo connector&lt;/a&gt; where the integration was uploading to the same list concurrently, resulting in errors from Marketo.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/criteo-connector/&#34;&gt;Criteo connector&lt;/a&gt; to format user identifier JSON structure per new Criteo requirements.&lt;/li&gt;
+&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/at-internet-piano-analytics-connector/&#34;&gt;AT Internet Piano Analytics connector&lt;/a&gt; to support mapping the new Enhanced Marketing Source parameters. This update allows marketers to identify and track additional campaign traffic sources.&lt;/li&gt;
+&lt;li&gt;Renamed Google Campaign Manager 360 Floodlight connector to &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/google-floodlight-connector/&#34;&gt;Google Floodlight (CM360 / SA360 / DV360)&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    </entry>
+      
+    <entry>
       <id>tag:docs.tealium.com,2025:client-side-tags-2025-12-10</id>
       <title> Client-side tags (December 10, 2025)</title>
       <link rel="alternate" href="https://docs-preview.tealium.com/release-notes/?year=2025#client-side-tags-2025-12-10" />
@@ -353,7 +554,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;-coming-soon-to-ga&#34;&gt;⏳ Coming soon to GA&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  &lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;h3 id=&#34;-early-access&#34;&gt;🔬 Early Access&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;New navigation menu&lt;/strong&gt;&lt;br&gt;
 The &lt;a href=&#34;https://docs.tealium.com/early-access/administration/navigation-menu/&#34;&gt;new navigation&lt;/a&gt; improves discovery and onboarding by making Tealium features easier to find. Menu items are now organized by actions instead of product names. Categories are grouped by common jobs across different user roles. As this experience rolls out, you may see an option in the admin menu to enable/disable the new menu.&lt;/p&gt;
@@ -850,7 +1051,7 @@ Allow users to create, publish, and manage custom activation connectors and work
 &lt;p&gt;&lt;strong&gt;Profile version summary (AI Assistant)&lt;/strong&gt;&lt;br&gt;
 The profile version summary in AI Assistant provides instant, single-click visibility into recent Tealium configuration changes. This keeps users fully informed about their latest profile publishes, allowing them to maintain control, improve transparency, and quickly respond if adjustments or revisions are needed.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  &lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;h3 id=&#34;-early-access&#34;&gt;🔬 Early Access&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;New navigation menu&lt;/strong&gt;&lt;br&gt;
 Opt in to the new navigation menu experience and switch back anytime. The new navigation menu is organized by actions and common jobs across different user roles.&lt;/p&gt;
@@ -1253,7 +1454,7 @@ Import bulk data from &lt;a href=&#34;https://docs.tealium.com/early-access/data
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt; (sign up required*)&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, letting you quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;*Early Access sign ups:&lt;/strong&gt; If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
 </content>
     </entry>
@@ -1581,7 +1782,7 @@ Import bulk data from &lt;a href=&#34;https://docs.tealium.com/early-access/data
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience, allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new screen provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;*Early Access sign ups:&lt;/strong&gt; If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
 </content>
     </entry>
@@ -1908,7 +2109,7 @@ The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-c
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;*Early Access sign ups:&lt;/strong&gt; If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
 </content>
     </entry>
@@ -1998,7 +2199,6 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvement
 &lt;li&gt;Send Entire Event Data&lt;/li&gt;
 &lt;li&gt;Send Custom Event Data&lt;/li&gt;
 &lt;li&gt;Send Custom Visitor Data&lt;/li&gt;
-&lt;li&gt;Send Log Event&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/snowflake-streaming-connector/&#34;&gt;Snowflake Streaming connector&lt;/a&gt; to API version 4.0.1 and made Snowflake account URLs network-safe.&lt;/li&gt;
@@ -2154,7 +2354,7 @@ The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-c
 &lt;p&gt;&lt;strong&gt;Audience sizing&lt;/strong&gt; (sign up required*)&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream attributes experience&lt;/strong&gt;  (sign up required*)&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;*Early Access sign ups:&lt;/strong&gt; If you are interested in trying this feature, contact your Tealium Support representative.&lt;/p&gt;
 </content>
     </entry>
@@ -2372,7 +2572,7 @@ The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-c
 &lt;p&gt;&lt;strong&gt;Audience Sizing&lt;/strong&gt;&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream Attributes Experience&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 </content>
     </entry>
       
@@ -2716,7 +2916,7 @@ The &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/databricks-c
 &lt;p&gt;&lt;strong&gt;Audience Sizing&lt;/strong&gt;&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/audiences/manage-segments/#potential-size&#34;&gt;Potential audience size&lt;/a&gt; shows how many visitor profiles—out of the total number of visitors—match your criteria in the audience creation and edit workflows. This helps you refine targeting and gain confidence in your audience conditions with a super quick calculation.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;New AudienceStream Attributes Experience&lt;/strong&gt;&lt;br&gt;
-The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvements/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
+The &lt;a href=&#34;https://docs.tealium.com/server-side/attributes/about/&#34;&gt;AudienceStream attributes table&lt;/a&gt; has a cleaner, more organized experience—allowing you to quickly access details and take bulk actions like assigning labels or deleting attributes. Plus, a new Dependencies tab provides a clear summary of where each attribute is used, helping you manage dependencies with ease.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Concurrent Users in Server-Side Products&lt;/strong&gt;&lt;br&gt;
 &lt;a href=&#34;https://docs.tealium.com/server-side/save-publish/about/&#34;&gt;Server-side concurrency&lt;/a&gt; helps organizations collaborate more easily in our server-side experience, allowing multiple users to work within Tealium without overriding or disrupting each other.&lt;/p&gt;
 &lt;h3 id=&#34;-research&#34;&gt;🔬 Research&lt;/h3&gt;
@@ -2913,7 +3113,6 @@ The &lt;a href=&#34;https://docs.tealium.com/early-access/attributes-improvement
 &lt;/ul&gt;
 &lt;h4 id=&#34;updates-and-fixes&#34;&gt;Updates and fixes&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/datadog-connector/&#34;&gt;DataDog connector&lt;/a&gt; to fix an issue where &lt;strong&gt;Send Log Event&lt;/strong&gt; action failed when triggered by a failing connector action.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/klaviyo-connector/&#34;&gt;Klaviyo connector&lt;/a&gt; to API version &lt;code&gt;2025-01-15&lt;/code&gt;.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/appsflyer-app-events-connector/&#34;&gt;Appsflyer App Events connector&lt;/a&gt; to add &lt;strong&gt;TCF Consent&lt;/strong&gt; parameters to the &lt;strong&gt;Track in App Event&lt;/strong&gt; action.&lt;/li&gt;
 &lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/braze-connector/&#34;&gt;Braze connector&lt;/a&gt; to fix an issue where user fields were sent as null when sending push tokens.&lt;/li&gt;
@@ -8084,7 +8283,7 @@ Optimizes performance by reducing unnecessary cookie reads and eliminating incon
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/pulsepoint-npi-list-connector/&#34;&gt;PulsePoint NPI List connector&lt;/a&gt; to include batch endpoint.&lt;/li&gt;
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/microsoft-customer-match/&#34;&gt;Microsoft Customer Match connector&lt;/a&gt; to correct an issue where the connector was forcing a consent prompt for already authorized users.&lt;/li&gt;
 &lt;li&gt;Updated &lt;a href=&#34;https://docs.tealium.com/server-side-connectors/salesforce-email-studio-oauth2-exacttarget-connector/&#34;&gt;Salesforce Email Studio OAuth2 (ExactTarget) connector&lt;/a&gt; to display data extensions in most recent order.&lt;/li&gt;
-&lt;li&gt;Updated the &lt;a href=&#34;https://docs.tealium.com/early-access/server-side-connectors/spotify-conversions-connector-alpha/&#34;&gt;EA Spotify Conversions Connector&lt;/a&gt; to remove the option to create a Conversion Tracker ID during configuration. Users must contact Spotify directly to obtain a Conversion Tracker ID.&lt;/li&gt;
+&lt;li&gt;Updated the EA Spotify Conversions Connector to remove the option to create a Conversion Tracker ID during configuration. Users must contact Spotify directly to obtain a Conversion Tracker ID.&lt;/li&gt;
 &lt;li&gt;Deprecated the following connectors:
 &lt;ul&gt;
 &lt;li&gt;Zoho Mail&lt;/li&gt;
