@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Quick start guide" />
+    <meta property="og:title" content="Quick start guide for Tealium Prism" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://docs-preview.tealium.com/early-access/mobile/quick-start/" />
 <meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
@@ -16,7 +16,7 @@ In your Android project, add the following maven repository:
 dependencyResolutionManagement { repositories { // .. other repos maven { url = URI(&#34;https://maven.tealiumiq.com/android/releases/&#34;) } } } In your project module&rsquo;s build.gradle file, add the following dependencies. You only need to specify the version number for the platform() entry:
 implementation(platform(&#34;com.tealium.prism:prism-bom:0.4.0&#34;)) implementation(&#34;com.tealium.prism:prism-core&#34;) implementation(&#34;com.tealium.prism:prism-lifecycle&#34;) implementation(&#34;com.tealium.prism:prism-moments-api&#34;) To install Tealium Prism Swift with Swift Package Manager:" />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
-    <title>Quick start guide | Tealium for Mobile | Preview of Tealium Docs</title>
+    <title>Quick start guide for Tealium Prism | Tealium for Mobile | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -341,7 +341,7 @@ implementation(platform(&#34;com.tealium.prism:prism-bom:0.4.0&#34;)) implementa
 </ul>
 </nav>
 
-<h1 class="lh-title mt4 mt30-ns mb3">Quick start guide</h1>
+<h1 class="lh-title mt4 mt30-ns mb3">Quick start guide for Tealium Prism</h1>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -469,8 +469,8 @@ implementation(platform(&#34;com.tealium.prism:prism-bom:0.4.0&#34;)) implementa
 </span></span><span style="display:flex;"><span>                           settingsUrl: <span style="color:#e6db74">&#34;https://tags.tiqcdn.com/dle/my_account/my_profile/settings.json&#34;</span>,
 </span></span><span style="display:flex;"><span>)
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">let</span> tealium = Tealium.create(config: config)
-</span></span></code></pre></div><p>Each module can specify additional programmatic configuration. This overrides local and remote configuration.
-The following example specifies settings for the Collect module, which are enforced at compile time and cannot be updated by remote settings. Other settings that are not programmatically configured can be updated remotely.</p>
+</span></span></code></pre></div><p>Each module can specify additional programmatic configuration. This overrides local and remote configuration and cannot be changed remotely.
+The following example specifies settings for the Collect module, which are enforced at compile time and cannot be updated by remote settings. Other settings not programmatically configured can be updated remotely.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>Modules.collect { enforcedSettings <span style="color:#66d9ef">in</span>
 </span></span><span style="display:flex;"><span>    enforcedSettings.setEnabled(<span style="color:#66d9ef">true</span>)
 </span></span><span style="display:flex;"><span>        .setOrder(<span style="color:#ae81ff">5</span>)
@@ -678,7 +678,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  March 4, 2026 
+          <p>This page was last updated:  March 5, 2026 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
