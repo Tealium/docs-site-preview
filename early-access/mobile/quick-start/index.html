@@ -488,18 +488,20 @@ The following example specifies settings for the Collect module, which are enfor
 </div>
 
 <h2 id="track">Track</h2>
-<p>To track events, pass name, type, and data to the <a href="/tealium-prism-kotlin/core/com.tealium.prism.core.api/-tealium/track.html"><code>track()</code></a> method. The name of the event appears in the data layer as <code>tealium_event</code>.</p>
+<p>To track events, pass name, type, and data to the <code>track()</code> method. The name of the event appears in the data layer as <code>tealium_event</code>.</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Kotlin" title="Kotlin">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.track(<span style="color:#e6db74">&#34;user_login&#34;</span>, <span style="color:#a6e22e">DataObject</span>.create {
+  <p>To track events, call <a href="/tealium-prism-kotlin/core/com.tealium.prism.core.api/-tealium/track.html">track()</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.track(<span style="color:#e6db74">&#34;user_login&#34;</span>, <span style="color:#a6e22e">DataObject</span>.create {
 </span></span><span style="display:flex;"><span>    put(<span style="color:#e6db74">&#34;customer_id&#34;</span>, <span style="color:#e6db74">&#34;1234567890&#34;</span>)
 </span></span><span style="display:flex;"><span>})
 </span></span></code></pre></div>
 </div>
 <div class="tab-pane" data-lang="Swift" title="Swift">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">/// Basic Track with default event type and empty data layer.</span>
+  <p>To track events, call <a href="/tealium-prism-swift/TealiumPrismCore/Classes/Tealium.html">track()</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">/// Basic Track with default event type and empty data layer.</span>
 </span></span><span style="display:flex;"><span>tealium.track(<span style="color:#e6db74">&#34;homepage&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">/// Track with full paraemters</span>
@@ -518,7 +520,7 @@ The following example specifies settings for the Collect module, which are enfor
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Kotlin" title="Kotlin">
-  <p>To get a data layer value use the <a href="">get()</a> method and subscribe if you need to handle the result or an error:</p>
+  <p>To get a data layer value use the <a href="/tealium-prism-kotlin/core/com.tealium.prism.core.api.modules/-data-layer/get.html">get()</a> method and subscribe if you need to handle the result or an error:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>tealium.dataLayer.getString(<span style="color:#e6db74">&#34;customer_id&#34;</span>).subscribe { result <span style="color:#f92672">-&gt;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">val</span> customerId = result.getOrNull()
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// do something with customerId
@@ -567,8 +569,33 @@ The following example specifies settings for the Collect module, which are enfor
 </span></span></code></pre></div>
 </div>
 <div class="tab-pane" data-lang="Swift" title="Swift">
-  <p>To set a value of any type to never expire:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.put(key: <span style="color:#e6db74">&#34;some_key&#34;</span>, value: <span style="color:#e6db74">&#34;some value&#34;</span>, expiry: .forever)
+  <p>To get a data layer value, call the <a href="/tealium-prism-swift/TealiumPrismCore/Protocols/DataLayer.html">get()</a> method:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.<span style="color:#66d9ef">get</span>(key: <span style="color:#e6db74">&#34;customer_id&#34;</span>,
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">as</span>: String.<span style="color:#66d9ef">self</span>).subscribe { result <span style="color:#66d9ef">in</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">switch</span> result {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> .success(<span style="color:#66d9ef">let</span> value):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Optional Value: </span><span style="color:#e6db74">\(</span>String<span style="color:#e6db74">(</span>describing: value<span style="color:#e6db74">))</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">case</span> .failure(<span style="color:#66d9ef">let</span> error):
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;Error: </span><span style="color:#e6db74">\(</span>error<span style="color:#e6db74">)</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>To set a data layer value, use the <a href="/tealium-prism-swift/TealiumPrismCore/Protocols/DataLayer.html"><code>put()</code></a> method.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.put(key: <span style="color:#e6db74">&#34;some_key&#34;</span>, value: <span style="color:#e6db74">&#34;some value&#34;</span>)
+</span></span></code></pre></div><p>To set a data layer object use the <code>DataObject()</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.put(data: [
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;customer_id&#34;</span>: <span style="color:#e6db74">&#34;12345&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;is_logged_in&#34;</span>: <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;consent_status&#34;</span>: <span style="color:#e6db74">&#34;consented&#34;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;product_category&#34;</span>: [<span style="color:#e6db74">&#34;electronics&#34;</span>, <span style="color:#e6db74">&#34;headphones&#34;</span>]
+</span></span><span style="display:flex;"><span>])
+</span></span></code></pre></div><p>To set an expiration of the data use <a href="/tealium-prism-swift/TealiumPrismCore/Enums/Expiry.html"><code>Expiry</code></a>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span>tealium.dataLayer.put(key: <span style="color:#e6db74">&#34;currency&#34;</span>, 
+</span></span><span style="display:flex;"><span>                      value: <span style="color:#e6db74">&#34;USD&#34;</span>, 
+</span></span><span style="display:flex;"><span>                      expiry: .untilRestart)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>tealium.dataLayer.put(key: <span style="color:#e6db74">&#34;order_total&#34;</span>, 
+</span></span><span style="display:flex;"><span>                      value: <span style="color:#ae81ff">249.95</span>, 
+</span></span><span style="display:flex;"><span>                      expiry: .after(Date().advanced(by: <span style="color:#ae81ff">1000</span>)))
 </span></span></code></pre></div>
 </div>
 </div>
@@ -605,12 +632,13 @@ The following example specifies settings for the Collect module, which are enfor
 </div>
 
 <h3 id="trace">Trace</h3>
-<p>Get started with <a href="/platforms/getting-started-mobile/trace/">trace</a> for <a href="/platforms/android-kotlin/track/#trace">Android</a> or <a href="/platforms/ios-swift/track/#trace">iOS</a>.</p>
+<p>The <a href="/platforms/getting-started-mobile/trace/#mobile-trace-tool">Mobile Trace Tool</a> enhances the trace feature by providing a QR code scannable by your device, enabling you to quickly view events coming from a Tealium mobile SDK.</p>
 
 <div class="code-tabs">
   <ul class="nav nav-tabs"></ul>
   <div class="tab-content"><div class="tab-pane" data-lang="Kotlin" title="Kotlin">
-  <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>trace.join(<span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)
+  <p>Learn more about using the <a href="/tealium-prism-kotlin/core/com.tealium.prism.core.api.modules/-trace/">Trace Interface</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-kotlin" data-lang="kotlin"><span style="display:flex;"><span>trace.join(<span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">// Leave the current trace session
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>trace.leave()
@@ -620,7 +648,7 @@ The following example specifies settings for the Collect module, which are enfor
 </span></span></code></pre></div>
 </div>
 <div class="tab-pane" data-lang="Swift" title="Swift">
-  <p>Use trace by accessing an interface on the <code>Tealium</code> object:</p>
+  <p>Lear more about using the <a href="/tealium-prism-swift/TealiumPrismCore/Protocols/Trace.html">Trace Protocol Reference</a>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-swift" data-lang="swift"><span style="display:flex;"><span><span style="color:#75715e">// Join a trace session</span>
 </span></span><span style="display:flex;"><span>tealium.trace.join(id: <span style="color:#e6db74">&#34;TRACE_ID&#34;</span>)
 </span></span><span style="display:flex;"><span>
@@ -634,9 +662,8 @@ The following example specifies settings for the Collect module, which are enfor
 </div>
 </div>
 
-<p>The <a href="/platforms/getting-started-mobile/trace/#mobile-trace-tool">Mobile Trace Tool</a> enhances the trace feature by providing a QR code scannable by your device, enabling you to quickly view events coming from a Tealium mobile SDK.</p>
 <h3 id="live-events">Live events</h3>
-<p>Use the live events feature <a href="/platforms/getting-started-mobile/troubleshooting/">to troubleshoot mobile installations</a>.</p>
+<p>Use live events <a href="/platforms/getting-started-mobile/troubleshooting/">to troubleshoot mobile installations</a>.</p>
 <p>Learn more about <a href="/server-side/live-events-feeds/about-live-events/">Live events</a>.</p>
 
 </div>
