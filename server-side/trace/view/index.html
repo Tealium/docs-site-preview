@@ -38,7 +38,7 @@
     <script>
     var utag_data = {
         site_section  : "server-side",
-        reading_time  : "4",
+        reading_time  : "5",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -405,21 +405,25 @@
         <a href="/server-side/data-sources/cloud-data/databricks/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Databricks</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/data-sources/cloud-data/amazon-redshift/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Amazon Redshift</a></li>
-    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/snowflake/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Snowflake</a></li>
+    <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".snowflake-cloud-data-source">Snowflake</a>
+        <ul class="pl2  snowflake-cloud-data-source desktopmenu animated fadeIn list  dn">
+    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-snowflake-cloud-data-source">About</a></li>
     <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".tealium-audience-discovery">Tealium Audience Discovery for Snowflake</a>
         <ul class="pl2  tealium-audience-discovery desktopmenu animated fadeIn list  dn">
-    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/tealium-audience-discovery/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-tealium-audience-discovery">About</a></li>
-    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/tealium-audience-discovery/get-started/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".get-started-tealium-audience-discovery">Get started</a></li>
-    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/tealium-audience-discovery/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".install-tealium-audience-discovery">Install</a></li>
-    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/tealium-audience-discovery/manage/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-discovery-audiences">Manage audiences</a></li>
-    <li data-level="5" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/data-sources/cloud-data/tealium-audience-discovery/connect-snowflake-audiences/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connect-snowflake-audiences">Connect to Tealium</a></li></ul>
+    <li data-level="6" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-tealium-audience-discovery">About</a></li>
+    <li data-level="6" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/get-started/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".get-started-tealium-audience-discovery">Get started</a></li>
+    <li data-level="6" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".install-tealium-audience-discovery">Install</a></li>
+    <li data-level="6" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/manage/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-discovery-audiences">Manage audiences</a></li>
+    <li data-level="6" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/connect-snowflake-audiences/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connect-snowflake-audiences">Connect to Tealium</a></li></ul>
+      </li></ul>
       </li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/data-sources/cloud-data/google-bigquery-cloud-data-source/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Google BigQuery</a></li></ul>
@@ -462,8 +466,6 @@
         <ul class="pl2  cloudstream desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/cloudstream/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-cloudstream">About</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/cloudstream/datasources/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-datasources">Data sources</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/cloudstream/attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-cloud-attributes">Cloud attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -549,6 +551,8 @@
         <ul class="pl2  manage-enrichments desktopmenu animated fadeIn list  dn">
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/manage-enrichments/add-enrichment/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-add-enrichment">Add an enrichment</a></li>
+    <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/attributes/manage-enrichments/about-enrichment-rules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-about-enrichment-rules">About enrichment rules</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/manage-enrichments/usage-examples/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-usage-examples">Usage examples</a></li></ul>
       </li>
@@ -834,7 +838,7 @@
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/data-transformation-functions/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-data-transformation-functions">About data transformations</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/functions/data-transformation-functions/transforms-event-parameter/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".transforms-event-parameter">Event parameter</a></li>
+        <a href="/server-side/functions/data-transformation-functions/event-parameter/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".transforms-event-parameter">Event parameter</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/data-transformation-functions/functions-transforms-example-code/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-transforms-example-code">Example code</a></li>
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -956,10 +960,6 @@
       </li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/administration/account-settings/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-account-settings">Account settings</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/administration/enabling-experiments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Enabling Experiments</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/administration/ip-allow-list/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-ip-addresses-for-allow">IP addresses to allow</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/administration/tealium-content-security-policies-reference-guide/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ss-content-security-policy">Content Security Policy</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -1238,6 +1238,14 @@ Shows only the modified, or enriched, attributes.</li>
 </tr>
 </tbody>
 </table>
+<h2 id="multiple-visitor-profiles-in-a-trace">Multiple visitor profiles in a trace</h2>
+<p>A single trace ID can capture more than one visitor profile if:</p>
+<ul>
+<li>You reuse the same trace ID across multiple test sessions without stopping the trace between them.</li>
+<li>You test across domains and the visitors are not stitched together (for example, when the TAPID values do not match across domains).</li>
+</ul>
+<p>When a trace contains multiple visitor profiles, the overview panel always shows a snapshot of the most recent visitor profile, regardless of which event you select in the trace log. Events from earlier visitor profiles remain visible in the trace log.</p>
+<p>To avoid mixing multiple visitor profiles in a single trace, generate a new trace ID between test sessions.</p>
 
 </div>
 
@@ -1283,7 +1291,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  January 28, 2026 
+          <p>This page was last updated:  April 28, 2026 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -1301,6 +1309,7 @@ No</button>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#view-event-details" href="javascript:void(0)">View event details</a></li>
               <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#filters" href="javascript:void(0)">Filters</a></li>
               </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#trace-log" href="javascript:void(0)">Trace log</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#multiple-visitor-profiles-in-a-trace" href="javascript:void(0)">Multiple visitor profiles in a trace</a></li>
               </nav>
   </aside></nav>
 
