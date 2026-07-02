@@ -38,7 +38,7 @@
     <script>
     var utag_data = {
         site_section  : "client-side-tags",
-        reading_time  : "3",
+        reading_time  : "4",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -90,6 +90,9 @@
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
       <li class="f5 dib mr4">
+         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+      </li>
+      <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
         
@@ -112,6 +115,9 @@
     <button class="js-toggle f6 pa0 bg-white bn" style="height: 24px;" data-target=".mobilenav"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" fill="#051838" /></svg>
 </button>
     <ul class="list ma0 pa0">
+      <li class="f5 dib mr4">
+         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+      </li>
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
@@ -1028,6 +1034,9 @@
       <a href="/client-side-tags/topmailru-tag/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Top.Mail.ru</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
+      <a href="/client-side-tags/trackingplan-web-sdk-tag/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Trackingplan Web SDK</span></a>
+      </li>
+  <li  class="tl dib ma0 w-100">
       <a href="/client-side-tags/tradedoubler-conversion-tracking-tag/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>TradeDoubler Conversion Tracking</span></a>
       </li>
   <li  class="tl dib ma0 w-100">
@@ -1749,6 +1758,8 @@
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/topmailru-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".topmailru-tag">Top.Mail.ru</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/client-side-tags/trackingplan-web-sdk-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".trackingplan-web-sdk-tag">Trackingplan Web SDK</a></li>
+    <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/tradedoubler-conversion-tracking-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tradedoubler-conversion-tracking-tag">TradeDoubler Conversion Tracking</a></li>
     <li data-level="1" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/client-side-tags/tribal-fusion-tag/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".tribal-fusion-tag">Tribal Fusion Tag Setup Guide</a></li>
@@ -1882,9 +1893,9 @@
 <p>When adding the tag, configure the following settings:</p>
 <ul>
 <li><strong>API Key</strong>: Your Amplitude project&rsquo;s API key.</li>
-<li><strong>SDK Version</strong>: The version of the library to load. The default is version 2.6.0.</li>
+<li><strong>SDK Version</strong>: The version of the Amplitude Browser SDK library to load. The default is <code>2.6.0</code>. This value is used to construct the CDN URL. For example, entering <code>2.41.1</code> loads <code>https://cdn.amplitude.com/libs/analytics-browser-2.41.1-min.js.gz</code>.</li>
 <li><strong>Session Replay</strong>: Enable or disable session replay.</li>
-<li><strong>Session Replay Version</strong>: The version of the library to load. The default value is 1.13.9.</li>
+<li><strong>Session Replay Version</strong>: The version of the session replay library to load. The default value is <code>1.13.9</code>.</li>
 <li><strong>Enable Guides and Surveys</strong>: Enable or disable guides and surveys.</li>
 </ul>
 <h2 id="load-rules">Load rules</h2>
@@ -1913,9 +1924,14 @@
 <td style="text-align:left">SDK version</td>
 </tr>
 <tr>
-<td style="text-align:left"><code>defaultTracking</code></td>
+<td style="text-align:left"><code>autocapture</code></td>
 <td style="text-align:left">Boolean</td>
-<td style="text-align:left">Default tracking</td>
+<td style="text-align:left">Enable or disable autocapture of clicks, input changes, and other browser interactions</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>elementInteractions</code></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable tracking of element interaction events when autocapture is active</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>deviceId</code></td>
@@ -1960,7 +1976,7 @@
 <tr>
 <td style="text-align:left"><code>serverZone</code></td>
 <td style="text-align:left">String</td>
-<td style="text-align:left">Sever zone</td>
+<td style="text-align:left">Server zone</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>transport</code></td>
@@ -1974,8 +1990,18 @@
 </tr>
 <tr>
 <td style="text-align:left"><code>userId</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">User ID, mapped to <code>amplitude.setUserId()</code> at runtime</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>sessionId</code></td>
 <td style="text-align:left">Number</td>
-<td style="text-align:left">User ID</td>
+<td style="text-align:left">Session ID in milliseconds since epoch (Unix timestamp), mapped to <code>amplitude.setSessionId()</code> at runtime</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>reset_identity</code></td>
+<td style="text-align:left">Boolean</td>
+<td style="text-align:left">When <code>true</code> and <strong>Enable Reset Identity</strong> is enabled, calls <code>amplitude.reset()</code> before applying identity values</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>session_replay</code></td>
@@ -2105,7 +2131,7 @@
 <tbody>
 <tr>
 <td style="text-align:left"><code>group.custom</code></td>
-<td style="text-align:left"></td>
+<td style="text-align:left">Assigns the user to a group via <code>amplitude.setGroup()</code>. Change <code>custom</code> to the group name.</td>
 </tr>
 </tbody>
 </table>
@@ -2115,28 +2141,34 @@
 <tr>
 <th style="text-align:left">Variable</th>
 <th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left"><code>attribution</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable automatic tracking of attribution data such as UTM parameters and referrer</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>pageViews</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable automatic page view tracking</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>sessions</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable automatic session tracking</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>formInteractions</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable automatic tracking of form interactions</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>fileDownloads</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable automatic tracking of file download clicks</td>
 </tr>
 </tbody>
 </table>
@@ -2146,20 +2178,24 @@
 <tr>
 <th style="text-align:left">Variable</th>
 <th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left"><code>ipAddress</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable collection of the user&rsquo;s IP address</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>language</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable collection of the user&rsquo;s browser language</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>platform</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Enable or disable collection of the user&rsquo;s platform information</td>
 </tr>
 </tbody>
 </table>
@@ -2169,28 +2205,71 @@
 <tr>
 <th style="text-align:left">Variable</th>
 <th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td style="text-align:left"><code>domain</code></td>
 <td style="text-align:left">String</td>
+<td style="text-align:left">The domain for the Amplitude cookie</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>expiration</code></td>
 <td style="text-align:left">Number</td>
+<td style="text-align:left">The number of days before the cookie expires</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>sameSite</code></td>
 <td style="text-align:left">String</td>
+<td style="text-align:left">The SameSite attribute for the cookie (<code>Lax</code>, <code>Strict</code>, or <code>None</code>)</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>secure</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Whether to set the Secure flag on the cookie</td>
 </tr>
 <tr>
 <td style="text-align:left"><code>upgrade</code></td>
 <td style="text-align:left">Boolean</td>
+<td style="text-align:left">Whether to upgrade existing cookies from a previous SDK version</td>
+</tr>
+</tbody>
+</table>
+<h3 id="utm-urchin-traffic-monitor">UTM (Urchin Traffic Monitor)</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Variable</th>
+<th style="text-align:left">Type</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>utm_source</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The website that sent the traffic</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>utm_medium</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The marketing medium, for example, <code>email</code> or <code>cpc</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>utm_campaign</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The specific campaign name, for example, <code>summer_sale</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>utm_term</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">The paid search terms used, for example, <code>product+analytics</code></td>
+</tr>
+<tr>
+<td style="text-align:left"><code>utm_content</code></td>
+<td style="text-align:left">String</td>
+<td style="text-align:left">Identifies what brought the user to the site, commonly used for A/B testing</td>
 </tr>
 </tbody>
 </table>
@@ -2254,7 +2333,7 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
-          <p>This page was last updated:  November 6, 2025 
+          <p>This page was last updated:  June 23, 2026 
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
@@ -2281,6 +2360,7 @@ No</button>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#default-tracking" href="javascript:void(0)">Default Tracking</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#tracking-options" href="javascript:void(0)">Tracking Options</a></li>
               <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#cookie-options" href="javascript:void(0)">Cookie Options</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#utm-urchin-traffic-monitor" href="javascript:void(0)">UTM (Urchin Traffic Monitor)</a></li>
               </nav>
   </aside></nav>
 

@@ -5,7 +5,11 @@ url: https://docs-preview.tealium.com/iq-tag-management/tags/tag-marketplace/abo
 ---
 The tag marketplace is your one-stop source for finding supported vendor tags and adding them to your profile. It offers tags in a variety of categories, including **Display Ad**, **Analytics**, **Affiliates**, and **Social**.
 
+<<<<<<< Updated upstream
 To access the tag marketplace, go to **iQ Tag Management &gt; Tags** and then click **&#43; New Tag**.
+=======
+To access the tag marketplace, go to **Tag Management &gt; Tags** and then click **&#43; New Tag**.
+>>>>>>> Stashed changes
 
 ![](/images/iq-tag-management/manage_tags/tag_marketplace_categories.png)
 

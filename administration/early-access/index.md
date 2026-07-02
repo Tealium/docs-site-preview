@@ -36,6 +36,10 @@ Get access to beta features through the Early Access program.
 
 * [About audiences]()
 * [Manage audiences]()
+<<<<<<< Updated upstream
+=======
+* [Audience dashboard]()
+>>>>>>> Stashed changes
 
 
 
@@ -49,6 +53,17 @@ Get access to beta features through the Early Access program.
 
 
 
+<<<<<<< Updated upstream
+=======
+![](/images/icons/icon-terminal.svg)
+
+#### Functions
+
+* [Functions AI assistant]()
+
+
+
+>>>>>>> Stashed changes
 
 #### More Features
 

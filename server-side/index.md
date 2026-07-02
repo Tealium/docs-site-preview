@@ -29,6 +29,7 @@ Learn about the order of operations for server-side data collection.
 Learn how to install Tealium Collect to get started collecting data from websites, mobile apps, and server applications.
 
 
+<<<<<<< Updated upstream
 ## EventStream API Hub
 
 
@@ -38,6 +39,9 @@ Learn how to install Tealium Collect to get started collecting data from website
 
 Manage online and offline data collection, ensure data quality, and integrate with server-side analytics and marketing tools.
 
+=======
+## Collect
+>>>>>>> Stashed changes
 
 
 ![](/images/icons/icon-arrow-right-into.svg)
@@ -56,6 +60,7 @@ Integrate data from your internal systems into Tealium for event and visitor enr
 
 
 
+<<<<<<< Updated upstream
 ![](/images/icons/icon-file-arrow-up.svg)
 
 #### File Import
@@ -63,11 +68,23 @@ Integrate data from your internal systems into Tealium for event and visitor enr
 Import customer data from both offline and online channels. 
 
 
+=======
+![](/images/icons/icon-cloud-down.svg)
+
+#### CloudStream
+
+Activate customer data directly from your data cloud, without storing or loading data into Tealium.
+
+
+## Transform
+
+>>>>>>> Stashed changes
 
 ![](/images/icons/icon-cubes.svg)
 
 #### Attributes
 
+<<<<<<< Updated upstream
 Manage the basic data elements of your events and visitors.
 
 
@@ -119,11 +136,15 @@ Manage the basic data elements of your events and visitors.
 #### Audiences
 
 Create audience segments to identify your most valuable customers. 
+=======
+Define and enrich the data elements attached to your events and visitors.
+>>>>>>> Stashed changes
 
 
 
 ![](/images/icons/icon-id.svg)
 
+<<<<<<< Updated upstream
 #### Identity
 
 Create a unified view of your customers with visitor stitching.
@@ -230,6 +251,11 @@ Google Ads Enhanced Conversions for Web
 #### Trace
 
 Test your configuration and watch how events and customer data are processed in real-time.
+=======
+#### Identity resolution
+
+Unify visitor identities across devices and channels with visitor stitching.
+>>>>>>> Stashed changes
 
 
 
@@ -237,6 +263,7 @@ Test your configuration and watch how events and customer data are processed in 
 
 #### Functions
 
+<<<<<<< Updated upstream
 Write your own JavaScript functions to modify incoming data or process events or audiences in real-time.
 
 
@@ -262,6 +289,53 @@ Access your event and visitor data directly as JSON files.
 #### EventDB and AudienceDB
 
 Access your event and visitor data directly in a structured database.
+=======
+Write JavaScript functions to modify incoming data or process events and audiences in real-time.
+
+
+## Activate
+
+
+![](/images/icons/icon-audience.svg)
+
+#### Audiences
+
+Create audience segments to identify and act on your most valuable customers.
+
+
+
+![](/images/icons/icon-chart-line.svg)
+
+#### Audience Discovery
+
+Explore and validate visitor segments using graphical visualizations of your attribute data.
+
+
+
+![](/images/icons/icon-moments-api.svg)
+
+#### Moments API
+
+Retrieve high-performance visitor data for real-time personalization with a composable API.
+
+
+## Analyze
+
+
+![](/images/icons/icon-product-audiencestream.svg)
+
+#### Audience dashboard
+
+Monitor audience membership and performance across your customer segments.
+
+
+
+![](/images/icons/icon-timer.svg)
+
+#### Usage reports
+
+Track event volume and visitor processing across your account.
+>>>>>>> Stashed changes
 
 
 
@@ -269,6 +343,7 @@ Access your event and visitor data directly in a structured database.
 
 #### Tealium Insights
 
+<<<<<<< Updated upstream
 View dashboards displaying visualizations of data from EventDB and AudienceDB.
 
 
@@ -278,4 +353,33 @@ View dashboards displaying visualizations of data from EventDB and AudienceDB.
 #### User permissions
 
 Manage your account and user permissions.
+=======
+View dashboards with visualizations of data from EventDB and AudienceDB.
+
+
+## Govern
+
+
+![](/images/icons/icon-user-solid.svg)
+
+#### Visitor search
+
+Look up individual visitor records using a visitor ID attribute.
+
+
+
+![](/images/icons/icon-shield.svg)
+
+#### Server-side consent
+
+Enforce consent preferences across your server-side event data.
+
+
+
+![](/images/icons/icon-circles-overlap.svg)
+
+#### Consent orchestration
+
+Centrally enforce consent for event-level activations with purpose-based policies.
+>>>>>>> Stashed changes
 

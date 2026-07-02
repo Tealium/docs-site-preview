@@ -48,6 +48,7 @@ After you turn on functions insights dashboards, it may take up to 2 hours for d
 
 ## View functions insights
 
+<<<<<<< Updated upstream
 1. Go to **Server-Side &gt; Functions &gt; Overview**.
 1. Click the **Insights** tab.  
 You may need to scroll down to see all the graphs.
@@ -65,4 +66,10 @@ Or go to **Server-Side &gt; Insights &gt; Templates**.
 1. In the **Confirm Update** dialog, click **Update**.  
 Save and publish is not required after the update.
 
+=======
+1. Go to **Transform &gt; Functions**.
+1. Click the **Insights** tab.
+You may need to scroll down to see all the graphs.
+
+>>>>>>> Stashed changes
 For more information about dashboards and templates, see [About Tealium Insights]() and [About templates]().

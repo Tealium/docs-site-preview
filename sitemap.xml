@@ -4,14 +4,22 @@
   <sitemap>
     <loc>https://docs-preview.tealium.com/en/sitemap.xml</loc>
     
+<<<<<<< Updated upstream
       <lastmod>2026-06-03T14:02:53-07:00</lastmod>
+=======
+      <lastmod>2026-06-30T12:09:58-07:00</lastmod>
+>>>>>>> Stashed changes
     
   </sitemap>
   
   <sitemap>
     <loc>https://docs-preview.tealium.com/ja/sitemap.xml</loc>
     
+<<<<<<< Updated upstream
       <lastmod>2026-06-03T11:03:23-07:00</lastmod>
+=======
+      <lastmod>2026-06-25T07:46:06-07:00</lastmod>
+>>>>>>> Stashed changes
     
   </sitemap>
   

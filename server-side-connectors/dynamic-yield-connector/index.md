@@ -13,7 +13,11 @@ url: https://docs-preview.tealium.com/server-side-connectors/dynamic-yield-conne
 | Record engagement | ✗ | ✓ |
 | Report engagement (batch) | ✗ | ✓ |
 | Upsert or delete a user | ✓ | ✗ |
+<<<<<<< Updated upstream
 | Upsert or delete a user (batch) | ✓ | ✗ |
+=======
+| Upsert or delete a user (batch) | ✓ | ✓ |
+>>>>>>> Stashed changes
 
 ## Configuration
 
@@ -174,7 +178,10 @@ This action uses batched requests to support high-volume data transfers to the v
 * Max time since oldest request: 1 minutes
 * Max size of requests: 1 MB
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 #### Parameters
 
 | **Parameter** | **Description** |
@@ -211,7 +218,10 @@ This action uses batched requests to support high-volume data transfers to the v
 * Max time since oldest request: 60 minutes
 * Max size of requests: 1 MB
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 #### Parameters
 
 | **Parameter** | **Description** |

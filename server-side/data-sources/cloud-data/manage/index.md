@@ -16,7 +16,11 @@ The configuration for cloud data sources is nearly the same for every vendor. Fo
 
 To create a cloud data source, use the following steps:
 
+<<<<<<< Updated upstream
 1. Go to **Sources &gt; Data Sources**.
+=======
+1. Go to **Connect &gt; Data Sources**.
+>>>>>>> Stashed changes
 1. Click **&#43; Add Data Source**.
 1. Under **Categories**, click **Data Warehouse** and select a vendor.
 1. In the **Name** field, enter a unique name for the data source related to your use case.
@@ -83,7 +87,11 @@ Optionally include a SQL `WHERE` clause to import only those records that match 
 
 In Advanced mode, use the SQL editor to enter valid, read-only SQL queries and connect with one or more tables or schemas. The SQL editor supports advanced SQL commands, such as `CAST` and `JOIN`. Either incrementing, timestamp, or incrementing and timestamp columns must be included in your selection.
 
+<<<<<<< Updated upstream
 ### SQL query best practices
+=======
+#### SQL query best practices
+>>>>>>> Stashed changes
 
 * **Calculated fields**  
 The Advanced SQL query supports calculated (derived) fields. Calculated values are re-evaluated on each batch fetch and may behave differently depending on your vendor. Using calculated fields in query mode columns (timestamp, incrementing, or timestamp and incrementing) may lead to errors in importing data (for example, skipped rows or loops in ingestion). We recommend avoiding calculated fields for query mode columns.
@@ -109,6 +117,26 @@ When you are done, click **Test Query** to preview the results.
 
 Use the test query preview to validate your query results.
 
+<<<<<<< Updated upstream
+=======
+### Source table column changes
+
+If columns in your source table change after you configure the data source, the required action depends on the type of change:
+
+* **Column renamed**: If a column used in the query builder is renamed in the source table, you must duplicate the data source:
+  1. Select the **Duplicate** option from the data source action menu on the **Data Sources** screen. 
+  1. In the duplicate data source, update the query builder to use the new column name. 
+  1. Use **Set Processing Start** to configure the ingestion start point for the new data source. See [Set Processing Start]() for more information.
+* **Column added**: 
+  * If a new column is added to the source table and you do not need to ingest it, no action is required.
+  * If the column is a timestamp or incrementing column, duplicate the data source as you would for a renamed column. 
+  * For any other new column type:
+    1. Toggle data source processing to **Off** and save and publish.
+    1. Edit the data source to add the column in the query builder and add column mappings. 
+    1. Set the processing toggle to **On**.
+    1. Save and publish again.
+
+>>>>>>> Stashed changes
 ## Map columns
 
 Use the column mapping table to map pre-configured column labels to event attributes or manually enter the column labels for mapping. Columns not mapped to an event attribute are ignored. 

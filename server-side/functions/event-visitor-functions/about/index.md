@@ -5,7 +5,11 @@ url: https://docs-preview.tealium.com/server-side/functions/event-visitor-functi
 ---
 Event and visitor functions run at the end of the data pipeline, after the event or visitor is processed. Use event and visitor functions to retrieve data from other systems, augment Tealium data, or send data to other endpoints.
 
+<<<<<<< Updated upstream
 ![](/images/server-side/functions-event-data-pipeline.png)
+=======
+![](/images/server-side/functions-event-visitor-flow.svg)
+>>>>>>> Stashed changes
 
 If your function needs authentication to access an external system, see [Add authentication to a function]().
 

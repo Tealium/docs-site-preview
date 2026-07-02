@@ -57,7 +57,11 @@ You can switch back to a previous version of your profile and republish it to an
 
 To publish a previous version:
 
+<<<<<<< Updated upstream
 1. Go to **iQ Tag Management &gt; Client-Side Versions**.  
+=======
+1. Go to **Tag Management &gt; Client-Side Versions**.  
+>>>>>>> Stashed changes
 All versions appear: **Published**, **Unpublished**, and **Currently Deployed**. A blue pin icon indicates the current version. Blue buttons indicate currently deployed versions, whereas gray buttons point to older versions. ![](/images/iq-tag-management/save-publish/versionhistory4.png)
 1. Click the down arrow on the previous version that you want and select **Switch to this version**.  
 The following alert message appears at the top of the screen:  

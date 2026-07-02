@@ -7,7 +7,11 @@ The Google DV360 Customer Match Connector insight integrates with the Google DV3
 
 ## Access Connector Insights
 
+<<<<<<< Updated upstream
 To access Connector Insights, go to **AudienceStream &gt; Audience Connectors**, search for the **Google DV360 Customer Match connector**, and click **Insights**.
+=======
+To access Connector Insights, go to **Connect &gt; Audience Connectors**, search for the **Google DV360 Customer Match connector**, and click **Insights**.
+>>>>>>> Stashed changes
 
 ![](/images/server-side-connectors/insights/using-connector-insights-google-dv360-customer-match.png)
 

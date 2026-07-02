@@ -1,4 +1,5 @@
 ---
+<<<<<<< Updated upstream
 title: About enrichments
 url: https://docs-preview.tealium.com/server-side/attributes/enrichments/
 ---
@@ -16,3 +17,8 @@ When two or more enrichments have a dependency on the same attribute, they becom
 Some enrichments, such as the Join Attributes enrichment, can increase the size of an attribute. Most attributes for EventStream and AudienceStream have storage capacity limits and specific behaviors for when those limits are exceeded. Also, the entire visit or visitor profile has a limit of 400 KB compressed and encrypted.
 
 For more information, see[About attributes]().
+=======
+title: Enrichments
+url: https://docs-preview.tealium.com/server-side/attributes/enrichments/
+---
+>>>>>>> Stashed changes

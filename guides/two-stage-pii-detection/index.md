@@ -175,7 +175,11 @@ After flagging events with potential PII using a data transformation function, u
 
 Create a boolean event attribute that derives its value from the `potential_pii_detected` flag added in step 1.
 
+<<<<<<< Updated upstream
 1. Go to **EventStream &gt; Event Attributes &gt; Add Attribute**.
+=======
+1. Go to **Transform &gt; Event Attributes &gt; Add Attribute**.
+>>>>>>> Stashed changes
 1. For **attribute type**, select **Universal Variable**.
 1. Click **Continue**.
 1. Select **Boolean** data type.
@@ -227,7 +231,11 @@ Only events where `Email_Check` is `false` are processed by AudienceStream. Audi
 
 Event feeds let you group and isolate events based on attribute conditions. In this step, create a feed to collect events flagged as containing potential PII. This ensures that they can be processed separately. For example, sent to an API for secondary validation.
 
+<<<<<<< Updated upstream
 1. Go to **EventStream &gt; Live Events** and click **&#43; Add Event Feed**.
+=======
+1. Go to **Validate &gt; Live Events** and click **&#43; Add Event Feed**.
+>>>>>>> Stashed changes
 1. Set the **Title** to `Email_Check is True` or a descriptive name of your choice.
 1. In the **Capture events that...** section, add the following conditions:
 
@@ -267,7 +275,11 @@ When an event matches the criteria defined in your event feed (step 3), it trigg
 
 #### Create the processed event function
 
+<<<<<<< Updated upstream
 1. Go to **Server-Side &gt; Functions &gt; Overview**.
+=======
+1. Go to **Transform &gt; Functions**.
+>>>>>>> Stashed changes
 1. Click **&#43; Add Function**.
 1. Enter a name for the function.
 1. Select **Processed Event** trigger, then click **Continue**. 

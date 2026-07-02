@@ -51,3 +51,8 @@ Example:
 - [Best practices for selecting user identifiers](https://docs-preview.tealium.com/guides/user-identifier-guide/): This guide provides best practices about selecting user identifiers for visitor ID attributes to optimize visitor stitching.
 
 - [VIP badge](https://docs-preview.tealium.com/guides/vip-badge-guide/): This guide explains how to build a VIP badge to identify your most important customers.
+<<<<<<< Updated upstream
+=======
+
+- [How to create a lead scoring model with Marketo, Google Analytics, and AudienceStream](https://docs-preview.tealium.com/guides/lead-scoring-model/): This article explains how to create a lead scoring model with Marketo, Google Analytics, and AudienceStream.
+>>>>>>> Stashed changes

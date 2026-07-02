@@ -29,4 +29,10 @@ Tealium browser support is as follows:
 * 60 days notice will be provided if support for a browser version is to be discontinued.
 * Tealium reserves the right to release certain non-essential features and applications on more specific browsers or browser versions.
 * Support for two earlier versions or older only covers essential functionality of the product, not necessarily proper rendering of the intended look and feel.
+<<<<<<< Updated upstream
 * Tablet or mobile device browsers are not directly supported.
+=======
+* Tablet or mobile device browsers are not directly supported.
+
+This browser support does not apply to the Universal Tag (`utag.js`), which has widespread browser support.
+>>>>>>> Stashed changes

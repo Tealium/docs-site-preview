@@ -8,7 +8,11 @@ url: https://docs-preview.tealium.com/server-side-connectors/facebook-messenger-
 This connector uses the following vendor API:
 
 * API Name: Facebook Graph API - Messenger Platform
+<<<<<<< Updated upstream
 * API Version: v24.0
+=======
+* API Version: v25.0
+>>>>>>> Stashed changes
 * API Endpoint: `https://graph.facebook.com`
 * Documentation: [Page Access Token for Facebook Pages](https://developers.facebook.com/docs/facebook-login/access-tokens#pagetokens)
 

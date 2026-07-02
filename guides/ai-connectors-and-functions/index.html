@@ -38,7 +38,11 @@
     <script>
     var utag_data = {
         site_section  : "guides",
+<<<<<<< Updated upstream
         reading_time  : "9",
+=======
+        reading_time  : "10",
+>>>>>>> Stashed changes
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -90,6 +94,9 @@
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
       <li class="f5 dib mr4">
+         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+      </li>
+      <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
         
@@ -112,6 +119,9 @@
     <button class="js-toggle f6 pa0 bg-white bn" style="height: 24px;" data-target=".mobilenav"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 640 640"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z" fill="#051838" /></svg>
 </button>
     <ul class="list ma0 pa0">
+      <li class="f5 dib mr4">
+         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+      </li>
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
@@ -296,15 +306,25 @@
 <div class="prose nested-links" id="prose">
   <p>Tealium supports two approaches for integrating AI models into real-time data workflows:</p>
 <ul>
-<li><strong>AI connectors</strong>: Integrate with supported large language model (LLM) providers for prompt-based interactions.</li>
+<li><strong>AI connectors</strong>: Integrate with supported AI providers for prompt-based LLM interactions or direct model endpoint invocation.</li>
 <li><strong>Tealium functions</strong>: Invoke your own model or call custom endpoints.</li>
 </ul>
 <p>Use this guide to understand how each approach works and when to use each one.</p>
 <h2 id="ai-connectors">AI connectors</h2>
 <h3 id="how-it-works">How it works</h3>
+<<<<<<< Updated upstream
 <p>AI connectors integrate with hosted LLM APIs from supported providers and require prompt-based interactions that return structured JSON. They follow a consistent prompt, response, and activation pattern across all supported providers.</p>
 <p>To use an AI connector, you need authentication credentials for your provider and at least one configured action that defines a prompt and the Tealium data to send to the AI model.</p>
 <p class="note"><i class="fa fa-exclamation-triangle"></i>AI connectors are designed for LLM activation only. They are not intended for invoking traditional machine learning models that return numeric scores or tabular predictions. For those use cases, use Tealium functions.</p>
+=======
+<p>AI connectors integrate with hosted AI services from supported providers. They support two interaction patterns:</p>
+<ul>
+<li><strong>Prompt-based (LLM)</strong>: Send a prompt and Tealium data to an LLM endpoint. The model returns a structured JSON response that is forwarded to Tealium Collect for profile enrichment.</li>
+<li><strong>Model endpoint invocation</strong>: Send Tealium event or visitor attributes directly to a deployed model endpoint (for example, a Snowflake Model Registry endpoint). The model returns predictions or scores that are forwarded to Tealium Collect for profile enrichment.</li>
+</ul>
+<p>To use an AI connector, you need authentication credentials for your provider and at least one configured action that defines the request and the Tealium data to send to the model.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>AI connectors are designed for use cases that return structured, predictable output. They are not designed for long-form content or media generation. If your use case requires free-form output, align with your organization&rsquo;s AI governance processes before moving to production.</p>
+>>>>>>> Stashed changes
 <h3 id="data-flow">Data flow</h3>
 <figure class="tc"><a class="slb" href="/images/guides/ai-connectors-flow.png"><img src="/images/guides/ai-connectors-flow.png"
          alt="AI connectors data flow"
@@ -313,7 +333,11 @@
 </figure>
 <ol>
 <li><strong>Trigger fires</strong>: An event or audience change triggers a connector action.</li>
+<<<<<<< Updated upstream
 <li><strong>Prompt sent</strong>: The connector sends your prompt and Tealium data to the AI model endpoint.</li>
+=======
+<li><strong>Request sent</strong>: The connector sends your prompt or input data to the AI model endpoint.</li>
+>>>>>>> Stashed changes
 <li><strong>Response received</strong>: The model generates the requested values and returns a JSON object.</li>
 <li><strong>Event ingested</strong>: The connector forwards the response to Tealium Collect.</li>
 <li><strong>Profile enriched</strong>: Enrichment rules write the response values to visitor profile attributes.</li>
@@ -321,6 +345,10 @@
 </ol>
 <h3 id="prompts">Prompts</h3>
 <p>The prompt instructs the model about the context data to evaluate, asks a specific question, and defines the expected response. Depending on the vendor connector, you may or may not need to include specific instructions about the response output. See the specific connector instructions for details.</p>
+<<<<<<< Updated upstream
+=======
+<p class="note"><i class="fa fa-exclamation-triangle"></i>Some connectors, such as the OpenAI <strong>Send Prompt to OpenAI</strong> action, enforce JSON structure automatically through a schema. For those connectors, do not include response format instructions in your prompt. The examples below apply to connectors that require manual response formatting.</p>
+>>>>>>> Stashed changes
 <h4 id="context-data">Context data</h4>
 <p>You can include specific attributes or the entire event or visitor data object as context in the prompt.</p>
 <p>To include specific attributes, map them in the connector action then reference them in the prompt. For example, if you map <code>product_review</code>, you can reference <code>{{product_review}}</code> in your prompt.</p>
@@ -466,6 +494,13 @@ Return only a single JSON object on one line with the following structure:
       
     
   
+<<<<<<< Updated upstream
+=======
+    
+      
+    
+  
+>>>>>>> Stashed changes
   
 
 
@@ -511,13 +546,25 @@ Return only a single JSON object on one line with the following structure:
       <td>This article describes how to set up the OpenAI Events connector.</td>
     </tr>
     
+<<<<<<< Updated upstream
+=======
+    <tr>
+      <td><a href="/server-side-connectors/snowflake-ai-connector/">Snowflake AI</a></td>
+      <td>Set up the Snowflake AI connector to send Tealium event and visitor data to Snowflake Cortex models or deployed model endpoints for real-time enrichment.</td>
+    </tr>
+    
+>>>>>>> Stashed changes
   </tbody>
 </table>
 
 
 <h2 id="functions-for-ai">Functions for AI</h2>
 <h3 id="how-it-works-1">How it works</h3>
+<<<<<<< Updated upstream
 <p>Tealium functions provide a code-based approach for invoking your own model (IYOM). Instead of using a preconfigured connector, you write JavaScript to call any model endpoint directly from an event or visitor function. Use cases include traditional machine learning models returning numeric scores, LLMs hosted on platforms without a dedicated AI connector, and endpoints on data platforms such as Snowflake Cortex, Databricks Model Serving, or Amazon SageMaker.</p>
+=======
+<p>Tealium functions provide a code-based approach for invoking your own model (IYOM). Instead of using a preconfigured connector, you write JavaScript to call any model endpoint directly from an event or visitor function. Use cases include traditional machine learning models returning numeric scores, LLMs hosted on platforms without a dedicated AI connector, and endpoints on cloud data platforms.</p>
+>>>>>>> Stashed changes
 <p>Tealium functions support both event functions (triggered after an event is processed) and visitor functions (triggered after a visitor profile updates), allowing you to score either immediate event context or accumulated visitor history.</p>
 <p>When a function fires, it follows these steps:</p>
 <ol>
@@ -535,16 +582,21 @@ Return only a single JSON object on one line with the following structure:
 <h3 id="use-an-ai-connector-when">Use an AI connector when</h3>
 <ul>
 <li>You are invoking a large language model for prompt-based inference.</li>
+<<<<<<< Updated upstream
 <li>Your use case maps to one of the supported AI providers.</li>
 <li>Your prompt uses a consistent template with event or visitor data as input.</li>
 <li>The model returns structured JSON that can be forwarded directly as a Tealium event.</li>
+=======
+<li>You are invoking a deployed model endpoint on a supported platform (for example, Snowflake Model Registry) for real-time inference.</li>
+<li>Your use case maps to one of the supported AI providers.</li>
+<li>The model returns structured output that can be forwarded directly as a Tealium event.</li>
+>>>>>>> Stashed changes
 <li>You want to configure the integration through the Tealium UI without writing code.</li>
 <li>Your use case consists of targeted, high-value events or audiences rather than high-volume, low-value events such as page views.</li>
 </ul>
-<p class="note"><i class="fa fa-exclamation-triangle"></i>AI connectors are designed for use cases that return structured, predictable JSON output, such as classification labels, confidence values, or identifiers from a predefined list. They are not designed for long-form content or media generation. If your use case requires free-form output, align with your organization&rsquo;s AI governance processes before moving to production.</p>
+<p class="note"><i class="fa fa-exclamation-triangle"></i>AI connectors are designed for use cases that return structured, predictable output, such as classification labels, confidence values, scores, or identifiers from a predefined list. They are not designed for long-form content or media generation. If your use case requires free-form output, align with your organization&rsquo;s AI governance processes before moving to production.</p>
 <h3 id="use-tealium-functions-when">Use Tealium functions when</h3>
 <ul>
-<li>You need to invoke a traditional machine learning model that returns numeric scores or tabular predictions.</li>
 <li>Your model is hosted on a platform without a dedicated AI connector.</li>
 <li>Your payload requires custom logic, data transformation, or PII filtering before sending to the model.</li>
 <li>You need to handle asynchronous model responses or custom network configuration.</li>
@@ -567,7 +619,7 @@ Return only a single JSON object on one line with the following structure:
 </tr>
 <tr>
 <td>Model types supported</td>
-<td>LLMs only</td>
+<td>LLMs and deployed model endpoints on supported platforms</td>
 <td>Any ML or AI model, including traditional ML</td>
 </tr>
 <tr>
@@ -636,12 +688,12 @@ Return only a single JSON object on one line with the following structure:
 <tr>
 <td>Propensity scoring</td>
 <td>Predict the likelihood of a conversion, churn, or high-value action using a trained machine learning model.</td>
-<td>Tealium functions</td>
+<td>AI connector (if the model is deployed on a supported platform) or Tealium functions</td>
 </tr>
 <tr>
 <td>Next-best-action (score optimization)</td>
 <td>Score a set of candidate actions using a numeric model and select the highest-scoring one.</td>
-<td>Tealium functions</td>
+<td>AI connector (if the model is deployed on a supported platform) or Tealium functions</td>
 </tr>
 <tr>
 <td>Feature store lookup</td>
@@ -715,7 +767,11 @@ No</button>
 
         </div>
         <div class="bt-l b--moon-gray pt3 f6">
+<<<<<<< Updated upstream
           <p>This page was last updated:  April 22, 2026 
+=======
+          <p>This page was last updated:  June 17, 2026 
+>>>>>>> Stashed changes
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           </p>
         </div>
