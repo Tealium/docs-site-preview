@@ -24,11 +24,7 @@ If you do not see the option to toggle a partner integration, contact your Teali
 This connector uses the following vendor API:
 
 * API Name: Facebook Graph API - Facebook Pixel
-<<<<<<< Updated upstream
-* API Version: v24.0
-=======
 * API Version: v25.0
->>>>>>> Stashed changes
 * API Endpoint: `https://graph.facebook.com`
 
 ## Configuration
@@ -146,11 +142,7 @@ To prevent the connector from automatically sending these parameters to the vend
 |:----------------|:-------------------|:----------------|
 | Send Event | ✓ | ✓ |
 | Send Advanced Measurement Event | ✓ | ✓ |
-<<<<<<< Updated upstream
-| Send Lead Event | ✓ | ✓ |
-=======
 | Send CRM (CAPI) Event | ✓ | ✓ |
->>>>>>> Stashed changes
 
 Click **Next** or click the **Actions** tab. You configure connector actions in the **Actions** tab.
 
@@ -338,11 +330,7 @@ Required for app events.
 | Url Schemes (Array) | Used internally by the iOS and Android SDKs. |
 | Windows Attribution ID | Attribution token used for Windows 10. |
 
-<<<<<<< Updated upstream
-### Send Lead Event
-=======
 ### Send CRM (CAPI) Event
->>>>>>> Stashed changes
 
 #### Batch limits
 

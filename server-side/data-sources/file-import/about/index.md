@@ -83,11 +83,7 @@ The file transfer service is a secure location where you upload the files to be 
   * [AWS S3 bucket]()
   * [Tealium S3 bucket]()  
 * [Microsoft Azure File/Blob Storage]()
-<<<<<<< Updated upstream
-* [FTP/SFTP]()
-=======
 * [SFTP]()
->>>>>>> Stashed changes
 
 #### Tealium S3 file retention
 

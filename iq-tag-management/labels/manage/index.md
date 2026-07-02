@@ -56,11 +56,7 @@ To create a label from the **Manage Labels** screen:
 
 ## Filter by label
 
-<<<<<<< Updated upstream
-1. Navigate to **iQ Tag Management**.
-=======
 1. Navigate to **Tag Management**.
->>>>>>> Stashed changes
 1. Go to one of the following screens:
     * **Data Layer &gt; Variables**
     * **Load Rules**

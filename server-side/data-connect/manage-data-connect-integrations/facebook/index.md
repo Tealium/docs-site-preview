@@ -71,11 +71,7 @@ Complete the following steps to create and set up your recipe:
 Complete the following steps to send new or updated lead records from Tealium to any other CRM of choice. This example uses Salesforce:
 
 1. Set up an audience. For details, see [Create an audience]().
-<<<<<<< Updated upstream
-1. Go to **AudienceStream &gt; Audience Connectors**.
-=======
 1. Go to **Connect &gt; Audience Connectors**.
->>>>>>> Stashed changes
 1. Click **&#43; Add Connector** and add the [Salesforce Connector]().
 1. In the **Source** step,
     1. Select the **Audience** you created above.
@@ -105,11 +101,7 @@ Complete the following steps to send new or updated lead records from Tealium to
 
 Complete the following steps to create an event feed:
 
-<<<<<<< Updated upstream
-1. Go to **EventStream &gt; Live Events** and click **&#43; Add Event Feed**.
-=======
 1. Go to **Validate &gt; Live Events** and click **&#43; Add Event Feed**.
->>>>>>> Stashed changes
 1. In the **Create Event Feed** dialog, enter a **Title** and any **Notes**.
     The event feed title is dependent on how lead events come into Data Connect.
 1. (Optional) Click **Add Label** to select labels to apply to this event feed.
@@ -123,11 +115,7 @@ Complete the following steps to create an event feed:
 
 Follow these steps to set up the [Facebook Conversions event connector](https://docs.tealium.com/server-side-connectors/facebook-conversions-connector/) to send leads to a back to Facebook:
 
-<<<<<<< Updated upstream
-1. Go to **EventStream &gt; Event Connectors**.
-=======
 1. Go to **Connect &gt; Event Connectors**.
->>>>>>> Stashed changes
 1. Click **&#43; Add Connector** and add the Facebook Conversions connector.
 1. In the **Source** step, 
     1. Select the **Data Source**.

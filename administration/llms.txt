@@ -20,11 +20,7 @@ Example:
 
 - [Databricks Delta Sharing cloud data source](https://docs-preview.tealium.com/administration/early-access/data-sources/databricks-delta-sharing-cloud-data-source/): This article describes how to set up the Databricks Delta Sharing cloud data source.
 
-<<<<<<< Updated upstream
-- [Navigation menu](https://docs-preview.tealium.com/administration/early-access/administration/navigation-menu/): We introduced a refreshed and unified navigation menu, designed to streamline user workflows, improve accessibility, and support future product expansion.
-=======
 - [Navigation menu](https://docs-preview.tealium.com/administration/resources/navigation-menu/): We introduced a refreshed and unified navigation menu, designed to streamline user workflows, improve accessibility, and support future product expansion.
->>>>>>> Stashed changes
 
 - [PII Permissions and Server-Side Account Level Roles (Early Access)](https://docs-preview.tealium.com/administration/early-access/administration/platform-permissions/pii-account-roles/): PII Permissions with server-side account level roles is an Early Access feature that introduces data privacy controls for server-side products.
 
@@ -48,17 +44,12 @@ Example:
 
 - [About SCIM API](https://docs-preview.tealium.com/administration/early-access/api/scim-api/about/): Learn how to use SCIM provisioning to sync users from your identity provider to your Tealium account.
 
-<<<<<<< Updated upstream
-- [Single Sign-On (SSO) Certificate Status](https://docs-preview.tealium.com/administration/security-access/single-sign-on/certificates/): This article describes how to view the status of a SAML 2.0 signing certificate.
-
-=======
 - [Audience dashboard](https://docs-preview.tealium.com/administration/early-access/audiences/audience-dashboard/): This article provides information about the audience dashboard.
 
 - [Single Sign-On (SSO) Certificate Status](https://docs-preview.tealium.com/administration/security-access/single-sign-on/certificates/): This article describes how to view the status of a SAML 2.0 signing certificate.
 
 - [Functions AI assistant](https://docs-preview.tealium.com/administration/early-access/functions/functions-ai-assistant/): How to use the AI assistant in the Functions code editor to generate, edit, and debug JavaScript code for any function type.
 
->>>>>>> Stashed changes
 - [Manage Single Sign-On (SSO) Connections](https://docs-preview.tealium.com/administration/security-access/single-sign-on/manage/): This article describes how to manage SSO connections.
 
 - [Permissions system migration guide](https://docs-preview.tealium.com/administration/account-org/permissions-system-migration-guide/migration-about/): This document explains Tealium's migration plan for platform permissions and the benefits of migration.

@@ -282,11 +282,7 @@ teal.flattenObject = function(obj,new_obj){
 
 Use the following steps to add the data layer converter code:
 
-<<<<<<< Updated upstream
-1. In the left sidebar, navigate to **iQ Tag Management &gt; Extensions**.
-=======
 1. In the left sidebar, navigate to **Tag Management &gt; Extensions**.
->>>>>>> Stashed changes
 1. Add a [JavaScript Code extension]().
 1. In the **Title** field, enter `Data Layer Converter`.
 1. In the **Scope** field, select **Pre Loader**.
@@ -297,11 +293,7 @@ Use the following steps to add the data layer converter code:
 
 Use the following steps to add the code to trigger the data layer converter:
 
-<<<<<<< Updated upstream
-1. In the left sidebar, navigate to **iQ Tag Management &gt; Extensions**.
-=======
 1. In the left sidebar, navigate to **Tag Management &gt; Extensions**.
->>>>>>> Stashed changes
 1. Add a [JavaScript extension]().
 1. In the **Title** field, enter `Convert to utag_data`.
 1. In the **Scope** field, select **Pre Loader**.

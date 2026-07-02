@@ -5,11 +5,7 @@ url: https://docs-preview.tealium.com/server-side/getting-started/eventstream-ap
 ---
 ## Using Live Events
 
-<<<<<<< Updated upstream
-To begin, go to **EventStream &gt; Live Events**, select your new data source from the **All Data Sources** list, and click **Apply**.
-=======
 To begin, go to **Validate &gt; Live Events**, select your new data source from the **All Data Sources** list, and click **Apply**.
->>>>>>> Stashed changes
 
 ![](/images/server-side/eventstream-getting-started-live-events-select-data-sources.png)
 

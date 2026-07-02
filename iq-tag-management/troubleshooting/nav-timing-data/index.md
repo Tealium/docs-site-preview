@@ -42,11 +42,7 @@ We can’t send the Navigation TIming data on the same page event call because w
 
 To declare the data sources in EventDB, perform the following steps:
 
-<<<<<<< Updated upstream
-1. Navigate to **iQ Tag Management &gt; Data Layer**.
-=======
 1. Navigate to **Tag Management &gt; Data Layer**.
->>>>>>> Stashed changes
 1. Click the **Add Data Source** drop-down menu and select **Bulk Import Data Sources from CSV**
 1. Paste the following into the interface:
 

@@ -1,11 +1,7 @@
 ---
 title: Managing server-side user permissions FAQ
 description: This article describes how to manage server-side users and permission roles for the Tealium Customer Data Hub.
-<<<<<<< Updated upstream:server-side/administration/user-permissions/faq/index.md
-url: https://docs-preview.tealium.com/server-side/administration/user-permissions/faq/
-=======
 url: https://docs-preview.tealium.com/server-side/settings/user-permissions/faq/
->>>>>>> Stashed changes:server-side/settings/user-permissions/faq/index.md
 ---
 ## Frequently Asked Questions
 
@@ -13,11 +9,7 @@ url: https://docs-preview.tealium.com/server-side/settings/user-permissions/faq/
 No. When a user exists in both client-side and server-side, removing the user from one does not impact the other.
 
 #### Can I grant a user access to a server-side profile without allowing access to a client-side profile?
-<<<<<<< Updated upstream:server-side/administration/user-permissions/faq/index.md
-Yes. If a user already exists in the account and has been granted permission to a profile on the server-side, go to **iQ Tag Management &gt; Manage Users** and remove that user from the client-side interface. For more information, see Add a server-side only user above.
-=======
 Yes. If a user already exists in the account and has been granted permission to a profile on the server-side, go to **Tag Management &gt; Manage Users** and remove that user from the client-side interface. For more information, see Add a server-side only user above.
->>>>>>> Stashed changes:server-side/settings/user-permissions/faq/index.md
 
 #### How does the &#34;All current and future profiles&#34; option impact server-side permissions?
 There is no impact to server-side users. All server-side users have the default permission role of **No Access** to all new server-side profiles.
@@ -39,7 +31,4 @@ No. The **Manage Account** permission does not grant access to add new users or 
 
 #### Does this feature change the way user management access is granted or controlled within TiQ?
 No. The **Manage Users** permission in iQ Tag Management remains the permission that grants a user access to add or remove users from a business account. Users with only the **Manage Users** permission do not have access to manage permissions on the server-side.
-<<<<<<< Updated upstream:server-side/administration/user-permissions/faq/index.md
-=======
 
->>>>>>> Stashed changes:server-side/settings/user-permissions/faq/index.md

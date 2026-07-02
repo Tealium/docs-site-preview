@@ -28,10 +28,7 @@ After adding the connector, configure the following settings:
 | Action Name | AudienceStream | EventStream |
 | --- | :---: | :---: |
 | Send Conversion Event | ✓ | ✓ |
-<<<<<<< Updated upstream
-=======
 | Send Healthcare Conversion Event | ✓ | ✓ |
->>>>>>> Stashed changes
 
 Enter a name for the action and select the action type from the drop-down menu.
 
@@ -95,8 +92,6 @@ This action uses batched requests to support high-volume data transfers to the v
 | Conversion State | The state of the conversion location. |
 | Conversion City | The city of the conversion location. |
 | Disable Automapping | Disable automatic mapping for the connector. |
-<<<<<<< Updated upstream
-=======
 
 ### Send Healthcare Conversion Event
 
@@ -139,4 +134,3 @@ This action uses batched requests to support high-volume data transfers to the v
 | Conversion Country | The country of the conversion location. |
 | Conversion State | The state of the conversion location. |
 | Conversion City | The city of the conversion location. |
->>>>>>> Stashed changes

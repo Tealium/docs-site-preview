@@ -1,10 +1,6 @@
 ---
 title: Usage examples
-<<<<<<< Updated upstream:server-side/attributes/manage-enrichments/usage-examples/index.md
-url: https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/usage-examples/
-=======
 url: https://docs-preview.tealium.com/server-side/attributes/enrichments/usage-examples/
->>>>>>> Stashed changes:server-side/attributes/enrichments/usage-examples/index.md
 ---
 ## Increment or decrement number – &#34;Lifetime Order Total (LTV)&#34;
 

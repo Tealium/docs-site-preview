@@ -13,11 +13,7 @@ Data Connect usage reports contain the following usage summaries:
 
 Complete the following steps to download Data Connect usage reports:
 
-<<<<<<< Updated upstream
-1. Navigate to **Data Supply Chain &gt; Usage Reports**.
-=======
 1. Navigate to **Analyze &gt; Usage**.
->>>>>>> Stashed changes
 1. Select **DataConnect Reports** from the **All Usage Reports** drop-down list.
 1. Click **Get Report**.
 
@@ -25,10 +21,6 @@ Complete the following steps to download Data Connect usage reports:
 
 Complete the following steps to track tasks in Data Connect:
 
-<<<<<<< Updated upstream
-1. Navigate to **Data Connect &gt; Dashboard**. 
-=======
 1. Navigate to **Connect &gt; Data Connect &gt; Dashboard**. 
->>>>>>> Stashed changes
 1. The **Dashboard** graph shows the number of recipes, successful and failed jobs, and tasks.
 1. To display task usage from a specific time period, select the time range from the **Period** drop-down list. The default is 7 days. 

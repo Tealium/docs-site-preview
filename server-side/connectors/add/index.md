@@ -16,13 +16,8 @@ New connectors are deactivated by default. For information about activating a co
 
 To add an EventStream or AudienceStream connector, use the following steps:
 
-<<<<<<< Updated upstream
-1. Go to **Server-Side &gt; Connectors &gt; Marketplace**.  
-You can also go to **Server-Side &gt; Connectors &gt; Overview**, and click **&#43; New Connector**.  
-=======
 1. Go to **Connect &gt; Connectors &gt; Marketplace**.  
 You can also go to **Connect &gt; Connectors &gt; Overview**, and click **&#43; New Connector**.  
->>>>>>> Stashed changes
 The list of connectors is sorted alphabetically by default.
 1. Filter the list of connectors as needed in the following ways:
     * Click the **Data Type** filter, then select **Event** or **Visitor**. 
@@ -133,8 +128,4 @@ After you have added and configured a connector, you need to test it. The easies
 1. Check for the action you want to validate by clicking the **Actions Triggered** entry to expand.
 1. Find the action you want to validate and view the log status.
 
-<<<<<<< Updated upstream
 Connectors pass only valid trace IDs. Invalid trace IDs are removed from the payload.
-=======
-Connectors pass only valid trace IDs. Invalid trace IDs are removed from the payload.
->>>>>>> Stashed changes

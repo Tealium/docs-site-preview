@@ -31,11 +31,7 @@ Each documentation area has its own llms.txt file containing a full index of pag
 * [Administration](/administration/llms.txt): Platform administration including user access, permissions, and security settings.
 * [Consent](/consent/llms.txt): Consent capture, interpretation, and enforcement across client-side and server-side environments.
 * [Guides](/guides/llms.txt): Practical guides and strategies for using Tealium effectively.
-<<<<<<< Updated upstream
-* [Predict](/predict/llms.txt): Predict ML documentation for machine learning-powered audience predictions.
-=======
 * [Predict](/server-side/llms.txt): Predict ML documentation for machine learning-powered audience predictions.
->>>>>>> Stashed changes
 * [Partners and Industries](/partners-and-industries/llms.txt): Industry-specific integrations and partnership documentation.
 
 ## Markdown

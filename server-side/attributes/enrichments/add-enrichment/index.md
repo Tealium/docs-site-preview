@@ -1,19 +1,11 @@
 ---
 title: Add an enrichment
 description: This article describes how to add an enrichment.
-<<<<<<< Updated upstream:server-side/attributes/manage-enrichments/add-enrichment/index.md
-url: https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/add-enrichment/
----
-Enrichments are added to attributes as a way to customize their values. Find the attribute you want to enrich and complete the following steps:
-
-From the left navigation bar, go to **AudienceStream &gt; Visitor / Visit Attributes** to view your attributes. You can optionally filter your view by clicking on any the available options on the left. Click an attribute to view its details.
-=======
 url: https://docs-preview.tealium.com/server-side/attributes/enrichments/add-enrichment/
 ---
 Enrichments are added to attributes as a way to customize their values. Find the attribute you want to enrich and complete the following steps:
 
 From the left navigation bar, go to **Transform &gt; Visitor / Visit Attributes** to view your attributes. You can optionally filter your view by clicking on any the available options on the left. Click an attribute to view its details.
->>>>>>> Stashed changes:server-side/attributes/enrichments/add-enrichment/index.md
 
 ![](/images/server-side/whiteui-using-attributes-view-and-manage-attributes.png)
 
@@ -31,8 +23,4 @@ See enrichment details below for additional information.
 
 1. Select an existing **Rule** condition or create a new rule. For more information, see [About enrichment rules]().
 1. Click **Finish**.
-<<<<<<< Updated upstream:server-side/attributes/manage-enrichments/add-enrichment/index.md
 1. Save and publish your profile to apply the changes.
-=======
-1. Save and publish your profile to apply the changes.
->>>>>>> Stashed changes:server-side/attributes/enrichments/add-enrichment/index.md

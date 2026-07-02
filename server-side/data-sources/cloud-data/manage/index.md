@@ -16,11 +16,7 @@ The configuration for cloud data sources is nearly the same for every vendor. Fo
 
 To create a cloud data source, use the following steps:
 
-<<<<<<< Updated upstream
-1. Go to **Sources &gt; Data Sources**.
-=======
 1. Go to **Connect &gt; Data Sources**.
->>>>>>> Stashed changes
 1. Click **&#43; Add Data Source**.
 1. Under **Categories**, click **Data Warehouse** and select a vendor.
 1. In the **Name** field, enter a unique name for the data source related to your use case.
@@ -87,11 +83,7 @@ Optionally include a SQL `WHERE` clause to import only those records that match 
 
 In Advanced mode, use the SQL editor to enter valid, read-only SQL queries and connect with one or more tables or schemas. The SQL editor supports advanced SQL commands, such as `CAST` and `JOIN`. Either incrementing, timestamp, or incrementing and timestamp columns must be included in your selection.
 
-<<<<<<< Updated upstream
-### SQL query best practices
-=======
 #### SQL query best practices
->>>>>>> Stashed changes
 
 * **Calculated fields**  
 The Advanced SQL query supports calculated (derived) fields. Calculated values are re-evaluated on each batch fetch and may behave differently depending on your vendor. Using calculated fields in query mode columns (timestamp, incrementing, or timestamp and incrementing) may lead to errors in importing data (for example, skipped rows or loops in ingestion). We recommend avoiding calculated fields for query mode columns.
@@ -117,8 +109,6 @@ When you are done, click **Test Query** to preview the results.
 
 Use the test query preview to validate your query results.
 
-<<<<<<< Updated upstream
-=======
 ### Source table column changes
 
 If columns in your source table change after you configure the data source, the required action depends on the type of change:
@@ -136,7 +126,6 @@ If columns in your source table change after you configure the data source, the 
     1. Set the processing toggle to **On**.
     1. Save and publish again.
 
->>>>>>> Stashed changes
 ## Map columns
 
 Use the column mapping table to map pre-configured column labels to event attributes or manually enter the column labels for mapping. Columns not mapped to an event attribute are ignored. 

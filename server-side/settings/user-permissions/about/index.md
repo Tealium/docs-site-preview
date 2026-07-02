@@ -1,11 +1,7 @@
 ---
 title: About server-side permissions
 description: This article describes how to manage server-side users and permission roles for the Tealium Customer Data Hub.
-<<<<<<< Updated upstream:server-side/administration/user-permissions/about/index.md
-url: https://docs-preview.tealium.com/server-side/administration/user-permissions/about/
-=======
 url: https://docs-preview.tealium.com/server-side/settings/user-permissions/about/
->>>>>>> Stashed changes:server-side/settings/user-permissions/about/index.md
 ---
 ## How it works
 

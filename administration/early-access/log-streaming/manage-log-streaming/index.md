@@ -225,9 +225,5 @@ If you want to send the same log source to multiple destinations, create the add
 ## Related resources
 
 * [Connector error logging]()
-<<<<<<< Updated upstream
-* [Manage enrichments]()
-=======
 * [About enrichments]()
->>>>>>> Stashed changes
 * [About log streaming]()

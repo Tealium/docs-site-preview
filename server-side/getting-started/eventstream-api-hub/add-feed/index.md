@@ -7,11 +7,7 @@ url: https://docs-preview.tealium.com/server-side/getting-started/eventstream-ap
 
 To create an event feed:
 
-<<<<<<< Updated upstream
-1. Go to **EventStream &gt; Live Events** and click **&#43; Add Event Feed**.  
-=======
 1. Go to **Validate &gt; Live Events** and click **&#43; Add Event Feed**.  
->>>>>>> Stashed changes
 1. Set the **Title**, **Notes**, and **Labels**.  
 Ignore **Event Data Storage** for now, since this setting requires your account to be enabled for [DataAccess]().
 1. Set the conditions for the feed:

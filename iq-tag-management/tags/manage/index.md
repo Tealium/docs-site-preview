@@ -7,11 +7,7 @@ url: https://docs-preview.tealium.com/iq-tag-management/tags/manage/
 
 To add a tag:
 
-<<<<<<< Updated upstream
-1. Go to **iQ Tag Management &gt; Tags**.
-=======
 1. Go to **Tag Management &gt; Tags**.
->>>>>>> Stashed changes
 1. Click **&#43; New Tag**. 
 1. Locate the tag for a vendor using one of the following methods:  
 If the [tag marketplace policy]() is enabled, the tag marketplace will only show the permitted tags.
@@ -123,11 +119,7 @@ Provides space for additional notes about the tag configuration.
 
 To edit a tag:
 
-<<<<<<< Updated upstream
-1. Go to **iQ Tag Management &gt; Tags**.
-=======
 1. Go to **Tag Management &gt; Tags**.
->>>>>>> Stashed changes
 1. Click a tag to view its details.
 1. Click the **Edit** button for the section you want to edit.  
 The **Tag Configuration**, **Load Rules**, **Mapped Variables**, and **Extensions** sections each have an edit button that lets you focus on editing that area.

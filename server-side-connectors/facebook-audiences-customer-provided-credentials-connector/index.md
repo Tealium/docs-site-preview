@@ -22,11 +22,7 @@ To get more app resources, such as a better rate limit, request Ads Management *
 This connector uses the following vendor API:
 
 * API Name: Facebook Graph API - Marketing API
-<<<<<<< Updated upstream
-* API Version: v24.0
-=======
 * API Version: v25.0
->>>>>>> Stashed changes
 * API Endpoint: `https://graph.facebook.com`
 
 ## Batch limits

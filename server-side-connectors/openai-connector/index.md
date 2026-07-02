@@ -9,12 +9,7 @@ For an overview of how AI connectors work and guidance on when to use an AI conn
 
 This connector invokes an OpenAI model with your custom prompt and mapped Tealium data, then sends the response as a JSON event to Tealium Collect for real-time enrichment.
 
-<<<<<<< Updated upstream
-The OpenAI connector should be used for targeted, high-value interactions rather than high-volume events. Excessive usage may result in rate limits or increased API costs in your OpenAI account and add to your inbound Tealium event volume.
-
-=======
 Use the OpenAI connector for targeted, high-value interactions rather than high-volume events. Excessive usage may result in rate limits or increased API costs in your OpenAI account and add to your inbound Tealium event volume.
->>>>>>> Stashed changes
 
 ## Usage and cost considerations
 
@@ -25,25 +20,6 @@ For more information, see [OpenAI Developers: Rate limits](https://developers.op
 **Key considerations**
 
 * **Usage tier and rate limits**  
-<<<<<<< Updated upstream
-  OpenAI enforces rate limits based on your account tier (requests per minute and tokens per minute). High‑frequency events or large audiences can quickly reach these limits, causing throttling or failed requests.
-* **Pricing and token consumption**  
-  OpenAI charges based on the number of input and output tokens processed by the model. Longer prompts, larger payloads, and higher‑capacity models increase per‑request cost. Review pricing for the specific models you plan to use.
-* **Monthly spend and budget controls**  
-  Set usage caps or alerts in your OpenAI account to prevent unplanned spend. Without limits in place, automated workflows can accumulate significant costs.
-* **Trigger volume**  
-  Avoid attaching the connector to high‑volume, low‑value events (such as page views). Use events or audiences that represent meaningful customer actions and occur at manageable frequency.
-
-## Best practices
-
-To get the most value from this connector, follow these guidelines to build effective solutions: 
-
-* **High-value triggers**: Choose event feed or audience triggers that contain rich context or meaningful customer input. Triggering this connector for a high-volume use case may incur additional costs in your OpenAI account or lead to failed requests.
-* **Be specific**: Include details about what the model should evaluate and what values you expect. List the exact values you expect.
-* **JSON format**: Include a valid JSON response template that can be sent as a Tealium event.
-* **Response values**: Reference the response values to capture. For example, if your prompt asks to evaluate the purchase intent, reference `&lt;customer purchase intent&gt;` in the prompt where you want that value to appear in the event JSON.
-* **Tealium data**: Reference Tealium data and mapped parameters using double-curly braces. For example, to reference the mapped value for `tealium_account`, write `{{tealium_account}}` in your prompt.
-=======
   OpenAI enforces rate limits based on your account tier, measured in requests per minute and tokens per minute. High-frequency events or large audiences can quickly reach these limits, causing throttling or failed requests.
 * **Pricing and token consumption**  
   OpenAI charges based on the number of input and output tokens processed by the model. Longer prompts, larger payloads, and higher-capacity models increase per‑request cost. Review pricing for the specific models you plan to use.
@@ -59,7 +35,6 @@ To get the most value from this connector, follow these guidelines to build effe
 * **High-value triggers**: Choose event feed or audience triggers that contain rich context or meaningful customer input. Triggering this connector for a high-volume use case may incur additional costs in your OpenAI account or lead to failed requests.
 * **Be specific**: Include details about what the model evaluates and how it determines each output field.
 * **Prompt parameters**: Map Tealium attributes to placeholder names in the **Prompt Parameters** section, then reference them in your prompt using double curly braces. For example, if you map an attribute to the placeholder `product_id`, write `{{product_id}}` in your prompt.
->>>>>>> Stashed changes
 
 ## API information
 
@@ -75,22 +50,13 @@ This connector uses the following vendor API:
 Go to the Connector Marketplace and add a new connector. For general instructions on how to add a connector, see [About Connectors]().
 
 After adding the connector, configure the following settings:
-<<<<<<< Updated upstream
-* **API Key**: The OpenAI API key used to authenticate requests made by this connector to the OpenAI API. The key must have permission to create responses (model inference) using either **All** or **Restricted** permission. It cannot have **Read Only** permission. For more information, see [OpenAI: Assign API Key Permissions](https://help.openai.com/en/articles/8867743-assign-api-key-permissions).
-=======
 * **API Key**: The OpenAI API key used to authenticate requests. The key must have permission to create responses (model inference) with either **All** or **Restricted** permission. It cannot have **Read Only** permission. For more information, see [OpenAI: Assign API Key Permissions](https://help.openai.com/en/articles/8867743-assign-api-key-permissions).
->>>>>>> Stashed changes
 
 ## Actions
 
 | Action Name | AudienceStream | EventStream |
 | --- | :---: | :---: |
 | Send Prompt to OpenAI | ✓ | ✓ |
-<<<<<<< Updated upstream
-
-### Send Prompt to OpenAI
-
-=======
 | Send Prompt to OpenAI (Deprecated) | ✓ | ✓ |
 
 ### Send Prompt to OpenAI
@@ -211,7 +177,6 @@ Classify the customer&#39;s sentiment as one of: &#34;dissatisfied&#34;, &#34;ne
 
 ### Send Prompt to OpenAI (Deprecated)
 
->>>>>>> Stashed changes
 This action invokes an OpenAI model with your custom prompt and mapped Tealium data. If the model responds with a valid JSON event object, this event is sent back to your account where you can capture the generated value in a real-time enrichment.
 
 #### Parameters
@@ -237,7 +202,3 @@ This action invokes an OpenAI model with your custom prompt and mapped Tealium d
 | `service_tier` | Specifies the processing type used for serving the request. |
 | `tool_choice` | How the model should select which tool or tools to use when generating a response. |
 | Debug Mode | When debug mode is enabled, the connector accepts the raw OpenAI response without sending it to Tealium Collect. Use trace to validate the response format before enabling full processing. |
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes

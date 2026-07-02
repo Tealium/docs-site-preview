@@ -43,11 +43,7 @@ You can retrieve this information directly from the web page after accepting all
 
 To begin, we’ll inject the OneTrust CMP script into the website using either a **Pre Loader** or **DOM Ready** extension. For this setup, you’ll need your configured CMP script, which you can obtain from your CMP provider. In this example, we’ll use a OneTrust CMP script retrieved from the OneTrust console.
 
-<<<<<<< Updated upstream
-1. Go to **iQ Tag Management &gt; Extensions**.
-=======
 1. Go to **Tag Management &gt; Extensions**.
->>>>>>> Stashed changes
 1. Click **&#43; Add Extension &gt; Advanced**.
 1. Add a **Javascript Code** extension.
 1. Enter a **Title** to identify the extension.
@@ -78,11 +74,7 @@ Next, we’ll configure the integration to ensure tags fire only based on the co
 
 ### Step 1: Configure the integration
 
-<<<<<<< Updated upstream
-1. Go to the **iQ Tag Management &gt; Consent Integrations** section.
-=======
 1. Go to the **Tag Management &gt; Consent Integrations** section.
->>>>>>> Stashed changes
 1. Click **Add Integration**.
 1. Enter a name for the integration that clearly identifies its purpose.
 1. Select **OneTrust** from the vendor drop-down list.

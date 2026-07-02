@@ -24,15 +24,9 @@ Example:
 
 - [About arrays](https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/about/): This article describes how to use the data types array of strings, array of numbers, and array of booleans.
 
-<<<<<<< Updated upstream
-- [Affirm incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/affirm/): This article describes how to use the Affirm data source to create a webhook in your Affirm account and send actionable events to Tealium.
-
-- [Airship incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/airship/): This article describes how to use the Airship data source to create a webhook in your Airship account and send actionable events to Tealium.
-=======
 - [Affirm incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/affirm/): This article describes how to use the Affirm data source to create a webhook in your Affirm account and send actionable events to Tealium.
 
 - [Airship incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/airship/): This article describes how to use the Airship data source to create a webhook in your Airship account and send actionable events to Tealium.
->>>>>>> Stashed changes
 
 - [Array of booleans](https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/array-of-booleans/): This article describes how to use an array of booleans.
 
@@ -40,57 +34,18 @@ Example:
 
 - [Array of strings](https://docs-preview.tealium.com/server-side/attributes/data-types/arrays/arrays/): This article describes how to use the data types array of strings, array of numbers, and array of booleans.
 
-<<<<<<< Updated upstream
-- [Auth0 incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/auth0/): This article describes how to use the Auth0 data source to create a webhook in your Auth0 account and send actionable events to Tealium.
-=======
 - [Auth0 incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/auth0/): This article describes how to use the Auth0 data source to create a webhook in your Auth0 account and send actionable events to Tealium.
->>>>>>> Stashed changes
 
 - [Badge Attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/badge/): A badge is a special visitor attribute for capturing the interesting behavior of a customer.
 
 - [Boolean Attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/boolean/): This article explains how to use the boolean attribute data type. Booleans are used to store true or false values.
 
-<<<<<<< Updated upstream
-- [Braze Currents data source setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/braze-currents/): This article describes how to use Braze as a data source to send actionable events to Tealium EventStream API Hub and Tealium AudienceStream CDP using Braze Currents.
-=======
 - [Braze Currents data source setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/braze-currents/): This article describes how to use Braze as a data source to send actionable events to Tealium EventStream API Hub and Tealium AudienceStream CDP using Braze Currents.
->>>>>>> Stashed changes
 
 - [Date Attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/date/): The date attribute stores the timestamp of an event.
 
 - [Funnel attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/funnel/): This article describes the funnel data type and how to use it.
 
-<<<<<<< Updated upstream
-- [Google Ads Leads setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/google-ads-leads/): This article provides information on adding a Google Ads Leads data source and adding a webhook for this data source.
-
-- [Google BigQuery cloud data source](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/google-bigquery-cloud-data-source/): This article describes how to set up the Google BigQuery cloud data source.
-
-- [HTTP API - Advanced incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/http-api-advanced/): This article describes how to use the HTTP API - Advanced data source.
-
-- [Hubspot Workflow incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/hubspot/): This article describes how to use the Hubspot data source to create a webhook in your Hubspot account and send actionable events to Tealium.
-
-- [Insider data source setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/insider/): This article describes how to use Insider as a data source to send actionable events to Tealium.
-
-- [Install options for web](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/install/): This article describes the installation options for Tealium AudienceStream CDP.
-
-- [Intercom incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/intercom/): This article describes how to use the Intercom data source to create a webhook in your Intercom account and send actionable events to Tealium.
-
-- [Iterable incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/iterable/): This article describes how to use the Iterable data source to create a webhook in your Iterable account and send actionable events to Tealium.
-
-- [Mailchimp incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/mailchimp/): This article describes how to use the Mailchimp data source to create a webhook in your Mailchimp account and send actionable events to Tealium.
-
-- [Tealium Tools Mobile QR Trace](https://docs-preview.tealium.com/server-side/tealium-tools/mobile-qr-trace/): The Mobile Trace Tool enhances the Trace feature by providing a QR code that is scannable by your device, enabling you to quickly view events coming from the Tealium Mobile SDKs.
-
-- [Number Attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/number/): This article describes how to use the number attribute.
-
-- [Tealium Tool Optimizely Helper](https://docs-preview.tealium.com/server-side/tealium-tools/optimizely-helper/): Installing Tealium Tools Make sure you have the latest version of Tealium Tools installed. This Google Chrome extension provides a variety of tools, …
-
-- [Popular Badges](https://docs-preview.tealium.com/server-side/attributes/data-types/popular-badges/): These are popular Badges that have proven useful to other clients.
-
-- [PulsePoint HCP365 incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/pulsepoint-hcp365/): This article describes how to use the PulsePoint HCP365 data source to create a webhook in your PulsePoint account and send actionable events to Tealium.
-
-- [SendGrid incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/sendgrid/): This article describes how to use the SendGrid data source to create a webhook in your SendGrid account and send actionable events to Tealium.
-=======
 - [Google Ads Leads setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/google-ads-leads/): This article provides information on adding a Google Ads Leads data source and adding a webhook for this data source.
 
 - [Google BigQuery cloud data source](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/google-bigquery-cloud-data-source/): This article describes how to set up the Google BigQuery cloud data source.
@@ -120,7 +75,6 @@ Example:
 - [PulsePoint HCP365 incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/pulsepoint-hcp365/): This article describes how to use the PulsePoint HCP365 data source to create a webhook in your PulsePoint account and send actionable events to Tealium.
 
 - [SendGrid incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/sendgrid/): This article describes how to use the SendGrid data source to create a webhook in your SendGrid account and send actionable events to Tealium.
->>>>>>> Stashed changes
 
 - [Set of Strings Attribute](https://docs-preview.tealium.com/server-side/attributes/data-types/set-of-strings/): The set of strings attribute stores a set of unique text values.
 
@@ -142,11 +96,7 @@ Webhook Send Custom Action …
 
 - [Webhook Salesforce Predictive Intelligence API](https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/vendor-examples/webhook-salesforce-predictive-intelligence-api/): How to configure an advanced Webhook - Send Custom Request action using Template Variables for Salesforce Predictive Intelligence API
 
-<<<<<<< Updated upstream
-- [Zapier incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/zapier/): This article describes how to use the Zapier data source to create a webhook in your Zapier account and send actionable events to Tealium.
-=======
 - [Zapier incoming webhook setup guide](https://docs-preview.tealium.com/server-side/data-sources/webhooks/setup-guides/zapier/): This article describes how to use the Zapier data source to create a webhook in your Zapier account and send actionable events to Tealium.
->>>>>>> Stashed changes
 
 - [About Data Layer Enrichment Public API](https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/data-layer-enrichment-public-api/): The Data Layer Enrichment Public API lets you retrieve profile data for an active visitor.
 
@@ -162,17 +112,11 @@ Webhook Send Custom Action …
 
 - [About audiences](https://docs-preview.tealium.com/server-side/audiences/about/): This article provides information about audiences, segments, and visitor retention time.
 
-<<<<<<< Updated upstream
-- [About functions](https://docs-preview.tealium.com/server-side/functions/about/): Functions are small blocks of JavaScript code that you can use to extend Tealium functionality. This article provides information on function types and the key benefits of functions.
-
-- [Use Cyberduck to upload a file with FTP/SFTP or Amazon S3](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/cyberduck/): This article describes how to configure Cyberduck to upload a file with FTP/SFTP or Amazon S3.
-=======
 - [About enrichments](https://docs-preview.tealium.com/server-side/attributes/enrichments/enrichments/): An enrichment is the use of custom logic to transform an attribute from a static value to a dynamic one. This is used to create new data values or …
 
 - [About functions](https://docs-preview.tealium.com/server-side/functions/about/): Functions are small blocks of JavaScript code that you can use to extend Tealium functionality. This article provides information on function types and the key benefits of functions.
 
 - [Use Cyberduck to upload a file with SFTP or Amazon S3](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/cyberduck/): This article describes how to configure Cyberduck to upload a file with SFTP or Amazon S3.
->>>>>>> Stashed changes
 
 - [Prepare a CSV file for import](https://docs-preview.tealium.com/server-side/data-sources/file-import/prepare-a-csv-file/): This article helps you prepare your files for a successful import using the file import data source.
 
@@ -207,30 +151,16 @@ Data Connect uses Workato to create …
 
 - [About webhook connectors](https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/about/): Connect the webhook connector to an HTTP API endpoint to send event or visitor data directly to your service, either by posting the full JSON payload or mapping individual attributes to request fields.
 
-<<<<<<< Updated upstream
-- [Add an enrichment](https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/add-enrichment/): This article describes how to add an enrichment.
-
-- [Use the Amazon Command Line Interface to upload and manage files](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/aws-cli/): This article describes how to use the AWS Command Line Interface to upload and manage files.
-
-=======
 - [Add an enrichment](https://docs-preview.tealium.com/server-side/attributes/enrichments/add-enrichment/): This article describes how to add an enrichment.
 
 - [Use the Amazon Command Line Interface to upload and manage files](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/aws-cli/): This article describes how to use the AWS Command Line Interface to upload and manage files.
 
 - [Audience dashboard](https://docs-preview.tealium.com/server-side/audiencestream-dashboard/): This article explains the features of the AudienceStream Dashboard.
 
->>>>>>> Stashed changes
 - [AWS S3](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/aws-s3/): This article describes how to use the AWS S3 bucket to upload and manage files.
 
 - [Azure storage](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/azure/): This article describes how to use the Azure Blob and Azure File Storage to upload and manage files.
 
-<<<<<<< Updated upstream
-- [AudienceStream Dashboard](https://docs-preview.tealium.com/server-side/audiences/audiencestream-dashboard/): This article explains the features of the AudienceStream Dashboard.
-
-- [FTP/SFTP](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/ftp-sftp/): This article describes how to use an FTP or SFTP connection to upload and manage files.
-
-=======
->>>>>>> Stashed changes
 - [Function triggers](https://docs-preview.tealium.com/server-side/functions/triggers/): This article provides information on triggers for each function type.
 
 - [Manage a cloud data source](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/manage/): This article describes how to manage a cloud data source.
@@ -238,30 +168,19 @@ Data Connect uses Workato to create …
 - [Data Layer Enrichment API objects](https://docs-preview.tealium.com/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/dle-objects/): The Data Layer Enrichment API object has the following properties that correspond to AudienceStream attributes:
 Property AudienceStream attribute …
 
-<<<<<<< Updated upstream
-- [Session length](https://docs-preview.tealium.com/server-side/attributes/session-length/): This article explains visit session length in AudienceStream.
-
-- [Tealium S3 Bucket](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/tealium-s3/): This article describes how to use a Tealium S3 bucket to upload and manage files.
-
-=======
 - [SFTP](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/sftp/): This article describes how to use an SFTP connection to upload and manage files.
 
 - [Tealium S3 Bucket](https://docs-preview.tealium.com/server-side/data-sources/file-import/file-transfer-service/tealium-s3/): This article describes how to use a Tealium S3 bucket to upload and manage files.
 
 - [Session length](https://docs-preview.tealium.com/server-side/attributes/session-length/): This article explains visit session length in AudienceStream.
 
->>>>>>> Stashed changes
 - [Get started with Tealium Audience Discovery for Snowflake](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/get-started/): Set up Tealium Audience Discovery for Snowflake and connect your first audience to Tealium.
 
 - [Encryption and compression in File Import data sources](https://docs-preview.tealium.com/server-side/data-sources/file-import/encryption-and-compression/): This article describes how compression and encryption options work for a file import data source.
 
 - [Preloaded attributes](https://docs-preview.tealium.com/server-side/attributes/preloaded/): This article describes preloaded attributes.
 
-<<<<<<< Updated upstream
-- [About enrichment rules](https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/about-enrichment-rules/): This article explains how rules work in attribute enrichments and when to apply them for event, visit, and visitor attributes.
-=======
 - [About enrichment rules](https://docs-preview.tealium.com/server-side/attributes/enrichments/about-enrichment-rules/): This article explains how rules work in attribute enrichments and when to apply them for event, visit, and visitor attributes.
->>>>>>> Stashed changes
 
 - [Webhook authentication](https://docs-preview.tealium.com/server-side/connectors/webhook-connectors/authentication/): This article describes how to configure different authentication methods for the HTTP-based webhook connector.
 
@@ -297,11 +216,7 @@ Property AudienceStream attribute …
 
 - [Connectors interface](https://docs-preview.tealium.com/server-side/connectors/interface/): The connectors interface provides an intuitive workflow to add, edit, or delete server-side connectors and actions for AudienceStream Customer Data Platform (CDP) and EventStream API Hub.
 
-<<<<<<< Updated upstream
-- [Create a data source](https://docs-preview.tealium.com/server-side/data-sources/create-data-source/): This article describes how to create a data source.
-=======
 - [Create a data source](https://docs-preview.tealium.com/server-side/data-sources/platform-data-sources/create-data-source/): This article describes how to create a data source.
->>>>>>> Stashed changes
 
 - [Create a function](https://docs-preview.tealium.com/server-side/functions/manage-functions/create-function/): This article provides instructions for creating data transformation functions and event or visitor functions.
 
@@ -325,11 +240,7 @@ Property AudienceStream attribute …
 
 - [Connector template variables](https://docs-preview.tealium.com/server-side/connectors/templates/template-variables/): Learn how to build advanced connector requests using template variables.
 
-<<<<<<< Updated upstream
-- [Usage examples](https://docs-preview.tealium.com/server-side/attributes/manage-enrichments/usage-examples/): Increment or decrement number – &amp;ldquo;Lifetime Order Total (LTV)&amp;rdquo; This enrichment can modify a number with a positive value (increment) or a …
-=======
 - [Usage examples](https://docs-preview.tealium.com/server-side/attributes/enrichments/usage-examples/): Increment or decrement number – &amp;ldquo;Lifetime Order Total (LTV)&amp;rdquo; This enrichment can modify a number with a positive value (increment) or a …
->>>>>>> Stashed changes
 
 - [Event and visitor functions V2](https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/v2-functions/): This article provides information on event and visitor functions that use the V2 runtime.
 
@@ -347,11 +258,6 @@ Property AudienceStream attribute …
 
 - [Functions dashboard](https://docs-preview.tealium.com/server-side/functions/dashboard/): This article provides information about the functions dashboard.
 
-<<<<<<< Updated upstream
-- [About enrichments](https://docs-preview.tealium.com/server-side/attributes/enrichments/): An enrichment is the use of custom logic to transform an attribute from a static value to a dynamic one. This is used to create new data values or …
-
-=======
->>>>>>> Stashed changes
 - [About templates](https://docs-preview.tealium.com/server-side/insights/about-templates/): This article provides information about templates and predefined dashboards.
 
 - [Add a connector](https://docs-preview.tealium.com/server-side/connectors/add/): This article explains how to add and configure a connector.
@@ -364,11 +270,7 @@ Property AudienceStream attribute …
 
 - [Configure AudienceStore](https://docs-preview.tealium.com/server-side/data-storage/audiencestore-eventstore/configure-audiencestore/): This article provides information about configuring an AudienceStore connector.
 
-<<<<<<< Updated upstream
-- [Connect to a data source](https://docs-preview.tealium.com/server-side/data-sources/connect-to-data-source/): This article describes how to add and connect data sources to your account.
-=======
 - [Connect to a data source](https://docs-preview.tealium.com/server-side/data-sources/platform-data-sources/connect-to-data-source/): This article describes how to add and connect data sources to your account.
->>>>>>> Stashed changes
 
 - [Connect Snowflake audiences to Tealium](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/snowflake-cloud-data-source/tealium-audience-discovery/connect-snowflake-audiences/): Connect an audience from Tealium Audience Discovery for Snowflake to Tealium using a Snowflake cloud data source.
 
@@ -405,11 +307,7 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Delete a function](https://docs-preview.tealium.com/server-side/functions/manage-functions/delete-function/): This article provides instructions for deleting a function from the **Functions Overview** page and from the functions code editor.
 
-<<<<<<< Updated upstream
-- [Edit data source settings](https://docs-preview.tealium.com/server-side/data-sources/edit-data-source-settings/): This article describes how to add and connect data sources to your Customer Data Hub profile.
-=======
 - [Edit data source settings](https://docs-preview.tealium.com/server-side/data-sources/platform-data-sources/edit-data-source-settings/): This article describes how to add and connect data sources to your Customer Data Hub profile.
->>>>>>> Stashed changes
 
 - [Event feeds](https://docs-preview.tealium.com/server-side/event-health/event-feeds/): Event feeds are used to manage and inspect incoming data. This article shows how to manage event feeds.
 
@@ -439,22 +337,14 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Manage segments](https://docs-preview.tealium.com/server-side/audiences/manage-segments/): This article provides information about creating, editing, and deleting segments, as well as saving segments as favorites.
 
-<<<<<<< Updated upstream
-=======
 - [Threshold alerts](https://docs-preview.tealium.com/server-side/insights/threshold-alerts/): Set up threshold alerts to receive email notifications when a dashboard visual crosses a defined value.
 
->>>>>>> Stashed changes
 - [About restricted data](https://docs-preview.tealium.com/server-side/attributes/restricted-data/): Restricted data is a property to identify attributes that contain sensitive data.
 
 - [Batched actions](https://docs-preview.tealium.com/server-side/connectors/batched-actions/): This article describes how batched actions work with Tealium connectors.
 
 - [Connect to EventDB and AudienceDB](https://docs-preview.tealium.com/server-side/data-storage/audiencedb-eventdb/connect/): This article describes provides information on connecting to Redshift, getting database credentials, and writing SQL queries.
 
-<<<<<<< Updated upstream
-- [Data sources for iQ Tag Management](https://docs-preview.tealium.com/server-side/data-sources/data-sources-for-iq-tag-management/): This article explains how to use data sources with existing iQ Tag Management accounts.
-
-=======
->>>>>>> Stashed changes
 - [Event and visitor function examples (V2)](https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/function-examples-v2/): This article provides example code for V2 event and visitor functions.
 
 - [Moments API Insights](https://docs-preview.tealium.com/server-side/moments-api/insights/): This article provides information about the data and visualizations displayed in the Moments API Insights tab.
@@ -479,30 +369,17 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Create a visitor ID attribute](https://docs-preview.tealium.com/server-side/visitor-stitching/create-a-visitor-id-attribute/): This article provides detailed steps to create a visitor ID attribute. This example uses `customer_id`, which is typically available when a visitor makes a purchase, as a user identifier.
 
-<<<<<<< Updated upstream
-- [Event attributes and enrichments reference](https://docs-preview.tealium.com/server-side/attributes/event-attributes-and-enrichments-reference/): This article lists all event attributes with their enrichments and corresponding rule conditions.
-
-- [Event and visitor functions examples (V3)](https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/v3-function-examples/): This article provides example code for V3 event and visitor functions.
-
-- [Import data using Visitor Data Enrichment (/vdata)](https://docs-preview.tealium.com/server-side/data-sources/vdata-endpoint/): Send real-time data updates to EventStream from any external system.
-
-=======
 - [Event attributes and enrichments reference](https://docs-preview.tealium.com/server-side/attributes/reference/event-attributes-and-enrichments-reference/): This article lists all event attributes with their enrichments and corresponding rule conditions.
 
 - [Event and visitor functions examples (V3)](https://docs-preview.tealium.com/server-side/functions/event-visitor-functions/v3-function-examples/): This article provides example code for V3 event and visitor functions.
 
->>>>>>> Stashed changes
 - [Manage analyses](https://docs-preview.tealium.com/server-side/insights/manage-analyses/): This article provides information on creating, printing, and publishing an analysis.
 
 - [Manage global variables](https://docs-preview.tealium.com/server-side/functions/manage-functions/manage-global-variables/): This article provides information on adding, editing, and deleting global variables that can be used in event, visitor, and data record functions.
 
 - [Troubleshooting](https://docs-preview.tealium.com/server-side/data-connect/manage-data-connect-integrations/troubleshooting-data-connect/): This article describes how to troubleshoot issues in Data Connect.
 
-<<<<<<< Updated upstream
-- [Visit and visitor attributes and enrichments reference](https://docs-preview.tealium.com/server-side/attributes/visit-and-visitor-attributes-and-enrichments-reference/): This article lists all visit and visitor attributes with their enrichments.
-=======
 - [Visit and visitor attributes and enrichments reference](https://docs-preview.tealium.com/server-side/attributes/reference/visit-and-visitor-attributes-and-enrichments-reference/): This article lists all visit and visitor attributes with their enrichments.
->>>>>>> Stashed changes
 
 - [Facebook Lead Ads Data Connect Integration Setup Guide](https://docs-preview.tealium.com/server-side/data-connect/manage-data-connect-integrations/facebook/): This article describes how to set up an integration between Tealium Data Connect and Facebook Lead Ads.
 
@@ -520,11 +397,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [View function statistics](https://docs-preview.tealium.com/server-side/functions/manage-functions/view-function-statistics/): This article provides instructions for viewing throttling information for data transformation functions and execution statistics for all function types.
 
-<<<<<<< Updated upstream
-- [Visitor identification using Tealium data sources](https://docs-preview.tealium.com/server-side/data-sources/visitor-identification/): This article describes how visitor identification works for data you upload using a Tealium data source.
-
-=======
->>>>>>> Stashed changes
 - [Visitor stitching scenarios](https://docs-preview.tealium.com/server-side/visitor-stitching/scenarios/): This article shows examples of a visitor using a different email address on a subsequent visit to a webiste.
 
 - [About TAPID cookies](https://docs-preview.tealium.com/server-side/visitor-stitching/tapid/): This document explains what the TAPID cookie is and how the Tealium platform uses it.
@@ -555,22 +427,16 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Amazon Redshift cloud data source](https://docs-preview.tealium.com/server-side/data-sources/cloud-data/amazon-redshift/): This article describes how to set up the Amazon Redshift cloud data source.
 
-<<<<<<< Updated upstream
-=======
 - [Data sources for iQ Tag Management](https://docs-preview.tealium.com/server-side/data-sources/data-sources-for-iq-tag-management/): This article explains how to use data sources with existing iQ Tag Management accounts.
 
 - [Import data using Visitor Data Enrichment (/vdata)](https://docs-preview.tealium.com/server-side/data-sources/vdata-endpoint/): Send real-time data updates to EventStream from any external system.
 
->>>>>>> Stashed changes
 - [Manage traces](https://docs-preview.tealium.com/server-side/trace/manage/): This article describes how to start and stop a new trace or join an active trace.
 
 - [View a trace](https://docs-preview.tealium.com/server-side/trace/view/): This article describes how to use the overview panel and view the trace log.
 
-<<<<<<< Updated upstream
-=======
 - [Visitor identification using Tealium data sources](https://docs-preview.tealium.com/server-side/data-sources/visitor-identification/): This article describes how visitor identification works for data you upload using a Tealium data source.
 
->>>>>>> Stashed changes
 - [About DataAccess](https://docs-preview.tealium.com/server-side/data-storage/about/): This article describes Tealium DataAccess, it's capabilities, and the different data formats.
 
 - [Cooldown groups](https://docs-preview.tealium.com/server-side/connectors/frequency-capping/cooldown/): This article describes how to use cooldown groups in frequency capping.
@@ -583,8 +449,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Server-side save and publish workflow](https://docs-preview.tealium.com/server-side/save-publish/save-publish/): This article describes how to save and publish changes to your server-side configuration.
 
-<<<<<<< Updated upstream
-=======
 - [About Predict](https://docs-preview.tealium.com/server-side/predict/getting-started/about-predict/): This article describes the Tealium Predict ML product and how it is used to create, train, and deploy machine learning models to make predictions about visitor behavior.
 
 - [Using Predict](https://docs-preview.tealium.com/server-side/predict/getting-started/using-predict/): This article provides an overview of the Tealium Predict ML workflow, basic Predict implementation, and best practices for readying your data and creating models.
@@ -595,7 +459,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Terminology](https://docs-preview.tealium.com/server-side/predict/getting-started/terminology/): This article defines general statistical modeling terminology, terms specific to Tealium products, and terms used in the Tealium Predict ML interface.
 
->>>>>>> Stashed changes
 - [Manage Audience Discovery](https://docs-preview.tealium.com/server-side/audiences/audience-discovery/manage/): This article explains how to add, edit, delete, and view audience filters in Audience Discovery.
 
 - [Profile switcher](https://docs-preview.tealium.com/server-side/profiles/ss-profile-switcher/): This article explains how to use the server-side profile switcher.
@@ -618,15 +481,12 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Attributes Enrichments](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/enrichments/): After you identify the attributes you want, you will configure them with enrichments.
 
-<<<<<<< Updated upstream
-=======
 - [Decide what to predict](https://docs-preview.tealium.com/server-side/predict/strategy/decide-what-to-predict/): This article describes attributes to target, exclude, and output in Tealium Predict ML.
 
 - [Attribute readiness](https://docs-preview.tealium.com/server-side/predict/strategy/attribute-readiness/): This article describes how to select the right target attribute to use in your models.
 
 - [Prepare your data](https://docs-preview.tealium.com/server-side/predict/strategy/prepare-your-data/): This article describes data wellness concepts and actionable steps you can take to examine and optimize the readiness of your data layer before starting with Tealium Predict ML.
 
->>>>>>> Stashed changes
 - [Attributes Badges](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/badges/): This document explains visitor attributes badges.
 
 - [Attributes Offline Data (Omnichannel)](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/offline-data/): While AudienceStream primarily acts on real-time customers of your digital properties, it can also work with offline data through omnichannel imports. You can take offline data, such as in-store sales or call center activity, and correlate it to your online visitor data to complete the customer data profile.
@@ -641,12 +501,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Visitor Stitching](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching/): Now that you've seen how to build rich customer profiles using attributes and enrichments, it's time to review how to identify your customers through identity resolution and visitor stitching.
 
-<<<<<<< Updated upstream
-- [Visitor Stitching Visitor ID](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/): The visitor ID attribute is used to identify customers using a value that is guaranteed to be unique to each customer.
-
-- [Visitor ID Part 1](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-1/): In this step, we will show how to safely create a visitor ID attribute and introduce Audience Discovery, which allows us to validate the identity resolution strategy before finalizing it.
-
-=======
 - [Add a model](https://docs-preview.tealium.com/server-side/predict/training-models/add-a-model/): This article describes how to add a model, select a target attribute, an output attribute, and exclude attributes from a model.
 
 - [Visitor Stitching Visitor ID](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-stitching-visitor-id/): The visitor ID attribute is used to identify customers using a value that is guaranteed to be unique to each customer.
@@ -657,7 +511,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Start training](https://docs-preview.tealium.com/server-side/predict/strategy/start-training/): This article describes the steps required to start training your model.
 
->>>>>>> Stashed changes
 - [Visitor ID Discovery](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-discovery/): This is a critical step to ensure that our identity resolution strategy is accurate and that the attribute we've chosen, Email Address, is unique across our customer base.
 
 - [Visitor ID Part 2](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/visitor-id-part-2/): In this step we will complete the identity resolution plan by creating the visitor ID attribute for Email Address and populate it with the values we are already collecting in the corresponding string attribute.
@@ -674,11 +527,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Event Specifications: Data Quality](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/data-quality/): After you define event specifications, Live Events displays the quality of your incoming data.
 
-<<<<<<< Updated upstream
-- [Visitor profile sampler](https://docs-preview.tealium.com/server-side/audiences/visitor-profile-sampler/): This article describes the features of the visitor profile sampler, which provides an overview of the device, badge, and audience activity from your visitors.
-
-- [Visitor lookup tool](https://docs-preview.tealium.com/server-side/audiences/visitor-lookup-tool/): This article explains the Visitor Lookup tool, which is a graphical interface of the Visitor Lookup API. A visitor lookup uses a visitor ID attribute and a search value to locate a visitor record in the system.
-=======
 - [Evaluate trained models](https://docs-preview.tealium.com/server-side/predict/evaluate-models/evaluate-trained-models/): This article provides an overview of how to evaluate your trained version before deploying your model. Use the following sections as a guide to view model status and the potential strength of predictions for your model before you deploy.
 
 - [Strength scores](https://docs-preview.tealium.com/server-side/predict/evaluate-models/strength-scores/): This article provides detailed information about model scoring techniques and formulas used to assign scores and ratings to trained and deployed models in Tealium Predict ML.
@@ -696,7 +544,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 - [Live Visitors (formerly Visitor profile sampler)](https://docs-preview.tealium.com/server-side/visitor-profile-sampler/): This article describes the features of the visitor profile sampler, which provides an overview of the device, badge, and audience activity from your visitors.
 
 - [Visitor Search (formerly Visitor lookup tool)](https://docs-preview.tealium.com/server-side/visitor-search/): This article explains the visitor search tool, which is a graphical interface of the visitor privacy API. A visitor search uses a visitor ID attribute and a search value to locate a visitor record in the system.
->>>>>>> Stashed changes
 
 - [Rule Condition Definitions](https://docs-preview.tealium.com/server-side/audiences/rule-conditions/): This article lists the operators available when building conditions for audiences and rules.
 
@@ -706,10 +553,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Add an Event Feed](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/add-feed/): This step shows how to create an event feed to capture search events that contain zero results.
 
-<<<<<<< Updated upstream
-- [Connectors: Add a connector](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/add-connector/): This step shows how to add a connector, configure an action, and use data mappings.
-
-=======
 - [Deploy a model](https://docs-preview.tealium.com/server-side/predict/deploy/deploy-a-model/): This article describes how to deploy one or more versions of a trained model.
 
 - [Undeploy a model](https://docs-preview.tealium.com/server-side/predict/deploy/undeploy-a-model/): This article describes how to undeploy one or more versions of a trained model.
@@ -722,24 +565,18 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Delete a model](https://docs-preview.tealium.com/server-side/predict/deploy/delete-a-model/): This article describes how to delete a model. You cannot delete a version of a model, only an entire model.
 
->>>>>>> Stashed changes
 - [Connectors](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/connectors/): A connector is an integration between Tealium and another vendor that is used to transmit data. A connector contains actions that represent the vendor's supported APIs.
 
 - [Trace](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/trace/): Trace is the testing and validation tool for AudienceStream.
 
 - [Connectors: Add a connector](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/add-connector/): This step shows how to add a connector, configure an action, and use data mappings.
 
-<<<<<<< Updated upstream
-- [Trace: Test with Trace](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/test-trace/): In this step, you will use Trace to validate that all of the previous configuration is working as expected. You will get a trace ID, add it to your application (or use the Tealium Tool), perform a simple test, then inspect the logs in the Trace interface.
-
-=======
 - [Audience considerations](https://docs-preview.tealium.com/server-side/predict/audiences/audience-considerations/): This article serves as a guideline of items to consider when creating audiences using results from Tealium Predict.
 
 - [Trace: Test with Trace](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/test-trace/): In this step, you will use Trace to validate that all of the previous configuration is working as expected. You will get a trace ID, add it to your application (or use the Tealium Tool), perform a simple test, then inspect the logs in the Trace interface.
 
 - [Create audiences with Predict](https://docs-preview.tealium.com/server-side/predict/audiences/enrich-your-output-attribute/): This article describes how to use your predictions to create one or more audiences.
 
->>>>>>> Stashed changes
 - [Save and Publish](https://docs-preview.tealium.com/server-side/getting-started/audiencestream-cdp/save-publish/): Before we finish, it is important to understand how the save and publish process works and how to navigate your version history. This section will explain the difference between Save, Save as, and Publish and how to view your version history.
 
 - [Trace](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/trace/): Trace is the testing and validation tool for EventStream. Use Trace to validate that your configuration is working properly and that connector actions are triggered.
@@ -750,37 +587,21 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Save and publish](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/save-publish/): This section explains the save and publish process and how to navigate your version history.
 
-<<<<<<< Updated upstream
-- [About server-side permissions](https://docs-preview.tealium.com/server-side/administration/user-permissions/about/): This article describes how to manage server-side users and permission roles for the Tealium Customer Data Hub.
-=======
 - [Machine learning vs. artificial intelligence](https://docs-preview.tealium.com/server-side/predict/advanced/machine-learning-vs-artificial-intelligence/): This article provides a generic overview of the differences between machine learning and artificial intelligence.
 
 - [Machine learning concepts and technology](https://docs-preview.tealium.com/server-side/predict/advanced/machine-learning-concepts-and-technology/): This article describes Machine Learning technology concepts, goals, audiences, and technological advances.
 
 - [About server-side permissions](https://docs-preview.tealium.com/server-side/settings/user-permissions/about/): This article describes how to manage server-side users and permission roles for the Tealium Customer Data Hub.
->>>>>>> Stashed changes
 
 - [About testing](https://docs-preview.tealium.com/server-side/save-publish/test/): This article contains notes about the publication process on the server side of the Tealium platform.
 
 - [Connecting SQL Workbench/J](https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-sql-workbench/): This guide describes how to download and install SQL Workbench/J and connect to the database associated with your DataAccess account.
 
-<<<<<<< Updated upstream
-- [How to create a lead scoring model with Marketo, Google Analytics, and AudienceStream](https://docs-preview.tealium.com/server-side/frequently-asked-questions/lead-scoring-model/): This article explains tow to create a lead scoring model with Marketo, Google Analytics, and AudienceStream.
-
-- [Data Supply Chain dashboard](https://docs-preview.tealium.com/server-side/getting-started/data-supply-chain-dashboard/): The Data Supply Chain dashboard provides a comprehensive summary of the data supply chain of the Customer Data Hub.
-
-- [Next steps](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/next-steps/): Now that you have a basic understanding of how Tealium EventStream works, you are ready to move on.
-
-- [Server-side account settings](https://docs-preview.tealium.com/server-side/administration/account-settings/): The following article describes all Customer Data Hub profile settings.
-
-- [Which browsers are supported by the Customer Data Hub interface?](https://docs-preview.tealium.com/server-side/frequently-asked-questions/browser-support/): This article details the browser support for Tealium iQ Tag Management and Tealium Customer Data Hub (EventStream, AudienceStream, and DataAccess).
-=======
 - [Data Supply Chain dashboard](https://docs-preview.tealium.com/server-side/getting-started/data-supply-chain-dashboard/): The data supply chain dashboard provides a comprehensive summary of the data supply chain of the Customer Data Hub.
 
 - [Next steps](https://docs-preview.tealium.com/server-side/getting-started/eventstream-api-hub/next-steps/): Now that you have a basic understanding of how Tealium EventStream works, you are ready to move on.
 
 - [Server-side account settings](https://docs-preview.tealium.com/server-side/settings/account-settings/): The following article describes all Customer Data Hub profile settings.
->>>>>>> Stashed changes
 
 - [Connecting Snowflake](https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-snowflake/): This article describes how to load Tealium data into Snowflake using the Snowflake web interface.
 
@@ -788,19 +609,6 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 
 - [Connecting Tableau](https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-tableau/): This article describes how to connect Tableau to Tealium DataAccess
 
-<<<<<<< Updated upstream
-- [Manage server-side user permissions](https://docs-preview.tealium.com/server-side/administration/user-permissions/manage/): This article explains how to manage user permissions.
-
-- [Connecting Microsoft Power BI](https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-microsoft-power-bi/): This article describes how to connect Microsoft Power BI to Tealium DataAccess
-
-- [Managing server-side user permissions FAQ](https://docs-preview.tealium.com/server-side/administration/user-permissions/faq/): This article describes how to manage server-side users and permission roles for the Tealium Customer Data Hub.
-
-- [Content Security Policy](https://docs-preview.tealium.com/server-side/administration/tealium-content-security-policies-reference-guide/): This article lists the domains you need to add to your Content Security Policy (CSP).
-
-- [Server-side bot filtering](https://docs-preview.tealium.com/server-side/administration/server-side-bot-filtering/): This article describes how Tealium filters out bot traffic in server-side environments.
-
-- [Understanding usage reports](https://docs-preview.tealium.com/server-side/administration/understanding-the-usage-report/): This article describes usage reports and how to access them.
-=======
 - [Manage server-side user permissions](https://docs-preview.tealium.com/server-side/settings/user-permissions/manage/): This article explains how to manage user permissions.
 
 - [Connecting Microsoft Power BI](https://docs-preview.tealium.com/server-side/data-storage/data-viz-tools/connecting-microsoft-power-bi/): This article describes how to connect Microsoft Power BI to Tealium DataAccess
@@ -812,4 +620,3 @@ Send Event Data via HTTP Request Send Visitor Data via HTTP Request Send …
 - [Server-side bot filtering](https://docs-preview.tealium.com/server-side/settings/server-side-bot-filtering/): This article describes how Tealium filters out bot traffic in server-side environments.
 
 - [Understanding usage reports](https://docs-preview.tealium.com/server-side/usage-report/): This article describes usage reports and how to access them.
->>>>>>> Stashed changes

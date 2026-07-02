@@ -8,11 +8,7 @@ url: https://docs-preview.tealium.com/server-side-connectors/criteo-audiences-oa
 This connector uses the following vendor API:
 
 * API Name: Criteo API
-<<<<<<< Updated upstream
-* API Version: 2025-07
-=======
 * API Version: 2026-01
->>>>>>> Stashed changes
 * API Endpoint: `https://api.criteo.com/2025-07/marketing-solutions`
 * Documentation: [Criteo Audiences API](https://developers.criteo.com/marketing-solutions/docs/audiences)
 
@@ -64,10 +60,6 @@ The following section describes how to set up parameters and options for each ac
 
 #### Identifier
 
-<<<<<<< Updated upstream
-| **Parameter** | **Description** |
-| --- | --- |
-=======
 Map a user identifier value.
 
 | **Parameter** | **Description** |
@@ -78,7 +70,6 @@ Map a user identifier value.
 | Mobile ID | IDFA mobile ID for Apple, ADID mobile ID for Android. |
 | Identity Link | Identity link. |
 | Gum ID | Identifier obtained from cookie matching. A corresponding Gum Caller ID is automatically added to the request. |
->>>>>>> Stashed changes
 | Gum Caller ID | Value used by Criteo for GUM salting. Leave unmapped if using the Criteo Cookie Matching Service tag. |
 
 #### Batch Configuration
@@ -98,10 +89,6 @@ Map a user identifier value.
 
 #### Identifier
 
-<<<<<<< Updated upstream
-| **Parameter** | **Description** |
-| --- | --- |
-=======
 Map a user identifier value.
 
 | **Parameter** | **Description** |
@@ -112,7 +99,6 @@ Map a user identifier value.
 | Mobile ID | IDFA mobile ID for Apple, ADID mobile ID for Android. |
 | Identity Link | Identity link. |
 | Gum ID | Identifier obtained from cookie matching. A corresponding Gum Caller ID is automatically added to the request. |
->>>>>>> Stashed changes
 | Gum Caller ID | Value used by Criteo for GUM salting. Leave unmapped if using the Criteo Cookie Matching Service tag. |
 
 #### Batch Configuration

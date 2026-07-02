@@ -172,8 +172,4 @@ When the Reddit Pixel is initialized with data processing mode, every conversion
 |:---------|:----------|:------------|
 |  `dpm`   | String    | Data processing mode. The default value is `LDU`. |
 |  `dpcc`  | String    | Data processing country code in ISO 3166-1 alpha-2 country code format. |
-<<<<<<< Updated upstream
 |  `dprc`  | String    | Data processing region code in ISO 3166-2 region code format, with or without the country prefix. |
-=======
-|  `dprc`  | String    | Data processing region code in ISO 3166-2 region code format, with or without the country prefix. |
->>>>>>> Stashed changes
