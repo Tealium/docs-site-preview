@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Tealium API" />
+    <meta property="og:title" content="API reference" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs-preview.tealium.com/api/" />
+<meta property="og:url" content="https://docs-preview.tealium.com/api/developer-portal/api-reference/" />
 <meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
-<meta property="og:description" content="Get started with Tealium APIs" />
+<meta property="og:description" content="Browse API documentation, generate bearer tokens, and download Postman collections in the Tealium Developer Portal." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
-    <title>Tealium API |  Preview of Tealium Docs</title>
+    <title>API reference | Tealium Developer Portal | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -21,8 +21,6 @@
     
     <meta NAME="robots" CONTENT="noindex, nofollow">
     
-    
-    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/api/">
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
@@ -34,10 +32,11 @@
       }
     </script>
   </head>
-  <body class="overflow-hidden sidebar ma0 sans-serif text-color-primary  hg-section">
+  <body class="overflow-hidden sidebar ma0 sans-serif text-color-primary  hg-page">
     <script>
     var utag_data = {
         site_section  : "api",
+        reading_time  : "3",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -91,16 +90,6 @@
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
-        
-      <li class="f5 dib mr4">
-      
-        
-      
-        
-          <a href="/ja/api/" class="dim link mid-gray">日本語</a>
-        
-      
-      </li>
       
     </ul>
   </div>
@@ -113,16 +102,6 @@
     <ul class="list ma0 pa0">
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
-      </li>
-        
-      <li class="f5 dib mr4">
-      
-        
-      
-        
-          <a href="/ja/api/" class="dim link mid-gray">日本語</a>
-        
-      
       </li>
       
     </ul>
@@ -141,7 +120,7 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
-      <a href="/api/developer-portal/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Tealium Developer Portal</span></a>
+      <a href="/api/developer-portal/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  bg-secondary primary-color"><span>Tealium Developer Portal</span></a>
       </li>
       
       
@@ -155,16 +134,12 @@
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
-  
-  
 
+<div class="w-100 pr4-ns">
+<div class="flex">
 
-  
-
-<div class="w-100">
-<div class="flex vh-100">
-
-  <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-auto dn sticky-l pt3 pl125" style="width:280px;">
+    
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-auto dn sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6 pb6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -280,9 +255,9 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/v2/visitor-privacy/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v2-visitor-privacy">Visitor Privacy</a></li></ul>
       </li>
-    <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".developer-portal">Tealium Developer Portal</a>
-        <ul class="pl2  developer-portal desktopmenu animated fadeIn list  dn">
+    <li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".developer-portal">Tealium Developer Portal</a>
+        <ul class="pl2 bl b--primary bw1 developer-portal desktopmenu animated fadeIn list ">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/developer-portal/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">About</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -295,8 +270,8 @@
         <a href="/api/developer-portal/subscriptions/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Subscriptions</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/developer-portal/analytics/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Analytics</a></li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api/developer-portal/api-reference/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">API reference</a></li>
+    <li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api/developer-portal/api-reference/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">API reference</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/developer-portal/api-lifecycle/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".api-lifecycle">API lifecycle</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -309,16 +284,29 @@
         <a href="/api/developer-portal/third-party-app-access/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Third-party app access</a></li></ul>
       </li></ul></li></ul>
 </nav>
-</div> 
+</div>
+    
 
-  <div class="order-1 w-100 overflow-hidden overflow-y-scroll ph4 ph50-ns pb6 bgi-wrapper" style="flex:1;scroll-padding-top:96px; background-image: url(/images/api/landing-banner.png);background-repeat: no-repeat;background-position: right top;background-size: auto 300px;background-attachment:local;">
-
-    <div class="w-100 pt4 flex-none"><nav id="breadcrumb">
+    <article id="main-content" class="order-1 overflow-auto vh-100 max-vh-100 pt4 ph15 ph4-ns mid-gray mt0-ns w-100 pb6" style="flex:1;scroll-padding-top:96px;">
+      <div class="documentation-copy ph4-ns">
+        <header class="flex-none w-100"><nav id="breadcrumb">
 <ul class="nav">
 
     
+    
+    
   
-  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a></li>
+  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/api/">Tealium API</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/api/developer-portal/">Tealium Developer Portal</a></li>
   
 
   
@@ -327,66 +315,230 @@
 </ul>
 </nav>
 
-<div class="flex w-100 mb2" style="min-height:200px;">
-        <div class="w-50-ns w-90-nl title-wrapper">
-          <h1 class="f3 f2-l fw6 m0 pb3 montserrat relative">Tealium API</h1>
-          <p class="f4 w-90-ns fw2 silver pv0 mv0">Get started with Tealium APIs</p>
-        </div>
-        
-        </div>
-    </div>
+<h1 class="lh-title mt4 mt30-ns mb3">API reference</h1>
+</header>
 
-    <div class="flex flex-wrap mt4-ns">
-      
-      <div class="flex-ns flex-wrap w-100 pt3-ns wrapper-list-summary">
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/v3/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium V3 APIs</h4>
-    <p>This section describes the Tealium V3 APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/v3/" class="hover f7 fw4 ttu tracked">20 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/v2/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium V2 APIs</h4>
-    <p>This section describes the Tealium V2 APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/v2/" class="hover f7 fw4 ttu tracked">11 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/developer-portal/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium Developer Portal</h4>
-    <p>Overview of the Tealium Developer Portal APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/developer-portal/" class="hover f7 fw4 ttu tracked">12 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-      </div>
-    </div>
+<div class="mv2 mid-gray fn w-100">
+  
 
+  
+    <p class="f5 f4-ns fw3 lh-copy">
+      Browse API documentation, generate bearer tokens, and download Postman collections in the Tealium Developer Portal.
+    </p>
+  
+</div>
+
+<div class="prose nested-links" id="prose">
+  <h2 id="browse-the-api-catalog">Browse the API catalog</h2>
+<ol>
+<li>Go to <strong>API Reference</strong> in the developer portal.</li>
+<li>Use the version dropdown on an API card to select the version you need.</li>
+<li>Click the card to open its documentation.</li>
+</ol>
+<p class="tip"><i class="fa fa-info-circle"></i>When in End of Support, each API card displays a status chip indicating the End of Life (EOL) date. For more information, see <a href="/api/developer-portal/api-lifecycle/">API lifecycle</a>.</p>
+<!-- worth verifying this tip -->
+<h2 id="use-interactive-documentation">Use interactive documentation</h2>
+<p>On an API reference page, you can:</p>
+<ul>
+<li>Browse endpoints in the sidebar.</li>
+<li>View request and response schemas and examples.</li>
+<li>Test the endpoint and send live requests directly from the browser. You need to generate a bearer token to use this feature. For more information, see <a href="#generate-a-bearer-token">Generate a bearer token</a>.</li>
+<li>View code snippets in multiple languages.</li>
+<li>Use MCP-enabled APIs directly from an MCP client.</li>
+</ul>
+<h2 id="use-with-postman">Use with Postman</h2>
+<h3 id="download-a-postman-collection">Download a Postman collection</h3>
+<ol>
+<li>Go to the API reference for the API.</li>
+<li>Click the <strong>Postman</strong> icon in the bottom-right corner.</li>
+<li>A <code>.json</code> collection file downloads automatically.</li>
+</ol>
+<h3 id="import-into-postman">Import into Postman</h3>
+<ol>
+<li>Open Postman and click <strong>Import</strong>.</li>
+<li>Select the downloaded <code>.json</code> file.</li>
+</ol>
+<p>The collection includes all endpoints, parameters, and request bodies, organized into folders by resource.</p>
+<h3 id="authenticate-the-collection">Authenticate the collection</h3>
+<p>The collection uses an <code>{{access_token}}</code> variable for bearer token authentication. To configure it:</p>
+<ol>
+<li><a href="#generate-a-bearer-token">Generate a bearer token</a>.</li>
+<li>In Postman, open <strong>Collection Variables</strong>.</li>
+<li>Set the <code>access_token</code> value to your generated token.</li>
+</ol>
+<p>All requests in the collection automatically include <code>Authorization: Bearer {{access_token}}</code>.</p>
+<h2 id="generate-a-bearer-token-from-the-api-reference">Generate a bearer token from the API reference</h2>
+<p>Tokens expire after 1 hour.</p>
+<h3 id="signed-in-users-recommended">Signed in users (recommended)</h3>
+<p>Use this method if you are signed in and have a registered application with an active subscription to the API.</p>
+<ol>
+<li>Expand an action and select an endpoint.</li>
+<li>Click the <strong>Key icon</strong> in the bottom-right corner of the screen to generate the token.</li>
+<li>Select your application from the dropdown and click <strong>Generate Token</strong>.</li>
+<li>Click <strong>Copy Token</strong> and close the dialog.</li>
+<li>Paste the token into the <strong>Token</strong> field in the action screen, fill in any required parameters, and click <strong>Send API Request</strong>.</li>
+</ol>
+<h3 id="with-client-credentials">With client credentials</h3>
+<p>Use this method for CI/CD pipelines, service accounts, or any context where you have a <code>client_id</code> and <code>client_secret</code> but are not signing in through the portal.</p>
+<ol>
+<li>Open any API documentation page.</li>
+<li>Click the <strong>Key icon</strong> in the bottom-right corner.</li>
+<li>Switch to the <strong>Manual</strong> tab.</li>
+<li>Enter your <code>client_id</code> and <code>client_secret</code>.</li>
+<li>Optionally, enter scopes.</li>
+<li>Click <strong>Generate Token</strong>.</li>
+<li>Copy the returned token.</li>
+</ol>
+<p>You can request only scopes your subscription grants. If the portal rejects a scope, verify that your subscription includes the required account and profile access. For details on scope format and components, see <a href="/api/developer-portal/scopes/">Scopes</a>.</p>
+<h3 id="token-details">Token details</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Format</td>
+<td>JSON Web Token (JWT)</td>
+</tr>
+<tr>
+<td>Lifetime</td>
+<td>1 hour (3600 seconds)</td>
+</tr>
+<tr>
+<td>Grant type</td>
+<td><code>client_credentials</code></td>
+</tr>
+<tr>
+<td>Refresh</td>
+<td>Not supported. Generate a new token when the current one expires.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="troubleshoot-common-errors">Troubleshoot common errors</h2>
+<table>
+<thead>
+<tr>
+<th>Problem</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Token generation fails</td>
+<td>Verify that your application has an active subscription to the API you want to use.</td>
+</tr>
+<tr>
+<td><code>401 Unauthorized</code></td>
+<td>Your token has expired. Generate a new one.</td>
+</tr>
+<tr>
+<td><code>403 Forbidden</code></td>
+<td>Your token&rsquo;s scopes don&rsquo;t include the required account, profile, or resource. Check your subscription access.</td>
+</tr>
+<tr>
+<td>Scope rejected during generation</td>
+<td>Your application has not been granted that scope. Request access from the account owner.</td>
+</tr>
+<tr>
+<td>No applications in the dropdown</td>
+<td>Create an application and subscribe to at least one API first.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="mv30 nested-links overflow-hidden dn-p flex justify-between flex-row-reverse"><div class="w-50 ml3">
+
+  
+  <a href="/api/developer-portal/api-lifecycle/"
+    class="w-100 justify-end inline-flex items-center ba b--black-10 br3 pa3">
+    <section class="tl pr3">
+      <div>API lifecycle</div>
+    </section>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"API lifecycle"</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+  
+  
+</div><div class="w-50 mr3">
+  
+  
+  <a href="/api/developer-portal/analytics/"
+    class="w-100 justify-start inline-flex items-center ba b--black-10 br3 pa3">
+    <svg class="w1" data-icon="chevronLeft" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Analytics "</title>
+      <path d="M20 1 L24 5 L14 16 L24 27 L20 31 L6 16 z"></path>
+    </svg>
+   <section class="tr pl3">
+      <div>Analytics</div>
+    </section>
+  </a>
+  
+
+</div></div>
+
+
+
+        <div class="bt-l b--moon-gray pv3 cb">
+          <div id="feedback_form" class="dn-p">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">Was this page helpful?</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+Yes</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+No</button>
   </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea><button id="feedback_submit" class="db ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">Send Feedback</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">Thank you for your feedback!</p>
+  </div>
+</div>
+
+        </div>
+        <div class="bt-l b--moon-gray pt3 f6">
+          <p>This page was last updated:  July 27, 2026 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
+      
+
+
+
+  <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#browse-the-api-catalog" href="javascript:void(0)">Browse the API catalog</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#use-interactive-documentation" href="javascript:void(0)">Use interactive documentation</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#use-with-postman" href="javascript:void(0)">Use with Postman</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#download-a-postman-collection" href="javascript:void(0)">Download a Postman collection</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#import-into-postman" href="javascript:void(0)">Import into Postman</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#authenticate-the-collection" href="javascript:void(0)">Authenticate the collection</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#generate-a-bearer-token-from-the-api-reference" href="javascript:void(0)">Generate a bearer token from the API reference</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#signed-in-users-recommended" href="javascript:void(0)">Signed in users (recommended)</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#with-client-credentials" href="javascript:void(0)">With client credentials</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#token-details" href="javascript:void(0)">Token details</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#troubleshoot-common-errors" href="javascript:void(0)">Troubleshoot common errors</a></li>
+              </nav>
+  </aside></nav>
 
 </div>
 </div>
-
+    
 
     </main>
 

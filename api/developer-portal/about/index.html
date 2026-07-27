@@ -7,13 +7,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta property="og:title" content="Tealium API" />
+    <meta property="og:title" content="About the Tealium Developer Portal" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://docs-preview.tealium.com/api/" />
+<meta property="og:url" content="https://docs-preview.tealium.com/api/developer-portal/about/" />
 <meta property="og:image" content="https://docs-preview.tealium.com/images/icons/tealium_logo_icon.png" />
-<meta property="og:description" content="Get started with Tealium APIs" />
+<meta property="og:description" content="Learn how applications, subscriptions, scopes, and OAuth2 authentication work in the Tealium Developer Portal." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
-    <title>Tealium API |  Preview of Tealium Docs</title>
+    <title>About the Tealium Developer Portal | Tealium Developer Portal | Preview of Tealium Docs</title>
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -21,8 +21,6 @@
     
     <meta NAME="robots" CONTENT="noindex, nofollow">
     
-    
-    <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/api/">
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
       history.scrollRestoration = "manual";
@@ -34,10 +32,11 @@
       }
     </script>
   </head>
-  <body class="overflow-hidden sidebar ma0 sans-serif text-color-primary  hg-section">
+  <body class="overflow-hidden sidebar ma0 sans-serif text-color-primary  hg-page">
     <script>
     var utag_data = {
         site_section  : "api",
+        reading_time  : "4",
         site_language : "en",
         tealium_event : "page_view"
     }
@@ -91,16 +90,6 @@
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
-        
-      <li class="f5 dib mr4">
-      
-        
-      
-        
-          <a href="/ja/api/" class="dim link mid-gray">日本語</a>
-        
-      
-      </li>
       
     </ul>
   </div>
@@ -113,16 +102,6 @@
     <ul class="list ma0 pa0">
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
-      </li>
-        
-      <li class="f5 dib mr4">
-      
-        
-      
-        
-          <a href="/ja/api/" class="dim link mid-gray">日本語</a>
-        
-      
       </li>
       
     </ul>
@@ -141,7 +120,7 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
-      <a href="/api/developer-portal/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Tealium Developer Portal</span></a>
+      <a href="/api/developer-portal/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  bg-secondary primary-color"><span>Tealium Developer Portal</span></a>
       </li>
       
       
@@ -155,16 +134,12 @@
     
     <main role="main" class="content-with-sidebar pb0-ns">
       
-  
-  
 
+<div class="w-100 pr4-ns">
+<div class="flex">
 
-  
-
-<div class="w-100">
-<div class="flex vh-100">
-
-  <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-auto dn sticky-l pt3 pl125" style="width:280px;">
+    
+      <div id="menu" class="order-0 w-auto max-vh-100 overflow-hidden overflow-y-auto dn sticky-l pt3 pl125" style="width:280px;">
 <nav class="side-nav f6 pb6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
@@ -280,11 +255,11 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/v2/visitor-privacy/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".v2-visitor-privacy">Visitor Privacy</a></li></ul>
       </li>
-    <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".developer-portal">Tealium Developer Portal</a>
-        <ul class="pl2  developer-portal desktopmenu animated fadeIn list  dn">
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/api/developer-portal/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">About</a></li>
+    <li class="relative w-100 fw8 f5  active">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2 expanded primary-color" data-target=".developer-portal">Tealium Developer Portal</a>
+        <ul class="pl2 bl b--primary bw1 developer-portal desktopmenu animated fadeIn list ">
+    <li data-level="3" class="selected relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/api/developer-portal/about/" class="db link pr2 pv2  bg-secondary primary-color " data-target=".">About</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/api/developer-portal/getting-started/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Get started</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -309,16 +284,29 @@
         <a href="/api/developer-portal/third-party-app-access/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Third-party app access</a></li></ul>
       </li></ul></li></ul>
 </nav>
-</div> 
+</div>
+    
 
-  <div class="order-1 w-100 overflow-hidden overflow-y-scroll ph4 ph50-ns pb6 bgi-wrapper" style="flex:1;scroll-padding-top:96px; background-image: url(/images/api/landing-banner.png);background-repeat: no-repeat;background-position: right top;background-size: auto 300px;background-attachment:local;">
-
-    <div class="w-100 pt4 flex-none"><nav id="breadcrumb">
+    <article id="main-content" class="order-1 overflow-auto vh-100 max-vh-100 pt4 ph15 ph4-ns mid-gray mt0-ns w-100 pb6" style="flex:1;scroll-padding-top:96px;">
+      <div class="documentation-copy ph4-ns">
+        <header class="flex-none w-100"><nav id="breadcrumb">
 <ul class="nav">
 
     
+    
+    
   
-  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a></li>
+  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/api/">Tealium API</a>&nbsp;>&nbsp;</li>
+  
+
+  
+  
+  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/api/developer-portal/">Tealium Developer Portal</a></li>
   
 
   
@@ -327,66 +315,166 @@
 </ul>
 </nav>
 
-<div class="flex w-100 mb2" style="min-height:200px;">
-        <div class="w-50-ns w-90-nl title-wrapper">
-          <h1 class="f3 f2-l fw6 m0 pb3 montserrat relative">Tealium API</h1>
-          <p class="f4 w-90-ns fw2 silver pv0 mv0">Get started with Tealium APIs</p>
-        </div>
-        
-        </div>
-    </div>
+<h1 class="lh-title mt4 mt30-ns mb3">About the Tealium Developer Portal</h1>
+</header>
 
-    <div class="flex flex-wrap mt4-ns">
-      
-      <div class="flex-ns flex-wrap w-100 pt3-ns wrapper-list-summary">
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/v3/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium V3 APIs</h4>
-    <p>This section describes the Tealium V3 APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/v3/" class="hover f7 fw4 ttu tracked">20 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/v2/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium V2 APIs</h4>
-    <p>This section describes the Tealium V2 APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/v2/" class="hover f7 fw4 ttu tracked">11 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-          
-          <div class="flex flex-column card card-feature mr4 mb4 bg-white dib f5 ba b--light">
-    <a href="/api/developer-portal/">
-    <img class="mb2 h-auto" src="/images/icons/icon-terminal.svg" class="ma0" width="25" height="25" />
-    <h4>Tealium Developer Portal</h4>
-    <p>Overview of the Tealium Developer Portal APIs.</p>
-    </a>
-    <div class="mt-auto tr pt3">
-        <a href="/api/developer-portal/" class="hover f7 fw4 ttu tracked">12 pages &rarr;</a>
-    </div>
-</div>
-          
-        
-      </div>
-    </div>
+<div class="mv2 mid-gray fn w-100">
+  
 
+  
+    <p class="f5 f4-ns fw3 lh-copy">
+      Learn how applications, subscriptions, scopes, and OAuth2 authentication work in the Tealium Developer Portal.
+    </p>
+  
+</div>
+
+<div class="prose nested-links" id="prose">
+  <p>The Tealium Developer Portal is a self-service platform for managing programmatic access to Tealium APIs for Tealium account holders, third-party developers, and agencies building integrations for Tealium customers. From the portal you can create OAuth2 applications, subscribe to APIs with fine-grained scope control, manage credentials, and monitor API usage.</p>
+<h2 id="how-it-works">How it works</h2>
+<p>The portal organizes access around four interconnected concepts:</p>
+<ul>
+<li><a href="#applications"><strong>Applications</strong></a> hold credentials.</li>
+<li><a href="#subscriptions"><strong>Subscriptions</strong></a> connect applications to APIs.</li>
+<li><a href="#scopes"><strong>Scopes</strong></a> define what an application is authorized to access.</li>
+<li><a href="#authentication"><strong>Authentication</strong></a> describes how tokens are obtained and validated on every request.</li>
+</ul>
+<h3 id="applications">Applications</h3>
+<p>An application is an OAuth2 client, a named credential holder that represents a system or service making API calls. Each application has two pieces of identity:</p>
+<ul>
+<li><strong>Client ID:</strong> A public identifier included in every token request.</li>
+<li><strong>Client secret:</strong> A private credential used with the client ID to prove the application&rsquo;s identity.</li>
+</ul>
+<p>Create one application per integration. A single integration may require subscriptions to multiple APIs, and one application can hold all of those subscriptions. For example, create one application for an analytics dashboard and a separate one for a data pipeline.</p>
+<p>Manage your applications from the <strong>Applications</strong> tab in the portal. For more information, see <a href="/api/developer-portal/applications/">Applications</a>.</p>
+<h3 id="subscriptions">Subscriptions</h3>
+<p>A subscription connects an application to a specific API. When you create a subscription, you specify:</p>
+<ul>
+<li>Which API the application can call.</li>
+<li>The access levels (scopes) the application is granted for that API.</li>
+<li>The Tealium accounts and profiles the application can access.</li>
+</ul>
+<p>Without a subscription to an API, an application cannot request tokens for that API. An application can subscribe to multiple APIs, each with a separate scope and account configuration.</p>
+<p>Manage your subscriptions from the <strong>Subscriptions</strong> tab in the portal. For more information, see <a href="/api/developer-portal/subscriptions/">Subscriptions</a>.</p>
+<h3 id="scopes">Scopes</h3>
+<p>Scopes define the exact access an application is granted. Tealium uses compound scopes that encode the full access context in a single string:</p>
+<pre tabindex="0"><code>{account}:{profile}:{resource}:{action}
+</code></pre><p>For example, <code>my-account:main:audiences:read</code> grants read access to audiences in the <code>main</code> profile of <code>my-account</code>. The <code>*</code> wildcard grants access across all profiles in an account: <code>my-account:*:audiences:read</code>.</p>
+<p>When you subscribe to an API, you select the maximum set of scopes the application is allowed to request. When requesting a token, you can request any subset of those subscribed scopes. Requesting a subset of scopes generates a token scoped to a specific task, even if the application&rsquo;s subscription grants broader access.</p>
+<p>For full scope reference including engine-level scopes, see <a href="/api/developer-portal/scopes/">Scopes</a>.</p>
+<h3 id="authentication">Authentication</h3>
+<p>All Tealium API requests require a bearer token. Tokens are short-lived JWTs obtained using the OAuth2 Client Credentials grant. Your application presents its client ID and secret to the token endpoint, which returns a signed token the API gateway validates on every request.</p>
+<pre tabindex="0"><code>Application                 Token Endpoint           API Gateway
+    |                            |                        |
+    |-- POST /oauth/token -------&gt;|                        |
+    |   client_id                |                        |
+    |   client_secret            |                        |
+    |   scope                    |                        |
+    |&lt;-- access_token (JWT) -----|                        |
+    |                            |                        |
+    |-- GET /api/endpoint ---------------------------&gt;|
+    |   Authorization: Bearer {token}                     |
+    |&lt;-- 200 OK ------------------------------------------|
+</code></pre><p>Tokens expire after one hour. There is no refresh token. Your application requests a new token when the current one expires. Cache tokens and reuse them within their lifetime to avoid throttling.</p>
+<p>The gateway validates the token&rsquo;s scope claim on every request. If the token lacks the required account, profile, resource, and action combination, the gateway returns <code>403 Forbidden</code>.</p>
+<p>For full details on token requests, scope enforcement, and security best practices, see <a href="/api/developer-portal/authentication/">Authentication</a>.</p>
+<h3 id="developer-portal-workflow">Developer portal workflow</h3>
+<p>A complete integration follows this sequence:</p>
+<ol>
+<li><strong>Create an application:</strong> Establishes the OAuth2 client identity (client ID and secret).</li>
+<li><strong>Subscribe to an API:</strong> Selects which APIs, scopes, and Tealium accounts the application can access.</li>
+<li><strong>Request a token:</strong> The application presents its credentials and receives a JWT scoped to the subscribed access.</li>
+<li><strong>Call the API:</strong> The application includes the token in every request. The gateway validates the scope claim and executes the call.</li>
+</ol>
+<h2 id="third-party-access">Third-party access</h2>
+<p>If you are a third-party developer or agency building an integration for a Tealium customer, the portal supports a delegated authorization model:</p>
+<ol>
+<li>Create an application and subscribe to the APIs you need.</li>
+<li>Share your application ID with the resource owner.</li>
+<li>The resource owner looks up your application in the portal and grants it access to their specific accounts, profiles, and engines.</li>
+<li>Your tokens then include scopes for those resources.</li>
+</ol>
+<p>The resource owner controls exactly which accounts, profiles, and engines they grant and can modify or revoke that access at any time.</p>
+<p>For details, see <a href="/api/developer-portal/third-party-app-access/">Third-party app access</a>.</p>
+<h2 id="get-started">Get started</h2>
+<p>To start making API calls:</p>
+<ol>
+<li>Read the <a href="/api/developer-portal/getting-started/">getting started tutorial</a> for a step-by-step walkthrough.</li>
+<li>Use <a href="/api/developer-portal/applications/">Applications</a> to create your first application and subscribe to APIs.</li>
+<li>Use <a href="/api/developer-portal/authentication/">Authentication and credentials</a> to request tokens and make API calls.</li>
+</ol>
+
+</div>
+
+<div class="mv30 nested-links overflow-hidden dn-p flex justify-between flex-row-reverse"><div class="w-50 ml3">
+
+  
+  <a href="/api/developer-portal/getting-started/"
+    class="w-100 justify-end inline-flex items-center ba b--black-10 br3 pa3">
+    <section class="tl pr3">
+      <div>Get started</div>
+    </section>
+    <svg class="w1" data-icon="chevronRight" viewBox="0 0 32 32" style="fill:currentcolor;height:100%">
+      <title>"Get started"</title>
+      <path d="M12 1 L26 16 L12 31 L8 27 L18 16 L8 5 z"></path>
+    </svg>
+  </a>
+  
+  
+</div></div>
+
+
+
+        <div class="bt-l b--moon-gray pv3 cb">
+          <div id="feedback_form" class="dn-p">
+  <div id="feedback_buttons">
+	  <p class="di f5 pr2">Was this page helpful?</p>
+		<button enabled id="feedback_yes" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="white" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9593 5.91859C12.0445 6.23734 11.6882 6.55684 11.6882 6.55684C11.6882 6.55684 11.9552 7.05934 11.9293 7.53747C11.9061 7.97172 11.59 8.38572 11.59 8.38572C11.59 8.38572 11.7272 9.00709 11.5933 9.43197C11.4355 9.93184 11.0023 10.2476 11.0023 10.2476C11.0023 10.2476 10.9858 10.8026 10.7083 11.1618C10.4308 11.5211 9.89197 11.6846 9.89197 11.6846C9.89197 11.6846 9.11984 11.9996 8.25847 12.0225C7.26734 12.0487 6.16897 11.7825 6.16897 11.7825C6.16897 11.7825 5.66384 11.5338 5.04997 11.4063C4.33297 11.2578 3.49109 11.2275 3.49109 11.2275V6.55722C3.49109 6.55722 3.92309 6.50247 4.20472 6.10609C4.48934 5.70559 4.61197 5.07897 4.87709 4.57272C5.20484 3.94759 5.64659 3.47209 5.64659 3.42184C5.64659 3.36109 6.36209 2.81772 6.77797 2.04372C7.25572 1.15497 7.34497 0.0577174 7.34497 0.0577174C7.34497 0.0577174 7.89284 -0.0562825 8.27309 0.279342C8.72009 0.673842 8.81459 1.52734 8.81459 1.52734C8.81459 1.52734 8.70734 2.43784 8.39459 3.29284C8.16472 3.92134 7.89997 4.56484 7.89997 4.56484C7.89997 4.56484 8.01734 4.94434 8.54909 4.97059C8.97434 4.99159 9.63022 4.81759 10.1245 4.76172C10.7638 4.68972 11.1985 4.72797 11.1985 4.72797C11.1985 4.72797 11.8157 5.38234 11.9593 5.91859ZM-0.00390625 6.23022L2.73959 6.09972L2.80484 11.5867L0.387969 11.5541L-0.00390625 6.23022Z" fill="currentColor"/>
+</svg>
+Yes</button>
+	  <button enabled id="feedback_no" class="ba b--white bg-primary-color-light f5 ph2 pv2 br2 dib tc mv3 link primary-color-dark"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M5.84642 0.22244C5.84642 0.22244 6.35117 0.471065 6.96467 0.59819C7.68129 0.74669 8.52242 0.77669 8.52242 0.77669V5.44394C8.52242 5.44394 8.09079 5.49832 7.80917 5.89469C7.52492 6.29482 7.40229 6.92144 7.13717 7.42694C6.80979 8.05132 6.36804 8.52682 6.36804 8.57669C6.36804 8.63744 5.65329 9.18044 5.23742 9.95369C4.76004 10.8421 4.67079 11.9382 4.67079 11.9382C4.67079 11.9382 4.12329 12.0522 3.74304 11.7166C3.29642 11.3224 3.20192 10.4693 3.20192 10.4693C3.20192 10.4693 3.30917 9.55919 3.62154 8.70494C3.85104 8.07682 4.11579 7.43369 4.11579 7.43369C4.11579 7.43369 3.99842 7.05457 3.46704 7.02832C3.04217 7.00732 2.38667 7.18132 1.89279 7.23682C1.25379 7.30882 0.819541 7.27057 0.819541 7.27057C0.819541 7.27057 0.202666 6.61694 0.0590409 6.08069C-0.0260841 5.76232 0.330166 5.44282 0.330166 5.44282C0.330166 5.44282 0.0635409 4.94069 0.0890409 4.46294C0.112291 4.02907 0.428041 3.61507 0.428041 3.61507C0.428041 3.61507 0.290791 2.99407 0.424666 2.56994C0.582541 2.07044 1.01529 1.75507 1.01529 1.75507C1.01529 1.75507 1.03179 1.20044 1.30892 0.84119C1.58642 0.482315 2.12492 0.318815 2.12492 0.318815C2.12492 0.318815 2.89667 0.00381546 3.75729 -0.0186845C4.74767 -0.0449345 5.84529 0.22094 5.84529 0.22094L5.84642 0.22244ZM11.6229 0.450815L12.0148 5.77057L9.27354 5.90107L9.20829 0.41819L11.6229 0.450815Z" fill="currentColor"/>
+</svg>
+No</button>
   </div>
+	<div id="feedback_comment" style="display: none;">
+		<textarea id="feedback_textarea" class="ba b--light-gray bg-primary-color-light pa2 br3" type="text" placeholder="Tell us how we can make this article better." rows="4" cols="60"></textarea><button id="feedback_submit" class="db ba b--light-gray bg-primary-color-light f5 ph3 pv2 br2 dib tc mv3 link primary-color-dark">Send Feedback</button>
+  </div>
+  <div id="feedback_thank_you" style="display: none;">
+     <p class="i">Thank you for your feedback!</p>
+  </div>
+</div>
+
+        </div>
+        <div class="bt-l b--moon-gray pt3 f6">
+          <p>This page was last updated:  July 27, 2026 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          </p>
+        </div>
+      </div>
+    </article>
+
+    <nav id="toc" class="order-2 w-20 pl4 mv4 sticky-r dn db-ns max-vh-100 overflow-y-auto">
+      
+
+
+
+  <aside class="mw5 right-0 f6 bl b--light-gray pv4 pv0-ns ph3 nested-copy-line-height">
+      <p class="b ttu">On this page</p>
+      <nav id="TableOfContents"><ul class="toc-h2"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#how-it-works" href="javascript:void(0)">How it works</a></li>
+              <ul class="toc-h3"><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#applications" href="javascript:void(0)">Applications</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#subscriptions" href="javascript:void(0)">Subscriptions</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#scopes" href="javascript:void(0)">Scopes</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#authentication" href="javascript:void(0)">Authentication</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#developer-portal-workflow" href="javascript:void(0)">Developer portal workflow</a></li>
+              </ul><li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#third-party-access" href="javascript:void(0)">Third-party access</a></li>
+              <li class="db mv2 f6"><a class="w-100 text-color-primary hover-primary-color link" data-id="#get-started" href="javascript:void(0)">Get started</a></li>
+              </nav>
+  </aside></nav>
 
 </div>
 </div>
-
+    
 
     </main>
 
