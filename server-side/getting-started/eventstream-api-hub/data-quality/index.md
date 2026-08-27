@@ -5,7 +5,7 @@ url: https://docs-preview.tealium.com/server-side/getting-started/eventstream-ap
 ---
 The color-coded bars in the chart are segmented according to the validation of the event specifications against your data.
 
-![](/images/server-side/getting-started-eventstream-live-events-all-filters.png)
+![](https://docs-preview.tealium.com/images/server-side/getting-started-eventstream-live-events-all-filters.png)
 
 Live Events with event spec validation:
 

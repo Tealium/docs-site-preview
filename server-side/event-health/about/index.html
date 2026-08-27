@@ -14,6 +14,8 @@
 <meta property="og:description" content="This article explains event health and its components, and how it helps you monitor and improve data quality." />
 <meta property="og:site_name" content="Preview of Tealium Docs" />
     <title>About event health | Event health | Preview of Tealium Docs</title>
+    
+    <meta name="docsearch:pageRank" content="19990">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width,minimum-scale=1">
@@ -25,12 +27,17 @@
     <link rel="alternate" hreflang="ja" href="https://docs-preview.tealium.com/ja/server-side/event-health/about/">
     <link href='/dist/css/app.css' rel='stylesheet' type="text/css" />
     <script>
-      history.scrollRestoration = "manual";
-      if (location.hash) {
+      (function(){
+        var stored = null;
+        try { stored = localStorage.getItem('docs-theme'); } catch(e) {}
+        var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      }());
+    </script>
+    <script>
+      if (!window.location.hash) {
+        history.scrollRestoration = "manual";
         window.scrollTo(0, 0);
-        setTimeout(function() {
-          window.scrollTo(0, 0);
-        }, 10);
       }
     </script>
   </head>
@@ -50,7 +57,14 @@
         b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
         a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
       })();
-    </script>
+    </script><blockquote class="agent-only" data-agent-docs-index="true" aria-hidden="true">
+      <h2>Tealium docs index</h2>
+      <p>Before reading this page, retrieve the full documentation index at: <a href="https://docs-preview.tealium.com/llms.txt" tabindex="-1">https://docs-preview.tealium.com/llms.txt</a></p>
+      <p>The index lists all available pages across the Tealium documentation site.</p>
+    </blockquote>
+    
+
+    
 <nav class="w-100 sticky-t bg-primary-color-light bb b--light-gray dn-p" role="navigation">
   <div class="flex flex-wrap items-center justify-start mw9">
     <div class="ma0 pl15 dn-ns dib">
@@ -58,7 +72,7 @@
 </button>
     </div> 
     <div class="lh-solid ml0-ns mr0 mr4-l mv3 pl15 dib db-ns relative" style="height: 40px;">
-      <a href="/"><svg width="100%" height="100%" viewBox="0 0 184 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="/" class="docs-logo"><svg width="100%" height="100%" viewBox="0 0 184 33" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.21 16.8411C19.1659 14.859 17.6239 13.2733 15.7516 13.2966C13.8571 13.3433 12.3592 14.9756 12.4033 16.9577C12.4473 18.9398 13.9893 20.5255 15.8617 20.5022C17.7341 20.4789 19.232 18.8232 19.21 16.8411Z" fill="black"/>
 <path d="M8.96654 19.8022C10.0239 19.1026 11.6319 19.8255 12.5571 21.4112C13.4823 22.9969 13.3722 24.8391 12.3148 25.5387C11.2575 26.2382 9.64941 25.5153 8.72424 23.9296C7.79906 22.3206 7.93123 20.4784 8.96654 19.8022Z" fill="black"/>
 <path d="M5.70632 23.8369C6.60947 23.4405 7.82101 24.3733 8.41577 25.889C9.01053 27.428 8.76822 28.9904 7.86507 29.3868C6.96192 29.7833 5.75038 28.8738 5.15562 27.3348C4.56086 25.7957 4.8252 24.2333 5.70632 23.8369Z" fill="black"/>
@@ -90,12 +104,12 @@
 </div>
 </div><ul class="list ma0 pa0 dn dib-ns">
       <li class="f5 dib mr4">
-         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+         <a href="/release-notes/" class="dim link mid-gray">Release notes</a>
       </li>
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
-        
+      
       <li class="f5 dib mr4">
       
         
@@ -106,6 +120,12 @@
       
       </li>
       
+      <li class="f5 dib mr4">
+        <button id="theme-toggle" class="theme-toggle-btn dim mid-gray" aria-label="Switch to dark mode" title="Switch to dark mode">
+          <span class="theme-icon-dark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 96C329.5 96 338.9 96.6 348 97.7C287.9 136 248 203.3 248 280C248 397.2 344.4 492.8 458.7 495.9C420.5 526 372.4 544 320 544C196.3 544 96 443.7 96 320C96 196.3 196.3 96 320 96zM320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C388.8 576 451.3 548.8 497.3 504.6C504.6 497.6 506.7 486.7 502.6 477.5C498.5 468.3 488.9 462.6 478.8 463.4C373.4 471.8 280 386.1 280 280C280 207.9 321.5 145.4 382.1 115.2C391.2 110.7 396.4 100.9 395.2 90.8C394 80.7 386.6 72.5 376.7 70.3C358.4 66.2 339.4 64 320 64z"/></svg></span>
+          <span class="theme-icon-light" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 496C333.3 496 344 506.7 344 520L344 584C344 597.3 333.3 608 320 608C306.7 608 296 597.3 296 584L296 520C296 506.7 306.7 496 320 496zM161.6 444.4C171 435 186.2 435 195.6 444.4C205 453.8 205 469 195.6 478.4L150.3 523.7C140.9 533.1 125.7 533.1 116.4 523.7C107.1 514.3 107 499.1 116.4 489.8L161.6 444.5zM444.4 444.4C453.8 435 469 435 478.4 444.4L523.7 489.7C533.1 499.1 533.1 514.3 523.7 523.6C514.3 532.9 499.1 533 489.8 523.6L444.5 478.3C435.1 468.9 435.1 453.7 444.5 444.3zM320 448C249.3 448 192 390.7 192 320C192 249.3 249.3 192 320 192C390.7 192 448 249.3 448 320C448 390.7 390.7 448 320 448zM320 240C275.8 240 240 275.8 240 320C240 364.2 275.8 400 320 400C364.2 400 400 364.2 400 320C400 275.8 364.2 240 320 240zM120 296C133.3 296 144 306.7 144 320C144 333.3 133.3 344 120 344L56 344C42.7 344 32 333.3 32 320C32 306.7 42.7 296 56 296L120 296zM584 296C597.3 296 608 306.7 608 320C608 333.3 597.3 344 584 344L520 344C506.7 344 496 333.3 496 320C496 306.7 506.7 296 520 296L584 296zM116.3 116.3C125.7 106.9 140.9 106.9 150.2 116.3L195.5 161.5C204.9 170.9 204.9 186.1 195.5 195.5C186.1 204.9 170.9 204.9 161.5 195.5L116.3 150.3C106.9 140.9 106.9 125.7 116.3 116.4zM489.7 116.3C499.1 106.9 514.3 106.9 523.6 116.3C532.9 125.7 533 140.9 523.6 150.2L478.3 195.5C468.9 204.9 453.7 204.9 444.3 195.5C434.9 186.1 434.9 170.9 444.3 161.5L489.6 116.3zM320 32C333.3 32 344 42.7 344 56L344 120C344 133.3 333.3 144 320 144C306.7 144 296 133.3 296 120L296 56C296 42.7 306.7 32 320 32z"/></svg></span>
+        </button>
+      </li>
     </ul>
   </div>
 </nav>
@@ -116,12 +136,12 @@
 </button>
     <ul class="list ma0 pa0">
       <li class="f5 dib mr4">
-         <a href="/release-notes/" class="dim link mid-gray">Release Notes</a>
+         <a href="/release-notes/" class="dim link mid-gray">Release notes</a>
       </li>
       <li class="f5 dib mr4">
          <a href="/help/" class="dim link mid-gray">Help</a>
       </li>
-        
+      
       <li class="f5 dib mr4">
       
         
@@ -132,6 +152,12 @@
       
       </li>
       
+      <li class="f5 dib mr4">
+        <button class="theme-toggle-btn dim mid-gray" onclick="document.getElementById('theme-toggle').click()" aria-label="Switch theme" title="Switch theme">
+          <span class="theme-icon-dark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 96C329.5 96 338.9 96.6 348 97.7C287.9 136 248 203.3 248 280C248 397.2 344.4 492.8 458.7 495.9C420.5 526 372.4 544 320 544C196.3 544 96 443.7 96 320C96 196.3 196.3 96 320 96zM320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576C388.8 576 451.3 548.8 497.3 504.6C504.6 497.6 506.7 486.7 502.6 477.5C498.5 468.3 488.9 462.6 478.8 463.4C373.4 471.8 280 386.1 280 280C280 207.9 321.5 145.4 382.1 115.2C391.2 110.7 396.4 100.9 395.2 90.8C394 80.7 386.6 72.5 376.7 70.3C358.4 66.2 339.4 64 320 64z"/></svg></span>
+          <span class="theme-icon-light" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><path d="M320 496C333.3 496 344 506.7 344 520L344 584C344 597.3 333.3 608 320 608C306.7 608 296 597.3 296 584L296 520C296 506.7 306.7 496 320 496zM161.6 444.4C171 435 186.2 435 195.6 444.4C205 453.8 205 469 195.6 478.4L150.3 523.7C140.9 533.1 125.7 533.1 116.4 523.7C107.1 514.3 107 499.1 116.4 489.8L161.6 444.5zM444.4 444.4C453.8 435 469 435 478.4 444.4L523.7 489.7C533.1 499.1 533.1 514.3 523.7 523.6C514.3 532.9 499.1 533 489.8 523.6L444.5 478.3C435.1 468.9 435.1 453.7 444.5 444.3zM320 448C249.3 448 192 390.7 192 320C192 249.3 249.3 192 320 192C390.7 192 448 249.3 448 320C448 390.7 390.7 448 320 448zM320 240C275.8 240 240 275.8 240 320C240 364.2 275.8 400 320 400C364.2 400 400 364.2 400 320C400 275.8 364.2 240 320 240zM120 296C133.3 296 144 306.7 144 320C144 333.3 133.3 344 120 344L56 344C42.7 344 32 333.3 32 320C32 306.7 42.7 296 56 296L120 296zM584 296C597.3 296 608 306.7 608 320C608 333.3 597.3 344 584 344L520 344C506.7 344 496 333.3 496 320C496 306.7 506.7 296 520 296L584 296zM116.3 116.3C125.7 106.9 140.9 106.9 150.2 116.3L195.5 161.5C204.9 170.9 204.9 186.1 195.5 195.5C186.1 204.9 170.9 204.9 161.5 195.5L116.3 150.3C106.9 140.9 106.9 125.7 116.3 116.4zM489.7 116.3C499.1 106.9 514.3 106.9 523.6 116.3C532.9 125.7 533 140.9 523.6 150.2L478.3 195.5C468.9 204.9 453.7 204.9 444.3 195.5C434.9 186.1 434.9 170.9 444.3 161.5L489.6 116.3zM320 32C333.3 32 344 42.7 344 56L344 120C344 133.3 333.3 144 320 144C306.7 144 296 133.3 296 120L296 56C296 42.7 306.7 32 320 32z"/></svg></span>
+        </button>
+      </li>
     </ul>
   </div>
   
@@ -144,6 +170,10 @@
       </li>
       <li  class="tl dib ma0 w-100">
       <a href="/server-side/getting-started/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Get started</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
+      <a href="/server-side/ai-studio/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Studio</span></a>
       </li>
       
       
@@ -271,6 +301,10 @@
       </li>
       
       <li  class="tl dib ma0 w-100">
+      <a href="/server-side/config-mcp/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Configuration MCP</span></a>
+      </li>
+      
+      <li  class="tl dib ma0 w-100">
       <a href="/server-side/save-publish/" class="f4 fw3 link overflow db ma0 w-100 pv2 ph4  text-color-primary hover-primary-color"><span>Save and publish</span></a>
       </li>
       
@@ -302,7 +336,7 @@
 <nav class="side-nav f6 pb6" role="navigation">
   <ul class="list pa0 mt0 mb1">
   
-    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow-left.svg" height="10" width="16" class="di v-mid pr1"/>Home</a></li>
+    <li class="w-100 fw4 f5 text-color-primary pv1 pl2"><a href="/" class="w-100 link text-color-primary hover-primary-color pv2 pl0 pr2"><img src="/images/icons/icon-arrow-left.svg" height="10" width="16" class="di v-mid pr1 icon-invert"/>Home</a></li>
   
   </ul>
   <ul class="list pa0" data-nav-section="server-side">
@@ -406,7 +440,9 @@
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/getting-started/audiencestream-cdp/install/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".audiencestream-install-options-for-web">Install options for web</a></li></ul>
       </li></ul>
-      </li></ul></li>
+      </li>
+    <li data-level="2" class="relative w-100 hover-accent-color-light fw4 f5  ">
+        <a href="/server-side/ai-studio/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Studio</a></li></ul></li>
     <li data-level="1" class="relative w-100 fw8 f5 fw5 text-color-primary pv1 ind2">
         <span class="db mt2 text-color-disabled fw3 ttu pt3 pb1">Connect</span>
         
@@ -705,7 +741,11 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/manage-es-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-manage-es-attributes">Manage event attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/attributes/restricted-data/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-about-restricted-data">About restricted data</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/manage-as-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-manage-as-attributes">Manage visitor and visit attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/attributes/ai-enrichments/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">AI enrichments</a></li>
     <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".enrichments">Enrichments</a>
         <ul class="pl2  enrichments desktopmenu animated fadeIn list  dn">
@@ -755,7 +795,7 @@
         <a href="/server-side/attributes/data-types/timeline/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-timeline-attribute">Timeline Attribute</a></li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
-        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-layer-enrichment">Data Layer Enrichment</a>
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".data-layer-enrichment">Data layer enrichment</a>
         <ul class="pl2  data-layer-enrichment desktopmenu animated fadeIn list  dn">
     <li data-level="4" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/attributes/data-layer-enrichment/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-about-data-layer-enrichment">About Data Layer Enrichment</a></li>
@@ -776,8 +816,6 @@
         <a href="/server-side/attributes/data-layer-enrichment/data-layer-enrichment-api/get-profile-definition-api/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-get-profile-definition-api">GET Profile Definition API</a></li></ul>
       </li></ul>
       </li>
-    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
-        <a href="/server-side/attributes/restricted-data/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-about-restricted-data">About restricted data</a></li>
     <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".attributes-reference">Reference</a>
         <ul class="pl2  attributes-reference desktopmenu animated fadeIn list  dn">
@@ -796,6 +834,8 @@
         <a href="/server-side/visitor-stitching/anonymous-user-visitor-id-attributes/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".anonymous-user-visitor-id-attributes">Anonymous IDs, user identifiers, and visitor ID attributes</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/visitor-id-attribute/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-id-attribute">Visitor ID attributes</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/visitor-stitching/stitching-merge-rules/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".">Stitching merge rules</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/visitor-stitching/diagram/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".visitor-stitching-example">Visitor stitching example</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -903,6 +943,8 @@
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/triggers/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".function-triggers">Function triggers</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/functions/ai-assistant/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-writer">Functions writer AI assistant</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/environment/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-execution-env-rate-limits">Environment and limits</a></li>
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/functions/code-editor/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".functions-code-editor">Functions code editor</a></li>
@@ -980,6 +1022,8 @@
         <ul class="pl2  audiences desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
         <a href="/server-side/audiences/about/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-audiences">About audiences</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/audiences/ai-audience-recommendations/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".ai-audience-recommendations">AI recommendations</a></li>
     <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".audience-discovery">Audience Discovery</a>
         <ul class="pl2  audience-discovery desktopmenu animated fadeIn list  dn">
@@ -1160,6 +1204,18 @@
         <a href="/server-side/settings/server-side-bot-filtering/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".server-side-bot-filtering">Server-side bot filtering</a></li></ul>
       </li>
     <li class="relative w-100 fw8 f5 ">
+        <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".ss-config-mcp">Configuration MCP</a>
+        <ul class="pl2  ss-config-mcp desktopmenu animated fadeIn list  dn">
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/config-mcp/about-config-mcp/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".about-config-mcp">About</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/config-mcp/connect-config-mcp/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".connect-config-mcp">Connect</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/config-mcp/manage-config-mcp/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".manage-config-mcp">Manage</a></li>
+    <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
+        <a href="/server-side/config-mcp/troubleshoot-config-mcp/" class="db link pr2 pv2  text-color-primary hover-primary-color " data-target=".troubleshoot-config-mcp">Troubleshooting</a></li></ul>
+      </li>
+    <li class="relative w-100 fw8 f5 ">
         <a href="javascript:void(0)" class="js-toggle dib w-100 link text-color-primary hover-primary-color pv2 ind2 pr2  primary-color" data-target=".ss-save-publish">Save and publish</a>
         <ul class="pl2  ss-save-publish desktopmenu animated fadeIn list  dn">
     <li data-level="3" class="relative w-100 hover-accent-color-light fw4 f5  ind2">
@@ -1208,17 +1264,17 @@
     
     
   
-  <li class="mr1 f7 lvl0"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7"><a class="f6 mb0 link mid-gray dim mr1" href="/">Home</a>&nbsp;>&nbsp;</li>
   
 
   
   
-  <li class="mr1 f7 lvl1"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/">Server-Side</a>&nbsp;>&nbsp;</li>
+  <li class="mr1 f7"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/">Server-Side</a>&nbsp;>&nbsp;</li>
   
 
   
   
-  <li class="mr1 f7 lvl2"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/event-health/">Event health</a></li>
+  <li class="mr1 f7"><a class="f6 mb0 link mid-gray dim mr1" href="/server-side/event-health/">Event health</a></li>
   
 
   
@@ -1227,7 +1283,53 @@
 </ul>
 </nav>
 
-<h1 class="lh-title mt4 mt30-ns mb3">About event health</h1>
+<div class="flex items-start justify-between">
+    <h1 class="lh-title mt4 mt30-ns mb3" style="min-width:0;flex:1 1 auto;">About event health</h1>
+    <div class="flex-shrink-0 mt4 mt30-ns ml3"><div class="copy-page-wrapper relative mt4 flex-shrink-0">
+  <button class="copy-page-btn flex items-center ba b--moon-gray bg-white f6 ph2 pv1 br2 pointer mid-gray" id="copy-page-btn" aria-expanded="false" aria-controls="copy-page-dropdown" data-md-url="https://docs-preview.tealium.com/server-side/event-health/about/index.md">
+    <span class="copy-page-btn-label">Copy page</span>
+    <svg class="ml1" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <ul class="copy-page-dropdown list pa0 ma0 dn absolute right-0 bg-white br3 z-5" id="copy-page-dropdown">
+    <li>
+      <button class="copy-page-item db w-100 tl ph3 pv2 f6 mid-gray pointer bg-white br3" style="border: 1px solid transparent;" id="copy-page-md-btn">
+        <span class="db fw5">Copy page</span>
+        <span class="db copy-page-subtitle silver">Copy this page as Markdown for LLMs</span>
+      </button>
+    </li>
+    <li>
+      <a class="copy-page-item db ph3 pv2 f6 mid-gray no-underline" href="https://docs-preview.tealium.com/server-side/event-health/about/index.md" target="_blank" rel="noopener noreferrer">
+        <span class="db fw5">View as Markdown<span class="ml1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+<!--!Font Awesome Pro v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+<path d="M352 88C352 101.3 362.7 112 376 112L494.1 112L263.1 343C253.7 352.4 253.7 367.6 263.1 376.9C272.5 386.2 287.7 386.3 297 376.9L528 145.9L528 264C528 277.3 538.7 288 552 288C565.3 288 576 277.3 576 264L576 88C576 74.7 565.3 64 552 64L376 64C362.7 64 352 74.7 352 88zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 408C480 394.7 469.3 384 456 384C442.7 384 432 394.7 432 408L432 496C432 513.7 417.7 528 400 528L144 528C126.3 528 112 513.7 112 496L112 240C112 222.3 126.3 208 144 208L232 208C245.3 208 256 197.3 256 184C256 170.7 245.3 160 232 160L144 160z"/>
+</svg></span></span>
+        <span class="db copy-page-subtitle silver">View this page as plain text</span>
+      </a>
+    </li>
+    <li>
+      <a class="copy-page-item db ph3 pv2 f6 mid-gray no-underline" href="https://claude.ai/new?q=I&#43;have&#43;questions&#43;about&#43;this&#43;Tealium&#43;documentation&#43;page.&#43;Read&#43;it&#43;and&#43;help&#43;me&#43;understand&#43;it%3A&#43;https%3A%2F%2Fdocs-preview.tealium.com%2Fserver-side%2Fevent-health%2Fabout%2Findex.md" target="_blank" rel="noopener noreferrer">
+        <span class="db fw5">Open in Claude<span class="ml1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+<!--!Font Awesome Pro v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+<path d="M352 88C352 101.3 362.7 112 376 112L494.1 112L263.1 343C253.7 352.4 253.7 367.6 263.1 376.9C272.5 386.2 287.7 386.3 297 376.9L528 145.9L528 264C528 277.3 538.7 288 552 288C565.3 288 576 277.3 576 264L576 88C576 74.7 565.3 64 552 64L376 64C362.7 64 352 74.7 352 88zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 408C480 394.7 469.3 384 456 384C442.7 384 432 394.7 432 408L432 496C432 513.7 417.7 528 400 528L144 528C126.3 528 112 513.7 112 496L112 240C112 222.3 126.3 208 144 208L232 208C245.3 208 256 197.3 256 184C256 170.7 245.3 160 232 160L144 160z"/>
+</svg></span></span>
+        <span class="db copy-page-subtitle silver">Ask questions about this page</span>
+      </a>
+    </li>
+    <li>
+      <a class="copy-page-item db ph3 pv2 f6 mid-gray no-underline br3" href="https://chatgpt.com/?q=I&#43;have&#43;questions&#43;about&#43;this&#43;Tealium&#43;documentation&#43;page.&#43;Read&#43;it&#43;and&#43;help&#43;me&#43;understand&#43;it%3A&#43;https%3A%2F%2Fdocs-preview.tealium.com%2Fserver-side%2Fevent-health%2Fabout%2Findex.md" target="_blank" rel="noopener noreferrer">
+        <span class="db fw5">Open in ChatGPT<span class="ml1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+<!--!Font Awesome Pro v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2026 Fonticons, Inc.-->
+<path d="M352 88C352 101.3 362.7 112 376 112L494.1 112L263.1 343C253.7 352.4 253.7 367.6 263.1 376.9C272.5 386.2 287.7 386.3 297 376.9L528 145.9L528 264C528 277.3 538.7 288 552 288C565.3 288 576 277.3 576 264L576 88C576 74.7 565.3 64 552 64L376 64C362.7 64 352 74.7 352 88zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 408C480 394.7 469.3 384 456 384C442.7 384 432 394.7 432 408L432 496C432 513.7 417.7 528 400 528L144 528C126.3 528 112 513.7 112 496L112 240C112 222.3 126.3 208 144 208L232 208C245.3 208 256 197.3 256 184C256 170.7 245.3 160 232 160L144 160z"/>
+</svg></span></span>
+        <span class="db copy-page-subtitle silver">Ask questions about this page</span>
+      </a>
+    </li>
+  </ul>
+</div>
+</div>
+  </div>
 </header>
 
 <div class="mv2 mid-gray fn w-100">
@@ -1527,10 +1629,10 @@ No</button>
 
     
       
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@5/dist/umd/docsearch.js"></script>
 <script type="text/javascript">
 const translations = {
-  button: {
+    button: {
     buttonText: 'Search',
     buttonAriaLabel: 'Search',
   },
@@ -1540,6 +1642,7 @@ const translations = {
       resetButtonAriaLabel: 'Clear the query',
       cancelButtonText: 'Cancel',
       cancelButtonAriaLabel: 'Cancel',
+      placeholderText: 'Search',
     },
     startScreen: {
       recentSearchesTitle: 'Recent',
@@ -1571,61 +1674,62 @@ const translations = {
     },
   },
 };
-var default_sections = [
-];
-var ls_sections = JSON.parse(localStorage.getItem("tealdocs_sections") || "[]");
-if(ls_sections.indexOf("JAVASCRIPT") != -1) {
-  ls_sections = [];
-  localStorage.setItem("tealdocs_sections", JSON.stringify(default_sections));
-}
-var local_sections = new Set(ls_sections);
-var cur_section = $('#breadcrumb ul li:nth-child(n+2)');
-if(cur_section && cur_section.length) {
-  var sect = cur_section.text().trim();
-  if(local_sections.has(sect)) {
-    
-    local_sections.delete(sect);
-    local_sections.add(sect);
-  }
-  else {
-    
-    local_sections.add(sect);
-    if(local_sections.size > 10) {
-      local_sections.delete(ls_sections[0]);
-    }
-  }
-  localStorage.setItem("tealdocs_sections", JSON.stringify(Array.from(local_sections)));
-}
-var filt_pre = "hierarchy.lvl0:";
-var hier_filters = local_sections.size ? Array.from(local_sections).map(s => filt_pre+s)
-  : default_sections.map(s => filt_pre+s);
-var opt_filters = [];
-if(hier_filters.length) {
-  opt_filters.push(hier_filters);
-}
 const transformItems = function(hits) {
   hits.map(hit => {
     if (hit.url.indexOf('#breadcrumb') > 0) {
       hit.url = hit.url.replace('#breadcrumb', '');
     }
+    if (hit.url.indexOf('#main-content') > 0) {
+      hit.url = hit.url.replace('#main-content', '');
+    }
   });
   return hits;
 };
+
+const _savedSection = (function() {
+  try { return localStorage.getItem('tealdocs_section'); } catch(e) { return null; }
+})();
+
+const _searchParams = {
+  "hitsPerPage": 50,
+  "analytics":  false ,
+  "analyticsTags": ["site"],
+  "facets": ["section"]
+};
+if (_savedSection) {
+  _searchParams.facetFilters = ["section:" + _savedSection];
+}
+
 docsearch({
   container: '#docsearch',
   appId: '01G44CJWZ0',
   apiKey: '09633c367e743588b87dbb988dad4158',
-  indexName: 'tealium',
-  placeholder: 'Search',
+  indices: [{
+    name: 'tealium',
+    searchParameters: _searchParams
+  }],
+  facets: [{ key: 'section', label: 'Section' }],
   translations: translations,
-  searchParameters: {
-    "hitsPerPage": 50,
-    "analytics": false ,
-    "analyticsTags": ["site"]
-  },
   insights: true,
-  debug: true ,
+  debug:  true ,
   transformItems
+});
+
+document.body.addEventListener('click', function(e) {
+  const radioItem = e.target.closest('.DocSearch-Menu-RadioItem');
+  if (radioItem) {
+    const clone = radioItem.cloneNode(true);
+    const indicator = clone.querySelector('.DocSearch-Menu-RadioItem-Indicator');
+    if (indicator) indicator.remove();
+    const section = clone.textContent.trim();
+    if (section) {
+      try { localStorage.setItem('tealdocs_section', section); } catch(e) {}
+    }
+    return;
+  }
+  if (e.target.closest('.DocSearch-Chip-Dismiss')) {
+    try { localStorage.removeItem('tealdocs_section'); } catch(e) {}
+  }
 });
 </script>
 
